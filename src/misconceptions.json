@@ -826,6 +826,14 @@
    "learn": "P3-magnets.html#e1"
   },
   {
+   "id": "MAG-16",
+   "topic": "MAG",
+   "lo": "P3.MAG.C1",
+   "label": "Thinks an object resting on another shows a magnetic force",
+   "fix": "An object resting on a stand shows nothing about magnets: any solid stand holds an object up against gravity. Only a push — the object floating away — shows a magnetic force at work.",
+   "learn": "04-interactions/P3-magnets-floating-globe.html#see-it"
+  },
+  {
    "id": "MAT-01",
    "topic": "MAT",
    "lo": "P3.MAT.P1",

@@ -1,0 +1,113 @@
+[
+ {
+  "id": "P3-magnets-floating-globe.q1",
+  "title": "Pushed away by a magnet",
+  "lo": ["P3.MAG.C2"],
+  "kind": "diag",
+  "pool": "page",
+  "stem": "A bar magnet is brought near object X. X is <b>pushed away</b>. What can you conclude about X?",
+  "options": [
+   { "text": "X is a magnetic material.", "mis": "MAG-01",
+     "pick": "Magnetic materials react to magnets, and being pushed away is a reaction.",
+     "why": "Magnetic materials are only ever pulled towards a magnet. They are never pushed away." },
+   { "text": "X is a non-magnetic material.", "mis": "MAG-04",
+     "pick": "Being pushed away feels like “it does not stick”, so it seems not magnetic.",
+     "why": "A non-magnetic material feels no force at all from a magnet. Being pushed is a force." },
+   { "text": "X is a magnet.", "correct": true,
+     "pick": "Ask which objects can be pushed away, not just pulled.",
+     "why": "Pushing away is repulsion between like poles, and only two magnets can repel." },
+   { "text": "X could be a magnet or a magnetic material; we cannot tell.", "mis": "MAG-01",
+     "pick": "Both can react to a magnet, so saying we cannot tell feels safest.",
+     "why": "Both are pulled by a magnet, but only a magnet can be pushed away. Repulsion does let us tell." }
+  ]
+ },
+ {
+  "id": "P3-magnets-floating-globe.q2",
+  "title": "Attracted by both poles",
+  "lo": ["P3.MAG.P1"],
+  "kind": "diag",
+  "pool": "page",
+  "stem": "Rod R is attracted to the N pole <b>and</b> to the S pole of a bar magnet, whichever end of R is used. What is R?",
+  "options": [
+   { "text": "A magnet, because it is attracted by a magnet.", "mis": "MAG-05",
+     "pick": "Objects that stick to a magnet get called magnets.",
+     "why": "A magnet would be pulled by one pole and pushed by the other, depending on which end faces it. R is never pushed." },
+   { "text": "A magnetic material that is not a magnet.", "correct": true,
+     "pick": "Notice that R is pulled by both poles and never pushed by either.",
+     "why": "Always attracted and never repelled is exactly what a magnetic material does." },
+   { "text": "A non-magnetic material.", "mis": "MAG-04",
+     "pick": "It behaves the same way every time, so it seems nothing special is happening.",
+     "why": "A non-magnetic material feels no force. R is attracted, so it is not non-magnetic." },
+   { "text": "We cannot tell from attraction alone.", "mis": "MAG-05",
+     "pick": "Attraction is shared by magnets and magnetic materials, so it seems unreliable.",
+     "why": "Here both poles and both ends were tried. A magnet would have been repelled somewhere, and R never was." }
+  ]
+ },
+ {
+  "id": "P3-magnets-floating-globe.q3",
+  "title": "Reading a results table",
+  "lo": ["P3.MAG.P1"],
+  "kind": "diag",
+  "pool": "page",
+  "stem": "A bar magnet is held near three objects. Each end of the bar magnet is tried. Which row names the objects correctly?",
+  "figure": "<table class=\"qtable\"><thead><tr><th>Object</th><th>Near the N end</th><th>Near the S end</th></tr></thead><tbody><tr><th scope=\"row\">P</th><td>attracted</td><td>attracted</td></tr><tr><th scope=\"row\">Q</th><td>attracted</td><td>repelled</td></tr><tr><th scope=\"row\">R</th><td>no force</td><td>no force</td></tr></tbody></table>",
+  "options": [
+   { "text": "P is a magnet; Q is a magnetic material; R is non-magnetic.", "mis": "MAG-01",
+     "pick": "P is attracted both times, so it looks like the strongest one.",
+     "why": "These are swapped. P is never repelled, so it is a magnetic material. Q is repelled once, so Q is the magnet." },
+   { "text": "P is a magnetic material; Q is a magnetic material; R is non-magnetic.", "mis": "MAG-01",
+     "pick": "P and Q are both attracted at least once, so both look like magnetic materials.",
+     "why": "Q is repelled by the S end. Only a magnet can be repelled, so Q is a magnet." },
+   { "text": "P is a magnetic material; Q is a magnet; R is non-magnetic.", "correct": true,
+     "pick": "Use repulsion to pick out the magnet first, then sort the other two.",
+     "why": "Q is the only one repelled, so Q is a magnet. P is only ever attracted, so it is a magnetic material. R feels no force, so it is non-magnetic." },
+   { "text": "P is a magnet; Q is a magnet; R is a magnetic material.", "mis": "MAG-03",
+     "pick": "Any object that reacts at all seems to be a magnet.",
+     "why": "R shows no force at all, so it is non-magnetic, not a magnetic material. P is never repelled, so P is not a magnet." }
+  ]
+ },
+ {
+  "id": "P3-magnets-floating-globe.q4",
+  "title": "Does resting prove anything?",
+  "lo": ["P3.MAG.C1"],
+  "kind": "diag",
+  "pool": "page",
+  "stem": "A toy globe sits on top of a stand and does not move. Ms Tan says, “The stand must be a magnet.” Is she right?",
+  "options": [
+   { "text": "Yes, because the stand is holding the globe up.", "mis": "MAG-16",
+     "pick": "Something is keeping the globe in place, so a magnetic hold seems likely.",
+     "why": "Any solid stand holds an object up, magnet or not. Gravity presses the globe onto it." },
+   { "text": "Not necessarily. A non-magnetic stand would hold the globe up too, so resting tells us nothing about magnets.", "correct": true,
+     "pick": "Separate what gravity and a solid surface do from what a magnetic force would do.",
+     "why": "Resting is what happens with no magnetic force at all, and also with an attracting force. Only floating shows a push." },
+   { "text": "Yes, because the globe stays still.", "mis": "MAG-16",
+     "pick": "Staying still looks like something is holding it in place by force.",
+     "why": "Objects stay still on a surface without any magnetic force. The stand is simply supporting the globe." },
+   { "text": "No, because a magnet would make the globe float.", "mis": "MAG-08",
+     "pick": "Magnets are the thing that makes toys hover, so a magnet would not let it rest.",
+     "why": "A magnet that attracts the globe makes it cling, not float. Floating needs a push, which needs two magnets with like poles facing." }
+  ]
+ },
+ {
+  "id": "P3-magnets-floating-globe.q5",
+  "title": "A ball that floats when the base is turned over",
+  "lo": ["P3.MAG.C2"],
+  "kind": "diag",
+  "pool": "page",
+  "stem": "A toy has a ball on a base. When the base is turned upside down, the ball <b>floats</b> above it. What can you conclude?",
+  "options": [
+   { "text": "Only the base is a magnet.", "mis": "MAG-01",
+     "pick": "The base seems to be the object doing the pushing.",
+     "why": "A ball that is only a magnetic material would be pulled, never pushed. To be pushed away, the ball must be a magnet too." },
+   { "text": "Only the ball is a magnet.", "mis": "MAG-01",
+     "pick": "The ball is the one that moves, so it looks like the magnet.",
+     "why": "A non-magnetic or magnetic-only base cannot push a magnet away. The base must be a magnet as well." },
+   { "text": "Both are magnetic materials that are not magnets.", "mis": "MAG-02",
+     "pick": "Both react to magnets in some way, so calling both “magnetic” feels safe.",
+     "why": "Two magnetic materials show no force on each other, so nothing would make the ball float." },
+   { "text": "Both the ball and the base are magnets.", "correct": true,
+     "pick": "Floating means a push, and a push needs two magnets with like poles facing.",
+     "why": "Turned one way, unlike poles face each other and attract, so the ball rests. Turned over, like poles face each other and repel, so the ball floats." }
+  ]
+ }
+]

@@ -1,0 +1,30 @@
+.lab{display:grid;grid-template-columns:1fr;gap:16px}
+@media(min-width:760px){.lab{grid-template-columns:1.1fr 1fr}}
+.lab .stage svg{display:block;width:100%;height:auto}
+.seg{display:flex;flex-wrap:wrap;gap:6px;margin:4px 0 12px}
+.seg button{min-height:44px;padding:0 14px;border-radius:var(--radius);border:var(--bw) solid var(--line);background:var(--card);color:var(--ink);font:inherit;cursor:pointer}
+.seg button[aria-pressed="true"]{border-color:var(--primary);background:var(--primary);color:var(--primary-ink);font-weight:600}
+.panel h3{font:600 13.5px var(--f-label);letter-spacing:var(--ls);color:var(--muted);margin:0 0 6px}
+.panel .line{padding:8px 10px;border:var(--bw) solid var(--line);border-radius:var(--radius);margin-bottom:8px;background:var(--card);font-size:14.5px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:8px 0}
+.chips .chip.ok{border-color:var(--ok);color:var(--ok)}
+.chips .chip.no{border-color:var(--no);color:var(--no)}
+.verdict{font-weight:600}
+.verdict.ok{color:var(--ok)}
+.verdict.no{color:var(--no)}
+.tests{display:grid;gap:8px;grid-template-columns:1fr}
+@media(min-width:620px){.tests{grid-template-columns:1fr 1fr}}
+.testbtn{min-height:44px;text-align:left;padding:10px 14px;border:var(--bw) solid var(--line);border-radius:var(--radius);background:var(--card);color:var(--ink);font:inherit;cursor:pointer}
+.testbtn:hover{border-color:var(--primary)}
+.hidden{display:none}
+#globeSvg .s{stroke:var(--stroke);stroke-width:2;fill:none;stroke-linejoin:round;stroke-linecap:round}
+#globeSvg .fillcard{fill:var(--card)}
+#globeSvg .t{fill:var(--ink);font-family:var(--f-body);font-size:13px}
+#globeSvg .tm{fill:var(--muted);font-family:var(--f-body);font-size:12px}
+#globeSvg .tinstr{fill:var(--instr);font-family:var(--f-body);font-weight:700;font-size:13px}
+#globeG{cursor:grab;touch-action:none}
+#globeG.drag{cursor:grabbing}
+#standG{transform-origin:210px 293px;transition:transform .16s}
+#standG.flip{transform:scaleY(.05)}
+#globeSvg .pole-N{fill:var(--npole);fill-opacity:.85}
+#globeSvg .pole-S{fill:var(--spole);fill-opacity:.85}

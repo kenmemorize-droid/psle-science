@@ -1,0 +1,15 @@
+{
+  "id": "P3-magnets-floating-globe",
+  "type": "focus",
+  "theme": "interactions",
+  "topic": "MAG",
+  "level": "P3",
+  "title": "The floating globe",
+  "purpose": "A toy globe rests on its stand. Flip the stand over and the globe floats above it. Build the set-up yourself and find the only pair of materials that gives both observations.",
+  "lo": ["P3.MAG.C1", "P3.MAG.C2", "P3.MAG.P1"],
+  "fixes": "Choosing \"magnetic material\" for an object that pushes another object away, and reading an object resting on a stand as proof of a magnetic force.",
+  "origin": "mistake",
+  "built": "2026-11-15",
+  "order": 3,
+  "uses": []
+}

@@ -1,10 +1,10 @@
 {
  "01-diversity/P3-materials-strong-vs-flexible.html": "e5cef9672f7d0bb218074dca332f051fbefc06ddce0e360b4c3dcb435e00046d",
- "index.html": "426633ef752cf78017c2ac2bd1fddb5672e5e31e1720d61215f8df320ab3b037",
+ "index.html": "fe67eacff8d55050f4c1858328bac69112b4887c826574c3125871c8058a1fd4",
  "assets/_theme.css": "75f2e1006a5c22f5a7a29d68ef1ac96e3100335cfd3da70a613108863ffdd3e8",
  "01-diversity/P3-materials-match-part-to-property.html": "d0210d889eb5a47841d9c99bceb7ad062778eacf7feb42ae5e69c8877492cd86",
  "01-diversity/P3-materials-waterproof-vs-absorbent.html": "3ce93ccee24f576211257815bcd6a3dd7696d8cdd0b32cd2c7659d9b2babce4a",
- "04-interactions/P3-magnets-compass-needle.html": "f1d766ea2ba128a9fb6e1c24077a7b68962a9282c6a1d1251c24c52b3d70dcec",
+ "04-interactions/P3-magnets-compass-needle.html": "eec3cb2a56cd3bfdc6d29018d0ef1f2a23fa06151e8ea1ec2c1b5493d02f546d",
  "04-interactions/P3-magnets-magnet-vs-magnetic-material.html": "8b638519ae1a4f748b02f0a7ac3ab82c6cfc5f38c7f40e303e4a0af25da78091",
  "02-cycles/P4-matter-air-occupies-space.html": "d2957fceb42dc169f0ad8914156a84f88d300e3b5a2cf8895896cef3d5db11bd",
  "05-energy/P4-light-shadow-length.html": "23747108fbc6022d2a6b440bd2a54024398e83d3987d35a0c7102b8810c18987",
@@ -15,10 +15,11 @@
  "03-systems/P4-plant-parts.html": "919d87c0c16146f20a669c83263f46eaf86e6712d70941899070b07937890f68",
  "03-systems/P4-digestive-system.html": "a9a28e3728cd49d5cc8ed7dfb81c98a70abef20f0a5b131d15903638797d256c",
  "01-diversity/P3-materials.html": "c3832083fb2150084c9e06320c3d74dfb93d0b158b3704d814450b2610eee021",
- "04-interactions/P3-magnets.html": "7aaae780be09430dcbcd4204b951bf04a49a32c120b75da707e85d5147e4d39d",
+ "04-interactions/P3-magnets.html": "6960d2caaf0f739096f4fdc32761c5154d1a8f5aa2599ca186e9fc8a7a7a701f",
  "01-diversity/P3-living-things.html": "ce5b4c0d6b48bffa81310ceb477d4999be862d5bd9660fdfb81d934d3355ac94",
  "02-cycles/P3-life-cycles.html": "17e0632e997ce0a13c52d87cc37ca59826f773ed5664665b6751cd54476d6862",
  "01-diversity/P3-living-things-fungi-on-feet.html": "10704cece67363734cef45383c01c2d3c7f84ead5957aa8f9ca5d77c0a232ea8",
  "04-interactions/P6-forces.html": "10160193cf116b8d72a5a26da91f1fe1d54029ccc2b7bd6ca0d409defc15afb8",
- "03-systems/P5-respiratory-circulatory.html": "79f9923bf4051b0018779de7b6828e924c1d683e19a1718b49d16a4710e9a462"
+ "03-systems/P5-respiratory-circulatory.html": "79f9923bf4051b0018779de7b6828e924c1d683e19a1718b49d16a4710e9a462",
+ "04-interactions/P3-magnets-floating-globe.html": "042c39d3aca11a60adfb893fd675a14833ac8ff98161fc99a433fc11106a8507"
 }

@@ -1,0 +1,85 @@
+<section class="card origin" id="origin">
+  <p class="sec-label">The question that started this</p>
+  <h2>Ms Tan's toy globe</h2>
+  <p><b>17.</b> Ms Tan purchased a toy globe which was resting on a stand. She noticed that the stand was made of a single material. When she flipped the stand upside down, the toy globe floated above the stand. Based on the observation, what could Ms Tan conclude?</p>
+  <div class="chips">
+    <span class="chip">① Side K facing up: the globe <b>rests</b> on the stand</span>
+    <span class="chip">② Stand flipped, side L facing up: the globe <b>floats</b> above the stand</span>
+  </div>
+  <p class="note"><b>Answer key under review — this question is not scored here.</b> The recorded key is <b>(1)</b> and the answer given was <b>(3)</b>. By the syllabus, a floating globe means the stand <b>pushes</b> the globe away, and only a magnet can push another magnet away — so <b>both</b> objects must be magnets, which no option says plainly. Check the key against the school's answer sheet before relying on it.</p>
+  <p class="instr">Resting and floating are not equally useful clues. Work out which one tells you something, using the lab below.</p>
+</section>
+
+<section class="card" id="see-it">
+  <p class="sec-label">See it</p>
+  <h2>Build the set-up yourself</h2>
+  <p class="instr">Choose what each object is made of. Then flip the stand and lift the globe. Does your set-up match both things Ms Tan saw?</p>
+  <div class="lab">
+    <div>
+      <div class="stage">
+        <svg id="globeSvg" viewBox="0 0 420 360" role="img" aria-label="A globe above a flat round stand. Drag the globe up and down.">
+          <g id="standG">
+            <rect class="s fillcard" x="105" y="270" width="210" height="46" rx="10"/>
+            <rect id="topPole" class="s hidden" x="105" y="270" width="210" height="14" rx="6"/>
+            <text id="topPoleT" class="t hidden" x="210" y="281" text-anchor="middle" font-weight="700"></text>
+            <rect id="botPole" class="s hidden" x="105" y="302" width="210" height="14" rx="6"/>
+            <text id="botPoleT" class="t hidden" x="210" y="313" text-anchor="middle" font-weight="700"></text>
+            <text id="topLbl" class="t" x="210" y="299" text-anchor="middle">Top face: side K</text>
+          </g>
+          <text id="botLbl" class="tm" x="210" y="336" text-anchor="middle">Bottom face: side L</text>
+          <g id="arrow" class="hidden">
+            <line id="arrLine" class="s" x1="345" y1="265" x2="345" y2="200"/>
+            <path id="arrHead" class="s" d="M337 210 L345 198 L353 210"/>
+            <text id="arrTxt" class="t" x="345" y="185" text-anchor="middle"></text>
+          </g>
+          <g id="globeG" tabindex="0" role="slider" aria-label="Globe height. Use the arrow keys to lift or drop it." aria-valuemin="0" aria-valuemax="150" aria-valuenow="0">
+            <circle class="s fillcard" cx="210" cy="212" r="58"/>
+            <ellipse class="s" cx="210" cy="212" rx="24" ry="58"/>
+            <ellipse class="s" cx="210" cy="212" rx="44" ry="58"/>
+            <line class="s" x1="152" y1="212" x2="268" y2="212"/>
+            <path class="s" d="M180 180 q12 -10 24 2 q6 14 -6 22 q-12 4 -20 -8 z"/>
+            <path class="s" d="M222 222 q16 -6 26 8 q-4 16 -20 14 q-10 -8 -6 -22 z"/>
+            <rect id="gPole" class="s hidden" x="190" y="262" width="40" height="16" rx="6"/>
+            <text id="gPoleT" class="t hidden" x="210" y="274" text-anchor="middle" font-weight="700"></text>
+            <text id="gHint" class="tinstr" x="210" y="146" text-anchor="middle">▶ drag me</text>
+          </g>
+        </svg>
+      </div>
+      <div class="actions">
+        <button type="button" class="btn primary" id="flipBtn">Flip stand over</button>
+        <button type="button" class="btn" id="liftBtn">Lift globe and let go</button>
+        <button type="button" class="btn" id="poleBtn" aria-pressed="false">Show poles: off</button>
+      </div>
+      <p class="instr">Keyboard: focus the globe, then use the ↑ and ↓ keys.</p>
+    </div>
+    <div class="panel">
+      <h3>The stand is…</h3>
+      <div class="seg" id="standSeg" role="group" aria-label="Stand material"></div>
+      <h3>The globe is…</h3>
+      <div class="seg" id="globeSeg" role="group" aria-label="Globe material"></div>
+      <div id="outLines" aria-live="polite"></div>
+      <div class="chips" id="matchChips"></div>
+      <p class="verdict" id="verdict"></p>
+    </div>
+  </div>
+</section>
+
+<section class="card" id="options">
+  <p class="sec-label">Test the four choices</p>
+  <h2>Load each answer choice into the lab</h2>
+  <p class="instr">Tap a choice to load it above, then flip the stand and see whether it can give both observations.</p>
+  <div class="tests" id="tests"></div>
+  <p class="note-s hidden" id="testNote"></p>
+</section>
+
+<section class="card" id="key">
+  <p class="sec-label">Key idea</p>
+  <div class="key"><b>Attract tells you little; repel tells you a lot.</b> A magnetic material is only ever pulled towards a magnet, never pushed away. So if two objects push each other apart, both of them are magnets. An object resting on a stand shows nothing about magnets at all: any solid stand holds an object up.</div>
+</section>
+
+<section class="card" id="check">
+  <p class="sec-label">Check yourself</p>
+  <h2>Five questions on these ideas</h2>
+  <p class="lead">Only your first answer counts. A wrong first answer goes into your mistake book, and a different question on the same idea comes back for recap.</p>
+  <div id="qs"></div>
+</section>
