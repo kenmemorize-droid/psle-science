@@ -1,0 +1,23 @@
+.mstage{position:relative;height:150px;border-radius:10px;background:var(--sunk);border:var(--bw) solid var(--line);border-bottom:8px solid var(--line);overflow:hidden}
+.mstage-hint{position:absolute;inset:0;display:grid;place-items:center;text-align:center;padding:0 16px;color:var(--muted);font-size:14px;margin:0}
+.slot{position:absolute;left:50%;bottom:0;width:84px;transition:transform .9s cubic-bezier(.3,.7,.3,1)}
+.obj{width:84px;height:58px;border:2px solid var(--stroke);border-radius:6px;display:grid;place-items:center;background:var(--card)}
+.obj span{background:var(--card);border:2px solid var(--stroke);border-radius:5px;padding:0 9px;font-weight:700;font-size:18px;line-height:26px;color:var(--ink)}
+.obj.p1{background:radial-gradient(circle,var(--stroke) 1.3px,transparent 1.8px) 0 0/8px 8px,var(--card)}
+.obj.p2{background:repeating-linear-gradient(45deg,var(--stroke) 0 1.4px,transparent 1.4px 6px),repeating-linear-gradient(-45deg,var(--stroke) 0 1.4px,transparent 1.4px 6px),var(--card)}
+.arrow{display:block;margin:0 auto 6px;opacity:0;transition:opacity .35s .8s;stroke:currentColor;fill:currentColor}
+.arrow line{stroke-width:3.5;stroke-linecap:round}
+.pair.on .arrow{opacity:1}
+.pair.attract{color:var(--ok)} .pair.repel{color:var(--no)}
+.mmsg{margin:8px 0 0;min-height:24px;font-weight:700;font-size:15px}
+.mmsg.attract{color:var(--ok)} .mmsg.repel{color:var(--no)} .mmsg.none{color:var(--muted)}
+.mtile{background:transparent;border:0;padding:4px;text-align:center;border-radius:8px;min-height:44px}
+.mtile small{display:block;margin-top:4px;color:var(--muted);font-size:12px}
+.mtile[aria-pressed="true"] .obj{outline:3px solid var(--primary);outline-offset:3px}
+.mtile.revealed small{color:var(--ink);font-weight:700;font-size:13px}
+table.mlog{border-collapse:collapse;width:100%}
+.mlog th,.mlog td{border:1px solid var(--line);padding:7px 9px;text-align:left;font-size:14px}
+.mlog tr.clash td,.mlog tr.clash th{background:var(--no-soft);outline:2px solid var(--no);outline-offset:-2px}
+.mbadge{display:inline-block;border-radius:5px;padding:1px 8px;font-size:13px;font-weight:700}
+.mbadge.attract{background:var(--ok-soft);color:var(--ok)} .mbadge.repel{background:var(--no-soft);color:var(--no)} .mbadge.none{background:var(--sunk);color:var(--muted)}
+.untested{color:var(--muted)}

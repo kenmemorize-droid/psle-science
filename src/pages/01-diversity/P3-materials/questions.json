@@ -1,0 +1,823 @@
+[
+  {
+    "id": "P3-materials.u1",
+    "title": "Rain boots",
+    "kind": "diag",
+    "pool": "page",
+    "lo": [
+      "P3.MAT.C1"
+    ],
+    "stem": "<p>Rain boots are made of rubber.</p><p class='q-ask'>Which two properties of rubber make it suitable?</p>",
+    "key": "Some jobs need two properties. Rain boots must be waterproof and flexible.",
+    "options": [
+      {
+        "text": "It is waterproof and it lets light through.",
+        "mis": "MAT-02",
+        "pick": "Rubber is waterproof, and any second property seems to do.",
+        "why": "Boots don't need to let light through. They need to bend when you walk."
+      },
+      {
+        "text": "It absorbs water and it is flexible.",
+        "mis": "MAT-09",
+        "pick": "Rubber boots get wet, so rubber seems to soak up water.",
+        "why": "Rubber is waterproof: it does not absorb water. That keeps your feet dry."
+      },
+      {
+        "text": "It is waterproof and it is flexible.",
+        "correct": true,
+        "pick": "List what boots must do: keep water out, and bend as you walk.",
+        "why": "Rubber is waterproof, so water stays out, and flexible, so the boots bend without breaking."
+      },
+      {
+        "text": "It is waterproof. The boots do not need to bend.",
+        "mis": "MAT-04",
+        "pick": "Keeping the rain out is the main job.",
+        "why": "Your feet bend at every step, so the boots must be flexible too."
+      }
+    ]
+  },
+  {
+    "id": "P3-materials.u2",
+    "title": "What floats?",
+    "kind": "diag",
+    "pool": "page",
+    "lo": [
+      "P3.MAT.P1"
+    ],
+    "stem": "<p>Ali put four objects into water. The table shows what happened.</p><p class='q-ask'>Which statement is correct?</p>",
+    "figure": "<div class='scroll'><table class='data'><thead><tr><th scope='col'>Object</th><th scope='col'>In water</th></tr></thead><tbody><tr><th scope='row'>large wooden log</th><td>floats</td></tr><tr><th scope='row'>small steel nail</th><td>sinks</td></tr><tr><th scope='row'>cork</th><td>floats</td></tr><tr><th scope='row'>small glass marble</th><td>sinks</td></tr></tbody></table></div>",
+    "key": "Whether an object floats depends on what it is made of, not on how big or heavy it is.",
+    "options": [
+      {
+        "text": "Whether an object floats depends on what it is made of.",
+        "correct": true,
+        "pick": "Compare the big log with the tiny nail.",
+        "why": "The large log floats and the small nail sinks. It is the material that matters."
+      },
+      {
+        "text": "Big objects sink and small objects float.",
+        "mis": "MAT-12",
+        "pick": "Big things look heavy.",
+        "why": "The large log floats, and the small nail and marble sink."
+      },
+      {
+        "text": "Heavy objects always sink.",
+        "mis": "MAT-12",
+        "pick": "Heavy seems to mean it will go down.",
+        "why": "The wooden log is the heaviest object here, and it floats."
+      },
+      {
+        "text": "The nail sinks because metal is strong.",
+        "mis": "MAT-03",
+        "pick": "Metal is strong, and strong things seem to sink.",
+        "why": "Strength is about holding loads without breaking. It doesn't decide whether something floats."
+      }
+    ]
+  },
+  {
+    "id": "P3-materials.u3",
+    "title": "A bathroom window",
+    "kind": "diag",
+    "pool": "page",
+    "lo": [
+      "P3.MAT.C1"
+    ],
+    "stem": "<p>A bathroom window must let light in, but people outside must not be able to see in clearly.</p><p class='q-ask'>Which material is most suitable?</p>",
+    "key": "Frosted glass lets some light through: the room is bright, but people cannot see in clearly.",
+    "options": [
+      {
+        "text": "Clear glass",
+        "mis": "MAT-11",
+        "pick": "Windows are usually made of clear glass.",
+        "why": "Clear glass lets most light through, so people could see in clearly."
+      },
+      {
+        "text": "Frosted glass",
+        "correct": true,
+        "pick": "The window needs some light, but not a clear view.",
+        "why": "Frosted glass lets some light through. The room is bright, but people can't see in clearly."
+      },
+      {
+        "text": "Wood",
+        "mis": "MAT-11",
+        "pick": "Wood would stop people seeing in.",
+        "why": "Wood lets no light through, so the bathroom would be dark."
+      },
+      {
+        "text": "Metal",
+        "mis": "MAT-11",
+        "pick": "Metal is strong and blocks the view.",
+        "why": "Metal lets no light through, so the bathroom would be dark."
+      }
+    ]
+  },
+  {
+    "id": "P3-materials.u4",
+    "title": "The torch test",
+    "kind": "diag",
+    "pool": "page",
+    "lo": [
+      "P3.MAT.P1"
+    ],
+    "stem": "<p>Siti shone a torch through sheets of four materials, W, X, Y and Z, onto a screen. The table shows how bright the screen was behind each sheet.</p><p class='q-ask'>Which two materials could be wood and metal?</p>",
+    "figure": "<div class='scroll'><table class='data'><thead><tr><th scope='col'>Material</th><th scope='col'>Screen behind the sheet</th></tr></thead><tbody><tr><th scope='row'>W</th><td>bright</td></tr><tr><th scope='row'>X</th><td>dark</td></tr><tr><th scope='row'>Y</th><td>dim</td></tr><tr><th scope='row'>Z</th><td>dark</td></tr></tbody></table></div>",
+    "key": "Wood and metal let no light through, so the screen behind them is dark.",
+    "options": [
+      {
+        "text": "W and Y",
+        "mis": "MAT-11",
+        "pick": "They are the first and third in the table.",
+        "why": "Light reached the screen behind W and Y. Wood and metal let no light through."
+      },
+      {
+        "text": "W and X",
+        "mis": "MAT-11",
+        "pick": "Picked one bright and one dark.",
+        "why": "W let most light through. Wood and metal both let none through."
+      },
+      {
+        "text": "X and Z",
+        "correct": true,
+        "pick": "Which materials let no light reach the screen?",
+        "why": "Wood and metal let no light through, so the screen behind them is dark."
+      },
+      {
+        "text": "Y and Z",
+        "mis": "MAT-11",
+        "pick": "Dim seems close enough to dark.",
+        "why": "A dim screen means some light got through Y. Wood and metal let none through."
+      }
+    ]
+  },
+  {
+    "id": "P3-materials.u5",
+    "title": "A strong shelf",
+    "kind": "diag",
+    "pool": "page",
+    "lo": [
+      "P3.MAT.P1"
+    ],
+    "stem": "<p>Three strips, P, Q and R, were tested. The results are shown.</p><p class='q-ask'>Which strip is most suitable for a shelf that holds heavy books?</p>",
+    "figure": "<div class='scroll'><table class='data'><thead><tr><th scope='col'>Strip</th><th scope='col'>Weights held before breaking</th><th scope='col'>Bent without breaking?</th></tr></thead><tbody><tr><th scope='row'>P</th><td>1</td><td>yes</td></tr><tr><th scope='row'>Q</th><td>8</td><td>no</td></tr><tr><th scope='row'>R</th><td>3</td><td>yes</td></tr></tbody></table></div>",
+    "key": "A shelf needs strength: the ability to hold a heavy load without breaking.",
+    "options": [
+      {
+        "text": "P, because it bends without breaking",
+        "mis": "MAT-02",
+        "pick": "Bending without breaking sounds like a good thing.",
+        "why": "A shelf doesn't need to bend. It needs to hold a heavy load: P is the weakest."
+      },
+      {
+        "text": "Q",
+        "correct": true,
+        "pick": "What must a shelf do? Which strip held the most weights?",
+        "why": "Q held the most weights without breaking, so it is the strongest."
+      },
+      {
+        "text": "R, because it is strong and flexible",
+        "mis": "MAT-02",
+        "pick": "Having two good properties seems better than one.",
+        "why": "The shelf needs strength only. R held fewer weights than Q."
+      },
+      {
+        "text": "None of them, because a strong material must also bend",
+        "mis": "MAT-03",
+        "pick": "Strong and flexible seem to go together.",
+        "why": "They are different properties. Q is strong but not flexible, and that is fine for a shelf."
+      }
+    ]
+  },
+  {
+    "id": "P3-materials.u6",
+    "title": "Bending three strips",
+    "kind": "diag",
+    "pool": "page",
+    "lo": [
+      "P3.MAT.C1"
+    ],
+    "stem": "<p>Mei bent a rubber strip, a fabric strip and a ceramic tile. Only one broke.</p><p class='q-ask'>Which one broke, and why?</p>",
+    "key": "Ceramic is not flexible: it breaks when bent. Rubber and fabric are flexible.",
+    "options": [
+      {
+        "text": "The rubber strip, because rubber is waterproof",
+        "mis": "MAT-13",
+        "pick": "Rubber feels firm.",
+        "why": "Rubber is flexible: it bends without breaking."
+      },
+      {
+        "text": "The fabric strip, because fabric is absorbent",
+        "mis": "MAT-13",
+        "pick": "Fabric is soft and seems weak.",
+        "why": "Fabric is flexible: it bends without breaking."
+      },
+      {
+        "text": "The ceramic tile, because ceramic is not strong",
+        "mis": "MAT-01",
+        "pick": "It broke, so it seems weak.",
+        "why": "Breaking when bent is about flexibility, not strength. Ceramic is not flexible."
+      },
+      {
+        "text": "The ceramic tile, because ceramic is not flexible",
+        "correct": true,
+        "pick": "Which material breaks when it is bent?",
+        "why": "Ceramic is not flexible, so it breaks when bent."
+      }
+    ]
+  },
+  {
+    "id": "P3-materials.u7",
+    "title": "The water-drop test",
+    "kind": "diag",
+    "pool": "page",
+    "lo": [
+      "P3.MAT.P1"
+    ],
+    "stem": "<p>A drop of water was put on each of four materials, A, B, C and D. The table shows what happened.</p><p class='q-ask'>Which two materials could be used for the cover of an umbrella?</p>",
+    "figure": "<div class='scroll'><table class='data'><thead><tr><th scope='col'>Material</th><th scope='col'>What the drop of water did</th></tr></thead><tbody><tr><th scope='row'>A</th><td>soaked in</td></tr><tr><th scope='row'>B</th><td>stayed on top</td></tr><tr><th scope='row'>C</th><td>soaked in</td></tr><tr><th scope='row'>D</th><td>stayed on top</td></tr></tbody></table></div>",
+    "key": "A waterproof material does not absorb water: the drop stays on top.",
+    "options": [
+      {
+        "text": "B and D",
+        "correct": true,
+        "pick": "An umbrella cover must not let water soak in.",
+        "why": "The drops stayed on top of B and D, so they are waterproof."
+      },
+      {
+        "text": "A and C",
+        "mis": "MAT-09",
+        "pick": "The water disappeared into them, so they seem to stop it.",
+        "why": "The water soaked into A and C. They are absorbent, so the umbrella would let water through."
+      },
+      {
+        "text": "A and B",
+        "mis": "MAT-09",
+        "pick": "Picked the first two in the table.",
+        "why": "A is absorbent. Only B and D are waterproof."
+      },
+      {
+        "text": "All four, because water touched all of them",
+        "mis": "MAT-09",
+        "pick": "All the materials got water on them.",
+        "why": "The test shows which ones keep water out. Only B and D did."
+      }
+    ]
+  },
+  {
+    "id": "P3-materials.u8",
+    "title": "A towel",
+    "kind": "diag",
+    "pool": "page",
+    "lo": [
+      "P3.MAT.C1"
+    ],
+    "stem": "<p class='q-ask'>Why is a towel made of fabric?</p>",
+    "key": "Fabric is absorbent: it soaks up water.",
+    "options": [
+      {
+        "text": "Fabric is waterproof.",
+        "mis": "MAT-09",
+        "pick": "Towels are used with water.",
+        "why": "A waterproof towel couldn't dry you. Fabric is absorbent."
+      },
+      {
+        "text": "Fabric is strong.",
+        "mis": "MAT-02",
+        "pick": "Towels are pulled and rubbed.",
+        "why": "Drying you is the main job, and that needs a material that soaks up water."
+      },
+      {
+        "text": "Fabric is absorbent: it soaks up water.",
+        "correct": true,
+        "pick": "What does a towel have to do?",
+        "why": "A towel dries you by soaking up water, so it must be absorbent."
+      },
+      {
+        "text": "Fabric lets light through.",
+        "mis": "MAT-02",
+        "pick": "Some fabrics are thin.",
+        "why": "Letting light through has nothing to do with drying you."
+      }
+    ]
+  },
+  {
+    "id": "P3-materials.u9",
+    "title": "Which object?",
+    "kind": "diag",
+    "pool": "page",
+    "lo": [
+      "P3.MAT.C1"
+    ],
+    "stem": "<p class='q-ask'>Which object is made of a material that is waterproof and lets most light through?</p>",
+    "key": "Clear glass is waterproof and lets most light through.",
+    "options": [
+      {
+        "text": "A ceramic flower pot",
+        "mis": "MAT-13",
+        "pick": "Flower pots hold water.",
+        "why": "Ceramic lets no light through."
+      },
+      {
+        "text": "A cotton T-shirt",
+        "mis": "MAT-13",
+        "pick": "Thin cotton lets a little light through.",
+        "why": "Cotton fabric is absorbent, not waterproof."
+      },
+      {
+        "text": "A wooden ruler",
+        "mis": "MAT-13",
+        "pick": "Rulers are smooth.",
+        "why": "Wood lets no light through."
+      },
+      {
+        "text": "A clear glass jar",
+        "correct": true,
+        "pick": "Which material is both waterproof and lets most light through?",
+        "why": "Clear glass is waterproof and lets most light through."
+      }
+    ]
+  },
+  {
+    "id": "P3-materials.u10",
+    "title": "A fair torch test",
+    "kind": "diag",
+    "pool": "page",
+    "lo": [
+      "P3.MAT.P1"
+    ],
+    "stem": "<p>Siti wants to compare how much light passes through four materials, using a torch and a screen.</p><p class='q-ask'>What must she keep the same?</p>",
+    "key": "In a fair test, change only the material. Keep everything else the same.",
+    "options": [
+      {
+        "text": "The distances from the torch to the sheet and from the sheet to the screen, and the thickness of each sheet",
+        "correct": true,
+        "pick": "What could change the result apart from the material?",
+        "why": "Keep everything the same except the material, so any difference comes from the material."
+      },
+      {
+        "text": "The type of material in each sheet",
+        "mis": "MAT-05",
+        "pick": "Everything in a fair test seems to stay the same.",
+        "why": "The material is what she is testing, so it must change."
+      },
+      {
+        "text": "How bright the screen looks",
+        "mis": "MAT-05",
+        "pick": "It is part of the set-up.",
+        "why": "That is the result she observes, not something she keeps the same."
+      },
+      {
+        "text": "Nothing. She can use a different torch for each sheet.",
+        "mis": "MAT-05",
+        "pick": "Any torch gives light.",
+        "why": "A brighter torch would make a sheet look clearer. She must use the same torch."
+      }
+    ]
+  },
+  {
+    "id": "P3-materials.r1",
+    "title": "Some light",
+    "kind": "variant",
+    "pool": "recap",
+    "lo": [
+      "P3.MAT.P1"
+    ],
+    "stem": "<p class='q-ask'>Which material lets some light through, but not most?</p>",
+    "key": "Frosted glass lets some light through.",
+    "options": [
+      {
+        "text": "Clear glass",
+        "mis": "MAT-11",
+        "pick": "Glass lets light through.",
+        "why": "Clear glass lets most light through."
+      },
+      {
+        "text": "A wooden board",
+        "mis": "MAT-11",
+        "pick": "Thin wood seems to let a little light in.",
+        "why": "Wood lets no light through."
+      },
+      {
+        "text": "Frosted glass",
+        "correct": true,
+        "pick": "Which one makes things look blurry behind it?",
+        "why": "Frosted glass lets some light through."
+      },
+      {
+        "text": "Clear plastic food wrap",
+        "mis": "MAT-11",
+        "pick": "It is very thin.",
+        "why": "Clear food wrap lets most light through."
+      }
+    ]
+  },
+  {
+    "id": "P3-materials.r2",
+    "title": "A dark box",
+    "kind": "variant",
+    "pool": "recap",
+    "lo": [
+      "P3.MAT.C1",
+      "P3.MAT.P1"
+    ],
+    "stem": "<p>A box must keep out all light.</p><p class='q-ask'>Which material is most suitable?</p>",
+    "key": "Wood, metal and rubber let no light through.",
+    "options": [
+      {
+        "text": "Clear plastic",
+        "mis": "MAT-11",
+        "pick": "Plastic boxes are common.",
+        "why": "Clear plastic lets most light through."
+      },
+      {
+        "text": "Frosted glass",
+        "mis": "MAT-11",
+        "pick": "It blocks the view.",
+        "why": "Frosted glass still lets some light through."
+      },
+      {
+        "text": "Wood",
+        "correct": true,
+        "pick": "Which material lets no light through?",
+        "why": "Wood lets no light through, so the box stays dark."
+      },
+      {
+        "text": "Tracing paper",
+        "mis": "MAT-11",
+        "pick": "Paper seems to block light.",
+        "why": "Tracing paper lets some light through."
+      }
+    ]
+  },
+  {
+    "id": "P3-materials.r3",
+    "title": "A block and a paper clip",
+    "kind": "variant",
+    "pool": "recap",
+    "lo": [
+      "P3.MAT.P1"
+    ],
+    "stem": "<p>A big wooden block and a small metal paper clip were put into water. The block floated and the paper clip sank.</p><p class='q-ask'>What does this show?</p>",
+    "key": "Whether an object floats depends on what it is made of, not on its size.",
+    "options": [
+      {
+        "text": "Whether an object floats depends on what it is made of, not on its size.",
+        "correct": true,
+        "pick": "The bigger object floated. What does that tell you?",
+        "why": "The big wooden block floated and the tiny metal clip sank, so size didn't decide it."
+      },
+      {
+        "text": "Big objects float and small objects sink.",
+        "mis": "MAT-12",
+        "pick": "That is what happened here.",
+        "why": "A small cork floats, and a big rock sinks. The material decides."
+      },
+      {
+        "text": "Small objects always sink.",
+        "mis": "MAT-12",
+        "pick": "The paper clip was small and sank.",
+        "why": "A small cork floats. Size doesn't decide."
+      },
+      {
+        "text": "The paper clip sank because it was heavier than the block.",
+        "mis": "MAT-12",
+        "pick": "Things that sink seem heavy.",
+        "why": "The block is much heavier than the clip, and it floated."
+      }
+    ]
+  },
+  {
+    "id": "P3-materials.r4",
+    "title": "A fishing float",
+    "kind": "variant",
+    "pool": "recap",
+    "lo": [
+      "P3.MAT.C1"
+    ],
+    "stem": "<p>A float for a fishing line must stay on the surface of the water.</p><p class='q-ask'>Which material is most suitable?</p>",
+    "key": "Cork floats. Glass, clay and metal sink, however small the piece.",
+    "options": [
+      {
+        "text": "A small glass bead",
+        "mis": "MAT-12",
+        "pick": "It is tiny, so it seems it would float.",
+        "why": "Glass sinks, however small it is."
+      },
+      {
+        "text": "Cork",
+        "correct": true,
+        "pick": "Which material floats?",
+        "why": "Cork floats, so it stays on the surface."
+      },
+      {
+        "text": "Clay",
+        "mis": "MAT-13",
+        "pick": "Clay can be shaped easily.",
+        "why": "Clay sinks."
+      },
+      {
+        "text": "A large metal nut",
+        "mis": "MAT-13",
+        "pick": "It is big enough to see on the water.",
+        "why": "Metal sinks."
+      }
+    ]
+  },
+  {
+    "id": "P3-materials.r5",
+    "title": "Which one sinks?",
+    "kind": "variant",
+    "pool": "recap",
+    "lo": [
+      "P3.MAT.C1",
+      "P3.MAT.P1"
+    ],
+    "stem": "<p class='q-ask'>Which of these sinks in water?</p>",
+    "key": "Cork, Styrofoam and most wood float. Metal, glass, clay and rock sink.",
+    "options": [
+      {
+        "text": "A big Styrofoam box",
+        "mis": "MAT-12",
+        "pick": "It is big.",
+        "why": "Styrofoam floats, even in a big box."
+      },
+      {
+        "text": "A large wooden plank",
+        "mis": "MAT-12",
+        "pick": "It is long and heavy.",
+        "why": "Most wood floats."
+      },
+      {
+        "text": "A cork",
+        "mis": "MAT-13",
+        "pick": "Corks go in bottles of liquid.",
+        "why": "Cork floats."
+      },
+      {
+        "text": "A small glass marble",
+        "correct": true,
+        "pick": "Which material sinks?",
+        "why": "Glass sinks, even a small marble."
+      }
+    ]
+  },
+  {
+    "id": "P3-materials.r6",
+    "title": "Flexible and waterproof",
+    "kind": "variant",
+    "pool": "recap",
+    "lo": [
+      "P3.MAT.C1"
+    ],
+    "stem": "<p class='q-ask'>Which material is both flexible and waterproof?</p>",
+    "key": "Rubber is flexible and waterproof.",
+    "options": [
+      {
+        "text": "Rubber",
+        "correct": true,
+        "pick": "Which material bends without breaking and keeps water out?",
+        "why": "Rubber is flexible and waterproof."
+      },
+      {
+        "text": "Ceramic",
+        "mis": "MAT-13",
+        "pick": "Ceramic cups hold water.",
+        "why": "Ceramic is not flexible. It breaks when bent."
+      },
+      {
+        "text": "Cotton fabric",
+        "mis": "MAT-09",
+        "pick": "Fabric is flexible.",
+        "why": "Cotton fabric is absorbent, not waterproof."
+      },
+      {
+        "text": "Glass",
+        "mis": "MAT-13",
+        "pick": "Glass keeps water in a jar.",
+        "why": "Glass is waterproof but not flexible."
+      }
+    ]
+  },
+  {
+    "id": "P3-materials.r7",
+    "title": "About glass",
+    "kind": "variant",
+    "pool": "recap",
+    "lo": [
+      "P3.MAT.C1"
+    ],
+    "stem": "<p class='q-ask'>Which statement about clear glass is correct?</p>",
+    "key": "Clear glass lets most light through and is waterproof. It is not flexible, and it sinks.",
+    "options": [
+      {
+        "text": "It is flexible.",
+        "mis": "MAT-13",
+        "pick": "Thin glass seems bendy.",
+        "why": "Glass is not flexible. It breaks when bent."
+      },
+      {
+        "text": "It lets most light through and is waterproof.",
+        "correct": true,
+        "pick": "Think of a window on a rainy day.",
+        "why": "Clear glass lets most light through and does not absorb water."
+      },
+      {
+        "text": "It absorbs water.",
+        "mis": "MAT-09",
+        "pick": "Glass gets wet in the rain.",
+        "why": "Water stays on the surface of glass. Glass is waterproof."
+      },
+      {
+        "text": "It floats.",
+        "mis": "MAT-13",
+        "pick": "Glass bottles bob on water.",
+        "why": "Glass sinks. A bottle floats only because of the air inside."
+      }
+    ]
+  },
+  {
+    "id": "P3-materials.r8",
+    "title": "A bench seat",
+    "kind": "variant",
+    "pool": "recap",
+    "lo": [
+      "P3.MAT.C1"
+    ],
+    "stem": "<p class='q-ask'>Why is the seat of a bench often made of wood?</p>",
+    "key": "Wood is strong, so it can hold people up without breaking.",
+    "options": [
+      {
+        "text": "Wood lets light through.",
+        "mis": "MAT-13",
+        "pick": "Any property of wood seems to do.",
+        "why": "Wood lets no light through, and a seat doesn't need to."
+      },
+      {
+        "text": "Wood is flexible.",
+        "mis": "MAT-02",
+        "pick": "A seat should feel comfortable.",
+        "why": "The seat must hold people up without breaking. That needs strength."
+      },
+      {
+        "text": "Wood absorbs water.",
+        "mis": "MAT-02",
+        "pick": "Benches are outdoors in the rain.",
+        "why": "Absorbing water doesn't help a seat. Holding a load does."
+      },
+      {
+        "text": "Wood is strong.",
+        "correct": true,
+        "pick": "What must a seat do?",
+        "why": "Wood is strong, so it can hold people's weight without breaking."
+      }
+    ]
+  },
+  {
+    "id": "P3-materials.r9",
+    "title": "A cracked flower pot",
+    "kind": "variant",
+    "pool": "recap",
+    "lo": [
+      "P3.MAT.C1"
+    ],
+    "stem": "<p>A clay flower pot cracks when someone tries to bend it.</p><p class='q-ask'>Which property of ceramic explains this?</p>",
+    "key": "Ceramic is not flexible: it breaks when bent.",
+    "options": [
+      {
+        "text": "It is not flexible.",
+        "correct": true,
+        "pick": "Bending without breaking is which property?",
+        "why": "Ceramic is not flexible, so it breaks when bent."
+      },
+      {
+        "text": "It is not strong.",
+        "mis": "MAT-01",
+        "pick": "It broke, so it seems weak.",
+        "why": "Breaking when bent is about flexibility. Strength is about holding loads."
+      },
+      {
+        "text": "It absorbs water.",
+        "mis": "MAT-09",
+        "pick": "Flower pots get watered.",
+        "why": "Absorbing water doesn't explain why it cracked when bent."
+      },
+      {
+        "text": "It lets no light through.",
+        "mis": "MAT-11",
+        "pick": "That is true of ceramic.",
+        "why": "It is true, but it has nothing to do with bending."
+      }
+    ]
+  },
+  {
+    "id": "P3-materials.r10",
+    "title": "Two drops of water",
+    "kind": "variant",
+    "pool": "recap",
+    "lo": [
+      "P3.MAT.C1",
+      "P3.MAT.P1"
+    ],
+    "stem": "<p>A drop of water is put on a cotton T-shirt and another on a plastic bag.</p><p class='q-ask'>What happens?</p>",
+    "key": "Cotton is absorbent; plastic is waterproof.",
+    "options": [
+      {
+        "text": "It stays on top of the cotton and soaks into the plastic.",
+        "mis": "MAT-09",
+        "pick": "Mixed up which one is waterproof.",
+        "why": "Cotton is absorbent and plastic is waterproof, so it is the other way round."
+      },
+      {
+        "text": "It soaks into both.",
+        "mis": "MAT-13",
+        "pick": "Water soaks into most things.",
+        "why": "Plastic is waterproof, so the drop stays on top."
+      },
+      {
+        "text": "It soaks into the cotton and stays on top of the plastic.",
+        "correct": true,
+        "pick": "Which material is absorbent, and which is waterproof?",
+        "why": "Cotton is absorbent, so it soaks the water up. Plastic is waterproof, so the drop stays on top."
+      },
+      {
+        "text": "It stays on top of both.",
+        "mis": "MAT-13",
+        "pick": "Both are smooth enough.",
+        "why": "Cotton is absorbent, so the drop soaks in."
+      }
+    ]
+  },
+  {
+    "id": "P3-materials.r11",
+    "title": "A fair floating test",
+    "kind": "variant",
+    "pool": "recap",
+    "lo": [
+      "P3.MAT.P1"
+    ],
+    "stem": "<p>Ravi wants to find out which of four materials float.</p><p class='q-ask'>What must he keep the same?</p>",
+    "key": "In a fair test, change only the material. Keep everything else the same.",
+    "options": [
+      {
+        "text": "The type of material",
+        "mis": "MAT-05",
+        "pick": "Everything in a fair test seems to stay the same.",
+        "why": "The material is what he is testing, so it must change."
+      },
+      {
+        "text": "The size and shape of each block, and the water he uses",
+        "correct": true,
+        "pick": "What could change the result apart from the material?",
+        "why": "Keep everything the same except the material, so the result depends only on the material."
+      },
+      {
+        "text": "Whether each block floats",
+        "mis": "MAT-05",
+        "pick": "It is part of the test.",
+        "why": "That is the result he observes, not something he keeps the same."
+      },
+      {
+        "text": "The colour of each block, and nothing else",
+        "mis": "MAT-05",
+        "pick": "Colour is easy to see.",
+        "why": "Colour doesn't matter. Size, shape and the water do."
+      }
+    ]
+  },
+  {
+    "id": "P3-materials.r12",
+    "title": "What strength means",
+    "kind": "variant",
+    "pool": "recap",
+    "lo": [
+      "P3.MAT.P1"
+    ],
+    "stem": "<p class='q-ask'>Which statement about strength is correct?</p>",
+    "key": "Strength is the ability to take a load without breaking. Flexibility is the ability to bend without breaking.",
+    "options": [
+      {
+        "text": "A strong material can bend without breaking.",
+        "mis": "MAT-01",
+        "pick": "Strong things seem tough in every way.",
+        "why": "That describes flexibility."
+      },
+      {
+        "text": "A strong material must also be waterproof.",
+        "mis": "MAT-03",
+        "pick": "Good properties seem to come together.",
+        "why": "Strength and waterproofness are different properties. Wood is strong but not waterproof."
+      },
+      {
+        "text": "A material that bends easily must be strong.",
+        "mis": "MAT-03",
+        "pick": "Bending without breaking sounds strong.",
+        "why": "Bending without breaking is flexibility. A flexible material can be weak."
+      },
+      {
+        "text": "A strong material can hold a heavy load without breaking.",
+        "correct": true,
+        "pick": "Recall what \"strength\" means.",
+        "why": "Strength is the ability to take a load without breaking."
+      }
+    ]
+  }
+]

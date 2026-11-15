@@ -1,0 +1,631 @@
+[
+  {
+    "id": "P4-matter-air-occupies-space.q1",
+    "title": "Hui Min's balloon",
+    "kind": "diag",
+    "pool": "page",
+    "lo": [
+      "P4.MTR.C1"
+    ],
+    "stem": "<p>Hui Min fitted a balloon over the mouth of an empty plastic bottle, with the balloon hanging inside. When she blew into the balloon, it inflated only a little.</p><p class='q-ask'>Which is the best explanation?</p>",
+    "key": "An \"empty\" bottle is full of air. Air takes up space, and with no way out it is squashed and pushes back.",
+    "options": [
+      {
+        "text": "The bottle is empty, so the balloon should fill it. Hui Min did not blow hard enough.",
+        "mis": "MTR-01",
+        "pick": "The bottle looks empty, so the only thing that could stop the balloon seems to be her blowing.",
+        "why": "The bottle is not empty. It is full of air, and that air takes up the space the balloon needs."
+      },
+      {
+        "text": "The bottle already contains air. The air takes up space, and as the balloon grows it squashes that air, which pushes back on the balloon.",
+        "correct": true,
+        "pick": "Ask what is inside the \"empty\" bottle before Hui Min blows.",
+        "why": "The bottle is full of air, which is matter and takes up space. With the balloon sealing the mouth, that air cannot leave, so it is squashed and pushes back."
+      },
+      {
+        "text": "The balloon is too stiff to stretch inside a bottle.",
+        "mis": "MTR-05",
+        "pick": "Balloons can be hard to blow up, so stiffness seems to be the problem.",
+        "why": "The same balloon inflates easily outside the bottle, or inside a bottle with a hole in it. What stops it is the bottle's air, which cannot get out."
+      },
+      {
+        "text": "The air in the bottle is squashed into no space at all, so something else must be stopping the balloon.",
+        "mis": "MTR-02",
+        "pick": "Air is easy to squash, so it seems it could be squashed out of the way completely.",
+        "why": "Air can be squashed into less space, but never into no space. The more it is squashed, the harder it pushes back."
+      }
+    ]
+  },
+  {
+    "id": "P4-matter-air-occupies-space.q2",
+    "title": "A hole in the base",
+    "kind": "diag",
+    "pool": "page",
+    "lo": [
+      "P4.MTR.C1"
+    ],
+    "stem": "<p>Hui Min made a hole in the base of the bottle and blew into the balloon again.</p><p class='q-ask'>What happened, and why?</p>",
+    "key": "Give the trapped air a way out, and it leaves to make room.",
+    "options": [
+      {
+        "text": "The balloon inflated the same amount, because the size of the bottle did not change.",
+        "mis": "MTR-01",
+        "pick": "The bottle is the same size, so the space for the balloon seems the same.",
+        "why": "The size of the bottle is not what matters. What changed is that the air inside can now leave, so it stops taking up the space the balloon needs."
+      },
+      {
+        "text": "Nothing changed, because the bottle was empty before and is still empty.",
+        "mis": "MTR-01",
+        "pick": "A hole in an empty bottle does not seem to change anything.",
+        "why": "The bottle was never empty: it was full of air. The hole lets that air out, so the balloon inflates much more."
+      },
+      {
+        "text": "The balloon inflated more, because air has no mass, so the hole made it disappear.",
+        "mis": "MTR-03",
+        "pick": "The bottle's air seems to vanish when there is a hole.",
+        "why": "Air does not disappear. It is matter with mass, and it moves out through the hole into the room."
+      },
+      {
+        "text": "The balloon inflated much more, because the bottle's air could leave through the hole and make room for it.",
+        "correct": true,
+        "pick": "Think about where the bottle's air can go now.",
+        "why": "As the balloon grows, it pushes the bottle's air out through the hole. The air no longer gets squashed, so it does not push back much."
+      }
+    ]
+  },
+  {
+    "id": "P4-matter-air-occupies-space.q3",
+    "title": "What is matter?",
+    "kind": "diag",
+    "pool": "page",
+    "lo": [
+      "P4.MTR.C1",
+      "P4.MTR.C2"
+    ],
+    "stem": "<p>Matter is anything that has mass and occupies space.</p><p class='q-ask'>Which of these are all matter?</p>",
+    "key": "Solids, liquids and gases are all matter. Light and heat are not: they have no mass and take up no space.",
+    "options": [
+      {
+        "text": "Air, water and sand",
+        "correct": true,
+        "pick": "Check each one: does it have mass, and does it take up space?",
+        "why": "Sand is a solid, water is a liquid and air is a gas. All three have mass and take up space, so all are matter."
+      },
+      {
+        "text": "Water and sand only. Air is not matter because you cannot see it.",
+        "mis": "MTR-01",
+        "pick": "You cannot see or hold air, so it does not seem to count.",
+        "why": "Being invisible does not matter. Air has mass and takes up space, so it is matter."
+      },
+      {
+        "text": "Sand only. Water and air have no fixed shape.",
+        "mis": "MTR-04",
+        "pick": "Only sand keeps its own shape, so only sand seems solid enough to be matter.",
+        "why": "Not having a fixed shape does not stop something being matter. Liquids and gases take the shape of their container, but they still have mass and take up space."
+      },
+      {
+        "text": "Light, air and water",
+        "mis": "MTR-06",
+        "pick": "Light is everywhere around us, like air.",
+        "why": "Light is a form of energy. It has no mass and takes up no space, so it is not matter."
+      }
+    ]
+  },
+  {
+    "id": "P4-matter-air-occupies-space.q4",
+    "title": "Pumping up a football",
+    "kind": "diag",
+    "pool": "page",
+    "lo": [
+      "P4.MTR.C1"
+    ],
+    "stem": "<p>Ali measured the mass of a flat football. He then pumped air into it until it was hard, and measured its mass again.</p><p class='q-ask'>What did he find?</p>",
+    "key": "Air has mass. Adding air to a ball adds a little mass.",
+    "options": [
+      {
+        "text": "The mass stayed the same, because air has no mass.",
+        "mis": "MTR-03",
+        "pick": "Air feels like nothing when you hold it.",
+        "why": "Air is very light, but it is matter and has mass. The extra air adds to the ball's mass."
+      },
+      {
+        "text": "The mass decreased, because air makes things lighter.",
+        "mis": "MTR-03",
+        "pick": "Balloons full of air float about, so air seems to make things lighter.",
+        "why": "Adding matter never makes the total mass smaller. The air adds a little mass."
+      },
+      {
+        "text": "The mass increased a little, because air has mass.",
+        "correct": true,
+        "pick": "Air is matter. What does every kind of matter have?",
+        "why": "The air pumped in has mass, so the ball's mass goes up a little."
+      },
+      {
+        "text": "The mass stayed the same, because the air only takes up space inside the ball.",
+        "mis": "MTR-03",
+        "pick": "The air fills the ball out, so it seems to add size, not mass.",
+        "why": "Matter takes up space and has mass. The air does both, so the mass goes up a little."
+      }
+    ]
+  },
+  {
+    "id": "P4-matter-air-occupies-space.q5",
+    "title": "Describing a gas",
+    "kind": "diag",
+    "pool": "page",
+    "lo": [
+      "P4.MTR.C2"
+    ],
+    "stem": "<p>The table describes four kinds of matter by their shape and volume.</p><p class='q-ask'>Which row describes a gas?</p>",
+    "key": "A gas has no definite shape and no definite volume. It spreads out to fill its whole container.",
+    "layout": "table",
+    "cols": [
+      "Definite shape?",
+      "Definite volume?"
+    ],
+    "options": [
+      {
+        "text": [
+          "No",
+          "Yes"
+        ],
+        "mis": "MTR-04",
+        "pick": "Gases have no shape of their own, and their amount seems fixed.",
+        "why": "That describes a liquid. A liquid keeps its volume, but a gas spreads out to fill its container and can be squashed into less space."
+      },
+      {
+        "text": [
+          "No",
+          "No"
+        ],
+        "correct": true,
+        "pick": "Think of air in a syringe: it fills the whole space, and you can squash it smaller.",
+        "why": "A gas takes the shape of its container and fills it completely, and it can be compressed, so it has no definite shape or volume."
+      },
+      {
+        "text": [
+          "Yes",
+          "Yes"
+        ],
+        "mis": "MTR-04",
+        "pick": "Every material seems to have some shape and some size.",
+        "why": "That describes a solid. A gas has neither a definite shape nor a definite volume."
+      },
+      {
+        "text": [
+          "Yes",
+          "No"
+        ],
+        "mis": "MTR-04",
+        "pick": "It is the only row left that is different from a solid and a liquid.",
+        "why": "No kind of matter keeps its shape but not its volume. A gas has no definite shape either."
+      }
+    ]
+  },
+  {
+    "id": "P4-matter-air-occupies-space.q6",
+    "title": "A sealed syringe of air",
+    "kind": "diag",
+    "pool": "page",
+    "lo": [
+      "P4.MTR.C2"
+    ],
+    "stem": "<p>A syringe is filled with air and its nozzle is sealed. The plunger is then pushed in.</p><p class='q-ask'>Which statement is correct?</p>",
+    "key": "A gas can be compressed into less space, but it never takes up no space.",
+    "options": [
+      {
+        "text": "The plunger cannot move at all, because air has a definite volume.",
+        "mis": "MTR-04",
+        "pick": "The nozzle is sealed, so nothing seems able to move.",
+        "why": "That would be true for water, which has a definite volume. Air is a gas, so it can be squashed into less space."
+      },
+      {
+        "text": "The plunger goes all the way in, because the air disappears.",
+        "mis": "MTR-02",
+        "pick": "Air is easy to squash, so it seems it could be squashed away completely.",
+        "why": "The air cannot disappear or leave the sealed syringe. It is squashed into less space and pushes back harder and harder."
+      },
+      {
+        "text": "The plunger goes all the way in, because air takes up no space.",
+        "mis": "MTR-01",
+        "pick": "Air does not feel like it takes up any room.",
+        "why": "Air is matter, so it takes up space. The trapped air stops the plunger from reaching the end."
+      },
+      {
+        "text": "The plunger can be pushed in part of the way, because the air is squashed into less space.",
+        "correct": true,
+        "pick": "Think about whether a gas has a definite volume.",
+        "why": "Air has no definite volume, so it can be compressed into less space. It still takes up space and pushes back, so the plunger cannot go all the way in."
+      }
+    ]
+  },
+  {
+    "id": "P4-matter-air-occupies-space.v1",
+    "title": "A cup pushed into water",
+    "kind": "variant",
+    "pool": "recap",
+    "lo": [
+      "P4.MTR.C1"
+    ],
+    "stem": "<p>A dry paper towel is stuffed into the bottom of a cup. The cup is turned upside down and pushed straight down into a basin of water. When it is lifted out, the paper towel is still dry.</p><p class='q-ask'>Why did the paper towel stay dry?</p>",
+    "key": "The cup is full of air. The trapped air takes up space, so the water cannot fill the cup.",
+    "options": [
+      {
+        "text": "The cup is empty, so the water has nothing to fill.",
+        "mis": "MTR-01",
+        "pick": "There seems to be nothing in the cup except the towel.",
+        "why": "The cup is not empty: it is full of air, and that air takes up the space the water would need."
+      },
+      {
+        "text": "The air in the cup is squashed into no space, so the water cannot reach the towel.",
+        "mis": "MTR-02",
+        "pick": "The air gets squashed, so it seems to be pressed away to nothing.",
+        "why": "The air is squashed a little, but it still takes up space. That is exactly what keeps the water away."
+      },
+      {
+        "text": "The cup is full of air, which takes up space and keeps the water out.",
+        "correct": true,
+        "pick": "Ask what is inside the \"empty\" part of the cup.",
+        "why": "The air trapped in the upside-down cup cannot escape, and it takes up space, so water cannot rise up to the towel."
+      },
+      {
+        "text": "The paper towel is waterproof.",
+        "mis": "MTR-05",
+        "pick": "The towel stayed dry, so it seems to be the towel's doing.",
+        "why": "Paper towels absorb water. The towel stayed dry because the trapped air kept the water from reaching it."
+      }
+    ]
+  },
+  {
+    "id": "P4-matter-air-occupies-space.v2",
+    "title": "A funnel sealed into a bottle",
+    "kind": "variant",
+    "pool": "recap",
+    "lo": [
+      "P4.MTR.C1"
+    ],
+    "stem": "<p>A funnel is fixed tightly into the neck of an empty bottle with modelling clay, so there is no gap. Water poured into the funnel stays in the funnel.</p><p class='q-ask'>Why does the water stay in the funnel?</p>",
+    "key": "Air trapped in a sealed bottle takes up space. With no way out, it stops water from coming in.",
+    "options": [
+      {
+        "text": "The bottle is full of air that cannot escape, so there is no space for the water.",
+        "correct": true,
+        "pick": "Ask what is already in the bottle, and whether it can get out.",
+        "why": "The bottle is full of air. The clay seals it in, so the air cannot leave to make room for the water."
+      },
+      {
+        "text": "The funnel must be blocked, because the empty bottle should fill.",
+        "mis": "MTR-05",
+        "pick": "If the water does not flow, something seems to be stuck in the funnel.",
+        "why": "The funnel is clear. The trapped air in the bottle is what stops the water."
+      },
+      {
+        "text": "The clay makes the water stick in the funnel.",
+        "mis": "MTR-05",
+        "pick": "The clay is the only new thing added, so it seems to be the cause.",
+        "why": "The clay only seals the gap. It is the air sealed inside the bottle that keeps the water out."
+      },
+      {
+        "text": "There is nothing in the bottle, so the water has nothing to push against.",
+        "mis": "MTR-01",
+        "pick": "An empty bottle seems to have nothing in it at all.",
+        "why": "The bottle is full of air, and the air takes up space. That is what the water is stopped by."
+      }
+    ]
+  },
+  {
+    "id": "P4-matter-air-occupies-space.v3",
+    "title": "Two balloons on a balance",
+    "kind": "variant",
+    "pool": "recap",
+    "lo": [
+      "P4.MTR.C1"
+    ],
+    "stem": "<p>Two identical balloons, both blown up the same amount, hang at the two ends of a balanced stick. One balloon is popped.</p><p class='q-ask'>What happens to the stick?</p>",
+    "key": "Air has mass. Losing the air makes that side lighter.",
+    "options": [
+      {
+        "text": "The stick stays balanced, because air has no mass.",
+        "mis": "MTR-03",
+        "pick": "Air feels weightless, so losing it seems to change nothing.",
+        "why": "Air is matter and has mass, so losing it does change the balance."
+      },
+      {
+        "text": "The side with the popped balloon goes down, because a full balloon is lighter.",
+        "mis": "MTR-03",
+        "pick": "Balloons full of air seem light and floaty.",
+        "why": "Adding air adds mass. The full balloon is the heavier one."
+      },
+      {
+        "text": "The stick stays balanced, because both balloons still have the same rubber.",
+        "mis": "MTR-03",
+        "pick": "The rubber is the same on both sides, so the mass seems the same.",
+        "why": "The rubber is the same, but only one balloon still has its air, and that air has mass."
+      },
+      {
+        "text": "The side with the full balloon goes down, because the air in it has mass.",
+        "correct": true,
+        "pick": "Popping one balloon lets its air out. Does that change the mass on that side?",
+        "why": "The air in the full balloon has mass. The popped side has lost its air, so the full side is now heavier and goes down."
+      }
+    ]
+  },
+  {
+    "id": "P4-matter-air-occupies-space.v4",
+    "title": "A basketball",
+    "kind": "variant",
+    "pool": "recap",
+    "lo": [
+      "P4.MTR.C1"
+    ],
+    "stem": "<p>A soft basketball with very little air in it has a mass of 560 g. More air is pumped in until the ball is hard.</p><p class='q-ask'>What could its mass be now?</p>",
+    "key": "Air has mass, so pumping in air adds a little mass.",
+    "options": [
+      {
+        "text": "560 g, because air has no mass",
+        "mis": "MTR-03",
+        "pick": "Air does not feel like it weighs anything.",
+        "why": "Air is matter, so it has mass. The ball's mass increases a little."
+      },
+      {
+        "text": "565 g, because the extra air has mass",
+        "correct": true,
+        "pick": "Air is matter, so it adds a little mass.",
+        "why": "The air pumped in has mass. It is light, so the mass goes up by only a little."
+      },
+      {
+        "text": "550 g, because air makes the ball lighter",
+        "mis": "MTR-03",
+        "pick": "A pumped-up ball bounces higher, so it seems lighter.",
+        "why": "Adding matter cannot make the mass smaller. The mass goes up."
+      },
+      {
+        "text": "It cannot be measured, because air is not matter.",
+        "mis": "MTR-01",
+        "pick": "You cannot see the air, so it seems not to count.",
+        "why": "Air is matter: it has mass and takes up space. The balance shows the extra mass."
+      }
+    ]
+  },
+  {
+    "id": "P4-matter-air-occupies-space.v5",
+    "title": "Which is not matter?",
+    "kind": "variant",
+    "pool": "recap",
+    "lo": [
+      "P4.MTR.C1"
+    ],
+    "stem": "<p class='q-ask'>Which of the following is not matter?</p>",
+    "key": "Matter has mass and takes up space. Light and heat do not, so they are not matter.",
+    "options": [
+      {
+        "text": "Air",
+        "mis": "MTR-01",
+        "pick": "You cannot see air, so it seems not to be matter.",
+        "why": "Air has mass and takes up space, so it is matter."
+      },
+      {
+        "text": "Steam",
+        "mis": "MTR-01",
+        "pick": "Steam is a gas, and gases seem too thin to count.",
+        "why": "Steam is water as a gas. Gases have mass and take up space, so steam is matter."
+      },
+      {
+        "text": "Light",
+        "correct": true,
+        "pick": "Check each one: does it have mass and take up space?",
+        "why": "Light is a form of energy. It has no mass and takes up no space."
+      },
+      {
+        "text": "Oxygen",
+        "mis": "MTR-01",
+        "pick": "Oxygen is invisible, like air.",
+        "why": "Oxygen is a gas. It has mass and takes up space, so it is matter."
+      }
+    ]
+  },
+  {
+    "id": "P4-matter-air-occupies-space.v6",
+    "title": "True about matter",
+    "kind": "variant",
+    "pool": "recap",
+    "lo": [
+      "P4.MTR.C1",
+      "P4.MTR.C2"
+    ],
+    "stem": "<p class='q-ask'>Which statement is correct?</p>",
+    "key": "Matter has mass and takes up space. Heat and light are energy, not matter. A liquid takes the shape of its container.",
+    "options": [
+      {
+        "text": "Heat is not matter, because it has no mass and takes up no space.",
+        "correct": true,
+        "pick": "Test the statement against the definition of matter.",
+        "why": "Heat is a form of energy. It has no mass and takes up no space, so it is not matter."
+      },
+      {
+        "text": "Heat is matter, because you can feel it.",
+        "mis": "MTR-06",
+        "pick": "Things you can feel seem to be real stuff.",
+        "why": "Being able to feel something does not make it matter. Heat has no mass and takes up no space."
+      },
+      {
+        "text": "Water vapour is not matter, because you cannot see it.",
+        "mis": "MTR-01",
+        "pick": "Invisible things do not seem to be matter.",
+        "why": "Water vapour is a gas. It has mass and takes up space, so it is matter."
+      },
+      {
+        "text": "A liquid has a definite shape, because it keeps the same shape in a cup.",
+        "mis": "MTR-04",
+        "pick": "Water in a cup always looks like the cup.",
+        "why": "It looks like the cup because it takes the cup's shape. Pour it into a bowl and its shape changes, so a liquid has no definite shape."
+      }
+    ]
+  },
+  {
+    "id": "P4-matter-air-occupies-space.v7",
+    "title": "Describing a liquid",
+    "kind": "variant",
+    "pool": "recap",
+    "lo": [
+      "P4.MTR.C2"
+    ],
+    "stem": "<p>The table describes four kinds of matter by their shape and volume.</p><p class='q-ask'>Which row describes a liquid?</p>",
+    "key": "A liquid has a definite volume but no definite shape: it takes the shape of its container.",
+    "layout": "table",
+    "cols": [
+      "Definite shape?",
+      "Definite volume?"
+    ],
+    "options": [
+      {
+        "text": [
+          "Yes",
+          "Yes"
+        ],
+        "mis": "MTR-04",
+        "pick": "Water in a glass seems to keep its shape.",
+        "why": "That describes a solid. Pour the water into a bowl and its shape changes."
+      },
+      {
+        "text": [
+          "No",
+          "No"
+        ],
+        "mis": "MTR-04",
+        "pick": "Liquids flow everywhere, so they seem to have no fixed anything.",
+        "why": "That describes a gas. A liquid keeps its volume; it cannot be squashed into less space."
+      },
+      {
+        "text": [
+          "Yes",
+          "No"
+        ],
+        "mis": "MTR-04",
+        "pick": "It is different from both the solid and the gas rows.",
+        "why": "No kind of matter keeps its shape but not its volume. A liquid has a definite volume."
+      },
+      {
+        "text": [
+          "No",
+          "Yes"
+        ],
+        "correct": true,
+        "pick": "Think of 100 mL of water poured from a glass into a bowl.",
+        "why": "It is still 100 mL (definite volume), but it takes the shape of the bowl (no definite shape)."
+      }
+    ]
+  },
+  {
+    "id": "P4-matter-air-occupies-space.v8",
+    "title": "What can be squashed?",
+    "kind": "variant",
+    "pool": "recap",
+    "lo": [
+      "P4.MTR.C2"
+    ],
+    "stem": "<p>Three sealed syringes contain a block of wood, water and air.</p><p class='q-ask'>In which syringe can the plunger be pushed in?</p>",
+    "key": "Only a gas can be compressed into less space. Solids and liquids have a definite volume.",
+    "options": [
+      {
+        "text": "The syringes of air and water",
+        "mis": "MTR-04",
+        "pick": "Water and air both flow, so both seem squashable.",
+        "why": "Water flows but has a definite volume, so it cannot be squashed into less space."
+      },
+      {
+        "text": "Only the syringe of air",
+        "correct": true,
+        "pick": "Which kind of matter has no definite volume?",
+        "why": "Air is a gas with no definite volume, so it can be squashed into less space. Wood and water have definite volumes."
+      },
+      {
+        "text": "All three syringes",
+        "mis": "MTR-04",
+        "pick": "Pushing hard enough seems to squash anything.",
+        "why": "Solids and liquids have a definite volume. Only the gas can be compressed."
+      },
+      {
+        "text": "None of them, because nothing can be squashed",
+        "mis": "MTR-04",
+        "pick": "The syringes are sealed, so nothing seems able to move.",
+        "why": "Air has no definite volume, so it can be compressed even when it is sealed in."
+      }
+    ]
+  },
+  {
+    "id": "P4-matter-air-occupies-space.v10",
+    "title": "Which has mass?",
+    "kind": "variant",
+    "pool": "recap",
+    "lo": [
+      "P4.MTR.C1"
+    ],
+    "stem": "<p class='q-ask'>Which of the following has mass and takes up space?</p>",
+    "key": "Matter has mass and takes up space, even when you cannot see it. Light, heat and sound are energy, not matter.",
+    "options": [
+      {
+        "text": "The steam from a kettle",
+        "correct": true,
+        "pick": "Look for the one that is made of stuff, even if it is a gas.",
+        "why": "Steam is water as a gas. It has mass and takes up space, so it is matter."
+      },
+      {
+        "text": "The light from a torch",
+        "mis": "MTR-06",
+        "pick": "Light fills a room, so it seems to take up space.",
+        "why": "Light is a form of energy. It has no mass and takes up no space."
+      },
+      {
+        "text": "The heat from a fire",
+        "mis": "MTR-06",
+        "pick": "You can feel heat, so it seems to be something real.",
+        "why": "Heat is a form of energy, not matter. It has no mass and takes up no space."
+      },
+      {
+        "text": "The sound of a bell",
+        "mis": "MTR-06",
+        "pick": "Sound travels through the air and fills a room.",
+        "why": "Sound is a form of energy, not matter. It has no mass."
+      }
+    ]
+  },
+  {
+    "id": "P4-matter-air-occupies-space.v9",
+    "title": "Pumping a bicycle tyre",
+    "kind": "variant",
+    "pool": "recap",
+    "lo": [
+      "P4.MTR.C1",
+      "P4.MTR.C2"
+    ],
+    "stem": "<p>A bicycle tyre is already full of air. More air is pumped into it.</p><p class='q-ask'>Which statement is correct?</p>",
+    "key": "Air takes up space and has mass. Pumping more in squashes it into less space, and it pushes harder.",
+    "options": [
+      {
+        "text": "The extra air takes up no space, so the tyre does not get any harder.",
+        "mis": "MTR-02",
+        "pick": "The tyre hardly changes size, so the extra air seems to take no room.",
+        "why": "The extra air does take up space. It squashes the air already there, which is why the tyre gets harder."
+      },
+      {
+        "text": "Air has no mass, so the tyre's mass does not change.",
+        "mis": "MTR-03",
+        "pick": "Air seems weightless.",
+        "why": "Air has mass. The pumped-up tyre has a slightly greater mass."
+      },
+      {
+        "text": "The air inside is squashed into less space and pushes harder on the tyre.",
+        "correct": true,
+        "pick": "The tyre cannot grow much, so think about what happens to the air inside.",
+        "why": "More air in the same space means the air is compressed. Compressed air pushes harder, so the tyre feels harder."
+      },
+      {
+        "text": "The tyre was empty until it was pumped up.",
+        "mis": "MTR-01",
+        "pick": "A flat tyre seems to have nothing in it.",
+        "why": "Even a soft tyre has air in it. Pumping adds more air to what is already there."
+      }
+    ]
+  }
+]

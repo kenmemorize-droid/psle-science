@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Compasses, magnets and the Earth — P3 Interaction of Forces</title>
+<style>
+/* ============================================================
+   PSLE Science — house style tokens (reference copy: assets/_theme.css)
+   ============================================================ */
+:root[data-theme="notebook"]{
+  --paper:#FBF7EF; --surface:#FFFDF7; --surface-2:#F3ECDD;
+  --ink:#1F2A37; --muted:#5F6B79; --line:#E0D6C3;
+  --primary:#0F766E; --on-primary:#FFFFFF; --primary-soft:#D8EDEA;
+  --accent:#F59E0B; --accent-soft:#FDF0D5;
+  --ok:#0F766E; --ok-soft:#D8EDEA; --no:#B4321F; --no-soft:#F8E0DB;
+  --npole:#B4321F; --spole:#1D4E89; --needle-s:#FFFDF7;
+  --font-display:Georgia,"Iowan Old Style","Times New Roman",serif;
+  --font-body:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  --font-label:var(--font-body);
+  --bw:2px; --radius:14px;
+}
+:root[data-theme="lab"]{
+  --paper:#F4F6FA; --surface:#FFFFFF; --surface-2:#EDF1F7;
+  --ink:#0F172A; --muted:#55627A; --line:#D7DEE8;
+  --primary:#2563EB; --on-primary:#FFFFFF; --primary-soft:#DBE6FE;
+  --accent:#B45309; --accent-soft:#FDF0D5;
+  --ok:#16A34A; --ok-soft:#DCFCE7; --no:#DC2626; --no-soft:#FEE2E2;
+  --npole:#DC2626; --spole:#2563EB; --needle-s:#FFFFFF;
+  --font-display:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  --font-body:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  --font-label:var(--font-body);
+  --bw:1px; --radius:10px;
+}
+:root[data-theme="mission"]{
+  --paper:#0B1220; --surface:#121C2E; --surface-2:#1A263B;
+  --ink:#E2E8F0; --muted:#94A3B8; --line:#24334B;
+  --primary:#22D3EE; --on-primary:#06202A; --primary-soft:#0E3744;
+  --accent:#F472B6; --accent-soft:#3B1D33;
+  --ok:#22D3EE; --ok-soft:#0E3744; --no:#F472B6; --no-soft:#3B1D33;
+  --npole:#F472B6; --spole:#22D3EE; --needle-s:#121C2E;
+  --font-display:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  --font-body:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  --font-label:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+  --bw:2px; --radius:12px;
+}
+
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0; background:var(--paper); color:var(--ink);
+  font-family:var(--font-body); font-size:17px; line-height:1.6;
+  padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+.wrap{max-width:900px; margin:0 auto; padding:16px 16px 64px}
+
+/* ---------- header block ---------- */
+.topbar{display:flex; flex-wrap:wrap; gap:8px; align-items:center; justify-content:space-between; margin-bottom:12px}
+.crumb{font-family:var(--font-label); font-size:14px; color:var(--muted); text-decoration:none; border-bottom:var(--bw) solid var(--line); padding:6px 2px; min-height:44px; display:inline-flex; align-items:center}
+.crumb:hover,.crumb:focus{color:var(--primary); border-color:var(--primary)}
+.themepick{display:flex; gap:6px; align-items:center}
+.themepick span{font-size:13px; color:var(--muted); font-family:var(--font-label)}
+.chip{min-height:44px; padding:6px 12px; border:var(--bw) solid var(--line); background:var(--surface); color:var(--ink); border-radius:999px; font:inherit; font-size:14px; cursor:pointer}
+.chip[aria-pressed="true"]{background:var(--primary); color:var(--on-primary); border-color:var(--primary)}
+
+header.page{background:var(--surface); border:var(--bw) solid var(--line); border-radius:var(--radius); padding:20px}
+.meta{font-family:var(--font-label); font-size:13px; letter-spacing:.02em; color:var(--muted); margin:0 0 8px}
+h1{font-family:var(--font-display); font-size:30px; line-height:1.2; margin:0 0 8px}
+.lo{margin:12px 0 0; padding:12px 14px; background:var(--surface-2); border-left:4px solid var(--primary); border-radius:6px; font-size:15px}
+.lo b{display:block; font-family:var(--font-label); font-size:13px; color:var(--muted); font-weight:600; margin-bottom:4px}
+.lo ul{margin:6px 0 0; padding-left:20px}
+
+/* ---------- cards ---------- */
+section.card{background:var(--surface); border:var(--bw) solid var(--line); border-radius:var(--radius); padding:20px; margin-top:20px}
+h2{font-family:var(--font-display); font-size:23px; margin:0 0 4px; line-height:1.25}
+h3{font-size:18px; margin:20px 0 6px}
+p{margin:10px 0}
+.lead{color:var(--muted); margin-top:0}
+.note{background:var(--accent-soft); border:var(--bw) solid var(--accent); border-radius:10px; padding:12px 14px; font-size:15px; margin:14px 0}
+.rule{background:var(--primary-soft); border-radius:10px; padding:12px 14px; margin:14px 0; font-size:16px}
+.rule b{font-family:var(--font-display)}
+
+/* ---------- buttons ---------- */
+button{font:inherit}
+.btn{min-height:44px; padding:10px 18px; border-radius:999px; border:var(--bw) solid var(--primary); background:var(--primary); color:var(--on-primary); cursor:pointer}
+.btn.ghost{background:var(--surface); color:var(--ink); border-color:var(--line)}
+.btn:disabled{opacity:.45; cursor:not-allowed}
+.btn:focus-visible,.chip:focus-visible,.opt:focus-visible{outline:3px solid var(--accent); outline-offset:2px}
+.controls{display:flex; flex-wrap:wrap; gap:10px; margin:14px 0 4px}
+
+/* ---------- figures ---------- */
+figure{margin:16px 0 8px; background:var(--surface-2); border-radius:10px; padding:8px}
+svg.stage{display:block; width:100%; height:auto; touch-action:none}
+figcaption{font-size:14px; color:var(--muted); padding:6px 4px 2px}
+.readout{display:flex; flex-wrap:wrap; gap:8px; margin-top:10px}
+.pill{font-family:var(--font-label); font-size:14px; padding:6px 12px; border-radius:999px; background:var(--surface-2); border:var(--bw) solid var(--line)}
+
+/* ---------- step-through ---------- */
+.stepbox{display:flex; gap:12px; align-items:flex-start; margin-top:12px; min-height:84px}
+.stepno{flex:0 0 auto; width:40px; height:40px; border-radius:999px; background:var(--primary); color:var(--on-primary); display:flex; align-items:center; justify-content:center; font-family:var(--font-label); font-weight:700}
+.steptext{flex:1 1 auto; font-size:16px}
+.steptext b{font-family:var(--font-display)}
+.hide{opacity:0; transition:opacity .35s ease}
+.show{opacity:1}
+@media (prefers-reduced-motion:reduce){.hide,.show{transition:none}}
+
+/* ---------- beyond syllabus ---------- */
+details.beyond{margin-top:20px; border:var(--bw) dashed var(--accent); border-radius:var(--radius); background:var(--accent-soft); padding:4px 16px}
+details.beyond summary{cursor:pointer; padding:14px 0; font-weight:600; min-height:44px; display:flex; align-items:center; gap:8px}
+details.beyond summary::marker{color:var(--accent)}
+.badge{font-family:var(--font-label); font-size:12px; padding:3px 8px; border-radius:999px; background:var(--accent); color:#1F2A37}
+
+/* ---------- questions ---------- */
+.qhead{display:flex; justify-content:space-between; gap:10px; align-items:baseline; font-family:var(--font-label); font-size:13px; color:var(--muted)}
+.q{border-top:var(--bw) solid var(--line); padding-top:16px; margin-top:20px}
+.q:first-of-type{border-top:0; padding-top:0}
+.qtext{font-size:17px; margin:6px 0 12px}
+.opt{display:block; width:100%; text-align:left; min-height:44px; padding:12px 14px; margin:8px 0; border:var(--bw) solid var(--line); background:var(--surface); color:var(--ink); border-radius:10px; cursor:pointer}
+.opt:hover:not(:disabled){border-color:var(--primary)}
+.opt:disabled{cursor:default}
+.opt .lab{font-family:var(--font-label); font-weight:700; margin-right:8px}
+.opt.correct{border-color:var(--ok); background:var(--ok-soft)}
+.opt.wrong{border-color:var(--no); background:var(--no-soft)}
+.why{display:none; font-size:15px; margin:4px 0 10px 8px; padding-left:12px; border-left:3px solid var(--line); color:var(--muted)}
+.why.on{display:block}
+.verdict{font-weight:600; margin:10px 0 0; display:flex; gap:8px; align-items:flex-start}
+.verdict .mark{font-family:var(--font-label)}
+.verdict.ok{color:var(--ok)} .verdict.no{color:var(--no)}
+.scorebar{display:flex; flex-wrap:wrap; gap:10px; align-items:center; margin-top:18px; padding-top:16px; border-top:var(--bw) solid var(--line)}
+
+footer.page{margin-top:28px; display:flex; flex-wrap:wrap; gap:10px; justify-content:space-between; align-items:center; font-size:14px; color:var(--muted)}
+.navlink{min-height:44px; display:inline-flex; align-items:center; padding:8px 14px; border:var(--bw) solid var(--line); border-radius:999px; background:var(--surface); color:var(--ink); text-decoration:none}
+.navlink[aria-disabled="true"]{opacity:.45}
+@media (max-width:520px){ h1{font-size:25px} body{font-size:16px} .wrap{padding:12px 12px 56px} section.card{padding:16px} }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="topbar">
+    <a class="crumb" href="../index.html">&#8592; Back to hub</a>
+    <div class="themepick">
+      <span>Look</span>
+      <button class="chip" data-set-theme="notebook" aria-pressed="false">Notebook</button>
+      <button class="chip" data-set-theme="lab" aria-pressed="false">Lab</button>
+      <button class="chip" data-set-theme="mission" aria-pressed="false">Mission</button>
+    </div>
+  </div>
+
+  <header class="page">
+    <p class="meta">Interactions &middot; Interaction of Forces (Magnets) &middot; P3 Standard &middot; revised for PSLE</p>
+    <h1>Why a compass needle swings &mdash; magnets, poles and the Earth</h1>
+    <p class="lead">A compass needle is just a tiny magnet that is free to turn. Everything it does follows two rules you already know.</p>
+    <div class="lo">
+      <b>Syllabus learning outcomes targeted</b>
+      <ul>
+        <li>Recognise that a magnet can exert a push or a pull.</li>
+        <li>Magnets have two poles. A freely suspended bar magnet comes to rest pointing in a North&ndash;South direction.</li>
+        <li>Unlike poles attract and like poles repel.</li>
+        <li>Magnets attract magnetic materials.</li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- ============ 1. THE TWO RULES ============ -->
+  <section class="card">
+    <h2>1. The two rules that decide everything</h2>
+    <div class="rule"><b>Rule 1.</b> A compass needle is a small magnet that can turn freely. The shaded (dark) end is its <b>N</b> pole.</div>
+    <div class="rule"><b>Rule 2.</b> Unlike poles attract, like poles repel. So the needle&rsquo;s N end is <b>pulled towards a S pole</b> and <b>pushed away from a N pole</b>.</div>
+    <p>With no magnet nearby, the needle settles pointing North&ndash;South. Bring a magnet close and the magnet wins &mdash; its push and pull are far stronger than the Earth&rsquo;s.</p>
+
+    <figure>
+      <svg class="stage" id="fieldSvg" viewBox="0 0 720 420" role="img" aria-label="A bar magnet you can drag, surrounded by compass needles that turn to follow it"></svg>
+      <figcaption>Drag the bar magnet. Drag the big compass. Watch which way every needle&rsquo;s shaded N end turns.</figcaption>
+    </figure>
+    <div class="controls">
+      <button class="btn ghost" id="btnFlip">Flip the magnet&rsquo;s poles</button>
+      <button class="btn ghost" id="btnTurn">Turn the magnet 45&deg;</button>
+      <button class="btn ghost" id="btnEarth" aria-pressed="true">Earth&rsquo;s magnetism: on</button>
+      <button class="btn ghost" id="btnReset">Reset</button>
+    </div>
+    <div class="readout">
+      <span class="pill" id="pillWho">&nbsp;</span>
+      <span class="pill" id="pillWhy">&nbsp;</span>
+    </div>
+    <div class="note" id="fieldNote">Move the magnet far from the big compass. The needle swings back to North, because now only the Earth is acting on it.</div>
+  </section>
+
+  <!-- ============ 2. EARTH ============ -->
+  <section class="card">
+    <h2>2. Why &ldquo;north&rdquo; at all?</h2>
+    <p>The Earth itself behaves like one enormous magnet. That is why a freely suspended magnet, left alone, always comes to rest pointing in a North&ndash;South direction &mdash; and why the shaded end of a compass needle is called the <b>north-seeking</b> end.</p>
+    <figure>
+      <svg class="stage" id="earthSvg" viewBox="0 0 680 400" role="img" aria-label="The Earth drawn as a giant bar magnet with compasses on its surface"></svg>
+      <figcaption>Tap a compass on the Earth to see which way its needle rests.</figcaption>
+    </figure>
+    <div class="note"><b>For PSLE you only need this:</b> a freely suspended magnet or compass comes to rest pointing in a North&ndash;South direction, and a nearby magnet overrides that.</div>
+
+    <details class="beyond">
+      <summary><span class="badge">Beyond syllabus</span> The part that trips people up</summary>
+      <p>If the Earth is a giant bar magnet, and the needle&rsquo;s <b>N</b> end is attracted to it&hellip; then the end of the Earth&rsquo;s magnet buried near the <b>geographic North</b> must be a magnetic <b>S</b> pole. Unlike poles attract &mdash; so N seeks S.</p>
+      <p>Scientists still call it &ldquo;the north magnetic pole&rdquo; by its position on the map, which is where the confusion comes from. The Earth&rsquo;s magnetic poles also drift a little every year, and they are not exactly on the geographic poles.</p>
+      <p>None of this is tested at PSLE, and you never need the words &ldquo;magnetic field&rdquo; or &ldquo;magnetic induction&rdquo; in an answer. It is here only so the picture makes sense.</p>
+    </details>
+  </section>
+
+  <!-- ============ 3. THE QUESTION ============ -->
+  <section class="card">
+    <h2>3. Lucy&rsquo;s three magnets, worked out step by step</h2>
+    <p class="lead">Three bar magnets are placed touching each other. Compass X is brought near the bottom end of magnet A. Which way does compass Y&rsquo;s needle point?</p>
+
+    <figure>
+      <svg class="stage" id="chainSvg" viewBox="0 0 680 430" role="img" aria-label="Three bar magnets arranged in a bracket shape with compass X below the left magnet and compass Y beside the right magnet"></svg>
+      <figcaption>Each step uncovers one more pole. Nothing here is guessed &mdash; every label comes from the step before it.</figcaption>
+    </figure>
+
+    <div class="stepbox">
+      <div class="stepno" id="stepNo">0</div>
+      <div class="steptext" id="stepText">Press <b>Next step</b> to follow the chain of reasoning from compass X all the way to compass Y.</div>
+    </div>
+    <div class="controls">
+      <button class="btn" id="btnNext">Next step</button>
+      <button class="btn ghost" id="btnBack" disabled>Back</button>
+      <button class="btn ghost" id="btnRestart">Start again</button>
+    </div>
+
+    <h3>The four answer choices</h3>
+    <p>Only the direction matters. Compass Y sits beside magnet C&rsquo;s bottom end.</p>
+    <figure>
+      <svg class="stage" id="optSvg" viewBox="0 0 680 190" role="img" aria-label="Four compass needle directions labelled 1 to 4"></svg>
+      <figcaption>Numbering follows the exam paper. The shaded half of each needle is its N end.</figcaption>
+    </figure>
+    <div class="note" id="answerNote">Finish the steps above, then decide. The common mistake is choosing (1) &mdash; the needle pointing north &mdash; because a compass &ldquo;always points north&rdquo;. It only does that when no magnet is near it.</div>
+  </section>
+
+  <!-- ============ 4. QUESTIONS ============ -->
+  <section class="card">
+    <h2>4. Check yourself</h2>
+    <p class="lead">Six questions on exactly these ideas. Anything you get wrong goes into your mistake book for recap.</p>
+    <div id="quiz"></div>
+    <div class="scorebar">
+      <span class="pill" id="score">Answered 0 of 6</span>
+      <button class="btn ghost" id="btnRetry">Clear my answers on this page</button>
+    </div>
+  </section>
+
+  <footer class="page">
+    <a class="navlink" href="#" aria-disabled="true" onclick="return false;">&#8592; No earlier page yet</a>
+    <span>04 Interactions &middot; Interaction of Forces (Magnets)</span>
+    <a class="navlink" href="#" aria-disabled="true" onclick="return false;">No later page yet &#8594;</a>
+  </footer>
+</div>
+
+<script>
+/* =====================================================================
+   Shared store — psle-sci: keys. Every read and write is guarded.
+   ===================================================================== */
+var PAGE_ID = "P3-magnets-compass-and-earth";
+var PAGE_TITLE = "Why a compass needle swings";
+var K = {theme:"psle-sci:theme", progress:"psle-sci:progress", mistakes:"psle-sci:mistakes", recap:"psle-sci:recap"};
+function load(key, fallback){ try{ var v = localStorage.getItem(key); return v===null ? fallback : JSON.parse(v); }catch(e){ return fallback; } }
+function save(key, val){ try{ localStorage.setItem(key, JSON.stringify(val)); return true; }catch(e){ return false; } }
+
+/* ---------- theme ---------- */
+function applyTheme(t){
+  var ok = (t==="notebook"||t==="lab"||t==="mission") ? t : "notebook";
+  document.documentElement.setAttribute("data-theme", ok);
+  var chips = document.querySelectorAll("[data-set-theme]");
+  for(var i=0;i<chips.length;i++){ chips[i].setAttribute("aria-pressed", chips[i].getAttribute("data-set-theme")===ok ? "true":"false"); }
+}
+applyTheme(load(K.theme, "notebook"));
+document.addEventListener("click", function(e){
+  var b = e.target.closest ? e.target.closest("[data-set-theme]") : null;
+  if(!b) return;
+  var t = b.getAttribute("data-set-theme");
+  save(K.theme, t); applyTheme(t);
+});
+
+/* =====================================================================
+   SVG helpers — 2px stroke diagram language
+   ===================================================================== */
+var NS = "http://www.w3.org/2000/svg";
+function el(name, attrs, parent){
+  var n = document.createElementNS(NS, name);
+  for(var k in attrs){ if(attrs.hasOwnProperty(k)) n.setAttribute(k, attrs[k]); }
+  if(parent) parent.appendChild(n);
+  return n;
+}
+function txt(parent, x, y, s, attrs){
+  var t = el("text", {x:x, y:y, "text-anchor":"middle", "dominant-baseline":"middle",
+    "font-family":"var(--font-label)", "font-size":15, fill:"var(--ink)"}, parent);
+  for(var k in (attrs||{})){ t.setAttribute(k, attrs[k]); }
+  t.textContent = s; return t;
+}
+
+/* Draw a bar magnet. horizontal=true -> N on left if poles[0]==='N' */
+function barMagnet(parent, x, y, w, h, poleA, poleB, horizontal){
+  var g = el("g", {}, parent);
+  el("rect", {x:x, y:y, width:w, height:h, rx:4, fill:"var(--surface)", stroke:"var(--ink)", "stroke-width":2}, g);
+  if(horizontal){
+    el("line", {x1:x+w/2, y1:y, x2:x+w/2, y2:y+h, stroke:"var(--ink)", "stroke-width":2}, g);
+  }else{
+    el("line", {x1:x, y1:y+h/2, x2:x+w, y2:y+h/2, stroke:"var(--ink)", "stroke-width":2}, g);
+  }
+  return g;
+}
+/* A labelled pole patch that can be revealed */
+function poleLabel(parent, cx, cy, pole, id){
+  var g = el("g", {id:id, opacity:0}, parent);
+  el("circle", {cx:cx, cy:cy, r:17, fill:(pole==="N"?"var(--npole)":"var(--spole)"), stroke:"var(--ink)", "stroke-width":2}, g);
+  txt(g, cx, cy+1, pole, {fill:"#fff", "font-size":16, "font-weight":"700"});
+  return g;
+}
+/* Compass: circle + needle group rotated by angle (0 = N up) */
+function compass(parent, cx, cy, r, id){
+  var g = el("g", {}, parent);
+  el("circle", {cx:cx, cy:cy, r:r, fill:"var(--surface)", stroke:"var(--ink)", "stroke-width":2}, g);
+  var ng = el("g", {id:id||null}, g);
+  var k = r*0.78, wdt = r*0.26;
+  el("polygon", {points:(cx)+","+(cy-k)+" "+(cx-wdt)+","+cy+" "+(cx+wdt)+","+cy,
+    fill:"var(--ink)", stroke:"var(--ink)", "stroke-width":2, "stroke-linejoin":"round"}, ng);
+  el("polygon", {points:(cx)+","+(cy+k)+" "+(cx-wdt)+","+cy+" "+(cx+wdt)+","+cy,
+    fill:"var(--needle-s)", stroke:"var(--ink)", "stroke-width":2, "stroke-linejoin":"round"}, ng);
+  ng.setAttribute("data-cx", cx); ng.setAttribute("data-cy", cy);
+  return {g:g, needle:ng};
+}
+function pointNeedle(ng, deg){
+  ng.setAttribute("transform", "rotate("+deg+" "+ng.getAttribute("data-cx")+" "+ng.getAttribute("data-cy")+")");
+}
+
+/* =====================================================================
+   SECTION 1 — draggable magnet + field of compasses
+   ===================================================================== */
+(function(){
+  var svg = document.getElementById("fieldSvg");
+  if(!svg) return;
+  var W = 720, H = 420;
+  var state = { mx:360, my:200, ang:0, flipped:false, earth:true, px:262, py:264 };
+  var MLEN = 150, MW = 46, M = 3000, EARTH = 0.22, MINR = 22;
+
+  var bg = el("g", {}, svg);
+  var gridG = el("g", {}, svg);
+  var magG = el("g", {style:"cursor:grab"}, svg);
+  var probeG = el("g", {style:"cursor:grab"}, svg);
+
+  /* compass grid */
+  var grid = [];
+  for(var gx=50; gx<=W-50; gx+=84){
+    for(var gy=46; gy<=H-46; gy+=84){
+      var c = compass(gridG, gx, gy, 17);
+      grid.push({x:gx, y:gy, n:c.needle, g:c.g});
+    }
+  }
+
+  /* bar magnet (drawn around origin then translated/rotated) */
+  var mg = el("g", {}, magG);
+  el("rect", {x:-MLEN/2, y:-MW/2, width:MLEN, height:MW, rx:5, fill:"var(--surface)", stroke:"var(--ink)", "stroke-width":2}, mg);
+  el("line", {x1:0, y1:-MW/2, x2:0, y2:MW/2, stroke:"var(--ink)", "stroke-width":2}, mg);
+  var leftHalf = el("rect", {x:-MLEN/2, y:-MW/2, width:MLEN/2, height:MW, rx:5, fill:"var(--npole)", opacity:".85"}, mg);
+  var rightHalf = el("rect", {x:0, y:-MW/2, width:MLEN/2, height:MW, rx:5, fill:"var(--spole)", opacity:".85"}, mg);
+  el("rect", {x:-MLEN/2, y:-MW/2, width:MLEN, height:MW, rx:5, fill:"none", stroke:"var(--ink)", "stroke-width":2}, mg);
+  var labL = txt(mg, -MLEN/4, 1, "N", {fill:"#fff", "font-size":18, "font-weight":"700"});
+  var labR = txt(mg, MLEN/4, 1, "S", {fill:"#fff", "font-size":18, "font-weight":"700"});
+
+  /* probe compass */
+  var probe = compass(probeG, 0, 0, 30, "probeNeedle");
+  el("text", {x:0, y:46, "text-anchor":"middle", "font-family":"var(--font-label)", "font-size":13, fill:"var(--muted)"}, probeG).textContent = "your compass";
+
+  function poles(){
+    var a = state.ang * Math.PI/180;
+    var dx = Math.cos(a)*MLEN/2, dy = Math.sin(a)*MLEN/2;
+    var pN = {x:state.mx - dx, y:state.my - dy};   /* left end by default */
+    var pS = {x:state.mx + dx, y:state.my + dy};
+    if(state.flipped){ var t = pN; pN = pS; pS = t; }
+    return {N:pN, S:pS};
+  }
+  function fieldAt(x, y){
+    var p = poles(), bx = 0, by = 0;
+    var ends = [{p:p.N, s:1},{p:p.S, s:-1}];
+    for(var i=0;i<2;i++){
+      var ex = x - ends[i].p.x, ey = y - ends[i].p.y;
+      var r = Math.sqrt(ex*ex + ey*ey); if(r < MINR) r = MINR;
+      var f = ends[i].s * M / (r*r*r);
+      bx += f*ex; by += f*ey;
+    }
+    if(state.earth){ by -= EARTH; }
+    return {x:bx, y:by, mag:Math.sqrt(bx*bx+by*by)};
+  }
+  function magOnly(x, y){
+    var p = poles(), bx=0, by=0, ends=[{p:p.N,s:1},{p:p.S,s:-1}];
+    for(var i=0;i<2;i++){
+      var ex=x-ends[i].p.x, ey=y-ends[i].p.y, r=Math.sqrt(ex*ex+ey*ey); if(r<MINR) r=MINR;
+      var f=ends[i].s*M/(r*r*r); bx+=f*ex; by+=f*ey;
+    }
+    return Math.sqrt(bx*bx+by*by);
+  }
+  function render(){
+    magG.setAttribute("transform", "translate("+state.mx+","+state.my+") rotate("+state.ang+")");
+    labL.textContent = state.flipped ? "S" : "N";
+    labR.textContent = state.flipped ? "N" : "S";
+    leftHalf.setAttribute("fill", state.flipped ? "var(--spole)" : "var(--npole)");
+    rightHalf.setAttribute("fill", state.flipped ? "var(--npole)" : "var(--spole)");
+    probeG.setAttribute("transform", "translate("+state.px+","+state.py+")");
+
+    for(var i=0;i<grid.length;i++){
+      var c = grid[i];
+      var d = Math.sqrt(Math.pow(c.x-state.mx,2)+Math.pow(c.y-state.my,2));
+      c.g.setAttribute("opacity", d < MLEN/2 + 14 ? "0.12" : "1");
+      var b = fieldAt(c.x, c.y);
+      pointNeedle(c.n, Math.atan2(b.x, -b.y)*180/Math.PI);
+    }
+    var pb = fieldAt(state.px, state.py);
+    pointNeedle(document.getElementById("probeNeedle"), Math.atan2(pb.x, -pb.y)*180/Math.PI);
+
+    var mOnly = magOnly(state.px, state.py);
+    var strong = state.earth ? (mOnly > EARTH) : true;
+    document.getElementById("pillWho").textContent = strong ? "Magnet is in charge here" : "Earth is in charge here";
+    document.getElementById("pillWhy").textContent = strong
+      ? "the needle's N end turns towards the magnet's S pole"
+      : "the needle's N end rests pointing north";
+    document.getElementById("btnEarth").textContent = "Earth\u2019s magnetism: " + (state.earth ? "on" : "off");
+    document.getElementById("btnEarth").setAttribute("aria-pressed", state.earth ? "true" : "false");
+  }
+
+  /* dragging */
+  function toSvg(evt){
+    var pt = svg.createSVGPoint(); pt.x = evt.clientX; pt.y = evt.clientY;
+    var m = svg.getScreenCTM(); if(!m) return {x:state.mx, y:state.my};
+    var p = pt.matrixTransform(m.inverse()); return {x:p.x, y:p.y};
+  }
+  function clamp(v, lo, hi){ return v<lo?lo:(v>hi?hi:v); }
+  function makeDrag(node, setter){
+    var active = false;
+    node.addEventListener("pointerdown", function(e){
+      active = true; node.setPointerCapture(e.pointerId); e.preventDefault();
+    });
+    node.addEventListener("pointermove", function(e){
+      if(!active) return;
+      var p = toSvg(e); setter(clamp(p.x, 40, W-40), clamp(p.y, 40, H-40)); render();
+    });
+    function up(e){ if(active){ active=false; try{ node.releasePointerCapture(e.pointerId); }catch(err){} } }
+    node.addEventListener("pointerup", up);
+    node.addEventListener("pointercancel", up);
+  }
+  makeDrag(magG, function(x,y){ state.mx=x; state.my=y; });
+  makeDrag(probeG, function(x,y){ state.px=x; state.py=y; });
+
+  document.getElementById("btnFlip").addEventListener("click", function(){ state.flipped = !state.flipped; render(); });
+  document.getElementById("btnTurn").addEventListener("click", function(){ state.ang = (state.ang + 45) % 360; render(); });
+  document.getElementById("btnEarth").addEventListener("click", function(){ state.earth = !state.earth; render(); });
+  document.getElementById("btnReset").addEventListener("click", function(){
+    state.mx=360; state.my=200; state.ang=0; state.flipped=false; state.earth=true; state.px=262; state.py=264; render();
+  });
+  render();
+})();
+
+/* =====================================================================
+   SECTION 2 — the Earth as a giant magnet
+   ===================================================================== */
+(function(){
+  var svg = document.getElementById("earthSvg");
+  if(!svg) return;
+  var cx = 300, cy = 200, R = 150;
+
+  el("circle", {cx:cx, cy:cy, r:R, fill:"var(--surface)", stroke:"var(--ink)", "stroke-width":2}, svg);
+  el("ellipse", {cx:cx, cy:cy, rx:R*0.42, ry:R, fill:"none", stroke:"var(--line)", "stroke-width":2}, svg);
+  el("line", {x1:cx-R, y1:cy, x2:cx+R, y2:cy, stroke:"var(--line)", "stroke-width":2, "stroke-dasharray":"6 6"}, svg);
+  txt(svg, cx+R-28, cy-12, "equator", {"font-size":12, fill:"var(--muted)"});
+
+  /* buried bar magnet */
+  var bw = 54, bh = 230;
+  el("rect", {x:cx-bw/2, y:cy-bh/2, width:bw, height:bh, rx:8, fill:"var(--spole)", opacity:".25", stroke:"var(--ink)", "stroke-width":2, "stroke-dasharray":"5 5"}, svg);
+  el("line", {x1:cx-bw/2, y1:cy, x2:cx+bw/2, y2:cy, stroke:"var(--ink)", "stroke-width":2, "stroke-dasharray":"5 5"}, svg);
+  txt(svg, cx, cy-bh/2+30, "S", {"font-size":22, "font-weight":"700", fill:"var(--spole)"});
+  txt(svg, cx, cy+bh/2-30, "N", {"font-size":22, "font-weight":"700", fill:"var(--npole)"});
+  txt(svg, cx, cy-bh/2-22, "geographic North", {"font-size":13, fill:"var(--muted)"});
+  txt(svg, cx, cy+bh/2+24, "geographic South", {"font-size":13, fill:"var(--muted)"});
+
+  /* three surface compasses, all needles pointing to geographic north */
+  var spots = [{x:cx-R-4, y:cy-36}, {x:cx+R+4, y:cy-36}, {x:cx, y:cy+R+34}];
+  var notes = [
+    "On the left of the globe the needle still turns to point north.",
+    "On the right of the globe the needle still turns to point north.",
+    "Even near the bottom, the needle\u2019s N end points towards geographic North."
+  ];
+  var out = el("text", {x:340, y:378, "text-anchor":"middle", "font-family":"var(--font-body)",
+    "font-size":15, fill:"var(--muted)"}, svg);
+  out.textContent = "Tap a compass.";
+
+  for(var i=0;i<spots.length;i++){
+    (function(i){
+      var c = compass(svg, spots[i].x, spots[i].y, 26);
+      var dx = cx - spots[i].x, dy = (cy - bh/2) - spots[i].y;
+      pointNeedle(c.needle, Math.atan2(dx, -dy)*180/Math.PI);
+      c.g.setAttribute("style", "cursor:pointer");
+      c.g.addEventListener("click", function(){ out.textContent = notes[i]; });
+      el("circle", {cx:spots[i].x, cy:spots[i].y, r:34, fill:"transparent", style:"cursor:pointer"}, c.g)
+        .addEventListener("click", function(){ out.textContent = notes[i]; });
+    })(i);
+  }
+  txt(svg, 560, 120, "N end of every", {"font-size":14, fill:"var(--muted)"});
+  txt(svg, 560, 140, "needle turns", {"font-size":14, fill:"var(--muted)"});
+  txt(svg, 560, 160, "the same way", {"font-size":14, fill:"var(--muted)"});
+})();
+
+/* =====================================================================
+   SECTION 3 — the three-magnet chain, step by step
+   ===================================================================== */
+(function(){
+  var svg = document.getElementById("chainSvg");
+  if(!svg) return;
+
+  /* geometry */
+  var A = {x:150, y:70, w:56, h:230};          /* left vertical  */
+  var C = {x:420, y:70, w:56, h:230};          /* right vertical */
+  var B = {x:206, y:76, w:214, h:52};          /* horizontal top */
+
+  barMagnet(svg, A.x, A.y, A.w, A.h, "", "", false);
+  barMagnet(svg, C.x, C.y, C.w, C.h, "", "", false);
+  barMagnet(svg, B.x, B.y, B.w, B.h, "", "", true);
+  txt(svg, A.x-24, A.y+A.h/2+40, "A", {"font-size":16, fill:"var(--muted)"});
+  txt(svg, B.x+B.w/2, B.y+B.h+22, "B", {"font-size":16, fill:"var(--muted)"});
+  txt(svg, C.x+C.w+24, C.y+C.h/2+40, "C", {"font-size":16, fill:"var(--muted)"});
+
+  /* compass X — needle fixed, N pointing up at A's bottom end */
+  var cxX = A.x+A.w/2, cyX = 352;
+  var cX = compass(svg, cxX, cyX, 32);
+  pointNeedle(cX.needle, 0);
+  txt(svg, cxX+46, cyX-18, "N", {"font-size":14, fill:"var(--muted)"});
+  txt(svg, cxX+46, cyX+18, "S", {"font-size":14, fill:"var(--muted)"});
+  el("line", {x1:cxX-70, y1:cyX, x2:cxX-34, y2:cyX, stroke:"var(--ink)", "stroke-width":2}, svg);
+  txt(svg, cxX-104, cyX, "compass X", {"font-size":14, fill:"var(--ink)"});
+
+  /* compass Y — needle hidden until the last step */
+  var cxY = 572, cyY = 250;
+  var cY = compass(svg, cxY, cyY, 32, "needleY");
+  document.getElementById("needleY").setAttribute("opacity", "0");
+  txt(svg, cxY, cyY-50, "compass Y", {"font-size":14, fill:"var(--ink)"});
+  var qmark = txt(svg, cxY, cyY+1, "?", {"font-size":26, fill:"var(--muted)", "font-weight":"700"});
+
+  /* revealable poles */
+  poleLabel(svg, A.x+A.w/2, A.y+A.h-34, "S", "p1");   /* A bottom */
+  poleLabel(svg, A.x+A.w/2, A.y+34,      "N", "p2");   /* A top    */
+  poleLabel(svg, B.x+30,    B.y+B.h/2,   "S", "p3");   /* B left   */
+  poleLabel(svg, B.x+B.w-30,B.y+B.h/2,   "N", "p4");   /* B right  */
+  poleLabel(svg, C.x+C.w/2, C.y+34,      "S", "p5");   /* C top    */
+  poleLabel(svg, C.x+C.w/2, C.y+C.h-34,  "N", "p6");   /* C bottom */
+
+  var ring = el("circle", {cx:0, cy:0, r:30, fill:"none", stroke:"var(--accent)", "stroke-width":4, opacity:0}, svg);
+
+  var steps = [
+    {reveal:null, focus:[cxX, cyX], text:"Compass X&rsquo;s needle rests with its shaded <b>N</b> end pointing <b>up</b>, towards the bottom end of magnet A."},
+    {reveal:"p1", focus:[A.x+A.w/2, A.y+A.h-34], text:"A needle&rsquo;s N end is attracted to a <b>S</b> pole. So the bottom end of magnet A must be <b>S</b>."},
+    {reveal:"p2", focus:[A.x+A.w/2, A.y+34], text:"Every magnet has two different poles. If A&rsquo;s bottom is S, A&rsquo;s top must be <b>N</b>."},
+    {reveal:"p3", focus:[B.x+30, B.y+B.h/2], text:"Magnet B&rsquo;s left end is touching A&rsquo;s top (N) and they stay together. Only unlike poles attract, so B&rsquo;s left end is <b>S</b>."},
+    {reveal:"p4", focus:[B.x+B.w-30, B.y+B.h/2], text:"B&rsquo;s other end is therefore <b>N</b>."},
+    {reveal:"p5", focus:[C.x+C.w/2, C.y+34], text:"B&rsquo;s right end (N) is touching the top of magnet C and they stay together, so C&rsquo;s top is <b>S</b>."},
+    {reveal:"p6", focus:[C.x+C.w/2, C.y+C.h-34], text:"C&rsquo;s bottom end is therefore <b>N</b> &mdash; and that is the end compass Y is sitting next to."},
+    {reveal:"Y", focus:[cxY, cyY], text:"Like poles repel. C&rsquo;s N pole pushes the needle&rsquo;s N end <b>away, to the right</b>, and pulls its S end towards the magnet, to the left. The needle lies flat, N pointing right."}
+  ];
+
+  var i = 0;
+  var stepNo = document.getElementById("stepNo"), stepText = document.getElementById("stepText");
+  var bNext = document.getElementById("btnNext"), bBack = document.getElementById("btnBack"), bRe = document.getElementById("btnRestart");
+
+  function draw(){
+    for(var k=1;k<=6;k++){
+      var node = document.getElementById("p"+k);
+      var on = false;
+      for(var s=0;s<i;s++){ if(steps[s].reveal === "p"+k) on = true; }
+      node.setAttribute("opacity", on ? "1" : "0");
+      node.style.transition = "opacity .3s ease";
+    }
+    var ny = document.getElementById("needleY");
+    var yOn = i >= 8;
+    ny.setAttribute("opacity", yOn ? "1" : "0");
+    if(yOn) pointNeedle(ny, 90);           /* rotate 90 clockwise: N end to the right */
+    qmark.setAttribute("opacity", yOn ? "0" : "1");
+
+    if(i === 0){
+      stepNo.textContent = "0";
+      stepText.innerHTML = "Press <b>Next step</b> to follow the chain of reasoning from compass X all the way to compass Y.";
+      ring.setAttribute("opacity", 0);
+    }else{
+      var st = steps[i-1];
+      stepNo.textContent = String(i);
+      stepText.innerHTML = st.text;
+      ring.setAttribute("cx", st.focus[0]); ring.setAttribute("cy", st.focus[1]);
+      ring.setAttribute("opacity", 0.9);
+    }
+    bBack.disabled = (i === 0);
+    bNext.disabled = (i === steps.length);
+    bNext.textContent = (i === steps.length) ? "Done" : (i===0 ? "Next step" : "Next step");
+    var an = document.getElementById("answerNote");
+    if(i === steps.length){
+      an.innerHTML = "<b>Answer: (3)</b> &mdash; the flat needle with its shaded N end pointing right, away from magnet C. Choosing <b>(1)</b> means the compass was treated as if no magnet were near it. Choosing <b>(2)</b> means the needle&rsquo;s N end was pulled <i>towards</i> an N pole, which never happens.";
+    }
+  }
+  bNext.addEventListener("click", function(){ if(i < steps.length){ i++; draw(); } });
+  bBack.addEventListener("click", function(){ if(i > 0){ i--; draw(); } });
+  bRe.addEventListener("click", function(){ i = 0; draw();
+    document.getElementById("answerNote").innerHTML = "Finish the steps above, then decide. The common mistake is choosing (1) &mdash; the needle pointing north &mdash; because a compass &ldquo;always points north&rdquo;. It only does that when no magnet is near it.";
+  });
+  draw();
+})();
+
+/* ---- the four answer choices ---- */
+(function(){
+  var svg = document.getElementById("optSvg");
+  if(!svg) return;
+  var opts = [{n:"(1)", deg:0, d:"N end up"}, {n:"(2)", deg:270, d:"N end left"},
+              {n:"(3)", deg:90, d:"N end right"}, {n:"(4)", deg:180, d:"N end down"}];
+  for(var i=0;i<4;i++){
+    var x = 110 + i*160, y = 86;
+    txt(svg, x, 24, opts[i].n, {"font-size":16, "font-weight":"700"});
+    var c = compass(svg, x, y, 36);
+    pointNeedle(c.needle, opts[i].deg);
+    txt(svg, x, 152, opts[i].d, {"font-size":14, fill:"var(--muted)"});
+  }
+})();
+
+/* =====================================================================
+   SECTION 4 — diagnostic questions
+   ===================================================================== */
+var QUESTIONS = [
+  {
+    id:"q1", lo:"A freely suspended bar magnet comes to rest pointing in a North\u2013South direction.",
+    text:"A compass is placed on a table in an open field, far away from any magnet. What happens to its needle?",
+    options:[
+      {t:"It swings and comes to rest with its N end pointing north.", correct:true,
+       why:"Correct. A compass needle is a small magnet that can turn freely, so with nothing else nearby it settles in a North\u2013South direction."},
+      {t:"It keeps spinning and never stops.", correct:false,
+       why:"A freely turning magnet always comes to rest \u2014 it does not spin forever. This is the whole point of the syllabus statement about a freely suspended magnet."},
+      {t:"It comes to rest with its N end pointing south.", correct:false,
+       why:"The shaded N end is the north-seeking end. Its name tells you where it points when nothing else is acting on it."},
+      {t:"It stays in whatever direction you put it down.", correct:false,
+       why:"That would be true of a needle made of plastic. A compass needle is a magnet, so it turns on its own until it is pointing North\u2013South."}
+    ]
+  },
+  {
+    id:"q2", lo:"Unlike poles attract and like poles repel.",
+    text:"The N pole of a bar magnet is brought close to a compass. Which way does the shaded N end of the needle turn?",
+    options:[
+      {t:"Away from the magnet.", correct:true,
+       why:"Correct. Like poles repel, so the magnet\u2019s N pole pushes the needle\u2019s N end away. The needle\u2019s S end swings towards the magnet instead."},
+      {t:"Towards the magnet.", correct:false,
+       why:"This treats a magnet as something that always pulls. A magnet attracts the opposite pole and repels the same pole \u2014 the needle\u2019s S end is the one pulled in."},
+      {t:"It still points north, because that is what compasses do.", correct:false,
+       why:"This is the mistake worth remembering. A compass only rests pointing north when no magnet is near. A magnet beside it pushes and pulls far more strongly than the Earth does."},
+      {t:"It points straight down into the table.", correct:false,
+       why:"The needle is balanced on a pin and turns flat, left and right. It does not tip downwards."}
+    ]
+  },
+  {
+    id:"q3", lo:"Unlike poles attract and like poles repel.",
+    text:"Two bar magnets are placed end to end and stay stuck together. The right end of the left magnet is a S pole. What is the left end of the right magnet?",
+    options:[
+      {t:"A N pole.", correct:true,
+       why:"Correct. They stay together only because the touching poles attract, and only unlike poles attract. S must be touching N."},
+      {t:"A S pole.", correct:false,
+       why:"Two S poles are like poles, so they would repel and push each other apart. The magnets could not stay stuck together."},
+      {t:"It could be either \u2014 you cannot tell.", correct:false,
+       why:"You can tell. The fact that they stay together is the clue: touching poles that hold together must be unlike poles."},
+      {t:"That end has no pole.", correct:false,
+       why:"Every magnet has two poles, one at each end. There is no such thing as a magnet with only one pole."}
+    ]
+  },
+  {
+    id:"q4", lo:"Unlike poles attract and like poles repel; a compass needle is a freely turning magnet.",
+    text:"Compass P, magnet 1, magnet 2 and compass Q are placed in a straight line in that order. The two magnets touch and stay together. Compass P\u2019s N end points to the right, towards magnet 1. Which way does compass Q\u2019s N end point?",
+    options:[
+      {t:"To the right, away from magnet 2.", correct:true,
+       why:"Correct. P\u2019s N end is attracted, so magnet 1\u2019s left end is S and its right end is N. The magnets hold together, so magnet 2\u2019s left end is S and its right end is N. A N pole repels Q\u2019s N end, pushing it to the right."},
+      {t:"To the left, towards magnet 2.", correct:false,
+       why:"This gets the last step backwards. Magnet 2\u2019s right end is N, and N repels the needle\u2019s N end. It is the needle\u2019s S end that swings towards the magnet."},
+      {t:"Upwards, towards north.", correct:false,
+       why:"Same trap as before: the compass would only rest pointing north if no magnet were near it. Magnet 2 is right beside it."},
+      {t:"You cannot tell without knowing magnet 1\u2019s poles.", correct:false,
+       why:"You can work magnet 1\u2019s poles out from compass P, then carry the chain through the touching ends. Every pole in the line is fixed by the one before it."}
+    ]
+  },
+  {
+    id:"q5", lo:"A magnet can exert a push or a pull.",
+    text:"In Lucy\u2019s set-up, compass X does not point north even though the Earth behaves like a giant magnet. Why not?",
+    options:[
+      {t:"The bar magnet right beside it pushes and pulls the needle much more strongly than the Earth does.", correct:true,
+       why:"Correct. The Earth\u2019s effect is very weak and spread out. A bar magnet a few centimetres away wins easily, so the needle lines up with the bar magnet instead."},
+      {t:"The Earth is not really a magnet.", correct:false,
+       why:"It behaves like one \u2014 that is exactly why a compass rests pointing North\u2013South when it is left alone."},
+      {t:"The compass is faulty.", correct:false,
+       why:"Nothing is wrong with it. It is doing what a freely turning magnet always does: lining up with the strongest push and pull acting on it."},
+      {t:"Compasses only work outdoors.", correct:false,
+       why:"A compass works anywhere. What changes the answer is whether a magnet is nearby, not whether you are indoors."}
+    ]
+  },
+  {
+    id:"q6", lo:"A magnet can exert a push or a pull; a freely suspended magnet rests North\u2013South.",
+    text:"A student put a compass at different distances from the S pole of a bar magnet and recorded the direction of the needle\u2019s N end.<br><br><b>2 cm</b> \u2014 points straight at the magnet<br><b>5 cm</b> \u2014 points straight at the magnet<br><b>15 cm</b> \u2014 points almost straight at the magnet<br><b>40 cm</b> \u2014 points part way between the magnet and north<br><b>80 cm</b> \u2014 points north<br><br>What do the results show?",
+    options:[
+      {t:"The magnet\u2019s pull gets weaker as distance increases, so far away the Earth decides the direction instead.", correct:true,
+       why:"Correct. Near the magnet its pull is strongest and the needle lines up with it. Further away the pull fades until only the Earth is left, and the needle rests pointing north."},
+      {t:"The magnet stops being a magnet beyond 40 cm.", correct:false,
+       why:"It is still a magnet. Its pull is simply too weak that far away to beat the Earth\u2019s, so the needle no longer turns towards it."},
+      {t:"The Earth\u2019s magnetism is stronger close to the magnet.", correct:false,
+       why:"The Earth\u2019s effect is roughly the same everywhere on the table. What changes across the readings is the bar magnet\u2019s pull, not the Earth\u2019s."},
+      {t:"The compass only works properly at 80 cm.", correct:false,
+       why:"The compass works at every distance. At each one it lines up with whichever magnet is pulling it hardest \u2014 that is working correctly, not failing."}
+    ]
+  }
+];
+
+(function(){
+  var host = document.getElementById("quiz");
+  if(!host) return;
+  var answered = {};
+
+  function recordMistake(q, chosenIndex){
+    var mistakes = load(K.mistakes, []);
+    var key = PAGE_ID + ":" + q.id;
+    var found = false;
+    for(var i=0;i<mistakes.length;i++){ if(mistakes[i].key === key){ found = true; mistakes[i].ts = Date.now(); mistakes[i].chose = q.options[chosenIndex].t; } }
+    if(!found){
+      mistakes.push({key:key, page:PAGE_ID, pageTitle:PAGE_TITLE, qid:q.id,
+        question:q.text.replace(/<[^>]+>/g," ").slice(0,220), chose:q.options[chosenIndex].t, lo:q.lo, ts:Date.now()});
+    }
+    save(K.mistakes, mistakes);
+    var recap = load(K.recap, []);
+    if(recap.indexOf(key) === -1){ recap.push(key); save(K.recap, recap); }
+  }
+  function recordProgress(write){
+    var correct = 0, total = 0;
+    for(var k in answered){ if(answered.hasOwnProperty(k)){ total++; if(answered[k]) correct++; } }
+    if(write){
+      var p = load(K.progress, {});
+      p[PAGE_ID] = {title:PAGE_TITLE, correct:correct, total:total, of:QUESTIONS.length, updated:Date.now()};
+      save(K.progress, p);
+    }
+    document.getElementById("score").textContent = "Answered " + total + " of " + QUESTIONS.length + "  \u00b7  " + correct + " right";
+  }
+
+  QUESTIONS.forEach(function(q, qi){
+    var wrap = document.createElement("div");
+    wrap.className = "q";
+    var head = document.createElement("div");
+    head.className = "qhead";
+    head.innerHTML = "<span>Question " + (qi+1) + " of " + QUESTIONS.length + "</span><span>" + q.lo + "</span>";
+    wrap.appendChild(head);
+    var t = document.createElement("p");
+    t.className = "qtext"; t.innerHTML = q.text;
+    wrap.appendChild(t);
+
+    var verdict = document.createElement("p");
+    verdict.className = "verdict"; verdict.style.display = "none";
+
+    var btns = [], whys = [];
+    q.options.forEach(function(o, oi){
+      var b = document.createElement("button");
+      b.className = "opt"; b.type = "button";
+      b.innerHTML = '<span class="lab">' + "ABCD"[oi] + '</span>' + o.t;
+      var w = document.createElement("div");
+      w.className = "why";
+      w.textContent = o.why;
+      b.addEventListener("click", function(){
+        if(answered.hasOwnProperty(q.id)) return;
+        answered[q.id] = !!o.correct;
+        for(var j=0;j<btns.length;j++){
+          btns[j].disabled = true;
+          whys[j].className = "why on";
+          if(q.options[j].correct) btns[j].className = "opt correct";
+        }
+        if(!o.correct){
+          b.className = "opt wrong";
+          verdict.className = "verdict no";
+          verdict.innerHTML = '<span class="mark">\u2716</span><span>Not right \u2014 added to your mistake book. The correct answer is marked below with a tick.</span>';
+          recordMistake(q, oi);
+        }else{
+          verdict.className = "verdict ok";
+          verdict.innerHTML = '<span class="mark">\u2714</span><span>Correct.</span>';
+        }
+        verdict.style.display = "flex";
+        recordProgress(true);
+      });
+      btns.push(b); whys.push(w);
+      wrap.appendChild(b); wrap.appendChild(w);
+    });
+    wrap.appendChild(verdict);
+    host.appendChild(wrap);
+  });
+
+  document.getElementById("btnRetry").addEventListener("click", function(){
+    var p = load(K.progress, {}); delete p[PAGE_ID]; save(K.progress, p);
+    var m = load(K.mistakes, []).filter(function(x){ return x.page !== PAGE_ID; }); save(K.mistakes, m);
+    var r = load(K.recap, []).filter(function(x){ return x.indexOf(PAGE_ID + ":") !== 0; }); save(K.recap, r);
+    location.reload();
+  });
+
+  /* mark correct/incorrect with icon AND text, never colour alone */
+  recordProgress(false);
+})();
+</script>
+</body>
+</html>

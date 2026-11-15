@@ -1,0 +1,15 @@
+{
+  "id": "P3-materials-match-part-to-property",
+  "type": "focus",
+  "theme": "diversity",
+  "topic": "MAT",
+  "level": "P3",
+  "title": "Matching a part to the properties it needs",
+  "purpose": "An object is made of parts, and each part has its own job. Inspect what each part has to do first, then read the tick table.",
+  "lo": ["P3.MAT.C1"],
+  "fixes": "Choosing materials from a tick table without first listing what each part has to do, or giving the material with the most ticks to the wrong part.",
+  "origin": "retrofit",
+  "built": "2026-11-11",
+  "order": 2,
+  "uses": []
+}

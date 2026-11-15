@@ -1,0 +1,157 @@
+<section class="card" id="know">
+  <p class="sec-label">What you need to know</p>
+  <h2>Magnets in four ideas</h2>
+  <div class="know">
+    <details class="kcard" open>
+      <summary><span class="kn">1</span> Poles: push and pull</summary>
+      <ul>
+        <li>A magnet can <b>push</b> or <b>pull</b> without touching.</li>
+        <li>Every magnet has <b>two poles</b>: a <b>North (N) pole</b> and a <b>South (S) pole</b>. A magnet is <b>strongest at its poles</b>.</li>
+        <li><b>Unlike poles attract</b> (N and S pull together). <b>Like poles repel</b> (N and N, or S and S, push apart).</li>
+        <li>A freely hanging bar magnet comes to rest pointing <b>North-South</b>, with its N pole pointing north. A compass needle is a small magnet that does this.</li>
+        <li>If a magnet breaks, <b>each piece is a magnet with its own N pole and S pole</b>.</li>
+        <li>Magnets come in many shapes: bar, horseshoe, U-shaped, ring, button and rod.</li>
+      </ul>
+    </details>
+    <details class="kcard" open>
+      <summary><span class="kn">2</span> What a magnet acts on</summary>
+      <ul>
+        <li>A magnet <b>attracts magnetic materials</b>. At P3, these are <b>iron</b> and <b>steel</b>.</li>
+        <li>It does <b>not</b> attract <b>non-magnetic materials</b>, such as wood, plastic, glass, rubber, paper, and <b>some metals, such as aluminium and copper</b>. Not every metal is magnetic.</li>
+        <li>A magnet attracts both other magnets and magnetic materials. Only another <b>magnet</b> can be <b>repelled</b>. So repelling is the sure test for a magnet.</li>
+        <li>Magnets themselves are made of <b>iron or steel</b>.</li>
+      </ul>
+    </details>
+    <details class="kcard" open>
+      <summary><span class="kn">3</span> Making a magnet</summary>
+      <ul>
+        <li><b>Stroke method:</b> stroke an iron or steel object <b>many times</b>, in the <b>same direction</b>, with the <b>same pole</b> of a magnet.</li>
+        <li><b>Electrical method:</b> coil wire around an <b>iron nail</b> and connect the ends to a <b>battery</b>. The nail becomes a magnet, called an electromagnet. <b>More coils</b> of wire, or <b>more batteries</b>, make it <b>stronger</b>: it picks up more paper clips.</li>
+        <li>Only magnetic materials (iron and steel) can be made into magnets. Aluminium, copper and plastic cannot.</li>
+      </ul>
+    </details>
+    <details class="kcard" open>
+      <summary><span class="kn">4</span> Magnets in everyday life</summary>
+      <ul>
+        <li><b>Fridge door:</b> a magnet in the door seal is attracted to the steel frame, so the door stays shut.</li>
+        <li><b>Compass:</b> its needle is a magnet that points North-South.</li>
+        <li><b>Magnetic train:</b> magnets in the train and track push apart, so the train floats above the track.</li>
+        <li><b>Card with a magnetic strip:</b> the strip holds information.</li>
+        <li><b>Cupboard door catch:</b> a magnet holds a steel plate on the door.</li>
+        <li><b>Recycling centre:</b> a big magnet lifts steel cans out of a pile, leaving the aluminium cans behind.</li>
+      </ul>
+    </details>
+  </div>
+</section>
+
+<section class="card" id="explore">
+  <p class="sec-label">Explore</p>
+  <h2>Try it yourself</h2>
+
+  <h3 id="e1">1. Push or pull?</h3>
+  <p class="lead">Turn the magnets round, then bring them together.</p>
+  <div class="row" role="group" aria-label="Two magnets">
+    <button type="button" class="btn small" id="flipA">Flip magnet A</button>
+    <button type="button" class="btn small" id="flipB">Flip magnet B</button>
+    <button type="button" class="btn primary" id="bring">Bring them together</button>
+    <button type="button" class="btn small" id="breakA">Break magnet A</button>
+  </div>
+  <div class="stage" style="margin-top:10px"><svg id="polesSvg" viewBox="0 0 420 170" role="img" aria-label="Two bar magnets on a track"></svg></div>
+  <p class="stage-msg" id="polesMsg" aria-live="polite"></p>
+  <h4>Where is a magnet strongest?</h4>
+  <div class="row"><button type="button" class="btn small" id="dipBtn">Dip the magnet into paper clips</button></div>
+  <div class="stage" style="margin-top:10px"><svg id="dipSvg" viewBox="0 0 420 206" role="img" aria-label="A bar magnet above a tray of steel paper clips"></svg></div>
+  <p class="stage-msg" id="dipMsg" aria-live="polite"></p>
+
+  <h3 id="e2">2. What does a magnet attract?</h3>
+  <p class="lead">Tap an object to bring a magnet close to it.</p>
+  <div class="row" id="objChips" role="group" aria-label="Objects to test"></div>
+  <div class="ggrid" style="margin-top:10px">
+    <div class="stage"><svg id="objSvg" viewBox="0 0 420 170" role="img" aria-label="A magnet and an object"></svg></div>
+    <div>
+      <p class="stage-msg" id="objMsg" aria-live="polite"></p>
+      <table class="data g-results" aria-label="My results"><thead><tr><th scope="col">Object</th><th scope="col">Result</th></tr></thead><tbody id="objTable"></tbody></table>
+    </div>
+  </div>
+  <h4>Sort them</h4>
+  <div id="magSort"></div>
+  <p class="note-s">Magnets and magnetic materials are both attracted by a magnet. To tell them apart, look for repelling. The focus page <i>Magnet or not?</i> practises this.</p>
+
+  <details class="beyond">
+    <summary><span class="bs-badge">Beyond syllabus</span> More magnetic materials, and magnetism through things</summary>
+    <p>These are not in the P3 syllabus and are never tested here.</p>
+    <ul>
+      <li>Nickel and cobalt are magnetic materials too.</li>
+      <li>Magnetism can pass through non-magnetic materials such as cardboard, but not through a sheet of iron.</li>
+    </ul>
+  </details>
+
+  <h3 id="e3">3. Make a magnet</h3>
+  <h4>The stroke method</h4>
+  <div class="row" role="group" aria-label="Object to stroke">
+    <button type="button" class="chip-btn" data-obj="steel" aria-pressed="true">Steel knitting needle</button>
+    <button type="button" class="chip-btn" data-obj="alu" aria-pressed="false">Aluminium rod</button>
+  </div>
+  <div class="row" role="group" aria-label="How to stroke" style="margin-top:8px">
+    <button type="button" class="chip-btn" data-way="one" aria-pressed="true">One direction, same pole</button>
+    <button type="button" class="chip-btn" data-way="back" aria-pressed="false">Back and forth</button>
+    <button type="button" class="chip-btn" data-way="both" aria-pressed="false">N pole, then S pole, in turn</button>
+  </div>
+  <div class="row" style="margin-top:8px"><button type="button" class="btn primary" id="strokeBtn">Stroke ×10</button><button type="button" class="btn small" id="strokeReset">Start again</button></div>
+  <div class="stage" style="margin-top:10px"><svg id="strokeSvg" viewBox="0 0 420 170" role="img" aria-label="A magnet stroking a rod, with paper clips below"></svg></div>
+  <p class="stage-msg" id="strokeMsg" aria-live="polite"></p>
+
+  <h4>The electrical method</h4>
+  <div class="row" role="group" aria-label="Number of coils">
+    <span class="g-lab">Coils:</span>
+    <button type="button" class="chip-btn" data-coils="10" aria-pressed="true">10</button>
+    <button type="button" class="chip-btn" data-coils="20" aria-pressed="false">20</button>
+    <button type="button" class="chip-btn" data-coils="30" aria-pressed="false">30</button>
+  </div>
+  <div class="row" role="group" aria-label="Number of batteries" style="margin-top:8px">
+    <span class="g-lab">Batteries:</span>
+    <button type="button" class="chip-btn" data-batt="1" aria-pressed="true">1</button>
+    <button type="button" class="chip-btn" data-batt="2" aria-pressed="false">2</button>
+  </div>
+  <div class="row" style="margin-top:8px"><button type="button" class="btn primary" id="switchBtn">Switch on</button></div>
+  <div class="ggrid" style="margin-top:10px">
+    <div class="stage"><svg id="emSvg" viewBox="0 0 420 200" role="img" aria-label="An iron nail with a coil of wire connected to batteries"></svg></div>
+    <div>
+      <p class="stage-msg" id="emMsg" aria-live="polite"></p>
+      <table class="data g-results" aria-label="My electromagnet results"><thead><tr><th scope="col">Coils</th><th scope="col">Batteries</th><th scope="col">Paper clips</th></tr></thead><tbody id="emTable"></tbody></table>
+    </div>
+  </div>
+
+  <details class="beyond">
+    <summary><span class="bs-badge">Beyond syllabus</span> Natural magnets, and losing magnetism</summary>
+    <p>Your book mentions these. They are not in the P3 syllabus and are never tested here.</p>
+    <ul>
+      <li>Lodestones are magnets found in nature. Magnets made by people are made of magnetic materials.</li>
+      <li>A magnet can lose its magnetism if it is dropped many times, heated over a flame, or hit hard with a hammer.</li>
+    </ul>
+  </details>
+
+  <h3 id="e4">4. Magnets around us</h3>
+  <p class="lead">Tap each one to see which property of magnets it uses.</p>
+  <div class="g-tiles">
+    <details class="g-tile"><summary>Fridge door</summary><p>Uses: <b>attracts steel</b>. A magnet in the door seal is attracted to the steel frame, so the door stays shut.</p></details>
+    <details class="g-tile"><summary>Compass</summary><p>Uses: <b>points North-South</b>. Its needle is a small magnet that is free to turn.</p></details>
+    <details class="g-tile"><summary>Magnetic train</summary><p>Uses: <b>like poles repel</b>. Magnets in the train and track push apart, so the train floats above the track.</p></details>
+    <details class="g-tile"><summary>Card with a magnetic strip</summary><p>The strip holds information, such as the number of a bank card.</p></details>
+    <details class="g-tile"><summary>Cupboard door catch</summary><p>Uses: <b>attracts steel</b>. A magnet in the frame holds a steel plate on the door.</p></details>
+    <details class="g-tile"><summary>Recycling centre</summary><p>Uses: <b>attracts steel, not aluminium</b>. A big magnet lifts the steel cans out of a pile and leaves the aluminium cans behind.</p></details>
+  </div>
+</section>
+
+<section class="card" id="check">
+  <p class="sec-label">Unit check</p>
+  <h2>Ten questions on the whole topic</h2>
+  <p class="lead">Only your first answer counts. A wrong first answer goes into your mistake book, and a different question on the same idea comes back for recap.</p>
+  <div id="qs"></div>
+</section>
+
+<section class="card" id="deeper">
+  <p class="sec-label">Go deeper</p>
+  <h2>Focus pages on magnets</h2>
+  <div id="psle-deeper"></div>
+</section>

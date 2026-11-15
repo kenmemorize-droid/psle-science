@@ -1,0 +1,15 @@
+{
+  "id": "P4-digestive-system-food-journey",
+  "type": "focus",
+  "theme": "systems",
+  "topic": "DIG",
+  "level": "P4",
+  "title": "Follow a meal through the body",
+  "purpose": "Food travels through one long tube. Zoom in on each part to see what happens to the food there, and answer a checkpoint after each part.",
+  "lo": ["P4.DIG.C2"],
+  "fixes": "Mixing up where digestion is completed, where digested food and water are absorbed, and the order of the parts.",
+  "origin": "retrofit",
+  "built": "2026-11-12",
+  "order": 1,
+  "uses": ["scene3d"]
+}

@@ -1,0 +1,15 @@
+{
+  "id": "P4-light-shadow-length",
+  "type": "focus",
+  "theme": "energy",
+  "topic": "LGT",
+  "level": "P4",
+  "title": "Shadows on the move",
+  "purpose": "A person walks from one lamp post to the next at night. Watch how each lamp's shadow grows and shrinks, then explain it with light travelling in straight lines.",
+  "lo": ["P4.LGT.C2", "P4.LGT.P1"],
+  "fixes": "Thinking that moving away from a light always makes a shadow smaller, and getting the direction of a shadow wrong.",
+  "origin": "retrofit",
+  "built": "2026-11-12",
+  "order": 1,
+  "uses": ["scene3d"]
+}

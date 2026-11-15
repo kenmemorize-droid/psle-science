@@ -1,0 +1,823 @@
+[
+  {
+    "id": "P3-magnets.u1",
+    "title": "Push and pull",
+    "kind": "diag",
+    "pool": "page",
+    "lo": [
+      "P3.MAG.C1"
+    ],
+    "stem": "<p class='q-ask'>Which statement about magnets is correct?</p>",
+    "key": "A magnet can push or pull without touching. It pushes only another magnet.",
+    "options": [
+      {
+        "text": "A magnet must touch an object before it can pull it.",
+        "mis": "MAG-10",
+        "pick": "Most pushes and pulls need touching.",
+        "why": "A magnet pulls a steel paper clip from a short distance away, without touching it."
+      },
+      {
+        "text": "A magnet can push a steel paper clip away.",
+        "mis": "MAG-01",
+        "pick": "Magnets push as well as pull, so they seem to push anything.",
+        "why": "A magnet only pulls steel. It pushes only another magnet."
+      },
+      {
+        "text": "A magnet can push another magnet away, and pull a steel paper clip, without touching them.",
+        "correct": true,
+        "pick": "When does a magnet push, and when does it pull?",
+        "why": "Like poles push apart, and a magnet pulls magnetic materials such as steel, without touching."
+      },
+      {
+        "text": "A magnet can pull a plastic cup towards it.",
+        "mis": "MAG-04",
+        "pick": "Magnets seem to pull everything.",
+        "why": "Plastic is not a magnetic material, so a magnet doesn't pull it."
+      }
+    ]
+  },
+  {
+    "id": "P3-magnets.u2",
+    "title": "A broken magnet",
+    "kind": "diag",
+    "pool": "page",
+    "lo": [
+      "P3.MAG.C2"
+    ],
+    "stem": "<p>A bar magnet, with its N pole on the left and its S pole on the right, is broken into two pieces.</p><p class='q-ask'>Which statement is correct?</p>",
+    "key": "If a magnet breaks, each piece is a magnet with its own N pole and S pole.",
+    "options": [
+      {
+        "text": "The left piece has only a N pole, and the right piece has only a S pole.",
+        "mis": "MAG-11",
+        "pick": "Each piece keeps the pole it already had.",
+        "why": "Each piece becomes a magnet with both a N pole and a S pole."
+      },
+      {
+        "text": "Each piece has a N pole and a S pole.",
+        "correct": true,
+        "pick": "Every magnet has two poles. Is each piece a magnet?",
+        "why": "Each piece is a magnet, so each has a N pole and a S pole."
+      },
+      {
+        "text": "The broken ends have no poles.",
+        "mis": "MAG-11",
+        "pick": "The new ends were in the middle, which seems not to be a pole.",
+        "why": "The broken ends become new poles."
+      },
+      {
+        "text": "Neither piece is a magnet any more.",
+        "mis": "MAG-11",
+        "pick": "Breaking seems to spoil the magnet.",
+        "why": "Each piece is still a magnet, with two poles."
+      }
+    ]
+  },
+  {
+    "id": "P3-magnets.u3",
+    "title": "Paper clips on a magnet",
+    "kind": "diag",
+    "pool": "page",
+    "lo": [
+      "P3.MAG.C2"
+    ],
+    "stem": "<p>A bar magnet is dipped into a box of steel paper clips and lifted out.</p><p class='q-ask'>Where do most of the paper clips cling?</p>",
+    "key": "A magnet is strongest at its poles, at its two ends.",
+    "options": [
+      {
+        "text": "In the middle of the magnet",
+        "mis": "MAG-15",
+        "pick": "The middle seems to be the centre of the magnet's strength.",
+        "why": "A magnet is weakest in the middle. It is strongest at its poles."
+      },
+      {
+        "text": "Evenly all along the magnet",
+        "mis": "MAG-15",
+        "pick": "The whole magnet seems to be equally magnetic.",
+        "why": "Most clips cling to the ends, where the poles are."
+      },
+      {
+        "text": "Only at the N end",
+        "mis": "MAG-11",
+        "pick": "The N pole seems to be the strong one.",
+        "why": "Both poles are equally strong, so clips cling to both ends."
+      },
+      {
+        "text": "At both ends",
+        "correct": true,
+        "pick": "Where is a magnet strongest?",
+        "why": "A magnet is strongest at its poles, at its two ends."
+      }
+    ]
+  },
+  {
+    "id": "P3-magnets.u4",
+    "title": "What will a magnet attract?",
+    "kind": "diag",
+    "pool": "page",
+    "lo": [
+      "P3.MAG.C2",
+      "P3.MAG.P1"
+    ],
+    "stem": "<p class='q-ask'>Which pair of objects will a magnet attract?</p>",
+    "key": "A magnet attracts iron and steel. Aluminium, copper and plastic are not attracted.",
+    "options": [
+      {
+        "text": "A steel paper clip and an iron nail",
+        "correct": true,
+        "pick": "Which objects are made of iron or steel?",
+        "why": "Iron and steel are magnetic materials, so a magnet attracts both."
+      },
+      {
+        "text": "An iron nail and an aluminium can",
+        "mis": "MAG-12",
+        "pick": "Both are metal.",
+        "why": "Aluminium is not a magnetic material, so the can is not attracted."
+      },
+      {
+        "text": "A copper wire and a steel paper clip",
+        "mis": "MAG-12",
+        "pick": "Both are metal.",
+        "why": "Copper is not a magnetic material."
+      },
+      {
+        "text": "A plastic ruler and an iron nail",
+        "mis": "MAG-04",
+        "pick": "Plastic rulers seem light enough to be pulled.",
+        "why": "Plastic is not a magnetic material."
+      }
+    ]
+  },
+  {
+    "id": "P3-magnets.u5",
+    "title": "Magnet or steel bar?",
+    "kind": "diag",
+    "pool": "page",
+    "lo": [
+      "P3.MAG.P1"
+    ],
+    "stem": "<p>Ali has a magnet and a steel bar that look exactly the same. He brings each one, in turn, close to the N pole of another magnet.</p><p class='q-ask'>Which result tells him which one is the magnet?</p>",
+    "key": "Only a magnet can be repelled. Repelling is the sure test for a magnet.",
+    "options": [
+      {
+        "text": "The one that is attracted is the magnet.",
+        "mis": "MAG-03",
+        "pick": "Magnets attract each other.",
+        "why": "The steel bar is attracted too, so being attracted doesn't tell them apart."
+      },
+      {
+        "text": "The one that is not attracted is the magnet.",
+        "mis": "MAG-06",
+        "pick": "Two magnets seem to cancel each other out.",
+        "why": "Two magnets always push or pull each other."
+      },
+      {
+        "text": "The one that is repelled at one end is the magnet.",
+        "correct": true,
+        "pick": "Which result can only happen between two magnets?",
+        "why": "Only a magnet can be repelled. Its N pole is pushed away by the other N pole."
+      },
+      {
+        "text": "The steel bar is the one that is repelled.",
+        "mis": "MAG-01",
+        "pick": "Steel seems to react strongly to magnets.",
+        "why": "Steel is only ever attracted. It is never repelled."
+      }
+    ]
+  },
+  {
+    "id": "P3-magnets.u6",
+    "title": "What magnets are made of",
+    "kind": "diag",
+    "pool": "page",
+    "lo": [
+      "P3.MAG.C2"
+    ],
+    "stem": "<p class='q-ask'>Which material can a magnet be made of?</p>",
+    "key": "Magnets can be made of iron or steel.",
+    "options": [
+      {
+        "text": "Aluminium",
+        "mis": "MAG-13",
+        "pick": "Aluminium is a metal.",
+        "why": "Aluminium is not a magnetic material, so it cannot be made into a magnet."
+      },
+      {
+        "text": "Copper",
+        "mis": "MAG-13",
+        "pick": "Copper is a metal used with electricity.",
+        "why": "Copper is not a magnetic material."
+      },
+      {
+        "text": "Steel",
+        "correct": true,
+        "pick": "Which material is magnetic?",
+        "why": "Magnets can be made of iron or steel."
+      },
+      {
+        "text": "Plastic",
+        "mis": "MAG-13",
+        "pick": "Fridge magnets have plastic on the outside.",
+        "why": "The plastic is only a cover. The magnet inside is iron or steel."
+      }
+    ]
+  },
+  {
+    "id": "P3-magnets.u7",
+    "title": "The stroke method",
+    "kind": "diag",
+    "pool": "page",
+    "lo": [
+      "P3.MAG.P2"
+    ],
+    "stem": "<p>Siti wants to make a steel needle into a magnet by stroking it with a bar magnet.</p><p class='q-ask'>Which way is correct?</p>",
+    "key": "Stroke many times, in the same direction, with the same pole.",
+    "options": [
+      {
+        "text": "Stroke it back and forth along its length, many times",
+        "mis": "MAG-13",
+        "pick": "More rubbing seems to give more magnetism.",
+        "why": "Stroking back and forth undoes the work. Stroke in one direction only."
+      },
+      {
+        "text": "Stroke it with the N pole, then the S pole, in turn",
+        "mis": "MAG-13",
+        "pick": "Using both poles seems fair.",
+        "why": "Use the same pole every time."
+      },
+      {
+        "text": "Stroke it once, very hard",
+        "mis": "MAG-13",
+        "pick": "A hard stroke seems stronger.",
+        "why": "It needs many strokes, not one hard one."
+      },
+      {
+        "text": "Stroke it many times, in the same direction, with the same pole",
+        "correct": true,
+        "pick": "Recall the three \"same\" and \"many\" rules.",
+        "why": "Many strokes, in the same direction, with the same pole, turn the steel into a magnet."
+      }
+    ]
+  },
+  {
+    "id": "P3-magnets.u8",
+    "title": "An electromagnet",
+    "kind": "diag",
+    "pool": "page",
+    "lo": [
+      "P3.MAG.P2"
+    ],
+    "stem": "<p>An iron nail with a coil of wire is connected to one battery. The number of coils was changed, and the paper clips the nail picked up were counted.</p><p class='q-ask'>What do the results show?</p>",
+    "figure": "<div class='scroll'><table class='data'><thead><tr><th scope='col'>Number of coils</th><th scope='col'>Paper clips picked up</th></tr></thead><tbody><tr><th scope='row'>10</th><td>4</td></tr><tr><th scope='row'>20</th><td>8</td></tr><tr><th scope='row'>30</th><td>12</td></tr></tbody></table></div>",
+    "key": "More coils of wire make an electromagnet stronger.",
+    "options": [
+      {
+        "text": "More coils make the magnet stronger.",
+        "correct": true,
+        "pick": "What happens to the number of clips as the coils go up?",
+        "why": "More coils picked up more clips, so the magnet got stronger."
+      },
+      {
+        "text": "Fewer coils make the magnet stronger.",
+        "mis": "MAG-14",
+        "pick": "Less wire seems to let the battery work better.",
+        "why": "The 10-coil nail picked up the fewest clips."
+      },
+      {
+        "text": "The number of coils does not change how strong the magnet is.",
+        "mis": "MAG-14",
+        "pick": "It is the same nail and the same battery.",
+        "why": "The clips went from 4 to 12, so the coils did change the strength."
+      },
+      {
+        "text": "The magnet is strongest with 20 coils, the middle number.",
+        "mis": "MAG-14",
+        "pick": "The middle seems a safe choice.",
+        "why": "30 coils picked up the most clips."
+      }
+    ]
+  },
+  {
+    "id": "P3-magnets.u9",
+    "title": "A fridge door",
+    "kind": "diag",
+    "pool": "page",
+    "lo": [
+      "P3.MAG.C3"
+    ],
+    "stem": "<p>A fridge door stays shut because a magnet in the door seal is attracted to the fridge's frame.</p><p class='q-ask'>What could the frame be made of?</p>",
+    "key": "A magnet attracts steel, so a fridge frame made of steel holds the door shut.",
+    "options": [
+      {
+        "text": "Aluminium",
+        "mis": "MAG-12",
+        "pick": "Fridges are made of metal.",
+        "why": "Aluminium is not attracted by a magnet."
+      },
+      {
+        "text": "Steel",
+        "correct": true,
+        "pick": "What does a magnet attract?",
+        "why": "Steel is a magnetic material, so the magnet in the seal is attracted to it."
+      },
+      {
+        "text": "Plastic",
+        "mis": "MAG-04",
+        "pick": "The inside of a fridge is plastic.",
+        "why": "A magnet does not attract plastic."
+      },
+      {
+        "text": "Any metal",
+        "mis": "MAG-12",
+        "pick": "All metals seem to stick to magnets.",
+        "why": "Only iron and steel are attracted. Aluminium and copper are not."
+      }
+    ]
+  },
+  {
+    "id": "P3-magnets.u10",
+    "title": "At the recycling centre",
+    "kind": "diag",
+    "pool": "page",
+    "lo": [
+      "P3.MAG.C3",
+      "P3.MAG.P1"
+    ],
+    "stem": "<p>A big magnet lifts the steel cans out of a pile of steel and aluminium cans.</p><p class='q-ask'>Which statement explains this?</p>",
+    "key": "Steel is a magnetic material and aluminium is not.",
+    "options": [
+      {
+        "text": "The magnet attracts both kinds of can, but the aluminium cans fall off.",
+        "mis": "MAG-12",
+        "pick": "All cans are metal.",
+        "why": "The magnet does not attract aluminium at all."
+      },
+      {
+        "text": "The magnet has to touch each can before it can lift it.",
+        "mis": "MAG-10",
+        "pick": "Lifting seems to need touching.",
+        "why": "A magnet pulls steel cans from a short distance away."
+      },
+      {
+        "text": "The magnet pushes the aluminium cans away.",
+        "mis": "MAG-12",
+        "pick": "The aluminium cans are left behind, so they seem to be pushed.",
+        "why": "A magnet neither pulls nor pushes aluminium. The cans just stay where they are."
+      },
+      {
+        "text": "The magnet attracts steel but not aluminium.",
+        "correct": true,
+        "pick": "Which of the two metals is magnetic?",
+        "why": "Steel is a magnetic material and aluminium is not, so only the steel cans are lifted."
+      }
+    ]
+  },
+  {
+    "id": "P3-magnets.r1",
+    "title": "Which one sticks?",
+    "kind": "variant",
+    "pool": "recap",
+    "lo": [
+      "P3.MAG.C2",
+      "P3.MAG.P1"
+    ],
+    "stem": "<p class='q-ask'>Which object would a magnet attract?</p>",
+    "key": "A magnet attracts objects made of iron or steel.",
+    "options": [
+      {
+        "text": "A sheet of aluminium foil",
+        "mis": "MAG-12",
+        "pick": "Foil is metal.",
+        "why": "Aluminium is not a magnetic material."
+      },
+      {
+        "text": "A copper wire",
+        "mis": "MAG-12",
+        "pick": "Wires are metal.",
+        "why": "Copper is not a magnetic material."
+      },
+      {
+        "text": "A wooden spoon",
+        "mis": "MAG-04",
+        "pick": "It is light.",
+        "why": "Wood is not a magnetic material."
+      },
+      {
+        "text": "A steel spoon",
+        "correct": true,
+        "pick": "Which one is made of a magnetic material?",
+        "why": "Steel is a magnetic material."
+      }
+    ]
+  },
+  {
+    "id": "P3-magnets.r2",
+    "title": "A can that does not stick",
+    "kind": "variant",
+    "pool": "recap",
+    "lo": [
+      "P3.MAG.P1"
+    ],
+    "stem": "<p>Mei holds a magnet close to a metal drink can. The can is not attracted.</p><p class='q-ask'>What can she tell from this?</p>",
+    "key": "Not every metal is magnetic. Only iron and steel are attracted.",
+    "options": [
+      {
+        "text": "The can is not made of iron or steel. It could be aluminium.",
+        "correct": true,
+        "pick": "Which metals does a magnet attract?",
+        "why": "Only iron and steel are attracted, so the can must be another metal, such as aluminium."
+      },
+      {
+        "text": "The can must be plastic, because every metal is attracted.",
+        "mis": "MAG-12",
+        "pick": "Metal seems always to stick.",
+        "why": "Not every metal is magnetic. An aluminium can is metal and is not attracted."
+      },
+      {
+        "text": "The magnet must touch the can before it can pull it.",
+        "mis": "MAG-10",
+        "pick": "Pulling seems to need touching.",
+        "why": "A magnet pulls steel without touching. This can isn't steel."
+      },
+      {
+        "text": "The can must be steel that has been pushed away.",
+        "mis": "MAG-12",
+        "pick": "Something stopped it sticking.",
+        "why": "A magnet never pushes steel away."
+      }
+    ]
+  },
+  {
+    "id": "P3-magnets.r3",
+    "title": "A nail that did not work",
+    "kind": "variant",
+    "pool": "recap",
+    "lo": [
+      "P3.MAG.P2"
+    ],
+    "stem": "<p>Ravi stroked an iron nail back and forth with a magnet many times, but it did not become a magnet.</p><p class='q-ask'>What should he do?</p>",
+    "key": "Stroke in one direction only, many times, with the same pole.",
+    "options": [
+      {
+        "text": "Stroke it with the N pole and the S pole in turn.",
+        "mis": "MAG-13",
+        "pick": "Using both poles seems to help.",
+        "why": "Use the same pole every time."
+      },
+      {
+        "text": "Stroke it in one direction only, many times, with the same pole.",
+        "correct": true,
+        "pick": "What did he do wrong?",
+        "why": "Stroking back and forth undoes the magnetism. Stroke one way only, with one pole."
+      },
+      {
+        "text": "Stroke it fewer times.",
+        "mis": "MAG-13",
+        "pick": "Too much stroking seems to wear it out.",
+        "why": "It needs many strokes, in one direction."
+      },
+      {
+        "text": "Use an aluminium rod instead.",
+        "mis": "MAG-13",
+        "pick": "A different metal might work better.",
+        "why": "Aluminium cannot be made into a magnet at all."
+      }
+    ]
+  },
+  {
+    "id": "P3-magnets.r4",
+    "title": "What can be made into a magnet?",
+    "kind": "variant",
+    "pool": "recap",
+    "lo": [
+      "P3.MAG.P2"
+    ],
+    "stem": "<p class='q-ask'>Which object can be made into a magnet by stroking it with a magnet?</p>",
+    "key": "Only iron and steel can be made into magnets.",
+    "options": [
+      {
+        "text": "A copper wire",
+        "mis": "MAG-13",
+        "pick": "It is a metal.",
+        "why": "Copper is not a magnetic material."
+      },
+      {
+        "text": "A plastic straw",
+        "mis": "MAG-13",
+        "pick": "It is long and thin, like a needle.",
+        "why": "Plastic is not a magnetic material."
+      },
+      {
+        "text": "A steel knitting needle",
+        "correct": true,
+        "pick": "Which one is made of a magnetic material?",
+        "why": "Steel can be made into a magnet."
+      },
+      {
+        "text": "An aluminium rod",
+        "mis": "MAG-13",
+        "pick": "It is a metal rod, like a bar magnet.",
+        "why": "Aluminium is not a magnetic material."
+      }
+    ]
+  },
+  {
+    "id": "P3-magnets.r5",
+    "title": "More batteries",
+    "kind": "variant",
+    "pool": "recap",
+    "lo": [
+      "P3.MAG.P2"
+    ],
+    "stem": "<p>An iron nail with 20 coils of wire was connected to one battery, then to two batteries. The paper clips it picked up were counted.</p><p class='q-ask'>What do the results show?</p>",
+    "figure": "<div class='scroll'><table class='data'><thead><tr><th scope='col'>Number of batteries</th><th scope='col'>Paper clips picked up</th></tr></thead><tbody><tr><th scope='row'>1</th><td>5</td></tr><tr><th scope='row'>2</th><td>10</td></tr></tbody></table></div>",
+    "key": "More batteries make an electromagnet stronger.",
+    "options": [
+      {
+        "text": "Fewer batteries make the magnet stronger.",
+        "mis": "MAG-14",
+        "pick": "Fewer batteries seem gentler on the nail.",
+        "why": "One battery picked up fewer clips."
+      },
+      {
+        "text": "Only the number of coils changes the strength, not the batteries.",
+        "mis": "MAG-14",
+        "pick": "The coils seem to be what makes the magnet.",
+        "why": "The coils stayed at 20, and the clips doubled with the batteries."
+      },
+      {
+        "text": "The number of clips depends only on the size of the nail.",
+        "mis": "MAG-14",
+        "pick": "A bigger nail seems to hold more clips.",
+        "why": "The nail was the same. Only the batteries changed."
+      },
+      {
+        "text": "More batteries make the magnet stronger.",
+        "correct": true,
+        "pick": "What happened to the clips when a battery was added?",
+        "why": "Two batteries picked up more clips than one, so the magnet was stronger."
+      }
+    ]
+  },
+  {
+    "id": "P3-magnets.r6",
+    "title": "A fair coil test",
+    "kind": "variant",
+    "pool": "recap",
+    "lo": [
+      "P3.MAG.P2"
+    ],
+    "stem": "<p>Ali wants to find out if the number of coils affects how strong his electromagnet is.</p><p class='q-ask'>What should he change?</p>",
+    "key": "Change only the thing you are testing. Keep everything else the same.",
+    "options": [
+      {
+        "text": "Only the number of coils",
+        "correct": true,
+        "pick": "What is he trying to find out about?",
+        "why": "Change only the coils, and keep the batteries, the nail and the clips the same."
+      },
+      {
+        "text": "Only the number of batteries",
+        "mis": "MAG-14",
+        "pick": "Batteries also change the strength.",
+        "why": "That tests batteries, not coils."
+      },
+      {
+        "text": "Both the coils and the batteries",
+        "mis": "MAG-14",
+        "pick": "Changing more seems to give clearer results.",
+        "why": "If both change, he can't tell which one made the difference."
+      },
+      {
+        "text": "The size of the nail",
+        "mis": "MAG-14",
+        "pick": "The nail is part of the magnet.",
+        "why": "That tests the nail, not the coils."
+      }
+    ]
+  },
+  {
+    "id": "P3-magnets.r7",
+    "title": "Counting clips along a magnet",
+    "kind": "variant",
+    "pool": "recap",
+    "lo": [
+      "P3.MAG.C2"
+    ],
+    "stem": "<p>Paper clips clinging to a bar magnet were counted. The results are shown.</p><p class='q-ask'>Which statement is correct?</p>",
+    "figure": "<div class='scroll'><table class='data'><thead><tr><th scope='col'>Part of the magnet</th><th scope='col'>Paper clips clinging</th></tr></thead><tbody><tr><th scope='row'>end A</th><td>8</td></tr><tr><th scope='row'>middle</th><td>1</td></tr><tr><th scope='row'>end B</th><td>8</td></tr></tbody></table></div>",
+    "key": "A magnet is strongest at its poles, at its two ends.",
+    "options": [
+      {
+        "text": "The magnet is strongest in the middle.",
+        "mis": "MAG-15",
+        "pick": "The middle is the centre of the magnet.",
+        "why": "Only 1 clip clung to the middle."
+      },
+      {
+        "text": "The magnet is strongest at its poles, at the ends.",
+        "correct": true,
+        "pick": "Where did most clips cling?",
+        "why": "8 clips clung to each end, where the poles are."
+      },
+      {
+        "text": "The magnet is equally strong all along.",
+        "mis": "MAG-15",
+        "pick": "It is one piece of steel.",
+        "why": "The ends held 8 clips, and the middle held only 1."
+      },
+      {
+        "text": "Only end A is a pole.",
+        "mis": "MAG-11",
+        "pick": "End A is named first.",
+        "why": "End B held as many clips as end A. Both ends are poles."
+      }
+    ]
+  },
+  {
+    "id": "P3-magnets.r8",
+    "title": "A horseshoe magnet",
+    "kind": "variant",
+    "pool": "recap",
+    "lo": [
+      "P3.MAG.C2"
+    ],
+    "stem": "<p>A horseshoe magnet is dipped into paper clips.</p><p class='q-ask'>Where do most of the clips cling?</p>",
+    "key": "A magnet is strongest at its poles. A horseshoe magnet's poles are its two ends.",
+    "options": [
+      {
+        "text": "At the bend in the middle",
+        "mis": "MAG-15",
+        "pick": "The bend is the biggest part.",
+        "why": "The bend is the middle of the magnet, where it is weakest."
+      },
+      {
+        "text": "Evenly all over",
+        "mis": "MAG-15",
+        "pick": "The whole magnet seems equally magnetic.",
+        "why": "Most clips cling to the poles."
+      },
+      {
+        "text": "At its two ends",
+        "correct": true,
+        "pick": "Where are the poles of a horseshoe magnet?",
+        "why": "Its poles are its two ends, where it is strongest."
+      },
+      {
+        "text": "At one end only",
+        "mis": "MAG-11",
+        "pick": "Only one end seems to be the pole.",
+        "why": "Every magnet has two poles, so clips cling to both ends."
+      }
+    ]
+  },
+  {
+    "id": "P3-magnets.r9",
+    "title": "Cutting a magnet into three",
+    "kind": "variant",
+    "pool": "recap",
+    "lo": [
+      "P3.MAG.C2"
+    ],
+    "stem": "<p>A bar magnet is cut into three pieces.</p><p class='q-ask'>How many poles does the middle piece have?</p>",
+    "key": "Every piece of a magnet is a magnet with two poles.",
+    "options": [
+      {
+        "text": "Two: a N pole and a S pole",
+        "correct": true,
+        "pick": "Is the middle piece a magnet?",
+        "why": "Every piece of a magnet is a magnet with two poles."
+      },
+      {
+        "text": "None, because the middle of a magnet is not magnetic",
+        "mis": "MAG-15",
+        "pick": "The middle of a magnet picks up few clips.",
+        "why": "Once it is cut, the middle piece has its own two ends, and they are poles."
+      },
+      {
+        "text": "One",
+        "mis": "MAG-11",
+        "pick": "It came from between two poles.",
+        "why": "A magnet always has two poles."
+      },
+      {
+        "text": "It depends on how long the piece is.",
+        "mis": "MAG-11",
+        "pick": "Short pieces seem too small to have poles.",
+        "why": "Every piece has two poles, however short it is."
+      }
+    ]
+  },
+  {
+    "id": "P3-magnets.r10",
+    "title": "A toy car rolls away",
+    "kind": "variant",
+    "pool": "recap",
+    "lo": [
+      "P3.MAG.C1",
+      "P3.MAG.C2"
+    ],
+    "stem": "<p>A toy car has a magnet fixed to its back. When another magnet is brought close, without touching, the car rolls away.</p><p class='q-ask'>Why?</p>",
+    "key": "Like poles repel, even without touching.",
+    "options": [
+      {
+        "text": "Unlike poles are facing each other, so they repel.",
+        "mis": "MAG-08",
+        "pick": "Pushing seems to go with \"different\".",
+        "why": "Unlike poles attract. Like poles repel."
+      },
+      {
+        "text": "Like poles are facing each other, so they repel.",
+        "correct": true,
+        "pick": "Which poles push each other apart?",
+        "why": "Like poles repel, so the car is pushed away."
+      },
+      {
+        "text": "The magnet must have touched the car.",
+        "mis": "MAG-10",
+        "pick": "Pushing seems to need touching.",
+        "why": "Magnets push and pull without touching."
+      },
+      {
+        "text": "The steel body of the car is repelled by the magnet.",
+        "mis": "MAG-01",
+        "pick": "The car is metal.",
+        "why": "A magnet never repels steel. Only the magnet on the car can be repelled."
+      }
+    ]
+  },
+  {
+    "id": "P3-magnets.r11",
+    "title": "A magnetic train",
+    "kind": "variant",
+    "pool": "recap",
+    "lo": [
+      "P3.MAG.C3"
+    ],
+    "stem": "<p>A magnetic train floats above its track because magnets in the train and track push each other apart.</p><p class='q-ask'>Which poles must face each other?</p>",
+    "key": "Like poles repel.",
+    "options": [
+      {
+        "text": "Unlike poles, such as N facing S",
+        "mis": "MAG-08",
+        "pick": "Opposite seems to mean pushing away.",
+        "why": "Unlike poles attract. They would pull the train down."
+      },
+      {
+        "text": "Any poles, because magnets always push",
+        "mis": "MAG-08",
+        "pick": "Magnets seem to push each other.",
+        "why": "Magnets push only when like poles face each other."
+      },
+      {
+        "text": "No poles: the track does the pushing",
+        "mis": "MAG-08",
+        "pick": "The track seems to hold the train up.",
+        "why": "The push comes from like poles of magnets in the train and track."
+      },
+      {
+        "text": "Like poles, such as N facing N",
+        "correct": true,
+        "pick": "Which poles push apart?",
+        "why": "Like poles repel, so the train is pushed up."
+      }
+    ]
+  },
+  {
+    "id": "P3-magnets.r12",
+    "title": "A cupboard catch",
+    "kind": "variant",
+    "pool": "recap",
+    "lo": [
+      "P3.MAG.C3"
+    ],
+    "stem": "<p>A cupboard door is held shut by a small magnet in the frame, which pulls on a plate fixed to the door.</p><p class='q-ask'>What could the plate be made of?</p>",
+    "key": "A magnet pulls on iron and steel.",
+    "options": [
+      {
+        "text": "Aluminium",
+        "mis": "MAG-12",
+        "pick": "It is a metal plate.",
+        "why": "Aluminium is not attracted by a magnet."
+      },
+      {
+        "text": "Plastic",
+        "mis": "MAG-04",
+        "pick": "Plastic plates are common.",
+        "why": "Plastic is not attracted by a magnet."
+      },
+      {
+        "text": "Steel",
+        "correct": true,
+        "pick": "What does a magnet pull on?",
+        "why": "Steel is a magnetic material, so the magnet holds it."
+      },
+      {
+        "text": "Wood",
+        "mis": "MAG-04",
+        "pick": "The door is wood.",
+        "why": "Wood is not attracted by a magnet."
+      }
+    ]
+  }
+]

@@ -1,0 +1,177 @@
+<section class="card" id="know">
+  <p class="sec-label">What you need to know</p>
+  <h2>Living things in four ideas</h2>
+  <div class="know">
+    <details class="kcard" open>
+      <summary><span class="kn">1</span> What makes something alive</summary>
+      <p>Every living thing:</p>
+      <ul>
+        <li><b>needs water, food and air</b> to survive</li>
+        <li><b>grows</b>: a chick grows into a hen, and a seed grows into a plant</li>
+        <li><b>responds</b> to changes around it: a snail pulls into its shell when touched, and a plant bends towards the light</li>
+        <li><b>reproduces</b>: it makes young of its own kind</li>
+      </ul>
+      <p>A living thing does <b>all</b> of these. Something that only moves, or only gets bigger, is not living: a car moves, and a balloon gets bigger when you blow into it.</p>
+      <p>Plants are living things. They need water, air and food (they make their own), grow, respond and reproduce, even though they don't walk about.</p>
+    </details>
+    <details class="kcard" open>
+      <summary><span class="kn">2</span> Six groups of animals</summary>
+      <p>Group animals by what you can <b>see</b> on their bodies, not by where they live or whether they can fly.</p>
+      <div class="scroll"><table class="data">
+        <thead><tr><th scope="col">Group</th><th scope="col">What you can see</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">Mammals</th><td class="rowname">bodies covered with <b>hair or fur</b></td></tr>
+          <tr><th scope="row">Birds</th><td class="rowname"><b>feathers</b>, a <b>beak</b>, <b>two wings</b> and two legs</td></tr>
+          <tr><th scope="row">Fish</th><td class="rowname"><b>scales</b> and <b>fins</b>; they live in water</td></tr>
+          <tr><th scope="row">Amphibians</th><td class="rowname"><b>moist, smooth skin</b> with no scales</td></tr>
+          <tr><th scope="row">Reptiles</th><td class="rowname"><b>dry, scaly skin</b></td></tr>
+          <tr><th scope="row">Insects</th><td class="rowname">a hard body covering, <b>3 body parts</b> (head, thorax, abdomen) and <b>6 legs</b>; most have wings</td></tr>
+        </tbody>
+      </table></div>
+      <p>A bat flies but has fur, so it is a mammal. A penguin can't fly but has feathers and a beak, so it is a bird. A spider has 8 legs and 2 body parts, so it is <b>not</b> an insect.</p>
+      <p class="note-s"><b>Your book also says</b> (not tested): mammals breathe with lungs and feed their young milk; fish breathe with gills; young amphibians breathe with gills, and adults with lungs or moist skin; reptiles lay eggs with leathery shells; insects breathe through tiny holes called spiracles; birds lay eggs.</p>
+    </details>
+    <details class="kcard" open>
+      <summary><span class="kn">3</span> Plants with and without flowers</summary>
+      <ul>
+        <li><b>Flowering plants</b> make flowers, and then seeds. Examples: hibiscus, sunflower, balsam, mango tree.</li>
+        <li><b>Non-flowering plants</b> never make flowers. Examples: fern, moss.</li>
+      </ul>
+      <p>We can also group plants by other things we can see:</p>
+      <ul>
+        <li>land or water plants</li>
+        <li>strong or weak stems</li>
+        <li>roots under or above the ground</li>
+        <li>leaf shape, leaf edge, and the pattern of veins on the leaf (network or parallel)</li>
+        <li>flowers that grow singly or in clusters</li>
+        <li>fruits with one, a few or many seeds</li>
+      </ul>
+    </details>
+    <details class="kcard" open>
+      <summary><span class="kn">4</span> Fungi and bacteria</summary>
+      <ul>
+        <li><b>Fungi</b> include <b>mould</b>, <b>mushrooms</b> and <b>yeast</b>. They are <b>not plants</b>: they are not green and <b>cannot make their own food</b>. They feed on other things, living or dead. They grow from tiny spores, and grow best in damp, warm, dark places.</li>
+        <li><b>Bacteria</b> are living things so tiny that they can be seen only through a <b>microscope</b>. They are found <b>everywhere</b>.</li>
+        <li>Some fungi and bacteria are <b>useful</b>: yeast helps bread rise, mushrooms are food, and some bacteria help make yoghurt and cheese. Others are <b>harmful</b>: mould spoils food, and some bacteria cause illness.</li>
+      </ul>
+    </details>
+  </div>
+</section>
+
+<section class="card" id="explore">
+  <p class="sec-label">Explore</p>
+  <h2>Try it yourself</h2>
+
+  <h3 id="e1">1. Alive or not?</h3>
+  <p class="lead">A bean seed and a pebble sit on wet cotton wool. Step through the days and observe.</p>
+  <div class="row" role="group" aria-label="Day">
+    <button type="button" class="chip-btn" data-day="0" aria-pressed="true">Day 0</button>
+    <button type="button" class="chip-btn" data-day="2" aria-pressed="false">Day 2</button>
+    <button type="button" class="chip-btn" data-day="5" aria-pressed="false">Day 5</button>
+    <button type="button" class="chip-btn" data-day="8" aria-pressed="false">Day 8</button>
+  </div>
+  <div class="stage" style="margin-top:10px"><svg id="seedSvg" viewBox="0 0 420 200" role="img" aria-label="A bean seed and a pebble on wet cotton wool"></svg></div>
+  <p class="stage-msg" id="seedMsg" aria-live="polite"></p>
+  <h4>Living or not living?</h4>
+  <div id="livSort"></div>
+  <h4>Which characteristic?</h4>
+  <div id="charSort"></div>
+  <p class="note-s">Handle living things gently, and put them back where you found them.</p>
+
+  <details class="beyond">
+    <summary><span class="bs-badge">Beyond syllabus</span> "Can move by themselves"</summary>
+    <p>Your book also says living things can move by themselves. The syllabus doesn't list this, because plants are living but do not move from place to place. It is never tested here.</p>
+  </details>
+
+  <h3 id="e2">2. Six groups of animals</h3>
+  <p class="lead">Tap a group to see the body features that tell you an animal belongs to it.</p>
+  <div class="row" role="group" aria-label="Animal groups" id="grpBtns"></div>
+  <div class="vgrid" style="margin-top:10px">
+    <div class="stage"><svg id="grpSvg" viewBox="0 0 240 150" role="img" aria-label="A body feature of the chosen group"></svg></div>
+    <div class="v-info" id="grpInfo" aria-live="polite"></div>
+  </div>
+  <h4>Which group?</h4>
+  <div id="animalSort"></div>
+  <p class="note-s">Look at body features. Where an animal lives, and whether it flies or swims, can fool you.</p>
+
+  <details class="beyond">
+    <summary><span class="bs-badge">Beyond syllabus</span> Animals that break the pattern</summary>
+    <p>Your book lists these. The syllabus says you don't need to remember particular animals like these, and they are never tested here.</p>
+    <ul>
+      <li>The duck-billed platypus and the spiny anteater are mammals that lay eggs.</li>
+      <li>Guppies, mollies and swordtails are fish that give birth to live young.</li>
+      <li>Silverfish and termites are insects without wings.</li>
+    </ul>
+  </details>
+
+  <h3 id="e3">3. Plants and classification charts</h3>
+  <h4>With or without flowers?</h4>
+  <div id="flowerSort"></div>
+  <h4>Build a classification chart</h4>
+  <p class="lead">Choose the question that splits the plants into the two groups shown.</p>
+  <p class="v-target" id="chartTarget"></p>
+  <div class="row" role="group" aria-label="Questions to ask" id="chartQs"></div>
+  <div class="v-cols" id="chartCols"></div>
+  <p class="stage-msg" id="chartMsg" aria-live="polite"></p>
+  <div class="row"><button type="button" class="btn small" id="chartNext">Next puzzle</button></div>
+
+  <h3 id="e4">4. Fungi and bacteria</h3>
+  <h4>A mushroom</h4>
+  <div class="vgrid">
+    <div class="stage"><svg id="mushSvg" viewBox="0 0 300 220" role="img" aria-label="A mushroom with its cap, gills, spores and stalk"></svg></div>
+    <div>
+      <div class="row" role="group" aria-label="Parts of a mushroom">
+        <button type="button" class="chip-btn" data-mp="cap" aria-pressed="false">Cap</button>
+        <button type="button" class="chip-btn" data-mp="gills" aria-pressed="false">Gills</button>
+        <button type="button" class="chip-btn" data-mp="spores" aria-pressed="false">Spores</button>
+        <button type="button" class="chip-btn" data-mp="stalk" aria-pressed="false">Stalk</button>
+      </div>
+      <p class="stage-msg" id="mushMsg" aria-live="polite"></p>
+    </div>
+  </div>
+  <h4>Mould on bread</h4>
+  <div class="row" role="group" aria-label="Day">
+    <button type="button" class="chip-btn" data-mday="1" aria-pressed="true">Day 1</button>
+    <button type="button" class="chip-btn" data-mday="4" aria-pressed="false">Day 4</button>
+    <button type="button" class="chip-btn" data-mday="7" aria-pressed="false">Day 7</button>
+  </div>
+  <div class="stage" style="margin-top:10px"><svg id="mouldSvg" viewBox="0 0 300 170" role="img" aria-label="A slice of bread"></svg></div>
+  <p class="stage-msg" id="mouldMsg" aria-live="polite"></p>
+  <h4>Bacteria</h4>
+  <div class="row"><button type="button" class="btn small" id="scopeBtn" aria-pressed="false">Look through a microscope</button></div>
+  <div class="stage" style="margin-top:10px"><svg id="scopeSvg" viewBox="0 0 300 170" role="img" aria-label="A drop of water"></svg></div>
+  <p class="stage-msg" id="scopeMsg" aria-live="polite"></p>
+  <h4>Plant, animal, fungus or bacteria?</h4>
+  <div id="kingdomSort"></div>
+  <h4>Useful or harmful? (tap each one)</h4>
+  <div class="v-tiles">
+    <details class="v-tile"><summary>Yeast in bread dough</summary><p><b>Useful.</b> Yeast, a fungus, helps the dough rise.</p></details>
+    <details class="v-tile"><summary>Mushrooms</summary><p><b>Useful.</b> Many mushrooms are food. Some are poisonous, so never eat a wild one.</p></details>
+    <details class="v-tile"><summary>Bacteria in yoghurt and cheese</summary><p><b>Useful.</b> Some bacteria help make yoghurt and cheese.</p></details>
+    <details class="v-tile"><summary>Mould on food</summary><p><b>Harmful.</b> Mould spoils food. Mouldy food can make you ill.</p></details>
+    <details class="v-tile"><summary>Bacteria that cause illness</summary><p><b>Harmful.</b> Some bacteria cause illness. Washing your hands helps remove them.</p></details>
+    <details class="v-tile"><summary>Mould on shoes and bags</summary><p><b>Harmful.</b> Mould grows on leather in damp places and damages it.</p></details>
+  </div>
+
+  <details class="beyond">
+    <summary><span class="bs-badge">Beyond syllabus</span> Decomposers, and some names</summary>
+    <p>Your book mentions these. They are not in the P3 syllabus and are never tested here.</p>
+    <ul>
+      <li>Fungi and bacteria break down dead plants and animals into simpler substances. This is called decomposition, and it returns nutrients to the soil.</li>
+      <li>Some named examples: <i>Lactobacillus</i> (in yoghurt), penicillin (a medicine made from a fungus), <i>Salmonella</i> and <i>E. coli</i> (can cause illness), and fly agaric (a poisonous mushroom).</li>
+    </ul>
+  </details>
+</section>
+
+<section class="card" id="check">
+  <p class="sec-label">Unit check</p>
+  <h2>Ten questions on the whole topic</h2>
+  <p class="lead">Only your first answer counts. A wrong first answer goes into your mistake book, and a different question on the same idea comes back for recap.</p>
+  <div id="qs"></div>
+</section>
+
+<section class="card" id="deeper">
+  <p class="sec-label">Go deeper</p>
+  <h2>Focus pages on living things</h2>
+  <div id="psle-deeper"></div>
+</section>

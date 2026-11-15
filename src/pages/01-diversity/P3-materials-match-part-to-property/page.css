@@ -1,0 +1,5 @@
+.stage [data-part].on.sl{fill:var(--fa)}
+.stage [data-part].on.ln,.stage g[data-part].on{stroke:var(--primary)!important;stroke-width:3.5!important}
+.needrow{display:flex;gap:8px;align-items:flex-start;padding:6px 0;font-size:15px}
+.needrow.met{color:var(--ok)} .needrow.fail{color:var(--no)}
+.q-fig svg,.stage svg{display:block;width:100%;height:auto;max-width:560px}

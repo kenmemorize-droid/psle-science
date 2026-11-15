@@ -1,0 +1,15 @@
+{
+  "id": "P4-plant-parts",
+  "type": "unit",
+  "theme": "systems",
+  "topic": "PLP",
+  "level": "P4",
+  "title": "Plant parts",
+  "purpose": "A plant is a system: its leaves, stem and roots each have a job, and they work together. Find each part, follow the water and the food, see what happens when a part is damaged, and observe plants like a scientist.",
+  "lo": ["P4.PLP.C1", "P4.PLP.P1"],
+  "fixes": "The whole Plant parts topic: what the leaves, stem and roots do, how they work together, and observing plant parts.",
+  "origin": "base",
+  "built": "2026-11-12",
+  "order": 0,
+  "uses": ["classify"]
+}

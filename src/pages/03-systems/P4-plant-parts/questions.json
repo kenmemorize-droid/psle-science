@@ -1,0 +1,935 @@
+[
+  {
+    "id": "P4-plant-parts.u1",
+    "title": "Which part takes in water?",
+    "kind": "diag",
+    "pool": "page",
+    "lo": [
+      "P4.PLP.C1"
+    ],
+    "stem": "<p>The diagram shows a plant.</p><p class='q-ask'>Which part takes in water from the soil?</p>",
+    "figure": "<svg viewBox='0 0 320 270' style='max-width:320px;margin:0 auto' role='img' aria-label='A plant growing in soil. A points to the leaves, B points to the stem and C points to the roots in the soil.'><rect x='20' y='180' width='280' height='82' rx='6' style='fill:var(--soil)'/><path class='ln' d='M20 180 H300'/><path d='M160 182 Q150 215 120 246 M160 182 Q172 220 206 242 M160 186 Q161 222 157 254 M156 206 Q138 210 126 224 M164 214 Q182 218 192 228' style='fill:none;stroke:var(--wood);stroke-width:3.5;stroke-linecap:round'/><path d='M160 182 V58 M160 122 Q190 104 206 88 M160 144 Q130 126 116 110' style='fill:none;stroke:var(--stem);stroke-width:7;stroke-linecap:round'/><ellipse cx='116' cy='104' rx='30' ry='11' transform='rotate(-28 116 104)' style='fill:var(--leaf);stroke:var(--stroke);stroke-width:1.5'/><ellipse cx='210' cy='82' rx='30' ry='11' transform='rotate(30 210 82)' style='fill:var(--leaf);stroke:var(--stroke);stroke-width:1.5'/><ellipse cx='140' cy='70' rx='28' ry='10' transform='rotate(-42 140 70)' style='fill:var(--leaf);stroke:var(--stroke);stroke-width:1.5'/><ellipse cx='182' cy='52' rx='28' ry='10' transform='rotate(38 182 52)' style='fill:var(--leaf);stroke:var(--stroke);stroke-width:1.5'/><ellipse cx='126' cy='150' rx='26' ry='10' transform='rotate(18 126 150)' style='fill:var(--leaf);stroke:var(--stroke);stroke-width:1.5'/><line x1='48' y1='84' x2='92' y2='100' style='stroke:var(--stroke);stroke-width:1.5'/><circle cx='48' cy='84' r='14' style='fill:var(--card);stroke:var(--stroke);stroke-width:2'/><text class='lbl' x='48' y='89' text-anchor='middle' style='font-weight:700;font-size:15px'>A</text><line x1='258' y1='148' x2='165' y2='148' style='stroke:var(--stroke);stroke-width:1.5'/><circle cx='258' cy='148' r='14' style='fill:var(--card);stroke:var(--stroke);stroke-width:2'/><text class='lbl' x='258' y='153' text-anchor='middle' style='font-weight:700;font-size:15px'>B</text><line x1='270' y1='232' x2='210' y2='240' style='stroke:var(--stroke);stroke-width:1.5'/><circle cx='270' cy='232' r='14' style='fill:var(--card);stroke:var(--stroke);stroke-width:2'/><text class='lbl' x='270' y='237' text-anchor='middle' style='font-weight:700;font-size:15px'>C</text></svg>",
+    "key": "The roots take in water and mineral salts from the soil. The stem carries the water up.",
+    "options": [
+      {
+        "text": "A",
+        "mis": "PLP-02",
+        "pick": "Rain falls on the leaves, so they seem to drink it.",
+        "why": "The leaves don't take in water from the soil. The roots do, and the stem carries it up to the leaves."
+      },
+      {
+        "text": "B",
+        "mis": "PLP-02",
+        "pick": "The stem carries water, so it seems to take it in too.",
+        "why": "The stem carries water up, but the roots take it in from the soil."
+      },
+      {
+        "text": "C",
+        "correct": true,
+        "pick": "Which part is in the soil?",
+        "why": "The roots take in water and mineral salts from the soil."
+      },
+      {
+        "text": "A, B and C",
+        "mis": "PLP-02",
+        "pick": "Every part needs water, so every part seems to take it in.",
+        "why": "Every part needs water, but only the roots take it in from the soil. The stem carries it to the rest."
+      }
+    ]
+  },
+  {
+    "id": "P4-plant-parts.u2",
+    "title": "What leaves do",
+    "kind": "diag",
+    "pool": "page",
+    "lo": [
+      "P4.PLP.C1"
+    ],
+    "stem": "<p class='q-ask'>Which statement about the leaves of a plant is correct?</p>",
+    "key": "The leaves make food for the whole plant.",
+    "options": [
+      {
+        "text": "They take in food from the air.",
+        "mis": "PLP-01",
+        "pick": "The leaves are in the air, and the plant must get food from somewhere.",
+        "why": "Leaves don't take in food. They make the plant's food."
+      },
+      {
+        "text": "They make food for the plant.",
+        "correct": true,
+        "pick": "Recall each part's job.",
+        "why": "The leaves make food for the whole plant, using sunlight."
+      },
+      {
+        "text": "They take in water and mineral salts for the plant.",
+        "mis": "PLP-02",
+        "pick": "The leaves need water, so they seem to collect it.",
+        "why": "The roots take in water and mineral salts from the soil."
+      },
+      {
+        "text": "They store the food that the roots take in from the soil.",
+        "mis": "PLP-01",
+        "pick": "Plants seem to \"eat\" through their roots.",
+        "why": "The roots take in water and mineral salts, not food. Food is made in the leaves."
+      }
+    ]
+  },
+  {
+    "id": "P4-plant-parts.u3",
+    "title": "A windy day",
+    "kind": "diag",
+    "pool": "page",
+    "lo": [
+      "P4.PLP.C1"
+    ],
+    "stem": "<p>During a storm, strong winds blew against a tall plant, but it was not pulled out of the ground.</p><p class='q-ask'>Which part kept it in the ground, and how?</p>",
+    "key": "The roots hold the plant firmly in the ground. The stem holds it upright.",
+    "options": [
+      {
+        "text": "The stem, because it holds the plant upright.",
+        "mis": "PLP-03",
+        "pick": "The stem is what keeps the plant standing.",
+        "why": "The stem holds the plant upright, but the roots hold it firmly in the ground."
+      },
+      {
+        "text": "The stem, because it is the thickest part.",
+        "mis": "PLP-03",
+        "pick": "A thick stem looks strong.",
+        "why": "Being thick doesn't hold a plant in the ground. The roots do that."
+      },
+      {
+        "text": "The roots, because they take in water.",
+        "mis": "PLP-03",
+        "pick": "The roots are the right part, and taking in water is one of their jobs.",
+        "why": "The roots do take in water, but that is not what holds the plant in. They hold it firmly in the ground."
+      },
+      {
+        "text": "The roots, because they hold the plant firmly in the ground.",
+        "correct": true,
+        "pick": "Which part is in the ground, and which of its jobs fits?",
+        "why": "The roots spread through the soil and hold the plant firmly in the ground."
+      }
+    ]
+  },
+  {
+    "id": "P4-plant-parts.u4",
+    "title": "What the stem carries",
+    "kind": "diag",
+    "pool": "page",
+    "lo": [
+      "P4.PLP.C1"
+    ],
+    "stem": "<p class='q-ask'>Which statement about the stem is correct?</p>",
+    "key": "The stem carries water and mineral salts up from the roots, and food from the leaves to all the other parts.",
+    "options": [
+      {
+        "text": "It carries water and mineral salts up from the roots, and food from the leaves to the other parts.",
+        "correct": true,
+        "pick": "Think of both journeys: water from the roots, and food from the leaves.",
+        "why": "The stem carries both: water and mineral salts up, and food to every other part."
+      },
+      {
+        "text": "It carries water up from the roots, but no food.",
+        "mis": "PLP-04",
+        "pick": "Water moving up the stem is the job most people remember.",
+        "why": "The stem carries food too, from the leaves to all the other parts."
+      },
+      {
+        "text": "It carries food down from the leaves, but no water.",
+        "mis": "PLP-04",
+        "pick": "Food has to reach the roots somehow.",
+        "why": "The stem carries water up as well."
+      },
+      {
+        "text": "It carries food up from the roots to the leaves.",
+        "mis": "PLP-01",
+        "pick": "The roots seem to collect food from the soil.",
+        "why": "The roots don't take in food. Food is made in the leaves and carried from there."
+      }
+    ]
+  },
+  {
+    "id": "P4-plant-parts.u5",
+    "title": "No leaves",
+    "kind": "diag",
+    "pool": "page",
+    "lo": [
+      "P4.PLP.C1"
+    ],
+    "stem": "<p>Siti removed all the leaves from a potted plant and kept watering it. After some weeks, the plant died.</p><p class='q-ask'>Why?</p>",
+    "key": "Only the leaves make food. Without them, the stem and roots get no food.",
+    "options": [
+      {
+        "text": "No food could be made for the plant.",
+        "correct": true,
+        "pick": "Which part makes food? What happens to the rest of the plant without it?",
+        "why": "Only the leaves make food. With none, the stem and roots got no food, so the plant died."
+      },
+      {
+        "text": "The roots could no longer take in food from the soil.",
+        "mis": "PLP-01",
+        "pick": "Plants seem to feed through their roots.",
+        "why": "The roots never take in food. The food was made in the leaves, which were gone."
+      },
+      {
+        "text": "The stem could no longer hold the plant upright.",
+        "mis": "PLP-03",
+        "pick": "Without its leaves, the plant looks weak.",
+        "why": "The stem still held the plant up. The problem was that no food was made."
+      },
+      {
+        "text": "Removing the leaves harmed only the leaves, so something else killed the plant.",
+        "mis": "PLP-05",
+        "pick": "The stem and roots were not touched.",
+        "why": "The parts work together. Without leaves, no food reached the stem and roots."
+      }
+    ]
+  },
+  {
+    "id": "P4-plant-parts.u6",
+    "title": "A cut stem",
+    "kind": "diag",
+    "pool": "page",
+    "lo": [
+      "P4.PLP.C1"
+    ],
+    "stem": "<p>Ravi cut through the stem of a plant halfway up and left the top part lying on the soil.</p><p class='q-ask'>What happened to the leaves on the top part a day later?</p>",
+    "figure": "<svg viewBox='0 0 360 220' style='max-width:360px;margin:0 auto' role='img' aria-label='A plant in the ground whose stem has been cut halfway up. The bottom part of the stem and the roots stay in the soil. The top part, with all the leaves, lies on the soil beside it.'><rect x='10' y='150' width='340' height='64' rx='6' style='fill:var(--soil)'/><path class='ln' d='M10 150 H350'/><path d='M110 152 Q100 176 82 196 M110 152 Q120 178 140 194 M110 154 V204' style='fill:none;stroke:var(--wood);stroke-width:3.5;stroke-linecap:round'/><path d='M110 152 V100' style='fill:none;stroke:var(--stem);stroke-width:7'/><path class='ln' d='M98 100 H122' style='stroke-dasharray:4 3'/><path d='M160 143 H330' style='fill:none;stroke:var(--stem);stroke-width:6;stroke-linecap:round'/><ellipse cx='196' cy='126' rx='22' ry='8' transform='rotate(-55 196 126)' style='fill:var(--leaf);stroke:var(--stroke);stroke-width:1.5'/><ellipse cx='232' cy='122' rx='22' ry='8' transform='rotate(-40 232 122)' style='fill:var(--leaf);stroke:var(--stroke);stroke-width:1.5'/><ellipse cx='266' cy='126' rx='22' ry='8' transform='rotate(-60 266 126)' style='fill:var(--leaf);stroke:var(--stroke);stroke-width:1.5'/><ellipse cx='298' cy='122' rx='20' ry='8' transform='rotate(-35 298 122)' style='fill:var(--leaf);stroke:var(--stroke);stroke-width:1.5'/><ellipse cx='322' cy='130' rx='16' ry='7' transform='rotate(-20 322 130)' style='fill:var(--leaf);stroke:var(--stroke);stroke-width:1.5'/><text class='lbl' x='56' y='92' text-anchor='middle'>cut here</text><path class='ln' d='M80 94 L96 100'/><text class='lbl' x='248' y='90' text-anchor='middle'>top part</text><text class='lbl sm' x='300' y='190' text-anchor='middle'>soil</text></svg>",
+    "key": "Water travels from the roots, up the stem, to the leaves. A cut stops it.",
+    "options": [
+      {
+        "text": "They stayed fresh, because they could still make food.",
+        "mis": "PLP-05",
+        "pick": "The leaves themselves weren't cut.",
+        "why": "The leaves need water from the roots. With the stem cut, none can reach them."
+      },
+      {
+        "text": "They wilted, because no water could reach them from the roots.",
+        "correct": true,
+        "pick": "Follow the water: roots, then stem, then leaves. Where is it stopped?",
+        "why": "The cut stops the stem from carrying water up, so the leaves wilt."
+      },
+      {
+        "text": "They wilted, because they could no longer take in food from the soil.",
+        "mis": "PLP-01",
+        "pick": "The top part is no longer joined to the roots, which seem to give the plant food.",
+        "why": "The roots don't take in food from the soil. The leaves wilted because they got no water."
+      },
+      {
+        "text": "They stayed fresh, because they could take in water from the soil they were lying on.",
+        "mis": "PLP-02",
+        "pick": "The leaves are touching damp soil.",
+        "why": "Leaves don't take in water from the soil. Only roots do."
+      }
+    ]
+  },
+  {
+    "id": "P4-plant-parts.u7",
+    "title": "Match the jobs",
+    "kind": "diag",
+    "pool": "page",
+    "lo": [
+      "P4.PLP.C1"
+    ],
+    "stem": "<p>The table lists three jobs.</p><p class='q-ask'>Which parts carry them out?</p>",
+    "figure": "<table class='data'><thead><tr><th scope='col'></th><th scope='col'>Job</th></tr></thead><tbody><tr><th scope='row'>P</th><td class='rowname'>holds the plant upright</td></tr><tr><th scope='row'>Q</th><td class='rowname'>holds the plant firmly in the ground</td></tr><tr><th scope='row'>R</th><td class='rowname'>makes food</td></tr></tbody></table>",
+    "key": "Stem: holds the plant upright. Roots: hold it in the ground. Leaves: make food.",
+    "options": [
+      {
+        "text": "P root, Q stem, R leaf",
+        "mis": "PLP-03",
+        "pick": "Both jobs are about holding, so they are easy to swap.",
+        "why": "The stem holds the plant up, and the roots hold it in the ground."
+      },
+      {
+        "text": "P stem, Q root, R leaf",
+        "correct": true,
+        "pick": "Take one job at a time, and ask which part does it.",
+        "why": "The stem holds the plant up, the roots hold it in the ground, and the leaves make food."
+      },
+      {
+        "text": "P stem, Q root, R root",
+        "mis": "PLP-01",
+        "pick": "The roots seem to get food from the soil.",
+        "why": "The leaves make the food."
+      },
+      {
+        "text": "P root, Q root, R leaf",
+        "mis": "PLP-03",
+        "pick": "The roots seem to do all the holding.",
+        "why": "The roots hold the plant in the ground, but the stem holds it upright."
+      }
+    ]
+  },
+  {
+    "id": "P4-plant-parts.u8",
+    "title": "A young tree",
+    "kind": "diag",
+    "pool": "page",
+    "lo": [
+      "P4.PLP.P1",
+      "P4.PLP.C1"
+    ],
+    "stem": "<p>Ali observed a young tree in the school garden and drew it.</p><p class='q-ask'>Which labelled part is the tree's stem?</p>",
+    "figure": "<svg viewBox='0 0 320 290' style='max-width:320px;margin:0 auto' role='img' aria-label='A young tree. A points to the leaves at the top, B points to the trunk and C points to the roots under the ground.'><rect x='20' y='200' width='280' height='84' rx='6' style='fill:var(--soil)'/><path class='ln' d='M20 200 H300'/><path d='M160 204 Q140 232 106 252 M160 204 Q184 236 220 250 M160 206 Q158 240 162 270 M150 222 Q128 228 114 240' style='fill:none;stroke:var(--wood);stroke-width:6;stroke-linecap:round'/><rect x='151' y='92' width='18' height='112' style='fill:var(--wood);stroke:var(--stroke);stroke-width:1.5'/><path d='M160 120 L128 92 M160 108 L196 84' style='fill:none;stroke:var(--wood);stroke-width:7;stroke-linecap:round'/><g style='fill:var(--leaf);stroke:var(--stroke);stroke-width:1.5'><circle cx='122' cy='78' r='30'/><circle cx='200' cy='74' r='32'/><circle cx='160' cy='52' r='34'/><circle cx='150' cy='96' r='22'/><circle cx='182' cy='100' r='20'/></g><line x1='266' y1='40' x2='226' y2='58' style='stroke:var(--stroke);stroke-width:1.5'/><circle cx='266' cy='40' r='14' style='fill:var(--card);stroke:var(--stroke);stroke-width:2'/><text class='lbl' x='266' y='45' text-anchor='middle' style='font-weight:700;font-size:15px'>A</text><line x1='252' y1='150' x2='172' y2='150' style='stroke:var(--stroke);stroke-width:1.5'/><circle cx='252' cy='150' r='14' style='fill:var(--card);stroke:var(--stroke);stroke-width:2'/><text class='lbl' x='252' y='155' text-anchor='middle' style='font-weight:700;font-size:15px'>B</text><line x1='274' y1='256' x2='222' y2='250' style='stroke:var(--stroke);stroke-width:1.5'/><circle cx='274' cy='256' r='14' style='fill:var(--card);stroke:var(--stroke);stroke-width:2'/><text class='lbl' x='274' y='261' text-anchor='middle' style='font-weight:700;font-size:15px'>C</text></svg>",
+    "key": "A tree's trunk is its stem.",
+    "options": [
+      {
+        "text": "None: trees have a trunk, not a stem.",
+        "mis": "PLP-06",
+        "pick": "The trunk is hard and brown, not like a green stem.",
+        "why": "A trunk is a stem. It holds the tree upright and carries water and food."
+      },
+      {
+        "text": "C, because the stem is the part in the ground.",
+        "mis": "PLP-06",
+        "pick": "The roots are thick and woody too.",
+        "why": "The part in the ground is the roots, which hold the tree firmly in the ground."
+      },
+      {
+        "text": "B and C, because both are hard and brown.",
+        "mis": "PLP-06",
+        "pick": "They look alike, so they seem to be the same part.",
+        "why": "Only B is the stem. C is in the ground: it is the roots."
+      },
+      {
+        "text": "B",
+        "correct": true,
+        "pick": "Which part holds the tree upright and joins the roots to the leaves?",
+        "why": "B, the trunk, is the tree's stem."
+      }
+    ]
+  },
+  {
+    "id": "P4-plant-parts.u9",
+    "title": "Observing a seedling's roots",
+    "kind": "diag",
+    "pool": "page",
+    "lo": [
+      "P4.PLP.P1"
+    ],
+    "stem": "<p>Mei wants to see the small details on the roots of a seedling more clearly.</p><p class='q-ask'>Which should she use?</p>",
+    "key": "A hand lens makes small parts look bigger, so you can see their details.",
+    "options": [
+      {
+        "text": "A ruler",
+        "mis": "PLP-07",
+        "pick": "A ruler is used for looking at sizes.",
+        "why": "A ruler measures length. It doesn't make details look bigger."
+      },
+      {
+        "text": "A measuring cylinder",
+        "mis": "PLP-07",
+        "pick": "It is often used in plant experiments with water.",
+        "why": "A measuring cylinder measures the volume of a liquid."
+      },
+      {
+        "text": "A hand lens",
+        "correct": true,
+        "pick": "Which apparatus makes small things look bigger?",
+        "why": "A hand lens makes the roots look bigger, so she can see their details."
+      },
+      {
+        "text": "A thermometer",
+        "mis": "PLP-07",
+        "pick": "Any science apparatus seems to help you observe.",
+        "why": "A thermometer measures temperature."
+      }
+    ]
+  },
+  {
+    "id": "P4-plant-parts.r1",
+    "title": "Mineral salts",
+    "kind": "variant",
+    "pool": "recap",
+    "lo": [
+      "P4.PLP.C1"
+    ],
+    "stem": "<p class='q-ask'>Which part of a plant takes in mineral salts from the soil?</p>",
+    "key": "The roots take in water and mineral salts from the soil.",
+    "options": [
+      {
+        "text": "The roots",
+        "correct": true,
+        "pick": "Which part is in the soil?",
+        "why": "The roots take in mineral salts, together with water, from the soil."
+      },
+      {
+        "text": "The leaves",
+        "mis": "PLP-02",
+        "pick": "The leaves need mineral salts, so they seem to collect them.",
+        "why": "The leaves aren't in the soil. The roots take in mineral salts."
+      },
+      {
+        "text": "The stem",
+        "mis": "PLP-02",
+        "pick": "The stem carries mineral salts.",
+        "why": "The stem carries them, but the roots take them in."
+      },
+      {
+        "text": "No part: mineral salts are a kind of food made in the leaves.",
+        "mis": "PLP-01",
+        "pick": "Mineral salts sound like something a plant \"eats\".",
+        "why": "Mineral salts are not food. They come from the soil, through the roots."
+      }
+    ]
+  },
+  {
+    "id": "P4-plant-parts.r2",
+    "title": "Mineral salts in the soil",
+    "kind": "variant",
+    "pool": "recap",
+    "lo": [
+      "P4.PLP.C1"
+    ],
+    "stem": "<p>Mr Tan mixes mineral salts into the soil around his plant.</p><p class='q-ask'>Which statement is correct?</p>",
+    "key": "Mineral salts are not food. The roots take them in with water.",
+    "options": [
+      {
+        "text": "The leaves take in the mineral salts from the soil.",
+        "mis": "PLP-02",
+        "pick": "The leaves are the part that seems to need them.",
+        "why": "The leaves aren't in the soil. The roots take in mineral salts."
+      },
+      {
+        "text": "The mineral salts are food, so the leaves can stop making food.",
+        "mis": "PLP-01",
+        "pick": "Adding something to the soil seems to feed the plant.",
+        "why": "Mineral salts are not food. The leaves still make all the plant's food."
+      },
+      {
+        "text": "The roots take in the mineral salts with water.",
+        "correct": true,
+        "pick": "Which part takes things in from the soil?",
+        "why": "The roots take in water and mineral salts. The stem then carries them to the other parts."
+      },
+      {
+        "text": "The stem takes in the mineral salts and keeps them.",
+        "mis": "PLP-02",
+        "pick": "The bottom of the stem touches the soil.",
+        "why": "The roots take them in, and the stem carries them on."
+      }
+    ]
+  },
+  {
+    "id": "P4-plant-parts.r3",
+    "title": "Where a plant's food comes from",
+    "kind": "variant",
+    "pool": "recap",
+    "lo": [
+      "P4.PLP.C1"
+    ],
+    "stem": "<p class='q-ask'>Where does a plant get its food?</p>",
+    "key": "A plant makes its own food in its leaves.",
+    "options": [
+      {
+        "text": "It takes in food from the soil through its roots.",
+        "mis": "PLP-01",
+        "pick": "The soil seems to feed the plant.",
+        "why": "The roots take in water and mineral salts, not food."
+      },
+      {
+        "text": "It makes its own food in its leaves.",
+        "correct": true,
+        "pick": "Which part makes food?",
+        "why": "The leaves make food for the whole plant."
+      },
+      {
+        "text": "Its stem makes food and sends it to the leaves.",
+        "mis": "PLP-01",
+        "pick": "The stem carries food, so it seems to make it too.",
+        "why": "The stem carries food from the leaves. It doesn't make it."
+      },
+      {
+        "text": "Its roots make food underground.",
+        "mis": "PLP-01",
+        "pick": "The roots are busy underground, so they seem to make food there.",
+        "why": "Only the leaves make food. The stem carries some down to the roots."
+      }
+    ]
+  },
+  {
+    "id": "P4-plant-parts.r4",
+    "title": "The water's journey",
+    "kind": "variant",
+    "pool": "recap",
+    "lo": [
+      "P4.PLP.C1"
+    ],
+    "stem": "<p class='q-ask'>How does water get from the soil to the leaves?</p>",
+    "key": "Water goes from the soil into the roots, then up the stem to the leaves.",
+    "options": [
+      {
+        "text": "soil → stem → roots → leaves",
+        "mis": "PLP-02",
+        "pick": "The stem is the main path, so water seems to go there first.",
+        "why": "Water enters through the roots, then goes up the stem."
+      },
+      {
+        "text": "soil → leaves → stem → roots",
+        "mis": "PLP-02",
+        "pick": "The leaves need water most, so it seems to go there first.",
+        "why": "Water can only enter through the roots. The stem then carries it up."
+      },
+      {
+        "text": "soil → stem → leaves",
+        "mis": "PLP-02",
+        "pick": "The stem stands in the soil, so it seems to take in the water.",
+        "why": "The roots take in water first."
+      },
+      {
+        "text": "soil → roots → stem → leaves",
+        "correct": true,
+        "pick": "Which part takes water in, and which part carries it?",
+        "why": "The roots take in the water, and the stem carries it up to the leaves."
+      }
+    ]
+  },
+  {
+    "id": "P4-plant-parts.r5",
+    "title": "How the roots get food",
+    "kind": "variant",
+    "pool": "recap",
+    "lo": [
+      "P4.PLP.C1"
+    ],
+    "stem": "<p>Food is made only in the leaves.</p><p class='q-ask'>How do the roots get food?</p>",
+    "key": "The stem carries food from the leaves to every part, including down to the roots.",
+    "options": [
+      {
+        "text": "The stem carries food from the leaves down to the roots.",
+        "correct": true,
+        "pick": "Which part carries food, and which way?",
+        "why": "The stem carries food to all the other parts, including down to the roots."
+      },
+      {
+        "text": "The roots take in their own food from the soil.",
+        "mis": "PLP-01",
+        "pick": "The roots are in the soil, which seems to have food.",
+        "why": "The roots take in water and mineral salts, not food."
+      },
+      {
+        "text": "The roots don't need food; only the leaves use it.",
+        "mis": "PLP-04",
+        "pick": "The food seems to stay where it is made.",
+        "why": "Every part is living and needs food. The stem carries food down to the roots."
+      },
+      {
+        "text": "The stem carries food up from the roots to the leaves.",
+        "mis": "PLP-04",
+        "pick": "Things in a plant seem to move only upwards.",
+        "why": "Food goes from the leaves to the other parts, including down to the roots."
+      }
+    ]
+  },
+  {
+    "id": "P4-plant-parts.r6",
+    "title": "Not a job of the stem",
+    "kind": "variant",
+    "pool": "recap",
+    "lo": [
+      "P4.PLP.C1"
+    ],
+    "stem": "<p class='q-ask'>Which of these is <b>not</b> a job of the stem?</p>",
+    "key": "The stem holds the plant up and carries water and food. The roots take in water.",
+    "options": [
+      {
+        "text": "Holding the plant upright",
+        "mis": "PLP-03",
+        "pick": "Holding seems to be the roots' job.",
+        "why": "The stem does hold the plant upright. The roots hold it in the ground."
+      },
+      {
+        "text": "Carrying food from the leaves to the roots",
+        "mis": "PLP-04",
+        "pick": "The stem seems to carry only water.",
+        "why": "The stem carries food too."
+      },
+      {
+        "text": "Carrying water from the roots to the leaves",
+        "mis": "PLP-04",
+        "pick": "Water seems to soak up through the plant by itself.",
+        "why": "The stem carries the water up."
+      },
+      {
+        "text": "Taking in water from the soil",
+        "correct": true,
+        "pick": "Which job happens in the soil?",
+        "why": "The roots take in water. The stem only carries it."
+      }
+    ]
+  },
+  {
+    "id": "P4-plant-parts.r7",
+    "title": "Pulled out of the soil",
+    "kind": "variant",
+    "pool": "recap",
+    "lo": [
+      "P4.PLP.C1"
+    ],
+    "stem": "<p>Mei pulled a plant out of the soil and left it on the table. A few hours later, its leaves had wilted.</p><p class='q-ask'>Why?</p>",
+    "key": "Out of the soil, the roots cannot take in water, so the leaves wilt.",
+    "options": [
+      {
+        "text": "Its leaves could no longer take in food from the soil.",
+        "mis": "PLP-01",
+        "pick": "The plant seems to feed from the soil.",
+        "why": "The leaves make food. They wilted because they got no water."
+      },
+      {
+        "text": "Its roots could not take in water, so no water reached the leaves.",
+        "correct": true,
+        "pick": "Which part takes in water, and where was it?",
+        "why": "Out of the soil, the roots couldn't take in water, so none reached the leaves."
+      },
+      {
+        "text": "Only the roots were harmed, so the leaves wilted because the room was hot.",
+        "mis": "PLP-05",
+        "pick": "The leaves were not touched.",
+        "why": "The parts work together. The leaves wilted because the roots could no longer send them water."
+      },
+      {
+        "text": "Its stem could no longer make food for the leaves.",
+        "mis": "PLP-01",
+        "pick": "The stem seems to feed the leaves.",
+        "why": "The stem doesn't make food. The leaves wilted from lack of water."
+      }
+    ]
+  },
+  {
+    "id": "P4-plant-parts.r8",
+    "title": "Roots cut off",
+    "kind": "variant",
+    "pool": "recap",
+    "lo": [
+      "P4.PLP.C1"
+    ],
+    "stem": "<p>Ravi cut off all the roots of a plant and pushed its stem into the soil. The next day, the plant had fallen over and wilted.</p><p class='q-ask'>Which explains both?</p>",
+    "key": "The roots hold the plant in the ground and take in water.",
+    "options": [
+      {
+        "text": "Without roots, the stem could no longer hold the plant upright.",
+        "mis": "PLP-03",
+        "pick": "The plant fell over, so the job of holding it up seems lost.",
+        "why": "The stem holds the plant up, but the roots hold it firmly in the ground. Without roots, it fell."
+      },
+      {
+        "text": "Only the roots were cut, so the leaves should be fine; the wind made it fall.",
+        "mis": "PLP-05",
+        "pick": "The leaves and stem were not cut.",
+        "why": "The parts work together. Without roots, no water reached the leaves."
+      },
+      {
+        "text": "Without roots, nothing held the plant firmly in the ground or took in water.",
+        "correct": true,
+        "pick": "The roots have two jobs. Which result goes with each?",
+        "why": "No roots means nothing holds the plant in (so it fell) and no water is taken in (so it wilted)."
+      },
+      {
+        "text": "The stem took in too much water from the soil.",
+        "mis": "PLP-02",
+        "pick": "The cut stem was pushed into wet soil.",
+        "why": "The stem doesn't take in water from the soil, and the plant wilted from too little water."
+      }
+    ]
+  },
+  {
+    "id": "P4-plant-parts.r9",
+    "title": "Two plants, one without leaves",
+    "kind": "variant",
+    "pool": "recap",
+    "lo": [
+      "P4.PLP.C1"
+    ],
+    "stem": "<p>Two plants of the same kind and size are watered the same. All the leaves of plant B are removed.</p><p class='q-ask'>After four weeks, which is most likely?</p>",
+    "key": "Without leaves, a plant makes no food and cannot grow.",
+    "options": [
+      {
+        "text": "Plant A has grown more, because its leaves made food for it.",
+        "correct": true,
+        "pick": "Which plant can still make food?",
+        "why": "Only plant A has leaves to make food, so only A can grow well."
+      },
+      {
+        "text": "Both have grown the same, because both roots took in food from the soil.",
+        "mis": "PLP-01",
+        "pick": "The roots of both plants are still in the soil.",
+        "why": "The roots don't take in food. Plant B has no leaves, so it makes no food."
+      },
+      {
+        "text": "Plant B has grown more, because its stem made food instead.",
+        "mis": "PLP-01",
+        "pick": "The stem seems to take over the leaves' job.",
+        "why": "Only the leaves make food. Plant B made none."
+      },
+      {
+        "text": "Both have grown the same, because removing leaves harms only the leaves.",
+        "mis": "PLP-05",
+        "pick": "The stem and roots of plant B were not touched.",
+        "why": "The parts work together. With no leaves, B's stem and roots get no food."
+      }
+    ]
+  },
+  {
+    "id": "P4-plant-parts.r10",
+    "title": "A fallen branch",
+    "kind": "variant",
+    "pool": "recap",
+    "lo": [
+      "P4.PLP.C1"
+    ],
+    "stem": "<p>A branch broke off a small tree and fell to the ground. A day later, the leaves on that branch had wilted, but the rest of the tree looked fine.</p><p class='q-ask'>Why?</p>",
+    "key": "Leaves get their water from the roots, through the stem.",
+    "options": [
+      {
+        "text": "The leaves on the branch could no longer take in water from the air.",
+        "mis": "PLP-02",
+        "pick": "Leaves seem to take in water from around them.",
+        "why": "Leaves don't take in water. It came from the roots, through the stem."
+      },
+      {
+        "text": "Water from the roots could no longer reach the leaves on that branch.",
+        "correct": true,
+        "pick": "Follow the water from the roots. Can it still reach that branch?",
+        "why": "The branch is no longer joined to the stem, so no water reaches its leaves."
+      },
+      {
+        "text": "The branch could no longer take in food from the soil.",
+        "mis": "PLP-01",
+        "pick": "The tree seems to feed from the soil.",
+        "why": "The roots take in water, not food. The leaves wilted because they got no water."
+      },
+      {
+        "text": "The leaves stopped making food, and the roots took in no food for them.",
+        "mis": "PLP-01",
+        "pick": "Wilting seems to mean the plant is hungry.",
+        "why": "The roots never take in food. The leaves wilted because they got no water."
+      }
+    ]
+  },
+  {
+    "id": "P4-plant-parts.r11",
+    "title": "Why the leaves are held up",
+    "kind": "variant",
+    "pool": "recap",
+    "lo": [
+      "P4.PLP.C1"
+    ],
+    "stem": "<p class='q-ask'>Why does the stem hold the leaves up high?</p>",
+    "key": "The stem holds the leaves up so they get as much sunlight as possible.",
+    "options": [
+      {
+        "text": "So the leaves can take in food from the air",
+        "mis": "PLP-01",
+        "pick": "The leaves seem to \"eat\" from the air around them.",
+        "why": "The leaves make food. They don't take it in."
+      },
+      {
+        "text": "So the leaves can catch rain to take in water",
+        "mis": "PLP-02",
+        "pick": "Rain lands on high leaves first.",
+        "why": "The roots take in water from the soil."
+      },
+      {
+        "text": "So the roots can hold the plant firmly in the ground",
+        "mis": "PLP-03",
+        "pick": "Holding the plant up and holding it in seem linked.",
+        "why": "That is a separate job, done by the roots."
+      },
+      {
+        "text": "So the leaves get as much sunlight as possible to make food",
+        "correct": true,
+        "pick": "What do the leaves need to make food?",
+        "why": "The leaves need sunlight to make food, so the stem holds them up towards it."
+      }
+    ]
+  },
+  {
+    "id": "P4-plant-parts.r12",
+    "title": "Match the jobs again",
+    "kind": "variant",
+    "pool": "recap",
+    "lo": [
+      "P4.PLP.C1"
+    ],
+    "stem": "<p>The table lists three jobs.</p><p class='q-ask'>Which parts carry them out?</p>",
+    "figure": "<table class='data'><thead><tr><th scope='col'></th><th scope='col'>Job</th></tr></thead><tbody><tr><th scope='row'>P</th><td class='rowname'>takes in water from the soil</td></tr><tr><th scope='row'>Q</th><td class='rowname'>carries water to the leaves</td></tr><tr><th scope='row'>R</th><td class='rowname'>makes food</td></tr></tbody></table>",
+    "key": "The roots take in water, the stem carries it to the leaves, and the leaves make food.",
+    "options": [
+      {
+        "text": "P leaf, Q stem, R root",
+        "mis": "PLP-02",
+        "pick": "Mixed up the top and the bottom of the plant.",
+        "why": "The roots take in water, and the leaves make food."
+      },
+      {
+        "text": "P stem, Q stem, R leaf",
+        "mis": "PLP-02",
+        "pick": "The stem carries water, so it seems to take it in too.",
+        "why": "The roots take in the water. The stem carries it."
+      },
+      {
+        "text": "P root, Q stem, R leaf",
+        "correct": true,
+        "pick": "Take one job at a time.",
+        "why": "The roots take in water, the stem carries it to the leaves, and the leaves make food."
+      },
+      {
+        "text": "P root, Q root, R leaf",
+        "mis": "PLP-04",
+        "pick": "The roots take the water in, so they seem to carry it all the way.",
+        "why": "The stem carries the water up to the leaves."
+      }
+    ]
+  },
+  {
+    "id": "P4-plant-parts.r13",
+    "title": "A seedling",
+    "kind": "variant",
+    "pool": "recap",
+    "lo": [
+      "P4.PLP.P1",
+      "P4.PLP.C1"
+    ],
+    "stem": "<p class='q-ask'>Which statement about a young balsam plant (a seedling) is correct?</p>",
+    "key": "Even a seedling has leaves, a stem and roots.",
+    "options": [
+      {
+        "text": "It has leaves, a stem and roots, like the adult plant.",
+        "correct": true,
+        "pick": "Observe it closely. Which parts can you find?",
+        "why": "Even a seedling has all three parts. They are just small."
+      },
+      {
+        "text": "It has leaves and a stem, but its roots grow later.",
+        "mis": "PLP-06",
+        "pick": "The roots are hidden, so they seem to come later.",
+        "why": "Even a seedling has roots that hold it in the soil and take in water."
+      },
+      {
+        "text": "It has no stem yet, because a stem must be hard and brown.",
+        "mis": "PLP-06",
+        "pick": "Tree trunks are hard and brown.",
+        "why": "A seedling's stem is short, soft and green, but it is still a stem."
+      },
+      {
+        "text": "It has no leaves yet; only adult plants have leaves.",
+        "mis": "PLP-06",
+        "pick": "Leaves seem to come later, like flowers do.",
+        "why": "A seedling has small leaves that make food for it."
+      }
+    ]
+  },
+  {
+    "id": "P4-plant-parts.r14",
+    "title": "The tree's stem",
+    "kind": "variant",
+    "pool": "recap",
+    "lo": [
+      "P4.PLP.P1",
+      "P4.PLP.C1"
+    ],
+    "stem": "<p class='q-ask'>Which part of a tree does the same jobs as the stem of a balsam plant?</p>",
+    "key": "A tree's trunk is its stem.",
+    "options": [
+      {
+        "text": "Its roots",
+        "mis": "PLP-03",
+        "pick": "Tree roots are big and woody, and they hold the tree.",
+        "why": "The roots hold the tree in the ground. The trunk holds it upright and carries water and food."
+      },
+      {
+        "text": "Its trunk",
+        "correct": true,
+        "pick": "Which part holds the tree upright and joins the roots to the leaves?",
+        "why": "The trunk is the tree's stem."
+      },
+      {
+        "text": "None: a tree has a trunk instead of a stem.",
+        "mis": "PLP-06",
+        "pick": "\"Trunk\" and \"stem\" are different words.",
+        "why": "The trunk is the tree's stem. It does the same jobs."
+      },
+      {
+        "text": "Its leaves, because they are green like the balsam's stem",
+        "mis": "PLP-06",
+        "pick": "A balsam's stem is green, like leaves.",
+        "why": "Colour doesn't decide the part. The trunk does the stem's jobs."
+      }
+    ]
+  },
+  {
+    "id": "P4-plant-parts.r15",
+    "title": "Measuring a leaf",
+    "kind": "variant",
+    "pool": "recap",
+    "lo": [
+      "P4.PLP.P1"
+    ],
+    "stem": "<p>Ali wants to find out how long a leaf is.</p><p class='q-ask'>Which should he use?</p>",
+    "key": "A ruler measures length.",
+    "options": [
+      {
+        "text": "A hand lens",
+        "mis": "PLP-07",
+        "pick": "It is the apparatus for observing plant parts.",
+        "why": "A hand lens makes things look bigger, but it doesn't measure length."
+      },
+      {
+        "text": "A measuring cylinder",
+        "mis": "PLP-07",
+        "pick": "\"Measuring\" sounds right.",
+        "why": "A measuring cylinder measures the volume of a liquid."
+      },
+      {
+        "text": "An electronic balance",
+        "mis": "PLP-07",
+        "pick": "A balance gives a number for anything.",
+        "why": "A balance measures mass, not length."
+      },
+      {
+        "text": "A ruler",
+        "correct": true,
+        "pick": "Length is measured with which apparatus?",
+        "why": "A ruler measures length."
+      }
+    ]
+  },
+  {
+    "id": "P4-plant-parts.r16",
+    "title": "Why a hand lens",
+    "kind": "variant",
+    "pool": "recap",
+    "lo": [
+      "P4.PLP.P1"
+    ],
+    "stem": "<p class='q-ask'>Why does Mei use a hand lens to observe a leaf?</p>",
+    "key": "A hand lens makes small parts look bigger.",
+    "options": [
+      {
+        "text": "It measures how long the leaf is.",
+        "mis": "PLP-07",
+        "pick": "Apparatus often measures something.",
+        "why": "A ruler measures length. A hand lens makes things look bigger."
+      },
+      {
+        "text": "It shows how hot the leaf is.",
+        "mis": "PLP-07",
+        "pick": "Some apparatus shows temperature.",
+        "why": "A thermometer measures temperature."
+      },
+      {
+        "text": "It makes the leaf look bigger, so she can see small details.",
+        "correct": true,
+        "pick": "What does a hand lens do?",
+        "why": "A hand lens makes small parts look bigger."
+      },
+      {
+        "text": "It measures how much water is in the leaf.",
+        "mis": "PLP-07",
+        "pick": "Leaves contain water.",
+        "why": "A hand lens measures nothing. It only makes things look bigger."
+      }
+    ]
+  }
+]

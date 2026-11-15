@@ -1,0 +1,15 @@
+{
+  "id": "P3-materials-strong-vs-flexible",
+  "type": "focus",
+  "theme": "diversity",
+  "topic": "MAT",
+  "level": "P3",
+  "title": "Strong is not the same as flexible",
+  "purpose": "Every property of a material is found by doing something to it and watching what happens. Run each test on the bench, read your own result, then answer.",
+  "lo": ["P3.MAT.C1", "P3.MAT.P1"],
+  "fixes": "Mixing up strong (takes a load) with flexible (bends without breaking), and choosing a material on one property when the job needs two.",
+  "origin": "retrofit",
+  "built": "2026-11-11",
+  "order": 1,
+  "uses": []
+}

@@ -1,0 +1,15 @@
+{
+  "id": "P3-life-cycles",
+  "type": "unit",
+  "theme": "cycles",
+  "topic": "LCY",
+  "level": "P3",
+  "title": "Life cycles",
+  "purpose": "Plants and animals go through stages that repeat. Follow a plant from seed to seed, step through animal life cycles with 3 or 4 stages, tell a larva from a pupa and a nymph, and put the stages in order.",
+  "lo": ["P3.LCY.C1", "P3.LCY.P1", "P3.LCY.P2"],
+  "fixes": "The whole Life cycles topic: plant stages, 3-stage and 4-stage animal life cycles, and larva, pupa and nymph.",
+  "origin": "base",
+  "built": "2026-11-12",
+  "order": 0,
+  "uses": ["classify"]
+}

@@ -1,0 +1,4 @@
+svg.cstage{display:block;width:100%;height:auto;touch-action:none}
+.stepbox{display:flex;gap:12px;align-items:flex-start;margin-top:12px;min-height:84px}
+.stepno{flex:0 0 auto;width:42px;height:42px;border-radius:999px;background:var(--primary);color:var(--primary-ink);display:flex;align-items:center;justify-content:center;font:700 16px var(--f-label)}
+.steptext{flex:1 1 auto;font-size:16px}

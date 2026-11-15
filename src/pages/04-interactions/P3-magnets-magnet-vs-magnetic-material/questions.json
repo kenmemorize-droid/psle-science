@@ -1,0 +1,817 @@
+[
+  {
+    "id": "P3-magnets-magnet-vs-magnetic-material.q1",
+    "title": "Mala's three objects",
+    "kind": "exam",
+    "pool": "page",
+    "lo": [
+      "P3.MAG.C2",
+      "P3.MAG.P1"
+    ],
+    "source": "School paper question (Mala's objects K, L, M)",
+    "pageIntro": "Test all three pairs on the bench, then answer.",
+    "stem": "<p>Mala had three objects, K, L and M. She placed two different objects beside each other each time and recorded what happened.</p><p class='q-ask'>Which of the following could objects K, L and M be?</p>",
+    "figure": "<table class='data'><thead><tr><th scope='col'>Pair placed beside each other</th><th scope='col'>What happened</th></tr></thead><tbody><tr><th scope='row'>K and L</th><td>→ ← attract</td></tr><tr><th scope='row'>L and M</th><td>→ ← attract</td></tr><tr><th scope='row'>K and M</th><td>← → repel</td></tr></tbody></table>",
+    "bench": {
+      "objects": [
+        {
+          "id": "K",
+          "truth": "Magnet"
+        },
+        {
+          "id": "L",
+          "truth": "Steel block"
+        },
+        {
+          "id": "M",
+          "truth": "Magnet"
+        }
+      ],
+      "pairs": {
+        "K-L": "attract",
+        "L-M": "attract",
+        "K-M": "repel"
+      }
+    },
+    "hints": [
+      "Which pair repels? What kind of objects can push each other away?",
+      "K and M are settled. L is pulled by both. Which options let L be pulled by a magnet?"
+    ],
+    "key": "Repel is the one result that proves both objects are magnets. Attract only tells you at least one of the pair is a magnet.",
+    "layout": "table",
+    "cols": [
+      "Object K",
+      "Object L",
+      "Object M"
+    ],
+    "options": [
+      {
+        "text": [
+          "Steel block",
+          "Magnet",
+          "Magnet"
+        ],
+        "mis": "MAG-01",
+        "pick": "L as a magnet explains why it attracts both K and M, and a magnet beside a steel block gives a strong reaction.",
+        "why": "Steel is only pulled by magnets. It can never push anything away, so a steel K and a magnet M cannot repel."
+      },
+      {
+        "text": [
+          "Magnet",
+          "Steel block",
+          "Iron block"
+        ],
+        "mis": "MAG-01",
+        "pick": "K is the magnet pulling steel L, and iron M is a magnetic material too, so it seems to belong with them.",
+        "why": "Iron and steel are magnetic materials, not magnets. A magnet can only attract an iron block, so K and M would attract, not repel."
+      },
+      {
+        "text": [
+          "Magnet",
+          "Steel block",
+          "Magnet"
+        ],
+        "correct": true,
+        "pick": "Start with K and M. They repel, so both are magnets. L is pulled by both of them, which a steel block is.",
+        "why": "Repel is only possible between two magnets, and a steel block is attracted to either magnet. L could also be a third magnet, but only this option fits all three results."
+      },
+      {
+        "text": [
+          "Steel block",
+          "Magnet",
+          "Iron block"
+        ],
+        "mis": "MAG-01",
+        "pick": "L is a magnet that pulls both K and M. Steel and iron are different materials, so they might push each other.",
+        "why": "Steel and iron are both magnetic materials. Two magnetic materials show no force on each other, so K and M would show nothing at all, not repel."
+      }
+    ]
+  },
+  {
+    "id": "P3-magnets-magnet-vs-magnetic-material.q2",
+    "title": "Wei Jie's three objects",
+    "kind": "diag",
+    "pool": "page",
+    "lo": [
+      "P3.MAG.C2",
+      "P3.MAG.P1"
+    ],
+    "pageIntro": "Test all three pairs, then answer.",
+    "stem": "<p>Wei Jie had three objects, P, Q and R. He placed two different objects beside each other each time and recorded what happened.</p><p class='q-ask'>Which of the following could objects P, Q and R be?</p>",
+    "figure": "<table class='data'><thead><tr><th scope='col'>Pair placed beside each other</th><th scope='col'>What happened</th></tr></thead><tbody><tr><th scope='row'>P and Q</th><td>→ ← attract</td></tr><tr><th scope='row'>Q and R</th><td>no force</td></tr><tr><th scope='row'>P and R</th><td>→ ← attract</td></tr></tbody></table>",
+    "bench": {
+      "objects": [
+        {
+          "id": "P",
+          "truth": "Magnet"
+        },
+        {
+          "id": "Q",
+          "truth": "Iron block"
+        },
+        {
+          "id": "R",
+          "truth": "Steel block"
+        }
+      ],
+      "pairs": {
+        "P-Q": "attract",
+        "Q-R": "none",
+        "P-R": "attract"
+      }
+    },
+    "hints": [
+      "One object attracts both of the others. Could it be the magnet?",
+      "Q and R show no force on each other. If one of them were a magnet, what would it do to the other?"
+    ],
+    "key": "A magnet pulls every iron or steel block, and two such blocks do not affect each other. The object that pulls everything is the magnet.",
+    "layout": "table",
+    "cols": [
+      "Object P",
+      "Object Q",
+      "Object R"
+    ],
+    "options": [
+      {
+        "text": [
+          "Iron block",
+          "Magnet",
+          "Steel block"
+        ],
+        "mis": "MAG-02",
+        "pick": "Q is the magnet and pulls P. Iron and steel are both magnetic, so P and R should pull each other.",
+        "why": "Iron and steel are magnetic materials, not magnets, so they show no force on each other. Also, a magnet Q would pull steel R, but Q and R showed no force."
+      },
+      {
+        "text": [
+          "Magnet",
+          "Plastic block",
+          "Steel block"
+        ],
+        "mis": "MAG-04",
+        "pick": "P is a magnet that pulls steel R. Plastic Q shows no force with R, which matches the Q and R result.",
+        "why": "P and Q attracted, but a magnet shows no force with plastic. Matching one result is not enough; every result has to fit."
+      },
+      {
+        "text": [
+          "Steel block",
+          "Iron block",
+          "Magnet"
+        ],
+        "mis": "MAG-03",
+        "pick": "R is the magnet and pulls steel P. Iron Q is magnetic too, so it seems to belong.",
+        "why": "A magnet pulls every iron block, so R would attract Q, but you saw no force. Steel P and iron Q would also show no force, but you saw attract."
+      },
+      {
+        "text": [
+          "Magnet",
+          "Iron block",
+          "Steel block"
+        ],
+        "correct": true,
+        "pick": "Q and R show no force on each other, so neither is a magnet. P pulls both, so P is the magnet.",
+        "why": "A magnet attracts iron and steel blocks, and two such blocks do not affect each other. All three results fit."
+      }
+    ]
+  },
+  {
+    "id": "P3-magnets-magnet-vs-magnetic-material.q3",
+    "title": "Aisha's three objects",
+    "kind": "diag",
+    "pool": "page",
+    "lo": [
+      "P3.MAG.C2",
+      "P3.MAG.P1"
+    ],
+    "pageIntro": "Test all three pairs, then answer.",
+    "stem": "<p>Aisha had three objects, X, Y and Z. She placed two different objects beside each other each time and recorded what happened.</p><p class='q-ask'>Which of the following could objects X, Y and Z be?</p>",
+    "figure": "<table class='data'><thead><tr><th scope='col'>Pair placed beside each other</th><th scope='col'>What happened</th></tr></thead><tbody><tr><th scope='row'>X and Y</th><td>no force</td></tr><tr><th scope='row'>Y and Z</th><td>no force</td></tr><tr><th scope='row'>X and Z</th><td>→ ← attract</td></tr></tbody></table>",
+    "bench": {
+      "objects": [
+        {
+          "id": "X",
+          "truth": "Magnet"
+        },
+        {
+          "id": "Y",
+          "truth": "Wooden block"
+        },
+        {
+          "id": "Z",
+          "truth": "Iron block"
+        }
+      ],
+      "pairs": {
+        "X-Y": "none",
+        "Y-Z": "none",
+        "X-Z": "attract"
+      }
+    },
+    "hints": [
+      "Which object shows no force with both of the others? What kind of material does a magnet have no effect on?",
+      "Only X and Z attract. Which of them is the magnet?"
+    ],
+    "key": "An object that shows no force with a magnet is non-magnetic. Find the magnet first; it pulls every iron or steel block.",
+    "layout": "table",
+    "cols": [
+      "Object X",
+      "Object Y",
+      "Object Z"
+    ],
+    "options": [
+      {
+        "text": [
+          "Iron block",
+          "Magnet",
+          "Steel block"
+        ],
+        "mis": "MAG-02",
+        "pick": "X and Z attract because iron and steel are both magnetic. Y is a magnet that just sits in the middle.",
+        "why": "Iron and steel do not pull each other. A magnet Y would also pull both X and Z, but Y showed no force with either."
+      },
+      {
+        "text": [
+          "Magnet",
+          "Wooden block",
+          "Iron block"
+        ],
+        "correct": true,
+        "pick": "Y shows no force with anything, so it is not magnetic. X and Z attract, so X is the magnet pulling iron Z.",
+        "why": "A magnet has no effect on wood and pulls iron. All three results fit."
+      },
+      {
+        "text": [
+          "Magnet",
+          "Steel block",
+          "Plastic block"
+        ],
+        "mis": "MAG-03",
+        "pick": "X is the magnet because something attracts. Steel and plastic seem like ordinary blocks.",
+        "why": "A magnet pulls steel, so X and Y would attract, but you saw no force. Plastic Z is not pulled, so X and Z would show no force, but you saw attract."
+      },
+      {
+        "text": [
+          "Steel block",
+          "Plastic block",
+          "Iron block"
+        ],
+        "mis": "MAG-02",
+        "pick": "Plastic Y shows no force with anything. Steel and iron are both magnetic, so X and Z attract.",
+        "why": "Steel and iron are magnetic materials, not magnets. With no magnet in the set, nothing can attract."
+      }
+    ]
+  },
+  {
+    "id": "P3-magnets-magnet-vs-magnetic-material.q4",
+    "title": "Priya's three objects",
+    "kind": "diag",
+    "pool": "page",
+    "lo": [
+      "P3.MAG.C2",
+      "P3.MAG.P1"
+    ],
+    "pageIntro": "Test all three pairs, then answer.",
+    "stem": "<p>Priya had three objects, A, B and C. She placed two different objects beside each other each time and recorded what happened.</p><p class='q-ask'>Which of the following could objects A, B and C be?</p>",
+    "figure": "<table class='data'><thead><tr><th scope='col'>Pair placed beside each other</th><th scope='col'>What happened</th></tr></thead><tbody><tr><th scope='row'>A and B</th><td>← → repel</td></tr><tr><th scope='row'>A and C</th><td>← → repel</td></tr><tr><th scope='row'>B and C</th><td>→ ← attract</td></tr></tbody></table>",
+    "bench": {
+      "objects": [
+        {
+          "id": "A",
+          "truth": "Magnet"
+        },
+        {
+          "id": "B",
+          "truth": "Magnet"
+        },
+        {
+          "id": "C",
+          "truth": "Magnet"
+        }
+      ],
+      "pairs": {
+        "A-B": "repel",
+        "A-C": "repel",
+        "B-C": "attract"
+      }
+    },
+    "hints": [
+      "Look at the two pairs that repel. Which object is in both?",
+      "Can a magnet attract one object and repel another? Think about which poles face each other."
+    ],
+    "key": "Two magnets can attract or repel, depending on which poles face each other. Seeing attract does not mean one object is a plain block.",
+    "layout": "table",
+    "cols": [
+      "Object A",
+      "Object B",
+      "Object C"
+    ],
+    "options": [
+      {
+        "text": [
+          "Magnet",
+          "Magnet",
+          "Magnet"
+        ],
+        "correct": true,
+        "pick": "A repels both B and C, so A, B and C are all magnets. B and C attract because unlike poles face each other.",
+        "why": "Repel only happens between two magnets, and every object is in a repelling pair. Two magnets can attract as well as repel."
+      },
+      {
+        "text": [
+          "Magnet",
+          "Magnet",
+          "Steel block"
+        ],
+        "mis": "MAG-05",
+        "pick": "B and C attract, so one of them could be a steel block pulled by a magnet.",
+        "why": "Two magnets can attract too. And A and C repel, which a steel block can never do."
+      },
+      {
+        "text": [
+          "Steel block",
+          "Magnet",
+          "Magnet"
+        ],
+        "mis": "MAG-01",
+        "pick": "B and C attract, so they are the magnets. A is the odd one out, so it could be steel.",
+        "why": "A steel block can only be pulled, never pushed. A would attract both B and C, but it repelled them."
+      },
+      {
+        "text": [
+          "Magnet",
+          "Steel block",
+          "Magnet"
+        ],
+        "mis": "MAG-05",
+        "pick": "A and C repel, so they are magnets. B and C attract, so B seems to be a steel block.",
+        "why": "A and B repel, which steel cannot do. B must be a magnet too, and it attracts C because unlike poles face each other."
+      }
+    ]
+  },
+  {
+    "id": "P3-magnets-magnet-vs-magnetic-material.q5",
+    "title": "Daniel's three objects",
+    "kind": "diag",
+    "pool": "page",
+    "lo": [
+      "P3.MAG.C2",
+      "P3.MAG.P1"
+    ],
+    "pageIntro": "Test all three pairs, then answer.",
+    "stem": "<p>Daniel had three objects, D, E and F. He placed two different objects beside each other each time and recorded what happened.</p><p class='q-ask'>Which of the following could objects D, E and F be?</p>",
+    "figure": "<table class='data'><thead><tr><th scope='col'>Pair placed beside each other</th><th scope='col'>What happened</th></tr></thead><tbody><tr><th scope='row'>D and E</th><td>← → repel</td></tr><tr><th scope='row'>E and F</th><td>no force</td></tr><tr><th scope='row'>D and F</th><td>no force</td></tr></tbody></table>",
+    "bench": {
+      "objects": [
+        {
+          "id": "D",
+          "truth": "Magnet"
+        },
+        {
+          "id": "E",
+          "truth": "Magnet"
+        },
+        {
+          "id": "F",
+          "truth": "Plastic block"
+        }
+      ],
+      "pairs": {
+        "D-E": "repel",
+        "E-F": "none",
+        "D-F": "none"
+      }
+    },
+    "hints": [
+      "Start with the repelling pair. What are D and E?",
+      "Magnets pull iron and steel. What kind of object shows no force with a magnet?"
+    ],
+    "key": "No force with a magnet means non-magnetic. Two magnets never ignore each other.",
+    "layout": "table",
+    "cols": [
+      "Object D",
+      "Object E",
+      "Object F"
+    ],
+    "options": [
+      {
+        "text": [
+          "Magnet",
+          "Steel block",
+          "Plastic block"
+        ],
+        "mis": "MAG-01",
+        "pick": "Plastic F shows no force, which fits. D is a magnet and E is steel, so they react differently.",
+        "why": "D and E repel, but a magnet and a steel block can only attract."
+      },
+      {
+        "text": [
+          "Magnet",
+          "Magnet",
+          "Steel block"
+        ],
+        "mis": "MAG-03",
+        "pick": "D and E repel, so both are magnets. Steel F does not repel, so no force seems to fit.",
+        "why": "Not repelling is not the same as no force. A magnet pulls steel, so F would attract both D and E."
+      },
+      {
+        "text": [
+          "Magnet",
+          "Magnet",
+          "Plastic block"
+        ],
+        "correct": true,
+        "pick": "D and E repel, so both are magnets. F shows no force with either, so it is not magnetic.",
+        "why": "Magnets have no effect on plastic. All three results fit."
+      },
+      {
+        "text": [
+          "Magnet",
+          "Magnet",
+          "Magnet"
+        ],
+        "mis": "MAG-06",
+        "pick": "D and E repel, so they are magnets. F could be a magnet too that happens to show no force beside them.",
+        "why": "Two magnets placed beside each other always push or pull. F would attract or repel D and E, but you saw no force."
+      }
+    ]
+  },
+  {
+    "id": "P3-magnets-magnet-vs-magnetic-material.v1",
+    "title": "Three objects that all react",
+    "kind": "variant",
+    "pool": "recap",
+    "lo": [
+      "P3.MAG.C2",
+      "P3.MAG.P1"
+    ],
+    "stem": "<p>Three objects, A, B and C, were placed beside each other two at a time. The results are shown.</p><p class='q-ask'>Which of the following could objects A, B and C be?</p>",
+    "figure": "<table class='data'><thead><tr><th scope='col'>Pair placed beside each other</th><th scope='col'>What happened</th></tr></thead><tbody><tr><th scope='row'>A and B</th><td>→ ← attract</td></tr><tr><th scope='row'>A and C</th><td>← → repel</td></tr><tr><th scope='row'>B and C</th><td>← → repel</td></tr></tbody></table>",
+    "key": "Every object here is in a repelling pair, so every object is a magnet. Two magnets attract when unlike poles face each other.",
+    "layout": "table",
+    "cols": [
+      "Object A",
+      "Object B",
+      "Object C"
+    ],
+    "options": [
+      {
+        "text": [
+          "Magnet",
+          "Steel block",
+          "Magnet"
+        ],
+        "mis": "MAG-05",
+        "pick": "A and B attract, so one of them could be a steel block pulled by a magnet.",
+        "why": "B and C repel. A steel block can never push anything away, so B must be a magnet."
+      },
+      {
+        "text": [
+          "Iron block",
+          "Magnet",
+          "Magnet"
+        ],
+        "mis": "MAG-05",
+        "pick": "A and B attract, so A could be an iron block pulled by magnet B.",
+        "why": "A and C repel, and an iron block can never repel. A must be a magnet."
+      },
+      {
+        "text": [
+          "Magnet",
+          "Magnet",
+          "Magnet"
+        ],
+        "correct": true,
+        "pick": "A and C repel, and B and C repel, so A, B and C are all magnets. A and B attract because unlike poles face each other.",
+        "why": "Only magnets repel, and every object is in a repelling pair. Two magnets can attract too."
+      },
+      {
+        "text": [
+          "Magnet",
+          "Magnet",
+          "Plastic block"
+        ],
+        "mis": "MAG-04",
+        "pick": "A and B look like the magnets, and C is the odd one out.",
+        "why": "C repels both A and B. A magnet shows no force at all with plastic, so C cannot be plastic."
+      }
+    ]
+  },
+  {
+    "id": "P3-magnets-magnet-vs-magnetic-material.v2",
+    "title": "One object pulls both",
+    "kind": "variant",
+    "pool": "recap",
+    "lo": [
+      "P3.MAG.C2",
+      "P3.MAG.P1"
+    ],
+    "stem": "<p>Three objects, P, Q and R, were placed beside each other two at a time. The results are shown.</p><p class='q-ask'>Which of the following could objects P, Q and R be?</p>",
+    "figure": "<table class='data'><thead><tr><th scope='col'>Pair placed beside each other</th><th scope='col'>What happened</th></tr></thead><tbody><tr><th scope='row'>P and Q</th><td>→ ← attract</td></tr><tr><th scope='row'>Q and R</th><td>→ ← attract</td></tr><tr><th scope='row'>P and R</th><td>no force</td></tr></tbody></table>",
+    "key": "The object in both attracting pairs is the magnet. The two objects that show no force on each other are not magnets.",
+    "layout": "table",
+    "cols": [
+      "Object P",
+      "Object Q",
+      "Object R"
+    ],
+    "options": [
+      {
+        "text": [
+          "Iron block",
+          "Steel block",
+          "Magnet"
+        ],
+        "mis": "MAG-02",
+        "pick": "R is the magnet, and iron and steel are both magnetic, so P and Q pull each other.",
+        "why": "Iron and steel blocks show no force on each other. Also, magnet R would pull iron P, but P and R showed no force."
+      },
+      {
+        "text": [
+          "Iron block",
+          "Magnet",
+          "Steel block"
+        ],
+        "correct": true,
+        "pick": "P and R show no force, so neither is a magnet. Q attracts both, so Q is the magnet.",
+        "why": "A magnet pulls iron and steel, and an iron block and a steel block show no force on each other. All three results fit."
+      },
+      {
+        "text": [
+          "Magnet",
+          "Iron block",
+          "Steel block"
+        ],
+        "mis": "MAG-02",
+        "pick": "P is the magnet pulling Q, and Q and R are iron and steel, which seem to pull each other.",
+        "why": "An iron block and a steel block do not pull each other. And magnet P would pull steel R, but P and R showed no force."
+      },
+      {
+        "text": [
+          "Steel block",
+          "Magnet",
+          "Plastic block"
+        ],
+        "mis": "MAG-04",
+        "pick": "Q is the magnet pulling steel P, and R is the leftover object.",
+        "why": "Q and R attract, but a magnet shows no force with plastic."
+      }
+    ]
+  },
+  {
+    "id": "P3-magnets-magnet-vs-magnetic-material.v3",
+    "title": "The object that does nothing",
+    "kind": "variant",
+    "pool": "recap",
+    "lo": [
+      "P3.MAG.C2",
+      "P3.MAG.P1"
+    ],
+    "stem": "<p>Three objects, X, Y and Z, were placed beside each other two at a time. The results are shown.</p><p class='q-ask'>Which of the following could objects X, Y and Z be?</p>",
+    "figure": "<table class='data'><thead><tr><th scope='col'>Pair placed beside each other</th><th scope='col'>What happened</th></tr></thead><tbody><tr><th scope='row'>X and Y</th><td>no force</td></tr><tr><th scope='row'>Y and Z</th><td>← → repel</td></tr><tr><th scope='row'>X and Z</th><td>no force</td></tr></tbody></table>",
+    "key": "Y and Z repel, so both are magnets. An object that shows no force with a magnet is non-magnetic.",
+    "layout": "table",
+    "cols": [
+      "Object X",
+      "Object Y",
+      "Object Z"
+    ],
+    "options": [
+      {
+        "text": [
+          "Steel block",
+          "Magnet",
+          "Magnet"
+        ],
+        "mis": "MAG-03",
+        "pick": "Y and Z repel so they are magnets, and X is something that is not a magnet.",
+        "why": "A magnet pulls every steel block, so X would attract both Y and Z. You saw no force."
+      },
+      {
+        "text": [
+          "Magnet",
+          "Magnet",
+          "Magnet"
+        ],
+        "mis": "MAG-06",
+        "pick": "Y and Z are magnets, and X could be a magnet that just did not react.",
+        "why": "Two magnets beside each other always push or pull. X would attract or repel Y and Z."
+      },
+      {
+        "text": [
+          "Iron block",
+          "Magnet",
+          "Magnet"
+        ],
+        "mis": "MAG-03",
+        "pick": "Iron is not a magnet, so it seems right for the object that does nothing.",
+        "why": "Iron is a magnetic material. A magnet pulls every iron block, so X would attract Y and Z."
+      },
+      {
+        "text": [
+          "Wooden block",
+          "Magnet",
+          "Magnet"
+        ],
+        "correct": true,
+        "pick": "Y and Z repel, so both are magnets. X shows no force with either magnet, so X is non-magnetic.",
+        "why": "Magnets have no effect on wood. All three results fit."
+      }
+    ]
+  },
+  {
+    "id": "P3-magnets-magnet-vs-magnetic-material.v4",
+    "title": "Only one pair reacts",
+    "kind": "variant",
+    "pool": "recap",
+    "lo": [
+      "P3.MAG.C2",
+      "P3.MAG.P1"
+    ],
+    "stem": "<p>Three objects, J, K and L, were placed beside each other two at a time. The results are shown.</p><p class='q-ask'>Which of the following could objects J, K and L be?</p>",
+    "figure": "<table class='data'><thead><tr><th scope='col'>Pair placed beside each other</th><th scope='col'>What happened</th></tr></thead><tbody><tr><th scope='row'>J and K</th><td>→ ← attract</td></tr><tr><th scope='row'>K and L</th><td>no force</td></tr><tr><th scope='row'>J and L</th><td>no force</td></tr></tbody></table>",
+    "key": "Check every option against all three results. L shows no force with either object, so L cannot be a magnet, iron or steel if J or K is a magnet.",
+    "layout": "table",
+    "cols": [
+      "Object J",
+      "Object K",
+      "Object L"
+    ],
+    "options": [
+      {
+        "text": [
+          "Magnet",
+          "Magnet",
+          "Magnet"
+        ],
+        "mis": "MAG-06",
+        "pick": "J and K attract, so they could be magnets with unlike poles facing, and L a third magnet.",
+        "why": "Two magnets always push or pull. L showed no force with J or K, so L cannot be a magnet here."
+      },
+      {
+        "text": [
+          "Magnet",
+          "Steel block",
+          "Wooden block"
+        ],
+        "correct": true,
+        "pick": "J and K attract, so one of them is a magnet. L shows no force with either, so L is non-magnetic.",
+        "why": "Magnet J pulls steel K, and neither has any effect on wood. All three results fit."
+      },
+      {
+        "text": [
+          "Magnet",
+          "Steel block",
+          "Iron block"
+        ],
+        "mis": "MAG-03",
+        "pick": "J is a magnet pulling steel K, and L is iron, another magnetic material.",
+        "why": "A magnet pulls every iron block. J would attract L, but J and L showed no force."
+      },
+      {
+        "text": [
+          "Steel block",
+          "Iron block",
+          "Plastic block"
+        ],
+        "mis": "MAG-02",
+        "pick": "Steel and iron are both magnetic, so J and K pull each other.",
+        "why": "Steel and iron blocks do not pull each other. With no magnet among J and K, nothing could attract."
+      }
+    ]
+  },
+  {
+    "id": "P3-magnets-magnet-vs-magnetic-material.v5",
+    "title": "A repelling pair and a third object",
+    "kind": "variant",
+    "pool": "recap",
+    "lo": [
+      "P3.MAG.C2",
+      "P3.MAG.P1"
+    ],
+    "stem": "<p>Three objects, A, B and C, were placed beside each other two at a time. The results are shown.</p><p class='q-ask'>Which of the following could objects A, B and C be?</p>",
+    "figure": "<table class='data'><thead><tr><th scope='col'>Pair placed beside each other</th><th scope='col'>What happened</th></tr></thead><tbody><tr><th scope='row'>A and B</th><td>← → repel</td></tr><tr><th scope='row'>B and C</th><td>→ ← attract</td></tr><tr><th scope='row'>A and C</th><td>→ ← attract</td></tr></tbody></table>",
+    "key": "A and B repel, so both are magnets. C is pulled by both magnets, which an iron or steel block would be.",
+    "layout": "table",
+    "cols": [
+      "Object A",
+      "Object B",
+      "Object C"
+    ],
+    "options": [
+      {
+        "text": [
+          "Magnet",
+          "Steel block",
+          "Iron block"
+        ],
+        "mis": "MAG-01",
+        "pick": "A is the magnet, and B and C are magnetic materials that react to it.",
+        "why": "A and B repel, and a steel block can never push anything away. B must be a magnet."
+      },
+      {
+        "text": [
+          "Iron block",
+          "Magnet",
+          "Steel block"
+        ],
+        "mis": "MAG-01",
+        "pick": "B is the magnet, and iron and steel are both magnetic, so all three react.",
+        "why": "A and B repel, which an iron block can never do. Also, iron A and steel C would show no force, but you saw attract."
+      },
+      {
+        "text": [
+          "Magnet",
+          "Magnet",
+          "Iron block"
+        ],
+        "correct": true,
+        "pick": "A and B repel, so both are magnets. C is pulled by both, which an iron block is.",
+        "why": "Only magnets repel, and a magnet attracts every iron block. All three results fit."
+      },
+      {
+        "text": [
+          "Magnet",
+          "Magnet",
+          "Plastic block"
+        ],
+        "mis": "MAG-04",
+        "pick": "A and B repel, so both are magnets, and C is the third object.",
+        "why": "C attracts both magnets, but a magnet shows no force at all with plastic."
+      }
+    ]
+  },
+  {
+    "id": "P3-magnets-magnet-vs-magnetic-material.v6",
+    "title": "Two objects repel",
+    "kind": "variant",
+    "pool": "recap",
+    "lo": [
+      "P3.MAG.C2"
+    ],
+    "stem": "<p>Two objects, P and Q, are placed beside each other. They push each other away.</p><p class='q-ask'>Which statement must be true?</p>",
+    "key": "Repel is only possible between two magnets.",
+    "options": [
+      {
+        "text": "One is a magnet and the other is a steel block.",
+        "mis": "MAG-01",
+        "pick": "Steel reacts strongly to magnets, so a magnet and steel seem likely.",
+        "why": "A magnet can only pull a steel block, never push it away."
+      },
+      {
+        "text": "One is a magnet and the other is an iron block.",
+        "mis": "MAG-01",
+        "pick": "Iron is a magnetic material, so it reacts to a magnet.",
+        "why": "A magnet can only pull an iron block. Iron never repels."
+      },
+      {
+        "text": "One is a magnet and the other is a plastic block.",
+        "mis": "MAG-04",
+        "pick": "If a magnet does not pull something, it might push it away instead.",
+        "why": "A magnet shows no force at all with plastic: no pull and no push."
+      },
+      {
+        "text": "P and Q are both magnets.",
+        "correct": true,
+        "pick": "Ask which objects can push each other away. Only magnets can.",
+        "why": "Like poles of two magnets repel. Nothing else can push another object away like this."
+      }
+    ]
+  },
+  {
+    "id": "P3-magnets-magnet-vs-magnetic-material.v7",
+    "title": "Two objects attract",
+    "kind": "variant",
+    "pool": "recap",
+    "lo": [
+      "P3.MAG.C2"
+    ],
+    "stem": "<p>Two objects, P and Q, are placed beside each other. They pull towards each other.</p><p class='q-ask'>Which statement must be true?</p>",
+    "key": "Attract tells you at least one of the pair is a magnet. It does not tell you what the other object is.",
+    "options": [
+      {
+        "text": "At least one of P and Q is a magnet.",
+        "correct": true,
+        "pick": "Ask what attract can and cannot tell you. It needs a magnet, but the other object could be a magnet, iron or steel.",
+        "why": "A magnet attracts iron, steel and the unlike pole of another magnet. All you can be sure of is that at least one is a magnet."
+      },
+      {
+        "text": "One is a magnet and the other must be an iron or steel block.",
+        "mis": "MAG-05",
+        "pick": "Attract usually means a magnet pulling a magnetic material.",
+        "why": "Two magnets attract too, when unlike poles face each other. The other object could also be a magnet."
+      },
+      {
+        "text": "Both are iron or steel blocks.",
+        "mis": "MAG-02",
+        "pick": "Iron and steel are magnetic, so they seem to pull each other.",
+        "why": "Two plain iron or steel blocks show no force on each other. A magnet is needed for any pull."
+      },
+      {
+        "text": "One is a magnet and the other is a wooden block.",
+        "mis": "MAG-04",
+        "pick": "A magnet pulls things, so it might pull a wooden block.",
+        "why": "A magnet shows no force with wood. Wood is non-magnetic."
+      }
+    ]
+  }
+]

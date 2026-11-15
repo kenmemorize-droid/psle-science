@@ -1,0 +1,15 @@
+{
+  "id": "P3-materials-waterproof-vs-absorbent",
+  "type": "focus",
+  "theme": "diversity",
+  "topic": "MAT",
+  "level": "P3",
+  "title": "Waterproof, or soaks up water?",
+  "purpose": "Soak each material, work out how much water it absorbed, then answer. The exam table never shows that column: you have to work it out yourself.",
+  "lo": ["P3.MAT.C1", "P3.MAT.P1"],
+  "fixes": "Reading the mass after soaking instead of working out the water absorbed (after − before), and mixing up waterproof with absorbent.",
+  "origin": "retrofit",
+  "built": "2026-11-11",
+  "order": 3,
+  "uses": []
+}

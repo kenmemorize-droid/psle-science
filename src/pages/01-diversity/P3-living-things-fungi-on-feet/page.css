@@ -1,0 +1,25 @@
+.fstage{position:relative;border-radius:10px;background:var(--sunk);border:var(--bw) solid var(--line);overflow:hidden}
+.fstage svg{display:block;width:100%;height:auto;max-height:230px}
+.ln{stroke:var(--stroke);stroke-width:2;stroke-linejoin:round;stroke-linecap:round}
+.fday,.fwhat{position:absolute;top:8px;font:600 12px var(--f-label);letter-spacing:var(--ls);padding:3px 9px;border-radius:999px;background:var(--card);border:var(--bw) solid var(--line);color:var(--ink)}
+.fday{left:8px} .fwhat{right:8px}
+.pw{transform-box:fill-box;transform-origin:center;opacity:0;transform:scale(.3);transition:opacity .5s ease,transform .5s ease}
+.pw.on{opacity:1;transform:scale(1)}
+.still .pw{transition:none}
+@media (prefers-reduced-motion:reduce){.pw{transition:none}}
+.fmsg{margin:8px 0 0;min-height:24px;font-weight:700;font-size:15px}
+.fsws{display:grid;gap:8px}
+.fsw{display:flex;align-items:center;gap:10px;text-align:left;min-height:48px;padding:8px 12px;border-radius:10px;border:var(--bw) solid var(--line);background:var(--card);color:var(--ink);font:inherit;cursor:pointer}
+.fsw small{display:block;color:var(--muted);font-size:12.5px;font-weight:400}
+.fsw.on{border-color:var(--primary);background:var(--primary-soft)}
+.fsw.off{border-style:dashed}
+.fi{display:inline-grid;place-items:center;width:26px;height:26px;border-radius:50%;border:2px solid var(--stroke);font-size:14px;font-weight:700;flex:none}
+.fcond{list-style:none;margin:6px 0 0;padding:0;display:grid;gap:6px}
+.fc{display:flex;align-items:center;gap:10px;padding:6px 8px;border-radius:8px;background:var(--sunk)}
+.fc .ft{margin-left:auto;font-size:13px;color:var(--muted)}
+.fc.yes{background:var(--primary-soft)} .fc.no{border:1px dashed var(--line)}
+table.flog{border-collapse:collapse;width:100%;font-size:14px;margin-top:6px}
+table.flog th,table.flog td{text-align:left;padding:6px 6px;border-bottom:1px solid var(--line)}
+table.flog tr.now th,table.flog tr.now td{background:var(--primary-soft)}
+table.flog .untested{color:var(--muted);font-style:italic}
+.btn.cur{border-color:var(--primary);outline:2px solid var(--primary);outline-offset:1px}

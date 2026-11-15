@@ -1,0 +1,24 @@
+{
+  "file": "_legacy/psle-sketchnotes-interactive.html",
+  "note": "Old-format sketchnotes. The hub links a topic here until its unit page exists. Module id = URL hash.",
+  "topics": {
+    "LIV": [["living","Characteristics of living things"],["animals","Classification of animals"],["plantclass","Classification of plants"],["fungibact","Fungi and bacteria"]],
+    "MAT": [["materials","Properties and types of materials"]],
+    "LCY": [["lifeplants","Life cycle of plants"],["lifeanimals","Life cycle of animals"]],
+    "MTR": [["matter","Matter and its three states"]],
+    "REP": [["cell","The cell system"],["flower","Reproduction in flowering plants"],["pollination","Pollination and fertilisation"],["dispersal","Seed dispersal"],["humanrepro","Reproduction in humans"],["heredity","Passing down characteristics"]],
+    "WAT": [["waterstates","Water and its states"],["stategraphs","Water and changes of state: graphs"],["watercycle","The water cycle"],["evapcool","Cooling effects of evaporation"],["condensation","Examples of condensation in everyday life"]],
+    "PLP": [["plantsys","The plant system"]],
+    "DIG": [["bodysys","The human body systems"],["digestive","The human digestive system"]],
+    "PRC": [["planttransport","The plant transport system"]],
+    "HRC": [["respiratory","The human respiratory system"],["circulatory","The human circulatory system"],["circcompare","Circulatory systems of humans and fish"]],
+    "ELE": [["electrical","The electrical system"]],
+    "MAG": [["magnets","Magnets"]],
+    "FOR": [["forces","Forces"]],
+    "ENV": [["environment","The environment"],["population","Living together: populations and communities"],["foodchain","Food chains and food webs"],["manimpact","Man's impact on the environment"],["adaptintro","Adaptations: structural, behavioural and plants"],["adapttemp","Adaptations to cope with extreme temperature"],["adaptfood","Adaptations of predators to obtain food"],["adaptprotect","Adaptations for protection and for attracting mates"],["adaptbreathe","Adaptations for breathing in water"],["adaptmove","Adaptations for movement"]],
+    "LGT": [["light","Light energy"],["shadows","Shadows"]],
+    "HEA": [["heat","Heat energy"],["expansion","Expansion and contraction"],["heatrate","What affects the rate of heat transfer?"]],
+    "PHO": [["photosynthesis","Photosynthesis"],["respiration","Respiration"]],
+    "ENC": [["energysources","Energy sources"],["energyforms","Forms and conversion of energy"],["energyconv2","Energy conversion: ramp and bouncing ball"]]
+  }
+}

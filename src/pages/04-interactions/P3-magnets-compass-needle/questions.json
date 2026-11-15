@@ -1,0 +1,447 @@
+[
+  {
+    "id": "P3-magnets-compass-needle.q1",
+    "title": "A compass in an open field",
+    "kind": "diag",
+    "pool": "page",
+    "lo": [
+      "P3.MAG.C2"
+    ],
+    "stem": "<p>A compass is placed on a table in an open field, far away from any magnet.</p><p class='q-ask'>What happens to its needle?</p>",
+    "key": "A freely turning magnet with no other magnet nearby always comes to rest pointing North–South, N end towards the north.",
+    "options": [
+      {
+        "text": "It keeps spinning and never stops.",
+        "mis": "MAG-09",
+        "pick": "The needle is free to turn, so it seems it would keep turning.",
+        "why": "A freely turning magnet always comes to rest. It settles pointing North–South."
+      },
+      {
+        "text": "It swings, then comes to rest with its N end pointing north.",
+        "correct": true,
+        "pick": "A compass needle is a small magnet that can turn freely. Recall what a freely suspended magnet does when nothing else is near.",
+        "why": "With no magnet nearby, a freely turning magnet comes to rest pointing North–South, with its N end towards the north."
+      },
+      {
+        "text": "It comes to rest with its N end pointing south.",
+        "mis": "MAG-09",
+        "pick": "The needle does settle, and north and south are easy to swap.",
+        "why": "The shaded N end of the needle is the end that points north when nothing else acts on it."
+      },
+      {
+        "text": "It stays in whatever direction it was put down.",
+        "mis": "MAG-09",
+        "pick": "Things on a table usually stay where you put them.",
+        "why": "That is true of a plain plastic needle. A compass needle is a magnet, so it turns by itself until it points North–South."
+      }
+    ]
+  },
+  {
+    "id": "P3-magnets-compass-needle.q2",
+    "title": "Bringing a N pole close",
+    "kind": "diag",
+    "pool": "page",
+    "lo": [
+      "P3.MAG.C2"
+    ],
+    "stem": "<p>The N pole of a bar magnet is brought close to a compass, without touching it.</p><p class='q-ask'>Which way does the shaded N end of the needle turn?</p>",
+    "key": "Like poles repel. A N pole pushes the needle's N end away and pulls its S end in.",
+    "options": [
+      {
+        "text": "Towards the magnet",
+        "mis": "MAG-08",
+        "pick": "Magnets pull things, so the needle seems to be pulled towards it.",
+        "why": "A magnet attracts the unlike pole and repels the like pole. Here it is the needle's S end that is pulled in."
+      },
+      {
+        "text": "It keeps pointing north, because that is what compasses do.",
+        "mis": "MAG-07",
+        "pick": "Compasses are known for pointing north.",
+        "why": "A compass only rests pointing north when no magnet is near. A magnet close by pushes and pulls the needle's poles and decides where it points."
+      },
+      {
+        "text": "Away from the magnet",
+        "correct": true,
+        "pick": "The magnet's N pole and the needle's N end are like poles. Like poles repel.",
+        "why": "Like poles repel, so the N pole pushes the needle's N end away. The needle's S end swings towards the magnet instead."
+      },
+      {
+        "text": "It does not move, because the magnet is not touching the compass.",
+        "mis": "MAG-10",
+        "pick": "Most pushes and pulls you see need something to touch.",
+        "why": "A magnet can push or pull without touching. The needle turns while the magnet is still some distance away."
+      }
+    ]
+  },
+  {
+    "id": "P3-magnets-compass-needle.q3",
+    "title": "Two magnets that stay together",
+    "kind": "diag",
+    "pool": "page",
+    "lo": [
+      "P3.MAG.C2"
+    ],
+    "stem": "<p>Two bar magnets are placed end to end and stay stuck together. The right end of the left magnet is a S pole.</p><p class='q-ask'>What is the left end of the right magnet?</p>",
+    "key": "Magnets that hold together are touching at unlike poles.",
+    "options": [
+      {
+        "text": "A S pole",
+        "mis": "MAG-08",
+        "pick": "It seems natural for the ends that meet to match.",
+        "why": "Two S poles are like poles, so they would repel and push each other apart. The magnets could not stay stuck together."
+      },
+      {
+        "text": "It could be either. You cannot tell.",
+        "mis": "MAG-08",
+        "pick": "Nothing is labelled on the right magnet, so it seems impossible to know.",
+        "why": "You can tell. The magnets stay together, and touching poles that hold together must be unlike poles."
+      },
+      {
+        "text": "That end has no pole.",
+        "mis": "MAG-11",
+        "pick": "Only one pole was named, so the other end seems to be just the end of a bar.",
+        "why": "Every magnet has two poles, one at each end. There is no magnet with only one pole."
+      },
+      {
+        "text": "A N pole",
+        "correct": true,
+        "pick": "They stay together, so the touching poles attract. Only unlike poles attract.",
+        "why": "S must be touching N. Like poles would push the magnets apart."
+      }
+    ]
+  },
+  {
+    "id": "P3-magnets-compass-needle.q4",
+    "title": "A compass at each end",
+    "kind": "diag",
+    "pool": "page",
+    "lo": [
+      "P3.MAG.C2"
+    ],
+    "stem": "<p>Compass P, magnet 1, magnet 2 and compass Q are placed in a straight line, in that order. The two magnets touch and stay together. Compass P's shaded N end points to the right, towards magnet 1.</p><p class='q-ask'>Which way does compass Q's shaded N end point?</p>",
+    "key": "Work along the chain one pole at a time: compass → nearest pole → other end → touching pole → other end → next compass.",
+    "options": [
+      {
+        "text": "To the right, away from magnet 2",
+        "correct": true,
+        "pick": "Work along the line one pole at a time, starting from compass P.",
+        "why": "P's N end is attracted, so magnet 1's left end is S and its right end is N. The magnets hold together, so magnet 2's left end is S and its right end is N. That N pole repels Q's N end, pushing it to the right."
+      },
+      {
+        "text": "To the left, towards magnet 2",
+        "mis": "MAG-08",
+        "pick": "Magnet 2 is right beside compass Q, so the needle seems to be pulled towards it.",
+        "why": "This gets the last step backwards. Magnet 2's right end is N, and N repels the needle's N end. It is the needle's S end that swings towards the magnet."
+      },
+      {
+        "text": "Upwards, towards north",
+        "mis": "MAG-07",
+        "pick": "Compasses point north, so Q seems to point north too.",
+        "why": "A compass rests pointing north only when no magnet is near it. Magnet 2 is right beside compass Q."
+      },
+      {
+        "text": "You cannot tell without being told magnet 1's poles.",
+        "mis": "MAG-08",
+        "pick": "No pole is labelled, so it seems there is nothing to start from.",
+        "why": "Compass P tells you magnet 1's poles: its N end points at the S pole. From there every pole in the line follows."
+      }
+    ]
+  },
+  {
+    "id": "P3-magnets-compass-needle.q5",
+    "title": "A compass beside a magnet",
+    "kind": "diag",
+    "pool": "page",
+    "lo": [
+      "P3.MAG.C1"
+    ],
+    "stem": "<p>A compass is placed on a table, close to a bar magnet. Its needle does not point north.</p><p class='q-ask'>Which is the best explanation?</p>",
+    "key": "A magnet pushes and pulls without touching. Close to a compass, the magnet decides where the needle points.",
+    "options": [
+      {
+        "text": "The compass is faulty. A working compass always points north.",
+        "mis": "MAG-07",
+        "pick": "Compasses are meant to point north, so one that does not seems broken.",
+        "why": "Nothing is wrong with it. It is doing what a freely turning magnet does when another magnet is close."
+      },
+      {
+        "text": "The bar magnet is not touching the compass, so something else must be turning the needle.",
+        "mis": "MAG-10",
+        "pick": "The magnet is some distance away, so it does not seem to be involved.",
+        "why": "Magnets push and pull without touching. The bar magnet is exactly what is turning the needle."
+      },
+      {
+        "text": "The bar magnet's poles push and pull the poles of the needle, so the needle turns to line up with the magnet.",
+        "correct": true,
+        "pick": "Think of the needle as a small magnet. What do two magnets do to each other?",
+        "why": "A magnet can push or pull without touching. Close to the compass, the bar magnet's poles attract and repel the needle's poles, and that decides where the needle points."
+      },
+      {
+        "text": "The N pole of the bar magnet pulls the N end of the needle towards it.",
+        "mis": "MAG-08",
+        "pick": "Magnets pull, so the N pole seems to pull the N end.",
+        "why": "Like poles repel. A N pole pushes the needle's N end away; it pulls the S end towards it."
+      }
+    ]
+  },
+  {
+    "id": "P3-magnets-compass-needle.q6",
+    "title": "An unmarked magnet",
+    "kind": "diag",
+    "pool": "page",
+    "lo": [
+      "P3.MAG.C2"
+    ],
+    "stem": "<p>The ends of a bar magnet are not labelled. When end P is brought close to a compass, the shaded N end of the needle turns away from P.</p><p class='q-ask'>What is end P?</p>",
+    "key": "A compass can label an unmarked magnet: its N end is pushed away by a N pole and pulled towards a S pole.",
+    "options": [
+      {
+        "text": "A S pole",
+        "mis": "MAG-08",
+        "pick": "The needle's N end moved, so P seems to be its opposite.",
+        "why": "Unlike poles attract. If P were S, it would pull the needle's N end towards it, not push it away."
+      },
+      {
+        "text": "A N pole",
+        "correct": true,
+        "pick": "The needle's N end was pushed away. Which pole pushes a N pole away?",
+        "why": "Like poles repel. P pushed the needle's N end away, so P is a N pole."
+      },
+      {
+        "text": "You cannot tell. A compass only shows where north is.",
+        "mis": "MAG-07",
+        "pick": "Compasses are for finding north, not for testing magnets.",
+        "why": "A compass needle is a magnet, so it reacts to any magnet close by. That reaction tells you which pole P is."
+      },
+      {
+        "text": "P has no pole. Only one end of a magnet is a pole.",
+        "mis": "MAG-11",
+        "pick": "If the needle turns away, it seems P is not attracting anything.",
+        "why": "Every magnet has two poles, one at each end. Pushing away is a sign of a pole, not of no pole."
+      }
+    ]
+  },
+  {
+    "id": "P3-magnets-compass-needle.v1",
+    "title": "A hanging magnet",
+    "kind": "variant",
+    "pool": "recap",
+    "lo": [
+      "P3.MAG.C2"
+    ],
+    "stem": "<p>A bar magnet is hung from a thread so that it can turn freely. There are no other magnets nearby.</p><p class='q-ask'>What happens?</p>",
+    "key": "A freely suspended magnet comes to rest pointing North–South, with its N pole towards the north.",
+    "options": [
+      {
+        "text": "It keeps turning and never stops.",
+        "mis": "MAG-09",
+        "pick": "It hangs freely, so nothing seems to stop it turning.",
+        "why": "A freely suspended magnet always comes to rest, pointing North–South."
+      },
+      {
+        "text": "It comes to rest pointing east and west.",
+        "mis": "MAG-09",
+        "pick": "It settles, and any direction seems as likely as another.",
+        "why": "It always settles pointing North–South, not east–west."
+      },
+      {
+        "text": "It stays in whatever direction it was hung.",
+        "mis": "MAG-09",
+        "pick": "A hanging object usually stays still once it stops swinging.",
+        "why": "A plain bar would. A magnet turns by itself until it points North–South."
+      },
+      {
+        "text": "It swings, then comes to rest with its N pole pointing north.",
+        "correct": true,
+        "pick": "This is the same as a compass needle: a magnet free to turn.",
+        "why": "A freely suspended bar magnet comes to rest pointing North–South, with its N pole towards the north."
+      }
+    ]
+  },
+  {
+    "id": "P3-magnets-compass-needle.v2",
+    "title": "Which end is which?",
+    "kind": "variant",
+    "pool": "recap",
+    "lo": [
+      "P3.MAG.C2"
+    ],
+    "stem": "<p>A bar magnet with unlabelled ends is hung so that it can turn freely, far from other magnets. When it comes to rest, end X points north.</p><p class='q-ask'>Which statement is correct?</p>",
+    "key": "The end of a freely suspended magnet that points north is its N pole. The other end is its S pole.",
+    "options": [
+      {
+        "text": "End X is the S pole.",
+        "mis": "MAG-09",
+        "pick": "North and south are easy to swap round.",
+        "why": "The N pole is the end that points north. End X points north, so it is the N pole."
+      },
+      {
+        "text": "End X is the N pole.",
+        "correct": true,
+        "pick": "Recall which pole of a freely suspended magnet points north.",
+        "why": "A freely suspended magnet rests with its N pole pointing north, so end X is the N pole."
+      },
+      {
+        "text": "End X is not a pole. Only the other end is a pole.",
+        "mis": "MAG-11",
+        "pick": "Only one end was mentioned, so it seems only one end matters.",
+        "why": "Every magnet has two poles, one at each end. End X is one of them."
+      },
+      {
+        "text": "You cannot tell, because a hanging magnet can stop in any direction.",
+        "mis": "MAG-09",
+        "pick": "It could have stopped anywhere, so where it stopped seems to tell you nothing.",
+        "why": "A freely suspended magnet always comes to rest North–South, so where it stops does tell you which end is N."
+      }
+    ]
+  },
+  {
+    "id": "P3-magnets-compass-needle.v3",
+    "title": "A magnet 3 cm away",
+    "kind": "variant",
+    "pool": "recap",
+    "lo": [
+      "P3.MAG.C1"
+    ],
+    "stem": "<p>A compass is on a table. A bar magnet is placed 3 cm from it, not touching it.</p><p class='q-ask'>What happens to the compass needle?</p>",
+    "key": "A magnet pushes and pulls without touching, and close by it decides where a compass needle points.",
+    "options": [
+      {
+        "text": "It keeps pointing north, because compasses always point north.",
+        "mis": "MAG-07",
+        "pick": "A compass is for finding north.",
+        "why": "A compass points north only when no magnet is near. At 3 cm the bar magnet decides where the needle points."
+      },
+      {
+        "text": "It does not move, because the magnet is not touching the compass.",
+        "mis": "MAG-10",
+        "pick": "There is a gap between them, so nothing seems to connect them.",
+        "why": "A magnet can push or pull across a gap. The needle turns even though nothing touches it."
+      },
+      {
+        "text": "It turns to line up with the bar magnet.",
+        "correct": true,
+        "pick": "The needle is a small magnet, and another magnet is close to it.",
+        "why": "The bar magnet's poles push and pull the needle's poles without touching, so the needle turns to line up with it."
+      },
+      {
+        "text": "It spins round and round and never stops.",
+        "mis": "MAG-09",
+        "pick": "Two magnets near each other sound like they would make the needle spin.",
+        "why": "The needle turns and then comes to rest, lined up with the bar magnet."
+      }
+    ]
+  },
+  {
+    "id": "P3-magnets-compass-needle.v4",
+    "title": "Bringing a S pole close",
+    "kind": "variant",
+    "pool": "recap",
+    "lo": [
+      "P3.MAG.C2"
+    ],
+    "stem": "<p>The S pole of a bar magnet is brought close to a compass.</p><p class='q-ask'>Which way does the shaded N end of the needle turn?</p>",
+    "key": "Unlike poles attract: a S pole pulls the needle's N end towards it.",
+    "options": [
+      {
+        "text": "Towards the magnet",
+        "correct": true,
+        "pick": "The needle's N end and the magnet's S pole are unlike poles.",
+        "why": "Unlike poles attract, so the S pole pulls the needle's N end towards it."
+      },
+      {
+        "text": "Away from the magnet",
+        "mis": "MAG-08",
+        "pick": "Magnets sometimes push, so the needle might be pushed away.",
+        "why": "A S pole pushes away another S pole. It pulls a N pole, so the needle's N end turns towards it."
+      },
+      {
+        "text": "It keeps pointing north.",
+        "mis": "MAG-07",
+        "pick": "That is what a compass usually does.",
+        "why": "With a magnet close by, the magnet decides where the needle points, not north."
+      },
+      {
+        "text": "It does not move until the magnet touches the compass.",
+        "mis": "MAG-10",
+        "pick": "Pushes and pulls usually seem to need contact.",
+        "why": "A magnet pulls without touching. The needle turns before the magnet reaches the compass."
+      }
+    ]
+  },
+  {
+    "id": "P3-magnets-compass-needle.v5",
+    "title": "Two magnets push apart",
+    "kind": "variant",
+    "pool": "recap",
+    "lo": [
+      "P3.MAG.C2"
+    ],
+    "stem": "<p>Two bar magnets are placed end to end and they push each other apart. The touching end of the first magnet is a N pole.</p><p class='q-ask'>What is the touching end of the second magnet?</p>",
+    "key": "Magnets that push apart are facing each other with like poles.",
+    "options": [
+      {
+        "text": "A S pole",
+        "mis": "MAG-08",
+        "pick": "Opposite ends seem to be what you would expect to meet.",
+        "why": "N and S are unlike poles, and unlike poles attract. The magnets would stick together, not push apart."
+      },
+      {
+        "text": "It has no pole. The push comes from the first magnet only.",
+        "mis": "MAG-11",
+        "pick": "Only the first magnet's pole was named, so it seems to be doing all the pushing.",
+        "why": "Every magnet has a pole at each end. Repelling needs two like poles facing each other."
+      },
+      {
+        "text": "You cannot tell from this.",
+        "mis": "MAG-08",
+        "pick": "The second magnet is not labelled at all.",
+        "why": "The push is the clue. Only like poles repel, so the second magnet's end must be N."
+      },
+      {
+        "text": "A N pole",
+        "correct": true,
+        "pick": "They push apart. Which poles repel each other?",
+        "why": "Like poles repel. N is pushing against N."
+      }
+    ]
+  },
+  {
+    "id": "P3-magnets-compass-needle.v6",
+    "title": "Paper clips under a magnet",
+    "kind": "variant",
+    "pool": "recap",
+    "lo": [
+      "P3.MAG.C1",
+      "P3.MAG.C2"
+    ],
+    "stem": "<p>A bar magnet is held 1 cm above some steel paper clips, without touching them.</p><p class='q-ask'>What happens?</p>",
+    "key": "A magnet attracts magnetic materials such as steel, and it does so without touching.",
+    "options": [
+      {
+        "text": "Nothing happens until the magnet touches the clips.",
+        "mis": "MAG-10",
+        "pick": "There is a gap, so the magnet does not seem to reach them.",
+        "why": "A magnet can pull without touching. The clips move across the gap."
+      },
+      {
+        "text": "The paper clips are pulled up to the magnet.",
+        "correct": true,
+        "pick": "Steel is a magnetic material, and magnets can pull without touching.",
+        "why": "The magnet attracts the steel clips across the gap, so they jump up to it."
+      },
+      {
+        "text": "The paper clips are pushed away from the magnet.",
+        "mis": "MAG-01",
+        "pick": "Magnets can push as well as pull.",
+        "why": "A magnet only pushes another magnet. Steel paper clips are only ever pulled."
+      },
+      {
+        "text": "Only clips under the middle are pulled. The ends of a magnet are not magnetic.",
+        "mis": "MAG-11",
+        "pick": "The middle of the bar seems like the main part of the magnet.",
+        "why": "A magnet's poles are at its ends. Clips near the ends are pulled too."
+      }
+    ]
+  }
+]

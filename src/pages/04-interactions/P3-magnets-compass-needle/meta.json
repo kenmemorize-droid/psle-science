@@ -1,0 +1,15 @@
+{
+  "id": "P3-magnets-compass-needle",
+  "type": "focus",
+  "theme": "interactions",
+  "topic": "MAG",
+  "level": "P3",
+  "title": "Why a compass needle swings",
+  "purpose": "A compass needle is a small magnet that is free to turn. Everything it does follows two rules you already know.",
+  "lo": ["P3.MAG.C1", "P3.MAG.C2"],
+  "fixes": "Thinking a compass always points north even beside a magnet, and mixing up which poles attract and which repel when working along a chain of magnets.",
+  "origin": "retrofit",
+  "built": "2026-11-11",
+  "order": 2,
+  "uses": []
+}

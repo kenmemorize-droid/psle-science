@@ -1,0 +1,1053 @@
+[
+  {
+    "id": "P3-living-things.u1",
+    "title": "What every living thing does",
+    "kind": "diag",
+    "pool": "page",
+    "lo": [
+      "P3.LIV.C1"
+    ],
+    "stem": "<p class='q-ask'>Which of these is true of every living thing?</p>",
+    "key": "Every living thing needs water, food and air, grows, responds and reproduces.",
+    "options": [
+      {
+        "text": "It moves from place to place.",
+        "mis": "LIV-01",
+        "pick": "Animals move about, so living things seem to move.",
+        "why": "Plants are living but stay in one place."
+      },
+      {
+        "text": "It makes sounds.",
+        "mis": "LIV-01",
+        "pick": "Many animals make sounds.",
+        "why": "Plants and fish are living but make no sounds we can hear."
+      },
+      {
+        "text": "It grows.",
+        "correct": true,
+        "pick": "Which one is true of plants and animals alike?",
+        "why": "Every living thing grows: a chick into a hen, a seed into a plant."
+      },
+      {
+        "text": "It has legs.",
+        "mis": "LIV-01",
+        "pick": "Most animals we know have legs.",
+        "why": "Snakes, fish and plants have no legs, but they are living."
+      }
+    ]
+  },
+  {
+    "id": "P3-living-things.u2",
+    "title": "A seed and a pebble",
+    "kind": "diag",
+    "pool": "page",
+    "lo": [
+      "P3.LIV.C1",
+      "P3.LIV.P1"
+    ],
+    "stem": "<p>Ali put a bean seed and a pebble on wet cotton wool. The table shows what he saw.</p><p class='q-ask'>What does this show?</p>",
+    "figure": "<div class='scroll'><table class='data'><thead><tr><th scope='col'>Day</th><th scope='col'>Bean seed</th><th scope='col'>Pebble</th></tr></thead><tbody><tr><th scope='row'>0</th><td class='rowname'>no change</td><td class='rowname'>no change</td></tr><tr><th scope='row'>5</th><td class='rowname'>has a root and a shoot</td><td class='rowname'>no change</td></tr></tbody></table></div>",
+    "key": "A seed is living: it grows when it gets water.",
+    "options": [
+      {
+        "text": "Seeds are not living until they are planted in soil.",
+        "mis": "LIV-02",
+        "pick": "A seed looks hard and still, like a pebble.",
+        "why": "The seed grew on cotton wool, without soil. It is living."
+      },
+      {
+        "text": "The pebble is living, because it sat in water too.",
+        "mis": "LIV-01",
+        "pick": "It had the same water as the seed.",
+        "why": "The pebble did not grow or change. It is not living."
+      },
+      {
+        "text": "The seed is living, because it grew when it had water.",
+        "correct": true,
+        "pick": "Which one showed a characteristic of living things?",
+        "why": "The seed grew a root and a shoot. Growing shows it is living."
+      },
+      {
+        "text": "Both are not living, because neither moved.",
+        "mis": "LIV-01",
+        "pick": "Living things seem to move.",
+        "why": "Moving is not what tells us. The seed grew, so it is living."
+      }
+    ]
+  },
+  {
+    "id": "P3-living-things.u3",
+    "title": "A plant at the window",
+    "kind": "diag",
+    "pool": "page",
+    "lo": [
+      "P3.LIV.C1"
+    ],
+    "stem": "<p>A potted plant on a windowsill slowly bends towards the light.</p><p class='q-ask'>Which characteristic of living things does this show?</p>",
+    "key": "Reacting to a change, such as light, is responding.",
+    "options": [
+      {
+        "text": "It responds to changes around it.",
+        "correct": true,
+        "pick": "Is the plant getting bigger, or reacting to something?",
+        "why": "The plant reacts to where the light is coming from: it responds."
+      },
+      {
+        "text": "It grows.",
+        "mis": "LIV-03",
+        "pick": "Bending seems to be a kind of growing.",
+        "why": "The bending is a reaction to light. That is responding."
+      },
+      {
+        "text": "It reproduces.",
+        "mis": "LIV-03",
+        "pick": "Something is changing, and reproducing is a change.",
+        "why": "Reproducing means making young. No new plant is made here."
+      },
+      {
+        "text": "It moves from place to place.",
+        "mis": "LIV-01",
+        "pick": "The plant is moving.",
+        "why": "It stays in its pot. It only turns towards the light."
+      }
+    ]
+  },
+  {
+    "id": "P3-living-things.u4",
+    "title": "A toy robot dog",
+    "kind": "diag",
+    "pool": "page",
+    "lo": [
+      "P3.LIV.C1",
+      "P3.LIV.P1"
+    ],
+    "stem": "<p>A toy robot dog walks, barks and turns its head when you clap.</p><p class='q-ask'>Which statement is correct?</p>",
+    "key": "A living thing does all of these: needs water, food and air, grows, responds and reproduces.",
+    "options": [
+      {
+        "text": "It is living, because it moves and responds to sound.",
+        "mis": "LIV-01",
+        "pick": "It does things that animals do.",
+        "why": "A living thing must also need food, water and air, grow and reproduce. The robot does none of these."
+      },
+      {
+        "text": "It is living, because it needs batteries the way we need food.",
+        "mis": "LIV-01",
+        "pick": "Batteries seem like its food.",
+        "why": "It doesn't grow or reproduce, so it is not living."
+      },
+      {
+        "text": "Only animals with fur are living, so it is not living.",
+        "mis": "LIV-02",
+        "pick": "Real dogs have fur.",
+        "why": "Plants, fish and birds are living without fur. The robot is not living because it doesn't grow or reproduce."
+      },
+      {
+        "text": "It is not living, because it does not grow, reproduce or need food, water and air.",
+        "correct": true,
+        "pick": "Check every characteristic, not just one.",
+        "why": "Moving and making sounds are not enough. It lacks the other characteristics."
+      }
+    ]
+  },
+  {
+    "id": "P3-living-things.u5",
+    "title": "A penguin",
+    "kind": "diag",
+    "pool": "page",
+    "lo": [
+      "P3.LIV.C2",
+      "P3.LIV.P2"
+    ],
+    "stem": "<p>A penguin cannot fly, swims in the sea, and has feathers and a beak.</p><p class='q-ask'>Which group of animals does it belong to?</p>",
+    "key": "Group animals by body features. Feathers and a beak: bird.",
+    "options": [
+      {
+        "text": "Fish, because it swims in the sea",
+        "mis": "LIV-04",
+        "pick": "It lives in water.",
+        "why": "Fish have scales and fins. A penguin has feathers and a beak."
+      },
+      {
+        "text": "Birds, because it has feathers and a beak",
+        "correct": true,
+        "pick": "Look at its body, not where it swims.",
+        "why": "Feathers and a beak make it a bird, even though it cannot fly."
+      },
+      {
+        "text": "Mammals, because it cannot fly",
+        "mis": "LIV-04",
+        "pick": "Birds seem to be the animals that fly.",
+        "why": "Not flying doesn't decide the group. Feathers do."
+      },
+      {
+        "text": "Reptiles, because it lays eggs",
+        "mis": "LIV-05",
+        "pick": "Reptiles lay eggs.",
+        "why": "Birds lay eggs too. Feathers and a beak make it a bird."
+      }
+    ]
+  },
+  {
+    "id": "P3-living-things.u6",
+    "title": "Which one is an insect?",
+    "kind": "diag",
+    "pool": "page",
+    "lo": [
+      "P3.LIV.C2"
+    ],
+    "stem": "<p class='q-ask'>Which animal is an insect?</p>",
+    "key": "Insects have 6 legs and 3 body parts. A spider, with 8 legs, is not an insect.",
+    "options": [
+      {
+        "text": "An animal with 6 legs and 3 body parts",
+        "correct": true,
+        "pick": "Count the legs and the body parts.",
+        "why": "6 legs and 3 body parts (head, thorax, abdomen) make an insect."
+      },
+      {
+        "text": "An animal with 8 legs and 2 body parts",
+        "mis": "LIV-05",
+        "pick": "It is small and has many legs.",
+        "why": "That is a spider. Insects have 6 legs and 3 body parts."
+      },
+      {
+        "text": "An animal with many legs and a long body made of many parts",
+        "mis": "LIV-05",
+        "pick": "It is a small creeping animal.",
+        "why": "Insects have exactly 6 legs and 3 body parts."
+      },
+      {
+        "text": "An animal with a shell and no legs",
+        "mis": "LIV-05",
+        "pick": "It is small, like many insects.",
+        "why": "Insects have 6 legs."
+      }
+    ]
+  },
+  {
+    "id": "P3-living-things.u7",
+    "title": "Body coverings",
+    "kind": "diag",
+    "pool": "page",
+    "lo": [
+      "P3.LIV.C2",
+      "P3.LIV.P2"
+    ],
+    "stem": "<p>The table shows the body coverings of four animals, P, Q, R and S.</p><p class='q-ask'>Which animal could be a frog?</p>",
+    "figure": "<div class='scroll'><table class='data'><thead><tr><th scope='col'>Animal</th><th scope='col'>Body covering</th></tr></thead><tbody><tr><th scope='row'>P</th><td class='rowname'>dry, scaly skin</td></tr><tr><th scope='row'>Q</th><td class='rowname'>moist, smooth skin</td></tr><tr><th scope='row'>R</th><td class='rowname'>feathers</td></tr><tr><th scope='row'>S</th><td class='rowname'>fur</td></tr></tbody></table></div>",
+    "key": "Amphibians, such as frogs, have moist, smooth skin.",
+    "options": [
+      {
+        "text": "P",
+        "mis": "LIV-05",
+        "pick": "Frogs and lizards look a bit alike.",
+        "why": "Dry, scaly skin belongs to reptiles. A frog's skin is moist and smooth."
+      },
+      {
+        "text": "R",
+        "mis": "LIV-05",
+        "pick": "Picked at random.",
+        "why": "Feathers belong to birds."
+      },
+      {
+        "text": "S",
+        "mis": "LIV-05",
+        "pick": "Many animals are furry.",
+        "why": "Fur belongs to mammals."
+      },
+      {
+        "text": "Q",
+        "correct": true,
+        "pick": "Which skin do amphibians have?",
+        "why": "Frogs are amphibians, with moist, smooth skin."
+      }
+    ]
+  },
+  {
+    "id": "P3-living-things.u8",
+    "title": "A mushroom",
+    "kind": "diag",
+    "pool": "page",
+    "lo": [
+      "P3.LIV.C2"
+    ],
+    "stem": "<p class='q-ask'>Which statement about a mushroom is correct?</p>",
+    "key": "Fungi are not plants: they are not green and cannot make their own food.",
+    "options": [
+      {
+        "text": "It is a plant, because it grows out of the ground.",
+        "mis": "LIV-06",
+        "pick": "It grows where plants grow.",
+        "why": "A mushroom is a fungus. It is not green and cannot make its own food."
+      },
+      {
+        "text": "It is a fungus. It is not green and cannot make its own food.",
+        "correct": true,
+        "pick": "Is it green? Can it make its own food?",
+        "why": "Mushrooms are fungi, not plants."
+      },
+      {
+        "text": "It is not living, because it does not move.",
+        "mis": "LIV-01",
+        "pick": "It stays in one place, like a stone.",
+        "why": "Mushrooms grow and reproduce, so they are living."
+      },
+      {
+        "text": "It is a plant, because it has a stalk.",
+        "mis": "LIV-06",
+        "pick": "The stalk looks like a stem.",
+        "why": "Having a stalk doesn't make it a plant. It is a fungus."
+      }
+    ]
+  },
+  {
+    "id": "P3-living-things.u9",
+    "title": "Bacteria",
+    "kind": "diag",
+    "pool": "page",
+    "lo": [
+      "P3.LIV.C2"
+    ],
+    "stem": "<p class='q-ask'>Which statement about bacteria is correct?</p>",
+    "key": "Bacteria are living things too small to see without a microscope.",
+    "options": [
+      {
+        "text": "They can be seen easily on dirty hands.",
+        "mis": "LIV-07",
+        "pick": "Dirt on hands seems to be the bacteria.",
+        "why": "Bacteria are too small to see without a microscope."
+      },
+      {
+        "text": "They are not living, because we cannot see them.",
+        "mis": "LIV-07",
+        "pick": "Things we can't see seem not to be alive.",
+        "why": "Bacteria are living things. They are just very tiny."
+      },
+      {
+        "text": "They are a kind of plant.",
+        "mis": "LIV-07",
+        "pick": "They are not animals, so they seem to be plants.",
+        "why": "Bacteria are a group of their own."
+      },
+      {
+        "text": "They are living things that can be seen only through a microscope.",
+        "correct": true,
+        "pick": "How big are bacteria?",
+        "why": "Bacteria are living, and too small to see with the eyes alone."
+      }
+    ]
+  },
+  {
+    "id": "P3-living-things.u10",
+    "title": "Group Y",
+    "kind": "diag",
+    "pool": "page",
+    "lo": [
+      "P3.LIV.C2",
+      "P3.LIV.P2"
+    ],
+    "stem": "<p>Mei sorted some plants into two groups, X and Y.</p><p class='q-ask'>Which heading is correct for Group Y?</p>",
+    "figure": "<div class='scroll'><table class='data'><thead><tr><th scope='col'>Group</th><th scope='col'>Plants</th></tr></thead><tbody><tr><th scope='row'>X</th><td class='rowname'>hibiscus, sunflower, mango tree</td></tr><tr><th scope='row'>Y</th><td class='rowname'>fern, moss</td></tr></tbody></table></div>",
+    "key": "Non-flowering plants, such as ferns and mosses, never make flowers.",
+    "options": [
+      {
+        "text": "Water plants",
+        "mis": "LIV-09",
+        "pick": "Ferns and mosses like damp places.",
+        "why": "Liking damp places isn't a heading here. Both groups grow on land."
+      },
+      {
+        "text": "Plants with weak stems",
+        "mis": "LIV-09",
+        "pick": "Ferns and mosses are small.",
+        "why": "Size and stem strength aren't what separates the groups. Flowers are."
+      },
+      {
+        "text": "Non-flowering plants",
+        "correct": true,
+        "pick": "What do hibiscus, sunflowers and mango trees have that ferns and mosses never have?",
+        "why": "Ferns and mosses never make flowers."
+      },
+      {
+        "text": "Not plants",
+        "mis": "LIV-08",
+        "pick": "They have no flowers, so they seem not to be plants.",
+        "why": "Ferns and mosses are plants that don't flower."
+      }
+    ]
+  },
+  {
+    "id": "P3-living-things.r1",
+    "title": "Which is living?",
+    "kind": "variant",
+    "pool": "recap",
+    "lo": [
+      "P3.LIV.C1",
+      "P3.LIV.P1"
+    ],
+    "stem": "<p class='q-ask'>Which of these is a living thing?</p>",
+    "key": "A living thing grows, responds, reproduces and needs water, food and air.",
+    "options": [
+      {
+        "text": "A toy car that moves on its own",
+        "mis": "LIV-01",
+        "pick": "It moves by itself.",
+        "why": "It doesn't grow, reproduce or need food, water and air."
+      },
+      {
+        "text": "A balloon that gets bigger",
+        "mis": "LIV-01",
+        "pick": "It grows.",
+        "why": "It gets bigger only because air is blown in. It can't grow by itself."
+      },
+      {
+        "text": "A ticking clock",
+        "mis": "LIV-01",
+        "pick": "Its hands move.",
+        "why": "Moving isn't enough. It doesn't grow or reproduce."
+      },
+      {
+        "text": "Mould growing on bread",
+        "correct": true,
+        "pick": "Which one grows and reproduces on its own?",
+        "why": "Mould is a fungus. It grows and spreads, so it is living."
+      }
+    ]
+  },
+  {
+    "id": "P3-living-things.r2",
+    "title": "A growing balloon",
+    "kind": "variant",
+    "pool": "recap",
+    "lo": [
+      "P3.LIV.C1",
+      "P3.LIV.P1"
+    ],
+    "stem": "<p>A balloon gets bigger as air is blown into it.</p><p class='q-ask'>Is it growing the way a living thing grows?</p>",
+    "key": "A living thing grows by itself. Getting bigger because something is pushed in is not growing.",
+    "options": [
+      {
+        "text": "Yes, because it gets bigger.",
+        "mis": "LIV-01",
+        "pick": "Getting bigger sounds like growing.",
+        "why": "It gets bigger only because air is pushed in. It cannot grow by itself."
+      },
+      {
+        "text": "No. It gets bigger only when air is pushed in. It cannot grow by itself, or reproduce.",
+        "correct": true,
+        "pick": "Would it get bigger on its own?",
+        "why": "A living thing grows by itself. The balloon doesn't."
+      },
+      {
+        "text": "Yes, because it needs air.",
+        "mis": "LIV-01",
+        "pick": "Living things need air.",
+        "why": "Needing air alone doesn't make something living."
+      },
+      {
+        "text": "Yes, because it is responding to the air.",
+        "mis": "LIV-03",
+        "pick": "It changes when air comes in.",
+        "why": "Responding is a living thing reacting to a change. The balloon is only being filled."
+      }
+    ]
+  },
+  {
+    "id": "P3-living-things.r3",
+    "title": "Is a plant living?",
+    "kind": "variant",
+    "pool": "recap",
+    "lo": [
+      "P3.LIV.C1"
+    ],
+    "stem": "<p class='q-ask'>Which shows that a plant is a living thing?</p>",
+    "key": "Plants grow and reproduce, so they are living.",
+    "options": [
+      {
+        "text": "It stays in one place.",
+        "mis": "LIV-02",
+        "pick": "That is something plants do.",
+        "why": "A stone stays in one place too."
+      },
+      {
+        "text": "It is green.",
+        "mis": "LIV-02",
+        "pick": "Plants are green.",
+        "why": "A green ball is not living."
+      },
+      {
+        "text": "It is made of wood.",
+        "mis": "LIV-02",
+        "pick": "Trees are wood.",
+        "why": "A wooden chair is not living."
+      },
+      {
+        "text": "It grows and makes new plants.",
+        "correct": true,
+        "pick": "Which characteristics of living things does a plant show?",
+        "why": "Growing and reproducing show that it is living."
+      }
+    ]
+  },
+  {
+    "id": "P3-living-things.r4",
+    "title": "Do plants need air?",
+    "kind": "variant",
+    "pool": "recap",
+    "lo": [
+      "P3.LIV.C1"
+    ],
+    "stem": "<p>Siti says plants do not need air, only water.</p><p class='q-ask'>Which is correct?</p>",
+    "key": "Plants need water, food and air, like all living things. They make their own food.",
+    "options": [
+      {
+        "text": "Plants need water, food and air to survive, like all living things.",
+        "correct": true,
+        "pick": "What do all living things need?",
+        "why": "Plants are living, so they need water, food and air. They make their own food."
+      },
+      {
+        "text": "Plants need only water.",
+        "mis": "LIV-02",
+        "pick": "We water plants, but don't feed them.",
+        "why": "Plants also need air, and food, which they make themselves."
+      },
+      {
+        "text": "Plants need only soil.",
+        "mis": "LIV-02",
+        "pick": "Plants grow in soil.",
+        "why": "Plants need water, food and air."
+      },
+      {
+        "text": "Plants need nothing, because they are not living.",
+        "mis": "LIV-02",
+        "pick": "Plants don't move or eat like animals.",
+        "why": "Plants are living things."
+      }
+    ]
+  },
+  {
+    "id": "P3-living-things.r5",
+    "title": "A chick to a hen",
+    "kind": "variant",
+    "pool": "recap",
+    "lo": [
+      "P3.LIV.C1"
+    ],
+    "stem": "<p>A chick hatches, and some weeks later it has become a hen.</p><p class='q-ask'>Which characteristic does this show?</p>",
+    "key": "Getting bigger over time is growing.",
+    "options": [
+      {
+        "text": "It reproduces.",
+        "mis": "LIV-03",
+        "pick": "A hen is a grown-up chick, and hens lay eggs.",
+        "why": "Becoming a hen is getting bigger. That is growing."
+      },
+      {
+        "text": "It responds.",
+        "mis": "LIV-03",
+        "pick": "The chick changes.",
+        "why": "Responding is reacting to something around it."
+      },
+      {
+        "text": "It grows.",
+        "correct": true,
+        "pick": "What is changing about the chick?",
+        "why": "The chick gets bigger and becomes a hen: it grows."
+      },
+      {
+        "text": "It needs food.",
+        "mis": "LIV-03",
+        "pick": "The chick eats to get bigger.",
+        "why": "It does need food, but the change shown is growing."
+      }
+    ]
+  },
+  {
+    "id": "P3-living-things.r6",
+    "title": "A snail",
+    "kind": "variant",
+    "pool": "recap",
+    "lo": [
+      "P3.LIV.C1"
+    ],
+    "stem": "<p>A snail pulls into its shell when it is touched.</p><p class='q-ask'>Which characteristic does this show?</p>",
+    "key": "Reacting to a change, such as a touch, is responding.",
+    "options": [
+      {
+        "text": "It grows.",
+        "mis": "LIV-03",
+        "pick": "The snail changes shape.",
+        "why": "It doesn't get bigger. It reacts to the touch."
+      },
+      {
+        "text": "It responds to changes around it.",
+        "correct": true,
+        "pick": "What makes the snail pull in?",
+        "why": "The snail reacts to the touch: it responds."
+      },
+      {
+        "text": "It reproduces.",
+        "mis": "LIV-03",
+        "pick": "Snails make young.",
+        "why": "Pulling in is not making young."
+      },
+      {
+        "text": "It moves from place to place.",
+        "mis": "LIV-01",
+        "pick": "The snail moved.",
+        "why": "It pulled into its shell. That is a reaction to the touch."
+      }
+    ]
+  },
+  {
+    "id": "P3-living-things.r7",
+    "title": "Kittens",
+    "kind": "variant",
+    "pool": "recap",
+    "lo": [
+      "P3.LIV.C1"
+    ],
+    "stem": "<p>A cat has a litter of kittens.</p><p class='q-ask'>Which characteristic does this show?</p>",
+    "key": "Making young of its own kind is reproducing.",
+    "options": [
+      {
+        "text": "It grows.",
+        "mis": "LIV-03",
+        "pick": "The kittens will grow.",
+        "why": "The cat making kittens is reproducing."
+      },
+      {
+        "text": "It needs air.",
+        "mis": "LIV-03",
+        "pick": "Cats need air.",
+        "why": "True, but it is not what is shown here."
+      },
+      {
+        "text": "It responds.",
+        "mis": "LIV-03",
+        "pick": "The cat looks after its kittens.",
+        "why": "Making young is reproducing."
+      },
+      {
+        "text": "It reproduces.",
+        "correct": true,
+        "pick": "What does making young show?",
+        "why": "Making young of its own kind is reproducing."
+      }
+    ]
+  },
+  {
+    "id": "P3-living-things.r8",
+    "title": "A bat",
+    "kind": "variant",
+    "pool": "recap",
+    "lo": [
+      "P3.LIV.C2",
+      "P3.LIV.P2"
+    ],
+    "stem": "<p>A bat flies with wings, and its body is covered with fur.</p><p class='q-ask'>Which group does it belong to?</p>",
+    "key": "Fur or hair: mammal, even if it flies.",
+    "options": [
+      {
+        "text": "Birds, because it flies",
+        "mis": "LIV-04",
+        "pick": "Flying animals seem to be birds.",
+        "why": "Birds have feathers and beaks. The bat has fur."
+      },
+      {
+        "text": "Insects, because it has wings",
+        "mis": "LIV-04",
+        "pick": "Insects have wings.",
+        "why": "Insects have 6 legs and 3 body parts."
+      },
+      {
+        "text": "Mammals, because it has fur",
+        "correct": true,
+        "pick": "What covers its body?",
+        "why": "Fur makes it a mammal, even though it flies."
+      },
+      {
+        "text": "Reptiles",
+        "mis": "LIV-05",
+        "pick": "Bats live in dark caves, like some reptiles.",
+        "why": "Reptiles have dry, scaly skin, not fur."
+      }
+    ]
+  },
+  {
+    "id": "P3-living-things.r9",
+    "title": "A sea turtle",
+    "kind": "variant",
+    "pool": "recap",
+    "lo": [
+      "P3.LIV.C2",
+      "P3.LIV.P2"
+    ],
+    "stem": "<p>A sea turtle lives in the sea and swims with flippers. It has dry, scaly skin and lays its eggs on the beach.</p><p class='q-ask'>Which group does it belong to?</p>",
+    "key": "Dry, scaly skin: reptile, even if it lives in the sea.",
+    "options": [
+      {
+        "text": "Reptiles",
+        "correct": true,
+        "pick": "What is its skin like?",
+        "why": "Dry, scaly skin makes it a reptile, even though it lives in the sea."
+      },
+      {
+        "text": "Fish, because it lives in the sea",
+        "mis": "LIV-04",
+        "pick": "It lives in water.",
+        "why": "Fish have fins and scales; the turtle has flippers and dry, scaly skin."
+      },
+      {
+        "text": "Amphibians, because it lives in water and on land",
+        "mis": "LIV-04",
+        "pick": "It goes onto the beach.",
+        "why": "Amphibians have moist, smooth skin."
+      },
+      {
+        "text": "Mammals",
+        "mis": "LIV-05",
+        "pick": "It is a big animal.",
+        "why": "Mammals have fur or hair."
+      }
+    ]
+  },
+  {
+    "id": "P3-living-things.r10",
+    "title": "Birds' covering",
+    "kind": "variant",
+    "pool": "recap",
+    "lo": [
+      "P3.LIV.C2"
+    ],
+    "stem": "<p class='q-ask'>What covers the body of a bird?</p>",
+    "key": "Feathers cover a bird's body.",
+    "options": [
+      {
+        "text": "Scales",
+        "mis": "LIV-05",
+        "pick": "Birds' legs look scaly.",
+        "why": "A bird's body is covered with feathers."
+      },
+      {
+        "text": "Fur",
+        "mis": "LIV-05",
+        "pick": "Some birds look fluffy.",
+        "why": "The fluff is feathers."
+      },
+      {
+        "text": "Moist skin",
+        "mis": "LIV-05",
+        "pick": "Water birds get wet.",
+        "why": "Moist skin belongs to amphibians."
+      },
+      {
+        "text": "Feathers",
+        "correct": true,
+        "pick": "What do all birds have?",
+        "why": "Feathers cover a bird's body."
+      }
+    ]
+  },
+  {
+    "id": "P3-living-things.r11",
+    "title": "A frog and a lizard",
+    "kind": "variant",
+    "pool": "recap",
+    "lo": [
+      "P3.LIV.C2"
+    ],
+    "stem": "<p class='q-ask'>Which statement is correct?</p>",
+    "key": "Frogs (amphibians) have moist, smooth skin. Lizards (reptiles) have dry, scaly skin.",
+    "options": [
+      {
+        "text": "A frog has moist, smooth skin, and a lizard has dry, scaly skin.",
+        "correct": true,
+        "pick": "Which one lives near water and feels slippery?",
+        "why": "Frogs are amphibians with moist skin; lizards are reptiles with dry, scaly skin."
+      },
+      {
+        "text": "A frog has dry, scaly skin, and a lizard has moist, smooth skin.",
+        "mis": "LIV-05",
+        "pick": "They look alike, so they are easy to swap.",
+        "why": "It is the other way round."
+      },
+      {
+        "text": "Both have dry, scaly skin.",
+        "mis": "LIV-05",
+        "pick": "Both are small, four-legged animals.",
+        "why": "A frog's skin is moist and smooth."
+      },
+      {
+        "text": "Both have moist, smooth skin.",
+        "mis": "LIV-05",
+        "pick": "Both are found in gardens after rain.",
+        "why": "A lizard's skin is dry and scaly."
+      }
+    ]
+  },
+  {
+    "id": "P3-living-things.r12",
+    "title": "Mould on bread",
+    "kind": "variant",
+    "pool": "recap",
+    "lo": [
+      "P3.LIV.C2"
+    ],
+    "stem": "<p>Fuzzy mould grows on an old slice of bread.</p><p class='q-ask'>What is the mould?</p>",
+    "key": "Mould is a fungus, a living thing.",
+    "options": [
+      {
+        "text": "A fungus",
+        "correct": true,
+        "pick": "Mould is one of the fungi named in the syllabus.",
+        "why": "Mould is a fungus, a living thing."
+      },
+      {
+        "text": "A plant",
+        "mis": "LIV-06",
+        "pick": "It grows like a tiny plant.",
+        "why": "Mould is not green and cannot make its own food. It is a fungus."
+      },
+      {
+        "text": "Dust, which is not living",
+        "mis": "LIV-01",
+        "pick": "It looks like fluff.",
+        "why": "The mould grows and spreads. It is living."
+      },
+      {
+        "text": "Bacteria",
+        "mis": "LIV-07",
+        "pick": "It makes food go bad.",
+        "why": "We can see mould with our eyes. Bacteria are too small to see."
+      }
+    ]
+  },
+  {
+    "id": "P3-living-things.r13",
+    "title": "Why a mushroom is not a plant",
+    "kind": "variant",
+    "pool": "recap",
+    "lo": [
+      "P3.LIV.C2"
+    ],
+    "stem": "<p class='q-ask'>Why is a mushroom not a plant?</p>",
+    "key": "Plants are green and make their own food. Fungi cannot.",
+    "options": [
+      {
+        "text": "It is a plant, because it grows in the ground.",
+        "mis": "LIV-06",
+        "pick": "It grows where plants grow.",
+        "why": "Growing in the ground doesn't make it a plant."
+      },
+      {
+        "text": "It is a plant, because it has a stalk.",
+        "mis": "LIV-06",
+        "pick": "The stalk looks like a stem.",
+        "why": "It is a fungus with a stalk, not a plant with a stem."
+      },
+      {
+        "text": "It is not green and cannot make its own food.",
+        "correct": true,
+        "pick": "What can plants do that a mushroom can't?",
+        "why": "Plants are green and make their own food. Mushrooms can't, so they are fungi."
+      },
+      {
+        "text": "It is a plant, because it does not move.",
+        "mis": "LIV-06",
+        "pick": "Plants don't move.",
+        "why": "Not moving doesn't make it a plant."
+      }
+    ]
+  },
+  {
+    "id": "P3-living-things.r14",
+    "title": "Clean-looking hands",
+    "kind": "variant",
+    "pool": "recap",
+    "lo": [
+      "P3.LIV.C2"
+    ],
+    "stem": "<p>Ravi's hands look clean.</p><p class='q-ask'>Which statement is correct?</p>",
+    "key": "Bacteria are everywhere, and too small to see without a microscope.",
+    "options": [
+      {
+        "text": "There can be no bacteria on them.",
+        "mis": "LIV-07",
+        "pick": "Clean-looking means nothing is there.",
+        "why": "Bacteria are too small to see. They may still be there."
+      },
+      {
+        "text": "Bacteria may still be there. They are too small to see without a microscope.",
+        "correct": true,
+        "pick": "Can you see bacteria with your eyes?",
+        "why": "Bacteria are everywhere, and too small to see without a microscope."
+      },
+      {
+        "text": "Bacteria live only in dirty water.",
+        "mis": "LIV-07",
+        "pick": "Dirty water seems to be where germs live.",
+        "why": "Bacteria are found everywhere."
+      },
+      {
+        "text": "Bacteria are not living, so it doesn't matter.",
+        "mis": "LIV-07",
+        "pick": "Tiny things seem not to be alive.",
+        "why": "Bacteria are living things."
+      }
+    ]
+  },
+  {
+    "id": "P3-living-things.r15",
+    "title": "A fern",
+    "kind": "variant",
+    "pool": "recap",
+    "lo": [
+      "P3.LIV.C2"
+    ],
+    "stem": "<p class='q-ask'>Which statement about a fern is correct?</p>",
+    "key": "A fern is a plant that never makes flowers.",
+    "options": [
+      {
+        "text": "It is not a plant, because it has no flowers.",
+        "mis": "LIV-08",
+        "pick": "Plants seem to need flowers.",
+        "why": "Ferns are plants that never make flowers."
+      },
+      {
+        "text": "It is a flowering plant, because it has leaves.",
+        "mis": "LIV-08",
+        "pick": "Most plants with leaves seem to flower.",
+        "why": "Ferns have leaves but never make flowers."
+      },
+      {
+        "text": "It is a fungus, because it grows in damp places.",
+        "mis": "LIV-06",
+        "pick": "Fungi like damp places.",
+        "why": "Ferns are green plants."
+      },
+      {
+        "text": "It is a non-flowering plant.",
+        "correct": true,
+        "pick": "Does a fern ever make flowers?",
+        "why": "A fern is a plant that never makes flowers."
+      }
+    ]
+  },
+  {
+    "id": "P3-living-things.r16",
+    "title": "A plant with no flowers",
+    "kind": "variant",
+    "pool": "recap",
+    "lo": [
+      "P3.LIV.C2"
+    ],
+    "stem": "<p class='q-ask'>Which plant never makes flowers?</p>",
+    "key": "Ferns and mosses never make flowers.",
+    "options": [
+      {
+        "text": "Moss",
+        "correct": true,
+        "pick": "Which one is a non-flowering plant?",
+        "why": "Moss never makes flowers."
+      },
+      {
+        "text": "A sunflower",
+        "mis": "LIV-08",
+        "pick": "It has big leaves.",
+        "why": "A sunflower makes a big flower."
+      },
+      {
+        "text": "A mango tree",
+        "mis": "LIV-08",
+        "pick": "We see its fruit more than its flowers.",
+        "why": "A mango tree flowers before it fruits."
+      },
+      {
+        "text": "A hibiscus",
+        "mis": "LIV-08",
+        "pick": "Picked at random.",
+        "why": "A hibiscus makes large flowers."
+      }
+    ]
+  },
+  {
+    "id": "P3-living-things.r17",
+    "title": "A classification chart",
+    "kind": "variant",
+    "pool": "recap",
+    "lo": [
+      "P3.LIV.C2",
+      "P3.LIV.P2"
+    ],
+    "stem": "<p>Look at the classification chart.</p><p class='q-ask'>Into which group does a spider (8 legs, no feathers) go?</p>",
+    "figure": "<svg viewBox='0 0 360 200' style='max-width:360px;margin:0 auto' role='img' aria-label='A classification chart. Question one: Does it have 6 legs? Yes leads to Group A. No leads to question two: Does it have feathers? Yes leads to Group B. No leads to Group C.'><rect x='90' y='8' width='180' height='34' rx='6' style='fill:var(--card);stroke:var(--stroke);stroke-width:1.5'/><text class='lbl' x='180' y='30' text-anchor='middle'>Does it have 6 legs?</text><line x1='130' y1='42' x2='70' y2='92' style='stroke:var(--stroke);stroke-width:1.5'/><path d='M73.6 83.8 L70 92 L78.7 90.0' style='fill:none;stroke:var(--stroke);stroke-width:1.5'/><text class='lbl sm' x='88' y='66' text-anchor='middle'>Yes</text><line x1='230' y1='42' x2='260' y2='92' style='stroke:var(--stroke);stroke-width:1.5'/><path d='M252.5 87.2 L260 92 L259.3 83.1' style='fill:none;stroke:var(--stroke);stroke-width:1.5'/><text class='lbl sm' x='256' y='66' text-anchor='middle'>No</text><rect x='20' y='92' width='100' height='32' rx='6' style='fill:var(--card);stroke:var(--stroke);stroke-width:1.5'/><text class='lbl' x='70' y='113' text-anchor='middle'>Group A</text><rect x='180' y='92' width='160' height='32' rx='6' style='fill:var(--card);stroke:var(--stroke);stroke-width:1.5'/><text class='lbl' x='260' y='113' text-anchor='middle'>Does it have feathers?</text><line x1='230' y1='124' x2='210' y2='160' style='stroke:var(--stroke);stroke-width:1.5'/><path d='M210.4 151.1 L210 160 L217.4 154.9' style='fill:none;stroke:var(--stroke);stroke-width:1.5'/><text class='lbl sm' x='208' y='146' text-anchor='middle'>Yes</text><line x1='290' y1='124' x2='310' y2='160' style='stroke:var(--stroke);stroke-width:1.5'/><path d='M302.6 154.9 L310 160 L309.6 151.1' style='fill:none;stroke:var(--stroke);stroke-width:1.5'/><text class='lbl sm' x='312' y='146' text-anchor='middle'>No</text><rect x='165' y='160' width='90' height='32' rx='6' style='fill:var(--card);stroke:var(--stroke);stroke-width:1.5'/><text class='lbl' x='210' y='181' text-anchor='middle'>Group B</text><rect x='265' y='160' width='90' height='32' rx='6' style='fill:var(--card);stroke:var(--stroke);stroke-width:1.5'/><text class='lbl' x='310' y='181' text-anchor='middle'>Group C</text></svg>",
+    "key": "Answer each question in the chart about the animal, one at a time.",
+    "options": [
+      {
+        "text": "Group A",
+        "mis": "LIV-05",
+        "pick": "Spiders seem to be insects.",
+        "why": "A spider has 8 legs, not 6."
+      },
+      {
+        "text": "Group B",
+        "mis": "LIV-09",
+        "pick": "It goes past the first question.",
+        "why": "A spider has no feathers, so it goes to C."
+      },
+      {
+        "text": "Group C",
+        "correct": true,
+        "pick": "Answer each question in turn: 6 legs? No. Feathers? No.",
+        "why": "No to both questions leads to Group C."
+      },
+      {
+        "text": "It can't be placed, because the chart doesn't mention spiders.",
+        "mis": "LIV-09",
+        "pick": "Spiders aren't named.",
+        "why": "The chart sorts by features. Answer its questions about the spider."
+      }
+    ]
+  },
+  {
+    "id": "P3-living-things.r18",
+    "title": "Two groups of animals",
+    "kind": "variant",
+    "pool": "recap",
+    "lo": [
+      "P3.LIV.P2"
+    ],
+    "stem": "<p>Mei sorted some animals into two groups.</p><p class='q-ask'>Which headings could she have used?</p>",
+    "figure": "<div class='scroll'><table class='data'><thead><tr><th scope='col'>Group</th><th scope='col'>Animals</th></tr></thead><tbody><tr><th scope='row'>1</th><td class='rowname'>cat, dog, rabbit</td></tr><tr><th scope='row'>2</th><td class='rowname'>hen, duck, penguin</td></tr></tbody></table></div>",
+    "key": "Find the feature that every member of a group shares.",
+    "options": [
+      {
+        "text": "Group 1: lives on land · Group 2: lives in water",
+        "mis": "LIV-04",
+        "pick": "Ducks and penguins swim.",
+        "why": "Hens live on land. The groups are not split by where they live."
+      },
+      {
+        "text": "Group 1: big · Group 2: small",
+        "mis": "LIV-09",
+        "pick": "Some look bigger.",
+        "why": "A rabbit is not bigger than a penguin. Size doesn't split them."
+      },
+      {
+        "text": "Group 1: cannot fly · Group 2: can fly",
+        "mis": "LIV-04",
+        "pick": "Birds seem to fly.",
+        "why": "A penguin cannot fly, but it is in Group 2."
+      },
+      {
+        "text": "Group 1: has fur · Group 2: has feathers",
+        "correct": true,
+        "pick": "What body covering do all the animals in each group share?",
+        "why": "Cats, dogs and rabbits have fur. Hens, ducks and penguins have feathers."
+      }
+    ]
+  }
+]

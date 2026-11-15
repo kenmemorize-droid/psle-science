@@ -1,0 +1,41 @@
+#explore h3{font-size:20px;margin:26px 0 4px;padding-top:14px;border-top:var(--bw) solid var(--line)}
+#explore h3#e1{border-top:0;padding-top:0;margin-top:10px}
+#explore h4{font:700 16px var(--f-body);margin:18px 0 6px}
+.vgrid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:16px;align-items:start}
+@media(max-width:700px){.vgrid{grid-template-columns:1fr}}
+#seedSvg{max-width:520px;margin:0 auto}
+#mouldSvg,#scopeSvg{max-width:380px;margin:0 auto}
+#grpSvg{max-width:320px;margin:0 auto}
+#mushSvg{max-width:340px;margin:0 auto}
+.v-info{min-height:44px;font-size:15.5px}
+.v-info h4{margin:0 0 6px!important}
+.v-info ul{margin:0 0 8px;padding-left:20px}
+.chip-btn{min-height:44px;min-width:44px;padding:8px 14px;border:var(--bw) solid var(--line);border-radius:999px;background:var(--card);color:var(--ink);font-size:15px}
+.chip-btn[aria-pressed="true"]{border-color:var(--primary);background:var(--primary-soft);font-weight:700}
+.v-target{font-size:15.5px;background:var(--sunk);border:var(--bw) solid var(--line);border-radius:var(--radius);padding:10px 12px}
+.v-cols{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:10px}
+.v-col{border:var(--bw) solid var(--line);border-radius:var(--radius);padding:8px 10px;background:var(--card);min-height:60px}
+.v-col h5{margin:0 0 6px;font:700 14px var(--f-label)}
+.v-col ul{margin:0;padding-left:18px;font-size:14.5px}
+.v-tiles{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:8px}
+details.v-tile{background:var(--card);border:var(--bw) solid var(--line);border-radius:var(--radius);padding:0 12px}
+details.v-tile>summary{cursor:pointer;min-height:44px;display:flex;align-items:center;font-weight:700}
+details.v-tile[open]{padding-bottom:10px}
+details.v-tile p{font-size:15px;margin:0}
+/* drawing */
+.v-wool{fill:var(--card);stroke:var(--line);stroke-width:2}
+.v-wet{fill:var(--sim-1);fill-opacity:.18}
+.v-seed{fill:var(--wood);fill-opacity:.75;stroke:var(--stroke);stroke-width:1.5}
+.v-rock{fill:var(--muted);stroke:var(--stroke);stroke-width:1.5}
+.v-root{fill:none;stroke:var(--wood);stroke-width:3;stroke-linecap:round}
+.v-shoot{fill:none;stroke:var(--stem);stroke-width:4;stroke-linecap:round}
+.v-leaf{fill:var(--leaf);stroke:var(--stroke);stroke-width:1.5}
+.v-cap{fill:var(--sim-2);fill-opacity:.55;stroke:var(--stroke);stroke-width:2}
+.v-stalk{fill:var(--card);stroke:var(--stroke);stroke-width:2}
+.v-gill{stroke:var(--wood);stroke-width:2.5}
+.v-spore{fill:var(--wood)}
+.v-bread{fill:var(--fb);stroke:var(--stroke);stroke-width:2}
+.v-crust{fill:none;stroke:var(--wood);stroke-width:8;stroke-linejoin:round}
+.v-mould{fill:var(--leaf);fill-opacity:.85;stroke:var(--stroke);stroke-width:1}
+.v-bact{fill:var(--sim-3);fill-opacity:.8;stroke:var(--stroke);stroke-width:1}
+.v-hl{fill:none;stroke:var(--primary);stroke-width:4}

@@ -1,0 +1,44 @@
+<section class="card" id="see-it">
+  <p class="sec-label">See it</p>
+  <h2>Follow a meal through the body</h2>
+  <p class="lead">Tap any organ to zoom in, or press <b>Follow the food</b> in the side panel. A checkpoint question comes up after each part.</p>
+  <div class="dg">
+    <div class="dg-bar">
+      <label class="switch"><input type="checkbox" id="beyond"><span class="track"></span><span>Show Beyond syllabus notes</span></label>
+    </div>
+    <div class="legend" id="legend" role="group" aria-label="Show or hide kinds of food"></div>
+    <div class="layout">
+      <section class="stage" id="stage" aria-label="Digestive system viewer">
+        <canvas id="c2d" aria-label="2D view of the digestive system"></canvas>
+        <canvas id="c3d" hidden aria-label="3D view of the digestive system"></canvas>
+        <svg id="leaders" class="overlay" aria-hidden="true"></svg>
+        <div id="callouts"></div>
+        <div class="ctl-tr">
+          <div class="seg" role="group" aria-label="View">
+            <button type="button" id="v2d" aria-pressed="true">2D</button>
+            <button type="button" id="v3d" aria-pressed="false">3D</button>
+          </div>
+          <div class="mini">
+            <button type="button" id="btnPause" aria-pressed="false">Pause</button>
+            <select id="selSpeed" aria-label="Speed"><option value="0.5">Slow</option><option value="1" selected>Normal</option><option value="2">Fast</option></select>
+          </div>
+        </div>
+        <div class="ctl-bl"><button type="button" id="btnWhole" hidden>Whole body</button></div>
+        <div class="hint" id="hint">Tap an organ to zoom in</div>
+      </section>
+      <aside class="panel" id="panel" aria-live="polite"></aside>
+    </div>
+    <details class="matrix" id="matrixBox" open>
+      <summary>Where is each kind of food?</summary>
+      <div class="mx-wrap"><div class="mx" id="mx"></div></div>
+    </details>
+  </div>
+  <p class="key"><b>Key idea.</b> Food is digested in the mouth, stomach and small intestine, and digestion is completed in the small intestine. Digested food passes into the blood in the small intestine. Undigested food moves on to the large intestine, where water is absorbed from it.</p>
+</section>
+
+<section class="card" id="check">
+  <p class="sec-label">Check yourself</p>
+  <h2>The four checkpoints</h2>
+  <p class="lead">Each checkpoint comes up after its part of the journey. Only your first answer counts. You can also open any checkpoint from here.</p>
+  <ul class="cp-list" id="cpList"></ul>
+</section>

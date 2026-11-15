@@ -1,0 +1,972 @@
+[
+  {
+    "id": "P3-life-cycles.u1",
+    "title": "Four stages",
+    "kind": "diag",
+    "pool": "page",
+    "lo": [
+      "P3.LCY.C1",
+      "P3.LCY.P2"
+    ],
+    "stem": "<p class='q-ask'>Which of these animals has a 4-stage life cycle?</p>",
+    "key": "4 stages (egg, larva, pupa, adult): butterfly, beetle, mosquito.",
+    "options": [
+      {
+        "text": "Cockroach",
+        "mis": "LCY-01",
+        "pick": "Cockroaches are insects, like butterflies.",
+        "why": "A cockroach has 3 stages: egg, nymph, adult. There is no pupa."
+      },
+      {
+        "text": "Chicken",
+        "mis": "LCY-01",
+        "pick": "Chickens hatch from eggs and change a lot.",
+        "why": "A chicken has 3 stages: egg, chick, adult."
+      },
+      {
+        "text": "Butterfly",
+        "correct": true,
+        "pick": "Which animal has a pupa?",
+        "why": "A butterfly has 4 stages: egg, larva (caterpillar), pupa, adult."
+      },
+      {
+        "text": "Grasshopper",
+        "mis": "LCY-01",
+        "pick": "It is an insect that changes as it grows.",
+        "why": "A grasshopper has 3 stages: egg, nymph, adult."
+      }
+    ]
+  },
+  {
+    "id": "P3-life-cycles.u2",
+    "title": "A mosquito's stages",
+    "kind": "diag",
+    "pool": "page",
+    "lo": [
+      "P3.LCY.P2"
+    ],
+    "stem": "<p class='q-ask'>Which shows the stages of a mosquito's life cycle in order?</p>",
+    "key": "A 4-stage cycle goes egg → larva → pupa → adult.",
+    "options": [
+      {
+        "text": "egg → pupa → larva → adult",
+        "mis": "LCY-03",
+        "pick": "The two middle stages are easy to swap.",
+        "why": "The larva comes before the pupa."
+      },
+      {
+        "text": "egg → nymph → adult",
+        "mis": "LCY-01",
+        "pick": "Many small insects have a nymph stage.",
+        "why": "A mosquito has 4 stages, with a larva and a pupa."
+      },
+      {
+        "text": "larva → egg → pupa → adult",
+        "mis": "LCY-03",
+        "pick": "The larva is the stage people notice first.",
+        "why": "Every cycle here starts with the egg."
+      },
+      {
+        "text": "egg → larva → pupa → adult",
+        "correct": true,
+        "pick": "Recall the 4-stage order.",
+        "why": "A mosquito goes from egg to larva to pupa to adult."
+      }
+    ]
+  },
+  {
+    "id": "P3-life-cycles.u3",
+    "title": "A pupa",
+    "kind": "diag",
+    "pool": "page",
+    "lo": [
+      "P3.LCY.P2"
+    ],
+    "stem": "<p class='q-ask'>Which statement describes a pupa?</p>",
+    "key": "A pupa does not feed or move. The adult forms inside it.",
+    "options": [
+      {
+        "text": "It does not feed or move, and the adult forms inside it.",
+        "correct": true,
+        "pick": "Which stage is still?",
+        "why": "The pupa is a resting stage. The adult forms inside."
+      },
+      {
+        "text": "It eats a lot and grows quickly.",
+        "mis": "LCY-02",
+        "pick": "Young insects seem to eat a lot.",
+        "why": "That describes a larva."
+      },
+      {
+        "text": "It looks like a small adult without wings.",
+        "mis": "LCY-02",
+        "pick": "It comes just before the adult.",
+        "why": "That describes a nymph."
+      },
+      {
+        "text": "It lays the eggs.",
+        "mis": "LCY-03",
+        "pick": "It is the last stage before the cycle repeats.",
+        "why": "The adult lays the eggs."
+      }
+    ]
+  },
+  {
+    "id": "P3-life-cycles.u4",
+    "title": "Stage A",
+    "kind": "diag",
+    "pool": "page",
+    "lo": [
+      "P3.LCY.P2"
+    ],
+    "stem": "<p>The diagram shows the life cycle of an insect. Stage A looks like the adult, but it is smaller and has no wings.</p><p class='q-ask'>What is stage A?</p>",
+    "figure": "<svg viewBox='0 0 400 270' style='max-width:380px;margin:0 auto' role='img' aria-label='A life cycle diagram with three stages: egg, then stage A, then adult, and back to egg.'><line x1='218.0' y1='77.2' x2='252.9' y2='137.6' style='stroke:var(--stroke);stroke-width:2'/><path d='M244.0 132.3 L252.9 137.6 L252.7 127.3' style='fill:none;stroke:var(--stroke);stroke-width:2'/><line x1='235.9' y1='170.5' x2='166.1' y2='170.5' style='stroke:var(--stroke);stroke-width:2'/><path d='M175.1 165.5 L166.1 170.5 L175.1 175.5' style='fill:none;stroke:var(--stroke);stroke-width:2'/><line x1='146.1' y1='139.3' x2='181.0' y2='78.9' style='stroke:var(--stroke);stroke-width:2'/><path d='M180.8 89.2 L181.0 78.9 L172.2 84.2' style='fill:none;stroke:var(--stroke);stroke-width:2'/><circle cx='200.0' cy='46.0' r='30' style='fill:var(--card);stroke:var(--stroke);stroke-width:1.6'/><g transform='translate(200.0 46.0)'><ellipse rx='11' ry='15' style='fill:var(--card);stroke:var(--stroke);stroke-width:1.6'/></g><text class='lbl' x='200.0' y='92.0' text-anchor='middle'>Egg</text><circle cx='271.9' cy='170.5' r='30' style='fill:var(--card);stroke:var(--stroke);stroke-width:1.6'/><g transform='translate(271.9 170.5)'><text x='0' y='9' text-anchor='middle' style='font:700 26px var(--f-label);fill:var(--ink)'>?</text></g><text class='lbl' x='265.9' y='216.5' text-anchor='start'>Stage A</text><circle cx='128.1' cy='170.5' r='30' style='fill:var(--card);stroke:var(--stroke);stroke-width:1.6'/><g transform='translate(128.1 170.5)'><g transform='scale(1)'><ellipse cx='-2' cy='-10' rx='13' ry='6' transform='rotate(-25 -2 -10)' style='fill:var(--fa);stroke:var(--stroke);stroke-width:1.6;fill-opacity:.8'/><ellipse cx='-2' cy='10' rx='13' ry='6' transform='rotate(25 -2 10)' style='fill:var(--fa);stroke:var(--stroke);stroke-width:1.6;fill-opacity:.8'/><path d='M-6 -4 l-5 -12 M0 -4 l0 -13 M6 -4 l5 -12 M-6 4 l-5 12 M0 4 l0 13 M6 4 l5 12' style='fill:none;stroke:var(--stroke);stroke-width:1.6;stroke-linecap:round'/><circle cx='-17' cy='0' r='5' style='fill:var(--wood);stroke:var(--stroke);stroke-width:1.6'/><ellipse cx='-6' cy='0' rx='7' ry='5' style='fill:var(--wood);stroke:var(--stroke);stroke-width:1.6'/><ellipse cx='10' cy='0' rx='11' ry='6' style='fill:var(--wood);stroke:var(--stroke);stroke-width:1.6'/></g></g><text class='lbl' x='134.1' y='216.5' text-anchor='end'>Adult</text></svg>",
+    "key": "A nymph looks like the adult but is smaller and has no wings.",
+    "options": [
+      {
+        "text": "A larva",
+        "mis": "LCY-02",
+        "pick": "The young insect between egg and adult seems to be the larva.",
+        "why": "A larva does not look like the adult. A looks like a small adult."
+      },
+      {
+        "text": "A nymph",
+        "correct": true,
+        "pick": "Which young stage looks like a small adult without wings?",
+        "why": "A nymph looks like the adult but is smaller and has no wings."
+      },
+      {
+        "text": "A pupa",
+        "mis": "LCY-02",
+        "pick": "It comes before the adult.",
+        "why": "A pupa does not look like the adult, and there are only 3 stages here."
+      },
+      {
+        "text": "A chick",
+        "mis": "LCY-01",
+        "pick": "Chickens have 3 stages too.",
+        "why": "This is an insect, and a young insect that looks like a small wingless adult is a nymph."
+      }
+    ]
+  },
+  {
+    "id": "P3-life-cycles.u5",
+    "title": "A plant's stages",
+    "kind": "diag",
+    "pool": "page",
+    "lo": [
+      "P3.LCY.P1"
+    ],
+    "stem": "<p class='q-ask'>Which shows the stages in the life cycle of a flowering plant in order?</p>",
+    "key": "Seed → young plant → adult plant → seed. The adult makes seeds, so the cycle repeats.",
+    "options": [
+      {
+        "text": "seed → adult plant → young plant",
+        "mis": "LCY-05",
+        "pick": "Picked two stages in the wrong order.",
+        "why": "The young plant comes before the adult plant."
+      },
+      {
+        "text": "seed → young plant → adult plant, and then the cycle ends",
+        "mis": "LCY-04",
+        "pick": "The adult is the last stage.",
+        "why": "The adult makes seeds, so the cycle starts again."
+      },
+      {
+        "text": "seed → young plant → adult plant → seed",
+        "correct": true,
+        "pick": "Where do the seeds of the next plant come from?",
+        "why": "The adult plant makes fruits with seeds, and the cycle repeats."
+      },
+      {
+        "text": "young plant → seed → adult plant",
+        "mis": "LCY-05",
+        "pick": "The young plant seems to make the seed.",
+        "why": "A young plant has no flowers or fruits, so it makes no seeds."
+      }
+    ]
+  },
+  {
+    "id": "P3-life-cycles.u6",
+    "title": "A young balsam plant",
+    "kind": "diag",
+    "pool": "page",
+    "lo": [
+      "P3.LCY.P1"
+    ],
+    "stem": "<p>Siti grew balsam plants from seeds.</p><p class='q-ask'>Which statement about a young balsam plant is correct?</p>",
+    "key": "A young plant has roots, a stem and leaves, but no flowers yet.",
+    "options": [
+      {
+        "text": "It has flowers and fruits.",
+        "mis": "LCY-05",
+        "pick": "Balsam plants have pretty flowers.",
+        "why": "Only the adult plant makes flowers and fruits."
+      },
+      {
+        "text": "It has no roots yet.",
+        "mis": "LCY-05",
+        "pick": "It is small and new.",
+        "why": "The root is the first part to grow from the seed."
+      },
+      {
+        "text": "It is a different kind of plant from the adult.",
+        "mis": "LCY-07",
+        "pick": "It looks very different from the big plant.",
+        "why": "It is a young balsam plant. It grows into the adult."
+      },
+      {
+        "text": "It has roots, a stem and leaves, but no flowers yet.",
+        "correct": true,
+        "pick": "What has grown, and what hasn't yet?",
+        "why": "The young plant has roots, a stem and leaves. Flowers come at the adult stage."
+      }
+    ]
+  },
+  {
+    "id": "P3-life-cycles.u7",
+    "title": "Beans and balsams",
+    "kind": "diag",
+    "pool": "page",
+    "lo": [
+      "P3.LCY.C1",
+      "P3.LCY.P1"
+    ],
+    "stem": "<p>Ali grew green bean and balsam plants from seeds. The table shows the day each stage first appeared.</p><p class='q-ask'>Which statement is correct?</p>",
+    "figure": "<div class='scroll'><table class='data'><thead><tr><th scope='col'>Plant</th><th scope='col'>First leaves (day)</th><th scope='col'>First flowers (day)</th><th scope='col'>Fruits with seeds (day)</th></tr></thead><tbody><tr><th scope='row'>Green bean</th><td>5</td><td>40</td><td>55</td></tr><tr><th scope='row'>Balsam</th><td>7</td><td>60</td><td>75</td></tr></tbody></table></div>",
+    "key": "Different plants have different life cycles: the same stages can take different lengths of time.",
+    "options": [
+      {
+        "text": "Both plants went through the same stages, but took different lengths of time.",
+        "correct": true,
+        "pick": "Compare the stages, then compare the days.",
+        "why": "Both had leaves, flowers and fruits with seeds, but the bean plant was faster at every stage."
+      },
+      {
+        "text": "The bean plant has fewer stages in its life cycle.",
+        "mis": "LCY-06",
+        "pick": "It finished sooner.",
+        "why": "It has the same stages. It just reached each one sooner."
+      },
+      {
+        "text": "They should take the same time, because both are flowering plants.",
+        "mis": "LCY-06",
+        "pick": "Plants of the same group seem to grow alike.",
+        "why": "Different plants have different life cycles, even within one group."
+      },
+      {
+        "text": "The balsam plant skipped the young plant stage.",
+        "mis": "LCY-05",
+        "pick": "Its numbers are bigger, so it seems to be ahead.",
+        "why": "It had leaves on day 7, as a young plant. It went through every stage."
+      }
+    ]
+  },
+  {
+    "id": "P3-life-cycles.u8",
+    "title": "Why it is a cycle",
+    "kind": "diag",
+    "pool": "page",
+    "lo": [
+      "P3.LCY.C1"
+    ],
+    "stem": "<p class='q-ask'>Why do we call it a life <b>cycle</b>?</p>",
+    "key": "The adult reproduces (eggs or seeds), so the stages start again.",
+    "options": [
+      {
+        "text": "Because it ends when the adult dies",
+        "mis": "LCY-04",
+        "pick": "Life seems to end at the adult.",
+        "why": "Before that, the adult lays eggs or makes seeds, which start the stages again."
+      },
+      {
+        "text": "Because the adult lays eggs or makes seeds, so the stages start again",
+        "correct": true,
+        "pick": "What does the adult do that starts the next round?",
+        "why": "The adult reproduces, so the same stages repeat."
+      },
+      {
+        "text": "Because the adult turns back into an egg",
+        "mis": "LCY-04",
+        "pick": "The cycle seems to go back to the start.",
+        "why": "The adult doesn't change back. It produces new eggs."
+      },
+      {
+        "text": "Because every living thing goes through exactly the same stages",
+        "mis": "LCY-06",
+        "pick": "\"Cycle\" seems to mean the same for all.",
+        "why": "Different living things have different stages."
+      }
+    ]
+  },
+  {
+    "id": "P3-life-cycles.u9",
+    "title": "A tadpole",
+    "kind": "diag",
+    "pool": "page",
+    "lo": [
+      "P3.LCY.P2"
+    ],
+    "stem": "<p>A tadpole lives in water and has a tail.</p><p class='q-ask'>What will it become?</p>",
+    "key": "A tadpole is a young frog. It grows into an adult frog.",
+    "options": [
+      {
+        "text": "A fish",
+        "mis": "LCY-07",
+        "pick": "It swims in water and has a tail.",
+        "why": "A tadpole is a young frog."
+      },
+      {
+        "text": "It will stay a tadpole all its life.",
+        "mis": "LCY-04",
+        "pick": "It looks very different from a frog.",
+        "why": "It grows into an adult frog."
+      },
+      {
+        "text": "An adult frog",
+        "correct": true,
+        "pick": "Which animal's young is a tadpole?",
+        "why": "A tadpole grows into an adult frog, which can lay eggs."
+      },
+      {
+        "text": "A pupa",
+        "mis": "LCY-02",
+        "pick": "Young animals seem to become pupae.",
+        "why": "Only animals with 4-stage cycles, like butterflies, have a pupa."
+      }
+    ]
+  },
+  {
+    "id": "P3-life-cycles.u10",
+    "title": "A chicken and a grasshopper",
+    "kind": "diag",
+    "pool": "page",
+    "lo": [
+      "P3.LCY.C1",
+      "P3.LCY.P2"
+    ],
+    "stem": "<p class='q-ask'>Which statement about the life cycles of a chicken and a grasshopper is correct?</p>",
+    "key": "Chicken: egg, chick, adult. Grasshopper: egg, nymph, adult. Both have 3 stages.",
+    "options": [
+      {
+        "text": "The chicken has 3 stages, but the grasshopper has 4.",
+        "mis": "LCY-01",
+        "pick": "Insects seem to have more stages.",
+        "why": "A grasshopper has 3 stages: egg, nymph, adult."
+      },
+      {
+        "text": "The young grasshopper is a larva.",
+        "mis": "LCY-02",
+        "pick": "Young insects seem to be larvae.",
+        "why": "A young grasshopper is a nymph: it looks like a small adult without wings."
+      },
+      {
+        "text": "The chicken's life cycle has no egg stage.",
+        "mis": "LCY-01",
+        "pick": "Chicks hatch, but the egg doesn't seem like a stage.",
+        "why": "A chicken's cycle starts with the egg."
+      },
+      {
+        "text": "Both have 3 stages, and both start as eggs.",
+        "correct": true,
+        "pick": "Count the stages of each.",
+        "why": "Chicken: egg, chick, adult. Grasshopper: egg, nymph, adult."
+      }
+    ]
+  },
+  {
+    "id": "P3-life-cycles.r1",
+    "title": "Which has a pupa?",
+    "kind": "variant",
+    "pool": "recap",
+    "lo": [
+      "P3.LCY.P2"
+    ],
+    "stem": "<p class='q-ask'>Which of these animals has a pupa stage?</p>",
+    "key": "Butterflies, beetles and mosquitoes have a pupa stage.",
+    "options": [
+      {
+        "text": "Beetle",
+        "correct": true,
+        "pick": "Which one has a 4-stage cycle?",
+        "why": "A beetle's stages are egg, larva, pupa and adult."
+      },
+      {
+        "text": "Cockroach",
+        "mis": "LCY-01",
+        "pick": "It is an insect.",
+        "why": "A cockroach has a nymph, not a pupa."
+      },
+      {
+        "text": "Frog",
+        "mis": "LCY-01",
+        "pick": "Frogs change a lot as they grow.",
+        "why": "A frog's stages are egg, tadpole and adult."
+      },
+      {
+        "text": "Chicken",
+        "mis": "LCY-01",
+        "pick": "Chickens hatch from eggs.",
+        "why": "A chicken's stages are egg, chick and adult."
+      }
+    ]
+  },
+  {
+    "id": "P3-life-cycles.r2",
+    "title": "A 3-stage insect",
+    "kind": "variant",
+    "pool": "recap",
+    "lo": [
+      "P3.LCY.P2"
+    ],
+    "stem": "<p class='q-ask'>Which insect has a 3-stage life cycle?</p>",
+    "key": "Cockroaches and grasshoppers have 3 stages: egg, nymph, adult.",
+    "options": [
+      {
+        "text": "Mosquito",
+        "mis": "LCY-01",
+        "pick": "It is small.",
+        "why": "A mosquito has 4 stages, with a larva and a pupa."
+      },
+      {
+        "text": "Grasshopper",
+        "correct": true,
+        "pick": "Which insect has a nymph?",
+        "why": "A grasshopper's stages are egg, nymph and adult."
+      },
+      {
+        "text": "Butterfly",
+        "mis": "LCY-01",
+        "pick": "It is a common insect.",
+        "why": "A butterfly has 4 stages."
+      },
+      {
+        "text": "Beetle",
+        "mis": "LCY-01",
+        "pick": "It looks tough, like a cockroach.",
+        "why": "A beetle has 4 stages."
+      }
+    ]
+  },
+  {
+    "id": "P3-life-cycles.r3",
+    "title": "A butterfly's stages",
+    "kind": "variant",
+    "pool": "recap",
+    "lo": [
+      "P3.LCY.P2"
+    ],
+    "stem": "<p class='q-ask'>Which shows a butterfly's life cycle in order?</p>",
+    "key": "Egg → larva (caterpillar) → pupa → adult butterfly.",
+    "options": [
+      {
+        "text": "egg → pupa → caterpillar → butterfly",
+        "mis": "LCY-03",
+        "pick": "The middle stages are easy to swap.",
+        "why": "The caterpillar (larva) comes before the pupa."
+      },
+      {
+        "text": "egg → caterpillar → butterfly",
+        "mis": "LCY-01",
+        "pick": "The pupa is easy to forget.",
+        "why": "A butterfly has 4 stages, including the pupa."
+      },
+      {
+        "text": "caterpillar → egg → pupa → butterfly",
+        "mis": "LCY-03",
+        "pick": "The caterpillar seems to come first.",
+        "why": "The cycle starts with the egg."
+      },
+      {
+        "text": "egg → caterpillar → pupa → butterfly",
+        "correct": true,
+        "pick": "Recall the 4 stages.",
+        "why": "Egg, larva (caterpillar), pupa, adult butterfly."
+      }
+    ]
+  },
+  {
+    "id": "P3-life-cycles.r4",
+    "title": "After the pupa",
+    "kind": "variant",
+    "pool": "recap",
+    "lo": [
+      "P3.LCY.P2"
+    ],
+    "stem": "<p class='q-ask'>In a 4-stage life cycle, which stage comes after the pupa?</p>",
+    "key": "The adult forms inside the pupa and comes out.",
+    "options": [
+      {
+        "text": "Larva",
+        "mis": "LCY-03",
+        "pick": "The larva and pupa go together.",
+        "why": "The larva comes before the pupa."
+      },
+      {
+        "text": "Egg",
+        "mis": "LCY-03",
+        "pick": "The cycle seems to go back to the egg.",
+        "why": "The adult comes out of the pupa, and then lays eggs."
+      },
+      {
+        "text": "Adult",
+        "correct": true,
+        "pick": "What comes out of the pupa?",
+        "why": "The adult forms inside the pupa and comes out."
+      },
+      {
+        "text": "Nymph",
+        "mis": "LCY-02",
+        "pick": "A young insect seems to come next.",
+        "why": "A nymph belongs to 3-stage cycles."
+      }
+    ]
+  },
+  {
+    "id": "P3-life-cycles.r5",
+    "title": "A larva",
+    "kind": "variant",
+    "pool": "recap",
+    "lo": [
+      "P3.LCY.P2"
+    ],
+    "stem": "<p class='q-ask'>Which statement describes a larva?</p>",
+    "key": "A larva does not look like the adult, and it eats a lot.",
+    "options": [
+      {
+        "text": "It does not look like the adult, and it eats a lot.",
+        "correct": true,
+        "pick": "Which stage is the hungry one?",
+        "why": "A larva eats a lot and grows. It looks nothing like the adult."
+      },
+      {
+        "text": "It does not feed or move.",
+        "mis": "LCY-02",
+        "pick": "It is an early stage.",
+        "why": "That describes a pupa."
+      },
+      {
+        "text": "It looks like the adult, but is smaller.",
+        "mis": "LCY-02",
+        "pick": "Young animals seem to look like their parents.",
+        "why": "That describes a nymph."
+      },
+      {
+        "text": "It is the adult that lays eggs.",
+        "mis": "LCY-03",
+        "pick": "It comes near the start.",
+        "why": "The adult lays eggs. A larva hatches from an egg."
+      }
+    ]
+  },
+  {
+    "id": "P3-life-cycles.r6",
+    "title": "A grasshopper nymph",
+    "kind": "variant",
+    "pool": "recap",
+    "lo": [
+      "P3.LCY.P2"
+    ],
+    "stem": "<p class='q-ask'>Which statement about a grasshopper nymph is correct?</p>",
+    "key": "A nymph looks like a small adult without wings, and sheds its skin as it grows.",
+    "options": [
+      {
+        "text": "It will become a pupa next.",
+        "mis": "LCY-01",
+        "pick": "Young insects seem to become pupae.",
+        "why": "A grasshopper has no pupa. The nymph grows into the adult."
+      },
+      {
+        "text": "It does not feed or move.",
+        "mis": "LCY-02",
+        "pick": "It is a young stage.",
+        "why": "That describes a pupa. A nymph eats and moves."
+      },
+      {
+        "text": "It looks like the adult but is smaller and has no wings, and it sheds its skin as it grows.",
+        "correct": true,
+        "pick": "What does a nymph look like?",
+        "why": "A nymph looks like a small adult without wings, and moults several times."
+      },
+      {
+        "text": "It lives inside the egg.",
+        "mis": "LCY-03",
+        "pick": "It is the stage after the egg.",
+        "why": "The nymph hatches out of the egg."
+      }
+    ]
+  },
+  {
+    "id": "P3-life-cycles.r7",
+    "title": "A still pupa",
+    "kind": "variant",
+    "pool": "recap",
+    "lo": [
+      "P3.LCY.P2"
+    ],
+    "stem": "<p>Mei kept a butterfly pupa in a box for a week. It did not eat or move.</p><p class='q-ask'>What can she tell?</p>",
+    "key": "A pupa does not feed or move while the adult forms inside.",
+    "options": [
+      {
+        "text": "It is dead.",
+        "mis": "LCY-02",
+        "pick": "Living things seem to move and eat.",
+        "why": "A pupa does not feed or move. The adult is forming inside."
+      },
+      {
+        "text": "It is a nymph resting.",
+        "mis": "LCY-02",
+        "pick": "Young insects seem to rest.",
+        "why": "A butterfly has no nymph. This is its pupa."
+      },
+      {
+        "text": "It will become a caterpillar next.",
+        "mis": "LCY-03",
+        "pick": "The caterpillar and pupa go together.",
+        "why": "The caterpillar came before the pupa. The adult comes next."
+      },
+      {
+        "text": "This is normal for a pupa: the adult butterfly is forming inside.",
+        "correct": true,
+        "pick": "What happens in the pupa stage?",
+        "why": "A pupa does not feed or move while the adult forms inside."
+      }
+    ]
+  },
+  {
+    "id": "P3-life-cycles.r8",
+    "title": "Eggs on a leaf",
+    "kind": "variant",
+    "pool": "recap",
+    "lo": [
+      "P3.LCY.C1",
+      "P3.LCY.P2"
+    ],
+    "stem": "<p>An adult butterfly lays eggs on a leaf.</p><p class='q-ask'>What does this show?</p>",
+    "key": "The adult reproduces, so the life cycle starts again.",
+    "options": [
+      {
+        "text": "The life cycle starts again.",
+        "correct": true,
+        "pick": "What happens after the adult stage?",
+        "why": "The adult lays eggs, so the stages repeat."
+      },
+      {
+        "text": "The life cycle has ended.",
+        "mis": "LCY-04",
+        "pick": "The adult is the last stage.",
+        "why": "Laying eggs starts the cycle again."
+      },
+      {
+        "text": "The butterfly has turned into a pupa.",
+        "mis": "LCY-03",
+        "pick": "A pupa comes after the larva.",
+        "why": "The adult lays eggs. It does not become a pupa again."
+      },
+      {
+        "text": "The eggs will hatch into a different kind of insect.",
+        "mis": "LCY-07",
+        "pick": "The caterpillars look nothing like butterflies.",
+        "why": "The caterpillars that hatch are young butterflies."
+      }
+    ]
+  },
+  {
+    "id": "P3-life-cycles.r9",
+    "title": "Seeds for the next plant",
+    "kind": "variant",
+    "pool": "recap",
+    "lo": [
+      "P3.LCY.P1"
+    ],
+    "stem": "<p class='q-ask'>Where do the seeds that start the next round of a plant's life cycle come from?</p>",
+    "key": "The seeds come from the fruits of an adult plant.",
+    "options": [
+      {
+        "text": "From the roots of the young plant",
+        "mis": "LCY-05",
+        "pick": "Roots are underground, like seeds.",
+        "why": "Seeds come from the fruits of an adult plant."
+      },
+      {
+        "text": "From the soil",
+        "mis": "LCY-05",
+        "pick": "Seeds are found in soil.",
+        "why": "Seeds are made by adult plants, in their fruits."
+      },
+      {
+        "text": "From the fruits of an adult plant",
+        "correct": true,
+        "pick": "Which stage makes flowers and fruits?",
+        "why": "The adult plant's flowers become fruits with seeds inside."
+      },
+      {
+        "text": "Nowhere: a plant's life cycle ends at the adult",
+        "mis": "LCY-04",
+        "pick": "The adult seems to be the end.",
+        "why": "The adult makes seeds, so the cycle starts again."
+      }
+    ]
+  },
+  {
+    "id": "P3-life-cycles.r10",
+    "title": "Which stage?",
+    "kind": "variant",
+    "pool": "recap",
+    "lo": [
+      "P3.LCY.P1"
+    ],
+    "stem": "<p>A small plant has roots, a stem and a few leaves, but no flowers.</p><p class='q-ask'>Which stage is it at?</p>",
+    "key": "Roots, a stem and leaves but no flowers: a young plant.",
+    "options": [
+      {
+        "text": "Seed",
+        "mis": "LCY-05",
+        "pick": "It is very small.",
+        "why": "It has roots, a stem and leaves, so it has grown past the seed."
+      },
+      {
+        "text": "Young plant",
+        "correct": true,
+        "pick": "Has it flowered yet?",
+        "why": "Roots, a stem and leaves but no flowers: a young plant."
+      },
+      {
+        "text": "Adult plant",
+        "mis": "LCY-05",
+        "pick": "It has all the main parts.",
+        "why": "An adult plant makes flowers."
+      },
+      {
+        "text": "Fruit",
+        "mis": "LCY-05",
+        "pick": "It is a stage in the cycle.",
+        "why": "Fruits form from flowers on the adult plant."
+      }
+    ]
+  },
+  {
+    "id": "P3-life-cycles.r11",
+    "title": "A quick plant and a tree",
+    "kind": "variant",
+    "pool": "recap",
+    "lo": [
+      "P3.LCY.C1",
+      "P3.LCY.P1"
+    ],
+    "stem": "<p>Two plants were grown from seeds. Plant P first flowered after 6 weeks. Plant Q, a tree, first flowered after 3 years.</p><p class='q-ask'>Which statement is correct?</p>",
+    "key": "Different plants take different lengths of time to complete their life cycles.",
+    "options": [
+      {
+        "text": "Plant Q is not a flowering plant.",
+        "mis": "LCY-06",
+        "pick": "It took too long to be a flowering plant.",
+        "why": "It did flower, after 3 years."
+      },
+      {
+        "text": "Plant P has fewer stages than plant Q.",
+        "mis": "LCY-06",
+        "pick": "P finished sooner.",
+        "why": "Both go through the same stages, at different speeds."
+      },
+      {
+        "text": "All plants take the same time, so the test went wrong.",
+        "mis": "LCY-06",
+        "pick": "Plants seem to grow alike.",
+        "why": "Different plants have different life cycles."
+      },
+      {
+        "text": "Different plants take different lengths of time to complete their life cycles.",
+        "correct": true,
+        "pick": "Same stages, different times.",
+        "why": "P and Q both flowered, but at very different times."
+      }
+    ]
+  },
+  {
+    "id": "P3-life-cycles.r12",
+    "title": "Life cycles compared",
+    "kind": "variant",
+    "pool": "recap",
+    "lo": [
+      "P3.LCY.C1"
+    ],
+    "stem": "<p class='q-ask'>Which statement about life cycles is correct?</p>",
+    "key": "Different living things have different life cycles.",
+    "options": [
+      {
+        "text": "All animals have 4 stages.",
+        "mis": "LCY-06",
+        "pick": "The butterfly's 4 stages are the best known.",
+        "why": "Chickens, frogs, cockroaches and grasshoppers have 3."
+      },
+      {
+        "text": "Different animals can have different numbers of stages.",
+        "correct": true,
+        "pick": "Compare a butterfly with a cockroach.",
+        "why": "A butterfly has 4 stages, and a cockroach has 3."
+      },
+      {
+        "text": "All insects have 3 stages.",
+        "mis": "LCY-01",
+        "pick": "Cockroaches and grasshoppers have 3.",
+        "why": "Butterflies, beetles and mosquitoes have 4."
+      },
+      {
+        "text": "Only insects have life cycles.",
+        "mis": "LCY-06",
+        "pick": "Larva and pupa are insect words.",
+        "why": "Chickens, frogs and plants have life cycles too."
+      }
+    ]
+  },
+  {
+    "id": "P3-life-cycles.r13",
+    "title": "A caterpillar",
+    "kind": "variant",
+    "pool": "recap",
+    "lo": [
+      "P3.LCY.P2"
+    ],
+    "stem": "<p>A caterpillar eats leaves and grows.</p><p class='q-ask'>Which statement is correct?</p>",
+    "key": "A caterpillar is the larva of a butterfly.",
+    "options": [
+      {
+        "text": "It is a kind of worm.",
+        "mis": "LCY-07",
+        "pick": "It is long and wriggly.",
+        "why": "A caterpillar is the larva of a butterfly."
+      },
+      {
+        "text": "It is the larva of a butterfly.",
+        "correct": true,
+        "pick": "Which stage eats a lot?",
+        "why": "A caterpillar is a butterfly's larva. It grows, then becomes a pupa."
+      },
+      {
+        "text": "It is a butterfly's pupa.",
+        "mis": "LCY-02",
+        "pick": "The pupa is part of the butterfly's cycle.",
+        "why": "A pupa does not eat or move. The caterpillar eats a lot."
+      },
+      {
+        "text": "It is an adult butterfly without wings.",
+        "mis": "LCY-02",
+        "pick": "It will become a butterfly.",
+        "why": "It is a larva, not an adult. A young insect that looks like the adult would be a nymph."
+      }
+    ]
+  },
+  {
+    "id": "P3-life-cycles.r14",
+    "title": "A tadpole",
+    "kind": "variant",
+    "pool": "recap",
+    "lo": [
+      "P3.LCY.P2"
+    ],
+    "stem": "<p class='q-ask'>Which statement about a tadpole is correct?</p>",
+    "key": "A tadpole is a young frog. It looks different, but grows into the adult.",
+    "options": [
+      {
+        "text": "It is a fish, because it has a tail and lives in water.",
+        "mis": "LCY-07",
+        "pick": "It swims like a fish.",
+        "why": "A tadpole is a young frog."
+      },
+      {
+        "text": "It will stay a tadpole all its life.",
+        "mis": "LCY-04",
+        "pick": "It looks so different from a frog.",
+        "why": "It grows into an adult frog."
+      },
+      {
+        "text": "It is the pupa stage of a frog.",
+        "mis": "LCY-02",
+        "pick": "It comes between the egg and the adult.",
+        "why": "A frog has no pupa. The tadpole is its young."
+      },
+      {
+        "text": "It is a young frog. It does not look like the adult, but grows into one.",
+        "correct": true,
+        "pick": "What will it become?",
+        "why": "The tadpole is the young stage of a frog."
+      }
+    ]
+  },
+  {
+    "id": "P3-life-cycles.r15",
+    "title": "A chicken's cycle",
+    "kind": "variant",
+    "pool": "recap",
+    "lo": [
+      "P3.LCY.P2"
+    ],
+    "stem": "<p class='q-ask'>Which shows a chicken's life cycle?</p>",
+    "key": "Egg → chick → adult chicken → egg.",
+    "options": [
+      {
+        "text": "egg → chick → adult chicken → egg",
+        "correct": true,
+        "pick": "Follow the chicken from the egg.",
+        "why": "The egg hatches into a chick, which grows into an adult that lays eggs."
+      },
+      {
+        "text": "chick → egg → adult chicken",
+        "mis": "LCY-03",
+        "pick": "The chick seems to lay the egg.",
+        "why": "The egg comes first, and hatches into the chick."
+      },
+      {
+        "text": "egg → larva → pupa → chicken",
+        "mis": "LCY-01",
+        "pick": "The 4-stage cycle is the one that is well known.",
+        "why": "A chicken has 3 stages: egg, chick, adult."
+      },
+      {
+        "text": "egg → chick → adult chicken, and then it ends",
+        "mis": "LCY-04",
+        "pick": "The adult seems to be the end.",
+        "why": "The adult lays eggs, so the cycle repeats."
+      }
+    ]
+  },
+  {
+    "id": "P3-life-cycles.r16",
+    "title": "The missing stage",
+    "kind": "variant",
+    "pool": "recap",
+    "lo": [
+      "P3.LCY.P2"
+    ],
+    "stem": "<p>The diagram shows a life cycle with one stage missing.</p><p class='q-ask'>What is the missing stage, and what is it like?</p>",
+    "figure": "<svg viewBox='0 0 400 270' style='max-width:380px;margin:0 auto' role='img' aria-label='A life cycle diagram with four stages: egg, larva, a missing stage marked with a question mark, then adult, and back to egg.'><line x1='225.5' y1='71.5' x2='256.1' y2='102.1' style='stroke:var(--stroke);stroke-width:2'/><path d='M246.2 99.3 L256.1 102.1 L253.3 92.2' style='fill:none;stroke:var(--stroke);stroke-width:2'/><line x1='257.5' y1='154.5' x2='226.9' y2='185.1' style='stroke:var(--stroke);stroke-width:2'/><path d='M229.7 175.2 L226.9 185.1 L236.8 182.3' style='fill:none;stroke:var(--stroke);stroke-width:2'/><line x1='174.5' y1='186.5' x2='143.9' y2='155.9' style='stroke:var(--stroke);stroke-width:2'/><path d='M153.8 158.7 L143.9 155.9 L146.7 165.8' style='fill:none;stroke:var(--stroke);stroke-width:2'/><line x1='142.5' y1='103.5' x2='173.1' y2='72.9' style='stroke:var(--stroke);stroke-width:2'/><path d='M170.3 82.8 L173.1 72.9 L163.2 75.7' style='fill:none;stroke:var(--stroke);stroke-width:2'/><circle cx='200.0' cy='46.0' r='30' style='fill:var(--card);stroke:var(--stroke);stroke-width:1.6'/><g transform='translate(200.0 46.0)'><ellipse rx='11' ry='15' style='fill:var(--card);stroke:var(--stroke);stroke-width:1.6'/></g><text class='lbl' x='200.0' y='92.0' text-anchor='middle'>Egg</text><circle cx='283.0' cy='129.0' r='30' style='fill:var(--card);stroke:var(--stroke);stroke-width:1.6'/><g transform='translate(283.0 129.0)'><circle cx='-16' cy='0' r='5' style='fill:var(--leaf);stroke:var(--stroke);stroke-width:1.6'/><circle cx='-8' cy='0' r='5' style='fill:var(--leaf);stroke:var(--stroke);stroke-width:1.6'/><circle cx='0' cy='0' r='5' style='fill:var(--leaf);stroke:var(--stroke);stroke-width:1.6'/><circle cx='8' cy='0' r='5' style='fill:var(--leaf);stroke:var(--stroke);stroke-width:1.6'/><circle cx='16' cy='0' r='5' style='fill:var(--stem);stroke:var(--stroke);stroke-width:1.6'/></g><text class='lbl' x='277.0' y='175.0' text-anchor='start'>Larva</text><circle cx='200.0' cy='212.0' r='30' style='fill:var(--card);stroke:var(--stroke);stroke-width:1.6'/><g transform='translate(200.0 212.0)'><text x='0' y='9' text-anchor='middle' style='font:700 26px var(--f-label);fill:var(--ink)'>?</text></g><text class='lbl' x='200.0' y='258.0' text-anchor='middle'>?</text><circle cx='117.0' cy='129.0' r='30' style='fill:var(--card);stroke:var(--stroke);stroke-width:1.6'/><g transform='translate(117.0 129.0)'><g transform='scale(1)'><ellipse cx='-2' cy='-10' rx='13' ry='6' transform='rotate(-25 -2 -10)' style='fill:var(--fa);stroke:var(--stroke);stroke-width:1.6;fill-opacity:.8'/><ellipse cx='-2' cy='10' rx='13' ry='6' transform='rotate(25 -2 10)' style='fill:var(--fa);stroke:var(--stroke);stroke-width:1.6;fill-opacity:.8'/><path d='M-6 -4 l-5 -12 M0 -4 l0 -13 M6 -4 l5 -12 M-6 4 l-5 12 M0 4 l0 13 M6 4 l5 12' style='fill:none;stroke:var(--stroke);stroke-width:1.6;stroke-linecap:round'/><circle cx='-17' cy='0' r='5' style='fill:var(--wood);stroke:var(--stroke);stroke-width:1.6'/><ellipse cx='-6' cy='0' rx='7' ry='5' style='fill:var(--wood);stroke:var(--stroke);stroke-width:1.6'/><ellipse cx='10' cy='0' rx='11' ry='6' style='fill:var(--wood);stroke:var(--stroke);stroke-width:1.6'/></g></g><text class='lbl' x='123.0' y='175.0' text-anchor='end'>Adult</text></svg>",
+    "key": "In a 4-stage cycle the pupa comes between the larva and the adult. It does not feed or move.",
+    "options": [
+      {
+        "text": "A nymph, which looks like the adult",
+        "mis": "LCY-02",
+        "pick": "The stage before the adult often looks like it.",
+        "why": "There is a larva here, so this is a 4-stage cycle. The missing stage is the pupa."
+      },
+      {
+        "text": "A second larva stage",
+        "mis": "LCY-03",
+        "pick": "The larva grows, so it may appear twice.",
+        "why": "The larva becomes a pupa next."
+      },
+      {
+        "text": "A pupa, which does not feed or move",
+        "correct": true,
+        "pick": "In a 4-stage cycle, what comes after the larva?",
+        "why": "The pupa comes between the larva and the adult. It does not feed or move."
+      },
+      {
+        "text": "An egg",
+        "mis": "LCY-03",
+        "pick": "The egg is always in the cycle.",
+        "why": "The egg is at the start. The adult lays it."
+      }
+    ]
+  }
+]

@@ -1,0 +1,94 @@
+<section class="card" id="see-it">
+  <p class="sec-label">See it</p>
+  <h2>Two lamps, one walker</h2>
+  <p class="lead">Light travels in straight lines, so a shadow forms where the person blocks the light. Drag the person along the path, or press Walk.</p>
+  <div class="sw-bar">
+    <div class="row" role="group" aria-label="View">
+      <button type="button" class="btn small" id="tab2d" aria-pressed="true">2D side view</button>
+      <button type="button" class="btn small" id="tab3d" aria-pressed="false">3D view</button>
+    </div>
+    <div class="row" id="camBtns" role="group" aria-label="Camera" hidden>
+      <button type="button" class="btn small" data-cam="side">Side</button>
+      <button type="button" class="btn small" data-cam="persp" aria-pressed="true">Angle</button>
+      <button type="button" class="btn small" data-cam="top">Top-down</button>
+    </div>
+    <label class="sw-chk"><input type="checkbox" id="optRays" checked> Show light rays</label>
+  </div>
+  <div class="sw-stage" id="stage">
+    <canvas id="c2d" aria-label="Side view of a person walking between two lamp posts, with their shadows on the pavement"></canvas>
+    <div id="c3dwrap" hidden></div>
+    <div class="lbl3d A" id="lblA" hidden></div>
+    <div class="lbl3d B" id="lblB" hidden></div>
+    <div class="sw-hint" id="hint">Drag along the road to move the person.</div>
+  </div>
+  <div class="sw-transport">
+    <button type="button" class="btn primary" id="btnPlay">▶ Walk</button>
+    <button type="button" class="btn" id="btnReset">Restart</button>
+    <div class="sw-pos">
+      <span class="tagA">Lamp A</span>
+      <input type="range" id="pos" min="0" max="1000" step="1" value="250" aria-label="Position between lamp A and lamp B">
+      <span class="tagB">Lamp B</span>
+    </div>
+    <label class="sw-chk">Speed
+      <select id="speed" aria-label="Walking speed">
+        <option value="0.25">Slow</option><option value="0.5">Easy</option><option value="1" selected>Normal</option><option value="2">Fast</option>
+      </select>
+    </label>
+    <label class="sw-chk"><input type="checkbox" id="optLoop" checked> Walk back and forth</label>
+  </div>
+
+  <div class="sw-grid2">
+    <div>
+      <h3>What the shadows are doing</h3>
+      <div class="sw-tiles">
+        <div class="sw-tile"><span class="tagA">Lamp A</span>
+          <div class="sw-row"><span>Person is</span><span id="dA">0.0 m</span></div>
+          <div class="sw-row"><span>away. Shadow is</span></div>
+          <div class="sw-big" id="LA">0.0 m</div></div>
+        <div class="sw-tile"><span class="tagB">Lamp B</span>
+          <div class="sw-row"><span>Person is</span><span id="dB">0.0 m</span></div>
+          <div class="sw-row"><span>away. Shadow is</span></div>
+          <div class="sw-big" id="LB">0.0 m</div></div>
+      </div>
+      <p class="sw-why" id="why" aria-live="polite"></p>
+      <canvas id="cGraph" aria-label="Graph of shadow length against the person's distance from lamp A"></canvas>
+      <p class="note-s">Each line shows one lamp's shadow length as the person walks from lamp A to lamp B.</p>
+    </div>
+    <div>
+      <h3>Change one thing at a time</h3>
+      <div class="sw-sl"><label for="inh">Person's height</label><output id="vh">1.5 m</output><input type="range" id="inh" min="1" max="1.8" step="0.05" value="1.5"></div>
+      <div class="sw-sl"><label for="inL">Lamp height</label><output id="vL">5.0 m</output><input type="range" id="inL" min="3.5" max="8" step="0.25" value="5"></div>
+      <div class="sw-sl"><label for="inD">Distance between lamps</label><output id="vD">12 m</output><input type="range" id="inD" min="6" max="16" step="1" value="12"></div>
+      <p class="note-s">A fair test changes only one of these while the others stay the same.</p>
+      <button type="button" class="btn small" id="btnDefaults">Reset the settings</button>
+    </div>
+  </div>
+
+  <div class="key"><b>Key idea.</b> A shadow always points away from its own lamp. With a lamp above you shining down on the ground, the farther you are from the lamp, the more the light slants, and the longer your shadow. Right under the lamp, your shadow is only a small patch at your feet.</div>
+  <div class="note"><b>Why is this different from the torch and wall test?</b> In class, moving an object <b>closer to the torch</b> makes its shadow on the <b>wall</b> bigger, because the wall stands behind the object. Here the shadow lies on the <b>ground</b> and the lamp is above the person. Both follow the same rule: light travels in straight lines, and the shadow is wherever the object stops it.</div>
+
+  <details class="beyond">
+    <summary><span class="bs-badge">Beyond syllabus</span> A rule that predicts the shadow</summary>
+    <p>The light ray, the person and the ground make two triangles with the same shape. This gives:</p>
+    <p class="sw-eq">shadow = person × distance ÷ (lamp − person)</p>
+    <p class="sw-eq" id="fmA"></p>
+    <p class="sw-eq" id="fmB"></p>
+    <p>If the lamp were not higher than the person's head, no shadow would reach the ground.</p>
+  </details>
+  <details class="beyond">
+    <summary><span class="bs-badge">Beyond syllabus</span> Raise the lamps</summary>
+    <p>Raise both lamps with the slider. Both shadows get shorter: a higher lamp sends its light down more steeply, so the person blocks less ground.</p>
+  </details>
+  <details class="beyond">
+    <summary><span class="bs-badge">Beyond syllabus</span> Two lamps, so two shadows</summary>
+    <p>Where only one lamp is blocked, the other lamp still lights the ground, so that part is lighter. Where both are blocked, the ground is darkest. Switch to the 3D view and the top-down camera to see this.</p>
+    <p>Challenge: drag the person until the two shadows are exactly equal. How far is the person from each lamp?</p>
+  </details>
+</section>
+
+<section class="card" id="check">
+  <p class="sec-label">Check yourself</p>
+  <h2>Shadows and straight-line light</h2>
+  <p class="lead">Only your first answer counts. A wrong first answer goes into your mistake book for recap.</p>
+  <div id="qs"></div>
+</section>

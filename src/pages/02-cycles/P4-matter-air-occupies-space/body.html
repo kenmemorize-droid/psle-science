@@ -1,0 +1,55 @@
+<section class="card" id="see-it">
+  <p class="sec-label">See it</p>
+  <h2>Blowing into a balloon inside a bottle</h2>
+  <p class="lead">Hui Min fits a balloon over the mouth of an empty plastic bottle and blows into it.</p>
+  <div class="airsim">
+    <div class="air-stage">
+      <canvas id="scene" width="520" height="650" role="img" aria-label="A plastic bottle with a balloon fitted over its mouth and hanging inside. Dots show the blown-in air inside the balloon and the bottle's own air around it."></canvas>
+      <ul class="air-legend">
+        <li><span class="dot b"></span>Air blown in by Hui Min</li>
+        <li><span class="dot t"></span>Air that was already in the bottle</li>
+        <li><span class="dot s"></span>Balloon</li>
+      </ul>
+      <p class="note-s">All the air is the same kind. The colours only show where it came from.</p>
+    </div>
+    <div class="air-panel">
+      <fieldset class="air-mode">
+        <legend>Bottle</legend>
+        <div class="seg">
+          <label><input type="radio" name="mode" value="sealed" checked><span>Sealed by the balloon</span></label>
+          <label><input type="radio" name="mode" value="vent"><span>Hole in the base</span></label>
+        </div>
+      </fieldset>
+      <div class="actions">
+        <button type="button" class="btn primary blow" id="blow">Hold to blow</button>
+        <button type="button" class="btn" id="pause">Pause</button>
+        <button type="button" class="btn" id="reset">Reset</button>
+      </div>
+      <div class="airbar" aria-hidden="true"><span class="sb" id="segB"></span><span class="sa"></span></div>
+      <table class="data air-stats">
+        <caption>Space inside the bottle: 500 mL</caption>
+        <thead><tr><th scope="col"><span class="vh">Part</span></th><th scope="col">Volume</th><th scope="col">Dots of air</th></tr></thead>
+        <tbody>
+          <tr><th scope="row"><i class="sw b"></i>Balloon</th><td id="vB">–</td><td id="nB">–</td></tr>
+          <tr><th scope="row"><i class="sw a"></i>Air in the bottle</th><td id="vA">–</td><td id="nA">–</td></tr>
+        </tbody>
+      </table>
+      <p>How tightly packed the bottle's air is: <b id="crowd">100%</b> <span class="small muted">(100% at the start)</span></p>
+      <p class="air-caption" id="caption" aria-live="polite"></p>
+      <ol class="small muted">
+        <li>Keep the bottle sealed and hold the blow button until the balloon stops growing.</li>
+        <li>Press Reset, choose "Hole in the base", and blow again.</li>
+        <li>Compare the balloon's volume and how tightly packed the bottle's air is.</li>
+      </ol>
+      <p class="note-s">Simplified model: the dots are drawn far larger than real air particles, and volumes are scaled to a 500 mL bottle.</p>
+    </div>
+  </div>
+  <p class="key"><b>Key idea.</b> Air is matter: it has mass and takes up space. An "empty" bottle is full of air. Air can be squashed into less space, but the more it is squashed, the harder it pushes back. Give it a way out and it moves out of the way.</p>
+</section>
+
+<section class="card" id="check">
+  <p class="sec-label">Check yourself</p>
+  <h2>Air takes up space</h2>
+  <p class="lead">Only your first answer counts. A wrong first answer goes into your mistake book for recap.</p>
+  <div id="qs"></div>
+</section>

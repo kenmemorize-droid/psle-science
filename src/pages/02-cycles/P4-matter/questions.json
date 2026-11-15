@@ -1,0 +1,616 @@
+[
+  {
+    "id": "P4-matter.u1",
+    "title": "Which are matter?",
+    "kind": "diag",
+    "pool": "page",
+    "lo": [
+      "P4.MTR.C1"
+    ],
+    "stem": "<table class='data'><tbody><tr><th scope='row'>A</th><td class='rowname'>the air inside a football</td></tr><tr><th scope='row'>B</th><td class='rowname'>the light from a torch</td></tr><tr><th scope='row'>C</th><td class='rowname'>water vapour in the air</td></tr><tr><th scope='row'>D</th><td class='rowname'>the shadow of a tree</td></tr></tbody></table><p class='q-ask'>Which of the above are matter?</p>",
+    "key": "Matter has mass and takes up space, even when you cannot see it. Light is energy, and a shadow is only where light is blocked.",
+    "options": [
+      {
+        "text": "A, B and C only",
+        "mis": "MTR-06",
+        "pick": "Light seems to fill a room, so it seems to take up space.",
+        "why": "Light is a form of energy. It has no mass and takes up no space."
+      },
+      {
+        "text": "A and C only",
+        "correct": true,
+        "pick": "Check each one: does it have mass, and does it take up space?",
+        "why": "Air and water vapour are gases. They have mass and take up space, so they are matter. Light is energy, and a shadow is only where light is blocked."
+      },
+      {
+        "text": "C only",
+        "mis": "MTR-01",
+        "pick": "Water vapour is water, which is clearly matter, but air seems to be nothing.",
+        "why": "The air in the football has mass (a pumped-up ball is heavier) and takes up space, so it is matter."
+      },
+      {
+        "text": "A, C and D only",
+        "mis": "MTR-06",
+        "pick": "A shadow has a shape and a size you can see.",
+        "why": "A shadow is not stuff. It is the area where light is blocked, so it has no mass."
+      }
+    ]
+  },
+  {
+    "id": "P4-matter.u2",
+    "title": "Pouring juice",
+    "kind": "diag",
+    "pool": "page",
+    "lo": [
+      "P4.MTR.C2"
+    ],
+    "stem": "<p>Ali pours 200 mL of juice from a tall, narrow glass into a wide, shallow bowl.</p><p class='q-ask'>Which statement is correct?</p>",
+    "key": "A liquid takes the shape of its container, but its volume stays the same.",
+    "options": [
+      {
+        "text": "The volume becomes less, because the level in the bowl is lower.",
+        "mis": "MTR-04",
+        "pick": "The level drops a lot, so it looks like there is less juice.",
+        "why": "The level is lower because the juice is spread over a wider area. There is still 200 mL."
+      },
+      {
+        "text": "The juice keeps both its shape and its volume.",
+        "mis": "MTR-04",
+        "pick": "Pouring does not seem to change the juice itself.",
+        "why": "A liquid has no definite shape: it takes the shape of the bowl."
+      },
+      {
+        "text": "The volume becomes more, because the juice spreads out further.",
+        "mis": "MTR-04",
+        "pick": "It covers more of the bowl, so it seems bigger.",
+        "why": "Spreading out changes the shape, not the volume."
+      },
+      {
+        "text": "The juice changes shape, but its volume stays 200 mL.",
+        "correct": true,
+        "pick": "Ask what changed when the juice moved: its shape, its amount, or both?",
+        "why": "A liquid takes the shape of its container but has a definite volume. Nothing was added or lost."
+      }
+    ]
+  },
+  {
+    "id": "P4-matter.u3",
+    "title": "Is sand a solid?",
+    "kind": "diag",
+    "pool": "page",
+    "lo": [
+      "P4.MTR.C2"
+    ],
+    "stem": "<p>Sand can be poured, and it takes the shape of the container it is poured into.</p><p class='q-ask'>Why is sand still a solid?</p>",
+    "key": "Judge a powder by a single grain, not by the heap. Each grain keeps its own shape and volume.",
+    "options": [
+      {
+        "text": "Each grain of sand has a definite shape and a definite volume.",
+        "correct": true,
+        "pick": "Look closely at one grain instead of the whole heap.",
+        "why": "The heap takes the container's shape only because the grains slide past one another. Each grain keeps its own shape and volume."
+      },
+      {
+        "text": "It is not. Sand is a liquid because it can be poured.",
+        "mis": "MTR-07",
+        "pick": "Things that pour, like water, are liquids.",
+        "why": "Pouring is not the test. Each grain keeps its own shape and volume, which no liquid does."
+      },
+      {
+        "text": "Sand is a solid only when it is wet and sticks together.",
+        "mis": "MTR-07",
+        "pick": "Wet sand holds a shape, like a sandcastle, so it seems solid only then.",
+        "why": "Dry sand is a solid too. Each grain has a definite shape and volume, wet or dry."
+      },
+      {
+        "text": "Sand is a solid because it has mass.",
+        "mis": "MTR-04",
+        "pick": "Solids feel like they have a fixed amount of stuff.",
+        "why": "Liquids and gases have mass too. Sand is a solid because each grain has a definite shape and volume."
+      }
+    ]
+  },
+  {
+    "id": "P4-matter.u4",
+    "title": "Three sealed syringes",
+    "kind": "diag",
+    "pool": "page",
+    "lo": [
+      "P4.MTR.C2"
+    ],
+    "stem": "<p>Three identical sealed syringes, P, Q and R, each contain either air, water, or a block of wax that fills the syringe. When each plunger is pushed, only P's plunger moves in.</p><p class='q-ask'>Which statement is correct?</p>",
+    "key": "Only a gas can be squashed into less space, and even a gas never takes up no space.",
+    "options": [
+      {
+        "text": "P contains water.",
+        "mis": "MTR-04",
+        "pick": "Water flows easily, so it seems it would let the plunger move.",
+        "why": "Water flows, but it has a definite volume and cannot be squashed."
+      },
+      {
+        "text": "P contains the wax.",
+        "mis": "MTR-04",
+        "pick": "Wax is soft, so it seems squashable.",
+        "why": "The wax fills the syringe and has a definite volume, so it cannot be squashed into less space."
+      },
+      {
+        "text": "P contains air. Its plunger moves in part of the way.",
+        "correct": true,
+        "pick": "Which state has no definite volume?",
+        "why": "A gas can be squashed into less space, but it still takes up space and pushes back, so the plunger stops part of the way."
+      },
+      {
+        "text": "P contains air. Its plunger can be pushed all the way to the end.",
+        "mis": "MTR-02",
+        "pick": "Air is easy to squash, so it seems it could be squashed away completely.",
+        "why": "Air can be squashed into less space, but never into no space."
+      }
+    ]
+  },
+  {
+    "id": "P4-matter.u5",
+    "title": "The volume of a stone",
+    "kind": "diag",
+    "pool": "page",
+    "lo": [
+      "P4.MTR.P1"
+    ],
+    "stem": "<p>A measuring cylinder contains 50 mL of water. A stone is lowered in, and the water level rises to 72 mL.</p><p class='q-ask'>What is the volume of the stone? (1 mL = 1 cm³)</p>",
+    "figure": "<svg viewBox='0 0 360 236' role='img' aria-label='Two measuring cylinders. Before: water at 50 mL. After the stone is lowered in: water at 72 mL.'><rect class='fa' x='72' y='120' width='46' height='88'/><path class='ln' d='M70 24 V210 H120 V24'/><path class='ln' d='M60 214 H130'/><path class='ln' style='stroke-width:1.5' d='M112 192 H120 M112 174 H120 M112 156 H120 M112 138 H120 M112 120 H120 M112 102 H120 M112 84 H120 M112 66 H120 M112 48 H120 M112 30 H120'/><path class='ln' d='M120 120 H140'/><text class='lbl' x='144' y='124'>50 mL</text><text class='lbl' x='95' y='230' text-anchor='middle'>Before</text><rect class='fa' x='232' y='80' width='46' height='128'/><path class='sl' d='M240 206 l6 -16 l18 -6 l14 8 l-4 14 z'/><path class='ln' d='M230 24 V210 H280 V24'/><path class='ln' d='M220 214 H290'/><path class='ln' style='stroke-width:1.5' d='M272 192 H280 M272 174 H280 M272 156 H280 M272 138 H280 M272 120 H280 M272 102 H280 M272 84 H280 M272 66 H280 M272 48 H280 M272 30 H280'/><path class='ln' d='M280 80 H300'/><text class='lbl' x='304' y='84'>72 mL</text><text class='lbl' x='255' y='230' text-anchor='middle'>After</text></svg>",
+    "key": "Volume of the stone = level after − level before.",
+    "options": [
+      {
+        "text": "72 cm³",
+        "mis": "MTR-08",
+        "pick": "72 is the reading with the stone in it.",
+        "why": "72 mL is the water and the stone together. Subtract the 50 mL of water."
+      },
+      {
+        "text": "122 cm³",
+        "mis": "MTR-08",
+        "pick": "Both numbers seem to belong in the answer, so add them.",
+        "why": "The stone's volume is the change in the level, so subtract."
+      },
+      {
+        "text": "50 cm³",
+        "mis": "MTR-08",
+        "pick": "50 mL is the first reading, so it seems to be the measurement.",
+        "why": "50 mL is the water before the stone went in. It says nothing about the stone."
+      },
+      {
+        "text": "22 cm³",
+        "correct": true,
+        "pick": "The stone pushed the water up. Subtract: 72 − 50.",
+        "why": "The rise in the level equals the space the stone takes up: 22 mL, which is 22 cm³."
+      }
+    ]
+  },
+  {
+    "id": "P4-matter.u6",
+    "title": "Finding the mass of a stone",
+    "kind": "diag",
+    "pool": "page",
+    "lo": [
+      "P4.MTR.P1"
+    ],
+    "stem": "<p class='q-ask'>Which apparatus should be used to measure the mass of a stone?</p>",
+    "key": "Mass: electronic balance (g, kg). Volume: measuring cylinder (mL, cm³).",
+    "options": [
+      {
+        "text": "A measuring cylinder with water",
+        "mis": "MTR-09",
+        "pick": "You have seen stones put into measuring cylinders in class.",
+        "why": "That finds the stone's volume (the space it takes up), not its mass."
+      },
+      {
+        "text": "An electronic balance",
+        "correct": true,
+        "pick": "Mass is found by weighing.",
+        "why": "An electronic balance measures mass in g or kg."
+      },
+      {
+        "text": "A ruler",
+        "mis": "MTR-09",
+        "pick": "Measuring the stone's size seems to tell you how much there is.",
+        "why": "A ruler measures length. Size does not tell you mass."
+      },
+      {
+        "text": "A beaker",
+        "mis": "MTR-09",
+        "pick": "Beakers are used for measuring in the lab.",
+        "why": "A beaker only roughly measures the volume of a liquid. It cannot measure mass."
+      }
+    ]
+  },
+  {
+    "id": "P4-matter.u7",
+    "title": "A big balloon and a small marble",
+    "kind": "diag",
+    "pool": "page",
+    "lo": [
+      "P4.MTR.C1",
+      "P4.MTR.P1"
+    ],
+    "stem": "<p>A balloon blown up with air is much bigger than a glass marble.</p><p class='q-ask'>Which statement is correct?</p>",
+    "key": "Volume is the space something takes up. Size tells you nothing certain about mass.",
+    "options": [
+      {
+        "text": "The balloon has a greater mass because it is bigger.",
+        "mis": "MTR-09",
+        "pick": "Bigger things are usually heavier.",
+        "why": "Size tells you volume, not mass. You would need a balance to compare their masses."
+      },
+      {
+        "text": "The balloon has no mass because it is filled with air.",
+        "mis": "MTR-03",
+        "pick": "Balloons float about, so they seem to weigh nothing.",
+        "why": "The rubber and the air inside both have mass. It is just small."
+      },
+      {
+        "text": "The balloon takes up more space than the marble.",
+        "correct": true,
+        "pick": "Bigger means more volume. Ask what size alone can tell you.",
+        "why": "Volume is the space something takes up, so the bigger balloon has the greater volume. Its size tells you nothing certain about its mass."
+      },
+      {
+        "text": "The marble takes up more space because it is heavier.",
+        "mis": "MTR-09",
+        "pick": "Heavier things seem to be bigger.",
+        "why": "Mass and volume are different. Being heavier does not make something take up more space."
+      }
+    ]
+  },
+  {
+    "id": "P4-matter.u8",
+    "title": "Where does the gas go?",
+    "kind": "diag",
+    "pool": "page",
+    "lo": [
+      "P4.MTR.C2"
+    ],
+    "stem": "<p>Some coloured gas is released into one corner of a closed glass box.</p><p class='q-ask'>After some time, where is the coloured gas?</p>",
+    "key": "A gas has no definite shape or volume. It spreads out to fill its whole container.",
+    "options": [
+      {
+        "text": "Spread out through the whole box",
+        "correct": true,
+        "pick": "A gas has no definite shape or volume.",
+        "why": "A gas spreads out to fill the whole of its container."
+      },
+      {
+        "text": "Lying on the bottom of the box, like a liquid",
+        "mis": "MTR-04",
+        "pick": "Liquids settle at the bottom, so gases seem to as well.",
+        "why": "A liquid has a definite volume and collects at the bottom. A gas fills the whole box."
+      },
+      {
+        "text": "Still in the corner where it was released",
+        "mis": "MTR-04",
+        "pick": "Nothing pushed it, so it seems to stay put.",
+        "why": "A gas does not keep its shape or stay in one place."
+      },
+      {
+        "text": "Gone, because a gas takes up no space",
+        "mis": "MTR-01",
+        "pick": "The colour may be harder to see later.",
+        "why": "Gas is matter and takes up space. The colour fades only because the gas has spread out."
+      }
+    ]
+  },
+  {
+    "id": "P4-matter.u9",
+    "title": "A fair test with balloons",
+    "kind": "diag",
+    "pool": "page",
+    "lo": [
+      "P4.MTR.C1"
+    ],
+    "stem": "<p>Ravi wants to show that air has mass. He hangs two balloons at the two ends of a stick and balances it. Then he lets the air out of one balloon.</p><p class='q-ask'>What must be the same about the two balloons at the start?</p>",
+    "key": "In a fair test only one thing differs. Here it is whether a balloon still has its air.",
+    "options": [
+      {
+        "text": "They must be different colours so they can be told apart.",
+        "mis": "MAT-05",
+        "pick": "It is easy to keep track of them that way.",
+        "why": "Colour has no effect on the balance, so it is not something that needs controlling."
+      },
+      {
+        "text": "They must be the same kind, blown up the same amount, and hung at the same distance from the middle.",
+        "correct": true,
+        "pick": "The only difference allowed is whether a balloon still has its air.",
+        "why": "If anything else differs, the stick could tip because of that, not because of the air."
+      },
+      {
+        "text": "Only their distance from the middle must be the same. Their size does not matter.",
+        "mis": "MAT-05",
+        "pick": "The distance from the middle obviously matters for balancing.",
+        "why": "A bigger balloon holds more air and more rubber. Different sizes would spoil the test."
+      },
+      {
+        "text": "Nothing needs to be the same, because air has no mass anyway.",
+        "mis": "MTR-03",
+        "pick": "Air feels weightless, so the test seems pointless.",
+        "why": "The stick does tip when one balloon loses its air. That is the evidence that air has mass."
+      }
+    ]
+  },
+  {
+    "id": "P4-matter.r1",
+    "title": "Which are solids?",
+    "kind": "variant",
+    "pool": "recap",
+    "lo": [
+      "P4.MTR.C2"
+    ],
+    "stem": "<table class='data'><tbody><tr><th scope='row'>A</th><td class='rowname'>sugar</td></tr><tr><th scope='row'>B</th><td class='rowname'>flour</td></tr><tr><th scope='row'>C</th><td class='rowname'>cooking oil</td></tr><tr><th scope='row'>D</th><td class='rowname'>ice</td></tr></tbody></table><p class='q-ask'>Which of the above are solids?</p>",
+    "key": "A solid keeps its own definite shape and volume. For a powder, look at one grain.",
+    "options": [
+      {
+        "text": "D only",
+        "mis": "MTR-07",
+        "pick": "Sugar and flour can be poured, so they seem to be liquids.",
+        "why": "Each grain keeps its own definite shape and volume, so powders are solids."
+      },
+      {
+        "text": "A and B only",
+        "mis": "MTR-04",
+        "pick": "Ice melts into water, so it seems to be a liquid.",
+        "why": "Ice is water in its solid state. While it is ice, it has a definite shape and volume."
+      },
+      {
+        "text": "A, B, C and D",
+        "mis": "MTR-04",
+        "pick": "Cooking oil is thick, so it seems solid.",
+        "why": "Oil takes the shape of its container, so it is a liquid."
+      },
+      {
+        "text": "A, B and D only",
+        "correct": true,
+        "pick": "Check each one: does it keep its own definite shape and volume?",
+        "why": "Each sugar crystal and flour grain keeps its own shape and volume, and so does ice. Oil takes the shape of its container."
+      }
+    ]
+  },
+  {
+    "id": "P4-matter.r2",
+    "title": "Sugar in a jar",
+    "kind": "variant",
+    "pool": "recap",
+    "lo": [
+      "P4.MTR.C2"
+    ],
+    "stem": "<p>Sugar takes the shape of the jar it is poured into.</p><p class='q-ask'>Why is it still a solid?</p>",
+    "key": "Judge a powder by one crystal, not the heap.",
+    "options": [
+      {
+        "text": "Each crystal keeps its own definite shape and volume.",
+        "correct": true,
+        "pick": "Look at one crystal instead of the whole heap.",
+        "why": "The heap takes the jar's shape only because the crystals slide past one another. Each crystal keeps its own shape and volume."
+      },
+      {
+        "text": "It is a liquid, because it takes the shape of the jar.",
+        "mis": "MTR-07",
+        "pick": "Liquids take the shape of their container, and so does the sugar.",
+        "why": "Taking the container's shape is not the test for a powder. Each crystal keeps its own shape and volume, which no liquid does."
+      },
+      {
+        "text": "It is a gas, because it spreads across the bottom of the jar.",
+        "mis": "MTR-07",
+        "pick": "The sugar spreads out to cover the bottom.",
+        "why": "A gas fills the whole container. Sugar settles at the bottom, and each crystal keeps its shape and volume."
+      },
+      {
+        "text": "It is a solid only when it is in a lump.",
+        "mis": "MTR-07",
+        "pick": "A sugar cube clearly holds its shape, but loose sugar does not.",
+        "why": "Loose sugar is a solid too. Each crystal has a definite shape and volume, whether in a lump or loose."
+      }
+    ]
+  },
+  {
+    "id": "P4-matter.r3",
+    "title": "The overflowing container",
+    "kind": "variant",
+    "pool": "recap",
+    "lo": [
+      "P4.MTR.P1"
+    ],
+    "stem": "<p>A container is filled with water to the brim. When a stone is lowered in, 35 mL of water overflows into a measuring cylinder.</p><p class='q-ask'>What is the volume of the stone?</p>",
+    "key": "The water pushed out equals the space the stone takes up.",
+    "options": [
+      {
+        "text": "The volume of the water left in the container",
+        "mis": "MTR-08",
+        "pick": "That is the other water reading, so it seems to be the answer.",
+        "why": "The water left behind tells you nothing about the stone. The overflow does."
+      },
+      {
+        "text": "It cannot be found without the stone's mass",
+        "mis": "MTR-09",
+        "pick": "Measuring a stone usually seems to mean weighing it.",
+        "why": "Volume is found from the water pushed out. Mass is not needed."
+      },
+      {
+        "text": "35 cm³",
+        "correct": true,
+        "pick": "The stone pushed some water out. How much space did it need?",
+        "why": "The stone pushed out exactly as much water as the space it takes up: 35 mL, which is 35 cm³."
+      },
+      {
+        "text": "35 g",
+        "mis": "MTR-09",
+        "pick": "The number 35 is right, and grams are a familiar unit.",
+        "why": "The overflow measures volume, in mL or cm³. Grams measure mass."
+      }
+    ]
+  },
+  {
+    "id": "P4-matter.r4",
+    "title": "Two stones",
+    "kind": "variant",
+    "pool": "recap",
+    "lo": [
+      "P4.MTR.P1"
+    ],
+    "stem": "<p>Two stones, X and Y, were lowered into two measuring cylinders of water. The readings are shown.</p><p class='q-ask'>Which stone has the bigger volume?</p>",
+    "figure": "<table class='data'><thead><tr><th scope='col'>Stone</th><th scope='col'>Water level before (mL)</th><th scope='col'>Water level after (mL)</th></tr></thead><tbody><tr><th scope='row'>X</th><td>30</td><td>48</td></tr><tr><th scope='row'>Y</th><td>50</td><td>64</td></tr></tbody></table>",
+    "key": "Compare the rise in water level, not the final reading.",
+    "options": [
+      {
+        "text": "Y, because its water level ended higher",
+        "mis": "MTR-08",
+        "pick": "64 mL is the highest reading.",
+        "why": "Y's cylinder started with more water. Only the rise counts: Y's is 14 mL, smaller than X's 18 mL."
+      },
+      {
+        "text": "They are the same, because both made the water rise",
+        "mis": "MTR-08",
+        "pick": "Both stones pushed the water up.",
+        "why": "They pushed it up by different amounts: 18 mL and 14 mL."
+      },
+      {
+        "text": "It cannot be told without weighing them",
+        "mis": "MTR-09",
+        "pick": "Comparing stones seems to need their masses.",
+        "why": "Volume comes from the rise in water level. Weighing gives mass, which is a different quantity."
+      },
+      {
+        "text": "X: 18 cm³ compared with 14 cm³",
+        "correct": true,
+        "pick": "Work out the rise for each stone: 48 − 30 and 64 − 50.",
+        "why": "X raised the water by 18 mL and Y by 14 mL, so X takes up more space."
+      }
+    ]
+  },
+  {
+    "id": "P4-matter.r5",
+    "title": "Taking up the same space",
+    "kind": "variant",
+    "pool": "recap",
+    "lo": [
+      "P4.MTR.C1",
+      "P4.MTR.P1"
+    ],
+    "stem": "<p>A stone and a bag of feathers take up the same amount of space.</p><p class='q-ask'>Which statement is correct?</p>",
+    "key": "The same volume does not mean the same mass.",
+    "options": [
+      {
+        "text": "They must have the same mass.",
+        "mis": "MTR-09",
+        "pick": "Things the same size seem to weigh the same.",
+        "why": "The same volume does not mean the same mass. You would need a balance to compare."
+      },
+      {
+        "text": "They have the same volume, but their masses may be different.",
+        "correct": true,
+        "pick": "\"Same space\" tells you about volume. Does it tell you about mass?",
+        "why": "Taking up the same space means the same volume. Mass is a separate measurement and can be very different."
+      },
+      {
+        "text": "The feathers have no mass.",
+        "mis": "MTR-03",
+        "pick": "Feathers feel weightless.",
+        "why": "Feathers are matter, so they have mass. It is just small."
+      },
+      {
+        "text": "They have the same mass and volume because both are solids.",
+        "mis": "MTR-09",
+        "pick": "Being in the same state seems to make them alike.",
+        "why": "Solids can have very different masses for the same volume. The state does not decide the mass."
+      }
+    ]
+  },
+  {
+    "id": "P4-matter.r6",
+    "title": "Mass and volume of a toy car",
+    "kind": "variant",
+    "pool": "recap",
+    "lo": [
+      "P4.MTR.P1"
+    ],
+    "stem": "<p class='q-ask'>Which apparatus should be used to find the mass and the volume of a small toy car that sinks in water?</p>",
+    "key": "Mass: electronic balance. Volume of an odd-shaped object that sinks: rise in water in a measuring cylinder.",
+    "layout": "table",
+    "cols": [
+      "To find its mass",
+      "To find its volume"
+    ],
+    "options": [
+      {
+        "text": [
+          "measuring cylinder with water",
+          "electronic balance"
+        ],
+        "mis": "MTR-09",
+        "pick": "Both pieces of apparatus are right for the toy car, so the order seems not to matter.",
+        "why": "They are swapped. A measuring cylinder finds volume, and a balance finds mass."
+      },
+      {
+        "text": [
+          "ruler",
+          "electronic balance"
+        ],
+        "mis": "MTR-09",
+        "pick": "A ruler measures the car's size, which seems to show how much there is.",
+        "why": "A ruler measures length, not mass. And a balance cannot find volume."
+      },
+      {
+        "text": [
+          "electronic balance",
+          "measuring cylinder with water"
+        ],
+        "correct": true,
+        "pick": "Mass is found by weighing. The volume of an odd-shaped object is found by displacement.",
+        "why": "A balance gives the mass. The rise in water in a measuring cylinder gives the volume."
+      },
+      {
+        "text": [
+          "electronic balance",
+          "electronic balance"
+        ],
+        "mis": "MTR-09",
+        "pick": "A balance shows a number for anything you put on it.",
+        "why": "A balance measures mass only. Volume needs the measuring cylinder."
+      }
+    ]
+  },
+  {
+    "id": "P4-matter.r7",
+    "title": "Milk in a tall glass",
+    "kind": "variant",
+    "pool": "recap",
+    "lo": [
+      "P4.MTR.C2",
+      "P4.MTR.P1"
+    ],
+    "stem": "<p>150 mL of milk is poured from a carton into a tall, narrow glass, and the level looks high.</p><p class='q-ask'>What is the volume of the milk now?</p>",
+    "key": "A liquid has a definite volume. Pouring changes its shape, not its volume.",
+    "options": [
+      {
+        "text": "150 mL",
+        "correct": true,
+        "pick": "Nothing was added or spilled. What changed?",
+        "why": "A liquid has a definite volume. Only its shape changed, so it is still 150 mL."
+      },
+      {
+        "text": "More than 150 mL, because the level is higher",
+        "mis": "MTR-04",
+        "pick": "A higher level looks like more milk.",
+        "why": "The level is higher because the glass is narrow. The volume has not changed."
+      },
+      {
+        "text": "Less than 150 mL, because the glass is narrower",
+        "mis": "MTR-04",
+        "pick": "A narrow glass seems to hold less.",
+        "why": "The milk is squeezed into a taller shape, not a smaller amount. It is still 150 mL."
+      },
+      {
+        "text": "It cannot be known without measuring its mass",
+        "mis": "MTR-09",
+        "pick": "Checking an amount seems to need a balance.",
+        "why": "Volume is not found from mass. Nothing was added or lost, so the volume is still 150 mL."
+      }
+    ]
+  }
+]

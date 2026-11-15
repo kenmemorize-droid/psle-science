@@ -1,0 +1,141 @@
+<section class="card" id="know">
+  <p class="sec-label">What you need to know</p>
+  <h2>Plant parts in five ideas</h2>
+  <div class="know">
+    <details class="kcard" open>
+      <summary><span class="kn">1</span> A plant is a system</summary>
+      <p>A <b>system</b> is made of different parts. <b>Each part has its own job</b>, called its <b>function</b>, and the parts <b>work together</b>.</p>
+      <p>A plant's main parts are its <b>leaves</b>, its <b>stem</b> and its <b>roots</b>. Many plants also have flowers and fruits; you'll learn what those do in P5.</p>
+      <p>You can <b>observe</b> these parts on any plant: a tiny seedling, a balsam plant or a tall tree.</p>
+    </details>
+    <details class="kcard" open>
+      <summary><span class="kn">2</span> Leaves make food</summary>
+      <p>The <b>leaves</b> make <b>food</b> for the whole plant. They need <b>sunlight</b> to do this.</p>
+      <p>A plant does <b>not</b> take in food from the soil. It makes its own food, in its leaves.</p>
+    </details>
+    <details class="kcard" open>
+      <summary><span class="kn">3</span> The stem holds up and carries</summary>
+      <p>The <b>stem</b>:</p>
+      <ul>
+        <li><b>holds the plant upright</b> and <b>supports</b> its branches, leaves, flowers and fruits, so that the leaves get <b>as much sunlight as possible</b></li>
+        <li><b>carries water and mineral salts</b> from the roots <b>up</b> to the leaves and other parts</li>
+        <li><b>carries food</b> from the leaves to <b>all the other parts</b>, including <b>down</b> to the roots</li>
+      </ul>
+      <p>A tree's <b>trunk</b> is its stem.</p>
+    </details>
+    <details class="kcard" open>
+      <summary><span class="kn">4</span> Roots hold on and take in</summary>
+      <p>The <b>roots</b>:</p>
+      <ul>
+        <li><b>hold the plant firmly in the ground</b></li>
+        <li><b>take in water and mineral salts</b> from the soil</li>
+      </ul>
+      <p>Tiny <b>root hairs</b> help the roots take in more water.</p>
+      <p>Mineral salts are <b>not food</b>. The plant's food is made in its leaves.</p>
+    </details>
+    <details class="kcard" open>
+      <summary><span class="kn">5</span> The parts work together</summary>
+      <p>Every part of a plant is living, so every part needs water and food.</p>
+      <ul>
+        <li>The roots take in water, and the stem carries it up to the leaves.</li>
+        <li>The leaves make food, and the stem carries it to every other part.</li>
+      </ul>
+      <p>So when one part is damaged, the other parts suffer too:</p>
+      <ul>
+        <li><b>No roots:</b> no water reaches the leaves, so the plant <b>wilts</b> (droops). Nothing holds it firmly in the ground either.</li>
+        <li><b>No leaves:</b> no food is made, so the plant cannot grow, and in time it dies.</li>
+        <li><b>A broken stem:</b> the parts above the break get no water from the roots, so they wilt.</li>
+      </ul>
+    </details>
+  </div>
+</section>
+
+<section class="card" id="explore">
+  <p class="sec-label">Explore</p>
+  <h2>Try it yourself</h2>
+
+  <h3 id="e1">1. Parts and their jobs</h3>
+  <p class="lead">Tap a part of the plant, or a button, to find out what it does.</p>
+  <div class="pgrid">
+    <div class="stage"><svg id="plantSvg" viewBox="0 0 360 330" role="img" aria-label="A flowering plant growing in soil, with its leaves, stem, roots, a flower and a fruit"></svg></div>
+    <div>
+      <div class="row" role="group" aria-label="Parts of the plant">
+        <button type="button" class="btn small" data-part="leaf" aria-pressed="false">Leaves</button>
+        <button type="button" class="btn small" data-part="stem" aria-pressed="false">Stem</button>
+        <button type="button" class="btn small" data-part="root" aria-pressed="false">Roots</button>
+        <button type="button" class="btn small" data-part="flower" aria-pressed="false">Flower</button>
+        <button type="button" class="btn small" data-part="fruit" aria-pressed="false">Fruit</button>
+      </div>
+      <div class="p-info" id="partInfo" aria-live="polite"></div>
+    </div>
+  </div>
+  <h4>Sort the jobs</h4>
+  <div id="classify"></div>
+
+  <h3 id="e2">2. Follow the water and the food</h3>
+  <p class="lead">Step through what moves inside a plant.</p>
+  <div class="pgrid">
+    <div class="stage"><svg id="flowSvg" viewBox="0 0 360 330" role="img" aria-label="A plant with water moving up from the roots and food moving from the leaves"></svg></div>
+    <div>
+      <p class="p-step" id="stepTitle"></p>
+      <p class="stage-msg" id="stepMsg" aria-live="polite"></p>
+      <div class="row"><button type="button" class="btn small" id="stepBack">◀ Back</button><button type="button" class="btn primary" id="stepNext">Next ▶</button></div>
+      <p class="note-s"><span class="p-key"><svg viewBox="0 0 16 16" aria-hidden="true"><circle class="p-water" cx="8" cy="8" r="5"/></svg> water (blue drops)</span> <span class="p-key"><svg viewBox="0 0 16 16" aria-hidden="true"><rect class="p-food" x="3" y="3" width="10" height="10"/></svg> food (orange squares)</span></p>
+    </div>
+  </div>
+
+  <details class="beyond">
+    <summary><span class="bs-badge">Beyond syllabus</span> Tiny openings in leaves</summary>
+    <p>Your book mentions this too. It is not in the P4 syllabus and is never tested here.</p>
+    <p>A leaf has many tiny openings, mostly on its underside, called <b>stomata</b>. They let gases in and out of the leaf, and let water vapour escape. Losing water vapour this way is called <b>transpiration</b>.</p>
+  </details>
+
+  <h3 id="e3">3. What if a part is damaged?</h3>
+  <p class="lead">Plants A and B are the same. Plant A is left alone. Pick one change for plant B, then see what happens.</p>
+  <div class="row" role="group" aria-label="Change for plant B">
+    <button type="button" class="btn small" data-dmg="pull" aria-pressed="false">Pull it out of the soil</button>
+    <button type="button" class="btn small" data-dmg="roots" aria-pressed="false">Cut off its roots</button>
+    <button type="button" class="btn small" data-dmg="stem" aria-pressed="false">Cut through its stem</button>
+    <button type="button" class="btn small" data-dmg="leaves" aria-pressed="false">Remove all its leaves</button>
+  </div>
+  <div class="stage" style="margin-top:10px"><svg id="dmgSvg" viewBox="0 0 540 312" role="img" aria-label="Two potted plants, A and B"></svg></div>
+  <div class="row" style="margin-top:10px"><button type="button" class="btn primary" id="dmgGo" disabled>See what happens</button><button type="button" class="btn small" id="dmgReset">Start again</button></div>
+  <p class="stage-msg" id="dmgMsg" aria-live="polite"></p>
+
+  <h3 id="e4">4. Observe like a scientist</h3>
+  <h4>Find the parts</h4>
+  <p class="lead">These three plants look very different. Name each numbered part.</p>
+  <div class="row" role="group" aria-label="Choose a plant">
+    <button type="button" class="btn small" data-obs="seedling" aria-pressed="true">Balsam seedling</button>
+    <button type="button" class="btn small" data-obs="balsam" aria-pressed="false">Balsam plant</button>
+    <button type="button" class="btn small" data-obs="tree" aria-pressed="false">Young tree</button>
+  </div>
+  <div class="pgrid" style="margin-top:10px">
+    <div class="stage"><svg id="obsSvg" viewBox="0 0 300 300" role="img" aria-label="A plant with three numbered parts"></svg></div>
+    <div><div id="obsRows"></div><p class="note-s" id="obsCount" aria-live="polite"></p></div>
+  </div>
+
+  <h4>Use a hand lens</h4>
+  <p class="lead">Mei has gently lifted a balsam seedling out of the soil. Move the hand lens to look at each part.</p>
+  <div class="pgrid">
+    <div class="stage"><svg id="lensSvg" viewBox="0 0 360 300" role="img" aria-label="A seedling with a hand lens over one part, and the enlarged view beside it"></svg></div>
+    <div>
+      <div class="row"><button type="button" class="btn small" id="lensUp">▲ Move up</button><button type="button" class="btn small" id="lensDown">▼ Move down</button></div>
+      <p class="stage-msg" id="lensMsg" aria-live="polite"></p>
+      <p class="note-s">You can also drag the hand lens. Observe gently. When you've finished, put the seedling back in the soil and water it.</p>
+    </div>
+  </div>
+</section>
+
+<section class="card" id="check">
+  <p class="sec-label">Unit check</p>
+  <h2>Nine questions on the whole topic</h2>
+  <p class="lead">Only your first answer counts. A wrong first answer goes into your mistake book, and a different question on the same idea comes back for recap.</p>
+  <div id="qs"></div>
+</section>
+
+<section class="card" id="deeper">
+  <p class="sec-label">Go deeper</p>
+  <h2>Focus pages on plant parts</h2>
+  <div id="psle-deeper"></div>
+</section>

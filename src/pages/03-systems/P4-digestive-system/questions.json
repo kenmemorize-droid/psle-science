@@ -1,0 +1,822 @@
+[
+  {
+    "id": "P4-digestive-system.u1",
+    "title": "Match the systems",
+    "kind": "diag",
+    "pool": "page",
+    "lo": [
+      "P4.DIG.C1"
+    ],
+    "stem": "<p>The table describes three body systems, X, Y and Z.</p><p class='q-ask'>Which correctly names X, Y and Z?</p>",
+    "figure": "<table class='data'><thead><tr><th scope='col'>System</th><th scope='col'>What it does</th></tr></thead><tbody><tr><th scope='row'>X</th><td class='rowname'>takes in oxygen and removes carbon dioxide</td></tr><tr><th scope='row'>Y</th><td class='rowname'>carries digested food, water and oxygen to all parts of the body</td></tr><tr><th scope='row'>Z</th><td class='rowname'>works with the skeleton to move parts of the body</td></tr></tbody></table>",
+    "key": "Respiratory takes in oxygen, circulatory carries substances around the body, and muscular works with the skeleton to move.",
+    "options": [
+      {
+        "text": "X respiratory, Y digestive, Z muscular",
+        "mis": "DIG-09",
+        "pick": "Y mentions digested food, so it seems to be the digestive system.",
+        "why": "The digestive system breaks food down. Carrying digested food, water and oxygen around the body is the circulatory system's job."
+      },
+      {
+        "text": "X circulatory, Y respiratory, Z muscular",
+        "mis": "DIG-07",
+        "pick": "X and Y both mention oxygen, so they are easy to swap.",
+        "why": "The respiratory system takes in oxygen. The circulatory system carries it around the body."
+      },
+      {
+        "text": "X respiratory, Y circulatory, Z muscular",
+        "correct": true,
+        "pick": "Take one job at a time.",
+        "why": "Respiratory takes in oxygen, circulatory carries substances around, and muscular works with the skeleton to move."
+      },
+      {
+        "text": "X respiratory, Y circulatory, Z skeletal",
+        "mis": "DIG-07",
+        "pick": "Moving involves the bones, so it seems to be the skeletal system.",
+        "why": "Bones support and protect. The muscular system works with them to move body parts."
+      }
+    ]
+  },
+  {
+    "id": "P4-digestive-system.u2",
+    "title": "The heart",
+    "kind": "diag",
+    "pool": "page",
+    "lo": [
+      "P4.DIG.C1"
+    ],
+    "stem": "<p class='q-ask'>Which system is the heart part of?</p>",
+    "key": "The heart, blood and blood vessels make up the circulatory system.",
+    "options": [
+      {
+        "text": "The respiratory system, because the heart is in the chest next to the lungs",
+        "mis": "DIG-08",
+        "pick": "The heart and lungs are close together.",
+        "why": "Being near the lungs doesn't make it part of breathing. The heart, blood and blood vessels form the circulatory system."
+      },
+      {
+        "text": "The circulatory system",
+        "correct": true,
+        "pick": "Which system includes the blood and blood vessels?",
+        "why": "The heart, blood and blood vessels make up the circulatory system."
+      },
+      {
+        "text": "The skeletal system, because bones in the chest protect it",
+        "mis": "DIG-08",
+        "pick": "The bones of the chest surround the heart.",
+        "why": "Bones protect the heart, but the heart itself is part of the circulatory system."
+      },
+      {
+        "text": "The digestive system, because digested food travels round the body",
+        "mis": "DIG-08",
+        "pick": "Digested food does travel round the body.",
+        "why": "The circulatory system carries digested food. The heart belongs to it, not to the digestive system."
+      }
+    ]
+  },
+  {
+    "id": "P4-digestive-system.u3",
+    "title": "Kicking a ball",
+    "kind": "diag",
+    "pool": "page",
+    "lo": [
+      "P4.DIG.C1"
+    ],
+    "stem": "<p>When you kick a ball, your leg moves.</p><p class='q-ask'>Which systems work together to move it?</p>",
+    "key": "The muscular system works with the skeletal system to move parts of the body.",
+    "options": [
+      {
+        "text": "The skeletal and muscular systems",
+        "correct": true,
+        "pick": "Moving needs something to move, and something to move it.",
+        "why": "The muscular system works with the skeletal system to move parts of the body."
+      },
+      {
+        "text": "The skeletal system only",
+        "mis": "DIG-07",
+        "pick": "The bones of the leg are what moves.",
+        "why": "Bones can't move on their own. The muscular system works with them."
+      },
+      {
+        "text": "The muscular and circulatory systems",
+        "mis": "DIG-07",
+        "pick": "Blood reaches the leg muscles.",
+        "why": "The circulatory system carries substances. Moving is done by the muscles working with the bones."
+      },
+      {
+        "text": "The muscular system only",
+        "mis": "DIG-07",
+        "pick": "Muscles do the moving.",
+        "why": "Muscles work with the skeleton. Both systems are needed."
+      }
+    ]
+  },
+  {
+    "id": "P4-digestive-system.u4",
+    "title": "Why food is digested",
+    "kind": "diag",
+    "pool": "page",
+    "lo": [
+      "P4.DIG.C1"
+    ],
+    "stem": "<p class='q-ask'>Why must the food we eat be digested?</p>",
+    "key": "Digestion breaks food into simpler substances that can pass into the blood.",
+    "options": [
+      {
+        "text": "So that it can be stored in the stomach",
+        "mis": "DIG-09",
+        "pick": "The stomach holds food for a while.",
+        "why": "Food is digested so that it can pass into the blood, not so that it can be stored."
+      },
+      {
+        "text": "So that it becomes waste that leaves the body",
+        "mis": "DIG-09",
+        "pick": "Food leaves the body as faeces in the end.",
+        "why": "Only undigested food becomes faeces. Digested food passes into the blood."
+      },
+      {
+        "text": "So that it is broken down into simpler substances that can pass into the blood",
+        "correct": true,
+        "pick": "What must happen to food before it can pass into the blood?",
+        "why": "Digestion breaks food into simpler substances, small enough to pass into the blood, which carries them to all parts of the body."
+      },
+      {
+        "text": "So that the blood can digest it further",
+        "mis": "DIG-09",
+        "pick": "The blood carries the food, so it seems to work on it too.",
+        "why": "Digestion happens in the digestive system. The blood only carries the digested food."
+      }
+    ]
+  },
+  {
+    "id": "P4-digestive-system.u5",
+    "title": "Where digestion begins",
+    "kind": "diag",
+    "pool": "page",
+    "lo": [
+      "P4.DIG.C2"
+    ],
+    "stem": "<p class='q-ask'>In which part of the digestive system does digestion begin?</p>",
+    "key": "Digestion begins in the mouth.",
+    "options": [
+      {
+        "text": "The mouth",
+        "correct": true,
+        "pick": "Where is the food first broken up and mixed with a digestive juice?",
+        "why": "The teeth cut and grind the food, and saliva, a digestive juice, starts to digest it."
+      },
+      {
+        "text": "The stomach",
+        "mis": "DIG-10",
+        "pick": "The stomach is the part most people link with digestion.",
+        "why": "The stomach carries on digestion, but it begins in the mouth."
+      },
+      {
+        "text": "The gullet",
+        "mis": "DIG-02",
+        "pick": "It is the first tube the food goes down.",
+        "why": "The gullet only pushes food down. No digestion takes place there."
+      },
+      {
+        "text": "The small intestine",
+        "mis": "DIG-10",
+        "pick": "Most digestion happens there.",
+        "why": "Digestion is completed in the small intestine, but it begins in the mouth."
+      }
+    ]
+  },
+  {
+    "id": "P4-digestive-system.u6",
+    "title": "The order of the parts",
+    "kind": "diag",
+    "pool": "page",
+    "lo": [
+      "P4.DIG.C2"
+    ],
+    "stem": "<p class='q-ask'>Which shows the order in which food passes through the digestive system?</p>",
+    "key": "Food moves one way only: mouth → gullet → stomach → small intestine → large intestine.",
+    "options": [
+      {
+        "text": "mouth → stomach → gullet → small intestine → large intestine",
+        "mis": "DIG-05",
+        "pick": "The stomach is the best-known part, so it seems to come straight after the mouth.",
+        "why": "The gullet joins the mouth to the stomach."
+      },
+      {
+        "text": "mouth → gullet → stomach → large intestine → small intestine",
+        "mis": "DIG-05",
+        "pick": "The two intestine names are easy to swap.",
+        "why": "The small intestine comes before the large intestine."
+      },
+      {
+        "text": "mouth → gullet → small intestine → stomach → large intestine",
+        "mis": "DIG-05",
+        "pick": "The intestines seem to come straight after the gullet.",
+        "why": "The stomach comes before both intestines."
+      },
+      {
+        "text": "mouth → gullet → stomach → small intestine → large intestine",
+        "correct": true,
+        "pick": "Follow the tube down from the mouth.",
+        "why": "Food passes through the parts in this order."
+      }
+    ]
+  },
+  {
+    "id": "P4-digestive-system.u7",
+    "title": "Where digestion is completed",
+    "kind": "diag",
+    "pool": "page",
+    "lo": [
+      "P4.DIG.C2"
+    ],
+    "stem": "<p>The diagram shows the human digestive system.</p><p class='q-ask'>In which part is digestion completed?</p>",
+    "figure": "<svg viewBox='20 8 280 340' style='max-width:340px;margin:0 auto' role='img' aria-label='The human digestive system inside a body outline. A points to the gullet, B to the stomach, C to the small intestine and D to the large intestine.'><rect x='146' y='76' width='28' height='26' style='fill:var(--card);stroke:var(--line);stroke-width:2'/><rect x='82' y='96' width='156' height='248' rx='44' style='fill:var(--card);stroke:var(--line);stroke-width:2'/><circle cx='160' cy='46' r='34' style='fill:var(--card);stroke:var(--line);stroke-width:2'/><path class='ln' d='M148 60 Q160 68 172 60'/><path d='M160 70 V150' style='fill:none;stroke:var(--stroke);stroke-width:12;stroke-linecap:round;stroke-linejoin:round'/><path d='M160 70 V150' style='fill:none;stroke:var(--fb);stroke-width:7;stroke-linecap:round;stroke-linejoin:round'/><path d='M152 146 Q128 196 168 210 Q214 220 220 184 Q222 158 194 164 Q172 168 168 146 Z' style='fill:var(--fb);stroke:var(--stroke);stroke-width:2'/><path d='M116 332 V244 Q162 220 210 244 V322' style='fill:none;stroke:var(--stroke);stroke-width:20;stroke-linecap:round;stroke-linejoin:round'/><path d='M116 332 V244 Q162 220 210 244 V322' style='fill:none;stroke:var(--fc);stroke-width:15;stroke-linecap:round;stroke-linejoin:round'/><path d='M196 214 Q194 232 172 240 Q136 244 140 258 Q146 270 176 266 Q200 268 186 282 Q170 292 142 288 Q126 296 146 306 Q170 314 210 318' style='fill:none;stroke:var(--stroke);stroke-width:11;stroke-linecap:round;stroke-linejoin:round'/><path d='M196 214 Q194 232 172 240 Q136 244 140 258 Q146 270 176 266 Q200 268 186 282 Q170 292 142 288 Q126 296 146 306 Q170 314 210 318' style='fill:none;stroke:var(--fb);stroke-width:6;stroke-linecap:round;stroke-linejoin:round'/><line x1='240' y1='112' x2='166' y2='112' style='stroke:var(--stroke);stroke-width:1.5'/><circle cx='240' cy='112' r='14' style='fill:var(--card);stroke:var(--stroke);stroke-width:2'/><text class='lbl' x='240' y='117' text-anchor='middle' style='font-weight:700;font-size:15px'>A</text><line x1='272' y1='160' x2='220' y2='176' style='stroke:var(--stroke);stroke-width:1.5'/><circle cx='272' cy='160' r='14' style='fill:var(--card);stroke:var(--stroke);stroke-width:2'/><text class='lbl' x='272' y='165' text-anchor='middle' style='font-weight:700;font-size:15px'>B</text><line x1='44' y1='276' x2='140' y2='276' style='stroke:var(--stroke);stroke-width:1.5'/><circle cx='44' cy='276' r='14' style='fill:var(--card);stroke:var(--stroke);stroke-width:2'/><text class='lbl' x='44' y='281' text-anchor='middle' style='font-weight:700;font-size:15px'>C</text><line x1='276' y1='296' x2='216' y2='296' style='stroke:var(--stroke);stroke-width:1.5'/><circle cx='276' cy='296' r='14' style='fill:var(--card);stroke:var(--stroke);stroke-width:2'/><text class='lbl' x='276' y='301' text-anchor='middle' style='font-weight:700;font-size:15px'>D</text></svg>",
+    "key": "Digestion is completed in the small intestine.",
+    "options": [
+      {
+        "text": "B",
+        "mis": "DIG-04",
+        "pick": "The stomach churns the food into a thick liquid.",
+        "why": "B is the stomach. It only partly digests the food. Digestion is completed in the small intestine."
+      },
+      {
+        "text": "C",
+        "correct": true,
+        "pick": "Which part finishes digestion and lets the digested food into the blood?",
+        "why": "C is the small intestine. Digestion is completed there."
+      },
+      {
+        "text": "D",
+        "mis": "DIG-06",
+        "pick": "It is the last part, so digestion seems to finish there.",
+        "why": "D is the large intestine. No digestion takes place there; water is absorbed from undigested food."
+      },
+      {
+        "text": "A",
+        "mis": "DIG-02",
+        "pick": "It is a long tube, like the intestines.",
+        "why": "A is the gullet. It pushes food down. No digestion takes place there."
+      }
+    ]
+  },
+  {
+    "id": "P4-digestive-system.u8",
+    "title": "Which part is the small intestine?",
+    "kind": "diag",
+    "pool": "page",
+    "lo": [
+      "P4.DIG.C2"
+    ],
+    "stem": "<p>The table shows what happens in four parts of the digestive system, W, X, Y and Z.</p><p class='q-ask'>Which part is the small intestine?</p>",
+    "figure": "<div class='scroll'><table class='data'><thead><tr><th scope='col'>Part</th><th scope='col'>Digestion takes place</th><th scope='col'>Digested food passes into the blood</th><th scope='col'>Water is absorbed from undigested food</th></tr></thead><tbody><tr><th scope='row'>W</th><td aria-label='yes'>✓</td><td aria-label='no'>✗</td><td aria-label='no'>✗</td></tr><tr><th scope='row'>X</th><td aria-label='no'>✗</td><td aria-label='no'>✗</td><td aria-label='no'>✗</td></tr><tr><th scope='row'>Y</th><td aria-label='yes'>✓</td><td aria-label='yes'>✓</td><td aria-label='no'>✗</td></tr><tr><th scope='row'>Z</th><td aria-label='no'>✗</td><td aria-label='no'>✗</td><td aria-label='yes'>✓</td></tr></tbody></table></div>",
+    "key": "In the small intestine, digestion is completed and digested food passes into the blood.",
+    "options": [
+      {
+        "text": "W",
+        "mis": "DIG-03",
+        "pick": "Digestion takes place in the small intestine, and W has digestion.",
+        "why": "Digested food also passes into the blood in the small intestine. W could be the mouth or the stomach."
+      },
+      {
+        "text": "X",
+        "mis": "DIG-03",
+        "pick": "The small intestine seems to be just a tube the food passes along.",
+        "why": "X does nothing to the food. It could be the gullet."
+      },
+      {
+        "text": "Y",
+        "correct": true,
+        "pick": "Which part both digests food and lets digested food into the blood?",
+        "why": "Digestion is completed in the small intestine, and the digested food passes into the blood there."
+      },
+      {
+        "text": "Z",
+        "mis": "DIG-01",
+        "pick": "Both intestines seem to absorb water.",
+        "why": "Water is absorbed from undigested food in the large intestine. Z is the large intestine."
+      }
+    ]
+  },
+  {
+    "id": "P4-digestive-system.u9",
+    "title": "A large intestine that isn't working",
+    "kind": "diag",
+    "pool": "page",
+    "lo": [
+      "P4.DIG.C2"
+    ],
+    "stem": "<p>Siti's large intestine is not working well.</p><p class='q-ask'>Which is most likely to happen?</p>",
+    "key": "The large intestine absorbs water from undigested food.",
+    "options": [
+      {
+        "text": "Digested food cannot pass into her blood.",
+        "mis": "DIG-03",
+        "pick": "The intestines seem to do all the absorbing.",
+        "why": "Digested food passes into the blood in the small intestine."
+      },
+      {
+        "text": "Her food is not pushed down to her stomach.",
+        "mis": "DIG-02",
+        "pick": "Something must stop the food from moving.",
+        "why": "The gullet pushes food down to the stomach."
+      },
+      {
+        "text": "Her food is not digested, because the large intestine finishes digestion.",
+        "mis": "DIG-06",
+        "pick": "It is the last part, so it seems to do the final digesting.",
+        "why": "Digestion is completed in the small intestine. The large intestine only absorbs water from undigested food."
+      },
+      {
+        "text": "Her faeces are watery.",
+        "correct": true,
+        "pick": "What does the large intestine take out of undigested food?",
+        "why": "The large intestine absorbs water from undigested food. If it doesn't, too much water stays in the faeces."
+      }
+    ]
+  },
+  {
+    "id": "P4-digestive-system.u10",
+    "title": "The mouth",
+    "kind": "diag",
+    "pool": "page",
+    "lo": [
+      "P4.DIG.C2"
+    ],
+    "stem": "<p class='q-ask'>Which statement about the mouth is correct?</p>",
+    "key": "Digestion begins in the mouth: teeth break the food up and saliva starts to digest it.",
+    "options": [
+      {
+        "text": "Digested food passes into the blood through the tongue.",
+        "mis": "DIG-03",
+        "pick": "Tasting food seems to be the start of taking it in.",
+        "why": "Digested food passes into the blood in the small intestine."
+      },
+      {
+        "text": "The teeth cut and grind the food, and saliva starts to digest it.",
+        "correct": true,
+        "pick": "What do the teeth and saliva each do?",
+        "why": "The teeth break food into smaller pieces, and saliva is a digestive juice that starts digestion."
+      },
+      {
+        "text": "No digestion takes place in the mouth; it only chews the food.",
+        "mis": "DIG-10",
+        "pick": "Chewing just seems to make the pieces smaller.",
+        "why": "Saliva is a digestive juice, so digestion begins in the mouth."
+      },
+      {
+        "text": "Muscles churn the food with gastric juice.",
+        "mis": "DIG-02",
+        "pick": "The mouth moves the food around a lot.",
+        "why": "That happens in the stomach."
+      }
+    ]
+  },
+  {
+    "id": "P4-digestive-system.r1",
+    "title": "Taking in oxygen",
+    "kind": "variant",
+    "pool": "recap",
+    "lo": [
+      "P4.DIG.C1"
+    ],
+    "stem": "<p class='q-ask'>Which system takes in oxygen and removes carbon dioxide from the body?</p>",
+    "key": "The respiratory system takes in oxygen and removes carbon dioxide.",
+    "options": [
+      {
+        "text": "The respiratory system",
+        "correct": true,
+        "pick": "Which system is about breathing?",
+        "why": "The respiratory system takes in oxygen and removes carbon dioxide."
+      },
+      {
+        "text": "The circulatory system, because blood carries oxygen",
+        "mis": "DIG-07",
+        "pick": "Oxygen travels in the blood.",
+        "why": "The blood carries oxygen around the body, but the respiratory system takes it in."
+      },
+      {
+        "text": "The digestive system, because air and food both go in through the mouth",
+        "mis": "DIG-07",
+        "pick": "The mouth takes things in.",
+        "why": "The digestive system breaks food down. Air goes to the lungs."
+      },
+      {
+        "text": "The skeletal system, because bones surround the lungs",
+        "mis": "DIG-07",
+        "pick": "The bones of the chest are around the lungs.",
+        "why": "Bones protect the lungs, but taking in oxygen is the respiratory system's job."
+      }
+    ]
+  },
+  {
+    "id": "P4-digestive-system.r2",
+    "title": "Carrying things around the body",
+    "kind": "variant",
+    "pool": "recap",
+    "lo": [
+      "P4.DIG.C1"
+    ],
+    "stem": "<p class='q-ask'>Which system carries digested food, water and oxygen to all parts of the body?</p>",
+    "key": "The circulatory system carries digested food, water and oxygen to all parts of the body.",
+    "options": [
+      {
+        "text": "The digestive system",
+        "mis": "DIG-09",
+        "pick": "It deals with food.",
+        "why": "The digestive system breaks food down. The circulatory system carries it around the body."
+      },
+      {
+        "text": "The respiratory system",
+        "mis": "DIG-07",
+        "pick": "It deals with oxygen.",
+        "why": "It takes oxygen in. The circulatory system carries it around."
+      },
+      {
+        "text": "The circulatory system",
+        "correct": true,
+        "pick": "Which system reaches every part of the body through blood vessels?",
+        "why": "The circulatory system carries digested food, water and oxygen to all parts of the body."
+      },
+      {
+        "text": "The muscular system, because muscles push things around",
+        "mis": "DIG-07",
+        "pick": "Muscles make things move.",
+        "why": "Muscles move body parts. The circulatory system carries substances."
+      }
+    ]
+  },
+  {
+    "id": "P4-digestive-system.r3",
+    "title": "Protecting soft organs",
+    "kind": "variant",
+    "pool": "recap",
+    "lo": [
+      "P4.DIG.C1"
+    ],
+    "stem": "<p class='q-ask'>Which system protects soft organs such as the brain, the heart and the lungs?</p>",
+    "key": "The skeletal system supports the body, gives it shape and protects soft organs.",
+    "options": [
+      {
+        "text": "The muscular system",
+        "mis": "DIG-07",
+        "pick": "Muscles are strong.",
+        "why": "The muscular system moves body parts. Bones protect soft organs."
+      },
+      {
+        "text": "The circulatory system",
+        "mis": "DIG-07",
+        "pick": "The blood reaches all these organs.",
+        "why": "The circulatory system carries substances. It doesn't protect organs."
+      },
+      {
+        "text": "The respiratory system",
+        "mis": "DIG-07",
+        "pick": "The lungs are in the chest with the heart.",
+        "why": "The respiratory system takes in oxygen. Bones protect the organs."
+      },
+      {
+        "text": "The skeletal system",
+        "correct": true,
+        "pick": "Which part of the body is hard enough to protect soft organs?",
+        "why": "The skeletal system supports the body, gives it shape and protects soft organs."
+      }
+    ]
+  },
+  {
+    "id": "P4-digestive-system.r4",
+    "title": "The lungs",
+    "kind": "variant",
+    "pool": "recap",
+    "lo": [
+      "P4.DIG.C1"
+    ],
+    "stem": "<p class='q-ask'>The lungs are part of which system?</p>",
+    "key": "The nose, windpipe and lungs make up the respiratory system.",
+    "options": [
+      {
+        "text": "The circulatory system, because blood flows through them",
+        "mis": "DIG-08",
+        "pick": "Blood passes through the lungs.",
+        "why": "The lungs are where air goes when we breathe in. They belong to the respiratory system."
+      },
+      {
+        "text": "The respiratory system",
+        "correct": true,
+        "pick": "What do the lungs do with air?",
+        "why": "The nose, windpipe and lungs make up the respiratory system."
+      },
+      {
+        "text": "The skeletal system, because bones protect them",
+        "mis": "DIG-08",
+        "pick": "The bones of the chest surround the lungs.",
+        "why": "Bones protect the lungs, but the lungs belong to the respiratory system."
+      },
+      {
+        "text": "The digestive system, because air goes in through the mouth",
+        "mis": "DIG-08",
+        "pick": "Air and food both pass through the mouth.",
+        "why": "Food goes down the gullet to the stomach. Air goes to the lungs."
+      }
+    ]
+  },
+  {
+    "id": "P4-digestive-system.r5",
+    "title": "A part of the digestive system",
+    "kind": "variant",
+    "pool": "recap",
+    "lo": [
+      "P4.DIG.C1",
+      "P4.DIG.C2"
+    ],
+    "stem": "<p class='q-ask'>Which of these is part of the digestive system?</p>",
+    "key": "The digestive system is the mouth, gullet, stomach, small intestine and large intestine.",
+    "options": [
+      {
+        "text": "The windpipe",
+        "mis": "DIG-08",
+        "pick": "It is a tube from the throat, like the gullet.",
+        "why": "The windpipe carries air. It is part of the respiratory system."
+      },
+      {
+        "text": "The blood vessels",
+        "mis": "DIG-08",
+        "pick": "They carry digested food.",
+        "why": "They carry it, but they are part of the circulatory system."
+      },
+      {
+        "text": "The small intestine",
+        "correct": true,
+        "pick": "Which part does food pass through?",
+        "why": "The small intestine is the part of the digestive system where digestion is completed."
+      },
+      {
+        "text": "The lungs",
+        "mis": "DIG-08",
+        "pick": "They are in the chest, near the gullet.",
+        "why": "The lungs are part of the respiratory system."
+      }
+    ]
+  },
+  {
+    "id": "P4-digestive-system.r6",
+    "title": "Parts of one system",
+    "kind": "variant",
+    "pool": "recap",
+    "lo": [
+      "P4.DIG.C1"
+    ],
+    "stem": "<p class='q-ask'>Which group lists parts of the same system?</p>",
+    "key": "Nose, windpipe, lungs: respiratory. Heart, blood, blood vessels: circulatory.",
+    "options": [
+      {
+        "text": "nose, windpipe and lungs",
+        "correct": true,
+        "pick": "Which three parts does air pass through?",
+        "why": "All three are parts of the respiratory system."
+      },
+      {
+        "text": "heart, blood and lungs",
+        "mis": "DIG-08",
+        "pick": "Blood flows through the lungs.",
+        "why": "The lungs are respiratory. The heart and blood are circulatory."
+      },
+      {
+        "text": "mouth, gullet and windpipe",
+        "mis": "DIG-08",
+        "pick": "All three start at the mouth or throat.",
+        "why": "The windpipe is respiratory. The mouth and gullet are digestive."
+      },
+      {
+        "text": "stomach, heart and blood vessels",
+        "mis": "DIG-08",
+        "pick": "Digested food goes from the digestive system into the blood.",
+        "why": "The stomach is digestive. The heart and blood vessels are circulatory."
+      }
+    ]
+  },
+  {
+    "id": "P4-digestive-system.r7",
+    "title": "How we move",
+    "kind": "variant",
+    "pool": "recap",
+    "lo": [
+      "P4.DIG.C1"
+    ],
+    "stem": "<p class='q-ask'>Which statement about how we move is correct?</p>",
+    "key": "The muscular system works with the skeletal system to move parts of the body.",
+    "options": [
+      {
+        "text": "Bones move on their own.",
+        "mis": "DIG-07",
+        "pick": "The bones are the parts that move.",
+        "why": "Bones can't move by themselves. The muscular system works with them."
+      },
+      {
+        "text": "The circulatory system moves the bones.",
+        "mis": "DIG-07",
+        "pick": "Blood reaches every bone.",
+        "why": "The circulatory system carries substances. Muscles move the bones."
+      },
+      {
+        "text": "The skeletal system only protects; it has no part in moving.",
+        "mis": "DIG-07",
+        "pick": "The muscles seem to do all the moving.",
+        "why": "The muscular system works with the skeleton. Both are needed."
+      },
+      {
+        "text": "The muscular system works with the skeletal system to move parts of the body.",
+        "correct": true,
+        "pick": "Which two systems are needed to move an arm?",
+        "why": "Muscles and bones work together to move body parts."
+      }
+    ]
+  },
+  {
+    "id": "P4-digestive-system.r8",
+    "title": "Before rice can enter the blood",
+    "kind": "variant",
+    "pool": "recap",
+    "lo": [
+      "P4.DIG.C1",
+      "P4.DIG.C2"
+    ],
+    "stem": "<p class='q-ask'>Rice cannot pass into the blood until it has been…</p>",
+    "key": "Only digested food can pass into the blood.",
+    "options": [
+      {
+        "text": "digested into simpler substances",
+        "correct": true,
+        "pick": "What must happen to food before it can pass into the blood?",
+        "why": "Only digested food can pass into the blood. This happens in the small intestine."
+      },
+      {
+        "text": "stored in the stomach for a day",
+        "mis": "DIG-09",
+        "pick": "The stomach holds food.",
+        "why": "Storing food doesn't change it. Digestion does."
+      },
+      {
+        "text": "chewed into small pieces, and nothing more",
+        "mis": "DIG-09",
+        "pick": "Small pieces sound small enough.",
+        "why": "Chewed pieces are still far too big. The food must be digested."
+      },
+      {
+        "text": "mixed with water in the large intestine",
+        "mis": "DIG-01",
+        "pick": "Water seems to help food pass into the blood.",
+        "why": "The large intestine absorbs water from undigested food. Digested food passes into the blood in the small intestine."
+      }
+    ]
+  },
+  {
+    "id": "P4-digestive-system.r9",
+    "title": "The digestive system's job",
+    "kind": "variant",
+    "pool": "recap",
+    "lo": [
+      "P4.DIG.C1"
+    ],
+    "stem": "<p class='q-ask'>Which is the job of the digestive system?</p>",
+    "key": "The digestive system breaks food down so that it can pass into the blood.",
+    "options": [
+      {
+        "text": "To carry food to all parts of the body",
+        "mis": "DIG-09",
+        "pick": "Food has to reach every part somehow.",
+        "why": "The circulatory system carries digested food around the body."
+      },
+      {
+        "text": "To break food down into simpler substances that can pass into the blood",
+        "correct": true,
+        "pick": "What happens to food in the digestive system?",
+        "why": "The digestive system breaks food down so that it can pass into the blood."
+      },
+      {
+        "text": "To take in oxygen along with the food",
+        "mis": "DIG-07",
+        "pick": "Food and air both go in through the mouth.",
+        "why": "The respiratory system takes in oxygen."
+      },
+      {
+        "text": "To store food until the body needs it",
+        "mis": "DIG-09",
+        "pick": "The stomach holds food for a while.",
+        "why": "The digestive system breaks food down. It isn't a store."
+      }
+    ]
+  },
+  {
+    "id": "P4-digestive-system.r10",
+    "title": "Chewing bread",
+    "kind": "variant",
+    "pool": "recap",
+    "lo": [
+      "P4.DIG.C2"
+    ],
+    "stem": "<p>Mei chews a piece of bread for a long time.</p><p class='q-ask'>Which statement is correct?</p>",
+    "key": "Digestion begins in the mouth and is completed in the small intestine.",
+    "options": [
+      {
+        "text": "No digestion takes place until the bread reaches her stomach.",
+        "mis": "DIG-10",
+        "pick": "Chewing seems to only make the pieces smaller.",
+        "why": "Saliva is a digestive juice. Digestion begins in the mouth."
+      },
+      {
+        "text": "Digestion begins in her gullet.",
+        "mis": "DIG-10",
+        "pick": "The gullet comes next.",
+        "why": "The gullet doesn't digest. Digestion has already begun in the mouth."
+      },
+      {
+        "text": "Digestion has begun in her mouth.",
+        "correct": true,
+        "pick": "Where does food first meet a digestive juice?",
+        "why": "The teeth break up the bread, and saliva starts to digest it."
+      },
+      {
+        "text": "The bread is completely digested in her mouth.",
+        "mis": "DIG-04",
+        "pick": "She chewed it for a long time.",
+        "why": "Digestion begins in the mouth, but it is completed in the small intestine."
+      }
+    ]
+  },
+  {
+    "id": "P4-digestive-system.r11",
+    "title": "Where digestion takes place",
+    "kind": "variant",
+    "pool": "recap",
+    "lo": [
+      "P4.DIG.C2"
+    ],
+    "stem": "<p class='q-ask'>In which parts of the digestive system does digestion take place?</p>",
+    "key": "Digestion takes place in the mouth, the stomach and the small intestine.",
+    "options": [
+      {
+        "text": "The stomach and small intestine only",
+        "mis": "DIG-10",
+        "pick": "Those are the parts with the most digestive juice.",
+        "why": "Digestion begins in the mouth, with saliva."
+      },
+      {
+        "text": "The mouth, stomach and small intestine",
+        "correct": true,
+        "pick": "Which parts add a digestive juice?",
+        "why": "Saliva, gastric juice and the juices in the small intestine all digest food."
+      },
+      {
+        "text": "The stomach only",
+        "mis": "DIG-04",
+        "pick": "The stomach seems to do all the digesting.",
+        "why": "The stomach only partly digests food. Digestion begins in the mouth and is completed in the small intestine."
+      },
+      {
+        "text": "All five parts: mouth, gullet, stomach, small intestine and large intestine",
+        "mis": "DIG-02",
+        "pick": "Food passes through all of them.",
+        "why": "No digestion takes place in the gullet or the large intestine."
+      }
+    ]
+  },
+  {
+    "id": "P4-digestive-system.r12",
+    "title": "Which part is the large intestine?",
+    "kind": "variant",
+    "pool": "recap",
+    "lo": [
+      "P4.DIG.C2"
+    ],
+    "stem": "<p>The table shows what happens in four parts of the digestive system, W, X, Y and Z.</p><p class='q-ask'>Which part is the large intestine?</p>",
+    "figure": "<div class='scroll'><table class='data'><thead><tr><th scope='col'>Part</th><th scope='col'>Digestion takes place</th><th scope='col'>Digested food passes into the blood</th><th scope='col'>Water is absorbed from undigested food</th></tr></thead><tbody><tr><th scope='row'>W</th><td aria-label='yes'>✓</td><td aria-label='no'>✗</td><td aria-label='no'>✗</td></tr><tr><th scope='row'>X</th><td aria-label='no'>✗</td><td aria-label='no'>✗</td><td aria-label='no'>✗</td></tr><tr><th scope='row'>Y</th><td aria-label='yes'>✓</td><td aria-label='yes'>✓</td><td aria-label='no'>✗</td></tr><tr><th scope='row'>Z</th><td aria-label='no'>✗</td><td aria-label='no'>✗</td><td aria-label='yes'>✓</td></tr></tbody></table></div>",
+    "key": "The large intestine absorbs water from undigested food. No digestion takes place there.",
+    "options": [
+      {
+        "text": "W",
+        "mis": "DIG-06",
+        "pick": "The large intestine seems to finish off the digestion.",
+        "why": "No digestion takes place in the large intestine. W could be the mouth or the stomach."
+      },
+      {
+        "text": "X",
+        "mis": "DIG-01",
+        "pick": "The large intestine seems to just pass the food along.",
+        "why": "The large intestine absorbs water from undigested food. X does nothing to the food."
+      },
+      {
+        "text": "Y",
+        "mis": "DIG-03",
+        "pick": "Both intestines seem to let food into the blood.",
+        "why": "Digested food passes into the blood in the small intestine. Y is the small intestine."
+      },
+      {
+        "text": "Z",
+        "correct": true,
+        "pick": "Which part takes water out of undigested food?",
+        "why": "Z only absorbs water from undigested food. It is the large intestine."
+      }
+    ]
+  }
+]

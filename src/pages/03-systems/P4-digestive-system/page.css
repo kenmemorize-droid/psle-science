@@ -1,0 +1,38 @@
+#explore h3{font-size:20px;margin:26px 0 4px;padding-top:14px;border-top:var(--bw) solid var(--line)}
+#explore h3#e1{border-top:0;padding-top:0;margin-top:10px}
+#explore h4{font:700 16px var(--f-body);margin:18px 0 6px}
+.dgrid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:16px;align-items:start}
+@media(max-width:700px){.dgrid{grid-template-columns:1fr}.dgrid .stage svg{max-width:340px;margin:0 auto}}
+#bodySvg{max-width:330px;margin:0 auto}
+#tubeSvg{max-width:600px;margin:0 auto}
+.d-info{margin-top:12px;min-height:44px;font-size:15.5px}
+.d-info h4{margin:0 0 6px!important}
+.d-info ul{margin:0 0 8px;padding-left:20px}
+.d-step{font:700 15px var(--f-label);letter-spacing:var(--ls);margin:0}
+.d-key{display:inline-flex;align-items:center;gap:4px;margin-right:12px;white-space:nowrap}
+.d-key svg{width:16px;height:16px}
+.d-status{margin:0}
+.d-status th{width:42%;text-align:left}
+.d-status td{text-align:left}
+.d-tick td{padding:4px}
+.d-cell{min-width:44px;min-height:44px;width:100%;border:var(--bw) solid var(--line);border-radius:8px;background:var(--card);color:var(--ink);font-size:20px;font-weight:700;cursor:pointer}
+.d-cell[aria-pressed="true"]{border-color:var(--primary);background:var(--primary-soft)}
+.d-tick tr.ok th[scope="row"]{color:var(--ok)}
+.d-tick tr.no th[scope="row"]{color:var(--no)}
+.d-tickmsg ul{margin:8px 0 0;padding-left:20px;font-size:15px}
+.d-tickmsg li.ok::marker{color:var(--ok)}
+/* drawing */
+.d-skin{fill:var(--card);stroke:var(--stroke);stroke-width:2}
+.d-limb{fill:none;stroke-linecap:round}
+.d-organ{fill:var(--fb);stroke:var(--stroke);stroke-width:2}
+.d-food{fill:var(--sim-2);stroke:var(--stroke);stroke-width:1}
+.d-fibre{fill:none;stroke:var(--stem);stroke-width:3;stroke-linecap:round}
+.d-dig{fill:var(--sim-2);stroke:var(--stroke);stroke-width:.8}
+.d-water{fill:var(--sim-1);stroke:var(--stroke);stroke-width:1}
+.d-blood{fill:none;stroke:var(--sim-3);stroke-width:9;stroke-linecap:round;opacity:.55}
+.d-faeces{fill:var(--wood);stroke:var(--stroke);stroke-width:1.5}
+.d-sys{fill:var(--fa);stroke:var(--stroke);stroke-width:2}
+.d-heart{fill:var(--sim-3);stroke:var(--stroke);stroke-width:2}
+.d-vessel{fill:none;stroke:var(--sim-3);stroke-width:2.5;stroke-linecap:round}
+.d-bone{fill:none;stroke:var(--stroke);stroke-width:5;stroke-linecap:round;stroke-linejoin:round}
+.d-muscle{fill:var(--sim-2);fill-opacity:.75;stroke:var(--stroke);stroke-width:1.5}

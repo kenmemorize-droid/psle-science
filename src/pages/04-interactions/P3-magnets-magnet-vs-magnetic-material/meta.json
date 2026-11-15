@@ -1,0 +1,15 @@
+{
+  "id": "P3-magnets-magnet-vs-magnetic-material",
+  "type": "focus",
+  "theme": "interactions",
+  "topic": "MAG",
+  "level": "P3",
+  "title": "Magnet or not?",
+  "purpose": "Place two objects beside each other, record what happens, and work out which objects are magnets, which are magnetic materials and which are non-magnetic.",
+  "lo": ["P3.MAG.C2", "P3.MAG.P1"],
+  "fixes": "Telling a magnet from a magnetic material using only attract, repel and no-force results. Only magnets repel.",
+  "origin": "retrofit",
+  "built": "2026-11-11",
+  "order": 1,
+  "uses": []
+}

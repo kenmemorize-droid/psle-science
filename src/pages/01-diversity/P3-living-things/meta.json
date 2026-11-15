@@ -1,0 +1,16 @@
+{
+  "id": "P3-living-things",
+  "type": "unit",
+  "theme": "diversity",
+  "topic": "LIV",
+  "level": "P3",
+  "title": "Living things",
+  "purpose": "What makes something alive, and how living things are grouped. Test a seed and a pebble, sort animals by what you can see on their bodies, group plants, and meet fungi and bacteria.",
+  "lo": ["P3.LIV.C1", "P3.LIV.C2", "P3.LIV.P1", "P3.LIV.P2"],
+  "fixes": "The whole Living things topic: the characteristics of living things, and the broad groups of plants, animals, fungi and bacteria.",
+  "origin": "base",
+  "built": "2026-11-12",
+  "order": 0,
+  "uses": ["classify"],
+  "allowTerms": ["vein", "veins"]
+}

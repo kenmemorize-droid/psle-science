@@ -1,0 +1,125 @@
+<section class="card" id="know">
+  <p class="sec-label">What you need to know</p>
+  <h2>Light in five ideas</h2>
+  <div class="know">
+    <details class="kcard" open>
+      <summary><span class="kn">1</span> Sources of light</summary>
+      <p>A <b>source of light</b> gives off its own light. Natural sources: the Sun, stars, lightning, fireflies. Man-made sources: a table lamp, a candle, a traffic light. A torch is a source only while it is switched on.</p>
+      <p><b>The Moon is not a source of light.</b> It reflects light from the Sun into our eyes.</p>
+    </details>
+    <details class="kcard" open>
+      <summary><span class="kn">2</span> How we see things</summary>
+      <p>We see an object when <b>light from it enters our eyes</b>.</p>
+      <ul>
+        <li>A source of light sends its own light into our eyes.</li>
+        <li>Every other object is seen because it <b>reflects</b> light from a source into our eyes. We see a bird in sunlight because it reflects the Sun's light to us.</li>
+        <li>Two mirrors can reflect light from an umbrella around a corner into our eyes, so we can see it even though it is not in a straight line from us.</li>
+        <li>In complete darkness nothing can be seen: no light reaches our eyes.</li>
+      </ul>
+    </details>
+    <details class="kcard" open>
+      <summary><span class="kn">3</span> Light travels in straight lines</summary>
+      <p>Look at a candle through three cards, each with a hole. You can see the flame only when the three holes are in a <b>straight line</b>. Move one card and the light is blocked.</p>
+    </details>
+    <details class="kcard" open>
+      <summary><span class="kn">4</span> How shadows form</summary>
+      <p>Light travels in straight lines. When an object <b>completely or partially blocks</b> the light, a shadow forms behind it, on the side away from the light.</p>
+      <div class="scroll">
+        <table class="data">
+          <thead><tr><th scope="col">The material…</th><th scope="col">Shadow</th><th scope="col">Examples</th></tr></thead>
+          <tbody>
+            <tr><td class="rowname">lets <b>no</b> light through</td><td>dark shadow</td><td>wooden chair, stone, book, metal bottle</td></tr>
+            <tr><td class="rowname">lets <b>some</b> light through</td><td>lighter shadow</td><td>frosted glass, tracing paper, shower curtain</td></tr>
+            <tr><td class="rowname">lets <b>most</b> light through</td><td>almost no shadow</td><td>clear glass, clear plastic, food wrap</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </details>
+    <details class="kcard" open>
+      <summary><span class="kn">5</span> What changes a shadow</summary>
+      <ul>
+        <li><b>Size:</b> with the torch and screen still, an object <b>closer to the torch</b> makes a <b>bigger</b> shadow. Closer to the screen, it makes a smaller one. A bigger object makes a bigger shadow. Moving the <b>screen further</b> from the object also makes the shadow <b>bigger</b>.</li>
+        <li><b>Shape:</b> a shadow has the outline of the object as seen from the light. Turn the object, or move the light, and the shape can change: a round plate seen edge-on makes a thin straight shadow.</li>
+        <li><b>Fair test:</b> change only one of these at a time and keep everything else the same.</li>
+      </ul>
+    </details>
+  </div>
+</section>
+
+<section class="card" id="explore">
+  <p class="sec-label">Explore</p>
+  <h2>Try it yourself</h2>
+
+  <h3 id="e1">1. Source of light or not?</h3>
+  <p class="lead">Ask of each card: does it give off its own light?</p>
+  <div id="classify"></div>
+
+  <h3 id="e2">2. How do we see it?</h3>
+  <p class="lead">Light must travel from the object into the eye. Switch the lamp off and see what happens.</p>
+  <div class="row"><button type="button" class="btn small" id="lampBtn" aria-pressed="true">Lamp on</button></div>
+  <div class="stage" style="margin-top:10px"><svg id="roomSvg" viewBox="0 0 540 220" role="img" aria-label="A lamp, a book on a table and an eye"></svg></div>
+  <p class="stage-msg" id="roomMsg" aria-live="polite"></p>
+  <h4>Seeing around a corner</h4>
+  <div class="row"><button type="button" class="btn small" id="mirrorBtn" aria-pressed="false">Put the mirrors in</button></div>
+  <div class="stage" style="margin-top:10px"><svg id="cornerSvg" viewBox="0 0 540 220" role="img" aria-label="A wall between an umbrella and an eye"></svg></div>
+  <p class="stage-msg" id="cornerMsg" aria-live="polite"></p>
+
+  <h3 id="e3">3. Straight lines</h3>
+  <p class="lead">Three cards, each with a hole. The eye looks along them at a candle. Slide the middle card.</p>
+  <div class="stage"><svg id="holesSvg" viewBox="0 0 540 200" role="img" aria-label="An eye, three cards with holes and a candle"></svg></div>
+  <label class="lslider"><span>Slide the middle card</span><input type="range" id="holeSlide" min="-40" max="40" value="0"></label>
+  <p class="stage-msg" id="holesMsg" aria-live="polite"></p>
+
+  <h3 id="e4">4. Shadow lab</h3>
+  <p class="lead">Change one thing at a time, then record the trial.</p>
+  <div class="lab-ctl">
+    <div class="row" role="group" aria-label="Object">
+      <button type="button" class="btn small" data-obj="plate" aria-pressed="true">Round plate</button>
+      <button type="button" class="btn small" data-obj="card" aria-pressed="false">Square card</button>
+      <button type="button" class="btn small" data-obj="can" aria-pressed="false">Can</button>
+    </div>
+    <div class="row" role="group" aria-label="Which way it faces">
+      <button type="button" class="btn small" data-turn="face" aria-pressed="true" id="turnFace">Face-on</button>
+      <button type="button" class="btn small" data-turn="edge" aria-pressed="false" id="turnEdge">Edge-on</button>
+    </div>
+    <div class="row" role="group" aria-label="Material">
+      <button type="button" class="btn small" data-mat="none" aria-pressed="true">Lets no light through</button>
+      <button type="button" class="btn small" data-mat="some" aria-pressed="false">Lets some light through</button>
+      <button type="button" class="btn small" data-mat="most" aria-pressed="false">Lets most light through</button>
+    </div>
+    <div class="row" role="group" aria-label="Size">
+      <button type="button" class="btn small" data-size="small" aria-pressed="true">Small</button>
+      <button type="button" class="btn small" data-size="big" aria-pressed="false">Big</button>
+    </div>
+  </div>
+  <div class="lab-grid">
+    <div class="stage"><svg id="labSide" viewBox="0 0 520 260" role="img" aria-label="Side view of a torch, an object and a screen"></svg></div>
+    <div class="stage"><svg id="labFace" viewBox="0 0 200 260" role="img" aria-label="The shadow on the screen, seen from the front"></svg></div>
+  </div>
+  <label class="lslider"><span>Torch to object: <b id="d1Out">20</b> cm</span><input type="range" id="d1" min="10" max="60" step="5" value="20"></label>
+  <label class="lslider"><span>Object to screen: <b id="d2Out">30</b> cm</span><input type="range" id="d2" min="10" max="50" step="5" value="30"></label>
+  <p class="stage-msg" id="labMsg" aria-live="polite"></p>
+  <div class="actions"><button type="button" class="btn primary" id="recBtn">Record this trial</button><button type="button" class="btn small" id="clearBtn">Clear the table</button></div>
+  <p class="note-s">A fair test changes only one thing at a time. Compare two rows that differ in only one column.</p>
+  <div class="scroll"><table class="data" id="trialLog"><thead><tr><th scope="col">#</th><th scope="col">Object</th><th scope="col">Faces</th><th scope="col">Material</th><th scope="col">Size</th><th scope="col">Torch–object (cm)</th><th scope="col">Object–screen (cm)</th><th scope="col">Shadow</th></tr></thead><tbody></tbody></table></div>
+
+  <details class="beyond">
+    <summary><span class="bs-badge">Beyond syllabus</span> Shadow length through the day</summary>
+    <p>Outdoors, the Sun is the light source. As the Earth rotates, the Sun appears to move across the sky from east to west, so sunlight reaches a pole from different directions and heights during the day. Shadows are long when the Sun is low in the morning and evening, and shortest when it is high around midday. This is not in the P4 syllabus and is never tested here.</p>
+    <div class="stage"><svg id="sunSvg" viewBox="0 0 540 220" role="img" aria-label="A pole and its shadow at different times of day"></svg></div>
+    <label class="lslider"><span>Time of day: <b id="sunOut">8 am</b></span><input type="range" id="sunT" min="0" max="4" value="0"></label>
+  </details>
+</section>
+
+<section class="card" id="check">
+  <p class="sec-label">Unit check</p>
+  <h2>Nine questions on the whole topic</h2>
+  <p class="lead">Only your first answer counts. A wrong first answer goes into your mistake book, and a different question on the same idea comes back for recap.</p>
+  <div id="qs"></div>
+</section>
+
+<section class="card" id="deeper">
+  <p class="sec-label">Go deeper</p>
+  <h2>Focus pages on light</h2>
+  <div id="psle-deeper"></div>
+</section>

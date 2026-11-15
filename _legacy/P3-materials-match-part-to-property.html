@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="notebook">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Matching a part to the properties it needs — P3 Diversity of Materials</title>
+<style>
+:root[data-theme="notebook"]{
+  --bg:#F1E9DA; --paper:#FBF7EF; --card:#FFFDF8; --sunk:#F3EBDC; --topbar:#1F2A37; --topink:#F6EFE2; --topmute:#C9BFAC;
+  --ink:#1F2A37; --muted:#5C6773;
+  --primary:#0F766E; --primary-soft:#D9EDEA; --primary-ink:#FFFFFF;
+  --accent:#9A6400; --accent-soft:#FBEBCC;
+  --ok:#15803D; --ok-soft:#DBF0E2; --no:#B42318; --no-soft:#FAE3E0;
+  --line:#D9CFBC; --stroke:#1F2A37; --fa:#D9EDEA; --fb:#FBEBCC; --fc:#E7E0D1;
+  --radius:14px; --bw:2px;
+  --f-display:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,"Times New Roman",serif;
+  --f-body:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  --f-label:var(--f-body); --ls:.01em;
+}
+:root[data-theme="lab"]{
+  --bg:#F4F6FA; --paper:#FFFFFF; --card:#FFFFFF; --sunk:#F1F5F9; --topbar:#0F172A; --topink:#F8FAFC; --topmute:#94A3B8;
+  --ink:#0F172A; --muted:#64748B;
+  --primary:#2563EB; --primary-soft:#DBEAFE; --primary-ink:#FFFFFF;
+  --accent:#B45309; --accent-soft:#FEF3C7;
+  --ok:#16A34A; --ok-soft:#DCFCE7; --no:#DC2626; --no-soft:#FEE2E2;
+  --line:#CBD5E1; --stroke:#0F172A; --fa:#DBEAFE; --fb:#FEF3C7; --fc:#E2E8F0;
+  --radius:8px; --bw:1px;
+  --f-display:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  --f-body:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  --f-label:var(--f-body); --ls:.01em;
+}
+:root[data-theme="mission"]{
+  --bg:#070C16; --paper:#0B1220; --card:#111B2E; --sunk:#0A1120; --topbar:#060B14; --topink:#E2E8F0; --topmute:#94A3B8;
+  --ink:#E2E8F0; --muted:#94A3B8;
+  --primary:#22D3EE; --primary-soft:#0E3A47; --primary-ink:#06212B;
+  --accent:#F472B6; --accent-soft:#3B1130;
+  --ok:#34D399; --ok-soft:#0C3A2E; --no:#FB7185; --no-soft:#3B1220;
+  --line:#24334B; --stroke:#E2E8F0; --fa:#0E3A47; --fb:#3B1130; --fc:#1B2740;
+  --radius:10px; --bw:1px;
+  --f-display:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  --f-body:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  --f-label:ui-monospace,SFMono-Regular,Menlo,Consolas,"Courier New",monospace; --ls:.06em;
+}
+
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.55 var(--f-body)}
+h1,h2,h3,h4{font-family:var(--f-display);line-height:1.24;margin:0}
+p{margin:0 0 .6em} p:last-child{margin-bottom:0}
+button{font:inherit;color:inherit;cursor:pointer}
+:focus-visible{outline:3px solid var(--accent);outline-offset:2px;border-radius:4px}
+.vh{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.wrap{max-width:1040px;margin:0 auto;padding:0 14px}
+
+/* header */
+.top{background:var(--topbar);color:var(--topink);padding:12px 0 0}
+.top .wrap{display:flex;flex-wrap:wrap;gap:8px 20px;align-items:flex-end;justify-content:space-between}
+.brand h1{font-size:25px}
+.brand .meta{margin:3px 0 10px;color:var(--topmute);font-size:13.5px;font-family:var(--f-label);letter-spacing:var(--ls)}
+.tools{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:8px;justify-content:flex-end}
+.tools button,.tools a{background:transparent;border:1px solid var(--topmute);color:var(--topink);border-radius:6px;
+  padding:7px 11px;font-size:13px;min-height:38px;display:inline-flex;align-items:center;text-decoration:none}
+.tools button[aria-pressed="true"]{background:var(--primary);border-color:var(--primary);color:var(--primary-ink)}
+.tabs{display:flex;gap:4px;flex-wrap:wrap}
+.tab{background:transparent;border:0;color:var(--topmute);padding:11px 14px;border-radius:8px 8px 0 0;font-size:15px;min-height:44px}
+.tab[aria-selected="true"]{background:var(--bg);color:var(--ink);font-weight:700}
+.tab .dot{display:inline-block;min-width:20px;padding:0 6px;margin-left:6px;border-radius:10px;background:var(--accent-soft);
+  color:var(--accent);font-size:12px;font-weight:700;line-height:20px;text-align:center}
+
+main{padding:16px 0 28px}
+footer{padding:0 0 32px;color:var(--muted);font-size:13.5px}
+footer a{color:var(--muted)}
+
+/* stepper */
+.stepper{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:6px}
+.pill{position:relative;width:46px;height:46px;border-radius:50%;border:2px solid var(--line);background:var(--card);
+  color:var(--ink);font-weight:700;font-size:17px}
+.pill i{position:absolute;right:-4px;top:-5px;width:20px;height:20px;border-radius:50%;font-style:normal;font-size:12px;
+  line-height:20px;text-align:center;color:#fff}
+.pill.cur{box-shadow:0 0 0 3px var(--primary-soft);border-color:var(--primary)}
+.pill.first,.pill.recapped{border-color:var(--ok)} .pill.first i,.pill.recapped i{background:var(--ok)}
+.pill.recap{border-color:var(--accent);background:var(--accent-soft)} .pill.recap i{background:var(--accent)}
+.pill.open{border-color:var(--primary)} .pill.open i{background:var(--primary)}
+.legend{font-size:13px;color:var(--muted);margin:6px 0 14px}
+
+/* question */
+.q{background:var(--card);border:var(--bw) solid var(--line);border-radius:var(--radius);padding:18px}
+.q h2{font-size:21px;margin-bottom:6px}
+.q h3{font-size:14px;font-family:var(--f-label);letter-spacing:var(--ls);color:var(--muted);margin:0 0 8px;font-weight:600}
+.intro{font-size:16.5px}
+.banner{border-left:4px solid var(--accent);background:var(--accent-soft);padding:9px 12px;border-radius:0 var(--radius) var(--radius) 0;font-size:15px}
+.cols{display:grid;grid-template-columns:1fr;gap:16px;margin-top:14px}
+@media(min-width:800px){.cols{grid-template-columns:1.3fr .8fr}}
+.stage{background:var(--sunk);border:var(--bw) solid var(--line);border-radius:var(--radius);padding:10px}
+.stage svg{display:block;width:100%;height:auto}
+.stage-msg{font-size:15px;margin:10px 0 0;min-height:44px}
+.shelf{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.tile{display:flex;flex-direction:column;align-items:center;gap:4px;min-width:84px;min-height:70px;padding:8px 10px;
+  border:var(--bw) solid var(--line);border-radius:var(--radius);background:var(--card);color:var(--ink);font-size:14px}
+.tile[aria-pressed="true"]{border-color:var(--primary);background:var(--primary-soft)}
+.tile b{font-size:16px}
+.tile small{color:var(--muted);font-size:12px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+.btn{min-height:44px;padding:10px 15px;border:var(--bw) solid var(--line);border-radius:var(--radius);background:var(--card);color:var(--ink);font-size:15px}
+.btn.primary{background:var(--primary);border-color:var(--primary);color:var(--primary-ink)}
+.btn.small{min-height:38px;padding:6px 11px;font-size:13.5px}
+.btn:disabled{opacity:.45;cursor:default}
+.btn[aria-pressed="true"]{background:var(--primary);border-color:var(--primary);color:var(--primary-ink)}
+.note{font-size:13.5px;color:var(--muted);margin:10px 0 0}
+
+/* log + hints */
+.side .box{background:var(--sunk);border:var(--bw) solid var(--line);border-radius:var(--radius);padding:12px;margin-bottom:12px}
+.logrow{display:flex;gap:8px;align-items:flex-start;padding:7px 0;border-bottom:1px solid var(--line);font-size:14.5px}
+.logrow:last-child{border-bottom:0}
+.logrow b{min-width:4.6em}
+.logrow.bad{color:var(--no)} .logrow.good{color:var(--ok)}
+.empty{color:var(--muted);font-size:14px}
+.hints ol{margin:0 0 8px;padding-left:20px;font-size:14.5px}
+
+/* answer */
+.answer{border:0;padding:0;margin:18px 0 0}
+.answer legend{font-size:16.5px;font-weight:700;padding:0;margin-bottom:10px}
+.scroll{overflow-x:auto}
+table.exam{width:100%;border-collapse:collapse;font-size:15.5px}
+table.exam th,table.exam td{border:var(--bw) solid var(--line);padding:9px 10px;text-align:center}
+table.exam th{background:var(--sunk);font-family:var(--f-label);letter-spacing:var(--ls);font-size:13.5px}
+tr.opt{cursor:pointer}
+tr.opt td.n{white-space:nowrap}
+tr.opt td.n label{padding-left:4px;font-weight:700}
+tr.opt.sel td{background:var(--primary-soft)}
+tr.opt.right td{background:var(--ok-soft)}
+tr.opt.missed td{background:var(--no-soft);opacity:.72}
+tr.opt.missed td.n small{display:block;font-size:11.5px;color:var(--no)}
+tr.opt.locked{cursor:default}
+.lock{font-size:14px;color:var(--muted);margin-top:8px}
+.actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+
+/* feedback */
+.fb{margin-top:16px;border:var(--bw) solid var(--line);border-radius:var(--radius);padding:14px}
+.fb.good{border-color:var(--ok);background:var(--ok-soft)}
+.fb.bad{border-color:var(--no);background:var(--no-soft)}
+.fb h3{font-size:18px;margin-bottom:6px;color:inherit;font-family:var(--f-display);letter-spacing:0}
+.fb h4{font-size:15px;margin:14px 0 8px}
+.fb .key{border-left:4px solid var(--primary);background:var(--card);padding:9px 12px;border-radius:0 var(--radius) var(--radius) 0}
+.optcard{background:var(--card);border:var(--bw) solid var(--line);border-radius:var(--radius);padding:11px;margin-bottom:8px;font-size:15px}
+.optcard.right{border-color:var(--ok)}
+.who{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin-bottom:6px}
+.tagchip{background:var(--sunk);border:1px solid var(--line);border-radius:999px;padding:2px 9px;font-size:12.5px}
+.you{background:var(--accent-soft);color:var(--accent);border-radius:999px;padding:2px 9px;font-size:12.5px;font-weight:700}
+.lbl{font-family:var(--f-label);letter-spacing:var(--ls);font-weight:700;font-size:13.5px}
+.clash{margin:6px 0 0;padding-left:20px;font-size:14.5px}
+
+/* panels */
+.panel{background:var(--card);border:var(--bw) solid var(--line);border-radius:var(--radius);padding:16px;margin-bottom:14px}
+.panel h2{font-size:20px;margin-bottom:10px}
+.stats{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:12px}
+.stat{flex:1 1 120px;background:var(--sunk);border:var(--bw) solid var(--line);border-radius:var(--radius);padding:10px;font-size:13px;color:var(--muted)}
+.stat b{display:block;font-size:22px;color:var(--ink);font-family:var(--f-display)}
+.mist{border-top:var(--bw) solid var(--line);padding-top:10px;margin-top:10px}
+.mist:first-of-type{border-top:0;margin-top:0;padding-top:0}
+.mist h3{font-size:16px}
+.mist .fix{font-size:14.5px;color:var(--muted)}
+.mist ul{margin:6px 0 0;padding-left:20px;font-size:14.5px}
+.rulecard{border:var(--bw) solid var(--line);border-radius:var(--radius);padding:12px;margin-bottom:10px}
+.rulecard h3{font-size:16px;margin-bottom:4px}
+.beyond{border:var(--bw) dashed var(--accent);border-radius:var(--radius);padding:12px}
+.beyond .tagx{display:inline-block;font-family:var(--f-label);letter-spacing:var(--ls);font-size:12px;color:var(--accent);
+  background:var(--accent-soft);border:1px solid var(--accent);border-radius:999px;padding:2px 9px;margin-right:8px}
+
+.toast{position:fixed;left:50%;bottom:18px;transform:translateX(-50%);background:var(--topbar);color:var(--topink);
+  padding:9px 16px;border-radius:8px;font-size:14px;opacity:0;pointer-events:none;transition:opacity .25s;z-index:20}
+.toast.show{opacity:1}
+
+/* svg language */
+.ln{fill:none;stroke:var(--stroke);stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.sl{fill:var(--fc);stroke:var(--stroke);stroke-width:2;stroke-linejoin:round}
+.lbl{fill:var(--ink);font-family:var(--f-label);font-size:13px;letter-spacing:var(--ls)}
+.lbl.sm{font-size:11.5px;fill:var(--muted)}
+.fa{fill:var(--fa)} .fb2{fill:var(--fb)} .fc2{fill:var(--fc)}
+.mv{transition:transform .6s ease,opacity .4s ease}
+@media(prefers-reduced-motion:reduce){.mv,.toast{transition:none!important}}
+@media(max-width:560px){body{font-size:16px} .q{padding:13px} .brand h1{font-size:21px}}
+.hot{stroke:var(--primary)!important;stroke-width:3.5!important}
+.bar{fill:var(--fa);stroke:var(--stroke);stroke-width:2}
+.bar.hi{fill:var(--fb)}
+.needrow{display:flex;gap:8px;align-items:center;padding:6px 0;font-size:14.5px}
+.needrow .m{font-weight:700;min-width:5.6em}
+.needrow.met{color:var(--ok)} .needrow.fail{color:var(--no)}
+table.tick{width:100%;border-collapse:collapse;font-size:15px;margin:10px 0 0}
+table.tick th,table.tick td{border:var(--bw) solid var(--line);padding:7px 8px;text-align:center}
+table.tick th{background:var(--sunk);font-family:var(--f-label);font-size:13px;letter-spacing:var(--ls)}
+table.tick td.rowname{text-align:left;font-weight:700}
+
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <div class="brand">
+      <h1 id="brandTitle"></h1>
+      <p class="meta"><span id="brandMeta"></span> &mdash; <span id="brandSub"></span></p>
+    </div>
+    <div>
+      <div class="tools">
+        <a href="../index.html">&#8592; Hub</a>
+        <button type="button" data-act="theme" data-theme="notebook">Notebook</button>
+        <button type="button" data-act="theme" data-theme="lab">Lab</button>
+        <button type="button" data-act="theme" data-theme="mission">Mission</button>
+        <button type="button" id="btnExport">Export</button>
+        <button type="button" id="btnImport">Import</button>
+        <button type="button" id="btnReset">Reset</button>
+        <input type="file" id="fileImport" accept="application/json,.json" hidden>
+      </div>
+      <nav class="tabs" role="tablist" aria-label="Sections" id="tabs"></nav>
+    </div>
+  </div>
+</header>
+<div class="wrap">
+  <main id="main"></main>
+  <footer id="foot"></footer>
+</div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script id="data">
+/* ===== PAGE 2: matching a part to the properties it needs ===== */
+var PAGE = {
+  id: 'P3-materials-match-part-to-property',
+  title: 'Matching a part to the properties it needs',
+  topic: 'Diversity of Materials',
+  level: 'P3 Standard',
+  meta: 'Diversity &middot; Diversity of Materials &middot; P3 Standard',
+  lo: 'Relate the use of various types of materials to their physical properties',
+  sub: 'Inspect each part first, then read the tick table.',
+  prev: { href: 'P3-materials-strong-vs-flexible.html', label: 'Strong is not the same as flexible' },
+  next: { href: 'P3-materials-waterproof-vs-absorbent.html', label: 'Waterproof, or soaks up water?' },
+  rules: ''
+};
+
+var TAGS = {
+  U1: { label: 'Chooses a material before listing the job', fix: 'Always ask what the part has to do all day first. Write the list of properties, then find the material that has all of them.' },
+  U2: { label: 'Forgets that a part which bends must be flexible', fix: 'Any part that folds, wraps or moves with you has to bend without breaking. A material with no tick for flexible would crack there.' },
+  U3: { label: 'Forgets that a part which meets water must be waterproof', fix: 'Rain, wet ground and the water inside a container all mean the same thing: that part must not soak up water.' },
+  U4: { label: 'Gives the material with the most ticks to every part', fix: 'A part only needs the properties its own job demands. Extra ticks are not a reason to use a material, and one material cannot be in two places at once.' },
+  U5: { label: 'Uses a property the part does not need', fix: 'A sole does not need to bend round the foot. A window pane does not need to bend at all. Match the property to the job, not to the whole object.' }
+};
+
+/* ---- scenes ---- */
+function scene(name, sel) {
+  var hot = function (p) { return sel === p ? ' fa' : ''; };
+  var hotline = function (p) { return sel === p ? ' hot' : ''; };
+  if (name === 'shoe') {
+    return '<svg viewBox="0 0 520 230" role="img" aria-label="Side view of a shoe: X is the upper, Y is the sole.">' +
+      '<path class="sl' + hot('X') + '" d="M64 150 V92 q0 -26 28 -26 h34 q16 0 20 18 l12 34 q6 16 26 18 l170 16 q38 4 40 38 v10 H64 Z"/>' +
+      '<path class="sl' + hot('Y') + '" d="M58 150 H446 a16 16 0 0 1 0 32 H58 a16 16 0 0 1 0 -32 Z"/>' +
+      '<path class="ln" d="M150 100 l34 20 M166 88 l34 20 M182 76 l34 20"/>' +
+      '<line class="ln" x1="300" y1="120" x2="378" y2="120"/><text class="lbl" x="386" y="124">X</text>' +
+      '<line class="ln" x1="300" y1="166" x2="378" y2="166"/><text class="lbl" x="386" y="170">Y</text></svg>';
+  }
+  if (name === 'umbrella') {
+    return '<svg viewBox="0 0 520 230" role="img" aria-label="An umbrella: X is the canopy, Y is the frame and shaft.">' +
+      '<path class="sl' + hot('X') + '" d="M80 118 Q260 8 440 118 q-45 26 -90 0 q-45 26 -90 0 q-45 26 -90 0 Z"/>' +
+      '<g class="ln' + hotline('Y') + '"><path d="M260 20 V196 q0 22 -26 22 q-18 0 -20 -14"/>' +
+      '<path d="M260 26 L110 112 M260 26 L410 112 M260 26 V118"/></g>' +
+      '<line class="ln" x1="300" y1="70" x2="378" y2="70"/><text class="lbl" x="386" y="74">X</text>' +
+      '<line class="ln" x1="276" y1="160" x2="378" y2="160"/><text class="lbl" x="386" y="164">Y</text></svg>';
+  }
+  if (name === 'window') {
+    return '<svg viewBox="0 0 520 230" role="img" aria-label="A window: X is the pane, Y is the frame.">' +
+      '<path class="sl' + hot('Y') + '" d="M120 24 h280 v182 h-280 Z M150 54 h220 v122 h-220 Z" fill-rule="evenodd"/>' +
+      '<rect class="sl' + hot('X') + '" x="150" y="54" width="220" height="122"/>' +
+      '<path class="ln" d="M168 70 l44 44 M168 100 l32 32"/>' +
+      '<line class="ln" x1="300" y1="110" x2="400" y2="110"/><text class="lbl" x="408" y="114">X</text>' +
+      '<line class="ln" x1="406" y1="190" x2="440" y2="190"/><text class="lbl" x="448" y="194">Y</text></svg>';
+  }
+  return '<svg viewBox="0 0 520 230" role="img" aria-label="A school bag: X is the bag body, Y is the strap.">' +
+    '<path class="sl' + hot('X') + '" d="M150 92 h220 q22 0 22 24 v68 q0 22 -22 22 H150 q-22 0 -22 -22 v-68 q0 -24 22 -24 Z"/>' +
+    '<path class="ln" d="M128 134 h264"/>' +
+    '<path class="ln' + hotline('Y') + '" fill="none" d="M176 94 q10 -74 84 -74 q74 0 84 74"/>' +
+    '<line class="ln" x1="300" y1="164" x2="400" y2="164"/><text class="lbl" x="408" y="168">X</text>' +
+    '<line class="ln" x1="300" y1="40" x2="400" y2="40"/><text class="lbl" x="408" y="44">Y</text></svg>';
+}
+
+function tickTable(Q) {
+  var t = Q.table;
+  return '<table class="tick"><tr><th>Properties</th>' + t.mats.map(function (m) { return '<th>' + m + '</th>'; }).join('') + '</tr>' +
+    t.props.map(function (p) {
+      return '<tr><td class="rowname">' + p + '</td>' + t.mats.map(function (m) {
+        return '<td>' + (t.has[m].indexOf(p) >= 0 ? '&#10003;' : '') + '</td>';
+      }).join('') + '</tr>';
+    }).join('') + '</table>';
+}
+function partOf(Q, id) { return Q.parts.filter(function (p) { return p.id === id; })[0]; }
+
+var BENCH = {
+  labLabel: 'The object and its parts',
+  logLabel: 'What each part must do',
+  initRun: function (Q) { return { seen: {}, sel: null, mat: null }; },
+  stage: function (Q, run) {
+    var svg = scene(Q.scene, run.bench.sel), msg;
+    if (!run.bench.sel) msg = 'Tap a part to find out what it has to do. Do that before you look at the materials.';
+    else {
+      var p = partOf(Q, run.bench.sel);
+      msg = '<b>Part ' + p.id + ', the ' + p.label + '.</b> ' + p.job + ' It needs to be <b>' + p.needs.join(', ') + '</b>.';
+      if (run.bench.mat) {
+        var m = run.bench.mat, miss = p.needs.filter(function (n) { return Q.table.has[m].indexOf(n) < 0; });
+        msg += '<div class="needrow ' + (miss.length ? 'fail' : 'met') + '"><span class="m">' + (miss.length ? '\u2717 ' + m : '\u2713 ' + m) + '</span><span>' +
+          (miss.length ? 'is not ' + miss.join(' and not ') + ', so it fails this part.' : 'has every property this part needs.') + '</span></div>';
+      }
+    }
+    return { svg: svg + tickTable(Q), msg: msg };
+  },
+  shelf: function (Q, run) {
+    return Q.parts.map(function (p) {
+      return '<button class="tile" data-act="part" data-id="' + p.id + '" aria-pressed="' + (run.bench.sel === p.id) + '">' +
+        '<b>Part ' + p.id + '</b><span>' + p.label + '</span><small>' + (run.bench.seen[p.id] ? 'inspected' : 'not inspected') + '</small></button>';
+    }).join('');
+  },
+  prompt: function (Q, run) {
+    return run.bench.sel ? 'Optional: try a material against part ' + run.bench.sel + '.' : 'Inspect every part before the options unlock.';
+  },
+  chips: function (Q, run) {
+    if (!run.bench.sel) return '';
+    return Q.table.mats.map(function (m) {
+      return '<button class="btn" data-act="trymat" data-m="' + m + '" aria-pressed="' + (run.bench.mat === m) + '">Try ' + m + '</button>';
+    }).join('');
+  },
+  handle: function (a, el, Q, run) {
+    if (a === 'part') { run.bench.sel = el.dataset.id; run.bench.seen[el.dataset.id] = true; run.bench.mat = null; return true; }
+    if (a === 'trymat') { run.bench.mat = el.dataset.m; return true; }
+    return false;
+  },
+  log: function (Q, run) {
+    var rows = Q.parts.filter(function (p) { return run.bench.seen[p.id]; }).map(function (p) {
+      return '<div class="logrow"><b>Part ' + p.id + '</b><span>the ' + p.label + ' needs: ' + p.needs.join(', ') + '</span></div>';
+    });
+    return rows.length ? rows.join('') : '<p class="empty">Inspect a part and its job list appears here.</p>';
+  },
+  done: function (Q, run) { return Q.parts.every(function (p) { return run.bench.seen[p.id]; }); },
+  todo: function (Q, run) {
+    return Q.parts.filter(function (p) { return !run.bench.seen[p.id]; }).map(function (p) { return 'inspect part ' + p.id; }).join(', ');
+  },
+  clashes: function (Q, i, run) {
+    var o = Q.options[i], out = [];
+    Q.parts.forEach(function (p, k) {
+      var m = o.n[k]; if (!m || !Q.table.has[m]) return;
+      var miss = p.needs.filter(function (n) { return Q.table.has[m].indexOf(n) < 0; });
+      if (miss.length) out.push('Part ' + p.id + ' (the ' + p.label + ') needs ' + p.needs.join(', ') + ', but ' + m + ' is not ' + miss.join(' and not ') + '.');
+    });
+    return out;
+  }
+};
+
+var QUESTIONS = [
+  {
+    id: 'q1', title: "Lindy's shoe",
+    intro: 'Lindy recorded the properties of three materials, A, B and C. Inspect both parts of the shoe, then fit a material to each.',
+    scene: 'shoe',
+    parts: [
+      { id: 'X', label: 'upper', job: 'It wraps round the foot and folds every time you take a step, rain falls on it, and the laces pull it tight.', needs: ['flexible', 'waterproof', 'strong'] },
+      { id: 'Y', label: 'sole', job: 'It carries your whole body weight, rubs along the ground, and stands in puddles and on wet floors.', needs: ['waterproof', 'strong'] }
+    ],
+    table: { mats: ['A', 'B', 'C'], props: ['flexible', 'waterproof', 'strong'], has: { A: ['flexible', 'waterproof', 'strong'], B: ['waterproof', 'strong'], C: ['flexible', 'strong'] } },
+    hints: ['Start with part X. It is the part that has to bend, so it needs all three properties.', 'Part Y does not have to bend. Which material has the two properties it does need?'],
+    ask: 'Which materials are most suitable to make parts X and Y of the shoe?',
+    cols: ['Part X', 'Part Y'], correct: 2,
+    correctWhy: 'The upper bends, meets rain and is pulled by the laces, so it needs all three properties, and only A has all three. The sole needs to be strong and waterproof, which B is. The sole never has to bend round the foot, so it does not need a tick for flexible.',
+    takeaway: 'Write the job list for each part first. Then the table answers the question for you.',
+    options: [
+      { n: ['A', 'C'], tag: 'U3', pick: 'A is right for the upper, and C is flexible and strong, which sounds tough enough for a sole.', why: 'C has no tick for waterproof. A sole stands in puddles and on wet floors, so water would soak straight into it.' },
+      { n: ['B', 'A'], tag: 'U2', pick: 'B is strong and waterproof, and A is the best material, so saving A for the sole seems sensible.', why: 'B is not flexible. The upper folds every time the foot moves, so a B upper would crack open.' },
+      { n: ['A', 'B'], tag: null, pick: 'Upper: bends, meets rain, gets pulled, so all three properties, which only A has. Sole: strong and waterproof, which B has.', why: 'Every property each part needs is ticked for the material given to it.' },
+      { n: ['C', 'A'], tag: 'U3', pick: 'C is flexible, which the upper needs, and A is left for the sole.', why: 'C is not waterproof, so rain would pass straight through the upper onto the foot.' }
+    ]
+  },
+  {
+    id: 'q2', title: 'The umbrella',
+    intro: 'An umbrella has a canopy (X) and a frame of ribs and a shaft (Y). Inspect both parts, then use the table.',
+    scene: 'umbrella',
+    parts: [
+      { id: 'X', label: 'canopy', job: 'Rain lands on it, and it has to fold up small when the umbrella is closed.', needs: ['waterproof', 'flexible'] },
+      { id: 'Y', label: 'frame', job: 'It holds the canopy open against the wind pushing on it, and it is out in the rain too.', needs: ['strong', 'waterproof'] }
+    ],
+    table: { mats: ['D', 'E', 'F'], props: ['flexible', 'waterproof', 'strong'], has: { D: ['flexible', 'waterproof'], E: ['waterproof', 'strong'], F: ['flexible', 'strong'] } },
+    hints: ['The canopy has to fold, so one of its properties is flexible.', 'The frame has to push back against the wind. Which material is strong and also survives the rain?'],
+    ask: 'Which materials are most suitable to make parts X and Y of the umbrella?',
+    cols: ['Part X', 'Part Y'], correct: 0,
+    correctWhy: 'The canopy must keep the rain out and fold away, so it needs waterproof and flexible: that is D. The frame must hold its shape against the wind and sits in the rain, so it needs strong and waterproof: that is E.',
+    takeaway: 'The same object can need opposite properties in different places. The part that folds must be flexible; the part that holds a shape must be strong.',
+    options: [
+      { n: ['D', 'E'], tag: null, pick: 'Canopy: rain plus folding, so waterproof and flexible. Frame: wind plus rain, so strong and waterproof.', why: 'Both parts get a material with every property on their own job list.' },
+      { n: ['F', 'E'], tag: 'U3', pick: 'F is flexible so the canopy folds, and E is the obvious frame material.', why: 'F is not waterproof. Rain would soak through the canopy, which is the one thing an umbrella must prevent.' },
+      { n: ['E', 'D'], tag: 'U2', pick: 'E is waterproof so the canopy stays dry, and D is left for the frame.', why: 'E is not flexible, so the canopy could not fold up. D is not strong, so the frame would collapse in the wind. Both parts are wrong.' },
+      { n: ['D', 'F'], tag: 'U3', pick: 'D suits the canopy, and F is strong, which the frame needs.', why: 'F is not waterproof, and the frame is out in the rain with the canopy.' }
+    ]
+  },
+  {
+    id: 'q3', title: 'The classroom window',
+    intro: 'A window has a pane (X) and a frame around it (Y). Inspect both, then use the table.',
+    scene: 'window',
+    parts: [
+      { id: 'X', label: 'pane', job: 'It lights the classroom with daylight, keeps the rain outside, and must not break when the wind pushes on it.', needs: ['lets most light through', 'waterproof', 'strong'] },
+      { id: 'Y', label: 'frame', job: 'It holds the pane in place and sits out in the rain. Nobody needs to see through it.', needs: ['strong', 'waterproof'] }
+    ],
+    table: { mats: ['G', 'H', 'J'], props: ['lets most light through', 'waterproof', 'strong'], has: { G: ['lets most light through', 'waterproof', 'strong'], H: ['waterproof', 'strong'], J: ['lets most light through', 'waterproof'] } },
+    hints: ['Only the pane needs light to pass through. The frame does not.', 'The pane also has to survive the wind, so check the strong row as well.'],
+    ask: 'Which materials are most suitable to make parts X and Y of the window?',
+    cols: ['Part X', 'Part Y'], correct: 1,
+    correctWhy: 'The pane needs all three: daylight through it, rain kept out, and strength against the wind. Only G has all three. The frame needs strong and waterproof, which H has. The frame does not need light to pass through it at all.',
+    takeaway: 'A property only counts if that part\'s job needs it. Letting light through matters for the pane and not for the frame.',
+    options: [
+      { n: ['J', 'H'], tag: 'U5', pick: 'J lets most light through, which is what a window is for, and H is a sensible frame.', why: 'J is not strong. The pane is the part the wind pushes on, so it would break.' },
+      { n: ['G', 'H'], tag: null, pick: 'Pane: light, rain and wind, so all three properties, which only G has. Frame: strong and waterproof, which H has.', why: 'Each part gets a material with everything on its job list.' },
+      { n: ['H', 'G'], tag: 'U5', pick: 'H is strong and waterproof, which sounds right for the part that takes the wind.', why: 'H does not let light through, so the classroom would be dark. The pane is the part that must let daylight in.' },
+      { n: ['G', 'J'], tag: 'U5', pick: 'G is right for the pane, and J lets light through, which looks like a bonus for the frame.', why: 'J is not strong, and a frame has to hold the pane in place. Light passing through the frame is of no use to anyone.' }
+    ]
+  },
+  {
+    id: 'q4', title: 'The school bag',
+    intro: 'A school bag has a body (X) and a shoulder strap (Y). Inspect both parts, then use the table.',
+    scene: 'bag',
+    parts: [
+      { id: 'X', label: 'bag body', job: 'It holds heavy books, and it is carried through the rain and set down on wet ground.', needs: ['waterproof', 'strong'] },
+      { id: 'Y', label: 'strap', job: 'It takes the full weight of the books and bends over your shoulder every time you put the bag on.', needs: ['strong', 'flexible'] }
+    ],
+    table: { mats: ['N', 'O', 'P'], props: ['flexible', 'waterproof', 'strong'], has: { N: ['flexible', 'strong'], O: ['waterproof', 'strong'], P: ['flexible', 'waterproof'] } },
+    hints: ['The strap bends over your shoulder and carries the weight. That is two properties.', 'The body meets rain and holds heavy books. Which material is both waterproof and strong?'],
+    ask: 'Which materials are most suitable to make parts X and Y of the bag?',
+    cols: ['Part X', 'Part Y'], correct: 1,
+    correctWhy: 'The body must keep books dry and hold their weight, so waterproof and strong: that is O. The strap must carry the weight and bend over the shoulder, so strong and flexible: that is N.',
+    takeaway: 'Two parts of the same object often need different pairs of properties. Do the job lists separately.',
+    options: [
+      { n: ['N', 'O'], tag: 'U3', pick: 'N is strong so the books are held, and O is strong too, so either way round seems fine.', why: 'N is not waterproof, so rain would soak into the bag. O is not flexible, so the strap could not bend over the shoulder. Both parts are wrong.' },
+      { n: ['O', 'N'], tag: null, pick: 'Body: rain plus heavy books, so waterproof and strong. Strap: weight plus bending, so strong and flexible.', why: 'Each part gets a material with both properties on its job list.' },
+      { n: ['P', 'N'], tag: 'U1', pick: 'P is waterproof, which the bag body needs, and N suits the strap.', why: 'P is not strong. A bag body made from P would tear under a pile of books.' },
+      { n: ['O', 'P'], tag: 'U1', pick: 'O suits the body, and P is flexible, which the strap needs.', why: 'P is not strong, and the strap carries the whole weight of the bag.' }
+    ]
+  },
+  {
+    id: 'q5', title: 'Most ticks is not the answer',
+    intro: 'The same shoe, a new set of materials. Material K has a tick for everything. Inspect both parts again before you choose.',
+    scene: 'shoe',
+    parts: [
+      { id: 'X', label: 'upper', job: 'It folds every time you take a step, rain falls on it, and the laces pull it tight.', needs: ['flexible', 'waterproof', 'strong'] },
+      { id: 'Y', label: 'sole', job: 'It carries your body weight, rubs along the ground, and stands on wet floors.', needs: ['waterproof', 'strong'] }
+    ],
+    table: { mats: ['K', 'L', 'M'], props: ['flexible', 'waterproof', 'strong'], has: { K: ['flexible', 'waterproof', 'strong'], L: ['waterproof', 'strong'], M: ['flexible', 'strong'] } },
+    hints: ['Only one material has all three ticks, and only one part needs all three.', 'The sole needs two properties. Which material has exactly those two?'],
+    ask: 'Which materials are most suitable to make parts X and Y of the shoe?',
+    cols: ['Part X', 'Part Y'], correct: 1,
+    correctWhy: 'The upper is the part that needs all three properties, so K goes there. The sole needs waterproof and strong, which L has. L having fewer ticks than K does not matter, because the sole does not need the property L is missing.',
+    takeaway: 'More ticks does not mean more suitable. A part needs exactly the properties on its own job list, no more.',
+    options: [
+      { n: ['M', 'K'], tag: 'U3', pick: 'M is flexible so the upper folds, and K has every tick so it must be the best material for the hard-working sole.', why: 'M is not waterproof, so rain would soak through the upper.' },
+      { n: ['K', 'L'], tag: null, pick: 'The upper needs all three, so it takes K. The sole needs waterproof and strong, so L fits exactly.', why: 'Both parts get every property on their job list, and K is used where all three ticks are actually needed.' },
+      { n: ['K', 'M'], tag: 'U3', pick: 'K is right for the upper, and M is flexible and strong, which sounds hard-wearing for a sole.', why: 'M is not waterproof, and the sole stands on wet floors.' },
+      { n: ['L', 'K'], tag: 'U2', pick: 'K has every tick, so putting it on the sole where the wear happens seems safest.', why: 'L is not flexible, and the upper has to fold with every step. Giving the all-ticks material to the wrong part leaves the other part failing.' }
+    ]
+  }
+];
+
+PAGE.rules = '<div class="panel"><h2>What to remember</h2>' +
+  '<div class="rulecard"><h3>Work in this order</h3><p>1. What does this part have to do all day? 2. Which properties does that need? 3. Which material in the table has all of them?</p></div>' +
+  '<div class="rulecard"><h3>The three signals</h3><p>It bends, folds or wraps &rarr; <b>flexible</b>. It meets rain, water or wet ground &rarr; <b>waterproof</b>. It takes a load, a weight or a push &rarr; <b>strong</b>.</p></div>' +
+  '<div class="rulecard"><h3>Working the four option pairs</h3><p>Settle the part with the longest job list first. That usually removes two options at once. Then check the second part against the materials that are left.</p></div>' +
+  '<div class="rulecard"><h3>Most ticks is not the answer</h3><p>A material with every tick is only needed where every property is needed. A part never needs a property its job does not use.</p></div>' +
+  '<div class="beyond"><p><span class="tagx">Beyond syllabus</span>Real soles are also chosen for grip and for how slowly they wear away. Those are not properties in this topic, so never use them in a tick-table question &mdash; the answer must come from the table you are given.</p></div></div>';
+
+</script>
+<script id="app">
+/* ---------- SHARED ENGINE ---------- */
+var $ = function (s) { return document.querySelector(s); };
+var main, STORE = 'psle-sci:' + PAGE.id, memStore = null;
+var REDUCE = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+function loadProgress() { try { var s = localStorage.getItem(STORE); if (s) return JSON.parse(s) || {}; } catch (e) {} return memStore || {}; }
+function saveProgress() { try { localStorage.setItem(STORE, JSON.stringify(progress)); } catch (e) { memStore = progress; } }
+function pushMistake(rec) {
+  try {
+    var all = JSON.parse(localStorage.getItem('psle-sci:mistakes') || '[]');
+    all.push(rec); localStorage.setItem('psle-sci:mistakes', JSON.stringify(all.slice(-400)));
+  } catch (e) {}
+}
+var progress = loadProgress(), runs = {}, view = 'questions', cur = 0;
+
+function getProg(id) {
+  if (!progress[id]) progress[id] = { misses: [], solved: false, firstTry: null, hints: 0, recapDue: false, recaps: 0 };
+  if (!progress[id].misses) progress[id].misses = [];
+  return progress[id];
+}
+function getRun(Q) {
+  if (!runs[Q.id]) runs[Q.id] = { choice: null, missed: [], hints: 0, solved: false, lastWrong: null, runMisses: 0, bench: BENCH.initRun(Q) };
+  return runs[Q.id];
+}
+function status(id) {
+  var p = progress[id]; if (!p) return 'new';
+  var m = (p.misses || []).length;
+  if (!p.solved && !m) return 'new';
+  if (p.recapDue) return 'recap';
+  if (p.solved) return m ? 'recapped' : 'first';
+  return 'open';
+}
+var STATUS_TEXT = { new: 'Not started', open: 'In progress', first: 'Right first time', recap: 'Needs recap', recapped: 'Recapped' };
+var ICON = { new: '', open: '\u2022', first: '\u2713', recap: '\u21bb', recapped: '\u2713' };
+var q = function () { return QUESTIONS[cur]; };
+
+function toast(msg) {
+  var t = $('#toast'); t.textContent = msg; t.classList.add('show');
+  clearTimeout(toast.t); toast.t = setTimeout(function () { t.classList.remove('show'); }, 2600);
+}
+
+/* ----- nav ----- */
+function renderNav() {
+  var due = QUESTIONS.filter(function (x) { return status(x.id) === 'recap'; }).length;
+  var tabs = [['questions', 'Questions'], ['mistakes', 'Mistake book'], ['rules', 'What to remember']];
+  $('#tabs').innerHTML = tabs.map(function (t) {
+    return '<button class="tab" role="tab" data-act="tab" data-view="' + t[0] + '" aria-selected="' + (view === t[0]) + '">' +
+      t[1] + (t[0] === 'mistakes' && due ? '<span class="dot" aria-label="' + due + ' to recap">' + due + '</span>' : '') + '</button>';
+  }).join('');
+}
+function render() {
+  renderNav();
+  if (view === 'questions') renderQuestion();
+  else if (view === 'mistakes') renderMistakes();
+  else renderRules();
+}
+
+/* ----- question ----- */
+function renderQuestion() {
+  var Q = q(), run = getRun(Q), p = progress[Q.id];
+  var pills = QUESTIONS.map(function (x, i) {
+    var s = status(x.id);
+    return '<button class="pill ' + s + (i === cur ? ' cur' : '') + '" data-act="goto" data-q="' + i +
+      '" aria-label="Question ' + (i + 1) + ': ' + STATUS_TEXT[s] + '"' + (i === cur ? ' aria-current="true"' : '') +
+      '>' + (i + 1) + '<i aria-hidden="true">' + ICON[s] + '</i></button>';
+  }).join('');
+  var first = QUESTIONS.filter(function (x) { return status(x.id) === 'first'; }).length;
+  var banner = (p && p.recapDue && !run.solved)
+    ? '<p class="banner">Recap run. You missed this one before &mdash; work the bench again and answer it cleanly to clear it.</p>'
+    : ((p && p.solved && !run.solved) ? '<p class="banner">You solved this before. Run it again any time.</p>' : '');
+  main.innerHTML =
+    '<div class="stepper" role="group" aria-label="Questions">' + pills + '</div>' +
+    '<p class="legend">' + first + ' of ' + QUESTIONS.length + ' right first time. Green ring: right first time. Amber ring: needs recap.</p>' +
+    '<section class="q"><h2>Question ' + (cur + 1) + ': ' + Q.title + '</h2>' +
+    '<p class="intro">' + Q.intro + '</p>' + banner +
+    '<div class="cols"><div class="lab"><h3>' + (BENCH.labLabel || 'Test bench') + '</h3>' +
+    '<div class="stage" id="stage"></div><p class="stage-msg" id="stageMsg"></p>' +
+    '<div class="shelf" id="shelf"></div><p class="note" id="selMsg"></p><div class="chips" id="chips"></div></div>' +
+    '<div class="side"><div class="box"><h3>' + (BENCH.logLabel || 'Observation log') + '</h3><div id="log"></div></div>' +
+    '<div class="box hints"><h3>Hints</h3><div id="hints"></div></div></div></div>' +
+    '<div id="answer"></div><div id="feedback" aria-live="polite"></div></section>';
+  paintBench(); renderHints(); renderAnswer(); renderFeedback();
+}
+function paintBench() {
+  var Q = q(), run = getRun(Q), st = BENCH.stage(Q, run);
+  $('#stage').innerHTML = st.svg;
+  $('#stageMsg').innerHTML = st.msg || '';
+  $('#shelf').innerHTML = BENCH.shelf(Q, run);
+  $('#selMsg').innerHTML = BENCH.prompt ? BENCH.prompt(Q, run) : '';
+  $('#chips').innerHTML = BENCH.chips ? BENCH.chips(Q, run) : '';
+  $('#log').innerHTML = BENCH.log(Q, run);
+}
+function renderHints() {
+  var Q = q(), run = getRun(Q), shown = Q.hints.slice(0, run.hints);
+  $('#hints').innerHTML =
+    (shown.length ? '<ol>' + shown.map(function (h) { return '<li>' + h + '</li>'; }).join('') + '</ol>' : '') +
+    (run.hints < Q.hints.length ? '<button class="btn small" data-act="hint">Show hint ' + (run.hints + 1) + ' of ' + Q.hints.length + '</button>' : '<p class="empty">No more hints.</p>');
+}
+
+/* ----- answer table ----- */
+function renderAnswer() {
+  var Q = q(), run = getRun(Q), open = BENCH.done(Q, run);
+  var multi = Q.cols && Q.cols.length > 1;
+  var head = multi ? '<tr><th><span class="vh">Option</span></th>' + Q.cols.map(function (c) { return '<th scope="col">' + c + '</th>'; }).join('') + '</tr>' : '';
+  var rows = Q.options.map(function (o, i) {
+    var missed = run.missed.indexOf(i) >= 0, dis = !open || run.solved || missed, cls = ['opt'];
+    if (dis) cls.push('locked');
+    if (missed) cls.push('missed');
+    if (run.solved && i === Q.correct) cls.push('right');
+    else if (run.choice === i && !run.solved) cls.push('sel');
+    var checked = (run.choice === i || (run.solved && i === Q.correct)) ? ' checked' : '';
+    return '<tr class="' + cls.join(' ') + '" data-i="' + i + '"><td class="n">' +
+      '<input type="radio" name="opt" id="o' + i + '" value="' + i + '"' + checked + (dis ? ' disabled' : '') + '>' +
+      '<label for="o' + i + '">(' + (i + 1) + ')</label>' + (missed ? '<small>not this one</small>' : '') + '</td>' +
+      o.n.map(function (x) { return '<td>' + x + '</td>'; }).join('') + '</tr>';
+  }).join('');
+  $('#answer').innerHTML = '<fieldset class="answer"><legend>' + Q.ask + '</legend>' +
+    '<div class="scroll"><table class="exam">' + (head ? '<thead>' + head + '</thead>' : '') + '<tbody>' + rows + '</tbody></table></div>' +
+    (open ? '' : '<p class="lock">Work the bench to unlock the options. Still to do: ' + BENCH.todo(Q, run) + '.</p>') +
+    '<div class="actions"><button class="btn primary" data-act="check" id="btnCheck"' +
+    ((run.choice == null || !open || run.solved) ? ' disabled' : '') + '>Check answer</button></div></fieldset>';
+}
+function selectOption(i) {
+  var Q = q(), run = getRun(Q);
+  if (!BENCH.done(Q, run) || run.solved || run.missed.indexOf(i) >= 0) return;
+  run.choice = i;
+  [].forEach.call(document.querySelectorAll('#answer tr.opt'), function (tr) {
+    var k = +tr.dataset.i; tr.classList.toggle('sel', k === i);
+    var r = tr.querySelector('input'); if (r) r.checked = (k === i);
+  });
+  var b = $('#btnCheck'); if (b) b.disabled = false;
+}
+function checkAnswer() {
+  var Q = q(), run = getRun(Q), p = getProg(Q.id);
+  if (run.choice == null) return;
+  var opt = Q.options[run.choice];
+  if (run.choice === Q.correct) {
+    run.solved = true; run.lastWrong = null; p.solved = true;
+    if (p.firstTry === null) p.firstTry = (run.runMisses === 0);
+    if (run.runMisses > 0) p.recapDue = true;
+    else if (p.recapDue) { p.recapDue = false; p.recaps = (p.recaps || 0) + 1; toast('Recap cleared for this question.'); }
+  } else {
+    run.missed.push(run.choice); run.runMisses++; run.lastWrong = run.choice;
+    p.misses.push({ choice: run.choice, tag: opt.tag, ts: Date.now() });
+    p.recapDue = true;
+    pushMistake({ page: PAGE.id, title: PAGE.title, topic: PAGE.topic, level: PAGE.level, lo: PAGE.lo,
+      qid: Q.id, stem: Q.title, chose: opt.n.join(' / '), correct: Q.options[Q.correct].n.join(' / '),
+      tag: opt.tag ? (TAGS[opt.tag] || {}).label : null, at: new Date().toISOString() });
+    run.choice = null;
+  }
+  saveProgress();
+  renderNav(); paintBench(); renderAnswer(); renderFeedback();
+  var fb = $('#feedback'); if (fb && fb.scrollIntoView) fb.scrollIntoView({ behavior: REDUCE ? 'auto' : 'smooth', block: 'nearest' });
+  [].forEach.call(document.querySelectorAll('.pill'), function (el, i) {
+    var s = status(QUESTIONS[i].id); el.className = 'pill ' + s + (i === cur ? ' cur' : '');
+    var ic = el.querySelector('i'); if (ic) ic.textContent = ICON[s];
+  });
+}
+function optCard(Q, i, run) {
+  var o = Q.options[i], right = i === Q.correct, cl = right ? [] : BENCH.clashes(Q, i, run);
+  var chosen = run.missed.indexOf(i) >= 0 || (right && run.solved);
+  var chips = (Q.cols && Q.cols.length > 1)
+    ? o.n.map(function (n, k) { return '<span class="tagchip">' + Q.cols[k] + ': ' + n + '</span>'; }).join('')
+    : '<span class="tagchip">' + o.n[0] + '</span>';
+  return '<div class="optcard' + (right ? ' right' : '') + '"><div class="who"><b>Option (' + (i + 1) + ')</b>' + chips +
+    (chosen ? '<span class="you">you chose this</span>' : '') + '</div>' +
+    '<p><span class="lbl">' + (right ? 'How to reach it. ' : 'Why someone would choose it. ') + '</span>' + o.pick + '</p>' +
+    '<p><span class="lbl">' + (right ? 'Why it is correct. ' : 'Why it is not correct. ') + '</span>' + o.why + '</p>' +
+    (cl.length ? '<ul class="clash">' + cl.map(function (c) { return '<li>' + c + '</li>'; }).join('') + '</ul>' : '') + '</div>';
+}
+function renderFeedback() {
+  var Q = q(), run = getRun(Q), box = $('#feedback');
+  if (!box) return;
+  if (run.solved) {
+    var need = run.runMisses > 0;
+    box.innerHTML = '<div class="fb good"><h3>&#10003; Correct: option (' + (Q.correct + 1) + ')</h3>' +
+      '<p>' + Q.correctWhy + '</p><p class="key"><b>Key idea.</b> ' + Q.takeaway + '</p>' +
+      '<h4>Every option, and why it works or does not</h4>' +
+      Q.options.map(function (_, i) { return optCard(Q, i, run); }).join('') +
+      (need ? '<p class="note">You missed ' + run.runMisses + ' time' + (run.runMisses > 1 ? 's' : '') + ' on the way, so this question is in your mistake book. Redo it later to clear it.</p>' : '') +
+      '<div class="actions">' + (cur < QUESTIONS.length - 1 ? '<button class="btn primary" data-act="next">Next question</button>' : '') +
+      '<button class="btn" data-act="redo" data-q="' + cur + '">Redo this question</button>' +
+      (need ? '<button class="btn" data-act="tab" data-view="mistakes">Open mistake book</button>' : '') + '</div></div>';
+  } else if (run.lastWrong != null) {
+    var i2 = run.lastWrong, o = Q.options[i2], cl = BENCH.clashes(Q, i2, run), left = Q.options.length - run.missed.length;
+    box.innerHTML = '<div class="fb bad"><h3>&#10007; Not option (' + (i2 + 1) + ')</h3>' +
+      '<p><b>Why it looks right.</b> ' + o.pick + '</p><p><b>Why it is not correct.</b> ' + o.why + '</p>' +
+      (cl.length ? '<p><b>Check it against your log.</b></p><ul class="clash">' + cl.map(function (c) { return '<li>' + c + '</li>'; }).join('') + '</ul>' : '') +
+      '<p>' + (left > 1 ? 'Pick another option. ' + left + ' left.' : 'One option left.') + '</p></div>';
+  } else box.innerHTML = '';
+}
+
+/* ----- mistake book ----- */
+function renderMistakes() {
+  var all = [];
+  QUESTIONS.forEach(function (Q, qi) {
+    ((progress[Q.id] && progress[Q.id].misses) || []).forEach(function (m) { all.push({ choice: m.choice, tag: m.tag, qi: qi, Q: Q }); });
+  });
+  var due = QUESTIONS.map(function (Q, i) { return { Q: Q, i: i }; }).filter(function (x) { return status(x.Q.id) === 'recap'; });
+  var first = QUESTIONS.filter(function (x) { return status(x.id) === 'first'; }).length;
+  var hints = QUESTIONS.reduce(function (s, x) { return s + ((progress[x.id] && progress[x.id].hints) || 0); }, 0);
+  var groups = {};
+  all.forEach(function (m) { var k = m.tag || 'other'; (groups[k] = groups[k] || []).push(m); });
+  var keys = Object.keys(groups).sort(function (a, b) { return groups[b].length - groups[a].length; });
+  var body = keys.length ? keys.map(function (k) {
+    var t = TAGS[k] || { label: 'Other slip', fix: '' };
+    return '<div class="mist"><h3>' + t.label + ' (' + groups[k].length + ' time' + (groups[k].length > 1 ? 's' : '') + ')</h3>' +
+      '<p class="fix">' + t.fix + '</p><ul>' + groups[k].map(function (m) {
+        return '<li>Question ' + (m.qi + 1) + ', option (' + (m.choice + 1) + '): ' + m.Q.options[m.choice].n.join(' / ') +
+          '. <button class="btn small" data-act="redo" data-q="' + m.qi + '">Redo</button></li>';
+      }).join('') + '</ul></div>';
+  }).join('') : '<p class="empty">No mistakes logged yet. Wrong choices appear here, grouped by the idea behind them.</p>';
+  main.innerHTML = '<div class="panel"><h2>Mistake book</h2>' +
+    '<div class="stats"><div class="stat"><b>' + first + '</b>right first time</div>' +
+    '<div class="stat"><b>' + all.length + '</b>wrong choices</div>' +
+    '<div class="stat"><b>' + due.length + '</b>to recap</div>' +
+    '<div class="stat"><b>' + hints + '</b>hints used</div></div>' +
+    (due.length ? '<p>To recap: ' + due.map(function (x) { return 'Question ' + (x.i + 1); }).join(', ') + '.</p>' +
+      '<div class="actions"><button class="btn primary" data-act="redo" data-q="' + due[0].i + '">Recap Question ' + (due[0].i + 1) + '</button></div>'
+      : '<p class="empty">Nothing waiting for recap.</p>') + '</div>' +
+    '<div class="panel"><h2>Ideas to review</h2>' + body + '</div>';
+}
+function renderRules() { main.innerHTML = PAGE.rules; }
+
+/* ----- events ----- */
+document.addEventListener('click', function (e) {
+  var el = e.target.closest('[data-act]'); 
+  if (el) {
+    var a = el.dataset.act;
+    if (a === 'tab') { view = el.dataset.view; render(); window.scrollTo(0, 0); return; }
+    if (a === 'goto') { cur = +el.dataset.q; view = 'questions'; render(); window.scrollTo(0, 0); return; }
+    if (a === 'redo') { cur = +el.dataset.q; delete runs[QUESTIONS[cur].id]; view = 'questions'; render(); window.scrollTo(0, 0); return; }
+    if (a === 'next') { if (cur < QUESTIONS.length - 1) cur++; render(); window.scrollTo(0, 0); return; }
+    if (a === 'hint') {
+      var Qh = q(), rh = getRun(Qh), ph = getProg(Qh.id);
+      if (rh.hints < Qh.hints.length) { rh.hints++; ph.hints = (ph.hints || 0) + 1; saveProgress(); renderHints(); }
+      return;
+    }
+    if (a === 'check') { checkAnswer(); return; }
+    if (a === 'theme') {
+      document.documentElement.setAttribute('data-theme', el.dataset.theme);
+      try { localStorage.setItem('psle-sci:theme', JSON.stringify(el.dataset.theme)); } catch (err) {}
+      paintTheme(); return;
+    }
+    var Qb = q(), rb = getRun(Qb);
+    if (BENCH.handle && BENCH.handle(a, el, Qb, rb)) { paintBench(); renderAnswer(); return; }
+  }
+  var row = e.target.closest('tr.opt');
+  if (row && !row.classList.contains('locked')) selectOption(+row.dataset.i);
+});
+
+function paintTheme() {
+  var cu = document.documentElement.getAttribute('data-theme');
+  [].forEach.call(document.querySelectorAll('[data-act="theme"]'), function (b) {
+    b.setAttribute('aria-pressed', String(b.dataset.theme === cu));
+  });
+}
+(function () {
+  var t = 'notebook';
+  try { var s = localStorage.getItem('psle-sci:theme'); if (s) t = JSON.parse(s); } catch (e) {}
+  if (['notebook', 'lab', 'mission'].indexOf(t) < 0) t = 'notebook';
+  document.documentElement.setAttribute('data-theme', t);
+})();
+
+function boot() {
+  main = $('#main');
+  $('#btnExport').addEventListener('click', function () {
+    var blob = new Blob([JSON.stringify({ app: 'psle-science', page: PAGE.id, exportedAt: new Date().toISOString(), progress: progress }, null, 2)], { type: 'application/json' });
+    var a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = PAGE.id + '-progress.json'; a.click();
+    setTimeout(function () { URL.revokeObjectURL(a.href); }, 1000); toast('Progress exported.');
+  });
+  $('#btnImport').addEventListener('click', function () { $('#fileImport').click(); });
+  $('#fileImport').addEventListener('change', function (e) {
+    var f = e.target.files[0]; if (!f) return;
+    var r = new FileReader();
+    r.onload = function () {
+      try {
+        var d = JSON.parse(r.result);
+        if (d.app !== 'psle-science' || d.page !== PAGE.id || typeof d.progress !== 'object' || !d.progress) throw 0;
+        progress = d.progress; runs = {}; saveProgress(); toast('Progress imported.'); render();
+      } catch (err) { toast('That file is not a progress export from this page.'); }
+    };
+    r.readAsText(f); e.target.value = '';
+  });
+  $('#btnReset').addEventListener('click', function () {
+    if (confirm('Clear the progress and mistake book for this page in this browser?')) {
+      progress = {}; runs = {}; saveProgress(); cur = 0; view = 'questions'; render(); toast('Progress cleared.');
+    }
+  });
+  $('#brandTitle').textContent = PAGE.title;
+  $('#brandMeta').innerHTML = PAGE.meta;
+  $('#brandSub').textContent = PAGE.sub;
+  var links = '';
+  if (PAGE.prev) links += '<a href="' + PAGE.prev.href + '">&#8592; ' + PAGE.prev.label + '</a>';
+  if (PAGE.prev && PAGE.next) links += ' &nbsp;&middot;&nbsp; ';
+  if (PAGE.next) links += '<a href="' + PAGE.next.href + '">' + PAGE.next.label + ' &#8594;</a>';
+  $('#foot').innerHTML = '<p><b>Learning outcome.</b> ' + PAGE.lo + '. Question 1 follows the school paper; the rest are variants on the same idea.</p>' +
+    '<p>Progress is saved in this browser only. Use Export to keep a copy.</p>' + (links ? '<p>' + links + '</p>' : '');
+  paintTheme(); render();
+}
+document.addEventListener('DOMContentLoaded', boot);
+
+</script>
+</body>
+</html>

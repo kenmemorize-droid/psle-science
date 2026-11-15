@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="notebook">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Strong is not the same as flexible — P3 Diversity of Materials</title>
+<style>
+:root[data-theme="notebook"]{
+  --bg:#F1E9DA; --paper:#FBF7EF; --card:#FFFDF8; --sunk:#F3EBDC; --topbar:#1F2A37; --topink:#F6EFE2; --topmute:#C9BFAC;
+  --ink:#1F2A37; --muted:#5C6773;
+  --primary:#0F766E; --primary-soft:#D9EDEA; --primary-ink:#FFFFFF;
+  --accent:#9A6400; --accent-soft:#FBEBCC;
+  --ok:#15803D; --ok-soft:#DBF0E2; --no:#B42318; --no-soft:#FAE3E0;
+  --line:#D9CFBC; --stroke:#1F2A37; --fa:#D9EDEA; --fb:#FBEBCC; --fc:#E7E0D1;
+  --radius:14px; --bw:2px;
+  --f-display:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,"Times New Roman",serif;
+  --f-body:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  --f-label:var(--f-body); --ls:.01em;
+}
+:root[data-theme="lab"]{
+  --bg:#F4F6FA; --paper:#FFFFFF; --card:#FFFFFF; --sunk:#F1F5F9; --topbar:#0F172A; --topink:#F8FAFC; --topmute:#94A3B8;
+  --ink:#0F172A; --muted:#64748B;
+  --primary:#2563EB; --primary-soft:#DBEAFE; --primary-ink:#FFFFFF;
+  --accent:#B45309; --accent-soft:#FEF3C7;
+  --ok:#16A34A; --ok-soft:#DCFCE7; --no:#DC2626; --no-soft:#FEE2E2;
+  --line:#CBD5E1; --stroke:#0F172A; --fa:#DBEAFE; --fb:#FEF3C7; --fc:#E2E8F0;
+  --radius:8px; --bw:1px;
+  --f-display:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  --f-body:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  --f-label:var(--f-body); --ls:.01em;
+}
+:root[data-theme="mission"]{
+  --bg:#070C16; --paper:#0B1220; --card:#111B2E; --sunk:#0A1120; --topbar:#060B14; --topink:#E2E8F0; --topmute:#94A3B8;
+  --ink:#E2E8F0; --muted:#94A3B8;
+  --primary:#22D3EE; --primary-soft:#0E3A47; --primary-ink:#06212B;
+  --accent:#F472B6; --accent-soft:#3B1130;
+  --ok:#34D399; --ok-soft:#0C3A2E; --no:#FB7185; --no-soft:#3B1220;
+  --line:#24334B; --stroke:#E2E8F0; --fa:#0E3A47; --fb:#3B1130; --fc:#1B2740;
+  --radius:10px; --bw:1px;
+  --f-display:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  --f-body:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  --f-label:ui-monospace,SFMono-Regular,Menlo,Consolas,"Courier New",monospace; --ls:.06em;
+}
+
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.55 var(--f-body)}
+h1,h2,h3,h4{font-family:var(--f-display);line-height:1.24;margin:0}
+p{margin:0 0 .6em} p:last-child{margin-bottom:0}
+button{font:inherit;color:inherit;cursor:pointer}
+:focus-visible{outline:3px solid var(--accent);outline-offset:2px;border-radius:4px}
+.vh{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.wrap{max-width:1040px;margin:0 auto;padding:0 14px}
+
+/* header */
+.top{background:var(--topbar);color:var(--topink);padding:12px 0 0}
+.top .wrap{display:flex;flex-wrap:wrap;gap:8px 20px;align-items:flex-end;justify-content:space-between}
+.brand h1{font-size:25px}
+.brand .meta{margin:3px 0 10px;color:var(--topmute);font-size:13.5px;font-family:var(--f-label);letter-spacing:var(--ls)}
+.tools{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:8px;justify-content:flex-end}
+.tools button,.tools a{background:transparent;border:1px solid var(--topmute);color:var(--topink);border-radius:6px;
+  padding:7px 11px;font-size:13px;min-height:38px;display:inline-flex;align-items:center;text-decoration:none}
+.tools button[aria-pressed="true"]{background:var(--primary);border-color:var(--primary);color:var(--primary-ink)}
+.tabs{display:flex;gap:4px;flex-wrap:wrap}
+.tab{background:transparent;border:0;color:var(--topmute);padding:11px 14px;border-radius:8px 8px 0 0;font-size:15px;min-height:44px}
+.tab[aria-selected="true"]{background:var(--bg);color:var(--ink);font-weight:700}
+.tab .dot{display:inline-block;min-width:20px;padding:0 6px;margin-left:6px;border-radius:10px;background:var(--accent-soft);
+  color:var(--accent);font-size:12px;font-weight:700;line-height:20px;text-align:center}
+
+main{padding:16px 0 28px}
+footer{padding:0 0 32px;color:var(--muted);font-size:13.5px}
+footer a{color:var(--muted)}
+
+/* stepper */
+.stepper{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:6px}
+.pill{position:relative;width:46px;height:46px;border-radius:50%;border:2px solid var(--line);background:var(--card);
+  color:var(--ink);font-weight:700;font-size:17px}
+.pill i{position:absolute;right:-4px;top:-5px;width:20px;height:20px;border-radius:50%;font-style:normal;font-size:12px;
+  line-height:20px;text-align:center;color:#fff}
+.pill.cur{box-shadow:0 0 0 3px var(--primary-soft);border-color:var(--primary)}
+.pill.first,.pill.recapped{border-color:var(--ok)} .pill.first i,.pill.recapped i{background:var(--ok)}
+.pill.recap{border-color:var(--accent);background:var(--accent-soft)} .pill.recap i{background:var(--accent)}
+.pill.open{border-color:var(--primary)} .pill.open i{background:var(--primary)}
+.legend{font-size:13px;color:var(--muted);margin:6px 0 14px}
+
+/* question */
+.q{background:var(--card);border:var(--bw) solid var(--line);border-radius:var(--radius);padding:18px}
+.q h2{font-size:21px;margin-bottom:6px}
+.q h3{font-size:14px;font-family:var(--f-label);letter-spacing:var(--ls);color:var(--muted);margin:0 0 8px;font-weight:600}
+.intro{font-size:16.5px}
+.banner{border-left:4px solid var(--accent);background:var(--accent-soft);padding:9px 12px;border-radius:0 var(--radius) var(--radius) 0;font-size:15px}
+.cols{display:grid;grid-template-columns:1fr;gap:16px;margin-top:14px}
+@media(min-width:800px){.cols{grid-template-columns:1.3fr .8fr}}
+.stage{background:var(--sunk);border:var(--bw) solid var(--line);border-radius:var(--radius);padding:10px}
+.stage svg{display:block;width:100%;height:auto}
+.stage-msg{font-size:15px;margin:10px 0 0;min-height:44px}
+.shelf{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.tile{display:flex;flex-direction:column;align-items:center;gap:4px;min-width:84px;min-height:70px;padding:8px 10px;
+  border:var(--bw) solid var(--line);border-radius:var(--radius);background:var(--card);color:var(--ink);font-size:14px}
+.tile[aria-pressed="true"]{border-color:var(--primary);background:var(--primary-soft)}
+.tile b{font-size:16px}
+.tile small{color:var(--muted);font-size:12px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+.btn{min-height:44px;padding:10px 15px;border:var(--bw) solid var(--line);border-radius:var(--radius);background:var(--card);color:var(--ink);font-size:15px}
+.btn.primary{background:var(--primary);border-color:var(--primary);color:var(--primary-ink)}
+.btn.small{min-height:38px;padding:6px 11px;font-size:13.5px}
+.btn:disabled{opacity:.45;cursor:default}
+.btn[aria-pressed="true"]{background:var(--primary);border-color:var(--primary);color:var(--primary-ink)}
+.note{font-size:13.5px;color:var(--muted);margin:10px 0 0}
+
+/* log + hints */
+.side .box{background:var(--sunk);border:var(--bw) solid var(--line);border-radius:var(--radius);padding:12px;margin-bottom:12px}
+.logrow{display:flex;gap:8px;align-items:flex-start;padding:7px 0;border-bottom:1px solid var(--line);font-size:14.5px}
+.logrow:last-child{border-bottom:0}
+.logrow b{min-width:4.6em}
+.logrow.bad{color:var(--no)} .logrow.good{color:var(--ok)}
+.empty{color:var(--muted);font-size:14px}
+.hints ol{margin:0 0 8px;padding-left:20px;font-size:14.5px}
+
+/* answer */
+.answer{border:0;padding:0;margin:18px 0 0}
+.answer legend{font-size:16.5px;font-weight:700;padding:0;margin-bottom:10px}
+.scroll{overflow-x:auto}
+table.exam{width:100%;border-collapse:collapse;font-size:15.5px}
+table.exam th,table.exam td{border:var(--bw) solid var(--line);padding:9px 10px;text-align:center}
+table.exam th{background:var(--sunk);font-family:var(--f-label);letter-spacing:var(--ls);font-size:13.5px}
+tr.opt{cursor:pointer}
+tr.opt td.n{white-space:nowrap}
+tr.opt td.n label{padding-left:4px;font-weight:700}
+tr.opt.sel td{background:var(--primary-soft)}
+tr.opt.right td{background:var(--ok-soft)}
+tr.opt.missed td{background:var(--no-soft);opacity:.72}
+tr.opt.missed td.n small{display:block;font-size:11.5px;color:var(--no)}
+tr.opt.locked{cursor:default}
+.lock{font-size:14px;color:var(--muted);margin-top:8px}
+.actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+
+/* feedback */
+.fb{margin-top:16px;border:var(--bw) solid var(--line);border-radius:var(--radius);padding:14px}
+.fb.good{border-color:var(--ok);background:var(--ok-soft)}
+.fb.bad{border-color:var(--no);background:var(--no-soft)}
+.fb h3{font-size:18px;margin-bottom:6px;color:inherit;font-family:var(--f-display);letter-spacing:0}
+.fb h4{font-size:15px;margin:14px 0 8px}
+.fb .key{border-left:4px solid var(--primary);background:var(--card);padding:9px 12px;border-radius:0 var(--radius) var(--radius) 0}
+.optcard{background:var(--card);border:var(--bw) solid var(--line);border-radius:var(--radius);padding:11px;margin-bottom:8px;font-size:15px}
+.optcard.right{border-color:var(--ok)}
+.who{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin-bottom:6px}
+.tagchip{background:var(--sunk);border:1px solid var(--line);border-radius:999px;padding:2px 9px;font-size:12.5px}
+.you{background:var(--accent-soft);color:var(--accent);border-radius:999px;padding:2px 9px;font-size:12.5px;font-weight:700}
+.lbl{font-family:var(--f-label);letter-spacing:var(--ls);font-weight:700;font-size:13.5px}
+.clash{margin:6px 0 0;padding-left:20px;font-size:14.5px}
+
+/* panels */
+.panel{background:var(--card);border:var(--bw) solid var(--line);border-radius:var(--radius);padding:16px;margin-bottom:14px}
+.panel h2{font-size:20px;margin-bottom:10px}
+.stats{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:12px}
+.stat{flex:1 1 120px;background:var(--sunk);border:var(--bw) solid var(--line);border-radius:var(--radius);padding:10px;font-size:13px;color:var(--muted)}
+.stat b{display:block;font-size:22px;color:var(--ink);font-family:var(--f-display)}
+.mist{border-top:var(--bw) solid var(--line);padding-top:10px;margin-top:10px}
+.mist:first-of-type{border-top:0;margin-top:0;padding-top:0}
+.mist h3{font-size:16px}
+.mist .fix{font-size:14.5px;color:var(--muted)}
+.mist ul{margin:6px 0 0;padding-left:20px;font-size:14.5px}
+.rulecard{border:var(--bw) solid var(--line);border-radius:var(--radius);padding:12px;margin-bottom:10px}
+.rulecard h3{font-size:16px;margin-bottom:4px}
+.beyond{border:var(--bw) dashed var(--accent);border-radius:var(--radius);padding:12px}
+.beyond .tagx{display:inline-block;font-family:var(--f-label);letter-spacing:var(--ls);font-size:12px;color:var(--accent);
+  background:var(--accent-soft);border:1px solid var(--accent);border-radius:999px;padding:2px 9px;margin-right:8px}
+
+.toast{position:fixed;left:50%;bottom:18px;transform:translateX(-50%);background:var(--topbar);color:var(--topink);
+  padding:9px 16px;border-radius:8px;font-size:14px;opacity:0;pointer-events:none;transition:opacity .25s;z-index:20}
+.toast.show{opacity:1}
+
+/* svg language */
+.ln{fill:none;stroke:var(--stroke);stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.sl{fill:var(--fc);stroke:var(--stroke);stroke-width:2;stroke-linejoin:round}
+.lbl{fill:var(--ink);font-family:var(--f-label);font-size:13px;letter-spacing:var(--ls)}
+.lbl.sm{font-size:11.5px;fill:var(--muted)}
+.fa{fill:var(--fa)} .fb2{fill:var(--fb)} .fc2{fill:var(--fc)}
+.mv{transition:transform .6s ease,opacity .4s ease}
+@media(prefers-reduced-motion:reduce){.mv,.toast{transition:none!important}}
+@media(max-width:560px){body{font-size:16px} .q{padding:13px} .brand h1{font-size:21px}}
+.hot{stroke:var(--primary)!important;stroke-width:3.5!important}
+.bar{fill:var(--fa);stroke:var(--stroke);stroke-width:2}
+.bar.hi{fill:var(--fb)}
+.needrow{display:flex;gap:8px;align-items:center;padding:6px 0;font-size:14.5px}
+.needrow .m{font-weight:700;min-width:5.6em}
+.needrow.met{color:var(--ok)} .needrow.fail{color:var(--no)}
+table.tick{width:100%;border-collapse:collapse;font-size:15px;margin:10px 0 0}
+table.tick th,table.tick td{border:var(--bw) solid var(--line);padding:7px 8px;text-align:center}
+table.tick th{background:var(--sunk);font-family:var(--f-label);font-size:13px;letter-spacing:var(--ls)}
+table.tick td.rowname{text-align:left;font-weight:700}
+
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <div class="brand">
+      <h1 id="brandTitle"></h1>
+      <p class="meta"><span id="brandMeta"></span> &mdash; <span id="brandSub"></span></p>
+    </div>
+    <div>
+      <div class="tools">
+        <a href="../index.html">&#8592; Hub</a>
+        <button type="button" data-act="theme" data-theme="notebook">Notebook</button>
+        <button type="button" data-act="theme" data-theme="lab">Lab</button>
+        <button type="button" data-act="theme" data-theme="mission">Mission</button>
+        <button type="button" id="btnExport">Export</button>
+        <button type="button" id="btnImport">Import</button>
+        <button type="button" id="btnReset">Reset</button>
+        <input type="file" id="fileImport" accept="application/json,.json" hidden>
+      </div>
+      <nav class="tabs" role="tablist" aria-label="Sections" id="tabs"></nav>
+    </div>
+  </div>
+</header>
+<div class="wrap">
+  <main id="main"></main>
+  <footer id="foot"></footer>
+</div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script id="data">
+/* ===== PAGE 1: strong vs flexible, and the five property tests ===== */
+var PAGE = {
+  id: 'P3-materials-strong-vs-flexible',
+  title: 'Strong is not the same as flexible',
+  topic: 'Diversity of Materials',
+  level: 'P3 Standard',
+  meta: 'Diversity &middot; Diversity of Materials &middot; P3 Standard',
+  lo: 'Compare physical properties of materials; relate the use of materials to their physical properties',
+  sub: 'Run the test on the bench, read your own result, then answer.',
+  prev: null,
+  next: { href: 'P3-materials-match-part-to-property.html', label: 'Matching a part to the properties it needs' },
+  rules: ''
+};
+
+var TAGS = {
+  T1: { label: 'Uses "strong" to explain a bending job', fix: 'Strong means it does not break when a load pulls on it. Flexible means it can be bent into a new shape without breaking. A tile is strong and still snaps when bent.' },
+  T2: { label: 'Picks a property the situation never tests', fix: 'Match the property to what is actually being done to the material. No water in the question means waterproof is not the answer; no light means transparency is not the answer.' },
+  T3: { label: 'Treats one property as proof of another', fix: 'The five properties are independent. Passing the bend test tells you nothing about the load test, and floating tells you nothing about soaking up water.' },
+  T4: { label: 'Checks only one of the properties the job needs', fix: 'List every property the job needs first, then check the material against the whole list. One match is not enough.' },
+  T5: { label: 'Leaves out a variable that must be kept the same', fix: 'In a fair test only the type of material changes. Size, thickness and how far each strip is bent must be kept the same, or you cannot tell what caused the difference.' }
+};
+
+/* ---- bench vocabulary ---- */
+var TESTS = {
+  strong: { name: 'load test', pass: 'held the load without breaking', fail: 'broke under the load', pw: 'strong', fw: 'not strong' },
+  flex:   { name: 'bend test', pass: 'bent into a new shape without breaking', fail: 'snapped as soon as it was bent', pw: 'flexible', fw: 'not flexible' },
+  water:  { name: 'water test', pass: 'water stayed on top, mass did not change', fail: 'soaked up water, mass went up', pw: 'waterproof', fw: 'not waterproof' },
+  float:  { name: 'float test', pass: 'stayed near the surface', fail: 'sank to the bottom', pw: 'floats', fw: 'sinks' },
+  light:  { name: 'light test', most: 'let most light through', some: 'let some light through', none: 'let no light through' }
+};
+function resultOf(spec, test) {
+  if (test === 'light') return { ok: spec.props.light === 'most', word: TESTS.light[spec.props.light], state: spec.props.light };
+  var p = !!spec.props[test];
+  return { ok: p, word: p ? TESTS[test].pass : TESTS[test].fail, state: p ? 'pass' : 'fail' };
+}
+
+/* ---- stage drawings ---- */
+function svgWrap(inner) { return '<svg viewBox="0 0 520 220" role="img" aria-label="Property test bench">' + inner + '</svg>'; }
+function drawIdle() {
+  return svgWrap('<rect class="sl" x="190" y="90" width="140" height="44" rx="5"/>' +
+    '<text class="lbl" x="260" y="118" text-anchor="middle">specimen</text>' +
+    '<text class="lbl sm" x="260" y="170" text-anchor="middle">Pick a material, then pick a test.</text>');
+}
+function drawStage(spec, test, r) {
+  var name = spec.id;
+  var cap = '<text class="lbl" x="260" y="16" text-anchor="middle">' + spec.name + ' (' + name + ') &mdash; ' + TESTS[test === 'light' ? 'light' : test].name + '</text>';
+  if (test === 'strong') {
+    return svgWrap(cap +
+      '<rect class="sl" x="34" y="100" width="34" height="86" rx="4"/><rect class="sl" x="452" y="100" width="34" height="86" rx="4"/>' +
+      (r.ok
+        ? '<path class="ln" d="M60 110 Q260 132 460 110"/><line class="ln" x1="260" y1="128" x2="260" y2="150"/>' +
+          '<rect class="sl fb2" x="226" y="150" width="68" height="40" rx="5"/><text class="lbl" x="260" y="175" text-anchor="middle">load</text>'
+        : '<path class="ln" d="M60 110 L236 150"/><path class="ln" d="M286 152 L460 110"/>' +
+          '<rect class="sl fb2" x="226" y="162" width="68" height="40" rx="5"/><text class="lbl" x="260" y="187" text-anchor="middle">load</text>' +
+          '<path class="ln" d="M250 120 l10 -14 M268 122 l8 -16"/>'));
+  }
+  if (test === 'flex') {
+    return svgWrap(cap +
+      (r.ok
+        ? '<path class="ln" d="M80 170 Q260 40 440 170"/><path class="ln" d="M80 170 l-16 -8 M80 170 l-8 -16"/><path class="ln" d="M440 170 l16 -8 M440 170 l8 -16"/>' +
+          '<text class="lbl sm" x="260" y="200" text-anchor="middle">bent right over, still in one piece</text>'
+        : '<path class="ln" d="M80 170 L238 108"/><path class="ln" d="M284 108 L440 170"/>' +
+          '<path class="ln" d="M246 96 l-6 -16 M262 94 l2 -18 M278 96 l8 -16"/>' +
+          '<text class="lbl sm" x="260" y="200" text-anchor="middle">it snapped into two pieces</text>'));
+  }
+  if (test === 'water') {
+    return svgWrap(cap +
+      '<rect class="sl' + (r.ok ? '' : ' fa') + '" x="170" y="104" width="180" height="62" rx="5"/>' +
+      (r.ok
+        ? '<path class="ln fa" d="M260 56 c 14 20 23 31 23 40 a23 23 0 0 1 -46 0 c0 -9 9 -20 23 -40 z"/>' +
+          '<text class="lbl sm" x="260" y="192" text-anchor="middle">the drop sits on top &mdash; mass stays the same</text>'
+        : '<path class="ln" d="M260 56 v30 M250 74 l10 12 l10 -12"/>' +
+          '<text class="lbl sm" x="260" y="192" text-anchor="middle">the water went in &mdash; mass goes up</text>'));
+  }
+  if (test === 'float') {
+    return svgWrap(cap +
+      '<path class="ln" d="M150 36 v150 h220 v-150"/><path class="ln fa" d="M150 82 h220 v104 h-220 z"/>' +
+      (r.ok
+        ? '<rect class="sl fc2" x="232" y="62" width="58" height="40" rx="4"/><text class="lbl sm" x="260" y="206" text-anchor="middle">floating at the surface</text>'
+        : '<rect class="sl fc2" x="232" y="144" width="58" height="40" rx="4"/><text class="lbl sm" x="260" y="206" text-anchor="middle">resting on the bottom</text>'));
+  }
+  var beams = { most: '<path class="ln" d="M268 92 H404 M268 110 H404 M268 128 H404"/>',
+                some: '<path class="ln" d="M268 110 H404" stroke-dasharray="7 8"/>',
+                none: '' }[r.state];
+  return svgWrap(cap +
+    '<circle class="sl fb2" cx="72" cy="110" r="24"/><text class="lbl sm" x="72" y="156" text-anchor="middle">torch</text>' +
+    '<path class="ln" d="M100 92 H228 M100 110 H228 M100 128 H228"/>' +
+    '<rect class="sl" x="228" y="54" width="40" height="112" rx="4"/>' +
+    beams + '<path class="ln" d="M408 44 v132"/><text class="lbl sm" x="436" y="114">screen</text>' +
+    '<text class="lbl sm" x="260" y="200" text-anchor="middle">' + r.word + '</text>');
+}
+
+/* ---- bench ---- */
+var BENCH = {
+  labLabel: 'Test bench',
+  logLabel: 'Your results',
+  initRun: function (Q) { return { done: {}, sel: Q.specimens.length === 1 ? Q.specimens[0].id : null, last: null }; },
+  spec: function (Q, id) { return Q.specimens.filter(function (s) { return s.id === id; })[0]; },
+  stage: function (Q, run) {
+    if (!run.bench.last) return { svg: drawIdle(), msg: 'Nothing tested yet. Every property is found the same way: do something to the material and watch what happens.' };
+    var s = BENCH.spec(Q, run.bench.last.spec), t = run.bench.last.test, r = resultOf(s, t);
+    var word = t === 'light' ? r.word : (r.ok ? TESTS[t].pw : TESTS[t].fw);
+    return {
+      svg: drawStage(s, t, r),
+      msg: '<b>' + s.id + ':</b> ' + r.word + '. So ' + s.id + ' is <b>' + (t === 'light' ? r.word.replace('let ', 'a material that lets ') : word) + '</b>.'
+    };
+  },
+  shelf: function (Q, run) {
+    return Q.specimens.map(function (s) {
+      var n = Q.tests.filter(function (t) { return run.bench.done[s.id + '|' + t]; }).length;
+      return '<button class="tile" data-act="spec" data-id="' + s.id + '" aria-pressed="' + (run.bench.sel === s.id) + '">' +
+        '<b>' + s.id + '</b><span>' + s.name + '</span><small>' + n + ' of ' + Q.tests.length + ' tests</small></button>';
+    }).join('');
+  },
+  prompt: function (Q, run) {
+    return run.bench.sel ? 'Now choose a test to run on <b>' + run.bench.sel + '</b>:' : 'Tap a material first, then choose a test.';
+  },
+  chips: function (Q, run) {
+    return Q.tests.map(function (t) {
+      var done = run.bench.sel && run.bench.done[run.bench.sel + '|' + t];
+      return '<button class="btn" data-act="test" data-test="' + t + '"' + (run.bench.sel ? '' : ' disabled') + '>' +
+        (done ? '\u21bb ' : '') + TESTS[t].name.charAt(0).toUpperCase() + TESTS[t].name.slice(1) + '</button>';
+    }).join('');
+  },
+  handle: function (a, el, Q, run) {
+    if (a === 'spec') { run.bench.sel = el.dataset.id; return true; }
+    if (a === 'test') {
+      if (!run.bench.sel) return true;
+      var t = el.dataset.test, s = BENCH.spec(Q, run.bench.sel);
+      run.bench.done[s.id + '|' + t] = resultOf(s, t).state;
+      run.bench.last = { spec: s.id, test: t };
+      return true;
+    }
+    return false;
+  },
+  log: function (Q, run) {
+    var rows = [];
+    Q.specimens.forEach(function (s) {
+      Q.tests.forEach(function (t) {
+        var st = run.bench.done[s.id + '|' + t];
+        if (!st) return;
+        var r = resultOf(s, t);
+        rows.push('<div class="logrow ' + (t === 'light' ? '' : (r.ok ? 'good' : 'bad')) + '"><b>' + s.id + ' ' + TESTS[t].name + '</b><span>' + r.word + '</span></div>');
+      });
+    });
+    return rows.length ? rows.join('') : '<p class="empty">Your results appear here as you test.</p>';
+  },
+  done: function (Q, run) {
+    return Q.specimens.every(function (s) { return Q.tests.every(function (t) { return run.bench.done[s.id + '|' + t]; }); });
+  },
+  todo: function (Q, run) {
+    var left = [];
+    Q.specimens.forEach(function (s) { Q.tests.forEach(function (t) { if (!run.bench.done[s.id + '|' + t]) left.push(s.id + ' ' + TESTS[t].name); }); });
+    return left.join(', ');
+  },
+  clashes: function (Q, i, run) { return Q.options[i].clash || []; }
+};
+
+/* ---- questions ---- */
+var QUESTIONS = [
+  {
+    id: 'q1', title: 'The paper clip wire',
+    intro: 'A steel paper clip is made from a piece of straight metal wire. Test the wire on the bench, then decide which property the paper clip maker is using.',
+    specimens: [{ id: 'W', name: 'straight metal wire', props: { strong: true, flex: true } }],
+    tests: ['strong', 'flex'],
+    hints: ['Which of your two results involved changing the shape of the wire?', 'Both results passed. Only one of them is about turning a straight wire into a curved clip.'],
+    ask: 'The metal wire can be formed into the shape of the paper clip without breaking because the wire is ______.',
+    cols: ['The wire is'],
+    correct: 1,
+    correctWhy: 'Forming a straight wire into the curves of a paper clip is a bending test, and the wire came through the bend test in one piece. That is flexibility.',
+    takeaway: 'Strong answers the load test. Flexible answers the bend test. Shaping something is always a bending question.',
+    options: [
+      { n: ['strong'], tag: 'T1', pick: 'The wire did hold the load without breaking, and "strong" sounds like the safest word for metal.', why: 'Strong only means it does not break when a load pulls on it. A ceramic tile passes the load test and still shatters the moment it is bent, so being strong cannot explain how the wire was shaped.', clash: ['Your log: W held the load without breaking — but that test never changed the shape of the wire.'] },
+      { n: ['flexible'], tag: null, pick: 'Making a paper clip means bending the wire into a new shape, so run the bend test and see whether it survives.', why: 'Flexible means it can be bent into a new shape without breaking, which is exactly what happens to the wire.' },
+      { n: ['waterproof'], tag: 'T2', pick: 'Metal does not soak up water, so waterproof is a true statement about the wire.', why: 'It is true, but it is not the reason. There is no water anywhere in this question, so this property is not being used.', clash: ['Nothing on your bench log involves water.'] },
+      { n: ['able to let light pass through it'], tag: 'T2', pick: 'It is one of the five properties, and it is the only option left if the first three are rejected.', why: 'How much light a material lets through has nothing to do with bending a wire. (Some papers write this option as "transparent".)', clash: ['Nothing on your bench log involves light.'] }
+    ]
+  },
+  {
+    id: 'q2', title: 'Describing material K',
+    intro: 'Material K has not been used yet. Run both tests on it and describe it in the right words.',
+    specimens: [{ id: 'K', name: 'strip of material K', props: { strong: true, flex: false } }],
+    tests: ['strong', 'flex'],
+    hints: ['Your two results are different. One passed, one failed.', 'Write the description in two halves: what the load test showed, then what the bend test showed.'],
+    ask: 'Which statement describes material K?',
+    cols: ['Material K is'],
+    correct: 1,
+    correctWhy: 'K held the load without breaking, so it is strong. It snapped as soon as it was bent, so it is not flexible. Glass and ceramic behave exactly like this.',
+    takeaway: 'A material can pass one test and fail the other. Always say which test you are talking about.',
+    options: [
+      { n: ['strong and flexible'], tag: 'T3', pick: 'K survived the load test, and materials that survive one test often feel like they would survive the other.', why: 'K snapped in the bend test, so it is not flexible. Passing the load test says nothing about bending.', clash: ['Your log: K snapped as soon as it was bent.'] },
+      { n: ['strong but not flexible'], tag: null, pick: 'Take the two results one at a time: load test passed, bend test failed.', why: 'That is exactly what the bench showed.' },
+      { n: ['not strong but flexible'], tag: 'T3', pick: 'A material that breaks in one test is easy to think of as weak.', why: 'This is the opposite result. K held the load; it was the bending that broke it.', clash: ['Your log: K held the load without breaking.'] },
+      { n: ['neither strong nor flexible'], tag: 'T1', pick: 'K broke, so it seems to fail everything.', why: 'K only broke in the bend test. It passed the load test, so it is strong.', clash: ['Your log: K held the load without breaking.'] }
+    ]
+  },
+  {
+    id: 'q3', title: 'Choosing wire for a paper clip',
+    intro: 'Three wires, A, B and C. A paper clip has to be bent into shape and then hold a thick stack of paper tightly without going out of shape. Test all three.',
+    specimens: [
+      { id: 'A', name: 'wire A', props: { strong: false, flex: true } },
+      { id: 'B', name: 'wire B', props: { strong: true, flex: true } },
+      { id: 'C', name: 'wire C', props: { strong: true, flex: false } }
+    ],
+    tests: ['strong', 'flex'],
+    hints: ['The clip has two jobs: it must be bent into shape, and it must then hold paper without breaking. That is two properties.', 'Which wire passed both tests?'],
+    ask: 'Which wire is most suitable for making the paper clip?',
+    cols: ['Wire'],
+    correct: 1,
+    correctWhy: 'The clip must be bent into shape (flexible) and then grip a thick stack without breaking (strong). Only B passed both tests.',
+    takeaway: 'When a job needs two properties, the material must pass both tests. One pass is never enough.',
+    options: [
+      { n: ['A'], tag: 'T4', pick: 'A bends easily, which is what making a paper clip looks like.', why: 'A broke under the load. A clip made from A would come apart as soon as it gripped a thick stack of paper.', clash: ['Your log: A broke under the load.'] },
+      { n: ['B'], tag: null, pick: 'List both jobs first, then find the wire that passed both tests.', why: 'B bent into a new shape without breaking and held the load without breaking.' },
+      { n: ['C'], tag: 'T1', pick: 'C is strong, and a clip has to be tough to hold paper.', why: 'C snapped when it was bent, so it could never be formed into a clip in the first place.', clash: ['Your log: C snapped as soon as it was bent.'] },
+      { n: ['Any of the three'], tag: 'T4', pick: 'All three are wires, so all three could be made into a clip.', why: 'Only one of them passed both tests. The others each failed a test the clip depends on.', clash: ['Your log shows A and C each failed one of the two tests.'] }
+    ]
+  },
+  {
+    id: 'q4', title: 'A toy boat for the pool',
+    intro: 'The body of a toy boat must stay on the surface of the water and must not get soggy after a long time in the pool. Test the three materials.',
+    specimens: [
+      { id: 'P', name: 'material P', props: { float: true, water: true } },
+      { id: 'Q', name: 'material Q', props: { float: false, water: true } },
+      { id: 'R', name: 'material R', props: { float: true, water: false } }
+    ],
+    tests: ['float', 'water'],
+    hints: ['Two jobs again: stay at the surface, and do not soak up water.', 'One material floats but soaks up water. One is waterproof but sinks. Only one does both.'],
+    ask: 'Which material is most suitable for the body of the toy boat?',
+    cols: ['Material'],
+    correct: 0,
+    correctWhy: 'P stayed at the surface in the float test and the water stayed on top of it in the water test, so it floats and is waterproof.',
+    takeaway: 'Floating and being waterproof are two separate properties. A material can float and still soak up water.',
+    options: [
+      { n: ['P'], tag: null, pick: 'Check both tests and take the material that passed both.', why: 'P floats and is waterproof, so the boat stays up and stays dry.' },
+      { n: ['Q'], tag: 'T4', pick: 'Q is waterproof, so no water gets into the boat.', why: 'Q sank in the float test. A waterproof boat at the bottom of the pool is no use.', clash: ['Your log: Q sank to the bottom.'] },
+      { n: ['R'], tag: 'T3', pick: 'R floats, and floating looks like the main job of a boat.', why: 'R soaked up water. Once it is full of water the boat becomes soggy and heavy, which is exactly what the question says to avoid.', clash: ['Your log: R soaked up water and its mass went up.'] },
+      { n: ['Either P or R'], tag: 'T3', pick: 'Both P and R floated, so either one would keep the boat up.', why: 'Floating is only one of the two jobs. R fails the water test, so only P passes both.', clash: ['Your log: R soaked up water and its mass went up.'] }
+    ]
+  },
+  {
+    id: 'q5', title: 'A window pane for the classroom',
+    intro: 'A classroom window must let in as much daylight as possible and must not break when the wind pushes on it. Test the three materials.',
+    specimens: [
+      { id: 'D', name: 'material D', props: { light: 'most', strong: false } },
+      { id: 'E', name: 'material E', props: { light: 'most', strong: true } },
+      { id: 'F', name: 'material F', props: { light: 'some', strong: true } }
+    ],
+    tests: ['light', 'strong'],
+    hints: ['Two materials let most light through. Which of them also held the load?', 'A window that lets in light but breaks in the wind has failed one of its two jobs.'],
+    ask: 'Which material is most suitable for the window pane?',
+    cols: ['Material'],
+    correct: 1,
+    correctWhy: 'E let most light through in the light test and held the load without breaking in the load test, so it does both jobs.',
+    takeaway: 'How much light passes through is a property in its own right: most light, some light, or no light. Check it alongside the other properties the job needs.',
+    options: [
+      { n: ['D'], tag: 'T4', pick: 'D let most light through, which is what a window is for.', why: 'D broke under the load, so it would not survive the wind pushing on it.', clash: ['Your log: D broke under the load.'] },
+      { n: ['E'], tag: null, pick: 'Take the two jobs together: most light through, and no breaking under a load.', why: 'E is the only material that passed both tests.' },
+      { n: ['F'], tag: 'T4', pick: 'F is strong, and a window has to survive knocks.', why: 'F only let some light through, so the classroom would be dim. The main job of a window is daylight.', clash: ['Your log: F let only some light through.'] },
+      { n: ['Either D or E'], tag: 'T4', pick: 'D and E both let most light through, so either would light the room.', why: 'Letting light through is only one of the two jobs. D broke under the load, so only E does both.', clash: ['Your log: D broke under the load.'] }
+    ]
+  },
+  {
+    id: 'q6', title: 'Fair test: two strips of the same material',
+    intro: 'Both strips on the bench are cut from the <b>same</b> material M. One is thin, one is thick. Bend both and see what happens.',
+    specimens: [
+      { id: 'M1', name: 'thin strip of M', props: { flex: true } },
+      { id: 'M2', name: 'thick strip of M', props: { flex: false } }
+    ],
+    tests: ['flex'],
+    hints: ['Same material, two different results. What was different about the two strips?', 'If thickness can change the result on its own, what must be kept the same when four different materials are compared?'],
+    ask: 'Lindy wants to compare how flexible four different materials are. What must she keep the same for a fair test?',
+    cols: ['Keep the same'],
+    correct: 1,
+    correctWhy: 'The bench showed that the same material gives a different result when the strip is thicker. If the strips are different sizes, a difference in the result might be caused by the size rather than by the material.',
+    takeaway: 'Only the type of material may change. Everything else that could affect the bending — size, thickness, how far it is bent — must be kept the same.',
+    options: [
+      { n: ['The colour of each strip'], tag: 'T5', pick: 'Keeping something the same sounds like the right idea, and colour is easy to control.', why: 'Colour has no effect on whether a material bends without breaking, so controlling it does nothing to make the test fair.' },
+      { n: ['The size and thickness of each strip, and how far each is bent'], tag: null, pick: 'Find what else could change the result, then keep all of it the same.', why: 'These are exactly the things that changed the result on the bench, so they must be kept the same.' },
+      { n: ['The type of material in each strip'], tag: 'T5', pick: 'The question says "keep the same", and the materials are what she is testing.', why: 'The type of material is the one thing that must <em>change</em> — it is the variable being tested. Keeping it the same would leave nothing to compare.' },
+      { n: ['Nothing — she can just bend each one until it breaks'], tag: 'T5', pick: 'Each strip gets the same action, so it feels fair already.', why: 'Your two strips of M both got the same action and still gave different results, because one was thicker. Without controlling thickness the comparison means nothing.', clash: ['Your log: the same material M gave two different bend results.'] }
+    ]
+  }
+];
+
+PAGE.rules = '<div class="panel"><h2>What to remember</h2>' +
+  '<div class="rulecard"><h3>Strength</h3><p>The ability to take a load without breaking. Tested by hanging a load on it.</p></div>' +
+  '<div class="rulecard"><h3>Flexibility</h3><p>The ability to be bent into a new shape without breaking. Tested by bending it. Shaping, folding and wrapping are all bending jobs.</p></div>' +
+  '<div class="rulecard"><h3>Waterproof</h3><p>A material is waterproof when it does not absorb water. Tested by wetting it and checking whether the mass goes up.</p></div>' +
+  '<div class="rulecard"><h3>Float or sink</h3><p>Whether the object stays on or near the surface of water instead of sinking. Floating does not mean waterproof.</p></div>' +
+  '<div class="rulecard"><h3>Transparency</h3><p>How much light the material lets through: most light, some light, or no light.</p></div>' +
+  '<div class="beyond"><p><span class="tagx">Beyond syllabus</span>You never need the words <em>transparent</em>, <em>translucent</em> or <em>opaque</em> &mdash; "lets most / some / no light through" is the wording the syllabus asks for. A material that snaps instead of bending is often called <em>brittle</em>; "not flexible" is enough.</p></div></div>';
+
+</script>
+<script id="app">
+/* ---------- SHARED ENGINE ---------- */
+var $ = function (s) { return document.querySelector(s); };
+var main, STORE = 'psle-sci:' + PAGE.id, memStore = null;
+var REDUCE = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+function loadProgress() { try { var s = localStorage.getItem(STORE); if (s) return JSON.parse(s) || {}; } catch (e) {} return memStore || {}; }
+function saveProgress() { try { localStorage.setItem(STORE, JSON.stringify(progress)); } catch (e) { memStore = progress; } }
+function pushMistake(rec) {
+  try {
+    var all = JSON.parse(localStorage.getItem('psle-sci:mistakes') || '[]');
+    all.push(rec); localStorage.setItem('psle-sci:mistakes', JSON.stringify(all.slice(-400)));
+  } catch (e) {}
+}
+var progress = loadProgress(), runs = {}, view = 'questions', cur = 0;
+
+function getProg(id) {
+  if (!progress[id]) progress[id] = { misses: [], solved: false, firstTry: null, hints: 0, recapDue: false, recaps: 0 };
+  if (!progress[id].misses) progress[id].misses = [];
+  return progress[id];
+}
+function getRun(Q) {
+  if (!runs[Q.id]) runs[Q.id] = { choice: null, missed: [], hints: 0, solved: false, lastWrong: null, runMisses: 0, bench: BENCH.initRun(Q) };
+  return runs[Q.id];
+}
+function status(id) {
+  var p = progress[id]; if (!p) return 'new';
+  var m = (p.misses || []).length;
+  if (!p.solved && !m) return 'new';
+  if (p.recapDue) return 'recap';
+  if (p.solved) return m ? 'recapped' : 'first';
+  return 'open';
+}
+var STATUS_TEXT = { new: 'Not started', open: 'In progress', first: 'Right first time', recap: 'Needs recap', recapped: 'Recapped' };
+var ICON = { new: '', open: '\u2022', first: '\u2713', recap: '\u21bb', recapped: '\u2713' };
+var q = function () { return QUESTIONS[cur]; };
+
+function toast(msg) {
+  var t = $('#toast'); t.textContent = msg; t.classList.add('show');
+  clearTimeout(toast.t); toast.t = setTimeout(function () { t.classList.remove('show'); }, 2600);
+}
+
+/* ----- nav ----- */
+function renderNav() {
+  var due = QUESTIONS.filter(function (x) { return status(x.id) === 'recap'; }).length;
+  var tabs = [['questions', 'Questions'], ['mistakes', 'Mistake book'], ['rules', 'What to remember']];
+  $('#tabs').innerHTML = tabs.map(function (t) {
+    return '<button class="tab" role="tab" data-act="tab" data-view="' + t[0] + '" aria-selected="' + (view === t[0]) + '">' +
+      t[1] + (t[0] === 'mistakes' && due ? '<span class="dot" aria-label="' + due + ' to recap">' + due + '</span>' : '') + '</button>';
+  }).join('');
+}
+function render() {
+  renderNav();
+  if (view === 'questions') renderQuestion();
+  else if (view === 'mistakes') renderMistakes();
+  else renderRules();
+}
+
+/* ----- question ----- */
+function renderQuestion() {
+  var Q = q(), run = getRun(Q), p = progress[Q.id];
+  var pills = QUESTIONS.map(function (x, i) {
+    var s = status(x.id);
+    return '<button class="pill ' + s + (i === cur ? ' cur' : '') + '" data-act="goto" data-q="' + i +
+      '" aria-label="Question ' + (i + 1) + ': ' + STATUS_TEXT[s] + '"' + (i === cur ? ' aria-current="true"' : '') +
+      '>' + (i + 1) + '<i aria-hidden="true">' + ICON[s] + '</i></button>';
+  }).join('');
+  var first = QUESTIONS.filter(function (x) { return status(x.id) === 'first'; }).length;
+  var banner = (p && p.recapDue && !run.solved)
+    ? '<p class="banner">Recap run. You missed this one before &mdash; work the bench again and answer it cleanly to clear it.</p>'
+    : ((p && p.solved && !run.solved) ? '<p class="banner">You solved this before. Run it again any time.</p>' : '');
+  main.innerHTML =
+    '<div class="stepper" role="group" aria-label="Questions">' + pills + '</div>' +
+    '<p class="legend">' + first + ' of ' + QUESTIONS.length + ' right first time. Green ring: right first time. Amber ring: needs recap.</p>' +
+    '<section class="q"><h2>Question ' + (cur + 1) + ': ' + Q.title + '</h2>' +
+    '<p class="intro">' + Q.intro + '</p>' + banner +
+    '<div class="cols"><div class="lab"><h3>' + (BENCH.labLabel || 'Test bench') + '</h3>' +
+    '<div class="stage" id="stage"></div><p class="stage-msg" id="stageMsg"></p>' +
+    '<div class="shelf" id="shelf"></div><p class="note" id="selMsg"></p><div class="chips" id="chips"></div></div>' +
+    '<div class="side"><div class="box"><h3>' + (BENCH.logLabel || 'Observation log') + '</h3><div id="log"></div></div>' +
+    '<div class="box hints"><h3>Hints</h3><div id="hints"></div></div></div></div>' +
+    '<div id="answer"></div><div id="feedback" aria-live="polite"></div></section>';
+  paintBench(); renderHints(); renderAnswer(); renderFeedback();
+}
+function paintBench() {
+  var Q = q(), run = getRun(Q), st = BENCH.stage(Q, run);
+  $('#stage').innerHTML = st.svg;
+  $('#stageMsg').innerHTML = st.msg || '';
+  $('#shelf').innerHTML = BENCH.shelf(Q, run);
+  $('#selMsg').innerHTML = BENCH.prompt ? BENCH.prompt(Q, run) : '';
+  $('#chips').innerHTML = BENCH.chips ? BENCH.chips(Q, run) : '';
+  $('#log').innerHTML = BENCH.log(Q, run);
+}
+function renderHints() {
+  var Q = q(), run = getRun(Q), shown = Q.hints.slice(0, run.hints);
+  $('#hints').innerHTML =
+    (shown.length ? '<ol>' + shown.map(function (h) { return '<li>' + h + '</li>'; }).join('') + '</ol>' : '') +
+    (run.hints < Q.hints.length ? '<button class="btn small" data-act="hint">Show hint ' + (run.hints + 1) + ' of ' + Q.hints.length + '</button>' : '<p class="empty">No more hints.</p>');
+}
+
+/* ----- answer table ----- */
+function renderAnswer() {
+  var Q = q(), run = getRun(Q), open = BENCH.done(Q, run);
+  var multi = Q.cols && Q.cols.length > 1;
+  var head = multi ? '<tr><th><span class="vh">Option</span></th>' + Q.cols.map(function (c) { return '<th scope="col">' + c + '</th>'; }).join('') + '</tr>' : '';
+  var rows = Q.options.map(function (o, i) {
+    var missed = run.missed.indexOf(i) >= 0, dis = !open || run.solved || missed, cls = ['opt'];
+    if (dis) cls.push('locked');
+    if (missed) cls.push('missed');
+    if (run.solved && i === Q.correct) cls.push('right');
+    else if (run.choice === i && !run.solved) cls.push('sel');
+    var checked = (run.choice === i || (run.solved && i === Q.correct)) ? ' checked' : '';
+    return '<tr class="' + cls.join(' ') + '" data-i="' + i + '"><td class="n">' +
+      '<input type="radio" name="opt" id="o' + i + '" value="' + i + '"' + checked + (dis ? ' disabled' : '') + '>' +
+      '<label for="o' + i + '">(' + (i + 1) + ')</label>' + (missed ? '<small>not this one</small>' : '') + '</td>' +
+      o.n.map(function (x) { return '<td>' + x + '</td>'; }).join('') + '</tr>';
+  }).join('');
+  $('#answer').innerHTML = '<fieldset class="answer"><legend>' + Q.ask + '</legend>' +
+    '<div class="scroll"><table class="exam">' + (head ? '<thead>' + head + '</thead>' : '') + '<tbody>' + rows + '</tbody></table></div>' +
+    (open ? '' : '<p class="lock">Work the bench to unlock the options. Still to do: ' + BENCH.todo(Q, run) + '.</p>') +
+    '<div class="actions"><button class="btn primary" data-act="check" id="btnCheck"' +
+    ((run.choice == null || !open || run.solved) ? ' disabled' : '') + '>Check answer</button></div></fieldset>';
+}
+function selectOption(i) {
+  var Q = q(), run = getRun(Q);
+  if (!BENCH.done(Q, run) || run.solved || run.missed.indexOf(i) >= 0) return;
+  run.choice = i;
+  [].forEach.call(document.querySelectorAll('#answer tr.opt'), function (tr) {
+    var k = +tr.dataset.i; tr.classList.toggle('sel', k === i);
+    var r = tr.querySelector('input'); if (r) r.checked = (k === i);
+  });
+  var b = $('#btnCheck'); if (b) b.disabled = false;
+}
+function checkAnswer() {
+  var Q = q(), run = getRun(Q), p = getProg(Q.id);
+  if (run.choice == null) return;
+  var opt = Q.options[run.choice];
+  if (run.choice === Q.correct) {
+    run.solved = true; run.lastWrong = null; p.solved = true;
+    if (p.firstTry === null) p.firstTry = (run.runMisses === 0);
+    if (run.runMisses > 0) p.recapDue = true;
+    else if (p.recapDue) { p.recapDue = false; p.recaps = (p.recaps || 0) + 1; toast('Recap cleared for this question.'); }
+  } else {
+    run.missed.push(run.choice); run.runMisses++; run.lastWrong = run.choice;
+    p.misses.push({ choice: run.choice, tag: opt.tag, ts: Date.now() });
+    p.recapDue = true;
+    pushMistake({ page: PAGE.id, title: PAGE.title, topic: PAGE.topic, level: PAGE.level, lo: PAGE.lo,
+      qid: Q.id, stem: Q.title, chose: opt.n.join(' / '), correct: Q.options[Q.correct].n.join(' / '),
+      tag: opt.tag ? (TAGS[opt.tag] || {}).label : null, at: new Date().toISOString() });
+    run.choice = null;
+  }
+  saveProgress();
+  renderNav(); paintBench(); renderAnswer(); renderFeedback();
+  var fb = $('#feedback'); if (fb && fb.scrollIntoView) fb.scrollIntoView({ behavior: REDUCE ? 'auto' : 'smooth', block: 'nearest' });
+  [].forEach.call(document.querySelectorAll('.pill'), function (el, i) {
+    var s = status(QUESTIONS[i].id); el.className = 'pill ' + s + (i === cur ? ' cur' : '');
+    var ic = el.querySelector('i'); if (ic) ic.textContent = ICON[s];
+  });
+}
+function optCard(Q, i, run) {
+  var o = Q.options[i], right = i === Q.correct, cl = right ? [] : BENCH.clashes(Q, i, run);
+  var chosen = run.missed.indexOf(i) >= 0 || (right && run.solved);
+  var chips = (Q.cols && Q.cols.length > 1)
+    ? o.n.map(function (n, k) { return '<span class="tagchip">' + Q.cols[k] + ': ' + n + '</span>'; }).join('')
+    : '<span class="tagchip">' + o.n[0] + '</span>';
+  return '<div class="optcard' + (right ? ' right' : '') + '"><div class="who"><b>Option (' + (i + 1) + ')</b>' + chips +
+    (chosen ? '<span class="you">you chose this</span>' : '') + '</div>' +
+    '<p><span class="lbl">' + (right ? 'How to reach it. ' : 'Why someone would choose it. ') + '</span>' + o.pick + '</p>' +
+    '<p><span class="lbl">' + (right ? 'Why it is correct. ' : 'Why it is not correct. ') + '</span>' + o.why + '</p>' +
+    (cl.length ? '<ul class="clash">' + cl.map(function (c) { return '<li>' + c + '</li>'; }).join('') + '</ul>' : '') + '</div>';
+}
+function renderFeedback() {
+  var Q = q(), run = getRun(Q), box = $('#feedback');
+  if (!box) return;
+  if (run.solved) {
+    var need = run.runMisses > 0;
+    box.innerHTML = '<div class="fb good"><h3>&#10003; Correct: option (' + (Q.correct + 1) + ')</h3>' +
+      '<p>' + Q.correctWhy + '</p><p class="key"><b>Key idea.</b> ' + Q.takeaway + '</p>' +
+      '<h4>Every option, and why it works or does not</h4>' +
+      Q.options.map(function (_, i) { return optCard(Q, i, run); }).join('') +
+      (need ? '<p class="note">You missed ' + run.runMisses + ' time' + (run.runMisses > 1 ? 's' : '') + ' on the way, so this question is in your mistake book. Redo it later to clear it.</p>' : '') +
+      '<div class="actions">' + (cur < QUESTIONS.length - 1 ? '<button class="btn primary" data-act="next">Next question</button>' : '') +
+      '<button class="btn" data-act="redo" data-q="' + cur + '">Redo this question</button>' +
+      (need ? '<button class="btn" data-act="tab" data-view="mistakes">Open mistake book</button>' : '') + '</div></div>';
+  } else if (run.lastWrong != null) {
+    var i2 = run.lastWrong, o = Q.options[i2], cl = BENCH.clashes(Q, i2, run), left = Q.options.length - run.missed.length;
+    box.innerHTML = '<div class="fb bad"><h3>&#10007; Not option (' + (i2 + 1) + ')</h3>' +
+      '<p><b>Why it looks right.</b> ' + o.pick + '</p><p><b>Why it is not correct.</b> ' + o.why + '</p>' +
+      (cl.length ? '<p><b>Check it against your log.</b></p><ul class="clash">' + cl.map(function (c) { return '<li>' + c + '</li>'; }).join('') + '</ul>' : '') +
+      '<p>' + (left > 1 ? 'Pick another option. ' + left + ' left.' : 'One option left.') + '</p></div>';
+  } else box.innerHTML = '';
+}
+
+/* ----- mistake book ----- */
+function renderMistakes() {
+  var all = [];
+  QUESTIONS.forEach(function (Q, qi) {
+    ((progress[Q.id] && progress[Q.id].misses) || []).forEach(function (m) { all.push({ choice: m.choice, tag: m.tag, qi: qi, Q: Q }); });
+  });
+  var due = QUESTIONS.map(function (Q, i) { return { Q: Q, i: i }; }).filter(function (x) { return status(x.Q.id) === 'recap'; });
+  var first = QUESTIONS.filter(function (x) { return status(x.id) === 'first'; }).length;
+  var hints = QUESTIONS.reduce(function (s, x) { return s + ((progress[x.id] && progress[x.id].hints) || 0); }, 0);
+  var groups = {};
+  all.forEach(function (m) { var k = m.tag || 'other'; (groups[k] = groups[k] || []).push(m); });
+  var keys = Object.keys(groups).sort(function (a, b) { return groups[b].length - groups[a].length; });
+  var body = keys.length ? keys.map(function (k) {
+    var t = TAGS[k] || { label: 'Other slip', fix: '' };
+    return '<div class="mist"><h3>' + t.label + ' (' + groups[k].length + ' time' + (groups[k].length > 1 ? 's' : '') + ')</h3>' +
+      '<p class="fix">' + t.fix + '</p><ul>' + groups[k].map(function (m) {
+        return '<li>Question ' + (m.qi + 1) + ', option (' + (m.choice + 1) + '): ' + m.Q.options[m.choice].n.join(' / ') +
+          '. <button class="btn small" data-act="redo" data-q="' + m.qi + '">Redo</button></li>';
+      }).join('') + '</ul></div>';
+  }).join('') : '<p class="empty">No mistakes logged yet. Wrong choices appear here, grouped by the idea behind them.</p>';
+  main.innerHTML = '<div class="panel"><h2>Mistake book</h2>' +
+    '<div class="stats"><div class="stat"><b>' + first + '</b>right first time</div>' +
+    '<div class="stat"><b>' + all.length + '</b>wrong choices</div>' +
+    '<div class="stat"><b>' + due.length + '</b>to recap</div>' +
+    '<div class="stat"><b>' + hints + '</b>hints used</div></div>' +
+    (due.length ? '<p>To recap: ' + due.map(function (x) { return 'Question ' + (x.i + 1); }).join(', ') + '.</p>' +
+      '<div class="actions"><button class="btn primary" data-act="redo" data-q="' + due[0].i + '">Recap Question ' + (due[0].i + 1) + '</button></div>'
+      : '<p class="empty">Nothing waiting for recap.</p>') + '</div>' +
+    '<div class="panel"><h2>Ideas to review</h2>' + body + '</div>';
+}
+function renderRules() { main.innerHTML = PAGE.rules; }
+
+/* ----- events ----- */
+document.addEventListener('click', function (e) {
+  var el = e.target.closest('[data-act]'); 
+  if (el) {
+    var a = el.dataset.act;
+    if (a === 'tab') { view = el.dataset.view; render(); window.scrollTo(0, 0); return; }
+    if (a === 'goto') { cur = +el.dataset.q; view = 'questions'; render(); window.scrollTo(0, 0); return; }
+    if (a === 'redo') { cur = +el.dataset.q; delete runs[QUESTIONS[cur].id]; view = 'questions'; render(); window.scrollTo(0, 0); return; }
+    if (a === 'next') { if (cur < QUESTIONS.length - 1) cur++; render(); window.scrollTo(0, 0); return; }
+    if (a === 'hint') {
+      var Qh = q(), rh = getRun(Qh), ph = getProg(Qh.id);
+      if (rh.hints < Qh.hints.length) { rh.hints++; ph.hints = (ph.hints || 0) + 1; saveProgress(); renderHints(); }
+      return;
+    }
+    if (a === 'check') { checkAnswer(); return; }
+    if (a === 'theme') {
+      document.documentElement.setAttribute('data-theme', el.dataset.theme);
+      try { localStorage.setItem('psle-sci:theme', JSON.stringify(el.dataset.theme)); } catch (err) {}
+      paintTheme(); return;
+    }
+    var Qb = q(), rb = getRun(Qb);
+    if (BENCH.handle && BENCH.handle(a, el, Qb, rb)) { paintBench(); renderAnswer(); return; }
+  }
+  var row = e.target.closest('tr.opt');
+  if (row && !row.classList.contains('locked')) selectOption(+row.dataset.i);
+});
+
+function paintTheme() {
+  var cu = document.documentElement.getAttribute('data-theme');
+  [].forEach.call(document.querySelectorAll('[data-act="theme"]'), function (b) {
+    b.setAttribute('aria-pressed', String(b.dataset.theme === cu));
+  });
+}
+(function () {
+  var t = 'notebook';
+  try { var s = localStorage.getItem('psle-sci:theme'); if (s) t = JSON.parse(s); } catch (e) {}
+  if (['notebook', 'lab', 'mission'].indexOf(t) < 0) t = 'notebook';
+  document.documentElement.setAttribute('data-theme', t);
+})();
+
+function boot() {
+  main = $('#main');
+  $('#btnExport').addEventListener('click', function () {
+    var blob = new Blob([JSON.stringify({ app: 'psle-science', page: PAGE.id, exportedAt: new Date().toISOString(), progress: progress }, null, 2)], { type: 'application/json' });
+    var a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = PAGE.id + '-progress.json'; a.click();
+    setTimeout(function () { URL.revokeObjectURL(a.href); }, 1000); toast('Progress exported.');
+  });
+  $('#btnImport').addEventListener('click', function () { $('#fileImport').click(); });
+  $('#fileImport').addEventListener('change', function (e) {
+    var f = e.target.files[0]; if (!f) return;
+    var r = new FileReader();
+    r.onload = function () {
+      try {
+        var d = JSON.parse(r.result);
+        if (d.app !== 'psle-science' || d.page !== PAGE.id || typeof d.progress !== 'object' || !d.progress) throw 0;
+        progress = d.progress; runs = {}; saveProgress(); toast('Progress imported.'); render();
+      } catch (err) { toast('That file is not a progress export from this page.'); }
+    };
+    r.readAsText(f); e.target.value = '';
+  });
+  $('#btnReset').addEventListener('click', function () {
+    if (confirm('Clear the progress and mistake book for this page in this browser?')) {
+      progress = {}; runs = {}; saveProgress(); cur = 0; view = 'questions'; render(); toast('Progress cleared.');
+    }
+  });
+  $('#brandTitle').textContent = PAGE.title;
+  $('#brandMeta').innerHTML = PAGE.meta;
+  $('#brandSub').textContent = PAGE.sub;
+  var links = '';
+  if (PAGE.prev) links += '<a href="' + PAGE.prev.href + '">&#8592; ' + PAGE.prev.label + '</a>';
+  if (PAGE.prev && PAGE.next) links += ' &nbsp;&middot;&nbsp; ';
+  if (PAGE.next) links += '<a href="' + PAGE.next.href + '">' + PAGE.next.label + ' &#8594;</a>';
+  $('#foot').innerHTML = '<p><b>Learning outcome.</b> ' + PAGE.lo + '. Question 1 follows the school paper; the rest are variants on the same idea.</p>' +
+    '<p>Progress is saved in this browser only. Use Export to keep a copy.</p>' + (links ? '<p>' + links + '</p>' : '');
+  paintTheme(); render();
+}
+document.addEventListener('DOMContentLoaded', boot);
+
+</script>
+</body>
+</html>

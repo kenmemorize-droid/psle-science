@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="notebook">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Waterproof or soaks up water? — P3 Diversity of Materials</title>
+<style>
+:root[data-theme="notebook"]{
+  --bg:#F1E9DA; --paper:#FBF7EF; --card:#FFFDF8; --sunk:#F3EBDC; --topbar:#1F2A37; --topink:#F6EFE2; --topmute:#C9BFAC;
+  --ink:#1F2A37; --muted:#5C6773;
+  --primary:#0F766E; --primary-soft:#D9EDEA; --primary-ink:#FFFFFF;
+  --accent:#9A6400; --accent-soft:#FBEBCC;
+  --ok:#15803D; --ok-soft:#DBF0E2; --no:#B42318; --no-soft:#FAE3E0;
+  --line:#D9CFBC; --stroke:#1F2A37; --fa:#D9EDEA; --fb:#FBEBCC; --fc:#E7E0D1;
+  --radius:14px; --bw:2px;
+  --f-display:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,"Times New Roman",serif;
+  --f-body:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  --f-label:var(--f-body); --ls:.01em;
+}
+:root[data-theme="lab"]{
+  --bg:#F4F6FA; --paper:#FFFFFF; --card:#FFFFFF; --sunk:#F1F5F9; --topbar:#0F172A; --topink:#F8FAFC; --topmute:#94A3B8;
+  --ink:#0F172A; --muted:#64748B;
+  --primary:#2563EB; --primary-soft:#DBEAFE; --primary-ink:#FFFFFF;
+  --accent:#B45309; --accent-soft:#FEF3C7;
+  --ok:#16A34A; --ok-soft:#DCFCE7; --no:#DC2626; --no-soft:#FEE2E2;
+  --line:#CBD5E1; --stroke:#0F172A; --fa:#DBEAFE; --fb:#FEF3C7; --fc:#E2E8F0;
+  --radius:8px; --bw:1px;
+  --f-display:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  --f-body:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  --f-label:var(--f-body); --ls:.01em;
+}
+:root[data-theme="mission"]{
+  --bg:#070C16; --paper:#0B1220; --card:#111B2E; --sunk:#0A1120; --topbar:#060B14; --topink:#E2E8F0; --topmute:#94A3B8;
+  --ink:#E2E8F0; --muted:#94A3B8;
+  --primary:#22D3EE; --primary-soft:#0E3A47; --primary-ink:#06212B;
+  --accent:#F472B6; --accent-soft:#3B1130;
+  --ok:#34D399; --ok-soft:#0C3A2E; --no:#FB7185; --no-soft:#3B1220;
+  --line:#24334B; --stroke:#E2E8F0; --fa:#0E3A47; --fb:#3B1130; --fc:#1B2740;
+  --radius:10px; --bw:1px;
+  --f-display:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  --f-body:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  --f-label:ui-monospace,SFMono-Regular,Menlo,Consolas,"Courier New",monospace; --ls:.06em;
+}
+
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.55 var(--f-body)}
+h1,h2,h3,h4{font-family:var(--f-display);line-height:1.24;margin:0}
+p{margin:0 0 .6em} p:last-child{margin-bottom:0}
+button{font:inherit;color:inherit;cursor:pointer}
+:focus-visible{outline:3px solid var(--accent);outline-offset:2px;border-radius:4px}
+.vh{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.wrap{max-width:1040px;margin:0 auto;padding:0 14px}
+
+/* header */
+.top{background:var(--topbar);color:var(--topink);padding:12px 0 0}
+.top .wrap{display:flex;flex-wrap:wrap;gap:8px 20px;align-items:flex-end;justify-content:space-between}
+.brand h1{font-size:25px}
+.brand .meta{margin:3px 0 10px;color:var(--topmute);font-size:13.5px;font-family:var(--f-label);letter-spacing:var(--ls)}
+.tools{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:8px;justify-content:flex-end}
+.tools button,.tools a{background:transparent;border:1px solid var(--topmute);color:var(--topink);border-radius:6px;
+  padding:7px 11px;font-size:13px;min-height:38px;display:inline-flex;align-items:center;text-decoration:none}
+.tools button[aria-pressed="true"]{background:var(--primary);border-color:var(--primary);color:var(--primary-ink)}
+.tabs{display:flex;gap:4px;flex-wrap:wrap}
+.tab{background:transparent;border:0;color:var(--topmute);padding:11px 14px;border-radius:8px 8px 0 0;font-size:15px;min-height:44px}
+.tab[aria-selected="true"]{background:var(--bg);color:var(--ink);font-weight:700}
+.tab .dot{display:inline-block;min-width:20px;padding:0 6px;margin-left:6px;border-radius:10px;background:var(--accent-soft);
+  color:var(--accent);font-size:12px;font-weight:700;line-height:20px;text-align:center}
+
+main{padding:16px 0 28px}
+footer{padding:0 0 32px;color:var(--muted);font-size:13.5px}
+footer a{color:var(--muted)}
+
+/* stepper */
+.stepper{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:6px}
+.pill{position:relative;width:46px;height:46px;border-radius:50%;border:2px solid var(--line);background:var(--card);
+  color:var(--ink);font-weight:700;font-size:17px}
+.pill i{position:absolute;right:-4px;top:-5px;width:20px;height:20px;border-radius:50%;font-style:normal;font-size:12px;
+  line-height:20px;text-align:center;color:#fff}
+.pill.cur{box-shadow:0 0 0 3px var(--primary-soft);border-color:var(--primary)}
+.pill.first,.pill.recapped{border-color:var(--ok)} .pill.first i,.pill.recapped i{background:var(--ok)}
+.pill.recap{border-color:var(--accent);background:var(--accent-soft)} .pill.recap i{background:var(--accent)}
+.pill.open{border-color:var(--primary)} .pill.open i{background:var(--primary)}
+.legend{font-size:13px;color:var(--muted);margin:6px 0 14px}
+
+/* question */
+.q{background:var(--card);border:var(--bw) solid var(--line);border-radius:var(--radius);padding:18px}
+.q h2{font-size:21px;margin-bottom:6px}
+.q h3{font-size:14px;font-family:var(--f-label);letter-spacing:var(--ls);color:var(--muted);margin:0 0 8px;font-weight:600}
+.intro{font-size:16.5px}
+.banner{border-left:4px solid var(--accent);background:var(--accent-soft);padding:9px 12px;border-radius:0 var(--radius) var(--radius) 0;font-size:15px}
+.cols{display:grid;grid-template-columns:1fr;gap:16px;margin-top:14px}
+@media(min-width:800px){.cols{grid-template-columns:1.3fr .8fr}}
+.stage{background:var(--sunk);border:var(--bw) solid var(--line);border-radius:var(--radius);padding:10px}
+.stage svg{display:block;width:100%;height:auto}
+.stage-msg{font-size:15px;margin:10px 0 0;min-height:44px}
+.shelf{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.tile{display:flex;flex-direction:column;align-items:center;gap:4px;min-width:84px;min-height:70px;padding:8px 10px;
+  border:var(--bw) solid var(--line);border-radius:var(--radius);background:var(--card);color:var(--ink);font-size:14px}
+.tile[aria-pressed="true"]{border-color:var(--primary);background:var(--primary-soft)}
+.tile b{font-size:16px}
+.tile small{color:var(--muted);font-size:12px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+.btn{min-height:44px;padding:10px 15px;border:var(--bw) solid var(--line);border-radius:var(--radius);background:var(--card);color:var(--ink);font-size:15px}
+.btn.primary{background:var(--primary);border-color:var(--primary);color:var(--primary-ink)}
+.btn.small{min-height:38px;padding:6px 11px;font-size:13.5px}
+.btn:disabled{opacity:.45;cursor:default}
+.btn[aria-pressed="true"]{background:var(--primary);border-color:var(--primary);color:var(--primary-ink)}
+.note{font-size:13.5px;color:var(--muted);margin:10px 0 0}
+
+/* log + hints */
+.side .box{background:var(--sunk);border:var(--bw) solid var(--line);border-radius:var(--radius);padding:12px;margin-bottom:12px}
+.logrow{display:flex;gap:8px;align-items:flex-start;padding:7px 0;border-bottom:1px solid var(--line);font-size:14.5px}
+.logrow:last-child{border-bottom:0}
+.logrow b{min-width:4.6em}
+.logrow.bad{color:var(--no)} .logrow.good{color:var(--ok)}
+.empty{color:var(--muted);font-size:14px}
+.hints ol{margin:0 0 8px;padding-left:20px;font-size:14.5px}
+
+/* answer */
+.answer{border:0;padding:0;margin:18px 0 0}
+.answer legend{font-size:16.5px;font-weight:700;padding:0;margin-bottom:10px}
+.scroll{overflow-x:auto}
+table.exam{width:100%;border-collapse:collapse;font-size:15.5px}
+table.exam th,table.exam td{border:var(--bw) solid var(--line);padding:9px 10px;text-align:center}
+table.exam th{background:var(--sunk);font-family:var(--f-label);letter-spacing:var(--ls);font-size:13.5px}
+tr.opt{cursor:pointer}
+tr.opt td.n{white-space:nowrap}
+tr.opt td.n label{padding-left:4px;font-weight:700}
+tr.opt.sel td{background:var(--primary-soft)}
+tr.opt.right td{background:var(--ok-soft)}
+tr.opt.missed td{background:var(--no-soft);opacity:.72}
+tr.opt.missed td.n small{display:block;font-size:11.5px;color:var(--no)}
+tr.opt.locked{cursor:default}
+.lock{font-size:14px;color:var(--muted);margin-top:8px}
+.actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+
+/* feedback */
+.fb{margin-top:16px;border:var(--bw) solid var(--line);border-radius:var(--radius);padding:14px}
+.fb.good{border-color:var(--ok);background:var(--ok-soft)}
+.fb.bad{border-color:var(--no);background:var(--no-soft)}
+.fb h3{font-size:18px;margin-bottom:6px;color:inherit;font-family:var(--f-display);letter-spacing:0}
+.fb h4{font-size:15px;margin:14px 0 8px}
+.fb .key{border-left:4px solid var(--primary);background:var(--card);padding:9px 12px;border-radius:0 var(--radius) var(--radius) 0}
+.optcard{background:var(--card);border:var(--bw) solid var(--line);border-radius:var(--radius);padding:11px;margin-bottom:8px;font-size:15px}
+.optcard.right{border-color:var(--ok)}
+.who{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin-bottom:6px}
+.tagchip{background:var(--sunk);border:1px solid var(--line);border-radius:999px;padding:2px 9px;font-size:12.5px}
+.you{background:var(--accent-soft);color:var(--accent);border-radius:999px;padding:2px 9px;font-size:12.5px;font-weight:700}
+.lbl{font-family:var(--f-label);letter-spacing:var(--ls);font-weight:700;font-size:13.5px}
+.clash{margin:6px 0 0;padding-left:20px;font-size:14.5px}
+
+/* panels */
+.panel{background:var(--card);border:var(--bw) solid var(--line);border-radius:var(--radius);padding:16px;margin-bottom:14px}
+.panel h2{font-size:20px;margin-bottom:10px}
+.stats{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:12px}
+.stat{flex:1 1 120px;background:var(--sunk);border:var(--bw) solid var(--line);border-radius:var(--radius);padding:10px;font-size:13px;color:var(--muted)}
+.stat b{display:block;font-size:22px;color:var(--ink);font-family:var(--f-display)}
+.mist{border-top:var(--bw) solid var(--line);padding-top:10px;margin-top:10px}
+.mist:first-of-type{border-top:0;margin-top:0;padding-top:0}
+.mist h3{font-size:16px}
+.mist .fix{font-size:14.5px;color:var(--muted)}
+.mist ul{margin:6px 0 0;padding-left:20px;font-size:14.5px}
+.rulecard{border:var(--bw) solid var(--line);border-radius:var(--radius);padding:12px;margin-bottom:10px}
+.rulecard h3{font-size:16px;margin-bottom:4px}
+.beyond{border:var(--bw) dashed var(--accent);border-radius:var(--radius);padding:12px}
+.beyond .tagx{display:inline-block;font-family:var(--f-label);letter-spacing:var(--ls);font-size:12px;color:var(--accent);
+  background:var(--accent-soft);border:1px solid var(--accent);border-radius:999px;padding:2px 9px;margin-right:8px}
+
+.toast{position:fixed;left:50%;bottom:18px;transform:translateX(-50%);background:var(--topbar);color:var(--topink);
+  padding:9px 16px;border-radius:8px;font-size:14px;opacity:0;pointer-events:none;transition:opacity .25s;z-index:20}
+.toast.show{opacity:1}
+
+/* svg language */
+.ln{fill:none;stroke:var(--stroke);stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.sl{fill:var(--fc);stroke:var(--stroke);stroke-width:2;stroke-linejoin:round}
+.lbl{fill:var(--ink);font-family:var(--f-label);font-size:13px;letter-spacing:var(--ls)}
+.lbl.sm{font-size:11.5px;fill:var(--muted)}
+.fa{fill:var(--fa)} .fb2{fill:var(--fb)} .fc2{fill:var(--fc)}
+.mv{transition:transform .6s ease,opacity .4s ease}
+@media(prefers-reduced-motion:reduce){.mv,.toast{transition:none!important}}
+@media(max-width:560px){body{font-size:16px} .q{padding:13px} .brand h1{font-size:21px}}
+.hot{stroke:var(--primary)!important;stroke-width:3.5!important}
+.bar{fill:var(--fa);stroke:var(--stroke);stroke-width:2}
+.bar.hi{fill:var(--fb)}
+.needrow{display:flex;gap:8px;align-items:center;padding:6px 0;font-size:14.5px}
+.needrow .m{font-weight:700;min-width:5.6em}
+.needrow.met{color:var(--ok)} .needrow.fail{color:var(--no)}
+table.tick{width:100%;border-collapse:collapse;font-size:15px;margin:10px 0 0}
+table.tick th,table.tick td{border:var(--bw) solid var(--line);padding:7px 8px;text-align:center}
+table.tick th{background:var(--sunk);font-family:var(--f-label);font-size:13px;letter-spacing:var(--ls)}
+table.tick td.rowname{text-align:left;font-weight:700}
+
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <div class="brand">
+      <h1 id="brandTitle"></h1>
+      <p class="meta"><span id="brandMeta"></span> &mdash; <span id="brandSub"></span></p>
+    </div>
+    <div>
+      <div class="tools">
+        <a href="../index.html">&#8592; Hub</a>
+        <button type="button" data-act="theme" data-theme="notebook">Notebook</button>
+        <button type="button" data-act="theme" data-theme="lab">Lab</button>
+        <button type="button" data-act="theme" data-theme="mission">Mission</button>
+        <button type="button" id="btnExport">Export</button>
+        <button type="button" id="btnImport">Import</button>
+        <button type="button" id="btnReset">Reset</button>
+        <input type="file" id="fileImport" accept="application/json,.json" hidden>
+      </div>
+      <nav class="tabs" role="tablist" aria-label="Sections" id="tabs"></nav>
+    </div>
+  </div>
+</header>
+<div class="wrap">
+  <main id="main"></main>
+  <footer id="foot"></footer>
+</div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script id="data">
+/* ===== PAGE 3: waterproof vs absorbent, and the soaking table ===== */
+var PAGE = {
+  id: 'P3-materials-waterproof-vs-absorbent',
+  title: 'Waterproof, or soaks up water?',
+  topic: 'Diversity of Materials',
+  level: 'P3 Standard',
+  meta: 'Diversity &middot; Diversity of Materials &middot; P3 Standard',
+  lo: 'Compare physical properties of materials (waterproof); use data to validate explanations',
+  sub: 'Soak each material, work out the water it took in, then answer.',
+  prev: { href: 'P3-materials-match-part-to-property.html', label: 'Matching a part to the properties it needs' },
+  next: null,
+  rules: ''
+};
+
+var TAGS = {
+  W1: { label: 'Reads the final mass instead of subtracting', fix: 'The mass after soaking includes the material itself. Water absorbed = mass after &minus; mass before. Always subtract before comparing.' },
+  W2: { label: 'Mixes up waterproof and absorbent', fix: 'Waterproof means the material does not absorb water, so its mass does not change. A towel must do the opposite: take in as much water as possible.' },
+  W3: { label: 'Compares how many times heavier instead of grams', fix: 'The pieces are the same size, so compare the grams of water taken in. Doubling a small mass can still be less water than a smaller jump on a bigger piece.' },
+  W4: { label: 'Picks the biggest number in the table', fix: 'The biggest number is usually the final mass of the heaviest material. It answers a different question. Work out your own column first.' },
+  W5: { label: 'Misses a variable that must be kept the same', fix: 'Only the type of material changes. Size of the piece, amount of water and soaking time must be kept the same, or the difference in mass could be caused by those instead.' }
+};
+
+/* ---- bench ---- */
+function gain(m) { return m.after - m.before; }
+function beakers(Q, run) {
+  var n = Q.materials.length, w = Math.floor(500 / n), inner = w - 22;
+  var out = Q.materials.map(function (m, i) {
+    var x = 12 + i * w, soaked = !!run.bench.done[m.id];
+    var wet = soaked && gain(m) > 0;
+    return '<g><path class="ln" d="M' + x + ' 34 v128 h' + inner + ' v-128"/>' +
+      '<path class="ln fa" d="M' + (x + 4) + ' 70 h' + (inner - 8) + ' v88 h-' + (inner - 8) + ' z"/>' +
+      '<rect class="sl' + (wet ? ' fa' : '') + '" x="' + (x + inner / 2 - 24) + '" y="98" width="48" height="52" rx="3"/>' +
+      '<text class="lbl" x="' + (x + inner / 2) + '" y="130" text-anchor="middle">' + m.id + '</text>' +
+      '<text class="lbl sm" x="' + (x + inner / 2) + '" y="182" text-anchor="middle">' +
+      (soaked ? m.before + ' \u2192 ' + m.after + ' g' : m.before + ' g, not soaked') + '</text></g>';
+  }).join('');
+  return '<svg viewBox="0 0 520 196" role="img" aria-label="Containers of water holding each material.">' + out + '</svg>';
+}
+function chart(Q, run, kind) {
+  var n = Q.materials.length, w = Math.floor(460 / n);
+  var vals = Q.materials.map(function (m) { return kind === 'after' ? m.after : gain(m); });
+  var max = Math.max.apply(null, vals) * 1.18 || 1;
+  var best = vals.indexOf(Math.max.apply(null, vals));
+  var bars = Q.materials.map(function (m, i) {
+    var v = vals[i], h = Math.round(v / max * 142), x = 60 + i * w + 8, bw = w - 28;
+    return '<rect class="bar' + (i === best ? ' hi' : '') + '" x="' + x + '" y="' + (176 - h) + '" width="' + bw + '" height="' + h + '"/>' +
+      '<text class="lbl" x="' + (x + bw / 2) + '" y="' + (176 - h - 7) + '" text-anchor="middle">' + v + ' g</text>' +
+      '<text class="lbl" x="' + (x + bw / 2) + '" y="196" text-anchor="middle">' + m.id + '</text>';
+  }).join('');
+  return '<svg viewBox="0 0 520 210" role="img" aria-label="Bar chart of ' + (kind === 'after' ? 'mass after soaking' : 'water absorbed') + '.">' +
+    '<text class="lbl" x="260" y="16" text-anchor="middle">' + (kind === 'after' ? 'Mass after soaking (g)' : 'Water absorbed = after \u2212 before (g)') + '</text>' +
+    '<line class="ln" x1="56" y1="176" x2="508" y2="176"/><line class="ln" x1="56" y1="26" x2="56" y2="176"/>' + bars + '</svg>';
+}
+
+var BENCH = {
+  labLabel: 'Soaking lab',
+  logLabel: 'Your readings',
+  initRun: function (Q) { return { done: {}, last: null, view: 'lab' }; },
+  allDone: function (Q, run) { return Q.materials.every(function (m) { return run.bench.done[m.id]; }); },
+  stage: function (Q, run) {
+    var v = run.bench.view, svg = (v === 'lab') ? beakers(Q, run) : chart(Q, run, v), msg;
+    if (v === 'after') msg = 'This graph answers "which is heaviest now?". Part of each bar is just the material itself.';
+    else if (v === 'gain') msg = 'This graph answers "which took in the most water?". It is the one that decides a towel question.';
+    else if (!run.bench.last) msg = 'Each piece is the same size, in the same amount of water, for the same 10 minutes. Tap a material to soak it and weigh it again.';
+    else {
+      var m = run.bench.last, g = gain(m);
+      msg = '<b>' + m.id + ':</b> ' + m.before + ' g before, ' + m.after + ' g after. ' + m.after + ' &minus; ' + m.before + ' = <b>' + g + ' g</b> of water went in' +
+        (g === 0 ? ', so ' + m.id + ' is <b>waterproof</b>.' : '.');
+    }
+    return { svg: svg, msg: msg };
+  },
+  shelf: function (Q, run) {
+    return Q.materials.map(function (m) {
+      var d = !!run.bench.done[m.id];
+      return '<button class="tile" data-act="soak" data-id="' + m.id + '" aria-pressed="' + d + '">' +
+        '<b>' + m.id + '</b><span>' + m.before + ' g</span><small>' + (d ? m.after + ' g after' : 'tap to soak') + '</small></button>';
+    }).join('');
+  },
+  prompt: function (Q, run) {
+    return BENCH.allDone(Q, run) ? 'All four weighed. Compare them two ways:' : 'Soak and weigh every material to unlock the options.';
+  },
+  chips: function (Q, run) {
+    if (!BENCH.allDone(Q, run)) return '';
+    return ['lab', 'after', 'gain'].map(function (k) {
+      var lbl = { lab: 'Back to the lab', after: 'Graph: mass after soaking', gain: 'Graph: water absorbed' }[k];
+      return '<button class="btn" data-act="view" data-view="' + k + '" aria-pressed="' + (run.bench.view === k) + '">' + lbl + '</button>';
+    }).join('');
+  },
+  handle: function (a, el, Q, run) {
+    if (a === 'soak') {
+      var m = Q.materials.filter(function (x) { return x.id === el.dataset.id; })[0];
+      run.bench.done[m.id] = true; run.bench.last = m; run.bench.view = 'lab'; return true;
+    }
+    if (a === 'view') { run.bench.view = el.dataset.view; return true; }
+    return false;
+  },
+  log: function (Q, run) {
+    var rows = Q.materials.filter(function (m) { return run.bench.done[m.id]; }).map(function (m) {
+      var g = gain(m);
+      return '<div class="logrow ' + (g === 0 ? 'bad' : 'good') + '"><b>' + m.id + '</b><span>' + m.before + ' g &rarr; ' + m.after + ' g, absorbed <b>' + g + ' g</b>' + (g === 0 ? ' (waterproof)' : '') + '</span></div>';
+    });
+    return rows.length ? rows.join('') : '<p class="empty">Soak a material and its reading appears here.</p>';
+  },
+  done: function (Q, run) { return BENCH.allDone(Q, run); },
+  todo: function (Q, run) {
+    return Q.materials.filter(function (m) { return !run.bench.done[m.id]; }).map(function (m) { return 'soak ' + m.id; }).join(', ');
+  },
+  clashes: function (Q, i, run) { return Q.options[i].clash || []; }
+};
+
+var EXAM = [{ id: 'R', before: 60, after: 90 }, { id: 'S', before: 90, after: 90 }, { id: 'T', before: 100, after: 150 }, { id: 'U', before: 150, after: 180 }];
+
+var QUESTIONS = [
+  {
+    id: 'q1', title: "Wen Han's towel",
+    intro: 'Wen Han measured the mass of four materials of the <b>same size</b>, put each into a container with the same amount of water for 10 minutes, then measured them again. Soak all four on the bench.',
+    materials: EXAM,
+    hints: ['Fill in the missing column yourself: mass after &minus; mass before.', 'A towel has to take as much water off your skin as it can. Which material took in the most grams of water?'],
+    ask: 'Which material, R, S, T or U, is most suitable for making a towel?',
+    cols: ['Material'], correct: 2,
+    correctWhy: 'T took in 150 &minus; 100 = 50 g of water, more than any other material. A towel must take up as much water as possible.',
+    takeaway: 'Water absorbed = mass after &minus; mass before. Never compare the "after" column on its own.',
+    options: [
+      { n: ['R'], tag: 'W3', pick: 'R went from 60 g to 90 g, which is half as heavy again. That looks like a big change.', why: 'R took in 30 g. The pieces are the same size, so the fair comparison is the grams of water taken in, and T took in 50 g.', clash: ['Your log: R absorbed 30 g, T absorbed 50 g.'] },
+      { n: ['S'], tag: 'W2', pick: 'S is the tidy one &mdash; its mass did not change at all, so it seems to handle water well.', why: 'S took in 0 g, so it absorbed no water. That makes S waterproof, which is the opposite of what a towel must do.', clash: ['Your log: S absorbed 0 g (waterproof).'] },
+      { n: ['T'], tag: null, pick: 'Work out the water absorbed for all four, then take the largest: 150 &minus; 100 = 50 g.', why: 'T absorbed the most water of the four, which is exactly what a towel needs to do.' },
+      { n: ['U'], tag: 'W1', pick: 'U has the largest mass after soaking, 180 g, so it looks like it holds the most water.', why: 'U started at 150 g, so it only took in 30 g. The mass after soaking includes the material itself.', clash: ['Your log: U absorbed 30 g, T absorbed 50 g.'] }
+    ]
+  },
+  {
+    id: 'q2', title: 'A material for a raincoat',
+    intro: 'Four new materials of the same size, soaked the same way. Soak all four, then choose.',
+    materials: [{ id: 'W', before: 40, after: 70 }, { id: 'X', before: 80, after: 80 }, { id: 'Y', before: 120, after: 200 }, { id: 'Z', before: 150, after: 165 }],
+    hints: ['A raincoat must keep the rain on the outside. What does that mean about the water it absorbs?', 'Look for the material whose mass did not change at all.'],
+    ask: 'Which material is most suitable for making a raincoat?',
+    cols: ['Material'], correct: 1,
+    correctWhy: 'X was 80 g before and 80 g after, so it absorbed no water. A material that does not absorb water is waterproof, so the rain stays on the outside of the coat.',
+    takeaway: 'Waterproof shows up in the data as a gain of 0 g. It is the only reading that proves no water went in.',
+    options: [
+      { n: ['W'], tag: 'W2', pick: 'W has the smallest mass of all, so it would make a light coat.', why: 'W absorbed 30 g, so rain soaks into it and reaches the person wearing the coat. A light material is not the same as a waterproof one.', clash: ['Your log: W absorbed 30 g.'] },
+      { n: ['X'], tag: null, pick: 'Work out the gain for each one. Only X gained nothing, so only X is waterproof.', why: 'A material that does not absorb water is waterproof, which is what a raincoat needs.' },
+      { n: ['Y'], tag: 'W2', pick: 'Y took in the most water, so it clearly deals with rain better than the others.', why: 'Y absorbed 80 g, the most of the four. A coat made from Y would soak up the rain like a towel.', clash: ['Your log: Y absorbed 80 g, X absorbed 0 g.'] },
+      { n: ['Z'], tag: 'W3', pick: 'Z only went up from 150 g to 165 g, which is a very small change for such a heavy piece.', why: 'Z still absorbed 15 g, so water went in. Only a gain of 0 g means no water was absorbed.', clash: ['Your log: Z absorbed 15 g, X absorbed 0 g.'] }
+    ]
+  },
+  {
+    id: 'q3', title: 'The heaviest one',
+    intro: 'Four more materials of the same size. One of them is much heavier than the rest to begin with. Soak all four.',
+    materials: [{ id: 'D', before: 200, after: 240 }, { id: 'E', before: 50, after: 100 }, { id: 'F', before: 150, after: 185 }, { id: 'G', before: 90, after: 130 }],
+    hints: ['Which material has the largest number in the "after" column? Is that the question being asked?', 'Write out after &minus; before for all four before you choose.'],
+    ask: 'Which material absorbed the most water?',
+    cols: ['Material'], correct: 1,
+    correctWhy: 'E gained 100 &minus; 50 = 50 g, more than D (40 g), F (35 g) and G (40 g), even though E has the smallest mass after soaking.',
+    takeaway: 'The heaviest material after soaking is often the one that was already heaviest. Subtract first, then compare.',
+    options: [
+      { n: ['D'], tag: 'W1', pick: 'D has the largest mass after soaking, 240 g, so it looks like it is holding the most water.', why: 'D started at 200 g and gained only 40 g. Most of that 240 g is the material itself.', clash: ['Your log: D absorbed 40 g, E absorbed 50 g.'] },
+      { n: ['E'], tag: null, pick: 'Subtract for every row: D 40 g, E 50 g, F 35 g, G 40 g. The largest is E.', why: 'E took in 50 g of water, the most of the four.' },
+      { n: ['F'], tag: 'W4', pick: 'F has a big mass before and after, so it seems to be in the running.', why: 'F gained only 35 g, the least of the four. Large masses do not mean large gains.', clash: ['Your log: F absorbed 35 g, the smallest gain.'] },
+      { n: ['G'], tag: 'W4', pick: 'G went from 90 g to 130 g, which is a clear jump.', why: 'G gained 40 g, which is less than E\'s 50 g.', clash: ['Your log: G absorbed 40 g, E absorbed 50 g.'] }
+    ]
+  },
+  {
+    id: 'q4', title: 'Two the same',
+    intro: 'Four materials of the same size again. Soak all four and fill in your own gains.',
+    materials: [{ id: 'P', before: 60, after: 95 }, { id: 'Q', before: 100, after: 135 }, { id: 'R', before: 80, after: 140 }, { id: 'S', before: 120, after: 120 }],
+    hints: ['You cannot answer this one by looking. Work out all four gains first.', 'One material gained nothing. Two of the others gained the same amount.'],
+    ask: 'Which two materials absorbed the same amount of water?',
+    cols: ['Materials'], correct: 0,
+    correctWhy: 'P gained 95 &minus; 60 = 35 g and Q gained 135 &minus; 100 = 35 g. Their masses before and after are completely different, but the water that went in is the same.',
+    takeaway: 'Two materials can hold the same amount of water and still have totally different masses. Only the subtraction tells you.',
+    options: [
+      { n: ['P and Q'], tag: null, pick: 'Work out all four gains: P 35 g, Q 35 g, R 60 g, S 0 g. P and Q match.', why: 'Both absorbed 35 g, even though P ends at 95 g and Q at 135 g.' },
+      { n: ['Q and R'], tag: 'W1', pick: 'Q and R end at 135 g and 140 g, which are almost the same.', why: 'Ending at a similar mass is not the same as absorbing the same amount. Q gained 35 g and R gained 60 g.', clash: ['Your log: Q absorbed 35 g, R absorbed 60 g.'] },
+      { n: ['R and S'], tag: 'W2', pick: 'R and S are the two unusual ones, so they feel like a pair.', why: 'R gained 60 g, the most of the four. S gained 0 g and is waterproof. They are opposites.', clash: ['Your log: R absorbed 60 g, S absorbed 0 g.'] },
+      { n: ['P and S'], tag: 'W4', pick: 'P and S have the smallest numbers in the table, so they look like the matching pair.', why: 'P gained 35 g but S gained nothing at all, so they are not the same.', clash: ['Your log: P absorbed 35 g, S absorbed 0 g.'] }
+    ]
+  },
+  {
+    id: 'q5', title: 'Was it a fair test?',
+    intro: 'Back to Wen Han\'s four materials. Soak them all again, then look at how the experiment was set up.',
+    materials: EXAM,
+    hints: ['Only one thing is allowed to change in a fair test. Here it is the type of material.', 'The masses before soaking were all different. Was that allowed, or does it spoil the test?'],
+    ask: 'In this experiment, which of these had to be kept the same for a fair test?',
+    cols: ['Kept the same'], correct: 2,
+    correctWhy: 'Only the type of material may change. If one piece were bigger, or sat in more water, or soaked for longer, a larger gain in mass could be caused by that instead of by the material.',
+    takeaway: 'The different starting masses are fine &mdash; same-sized pieces of different materials weigh different amounts. That is exactly why you subtract.',
+    options: [
+      { n: ['The mass of each material before soaking'], tag: 'W5', pick: 'The before masses are all different, which looks unfair at first sight.', why: 'Same-sized pieces of different materials naturally have different masses, so this cannot be kept the same. It is handled by subtracting: water absorbed = after &minus; before.', clash: ['Your log: the before masses were 60, 90, 100 and 150 g, all different, and the test still works.'] },
+      { n: ['The type of material in each container'], tag: 'W5', pick: 'The question says "kept the same", and the materials are what the experiment is about.', why: 'The type of material is the one thing that must <em>change</em> &mdash; it is the variable being tested.' },
+      { n: ['The size of each piece, the amount of water, and the soaking time'], tag: null, pick: 'List everything else that could change how much water goes in, and keep all of it the same.', why: 'These are the variables that would otherwise explain a difference in mass instead of the material.' },
+      { n: ['The colour of each container'], tag: 'W5', pick: 'It is something you can easily keep the same, so it sounds like a fair-test answer.', why: 'The colour of the container has no effect on how much water a material absorbs, so controlling it does nothing.' }
+    ]
+  }
+];
+
+PAGE.rules = '<div class="panel"><h2>What to remember</h2>' +
+  '<div class="rulecard"><h3>The one calculation</h3><p>Water absorbed = mass after soaking &minus; mass before soaking. The exam paper never prints this column. Write it in yourself before you look at the options.</p></div>' +
+  '<div class="rulecard"><h3>Waterproof</h3><p>A material is waterproof when it does not absorb water. In a table it shows as a gain of <b>0 g</b>. Use it for raincoats, umbrellas and boots.</p></div>' +
+  '<div class="rulecard"><h3>Absorbent</h3><p>The material that gains the most grams takes up the most water. Use it for towels, cloths and mops.</p></div>' +
+  '<div class="rulecard"><h3>The usual trap</h3><p>The largest number in the "after" column is usually just the heaviest material. It answers a different question.</p></div>' +
+  '<div class="rulecard"><h3>The fair test</h3><p>Changed: the type of material. Kept the same: size of each piece, amount of water, soaking time. The before masses differ, and that is fine.</p></div>' +
+  '<div class="beyond"><p><span class="tagx">Beyond syllabus</span>Comparing "how many times heavier" (60 g &rarr; 90 g is 1.5 times) is a different comparison and is not what this topic asks for. The pieces are the same size, so compare grams.</p></div></div>';
+
+</script>
+<script id="app">
+/* ---------- SHARED ENGINE ---------- */
+var $ = function (s) { return document.querySelector(s); };
+var main, STORE = 'psle-sci:' + PAGE.id, memStore = null;
+var REDUCE = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+function loadProgress() { try { var s = localStorage.getItem(STORE); if (s) return JSON.parse(s) || {}; } catch (e) {} return memStore || {}; }
+function saveProgress() { try { localStorage.setItem(STORE, JSON.stringify(progress)); } catch (e) { memStore = progress; } }
+function pushMistake(rec) {
+  try {
+    var all = JSON.parse(localStorage.getItem('psle-sci:mistakes') || '[]');
+    all.push(rec); localStorage.setItem('psle-sci:mistakes', JSON.stringify(all.slice(-400)));
+  } catch (e) {}
+}
+var progress = loadProgress(), runs = {}, view = 'questions', cur = 0;
+
+function getProg(id) {
+  if (!progress[id]) progress[id] = { misses: [], solved: false, firstTry: null, hints: 0, recapDue: false, recaps: 0 };
+  if (!progress[id].misses) progress[id].misses = [];
+  return progress[id];
+}
+function getRun(Q) {
+  if (!runs[Q.id]) runs[Q.id] = { choice: null, missed: [], hints: 0, solved: false, lastWrong: null, runMisses: 0, bench: BENCH.initRun(Q) };
+  return runs[Q.id];
+}
+function status(id) {
+  var p = progress[id]; if (!p) return 'new';
+  var m = (p.misses || []).length;
+  if (!p.solved && !m) return 'new';
+  if (p.recapDue) return 'recap';
+  if (p.solved) return m ? 'recapped' : 'first';
+  return 'open';
+}
+var STATUS_TEXT = { new: 'Not started', open: 'In progress', first: 'Right first time', recap: 'Needs recap', recapped: 'Recapped' };
+var ICON = { new: '', open: '\u2022', first: '\u2713', recap: '\u21bb', recapped: '\u2713' };
+var q = function () { return QUESTIONS[cur]; };
+
+function toast(msg) {
+  var t = $('#toast'); t.textContent = msg; t.classList.add('show');
+  clearTimeout(toast.t); toast.t = setTimeout(function () { t.classList.remove('show'); }, 2600);
+}
+
+/* ----- nav ----- */
+function renderNav() {
+  var due = QUESTIONS.filter(function (x) { return status(x.id) === 'recap'; }).length;
+  var tabs = [['questions', 'Questions'], ['mistakes', 'Mistake book'], ['rules', 'What to remember']];
+  $('#tabs').innerHTML = tabs.map(function (t) {
+    return '<button class="tab" role="tab" data-act="tab" data-view="' + t[0] + '" aria-selected="' + (view === t[0]) + '">' +
+      t[1] + (t[0] === 'mistakes' && due ? '<span class="dot" aria-label="' + due + ' to recap">' + due + '</span>' : '') + '</button>';
+  }).join('');
+}
+function render() {
+  renderNav();
+  if (view === 'questions') renderQuestion();
+  else if (view === 'mistakes') renderMistakes();
+  else renderRules();
+}
+
+/* ----- question ----- */
+function renderQuestion() {
+  var Q = q(), run = getRun(Q), p = progress[Q.id];
+  var pills = QUESTIONS.map(function (x, i) {
+    var s = status(x.id);
+    return '<button class="pill ' + s + (i === cur ? ' cur' : '') + '" data-act="goto" data-q="' + i +
+      '" aria-label="Question ' + (i + 1) + ': ' + STATUS_TEXT[s] + '"' + (i === cur ? ' aria-current="true"' : '') +
+      '>' + (i + 1) + '<i aria-hidden="true">' + ICON[s] + '</i></button>';
+  }).join('');
+  var first = QUESTIONS.filter(function (x) { return status(x.id) === 'first'; }).length;
+  var banner = (p && p.recapDue && !run.solved)
+    ? '<p class="banner">Recap run. You missed this one before &mdash; work the bench again and answer it cleanly to clear it.</p>'
+    : ((p && p.solved && !run.solved) ? '<p class="banner">You solved this before. Run it again any time.</p>' : '');
+  main.innerHTML =
+    '<div class="stepper" role="group" aria-label="Questions">' + pills + '</div>' +
+    '<p class="legend">' + first + ' of ' + QUESTIONS.length + ' right first time. Green ring: right first time. Amber ring: needs recap.</p>' +
+    '<section class="q"><h2>Question ' + (cur + 1) + ': ' + Q.title + '</h2>' +
+    '<p class="intro">' + Q.intro + '</p>' + banner +
+    '<div class="cols"><div class="lab"><h3>' + (BENCH.labLabel || 'Test bench') + '</h3>' +
+    '<div class="stage" id="stage"></div><p class="stage-msg" id="stageMsg"></p>' +
+    '<div class="shelf" id="shelf"></div><p class="note" id="selMsg"></p><div class="chips" id="chips"></div></div>' +
+    '<div class="side"><div class="box"><h3>' + (BENCH.logLabel || 'Observation log') + '</h3><div id="log"></div></div>' +
+    '<div class="box hints"><h3>Hints</h3><div id="hints"></div></div></div></div>' +
+    '<div id="answer"></div><div id="feedback" aria-live="polite"></div></section>';
+  paintBench(); renderHints(); renderAnswer(); renderFeedback();
+}
+function paintBench() {
+  var Q = q(), run = getRun(Q), st = BENCH.stage(Q, run);
+  $('#stage').innerHTML = st.svg;
+  $('#stageMsg').innerHTML = st.msg || '';
+  $('#shelf').innerHTML = BENCH.shelf(Q, run);
+  $('#selMsg').innerHTML = BENCH.prompt ? BENCH.prompt(Q, run) : '';
+  $('#chips').innerHTML = BENCH.chips ? BENCH.chips(Q, run) : '';
+  $('#log').innerHTML = BENCH.log(Q, run);
+}
+function renderHints() {
+  var Q = q(), run = getRun(Q), shown = Q.hints.slice(0, run.hints);
+  $('#hints').innerHTML =
+    (shown.length ? '<ol>' + shown.map(function (h) { return '<li>' + h + '</li>'; }).join('') + '</ol>' : '') +
+    (run.hints < Q.hints.length ? '<button class="btn small" data-act="hint">Show hint ' + (run.hints + 1) + ' of ' + Q.hints.length + '</button>' : '<p class="empty">No more hints.</p>');
+}
+
+/* ----- answer table ----- */
+function renderAnswer() {
+  var Q = q(), run = getRun(Q), open = BENCH.done(Q, run);
+  var multi = Q.cols && Q.cols.length > 1;
+  var head = multi ? '<tr><th><span class="vh">Option</span></th>' + Q.cols.map(function (c) { return '<th scope="col">' + c + '</th>'; }).join('') + '</tr>' : '';
+  var rows = Q.options.map(function (o, i) {
+    var missed = run.missed.indexOf(i) >= 0, dis = !open || run.solved || missed, cls = ['opt'];
+    if (dis) cls.push('locked');
+    if (missed) cls.push('missed');
+    if (run.solved && i === Q.correct) cls.push('right');
+    else if (run.choice === i && !run.solved) cls.push('sel');
+    var checked = (run.choice === i || (run.solved && i === Q.correct)) ? ' checked' : '';
+    return '<tr class="' + cls.join(' ') + '" data-i="' + i + '"><td class="n">' +
+      '<input type="radio" name="opt" id="o' + i + '" value="' + i + '"' + checked + (dis ? ' disabled' : '') + '>' +
+      '<label for="o' + i + '">(' + (i + 1) + ')</label>' + (missed ? '<small>not this one</small>' : '') + '</td>' +
+      o.n.map(function (x) { return '<td>' + x + '</td>'; }).join('') + '</tr>';
+  }).join('');
+  $('#answer').innerHTML = '<fieldset class="answer"><legend>' + Q.ask + '</legend>' +
+    '<div class="scroll"><table class="exam">' + (head ? '<thead>' + head + '</thead>' : '') + '<tbody>' + rows + '</tbody></table></div>' +
+    (open ? '' : '<p class="lock">Work the bench to unlock the options. Still to do: ' + BENCH.todo(Q, run) + '.</p>') +
+    '<div class="actions"><button class="btn primary" data-act="check" id="btnCheck"' +
+    ((run.choice == null || !open || run.solved) ? ' disabled' : '') + '>Check answer</button></div></fieldset>';
+}
+function selectOption(i) {
+  var Q = q(), run = getRun(Q);
+  if (!BENCH.done(Q, run) || run.solved || run.missed.indexOf(i) >= 0) return;
+  run.choice = i;
+  [].forEach.call(document.querySelectorAll('#answer tr.opt'), function (tr) {
+    var k = +tr.dataset.i; tr.classList.toggle('sel', k === i);
+    var r = tr.querySelector('input'); if (r) r.checked = (k === i);
+  });
+  var b = $('#btnCheck'); if (b) b.disabled = false;
+}
+function checkAnswer() {
+  var Q = q(), run = getRun(Q), p = getProg(Q.id);
+  if (run.choice == null) return;
+  var opt = Q.options[run.choice];
+  if (run.choice === Q.correct) {
+    run.solved = true; run.lastWrong = null; p.solved = true;
+    if (p.firstTry === null) p.firstTry = (run.runMisses === 0);
+    if (run.runMisses > 0) p.recapDue = true;
+    else if (p.recapDue) { p.recapDue = false; p.recaps = (p.recaps || 0) + 1; toast('Recap cleared for this question.'); }
+  } else {
+    run.missed.push(run.choice); run.runMisses++; run.lastWrong = run.choice;
+    p.misses.push({ choice: run.choice, tag: opt.tag, ts: Date.now() });
+    p.recapDue = true;
+    pushMistake({ page: PAGE.id, title: PAGE.title, topic: PAGE.topic, level: PAGE.level, lo: PAGE.lo,
+      qid: Q.id, stem: Q.title, chose: opt.n.join(' / '), correct: Q.options[Q.correct].n.join(' / '),
+      tag: opt.tag ? (TAGS[opt.tag] || {}).label : null, at: new Date().toISOString() });
+    run.choice = null;
+  }
+  saveProgress();
+  renderNav(); paintBench(); renderAnswer(); renderFeedback();
+  var fb = $('#feedback'); if (fb && fb.scrollIntoView) fb.scrollIntoView({ behavior: REDUCE ? 'auto' : 'smooth', block: 'nearest' });
+  [].forEach.call(document.querySelectorAll('.pill'), function (el, i) {
+    var s = status(QUESTIONS[i].id); el.className = 'pill ' + s + (i === cur ? ' cur' : '');
+    var ic = el.querySelector('i'); if (ic) ic.textContent = ICON[s];
+  });
+}
+function optCard(Q, i, run) {
+  var o = Q.options[i], right = i === Q.correct, cl = right ? [] : BENCH.clashes(Q, i, run);
+  var chosen = run.missed.indexOf(i) >= 0 || (right && run.solved);
+  var chips = (Q.cols && Q.cols.length > 1)
+    ? o.n.map(function (n, k) { return '<span class="tagchip">' + Q.cols[k] + ': ' + n + '</span>'; }).join('')
+    : '<span class="tagchip">' + o.n[0] + '</span>';
+  return '<div class="optcard' + (right ? ' right' : '') + '"><div class="who"><b>Option (' + (i + 1) + ')</b>' + chips +
+    (chosen ? '<span class="you">you chose this</span>' : '') + '</div>' +
+    '<p><span class="lbl">' + (right ? 'How to reach it. ' : 'Why someone would choose it. ') + '</span>' + o.pick + '</p>' +
+    '<p><span class="lbl">' + (right ? 'Why it is correct. ' : 'Why it is not correct. ') + '</span>' + o.why + '</p>' +
+    (cl.length ? '<ul class="clash">' + cl.map(function (c) { return '<li>' + c + '</li>'; }).join('') + '</ul>' : '') + '</div>';
+}
+function renderFeedback() {
+  var Q = q(), run = getRun(Q), box = $('#feedback');
+  if (!box) return;
+  if (run.solved) {
+    var need = run.runMisses > 0;
+    box.innerHTML = '<div class="fb good"><h3>&#10003; Correct: option (' + (Q.correct + 1) + ')</h3>' +
+      '<p>' + Q.correctWhy + '</p><p class="key"><b>Key idea.</b> ' + Q.takeaway + '</p>' +
+      '<h4>Every option, and why it works or does not</h4>' +
+      Q.options.map(function (_, i) { return optCard(Q, i, run); }).join('') +
+      (need ? '<p class="note">You missed ' + run.runMisses + ' time' + (run.runMisses > 1 ? 's' : '') + ' on the way, so this question is in your mistake book. Redo it later to clear it.</p>' : '') +
+      '<div class="actions">' + (cur < QUESTIONS.length - 1 ? '<button class="btn primary" data-act="next">Next question</button>' : '') +
+      '<button class="btn" data-act="redo" data-q="' + cur + '">Redo this question</button>' +
+      (need ? '<button class="btn" data-act="tab" data-view="mistakes">Open mistake book</button>' : '') + '</div></div>';
+  } else if (run.lastWrong != null) {
+    var i2 = run.lastWrong, o = Q.options[i2], cl = BENCH.clashes(Q, i2, run), left = Q.options.length - run.missed.length;
+    box.innerHTML = '<div class="fb bad"><h3>&#10007; Not option (' + (i2 + 1) + ')</h3>' +
+      '<p><b>Why it looks right.</b> ' + o.pick + '</p><p><b>Why it is not correct.</b> ' + o.why + '</p>' +
+      (cl.length ? '<p><b>Check it against your log.</b></p><ul class="clash">' + cl.map(function (c) { return '<li>' + c + '</li>'; }).join('') + '</ul>' : '') +
+      '<p>' + (left > 1 ? 'Pick another option. ' + left + ' left.' : 'One option left.') + '</p></div>';
+  } else box.innerHTML = '';
+}
+
+/* ----- mistake book ----- */
+function renderMistakes() {
+  var all = [];
+  QUESTIONS.forEach(function (Q, qi) {
+    ((progress[Q.id] && progress[Q.id].misses) || []).forEach(function (m) { all.push({ choice: m.choice, tag: m.tag, qi: qi, Q: Q }); });
+  });
+  var due = QUESTIONS.map(function (Q, i) { return { Q: Q, i: i }; }).filter(function (x) { return status(x.Q.id) === 'recap'; });
+  var first = QUESTIONS.filter(function (x) { return status(x.id) === 'first'; }).length;
+  var hints = QUESTIONS.reduce(function (s, x) { return s + ((progress[x.id] && progress[x.id].hints) || 0); }, 0);
+  var groups = {};
+  all.forEach(function (m) { var k = m.tag || 'other'; (groups[k] = groups[k] || []).push(m); });
+  var keys = Object.keys(groups).sort(function (a, b) { return groups[b].length - groups[a].length; });
+  var body = keys.length ? keys.map(function (k) {
+    var t = TAGS[k] || { label: 'Other slip', fix: '' };
+    return '<div class="mist"><h3>' + t.label + ' (' + groups[k].length + ' time' + (groups[k].length > 1 ? 's' : '') + ')</h3>' +
+      '<p class="fix">' + t.fix + '</p><ul>' + groups[k].map(function (m) {
+        return '<li>Question ' + (m.qi + 1) + ', option (' + (m.choice + 1) + '): ' + m.Q.options[m.choice].n.join(' / ') +
+          '. <button class="btn small" data-act="redo" data-q="' + m.qi + '">Redo</button></li>';
+      }).join('') + '</ul></div>';
+  }).join('') : '<p class="empty">No mistakes logged yet. Wrong choices appear here, grouped by the idea behind them.</p>';
+  main.innerHTML = '<div class="panel"><h2>Mistake book</h2>' +
+    '<div class="stats"><div class="stat"><b>' + first + '</b>right first time</div>' +
+    '<div class="stat"><b>' + all.length + '</b>wrong choices</div>' +
+    '<div class="stat"><b>' + due.length + '</b>to recap</div>' +
+    '<div class="stat"><b>' + hints + '</b>hints used</div></div>' +
+    (due.length ? '<p>To recap: ' + due.map(function (x) { return 'Question ' + (x.i + 1); }).join(', ') + '.</p>' +
+      '<div class="actions"><button class="btn primary" data-act="redo" data-q="' + due[0].i + '">Recap Question ' + (due[0].i + 1) + '</button></div>'
+      : '<p class="empty">Nothing waiting for recap.</p>') + '</div>' +
+    '<div class="panel"><h2>Ideas to review</h2>' + body + '</div>';
+}
+function renderRules() { main.innerHTML = PAGE.rules; }
+
+/* ----- events ----- */
+document.addEventListener('click', function (e) {
+  var el = e.target.closest('[data-act]'); 
+  if (el) {
+    var a = el.dataset.act;
+    if (a === 'tab') { view = el.dataset.view; render(); window.scrollTo(0, 0); return; }
+    if (a === 'goto') { cur = +el.dataset.q; view = 'questions'; render(); window.scrollTo(0, 0); return; }
+    if (a === 'redo') { cur = +el.dataset.q; delete runs[QUESTIONS[cur].id]; view = 'questions'; render(); window.scrollTo(0, 0); return; }
+    if (a === 'next') { if (cur < QUESTIONS.length - 1) cur++; render(); window.scrollTo(0, 0); return; }
+    if (a === 'hint') {
+      var Qh = q(), rh = getRun(Qh), ph = getProg(Qh.id);
+      if (rh.hints < Qh.hints.length) { rh.hints++; ph.hints = (ph.hints || 0) + 1; saveProgress(); renderHints(); }
+      return;
+    }
+    if (a === 'check') { checkAnswer(); return; }
+    if (a === 'theme') {
+      document.documentElement.setAttribute('data-theme', el.dataset.theme);
+      try { localStorage.setItem('psle-sci:theme', JSON.stringify(el.dataset.theme)); } catch (err) {}
+      paintTheme(); return;
+    }
+    var Qb = q(), rb = getRun(Qb);
+    if (BENCH.handle && BENCH.handle(a, el, Qb, rb)) { paintBench(); renderAnswer(); return; }
+  }
+  var row = e.target.closest('tr.opt');
+  if (row && !row.classList.contains('locked')) selectOption(+row.dataset.i);
+});
+
+function paintTheme() {
+  var cu = document.documentElement.getAttribute('data-theme');
+  [].forEach.call(document.querySelectorAll('[data-act="theme"]'), function (b) {
+    b.setAttribute('aria-pressed', String(b.dataset.theme === cu));
+  });
+}
+(function () {
+  var t = 'notebook';
+  try { var s = localStorage.getItem('psle-sci:theme'); if (s) t = JSON.parse(s); } catch (e) {}
+  if (['notebook', 'lab', 'mission'].indexOf(t) < 0) t = 'notebook';
+  document.documentElement.setAttribute('data-theme', t);
+})();
+
+function boot() {
+  main = $('#main');
+  $('#btnExport').addEventListener('click', function () {
+    var blob = new Blob([JSON.stringify({ app: 'psle-science', page: PAGE.id, exportedAt: new Date().toISOString(), progress: progress }, null, 2)], { type: 'application/json' });
+    var a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = PAGE.id + '-progress.json'; a.click();
+    setTimeout(function () { URL.revokeObjectURL(a.href); }, 1000); toast('Progress exported.');
+  });
+  $('#btnImport').addEventListener('click', function () { $('#fileImport').click(); });
+  $('#fileImport').addEventListener('change', function (e) {
+    var f = e.target.files[0]; if (!f) return;
+    var r = new FileReader();
+    r.onload = function () {
+      try {
+        var d = JSON.parse(r.result);
+        if (d.app !== 'psle-science' || d.page !== PAGE.id || typeof d.progress !== 'object' || !d.progress) throw 0;
+        progress = d.progress; runs = {}; saveProgress(); toast('Progress imported.'); render();
+      } catch (err) { toast('That file is not a progress export from this page.'); }
+    };
+    r.readAsText(f); e.target.value = '';
+  });
+  $('#btnReset').addEventListener('click', function () {
+    if (confirm('Clear the progress and mistake book for this page in this browser?')) {
+      progress = {}; runs = {}; saveProgress(); cur = 0; view = 'questions'; render(); toast('Progress cleared.');
+    }
+  });
+  $('#brandTitle').textContent = PAGE.title;
+  $('#brandMeta').innerHTML = PAGE.meta;
+  $('#brandSub').textContent = PAGE.sub;
+  var links = '';
+  if (PAGE.prev) links += '<a href="' + PAGE.prev.href + '">&#8592; ' + PAGE.prev.label + '</a>';
+  if (PAGE.prev && PAGE.next) links += ' &nbsp;&middot;&nbsp; ';
+  if (PAGE.next) links += '<a href="' + PAGE.next.href + '">' + PAGE.next.label + ' &#8594;</a>';
+  $('#foot').innerHTML = '<p><b>Learning outcome.</b> ' + PAGE.lo + '. Question 1 follows the school paper; the rest are variants on the same idea.</p>' +
+    '<p>Progress is saved in this browser only. Use Export to keep a copy.</p>' + (links ? '<p>' + links + '</p>' : '');
+  paintTheme(); render();
+}
+document.addEventListener('DOMContentLoaded', boot);
+
+</script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+{
+  "id": "P4-digestive-system",
+  "type": "unit",
+  "theme": "systems",
+  "topic": "DIG",
+  "level": "P4",
+  "title": "Digestive system",
+  "purpose": "Your body has systems that each do a job. Meet five of them, then follow food through the digestive system to see where it is digested and where it passes into the blood.",
+  "lo": ["P4.DIG.C1", "P4.DIG.C2"],
+  "fixes": "The whole Digestive system topic: the five body systems and their jobs, and what each part of the digestive system does.",
+  "origin": "base",
+  "built": "2026-11-12",
+  "order": 0,
+  "uses": ["classify"]
+}

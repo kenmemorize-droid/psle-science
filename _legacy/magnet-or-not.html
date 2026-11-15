@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Magnet or not? Primary Science diagnostic</title>
+<style>
+:root{
+  --ink:#14283C; --paper:#F1F4F8; --bench:#DDE6EF; --card:#FFFFFF; --line:#B7C4D2; --muted:#4F5F76;
+  --attract:#0E7F63; --attract-bg:#DAF1E8;
+  --repel:#C32B21; --repel-bg:#FBE2DF;
+  --none:#505C6A; --none-bg:#E6EAEE;
+  --accent:#1F55A8; --accent-bg:#E3ECFA;
+  --amber:#7A4F00; --amber-bg:#FFF0CC;
+}
+*{box-sizing:border-box}
+html{scroll-padding-top:12px}
+body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.55 Verdana,"Segoe UI",system-ui,sans-serif}
+h1,h2,h3,h4{font-family:"Trebuchet MS",Verdana,sans-serif;line-height:1.25;margin:0}
+p{margin:0 0 .6em}
+button{font:inherit;color:inherit;cursor:pointer}
+:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+.vh{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.skip{position:absolute;left:-999px}
+.skip:focus{left:8px;top:8px;background:#fff;padding:6px 10px;z-index:10}
+.wrap{max-width:980px;margin:0 auto;padding:0 16px}
+
+/* header */
+.top{background:var(--ink);color:#fff;padding:14px 0 0}
+.top .wrap{display:flex;flex-wrap:wrap;gap:8px 20px;align-items:flex-end;justify-content:space-between}
+.brand h1{font-size:26px}
+.brand p{margin:2px 0 10px;color:#C9D6E6;font-size:14px}
+.tabs{display:flex;gap:4px}
+.tab{background:transparent;border:0;color:#C9D6E6;padding:10px 14px;border-radius:8px 8px 0 0;font-size:15px}
+.tab[aria-selected="true"]{background:var(--paper);color:var(--ink);font-weight:700}
+.tab .dot{display:inline-block;min-width:20px;padding:0 6px;margin-left:6px;border-radius:10px;background:#F2B544;color:#3B2800;font-size:12px;font-weight:700;line-height:20px;text-align:center}
+.tools{display:flex;gap:6px;margin-bottom:8px}
+.tools button{background:transparent;border:1px solid #5E7690;color:#DCE6F2;border-radius:6px;padding:4px 10px;font-size:13px}
+.tools button:hover{background:#223C55}
+
+main{padding:20px 0 40px}
+.stepper{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:6px}
+.pill{position:relative;width:46px;height:46px;border-radius:50%;border:2px solid var(--line);background:#fff;font-weight:700;font-size:17px}
+.pill i{position:absolute;right:-4px;top:-5px;width:20px;height:20px;border-radius:50%;font-style:normal;font-size:12px;line-height:20px;text-align:center;color:#fff}
+.pill.cur{box-shadow:0 0 0 3px var(--accent-bg);border-color:var(--accent)}
+.pill.first,.pill.recapped{border-color:var(--attract)}
+.pill.first i,.pill.recapped i{background:var(--attract)}
+.pill.recap{border-color:#C98A00;background:var(--amber-bg)}
+.pill.recap i{background:#C98A00}
+.pill.open{border-color:var(--accent)}
+.pill.open i{background:var(--accent)}
+.legend{font-size:13px;color:var(--muted);margin:6px 0 18px}
+
+.q{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:20px}
+.q h2{font-size:22px;margin-bottom:6px}
+.q h3{font-size:16px;margin:0 0 8px}
+.intro{max-width:70ch}
+.banner{background:var(--amber-bg);color:var(--amber);border-radius:8px;padding:8px 12px;margin:10px 0;font-size:14px}
+.cols{display:grid;grid-template-columns:1.25fr 1fr;gap:22px;margin-top:14px}
+@media(max-width:820px){.cols{grid-template-columns:1fr}}
+
+/* bench */
+.stage{position:relative;height:150px;border-radius:10px;background:var(--bench);border-bottom:8px solid #8FA2B6;overflow:hidden}
+.stage-hint{position:absolute;inset:0;display:grid;place-items:center;text-align:center;padding:0 16px;color:var(--muted);font-size:14px;margin:0}
+.slot{position:absolute;left:50%;bottom:0;width:84px;transition:transform .9s cubic-bezier(.3,.7,.3,1)}
+.obj{width:84px;height:58px;border:2px solid var(--ink);border-radius:6px;display:grid;place-items:center;background:#fff}
+.obj span{background:#fff;border:2px solid var(--ink);border-radius:5px;padding:0 9px;font-weight:700;font-size:18px;line-height:26px}
+.p1{background:radial-gradient(circle,var(--ink) 1.3px,transparent 1.8px) 0 0/8px 8px,#fff}
+.p2{background:repeating-linear-gradient(45deg,var(--ink) 0 1.4px,transparent 1.4px 6px),repeating-linear-gradient(-45deg,var(--ink) 0 1.4px,transparent 1.4px 6px),#fff}
+.arrow{display:block;margin:0 auto 6px;opacity:0;transition:opacity .35s .8s;stroke:currentColor;fill:currentColor}
+.arrow line{stroke-width:3.5;stroke-linecap:round}
+.pair.on .arrow{opacity:1}
+.pair.attract{color:var(--attract)}
+.pair.repel{color:var(--repel)}
+.stage-msg{margin:8px 0 0;min-height:24px;font-weight:700;font-size:15px}
+.stage-msg.attract{color:var(--attract)}
+.stage-msg.repel{color:var(--repel)}
+.stage-msg.none{color:var(--none)}
+.shelf{display:flex;gap:14px;margin:12px 0 6px;flex-wrap:wrap}
+.tile{background:transparent;border:0;padding:4px;text-align:center;border-radius:8px}
+.tile small{display:block;margin-top:4px;color:var(--muted);font-size:12px}
+.tile.sel .obj{outline:3px solid var(--accent);outline-offset:3px}
+.tile.revealed small{color:var(--ink);font-weight:700;font-size:13px}
+.note{font-size:13px;color:var(--muted);margin:0 0 8px}
+.chips{display:flex;gap:8px;flex-wrap:wrap}
+.chip{background:#fff;border:1.5px solid var(--line);border-radius:18px;padding:4px 12px;font-size:14px}
+.chip.done{border-color:var(--attract)}
+.chip:hover{background:var(--accent-bg)}
+
+/* log + hints */
+table{border-collapse:collapse;width:100%}
+.log th,.log td{border:1px solid var(--line);padding:7px 10px;text-align:left;font-size:14px}
+.log th{background:#F5F8FB;font-weight:700}
+.log tr.clash td,.log tr.clash th{background:var(--repel-bg);outline:2px solid var(--repel);outline-offset:-2px}
+.untested{color:var(--muted)}
+.badge{display:inline-block;border-radius:5px;padding:1px 8px;font-size:13px;font-weight:700}
+.badge.attract{background:var(--attract-bg);color:var(--attract)}
+.badge.repel{background:var(--repel-bg);color:var(--repel)}
+.badge.none{background:var(--none-bg);color:var(--none)}
+.count{font-size:13px;color:var(--muted);margin:6px 0 16px}
+.hints ol{margin:0 0 8px;padding-left:22px;font-size:14px}
+.btn{background:#fff;border:1.5px solid var(--ink);border-radius:8px;padding:8px 16px;font-weight:700}
+.btn:hover:not(:disabled){background:var(--accent-bg)}
+.btn.primary{background:var(--ink);color:#fff}
+.btn.primary:hover:not(:disabled){background:#23435F}
+.btn:disabled{opacity:.4;cursor:not-allowed}
+.btn.small{padding:4px 12px;font-size:14px;font-weight:400}
+
+/* answer */
+.answer{margin-top:22px;border:0;padding:0}
+.answer legend{font-weight:700;padding:0;margin-bottom:8px;font-size:17px}
+.scroll{overflow-x:auto}
+.exam{min-width:420px}
+.exam th,.exam td{border:1.5px solid var(--ink);padding:8px 12px;text-align:left}
+.exam thead th{background:#F5F8FB}
+.exam tr.opt{cursor:pointer}
+.exam tr.opt:hover:not(.locked){background:var(--accent-bg)}
+.exam tr.sel{background:var(--accent-bg)}
+.exam tr.locked{cursor:default}
+.exam tr.missed{background:var(--repel-bg);color:#6B2A25}
+.exam tr.missed td:not(.n){text-decoration:line-through;text-decoration-thickness:1px}
+.exam tr.right{background:var(--attract-bg)}
+.exam .n label{margin-left:6px;font-weight:700;cursor:inherit}
+.exam .n small{display:block;font-size:11px;color:var(--repel);margin-left:26px}
+.lock{font-size:14px;color:var(--amber);background:var(--amber-bg);padding:6px 12px;border-radius:8px;margin:10px 0 0}
+.actions{display:flex;gap:10px;margin-top:12px;flex-wrap:wrap}
+
+/* feedback */
+.fb{margin-top:18px;border-radius:10px;padding:16px 18px;border:2px solid}
+.fb.bad{background:#FFF6F5;border-color:var(--repel)}
+.fb.good{background:#F3FBF7;border-color:var(--attract)}
+.fb h3{font-size:18px;margin-bottom:8px}
+.fb.bad h3{color:var(--repel)}
+.fb.good h3{color:var(--attract)}
+.fb h4{font-size:15px;margin:18px 0 8px}
+.fb ul.clash{margin:6px 0 10px;padding-left:20px;font-size:14px}
+.key{background:#fff;border-left:5px solid var(--attract);padding:8px 12px;border-radius:0 8px 8px 0}
+.opts{display:grid;gap:10px}
+.optcard{background:#fff;border:1px solid var(--line);border-radius:8px;padding:10px 14px;font-size:14px}
+.optcard.right{border:2px solid var(--attract)}
+.optcard .who{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin-bottom:6px}
+.who b{font-size:15px}
+.tagchip{background:#EEF2F6;border-radius:5px;padding:1px 8px;font-size:13px}
+.you{background:var(--amber-bg);color:var(--amber);border-radius:5px;padding:1px 8px;font-size:12px;font-weight:700}
+.optcard p{margin:0 0 4px}
+.optcard .lbl{font-weight:700}
+.optcard ul{margin:2px 0 0;padding-left:20px}
+
+/* mistake book */
+.panel{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:20px;margin-bottom:16px}
+.panel h2{font-size:21px;margin-bottom:8px}
+.stats{display:flex;gap:12px;flex-wrap:wrap;margin:12px 0}
+.stat{background:#F5F8FB;border:1px solid var(--line);border-radius:8px;padding:8px 14px;min-width:120px}
+.stat b{display:block;font-size:22px}
+.mist{border-top:1px solid var(--line);padding:14px 0}
+.mist:first-of-type{border-top:0}
+.mist h3{font-size:16px}
+.mist .fix{background:var(--attract-bg);border-radius:6px;padding:6px 10px;margin:6px 0;font-size:14px}
+.mist li{margin:4px 0;font-size:14px}
+.empty{color:var(--muted)}
+
+/* rules */
+.matrix caption{text-align:left;font-weight:700;margin-bottom:8px}
+.matrix th,.matrix td{border:1.5px solid var(--ink);padding:9px 12px;text-align:left;font-size:14px}
+.matrix td.a{background:var(--attract-bg)}
+.matrix td.n{background:var(--none-bg)}
+.rules li{margin:6px 0}
+
+.toast{position:fixed;left:50%;bottom:18px;transform:translateX(-50%);background:var(--ink);color:#fff;padding:8px 16px;border-radius:8px;font-size:14px;opacity:0;pointer-events:none;transition:opacity .25s}
+.toast.show{opacity:1}
+footer{color:var(--muted);font-size:13px;padding-bottom:30px}
+@media(prefers-reduced-motion:reduce){.slot,.arrow,.toast{transition:none!important}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="top">
+  <div class="wrap">
+    <div class="brand">
+      <h1>Magnet or not?</h1>
+      <p>Primary 3 Science: Interaction of forces (Magnets). Test the pairs, work out the objects, then answer.</p>
+    </div>
+    <div>
+      <div class="tools">
+        <button type="button" id="btnExport">Export progress</button>
+        <button type="button" id="btnImport">Import progress</button>
+        <button type="button" id="btnReset">Reset</button>
+        <input type="file" id="fileImport" accept="application/json,.json" hidden>
+      </div>
+      <nav class="tabs" role="tablist" aria-label="Sections" id="tabs"></nav>
+    </div>
+  </div>
+</header>
+<div class="wrap"><main id="main"></main>
+<footer>Question 1 follows the school paper question. Questions 2 to 5 are practice variants built on the same idea. Progress is saved in this browser; use Export progress to keep a copy.</footer>
+</div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script id="data">
+/* ---------- DATA + ENGINE (no DOM) ---------- */
+const TYPE={'Magnet':'magnet','Steel block':'mat','Iron block':'mat','Plastic block':'non','Wooden block':'non'};
+
+/* What two objects can do when placed beside each other. */
+function possible(ta,tb){
+  const s=[ta,tb].sort().join('+');
+  if(s==='magnet+magnet') return ['attract','repel'];
+  if(s==='magnet+mat') return ['attract'];
+  return ['none'];
+}
+
+const TAGS={
+  T1:{label:'Thinks iron or steel can repel',fix:'Only a magnet can push another object away. If two objects repel, both are magnets.'},
+  T2:{label:'Thinks iron and steel pull each other',fix:'Iron and steel blocks show no force on each other. They are only pulled by a magnet.'},
+  T3:{label:'Forgets a magnet pulls every iron or steel block',fix:'A magnet attracts every iron or steel block placed beside it. If you see no force, there is no magnet and block pair.'},
+  T4:{label:'Thinks a magnet pulls plastic or wood',fix:'Plastic and wood are non-magnetic. A magnet shows no force with them.'},
+  T5:{label:'Thinks attracting means one object is a plain block',fix:'Two magnets can attract too, when unlike poles face each other. Attract only tells you at least one of the pair is a magnet.'},
+  T6:{label:'Thinks two magnets can ignore each other',fix:'Two magnets placed beside each other always push or pull. No force means at least one is not a magnet.'}
+};
+
+const QUESTIONS=[
+{
+  id:'q1',title:"Mala's three objects",
+  intro:"Mala had three objects K, L and M. She placed two different objects beside each other each time. She drew arrows to show their interactions.",
+  objects:[{id:'K',truth:'Magnet'},{id:'L',truth:'Steel block'},{id:'M',truth:'Magnet'}],
+  pairs:{'K-L':'attract','L-M':'attract','K-M':'repel'},
+  hints:["Which pair repels? What kind of objects can push each other away?","K and M are settled. L is pulled by both. Which choices let L be pulled by a magnet?"],
+  correct:2,
+  correctWhy:"K and M repel, and only two magnets can repel, so both are magnets. A steel block is pulled by any magnet, so L fits as a steel block and both K–L and L–M attract.",
+  takeaway:"Repel is the one result that proves both objects are magnets. Attract only tells you at least one of the pair is a magnet.",
+  options:[
+    {n:['Steel block','Magnet','Magnet'],tag:'T1',
+     pick:"L as a magnet explains why it attracts both K and M, and a magnet beside a steel block gives a strong reaction.",
+     why:"Steel is only pulled by magnets. It can never push anything away, so a steel K and a magnet M cannot repel."},
+    {n:['Magnet','Steel block','Iron block'],tag:'T1',
+     pick:"K is the magnet pulling steel L, and iron M is a magnetic material too, so it seems to belong with them.",
+     why:"Iron and steel are magnetic materials, not magnets. A magnet can only attract an iron block, so K and M would attract, not repel."},
+    {n:['Magnet','Steel block','Magnet'],tag:null,
+     pick:"Start with K–M. They repel, so both are magnets. L is pulled by both of them, which a steel block is.",
+     why:"Repel is only possible between two magnets, and a steel block is attracted to either magnet. L could also be a third magnet, but only this option fits all three results with the choices given."},
+    {n:['Steel block','Magnet','Iron block'],tag:'T1',
+     pick:"L is a magnet that pulls both K and M. Steel and iron are different materials, so they might push each other.",
+     why:"Steel and iron are both magnetic materials. Two magnetic materials show no force on each other, so K and M would show nothing at all, not repel."}
+  ]
+},
+{
+  id:'q2',title:"Wei Jie's three objects",
+  intro:"Wei Jie had three objects P, Q and R. He placed two different objects beside each other each time and drew arrows to show what happened.",
+  objects:[{id:'P',truth:'Magnet'},{id:'Q',truth:'Iron block'},{id:'R',truth:'Steel block'}],
+  pairs:{'P-Q':'attract','Q-R':'none','P-R':'attract'},
+  hints:["One object attracts both of the others. Could it be the magnet?","Q and R show no force on each other. If one of them were a magnet, what would it do to the other?"],
+  correct:3,
+  correctWhy:"P pulls both Q and R, so Q and R are magnetic materials or magnets. Q and R show no force on each other, so neither is a magnet. That leaves P as the only magnet, with Q and R as iron or steel blocks.",
+  takeaway:"A magnet pulls every iron or steel block, and two such blocks do not affect each other. The object that pulls everything is the magnet.",
+  options:[
+    {n:['Iron block','Magnet','Steel block'],tag:'T2',
+     pick:"Q is the magnet and pulls P. Iron and steel are both magnetic, so P and R should pull each other.",
+     why:"Iron and steel are magnetic materials, not magnets, so they show no force on each other. Also, a magnet Q would pull steel R."},
+    {n:['Magnet','Plastic block','Steel block'],tag:'T4',
+     pick:"P is a magnet that pulls steel R. Plastic Q shows no force with R, which matches the Q–R result.",
+     why:"P and Q attracted, but a magnet shows no force with plastic. Matching one result is not enough; every result has to fit."},
+    {n:['Steel block','Iron block','Magnet'],tag:'T3',
+     pick:"R is the magnet and pulls steel P. Iron Q is magnetic too, so it seems to belong.",
+     why:"A magnet pulls every iron block, so R would attract Q. You saw no force. Steel P and iron Q would also show no force, but you saw attract."},
+    {n:['Magnet','Iron block','Steel block'],tag:null,
+     pick:"Q and R show no force on each other, so neither is a magnet. P pulls both, so P is the magnet.",
+     why:"A magnet attracts iron and steel blocks, and two such blocks do not affect each other. All three results fit."}
+  ]
+},
+{
+  id:'q3',title:"Aisha's three objects",
+  intro:"Aisha had three objects X, Y and Z. She placed two different objects beside each other each time and drew what she saw.",
+  objects:[{id:'X',truth:'Magnet'},{id:'Y',truth:'Wooden block'},{id:'Z',truth:'Iron block'}],
+  pairs:{'X-Y':'none','Y-Z':'none','X-Z':'attract'},
+  hints:["Which object shows no force with both of the others? What kind of material does a magnet ignore?","Only X and Z attract. Which of them is the magnet?"],
+  correct:1,
+  correctWhy:"Only X and Z attract, so one of them is a magnet. Y shows no force with either, so it cannot be iron or steel (the magnet would pull it) and it is not a magnet. Y is a wooden block, X is the magnet, and Z is the iron block it pulls.",
+  takeaway:"An object that shows no force with a magnet is non-magnetic. Find the magnet first; it pulls every iron or steel block.",
+  options:[
+    {n:['Iron block','Magnet','Steel block'],tag:'T2',
+     pick:"X and Z attract because iron and steel are both magnetic. Y is a magnet that just sits in the middle.",
+     why:"Iron and steel do not pull each other. Magnet Y would also pull both X and Z, but Y showed no force with either."},
+    {n:['Magnet','Wooden block','Iron block'],tag:null,
+     pick:"Y shows no force with anything, so it is not magnetic. X and Z attract, so X is the magnet pulling iron Z.",
+     why:"A magnet ignores wood and pulls iron. All three results fit."},
+    {n:['Magnet','Steel block','Plastic block'],tag:'T3',
+     pick:"X is the magnet because something attracts. Steel and plastic are both ordinary blocks.",
+     why:"A magnet pulls steel, so X and Y would attract, but you saw no force. Plastic Z is not pulled, so X and Z would show no force, but you saw attract."},
+    {n:['Steel block','Plastic block','Iron block'],tag:'T2',
+     pick:"Plastic Y shows no force with anything. Steel and iron are both magnetic, so X and Z attract.",
+     why:"Steel and iron are magnetic materials, not magnets. With no magnet in the set, nothing can attract."}
+  ]
+},
+{
+  id:'q4',title:"Priya's three objects",
+  intro:"Priya had three objects A, B and C. She placed two different objects beside each other each time and noted what happened.",
+  objects:[{id:'A',truth:'Magnet'},{id:'B',truth:'Magnet'},{id:'C',truth:'Magnet'}],
+  pairs:{'A-B':'repel','A-C':'repel','B-C':'attract'},
+  hints:["Look at the two pairs that repel. Which object is in both?","Can a magnet attract one object and repel another? Think about which poles face each other."],
+  correct:0,
+  correctWhy:"A repels B and A repels C, and only magnets repel, so all three are magnets. B and C attract because their unlike poles face each other.",
+  takeaway:"Two magnets can attract or repel, depending on which poles face. Seeing attract does not mean one object is a plain block.",
+  options:[
+    {n:['Magnet','Magnet','Magnet'],tag:null,
+     pick:"A repels both B and C, so A is a magnet and so are B and C. B and C attract because unlike poles meet.",
+     why:"Repel only happens between two magnets. Every object is in a repelling pair or beside one, and two magnets can both attract and repel."},
+    {n:['Magnet','Magnet','Steel block'],tag:'T5',
+     pick:"B and C attract, so one of them could be a steel block pulled by a magnet.",
+     why:"Two magnets can attract as well. And A and C repel, which a steel block can never do."},
+    {n:['Steel block','Magnet','Magnet'],tag:'T1',
+     pick:"B and C attract, so they are the magnets. A is the odd one out, so it could be steel.",
+     why:"A steel block can only be pulled, never pushed. A would attract both B and C, but it repelled them."},
+    {n:['Magnet','Steel block','Magnet'],tag:'T5',
+     pick:"A and C repel, so they are magnets. B and C attract, so B is a steel block.",
+     why:"A and B repel, which steel cannot do. B must be a magnet too."}
+  ]
+},
+{
+  id:'q5',title:"Daniel's three objects",
+  intro:"Daniel had three objects D, E and F. He placed two different objects beside each other each time and drew what happened.",
+  objects:[{id:'D',truth:'Magnet'},{id:'E',truth:'Magnet'},{id:'F',truth:'Plastic block'}],
+  pairs:{'D-E':'repel','E-F':'none','D-F':'none'},
+  hints:["Start with the repelling pair. What are D and E?","Magnets pull iron and steel. What kind of object shows no force with a magnet?"],
+  correct:2,
+  correctWhy:"D and E repel, so both are magnets. F shows no force with either magnet, so F is not magnetic. A plastic block fits.",
+  takeaway:"No force with a magnet means non-magnetic. Two magnets cannot ignore each other.",
+  options:[
+    {n:['Magnet','Steel block','Plastic block'],tag:'T1',
+     pick:"Plastic F shows no force, which fits. D is a magnet and E is steel, so they react differently.",
+     why:"D and E repel, but a magnet and a steel block can only attract."},
+    {n:['Magnet','Magnet','Steel block'],tag:'T3',
+     pick:"D and E repel, so both are magnets. Steel F does not repel, so no force seems to fit.",
+     why:"Not repelling is not the same as no force. A magnet pulls steel, so F would attract both D and E."},
+    {n:['Magnet','Magnet','Plastic block'],tag:null,
+     pick:"D and E repel, so both are magnets. F shows no force with either, so it is not magnetic.",
+     why:"Magnets ignore plastic. All three results fit."},
+    {n:['Magnet','Magnet','Magnet'],tag:'T6',
+     pick:"D and E repel, so they are magnets. F is a magnet too, but it happens to show no force beside them.",
+     why:"Two magnets placed beside each other always push or pull. F would attract or repel D and E, but you saw no force."}
+  ]
+}
+];
+
+/* Which observed pairs does this option contradict? */
+function clashes(q,optIdx){
+  const names=q.options[optIdx].n, out=[];
+  for(const [key,obs] of Object.entries(q.pairs)){
+    const [a,b]=key.split('-');
+    const na=names[q.objects.findIndex(o=>o.id===a)], nb=names[q.objects.findIndex(o=>o.id===b)];
+    const poss=possible(TYPE[na],TYPE[nb]);
+    if(!poss.includes(obs)) out.push({key,obs,na,nb,poss});
+  }
+  return out;
+}
+const OBS_TEXT={attract:'attract',repel:'repel',none:'no force'};
+function art(n){return (/^[AEIOU]/.test(n)?'an ':'a ')+n.toLowerCase();}
+function clashText(c){
+  const rule=c.poss.length===2?'always attract or repel':(c.poss[0]==='attract'?'can only attract':'show no force');
+  return c.key.replace('-','–')+': you saw '+OBS_TEXT[c.obs]+', but '+art(c.na)+' and '+art(c.nb)+' '+rule+'.';
+}
+</script>
+
+<script id="app">
+/* ---------- APP ---------- */
+const $=s=>document.querySelector(s);
+const main=$('#main');
+const REDUCE=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
+const STORE_KEY='psle-science-magnets-diagnostic-v1';
+let memStore=null;
+function loadProgress(){try{const s=localStorage.getItem(STORE_KEY);if(s)return JSON.parse(s)||{};}catch(e){}return memStore||{};}
+function saveProgress(){try{localStorage.setItem(STORE_KEY,JSON.stringify(progress));}catch(e){memStore=progress;}}
+let progress=loadProgress(), runs={}, view='questions', cur=0;
+
+function getProg(id){if(!progress[id])progress[id]={misses:[],solved:false,firstTry:null,hints:0,recapDue:false,recaps:0};if(!progress[id].misses)progress[id].misses=[];return progress[id];}
+function getRun(id){if(!runs[id])runs[id]={tested:{},selected:[],choice:null,missed:[],hints:0,solved:false,lastWrong:null,runMisses:0,lastTest:null};return runs[id];}
+function status(id){const p=progress[id];if(!p)return 'new';const m=(p.misses||[]).length;if(!p.solved&&!m)return 'new';if(p.recapDue)return 'recap';if(p.solved)return m?'recapped':'first';return 'open';}
+const STATUS_TEXT={new:'Not started',open:'In progress',first:'Right first time',recap:'Needs recap',recapped:'Recapped'};
+const ICON={new:'',open:'•',first:'✓',recap:'↻',recapped:'✓'};
+const SYMBOL={attract:'→ ←',repel:'← →',none:'| |'};
+const RES_LABEL={attract:'attract (pull)',repel:'repel (push)',none:'no force'};
+const q=()=>QUESTIONS[cur];
+const allTested=(Q,run)=>Object.keys(Q.pairs).every(k=>run.tested[k]);
+const pairKey=(Q,a,b)=>{const ia=Q.objects.findIndex(o=>o.id===a),ib=Q.objects.findIndex(o=>o.id===b);return ia<ib?a+'-'+b:b+'-'+a;};
+
+function toast(msg){const t=$('#toast');t.textContent=msg;t.classList.add('show');clearTimeout(toast.t);toast.t=setTimeout(()=>t.classList.remove('show'),2600);}
+
+/* ----- nav ----- */
+function renderNav(){
+  const due=QUESTIONS.filter(x=>status(x.id)==='recap').length;
+  const tabs=[['questions','Questions'],['mistakes','Mistake book'],['rules','Rules']];
+  $('#tabs').innerHTML=tabs.map(([k,l])=>`<button class="tab" role="tab" data-act="tab" data-view="${k}" aria-selected="${view===k}">${l}${k==='mistakes'&&due?`<span class="dot" aria-label="${due} to recap">${due}</span>`:''}</button>`).join('');
+}
+function render(){renderNav();if(view==='questions')renderQuestion();else if(view==='mistakes')renderMistakes();else renderRules();}
+
+/* ----- question view ----- */
+function renderQuestion(){
+  const Q=q(), run=getRun(Q.id), p=progress[Q.id];
+  const pills=QUESTIONS.map((x,i)=>{const s=status(x.id);return `<button class="pill ${s}${i===cur?' cur':''}" data-act="goto" data-q="${i}" aria-label="Question ${i+1}: ${STATUS_TEXT[s]}"${i===cur?' aria-current="true"':''}>${i+1}<i aria-hidden="true">${ICON[s]}</i></button>`;}).join('');
+  const first=QUESTIONS.filter(x=>status(x.id)==='first').length;
+  const banner=(p&&p.recapDue&&!run.solved)?`<p class="banner">Recap run: you missed this one before. Test the pairs again and answer it cleanly to clear it from your mistake book.</p>`:(p&&p.solved&&!run.solved&&!(p.recapDue)?`<p class="banner">You solved this one before. Run it again any time.</p>`:'');
+  main.innerHTML=`
+    <div class="stepper" role="group" aria-label="Questions">${pills}</div>
+    <p class="legend">${first} of ${QUESTIONS.length} right first time. Green: right first time. Amber: needs recap.</p>
+    <section class="q">
+      <h2>Question ${cur+1}: ${Q.title}</h2>
+      <p class="intro">${Q.intro}</p>${banner}
+      <div class="cols">
+        <div class="lab">
+          <h3>Test bench</h3>
+          <div class="stage" id="stage"></div>
+          <p class="stage-msg" id="stageMsg"></p>
+          <div class="shelf" id="shelf"></div>
+          <p class="note" id="selMsg"></p>
+          <div class="chips" id="chips"></div>
+        </div>
+        <div class="side">
+          <h3>Observation log</h3>
+          <div id="log"></div>
+          <div class="hints"><h3>Hints</h3><div id="hints"></div></div>
+        </div>
+      </div>
+      <div id="answer"></div>
+      <div id="feedback" aria-live="polite"></div>
+    </section>`;
+  renderShelf();drawStage(false);renderLog();renderHints();renderAnswer();renderFeedback();
+}
+
+function renderShelf(){
+  const Q=q(),run=getRun(Q.id);
+  $('#shelf').innerHTML=Q.objects.map((o,i)=>`<button class="tile${run.selected.includes(o.id)?' sel':''}${run.solved?' revealed':''}" data-act="obj" data-id="${o.id}" aria-pressed="${run.selected.includes(o.id)}" aria-label="Object ${o.id}${run.solved?', '+o.truth:''}"><div class="obj p${i}"><span>${o.id}</span></div><small>${run.solved?o.truth:'unknown'}</small></button>`).join('');
+  $('#selMsg').textContent=run.selected.length===1?`Now tap a second object to place it beside ${run.selected[0]}.`:'Tap two objects to place them beside each other, or use a shortcut:';
+  $('#chips').innerHTML=Object.keys(Q.pairs).map(k=>`<button class="chip${run.tested[k]?' done':''}" data-act="chip" data-key="${k}">${run.tested[k]?'✓ ':''}${k.replace('-',' + ')}</button>`).join('');
+}
+
+function pickObj(id){
+  const Q=q(),run=getRun(Q.id);
+  if(run.selected.includes(id)){run.selected=run.selected.filter(x=>x!==id);}
+  else{run.selected.push(id);if(run.selected.length===2){const [a,b]=run.selected;run.selected=[];test(a,b);}}
+  renderShelf();
+}
+function test(a,b){
+  const Q=q(),run=getRun(Q.id),key=pairKey(Q,a,b);
+  run.tested[key]=true;run.lastTest={order:[a,b],result:Q.pairs[key],key};
+  drawStage(true);renderShelf();renderLog();renderAnswer();
+}
+
+const W=84,GMAX=120,GMIN=4;
+function arrowSVG(dir){return `<svg class="arrow" viewBox="0 0 72 18" width="72" height="18" aria-hidden="true" style="transform:scaleX(${dir})"><line x1="3" y1="9" x2="58" y2="9"/><polygon points="57,2 71,9 57,16"/></svg>`;}
+function drawStage(animate){
+  const Q=q(),run=getRun(Q.id),st=$('#stage'),msg=$('#stageMsg'),t=run.lastTest;
+  if(!t){st.innerHTML='<p class="stage-hint">Nothing on the bench yet.</p>';msg.textContent='';msg.className='stage-msg';return;}
+  const [a,b]=t.order,res=t.result;
+  const idx=id=>Q.objects.findIndex(o=>o.id===id);
+  const startG=res==='attract'?GMAX:(res==='repel'?GMIN:60);
+  const endG=res==='attract'?GMIN:(res==='repel'?GMAX:60);
+  const dirL=res==='attract'?1:-1;
+  const arrows=res!=='none';
+  const mk=(id,side,dir)=>`<div class="slot ${side}" data-side="${side}">${arrows?arrowSVG(dir):''}<div class="obj p${idx(id)}"><span>${id}</span></div></div>`;
+  st.innerHTML=`<div class="pair ${res}">${mk(a,'l',dirL)}${mk(b,'r',-dirL)}</div>`;
+  const pair=st.firstChild,l=pair.querySelector('.l'),r=pair.querySelector('.r');
+  const place=g=>{l.style.transform=`translateX(${-(W+g/2)}px)`;r.style.transform=`translateX(${g/2}px)`;};
+  const finish=()=>pair.classList.add('on');
+  if(animate&&!REDUCE){
+    l.style.transition=r.style.transition='none';place(startG);
+    void pair.offsetWidth;
+    l.style.transition=r.style.transition='';
+    requestAnimationFrame(()=>{place(endG);finish();});
+  }else{l.style.transition=r.style.transition='none';place(endG);finish();}
+  msg.className='stage-msg '+res;
+  msg.textContent=res==='attract'?`${a} and ${b} attract: they pull towards each other.`:res==='repel'?`${a} and ${b} repel: they push away from each other.`:`${a} and ${b} show no force: nothing pulls or pushes.`;
+}
+
+function renderLog(){
+  const Q=q(),run=getRun(Q.id);
+  const clashKeys=(run.lastWrong!=null&&!run.solved)?clashes(Q,run.lastWrong).map(c=>c.key):[];
+  const rows=Object.keys(Q.pairs).map(k=>{
+    const [a,b]=k.split('-'),done=run.tested[k],res=Q.pairs[k];
+    return `<tr class="${clashKeys.includes(k)?'clash':''}"><th scope="row">${a} and ${b}</th><td>${done?`<span class="badge ${res}">${SYMBOL[res]} ${RES_LABEL[res]}</span>`:'<span class="untested">not tested</span>'}</td></tr>`;
+  }).join('');
+  const n=Object.keys(Q.pairs).filter(k=>run.tested[k]).length;
+  $('#log').innerHTML=`<table class="log"><thead><tr><th scope="col">Pair</th><th scope="col">What you saw</th></tr></thead><tbody>${rows}</tbody></table><p class="count">${n} of ${Object.keys(Q.pairs).length} pairs tested${clashKeys.length?'. Red rows are the results your last choice breaks.':''}</p>`;
+}
+
+function renderHints(){
+  const Q=q(),run=getRun(Q.id);
+  const shown=Q.hints.slice(0,run.hints);
+  $('#hints').innerHTML=(shown.length?`<ol>${shown.map(h=>`<li>${h}</li>`).join('')}</ol>`:'')+(run.hints<Q.hints.length?`<button class="btn small" data-act="hint">Show hint ${run.hints+1} of ${Q.hints.length}</button>`:'');
+}
+
+function renderAnswer(){
+  const Q=q(),run=getRun(Q.id),open=allTested(Q,run);
+  const head=Q.objects.map(o=>`<th scope="col">Object ${o.id}</th>`).join('');
+  const rows=Q.options.map((o,i)=>{
+    const missed=run.missed.includes(i),dis=!open||run.solved||missed;
+    const cls=['opt'];
+    if(dis)cls.push('locked');
+    if(missed)cls.push('missed');
+    if(run.solved&&i===Q.correct)cls.push('right');
+    else if(run.choice===i&&!run.solved)cls.push('sel');
+    return `<tr class="${cls.join(' ')}" data-i="${i}"><td class="n"><input type="radio" name="opt" id="o${i}" value="${i}"${run.choice===i||(run.solved&&i===Q.correct)?' checked':''}${dis?' disabled':''}><label for="o${i}">(${i+1})</label>${missed?'<small>not this one</small>':''}</td>${o.n.map(x=>`<td>${x}</td>`).join('')}</tr>`;
+  }).join('');
+  const left=Object.keys(Q.pairs).filter(k=>!run.tested[k]).map(k=>k.replace('-',' + '));
+  $('#answer').innerHTML=`<fieldset class="answer"><legend>Which of the following could objects ${Q.objects.map(o=>o.id).slice(0,-1).join(', ')} and ${Q.objects[Q.objects.length-1].id} be?</legend>
+    <div class="scroll"><table class="exam"><thead><tr><th scope="col"><span class="vh">Option</span></th>${head}</tr></thead><tbody>${rows}</tbody></table></div>
+    ${open?'':`<p class="lock">Test every pair on the bench to unlock the options. Still to test: ${left.join(', ')}.</p>`}
+    <div class="actions"><button class="btn primary" data-act="check" id="btnCheck"${(run.choice==null||!open||run.solved)?' disabled':''}>Check answer</button></div></fieldset>`;
+}
+
+function selectOption(i){
+  const Q=q(),run=getRun(Q.id);
+  if(!allTested(Q,run)||run.solved||run.missed.includes(i))return;
+  run.choice=i;
+  document.querySelectorAll('#answer tr.opt').forEach(tr=>{const k=+tr.dataset.i;tr.classList.toggle('sel',k===i);const r=tr.querySelector('input');if(r)r.checked=(k===i);});
+  const b=$('#btnCheck');if(b)b.disabled=false;
+}
+
+function checkAnswer(){
+  const Q=q(),run=getRun(Q.id),p=getProg(Q.id);
+  if(run.choice==null)return;
+  const opt=Q.options[run.choice];
+  if(run.choice===Q.correct){
+    run.solved=true;run.lastWrong=null;p.solved=true;
+    if(p.firstTry===null)p.firstTry=(run.runMisses===0);
+    if(run.runMisses>0)p.recapDue=true;
+    else if(p.recapDue){p.recapDue=false;p.recaps=(p.recaps||0)+1;toast('Recap cleared for this question.');}
+  }else{
+    run.missed.push(run.choice);run.runMisses++;run.lastWrong=run.choice;
+    p.misses.push({choice:run.choice,tag:opt.tag,ts:Date.now()});p.recapDue=true;run.choice=null;
+  }
+  saveProgress();
+  renderNav();renderShelf();renderLog();renderAnswer();renderFeedback();
+  const fb=$('#feedback');if(fb)fb.scrollIntoView({behavior:REDUCE?'auto':'smooth',block:'nearest'});
+  document.querySelectorAll('.pill').forEach((el,i)=>{const s=status(QUESTIONS[i].id);el.className='pill '+s+(i===cur?' cur':'');const ic=el.querySelector('i');if(ic)ic.textContent=ICON[s];});
+}
+
+function optCard(Q,i,run){
+  const o=Q.options[i],right=i===Q.correct,cl=right?[]:clashes(Q,i);
+  const chosen=run.missed.includes(i)||(right&&run.solved);
+  return `<div class="optcard${right?' right':''}"><div class="who"><b>Option (${i+1})</b>${o.n.map((n,k)=>`<span class="tagchip">${Q.objects[k].id}: ${n}</span>`).join('')}${chosen?'<span class="you">you chose this</span>':''}</div>
+    <p><span class="lbl">${right?'How to reach it. ':'Why someone would choose it. '}</span>${o.pick}</p>
+    <p><span class="lbl">${right?'Why it is correct. ':'Why it is not correct. '}</span>${o.why}</p>
+    ${right?'':`<ul>${cl.map(c=>`<li>${clashText(c)}</li>`).join('')}</ul>`}</div>`;
+}
+
+function renderFeedback(){
+  const Q=q(),run=getRun(Q.id),p=progress[Q.id],box=$('#feedback');
+  if(run.solved){
+    const needRecap=run.runMisses>0;
+    box.innerHTML=`<div class="fb good"><h3>Correct: option (${Q.correct+1})</h3>
+      <p>${Q.correctWhy}</p><p class="key"><b>Key idea.</b> ${Q.takeaway}</p>
+      <h4>Every option, and why it works or does not</h4><div class="opts">${Q.options.map((_,i)=>optCard(Q,i,run)).join('')}</div>
+      ${needRecap?`<p class="note" style="margin-top:12px">You missed ${run.runMisses} time${run.runMisses>1?'s':''} on the way here, so this question is in your mistake book. Redo it later to clear it.</p>`:''}
+      <div class="actions">${cur<QUESTIONS.length-1?'<button class="btn primary" data-act="next">Next question</button>':''}<button class="btn" data-act="redo" data-q="${cur}">Redo this question</button>${needRecap?'<button class="btn" data-act="tab" data-view="mistakes">Open mistake book</button>':''}</div></div>`;
+  }else if(run.lastWrong!=null){
+    const i=run.lastWrong,o=Q.options[i],cl=clashes(Q,i),left=Q.options.length-run.missed.length;
+    box.innerHTML=`<div class="fb bad"><h3>Not option (${i+1})</h3>
+      <p><b>Why it looks right.</b> ${o.pick}</p><p><b>Why it is not correct.</b> ${o.why}</p>
+      <p><b>Check against your log.</b></p><ul class="clash">${cl.map(c=>`<li>${clashText(c)}</li>`).join('')}</ul>
+      <p>${left>1?`Pick another option. ${left} left.`:'One option left.'} The red rows in the log show what this choice breaks.</p></div>`;
+  }else box.innerHTML='';
+}
+
+/* ----- mistake book ----- */
+function renderMistakes(){
+  const all=[];
+  QUESTIONS.forEach((Q,qi)=>((progress[Q.id]&&progress[Q.id].misses)||[]).forEach(m=>all.push({...m,qi,Q})));
+  const due=QUESTIONS.map((Q,i)=>({Q,i})).filter(x=>status(x.Q.id)==='recap');
+  const first=QUESTIONS.filter(x=>status(x.id)==='first').length;
+  const hints=QUESTIONS.reduce((s,x)=>s+((progress[x.id]&&progress[x.id].hints)||0),0);
+  const groups={};all.forEach(m=>{const k=m.tag||'other';(groups[k]=groups[k]||[]).push(m);});
+  const keys=Object.keys(groups).sort((a,b)=>groups[b].length-groups[a].length);
+  const body=keys.length?keys.map(k=>{const t=TAGS[k]||{label:'Other slip',fix:''};
+    return `<div class="mist"><h3>${t.label} (${groups[k].length} time${groups[k].length>1?'s':''})</h3><p class="fix">${t.fix}</p><ul>${groups[k].map(m=>{const o=m.Q.options[m.choice];return `<li>Question ${m.qi+1}, option (${m.choice+1}): ${o.n.map((n,j)=>m.Q.objects[j].id+' '+n).join(', ')}. <button class="btn small" data-act="redo" data-q="${m.qi}">Redo</button></li>`;}).join('')}</ul></div>`;}).join(''):'<p class="empty">No mistakes logged yet. Wrong choices appear here, grouped by the idea behind them.</p>';
+  main.innerHTML=`<div class="panel"><h2>Mistake book</h2>
+    <div class="stats"><div class="stat"><b>${first}</b>right first time</div><div class="stat"><b>${all.length}</b>wrong choices</div><div class="stat"><b>${due.length}</b>to recap</div><div class="stat"><b>${hints}</b>hints used</div></div>
+    ${due.length?`<p>To recap: ${due.map(x=>`Question ${x.i+1}`).join(', ')}.</p><div class="actions"><button class="btn primary" data-act="redo" data-q="${due[0].i}">Recap Question ${due[0].i+1}</button></div>`:'<p class="empty">Nothing waiting for recap.</p>'}</div>
+    <div class="panel"><h2>Ideas to review</h2>${body}</div>`;
+}
+
+/* ----- rules ----- */
+function renderRules(){
+  main.innerHTML=`<div class="panel"><h2>Magnet rules</h2>
+    <table class="matrix"><caption>What happens when two objects are placed beside each other</caption>
+    <thead><tr><th scope="col"><span class="vh">Object</span></th><th scope="col">Magnet</th><th scope="col">Iron or steel block</th><th scope="col">Plastic or wooden block</th></tr></thead><tbody>
+    <tr><th scope="row">Magnet</th><td class="a">Attract or repel</td><td class="a">Attract</td><td class="n">No force</td></tr>
+    <tr><th scope="row">Iron or steel block</th><td class="a">Attract</td><td class="n">No force</td><td class="n">No force</td></tr>
+    <tr><th scope="row">Plastic or wooden block</th><td class="n">No force</td><td class="n">No force</td><td class="n">No force</td></tr></tbody></table>
+    <ul class="rules"><li>Only magnets can repel. If two objects repel, both are magnets.</li>
+    <li>Attract tells you at least one of the pair is a magnet. Two magnets attract when unlike poles face each other.</li>
+    <li>A magnet pulls every iron or steel block. Two blocks do not pull each other.</li>
+    <li>Two magnets beside each other always push or pull.</li></ul></div>
+    <div class="panel"><h2>How to work it out</h2><ol class="rules"><li>Find any pair that repels. Both objects are magnets.</li><li>Find the object that pulls or is pulled by every magnet. That is an iron or steel block, or another magnet.</li><li>Find an object that shows no force with a magnet. It is plastic or wood.</li><li>Check each option against all the pairs, not just one.</li></ol></div>`;
+}
+
+/* ----- events ----- */
+main.addEventListener('click',e=>{
+  const el=e.target.closest('[data-act]');
+  if(el){
+    const a=el.dataset.act;
+    if(a==='obj')pickObj(el.dataset.id);
+    else if(a==='chip'){const [x,y]=el.dataset.key.split('-');getRun(q().id).selected=[];test(x,y);}
+    else if(a==='hint'){const run=getRun(q().id);run.hints++;getProg(q().id).hints++;saveProgress();renderHints();}
+    else if(a==='check')checkAnswer();
+    else if(a==='goto'){cur=+el.dataset.q;render();}
+    else if(a==='next'){cur=Math.min(cur+1,QUESTIONS.length-1);render();window.scrollTo(0,0);}
+    else if(a==='redo'){cur=+el.dataset.q;delete runs[QUESTIONS[cur].id];view='questions';render();window.scrollTo(0,0);}
+    else if(a==='tab'){view=el.dataset.view;render();}
+    return;
+  }
+  const tr=e.target.closest('tr.opt');if(tr)selectOption(+tr.dataset.i);
+});
+main.addEventListener('change',e=>{if(e.target.name==='opt')selectOption(+e.target.value);});
+$('#tabs').addEventListener('click',e=>{const el=e.target.closest('[data-act="tab"]');if(el){view=el.dataset.view;render();}});
+
+$('#btnExport').addEventListener('click',()=>{
+  const blob=new Blob([JSON.stringify({app:'psle-science-magnets-diagnostic',version:1,exportedAt:new Date().toISOString(),progress},null,2)],{type:'application/json'});
+  const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='magnets-diagnostic-progress.json';document.body.appendChild(a);a.click();a.remove();
+  setTimeout(()=>URL.revokeObjectURL(a.href),1000);toast('Progress exported.');
+});
+$('#btnImport').addEventListener('click',()=>$('#fileImport').click());
+$('#fileImport').addEventListener('change',e=>{
+  const f=e.target.files[0];if(!f)return;const r=new FileReader();
+  r.onload=()=>{try{const d=JSON.parse(r.result);if(d.app!=='psle-science-magnets-diagnostic'||typeof d.progress!=='object'||!d.progress)throw 0;progress=d.progress;runs={};saveProgress();toast('Progress imported.');render();}catch(err){toast('That file is not a progress export from this book.');}};
+  r.readAsText(f);e.target.value='';
+});
+$('#btnReset').addEventListener('click',()=>{if(confirm('Clear all progress and the mistake book in this browser?')){progress={};runs={};saveProgress();cur=0;view='questions';render();toast('Progress cleared.');}});
+
+render();
+</script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+#explore h3{font-size:20px;margin:26px 0 4px;padding-top:14px;border-top:var(--bw) solid var(--line)}
+#explore h3#e1{border-top:0;padding-top:0;margin-top:10px}
+#explore h4{font:700 16px var(--f-body);margin:18px 0 6px}
+.mslider{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin:10px 0 0;font-weight:600}
+.mslider input{flex:1 1 220px;accent-color:var(--primary);height:44px}
+.mgrid{display:grid;grid-template-columns:minmax(0,300px) minmax(0,1fr);gap:16px;align-items:start}
+@media(max-width:640px){.mgrid{grid-template-columns:1fr}}
+.mgrid .stage svg{max-width:300px;margin:0 auto}
+.chip-btn{min-height:44px;padding:8px 14px;border:var(--bw) solid var(--line);border-radius:999px;background:var(--card);color:var(--ink);font-size:15px}
+.chip-btn.ok{border-color:var(--ok);background:var(--ok-soft);color:var(--ok);font-weight:700}
+.chip-btn.no{border-color:var(--no);background:var(--no-soft);color:var(--no);text-decoration:line-through}
+.dot-gas{fill:var(--sim-1)}
+.sand{fill:var(--fb);stroke:var(--stroke);stroke-width:2}
+.grain{fill:var(--fb);stroke:var(--stroke);stroke-width:2;stroke-linejoin:round}

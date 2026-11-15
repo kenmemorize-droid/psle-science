@@ -1,0 +1,15 @@
+{
+  "id": "P4-light",
+  "type": "unit",
+  "theme": "energy",
+  "topic": "LGT",
+  "level": "P4",
+  "title": "Light",
+  "purpose": "We see things only when light from them enters our eyes. Find out where light comes from, why it travels in straight lines, and what decides the shape, size and darkness of a shadow.",
+  "lo": ["P4.LGT.C1", "P4.LGT.C2", "P4.LGT.P1"],
+  "fixes": "The whole Light topic: light sources and reflection, how we see, straight-line light, and the variables that change a shadow.",
+  "origin": "base",
+  "built": "2026-11-12",
+  "order": 0,
+  "uses": ["classify"]
+}

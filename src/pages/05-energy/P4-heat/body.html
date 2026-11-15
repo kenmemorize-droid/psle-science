@@ -1,0 +1,168 @@
+<section class="card" id="know">
+  <p class="sec-label">What you need to know</p>
+  <h2>Heat in five ideas</h2>
+  <div class="know">
+    <details class="kcard" open>
+      <summary><span class="kn">1</span> Heat is energy, and where it comes from</summary>
+      <p><b>Heat is a form of energy.</b> It cannot be seen, but it can be felt. A <b>source of heat</b> is anything that produces heat:</p>
+      <ul>
+        <li>the Sun</li>
+        <li>burning things, such as a candle, wood or fuel</li>
+        <li>switched-on electrical appliances, such as an iron, a toaster or an oven</li>
+        <li>rubbing two things together</li>
+      </ul>
+      <p>Most sources of light are also sources of heat. Ice is <b>not</b> a source of "cold": cold is just less heat.</p>
+    </details>
+    <details class="kcard" open>
+      <summary><span class="kn">2</span> Temperature, and how it differs from heat</summary>
+      <p><b>Temperature</b> is a measurement of how hot something is: its <b>degree of hotness</b>. It is measured in <b>degrees Celsius (°C)</b> with a <b>thermometer</b>, or with a <b>datalogger</b> and a temperature sensor, which records the temperature again and again over time.</p>
+      <p><b>Heat is not the same as temperature.</b> Two beakers of water are both at 60 °C, but beaker B holds twice as much water as beaker A. They have the <b>same temperature</b>, yet B has <b>more heat</b>, because more heat was needed to warm more water to 60 °C. With the same amount of water, the hotter one has more heat.</p>
+    </details>
+    <details class="kcard" open>
+      <summary><span class="kn">3</span> Heat flows from hotter to colder</summary>
+      <p>Heat always flows from a <b>hotter</b> object or place to a <b>colder</b> one, <b>until both reach the same temperature</b>. Then it stops.</p>
+      <ul>
+        <li>An object that <b>gains heat</b> rises in temperature.</li>
+        <li>An object that <b>loses heat</b> falls in temperature.</li>
+      </ul>
+      <p>A drink with ice in it gets colder because the drink <b>loses heat to the ice</b>. No "cold" flows out of the ice.</p>
+    </details>
+    <details class="kcard" open>
+      <summary><span class="kn">4</span> Effects of heat gain and loss</summary>
+      <ul>
+        <li><b>Expansion and contraction.</b> Solids, liquids and gases <b>expand</b> (increase in volume) when they gain heat, and <b>contract</b> (decrease in volume) when they lose heat. Their <b>mass stays the same</b>.</li>
+        <li><b>Everyday uses:</b> gaps between railway tracks and concrete slabs; a movable joint at one end of a bridge; overhead cables hung loosely; bottles and cans not filled to the top; heating a metal tyre so it expands, fitting it on a wheel, then letting it cool.</li>
+        <li><b>Change of state.</b> Gaining heat can make ice <b>melt</b> and water <b>boil</b> or <b>evaporate</b>. Losing heat can make water <b>freeze</b> and water vapour <b>condense</b>.</li>
+      </ul>
+    </details>
+    <details class="kcard" open>
+      <summary><span class="kn">5</span> Good and poor conductors of heat</summary>
+      <ul>
+        <li>A <b>good conductor</b> lets heat flow through it easily. <b>Metals</b> are good conductors.</li>
+        <li>A <b>poor conductor</b> does not. <b>Wood, plastics, air and rubber</b> are poor conductors.</li>
+        <li>Cooking pots are metal, so heat reaches the food quickly. Pot handles are plastic or wood, so the hand stays safe.</li>
+        <li>A metal bench feels colder than a wooden one at the same temperature, because the metal <b>conducts heat away from your hand faster</b>.</li>
+      </ul>
+    </details>
+  </div>
+</section>
+
+<section class="card" id="explore">
+  <p class="sec-label">Explore</p>
+  <h2>Try it yourself</h2>
+
+  <h3 id="e1">1. Source of heat or not?</h3>
+  <p class="lead">Ask of each card: does it produce heat?</p>
+  <div id="classify"></div>
+
+  <h3 id="e2">2. Heat flows from hot to cold</h3>
+  <p class="lead">A cup of hot water (200 mL at 80 °C) stands in a basin of cold water (800 mL at 20 °C). Move the time slider.</p>
+  <div class="hgrid">
+    <div class="stage"><svg id="flowSvg" viewBox="0 0 360 240" role="img" aria-label="A cup of hot water standing in a basin of cold water"></svg></div>
+    <div class="stage"><svg id="flowGraph" viewBox="0 0 360 240" role="img" aria-label="Graph of the two temperatures against time"></svg></div>
+  </div>
+  <label class="hslider"><span>Time: <b id="tOut">0</b> min</span><input type="range" id="tFlow" min="0" max="30" value="0"></label>
+  <p class="stage-msg" id="flowMsg" aria-live="polite"></p>
+  <h4>Ice in a glass of juice</h4>
+  <div class="stage"><svg id="iceSvg" viewBox="0 0 360 200" role="img" aria-label="Arrows show heat flowing from the juice into an ice cube"></svg></div>
+  <p class="note-s">The juice loses heat to the ice, so its temperature falls. The ice gains heat and melts. Nothing "cold" flows out of the ice.</p>
+
+  <h3 id="e3">3. Heat or temperature?</h3>
+  <p class="lead">Two beakers start at 25 °C on identical burners: one holds 50 mL of water, the other 100 mL.</p>
+  <div class="row"><button type="button" class="btn primary" id="heatBtn">Heat both to 60 °C</button><button type="button" class="btn small" id="heatReset">Start again</button></div>
+  <div class="stage" style="margin-top:10px"><svg id="heatSvg" viewBox="0 0 540 220" role="img" aria-label="Two beakers of water on burners, with thermometers and timers"></svg></div>
+  <p class="stage-msg" id="heatMsg" aria-live="polite"></p>
+  <div class="note"><b>Same amount, different temperatures.</b> Two beakers each hold 100 mL of water, one at 40 °C and one at 80 °C. With the same amount of water, the hotter one holds more heat.</div>
+
+  <h3 id="e4">4. Expand, contract, change state</h3>
+  <div class="hgrid">
+    <div>
+      <h4 style="margin-top:0">Metal ball and ring</h4>
+      <div class="row" role="group" aria-label="Ball and ring">
+        <button type="button" class="btn small" data-ball="start" aria-pressed="true">Start</button>
+        <button type="button" class="btn small" data-ball="hot" aria-pressed="false">Heat the ball</button>
+        <button type="button" class="btn small" data-ball="cool" aria-pressed="false">Cool the ball</button>
+      </div>
+      <div class="stage" style="margin-top:8px"><svg id="ballSvg" viewBox="0 0 260 220" role="img" aria-label="A metal ball above a metal ring, with a balance showing its mass"></svg></div>
+      <p class="stage-msg" id="ballMsg" aria-live="polite"></p>
+    </div>
+    <div>
+      <h4 style="margin-top:0">Balloon on a bottle</h4>
+      <div class="row" role="group" aria-label="Balloon on a bottle">
+        <button type="button" class="btn small" data-bal="start" aria-pressed="true">Start</button>
+        <button type="button" class="btn small" data-bal="hot" aria-pressed="false">Hot water</button>
+        <button type="button" class="btn small" data-bal="ice" aria-pressed="false">Ice</button>
+      </div>
+      <div class="stage" style="margin-top:8px"><svg id="balSvg" viewBox="0 0 260 244" role="img" aria-label="A balloon on the mouth of a bottle standing in a basin"></svg></div>
+      <p class="stage-msg" id="balMsg" aria-live="polite"></p>
+    </div>
+  </div>
+  <h4>Everyday uses (tap each one)</h4>
+  <div class="tiles">
+    <details class="tile-d"><summary>Railway tracks</summary><p>Small gaps between sections give the tracks room to expand on hot days, so they do not bend.</p></details>
+    <details class="tile-d"><summary>Concrete pavement</summary><p>Gaps give the concrete room to expand and contract as the temperature changes, so it does not crack.</p></details>
+    <details class="tile-d"><summary>Pipes</summary><p>Pipes carrying hot liquids have curved joints or loops, which give room to expand and contract so the pipes do not break.</p></details>
+    <details class="tile-d"><summary>Bridges</summary><p>One end is fixed and the other has a movable joint, so the bridge can expand on hot days and contract on cold days.</p></details>
+    <details class="tile-d"><summary>Overhead cables</summary><p>Cables are hung loosely so they can contract on cold days without snapping, but not so loosely that they sag dangerously when they expand on hot days.</p></details>
+    <details class="tile-d"><summary>Bottles and cans</summary><p>They are not filled to the top, leaving room for the drink to expand so the container does not burst.</p></details>
+    <details class="tile-d"><summary>Wheel and tyre</summary><p>A metal tyre is heated so it expands, slipped over the wheel, then left to cool. It contracts and grips the wheel tightly.</p></details>
+  </div>
+  <h4>Change of state</h4>
+  <div class="stage"><svg id="stateSvg" viewBox="0 0 540 150" role="img" aria-label="Ice, water and water vapour, with arrows for gaining and losing heat"></svg></div>
+  <div class="row" role="group" aria-label="Changes of state" style="margin-top:8px">
+    <button type="button" class="btn small" data-st="melt">Ice → water</button>
+    <button type="button" class="btn small" data-st="boil">Water → water vapour</button>
+    <button type="button" class="btn small" data-st="cond">Water vapour → water</button>
+    <button type="button" class="btn small" data-st="freeze">Water → ice</button>
+  </div>
+  <p class="stage-msg" id="stateMsg" aria-live="polite"></p>
+
+  <h3 id="e5">5. Good and poor conductors</h3>
+  <p class="lead">Three spoons stand in the same hot water. Each has a bead of wax on its handle.</p>
+  <div class="row"><button type="button" class="btn primary" id="spoonBtn">Put the spoons in</button><button type="button" class="btn small" id="spoonReset">Start again</button></div>
+  <div class="stage" style="margin-top:10px"><svg id="spoonSvg" viewBox="0 0 540 220" role="img" aria-label="A metal, a plastic and a wooden spoon standing in hot water, each with wax on the handle"></svg></div>
+  <p class="stage-msg" id="spoonMsg" aria-live="polite"></p>
+  <h4>Why does metal feel colder?</h4>
+  <div class="stage"><svg id="touchSvg" viewBox="0 0 540 190" role="img" aria-label="A hand on a metal bench and a hand on a wooden bench, both at 28 degrees Celsius"></svg></div>
+  <p class="note-s">Both benches are at 28 °C. The metal feels colder because it conducts heat away from your hand faster.</p>
+
+  <details class="beyond">
+    <summary><span class="bs-badge">Beyond syllabus</span> Surface area, colour and texture</summary>
+    <p>Two more things change how fast heat is transferred. They are not in the P4 syllabus and are never tested here.</p>
+    <ul>
+      <li><b>Surface area.</b> The larger the surface touching a heat source or the surroundings, the faster heat is transferred. A pot with a wide base boils sooner on a hot plate. An African elephant's large ears help it lose heat.</li>
+      <li><b>Colour and texture.</b> A black, dull, rough surface absorbs heat faster than a white, shiny, smooth one. Alice left two tins in the sun:</li>
+    </ul>
+    <div class="scroll"><table class="data"><thead><tr><th scope="col">Tin</th><th scope="col">0 min</th><th scope="col">10 min</th><th scope="col">20 min</th><th scope="col">30 min</th></tr></thead>
+      <tbody><tr><th scope="row">P (white, shiny)</th><td>25 °C</td><td>27 °C</td><td>30 °C</td><td>32 °C</td></tr><tr><th scope="row">Q (black, dull)</th><td>25 °C</td><td>29 °C</td><td>35 °C</td><td>40 °C</td></tr></tbody></table></div>
+  </details>
+
+  <h3 id="e6">6. Measuring temperature</h3>
+  <div class="mgrid">
+    <div class="stage"><svg id="thermoSvg" viewBox="0 0 200 260" role="img" aria-label="A laboratory thermometer"></svg></div>
+    <div>
+      <p class="note-s">Read the thermometer. Each long mark is labelled.</p>
+      <div class="row" id="thChips" role="group" aria-label="Your reading"></div>
+      <p class="stage-msg" id="thMsg" aria-live="polite"></p>
+      <button type="button" class="btn small" id="thNext">Next reading</button>
+    </div>
+  </div>
+  <h4>A datalogger records by itself</h4>
+  <p class="note-s">A temperature sensor sits in the cup of hot water from station 2. The datalogger takes a reading every minute and draws the graph.</p>
+  <div class="row"><button type="button" class="btn primary" id="logBtn">Record for 20 minutes</button></div>
+  <div class="stage" style="margin-top:10px"><svg id="logSvg" viewBox="0 0 360 240" role="img" aria-label="Datalogger graph of temperature against time"></svg></div>
+  <p class="stage-msg" id="logMsg" aria-live="polite"></p>
+</section>
+
+<section class="card" id="check">
+  <p class="sec-label">Unit check</p>
+  <h2>Ten questions on the whole topic</h2>
+  <p class="lead">Only your first answer counts. A wrong first answer goes into your mistake book, and a different question on the same idea comes back for recap.</p>
+  <div id="qs"></div>
+</section>
+
+<section class="card" id="deeper">
+  <p class="sec-label">Go deeper</p>
+  <h2>Focus pages on heat</h2>
+  <div id="psle-deeper"></div>
+</section>

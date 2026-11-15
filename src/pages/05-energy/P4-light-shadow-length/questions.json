@@ -1,0 +1,501 @@
+[
+  {
+    "id": "P4-light-shadow-length.q1",
+    "title": "Walking away from a lamp post",
+    "kind": "diag",
+    "pool": "page",
+    "lo": [
+      "P4.LGT.C2"
+    ],
+    "stem": "<p>At night, Ben walks along a straight path, away from a lamp post.</p><p class='q-ask'>What happens to the length of the shadow made by that lamp?</p>",
+    "key": "With a lamp shining down on the ground, the farther away you are, the longer your shadow.",
+    "options": [
+      {
+        "text": "It gets shorter, because he is moving away from the light.",
+        "mis": "LGT-01",
+        "pick": "In class, moving away from the torch made the shadow smaller, so it seems to work the same way here.",
+        "why": "That rule is for an object between a torch and a wall. Here the shadow lies on the ground under a lamp above him, and moving away makes it longer."
+      },
+      {
+        "text": "It stays the same length, because Ben's height does not change.",
+        "mis": "LGT-05",
+        "pick": "Ben is the object, and he does not change size.",
+        "why": "The shadow also depends on how far Ben is from the lamp. As the distance grows, the shadow grows."
+      },
+      {
+        "text": "It gets longer.",
+        "correct": true,
+        "pick": "Picture the straight line from the lamp, past the top of Ben's head, to the ground. Where does it land as Ben moves away?",
+        "why": "As Ben moves away, the light reaches him at a lower slant. He blocks the light over a longer stretch of ground, so the shadow gets longer."
+      },
+      {
+        "text": "It gets shorter, because less light reaches him.",
+        "mis": "LGT-01",
+        "pick": "Farther from the lamp it is dimmer, so the shadow seems to fade and shrink.",
+        "why": "A shadow's length depends on the straight line from the lamp past his head, not on how bright the light is. Farther away, the line slants more and the shadow is longer."
+      }
+    ]
+  },
+  {
+    "id": "P4-light-shadow-length.q2",
+    "title": "Standing under the lamp",
+    "kind": "diag",
+    "pool": "page",
+    "lo": [
+      "P4.LGT.C2"
+    ],
+    "stem": "<p>At night, Ben stands directly under a lamp post.</p><p class='q-ask'>Where is the shadow made by that lamp?</p>",
+    "key": "Right under a lamp, the light comes straight down, so the shadow is only a small patch at the feet.",
+    "options": [
+      {
+        "text": "A small patch around his feet",
+        "correct": true,
+        "pick": "The light comes straight down on him. Which part of the ground does he block?",
+        "why": "The light shines straight down, so Ben blocks only the ground directly under him. The shadow is a small patch at his feet."
+      },
+      {
+        "text": "A long shadow stretching in front of him",
+        "mis": "LGT-01",
+        "pick": "He is as close to the lamp as he can be, so the shadow seems to be at its biggest.",
+        "why": "Close to a lamp above you, the light comes down steeply and the shadow is short. Directly under it, the shadow is only a patch at the feet."
+      },
+      {
+        "text": "No shadow at all, because the lamp is directly above him",
+        "mis": "LGT-03",
+        "pick": "With the light right above, there seems to be nowhere for a shadow to go.",
+        "why": "Ben still blocks the light. Light cannot bend around him to reach the ground under his feet, so there is a small shadow there."
+      },
+      {
+        "text": "A shadow on the lamp post",
+        "mis": "LGT-02",
+        "pick": "The lamp post is the closest thing to him, so the shadow seems to fall on it.",
+        "why": "A shadow forms on the side away from the light. The light is above him, so the shadow is on the ground below him, not on the post."
+      }
+    ]
+  },
+  {
+    "id": "P4-light-shadow-length.q3",
+    "title": "Which way does the shadow point?",
+    "kind": "diag",
+    "pool": "page",
+    "lo": [
+      "P4.LGT.C2"
+    ],
+    "stem": "<p>At night, a girl stands on the path to the right of a lamp post.</p><p class='q-ask'>Which way does her shadow from that lamp point?</p>",
+    "key": "A shadow always points away from its own light.",
+    "options": [
+      {
+        "text": "To the left, towards the lamp",
+        "mis": "LGT-02",
+        "pick": "The lamp is on the left, so the shadow seems to be connected to it.",
+        "why": "The light comes from the left. The girl blocks it, so the dark area is on her right, away from the lamp."
+      },
+      {
+        "text": "Straight up, behind her",
+        "mis": "LGT-03",
+        "pick": "A shadow is often drawn as a shape behind a person.",
+        "why": "The shadow falls on the ground where the light is blocked. Light from the lamp on the left is blocked on her right side."
+      },
+      {
+        "text": "It depends on which way she is facing.",
+        "mis": "LGT-02",
+        "pick": "Your shadow seems to follow you around as you turn.",
+        "why": "Turning around does not move the lamp. The shadow always points away from the light, whichever way she faces."
+      },
+      {
+        "text": "To the right, away from the lamp",
+        "correct": true,
+        "pick": "Draw a straight line from the lamp past the girl. It carries on to the right.",
+        "why": "Light travels in straight lines from the lamp. The girl blocks it on the side away from the lamp, so the shadow points to the right."
+      }
+    ]
+  },
+  {
+    "id": "P4-light-shadow-length.q4",
+    "title": "A ball, a torch and a screen",
+    "kind": "diag",
+    "pool": "page",
+    "lo": [
+      "P4.LGT.P1"
+    ],
+    "stem": "<p>A ball is placed between a torch and a screen. The ball is moved closer to the torch. The torch and the screen do not move.</p><p class='q-ask'>What happens to the ball's shadow on the screen?</p>",
+    "key": "Between a torch and a screen, the closer the object is to the torch, the bigger its shadow.",
+    "options": [
+      {
+        "text": "It becomes smaller, because the ball is closer to the light.",
+        "mis": "LGT-04",
+        "pick": "More light near the ball seems to leave a smaller shadow.",
+        "why": "Being closer to the torch makes the ball block more of the spreading light, so the shadow on the screen gets bigger."
+      },
+      {
+        "text": "It becomes bigger.",
+        "correct": true,
+        "pick": "Close to the torch, the ball blocks a wider spread of the light.",
+        "why": "Light spreads out in straight lines from the torch. Near the torch, the ball blocks more of that spread, so a bigger area of the screen is in shadow."
+      },
+      {
+        "text": "It stays the same size, because the ball is the same size.",
+        "mis": "LGT-05",
+        "pick": "The ball has not changed, so its shadow seems not to change.",
+        "why": "Shadow size also depends on the distances between the torch, the ball and the screen."
+      },
+      {
+        "text": "It stays the same size, but becomes darker.",
+        "mis": "LGT-05",
+        "pick": "Moving towards the light seems to make the shadow stronger, not bigger.",
+        "why": "The size changes: closer to the torch means a bigger shadow."
+      }
+    ]
+  },
+  {
+    "id": "P4-light-shadow-length.q5",
+    "title": "A fair shadow investigation",
+    "kind": "diag",
+    "pool": "page",
+    "lo": [
+      "P4.LGT.P1"
+    ],
+    "stem": "<p>Mei Ling wants to find out how the distance between a torch and a toy affects the size of the toy's shadow on a screen.</p><p class='q-ask'>Which plan is a fair test?</p>",
+    "key": "Change only the variable being tested. Keep everything else, including the other distance, the same.",
+    "layout": "table",
+    "cols": [
+      "She changes",
+      "She keeps the same"
+    ],
+    "options": [
+      {
+        "text": [
+          "the distance between the torch and the toy, and the size of the toy",
+          "the torch"
+        ],
+        "mis": "LGT-06",
+        "pick": "Trying different toys at different distances seems to give more results.",
+        "why": "Two things change at once. If the shadow changes, she cannot tell whether the distance or the toy caused it."
+      },
+      {
+        "text": [
+          "the size of the toy",
+          "the distance between the torch and the toy"
+        ],
+        "mis": "LGT-06",
+        "pick": "Changing the toy's size will certainly change the shadow.",
+        "why": "This tests the size of the toy, not the distance asked about."
+      },
+      {
+        "text": [
+          "the distance between the torch and the toy",
+          "the toy, the torch, and the distance between the toy and the screen"
+        ],
+        "correct": true,
+        "pick": "Change the one distance being tested. Keep everything else that could change the shadow the same.",
+        "why": "Only the torch-to-toy distance changes, so any change in the shadow must come from that distance."
+      },
+      {
+        "text": [
+          "the distance between the toy and the screen",
+          "the toy and the torch"
+        ],
+        "mis": "LGT-06",
+        "pick": "This is a distance too, so it seems to fit the question.",
+        "why": "The question is about the distance between the torch and the toy. The toy-to-screen distance is a different variable."
+      }
+    ]
+  },
+  {
+    "id": "P4-light-shadow-length.q6",
+    "title": "Why a shadow forms",
+    "kind": "diag",
+    "pool": "page",
+    "lo": [
+      "P4.LGT.C2"
+    ],
+    "stem": "<p class='q-ask'>Why does a shadow form behind a person standing in sunlight?</p>",
+    "key": "Light travels in straight lines. A shadow is the area that light cannot reach because something blocks it.",
+    "options": [
+      {
+        "text": "The person's shape is reflected onto the ground.",
+        "mis": "LGT-03",
+        "pick": "A shadow has the person's shape, like a reflection.",
+        "why": "A shadow is not a reflection. It is the dark area where light has been blocked."
+      },
+      {
+        "text": "Light bends around the person but leaves a dark gap behind them.",
+        "mis": "LGT-03",
+        "pick": "The edges of a shadow make it look as if light curls around the person.",
+        "why": "Light travels in straight lines. It does not bend around the person; it is simply blocked."
+      },
+      {
+        "text": "The sunlight is too weak to reach behind the person.",
+        "mis": "LGT-03",
+        "pick": "The ground behind the person seems too far for the light to reach.",
+        "why": "The ground around the shadow is brightly lit. The light is blocked by the person, not too weak."
+      },
+      {
+        "text": "Light travels in straight lines and cannot pass through the person, so the area behind the person gets no light.",
+        "correct": true,
+        "pick": "Think about the path of the light and what is in its way.",
+        "why": "Light travels in straight lines. The person blocks it, so the light cannot reach the area behind them, and that area is the shadow."
+      }
+    ]
+  },
+  {
+    "id": "P4-light-shadow-length.v1",
+    "title": "A cat walks towards a lamp",
+    "kind": "variant",
+    "pool": "recap",
+    "lo": [
+      "P4.LGT.C2"
+    ],
+    "stem": "<p>At night, a cat walks along a path towards a street lamp.</p><p class='q-ask'>What happens to the cat's shadow made by that lamp?</p>",
+    "key": "With a lamp above, moving closer to it makes the shadow on the ground shorter.",
+    "options": [
+      {
+        "text": "It gets longer, because the cat is getting closer to the light.",
+        "mis": "LGT-01",
+        "pick": "Near a torch, shadows get bigger, so it seems the same here.",
+        "why": "That is the torch-and-wall case. With a lamp above shining on the ground, getting closer makes the shadow shorter."
+      },
+      {
+        "text": "It gets shorter.",
+        "correct": true,
+        "pick": "Picture the straight line from the lamp past the cat's back to the ground as the cat gets closer.",
+        "why": "Closer to the lamp, the light comes down more steeply, so the cat blocks less ground and the shadow is shorter."
+      },
+      {
+        "text": "It stays the same length, because the cat does not change size.",
+        "mis": "LGT-05",
+        "pick": "The cat is the same size the whole time.",
+        "why": "The distance from the lamp changes the shadow's length, even though the cat's size does not change."
+      },
+      {
+        "text": "It moves to the side of the cat facing the lamp.",
+        "mis": "LGT-02",
+        "pick": "The cat is heading towards the lamp, so its shadow seems to lead the way.",
+        "why": "The shadow is always on the side away from the lamp, so it trails behind the cat."
+      }
+    ]
+  },
+  {
+    "id": "P4-light-shadow-length.v2",
+    "title": "Between two lamp posts",
+    "kind": "variant",
+    "pool": "recap",
+    "lo": [
+      "P4.LGT.C2"
+    ],
+    "stem": "<p>Siti walks along a straight path from lamp post P to lamp post Q, which are 10 m apart.</p><p class='q-ask'>When is her shadow made by lamp P the longest?</p>",
+    "key": "The farther you are from a lamp above you, the longer the shadow it makes.",
+    "options": [
+      {
+        "text": "When she is next to lamp P",
+        "mis": "LGT-01",
+        "pick": "Close to the light seems to mean a bigger shadow.",
+        "why": "Right next to lamp P, its light comes almost straight down, so the shadow from P is at its shortest."
+      },
+      {
+        "text": "When she is halfway between the two lamps",
+        "mis": "LGT-01",
+        "pick": "The middle seems to be where things balance out.",
+        "why": "Halfway, she is only 5 m from lamp P. Her shadow from P keeps growing all the way to lamp Q."
+      },
+      {
+        "text": "It is the same length all the way.",
+        "mis": "LGT-05",
+        "pick": "Siti does not change size, so her shadow seems to stay the same.",
+        "why": "Her distance from lamp P changes as she walks, and that changes the length of the shadow."
+      },
+      {
+        "text": "When she is next to lamp Q",
+        "correct": true,
+        "pick": "Find where she is farthest from lamp P.",
+        "why": "Next to lamp Q she is 10 m from lamp P, the farthest she gets, so P's light slants most and her shadow from P is longest."
+      }
+    ]
+  },
+  {
+    "id": "P4-light-shadow-length.v3",
+    "title": "A lamp beside a box",
+    "kind": "variant",
+    "pool": "recap",
+    "lo": [
+      "P4.LGT.C2"
+    ],
+    "stem": "<p>A lamp is placed on the left of a box on a table. It is the only light in the room.</p><p class='q-ask'>Where is the box's shadow?</p>",
+    "key": "A shadow forms on the side of the object away from the light.",
+    "options": [
+      {
+        "text": "On the right of the box",
+        "correct": true,
+        "pick": "Light from the left travels in straight lines. Where can it not reach?",
+        "why": "The box blocks the light coming from the left, so the area on its right gets no light."
+      },
+      {
+        "text": "On the left of the box, between the box and the lamp",
+        "mis": "LGT-02",
+        "pick": "The shadow seems to belong near the light that makes it.",
+        "why": "The area between the lamp and the box is lit. The shadow is on the far side, away from the lamp."
+      },
+      {
+        "text": "Only directly under the box",
+        "mis": "LGT-03",
+        "pick": "Objects often seem to have their shadow underneath them.",
+        "why": "The light comes from the side, so the box blocks it on its right, not only underneath."
+      },
+      {
+        "text": "There is no shadow, because the light goes around the box.",
+        "mis": "LGT-03",
+        "pick": "The table around the box is bright, so the light seems to get everywhere.",
+        "why": "Light travels in straight lines and cannot bend around the box, so there is a shadow on its right."
+      }
+    ]
+  },
+  {
+    "id": "P4-light-shadow-length.v4",
+    "title": "Moving a toy towards the wall",
+    "kind": "variant",
+    "pool": "recap",
+    "lo": [
+      "P4.LGT.P1"
+    ],
+    "stem": "<p>A toy is placed between a torch and a wall. The toy is moved away from the torch, towards the wall. The torch and the wall do not move.</p><p class='q-ask'>What happens to the toy's shadow on the wall?</p>",
+    "key": "Between a torch and a screen, the farther the object is from the torch, the smaller its shadow.",
+    "options": [
+      {
+        "text": "It becomes bigger, because the toy is nearer the wall.",
+        "mis": "LGT-04",
+        "pick": "Nearer the wall seems to mean a bigger shape on the wall.",
+        "why": "Nearer the wall means farther from the torch, so the toy blocks less light and the shadow shrinks."
+      },
+      {
+        "text": "It stays the same size, because the toy is the same toy.",
+        "mis": "LGT-05",
+        "pick": "The toy has not changed, so the shadow seems not to change.",
+        "why": "The distances between torch, toy and wall also decide the shadow's size."
+      },
+      {
+        "text": "It becomes smaller.",
+        "correct": true,
+        "pick": "Farther from the torch, the toy blocks less of the spreading light.",
+        "why": "Light spreads out in straight lines. Away from the torch, the toy blocks a narrower part of it, so its shadow on the wall is smaller."
+      },
+      {
+        "text": "It becomes bigger, because the toy is farther from the light.",
+        "mis": "LGT-04",
+        "pick": "Walking away from a lamp makes a shadow longer, so this seems the same.",
+        "why": "That is the lamp-and-ground case. With a torch and a wall, moving the object away from the torch makes its shadow smaller."
+      }
+    ]
+  },
+  {
+    "id": "P4-light-shadow-length.v5",
+    "title": "Testing the size of an object",
+    "kind": "variant",
+    "pool": "recap",
+    "lo": [
+      "P4.LGT.P1"
+    ],
+    "stem": "<p>Ravi wants to find out how the size of a card affects the size of its shadow on a screen.</p><p class='q-ask'>Which set-up is a fair test?</p>",
+    "key": "Change only the variable being tested, here the size of the card. Keep the torch and both distances the same.",
+    "options": [
+      {
+        "text": "Cards of different sizes, each placed at a different distance from the torch",
+        "mis": "LGT-06",
+        "pick": "Every card is tested, so it seems complete.",
+        "why": "Two things change at once. A shadow could change because of the distance, not the size."
+      },
+      {
+        "text": "Cards of different sizes, each placed the same distance from the same torch and the same screen",
+        "correct": true,
+        "pick": "Only the card's size should change.",
+        "why": "With the torch and both distances kept the same, any difference in the shadow comes from the size of the card."
+      },
+      {
+        "text": "The same card placed at different distances from the torch",
+        "mis": "LGT-06",
+        "pick": "Moving the card clearly changes the shadow.",
+        "why": "This tests distance, not the size of the card."
+      },
+      {
+        "text": "Cards of different sizes and shapes, each placed the same distance from the torch",
+        "mis": "LGT-06",
+        "pick": "The distances are kept the same, which is what a fair test needs.",
+        "why": "The shape changes as well as the size, so the effect of size alone cannot be found."
+      }
+    ]
+  },
+  {
+    "id": "P4-light-shadow-length.v6",
+    "title": "A puppet show results table",
+    "kind": "variant",
+    "pool": "recap",
+    "lo": [
+      "P4.LGT.P1"
+    ],
+    "stem": "<p>A pupil moved a torch closer to a puppet. The puppet and the screen did not move. Her results are shown.</p><p class='q-ask'>What can she conclude?</p>",
+    "figure": "<table class='data'><thead><tr><th scope='col'>Distance between torch and puppet (cm)</th><th scope='col'>Height of shadow on screen (cm)</th></tr></thead><tbody><tr><td>50</td><td>10</td></tr><tr><td>30</td><td>15</td></tr><tr><td>20</td><td>22</td></tr></tbody></table>",
+    "key": "Read the table in one direction: as the distance gets smaller, the shadow gets bigger.",
+    "options": [
+      {
+        "text": "The closer the torch is to the puppet, the smaller the shadow.",
+        "mis": "LGT-04",
+        "pick": "Close to the light seems to mean less shadow.",
+        "why": "The table shows the opposite: at 20 cm the shadow is 22 cm, its biggest."
+      },
+      {
+        "text": "The size of the shadow depends only on the size of the puppet.",
+        "mis": "LGT-05",
+        "pick": "The puppet decides the shape of the shadow.",
+        "why": "The puppet did not change, yet the shadow changed. The distance made the difference."
+      },
+      {
+        "text": "She cannot conclude anything, because she changed the distance.",
+        "mis": "LGT-06",
+        "pick": "Changing something during an experiment seems to spoil it.",
+        "why": "The distance is the variable she meant to change. Everything else stayed the same, so the test is fair."
+      },
+      {
+        "text": "The closer the torch is to the puppet, the bigger the shadow.",
+        "correct": true,
+        "pick": "Follow the table downwards: the distance goes down while the shadow goes up.",
+        "why": "From 50 cm to 20 cm, the shadow grows from 10 cm to 22 cm. Closer torch, bigger shadow."
+      }
+    ]
+  },
+  {
+    "id": "P4-light-shadow-length.v7",
+    "title": "A hand on the wall",
+    "kind": "variant",
+    "pool": "recap",
+    "lo": [
+      "P4.LGT.C2"
+    ],
+    "stem": "<p>A torch shines on a hand held in front of a wall, and a clear shadow of the hand appears on the wall.</p><p class='q-ask'>Which explains the shadow?</p>",
+    "key": "A shadow forms where an object blocks light that travels in straight lines.",
+    "options": [
+      {
+        "text": "The hand blocks the light, which travels in straight lines.",
+        "correct": true,
+        "pick": "Think about the path of the light from the torch to the wall.",
+        "why": "The light travels in straight lines and cannot pass through the hand, so the part of the wall behind the hand gets no light."
+      },
+      {
+        "text": "Light bends around the hand, leaving a dark shape.",
+        "mis": "LGT-03",
+        "pick": "The shadow has smooth edges, as if light curled around.",
+        "why": "Light travels in straight lines. It is blocked by the hand, not bent around it."
+      },
+      {
+        "text": "The wall reflects the shape of the hand.",
+        "mis": "LGT-03",
+        "pick": "The shadow is hand-shaped, like a mirror image.",
+        "why": "A shadow is not a reflection. It is the area where the hand stops the light."
+      },
+      {
+        "text": "The torch gives out darkness where the hand is.",
+        "mis": "LGT-03",
+        "pick": "The dark patch seems to come from the torch.",
+        "why": "A torch only gives out light. The dark patch is simply where light cannot reach."
+      }
+    ]
+  }
+]

@@ -1,0 +1,18 @@
+#explore h3{font-size:20px;margin:26px 0 4px;padding-top:14px;border-top:var(--bw) solid var(--line)}
+#explore h3#e1{border-top:0;padding-top:0;margin-top:10px}
+#explore h4{font:700 16px var(--f-body);margin:18px 0 6px}
+.ygrid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:16px;align-items:start}
+@media(max-width:700px){.ygrid{grid-template-columns:1fr}}
+#plantRing,#aniRing,#puzRing{max-width:400px;margin:0 auto}
+#timeline{max-width:560px;margin:0 auto}
+.y-step{font:700 15px var(--f-label);letter-spacing:var(--ls);margin:0}
+.chip-btn{min-height:44px;min-width:44px;padding:8px 14px;border:var(--bw) solid var(--line);border-radius:999px;background:var(--card);color:var(--ink);font-size:15px}
+.chip-btn[aria-pressed="true"]{border-color:var(--primary);background:var(--primary-soft);font-weight:700}
+.chip-btn.book{border-style:dashed}
+.chip-btn:disabled{opacity:.4}
+.y-slots{display:flex;flex-wrap:wrap;align-items:center;gap:6px;margin-top:6px}
+.y-slot{min-width:110px;min-height:44px;padding:8px 10px;border:var(--bw) dashed var(--line);border-radius:10px;background:var(--sunk);font-size:15px;display:flex;align-items:center}
+.y-slot.full{border-style:solid;background:var(--card)}
+.y-slot.ok{border-color:var(--ok);background:var(--ok-soft)}
+.y-slot.no{border-color:var(--no);background:var(--no-soft)}
+.y-arrow{font-weight:700;color:var(--muted)}

@@ -1,0 +1,15 @@
+{
+  "id": "P3-materials",
+  "type": "unit",
+  "theme": "diversity",
+  "topic": "MAT",
+  "level": "P3",
+  "title": "Materials",
+  "purpose": "Things are made of materials because of their properties. Test five properties on the bench, meet seven common materials, and work out why each object is made of what it is made of.",
+  "lo": ["P3.MAT.C1", "P3.MAT.P1"],
+  "fixes": "The whole Materials topic: the five properties and how to test them, the seven materials, and choosing a material for a job.",
+  "origin": "base",
+  "built": "2026-11-12",
+  "order": 0,
+  "uses": ["classify"]
+}

@@ -1,0 +1,500 @@
+[
+  {
+    "id": "P4-digestive-system-food-journey.cp1",
+    "title": "In the gullet",
+    "kind": "diag",
+    "pool": "page",
+    "lo": [
+      "P4.DIG.C2"
+    ],
+    "journey": {
+      "after": "gullet",
+      "next": "stomach"
+    },
+    "stem": "<p class='q-ask'>Which of the following happens in the gullet?</p>",
+    "key": "The gullet only moves food along. Its muscles squeeze in waves and push the food down to the stomach.",
+    "options": [
+      {
+        "text": "Water is absorbed from the food.",
+        "mis": "DIG-01",
+        "pick": "You may remember that water is absorbed somewhere in the digestive system.",
+        "why": "Water is absorbed from undigested food in the large intestine. The food in the gullet is still on its way down."
+      },
+      {
+        "text": "Digestive juices break the food down into tiny pieces.",
+        "mis": "DIG-02",
+        "pick": "The gullet is part of the digestive system, so it feels as if it must digest food.",
+        "why": "No digestive juice is made in the gullet. Saliva from the mouth is mixed with the food, but the gullet's job is to move the food along."
+      },
+      {
+        "text": "Muscles in its wall squeeze the food down to the stomach.",
+        "correct": true,
+        "pick": "Think about what the gullet is: a muscular tube joining the mouth to the stomach.",
+        "why": "The gullet is a muscular tube. Its muscles squeeze in waves behind the food and push it down to the stomach."
+      },
+      {
+        "text": "Digested food is absorbed into the blood.",
+        "mis": "DIG-03",
+        "pick": "Absorption sounds like something that happens soon after food is swallowed.",
+        "why": "The food has not been digested yet in the gullet. Digested food is absorbed into the blood in the small intestine."
+      }
+    ]
+  },
+  {
+    "id": "P4-digestive-system-food-journey.cp2",
+    "title": "In the stomach",
+    "kind": "diag",
+    "pool": "page",
+    "lo": [
+      "P4.DIG.C2"
+    ],
+    "journey": {
+      "after": "stomach",
+      "next": "small"
+    },
+    "stem": "<p class='q-ask'>Which of the following happens in the stomach?</p>",
+    "key": "The stomach churns the food and gastric juice partly digests it. Digestion is not finished here.",
+    "options": [
+      {
+        "text": "Muscles churn the food while gastric juice turns it into a thick liquid.",
+        "correct": true,
+        "pick": "The stomach has a strong muscular wall and makes gastric juice. What do those two do to the food?",
+        "why": "The stomach wall is muscular. It churns the food and mixes it with gastric juice, which digests the food into a thick liquid."
+      },
+      {
+        "text": "Teeth cut the food into small pieces.",
+        "mis": "DIG-02",
+        "pick": "Cutting food up is the first step, and the stomach is where the food ends up.",
+        "why": "Teeth are in the mouth. The stomach has muscles that churn the food, not teeth."
+      },
+      {
+        "text": "All the food is completely digested and absorbed into the blood.",
+        "mis": "DIG-04",
+        "pick": "The stomach is the biggest bag in the system, so it seems to do the whole job.",
+        "why": "In the stomach the food is only partly digested. Digestion is completed, and the digested food is absorbed, in the small intestine."
+      },
+      {
+        "text": "Water is absorbed from the undigested food.",
+        "mis": "DIG-01",
+        "pick": "Water absorption is a well-known job of the digestive system.",
+        "why": "Water is absorbed from undigested food in the large intestine, not in the stomach."
+      }
+    ]
+  },
+  {
+    "id": "P4-digestive-system-food-journey.cp3",
+    "title": "Completely digested food",
+    "kind": "diag",
+    "pool": "page",
+    "lo": [
+      "P4.DIG.C2"
+    ],
+    "journey": {
+      "after": "small",
+      "next": "large"
+    },
+    "stem": "<p class='q-ask'>Which of the following happens to completely digested food?</p>",
+    "key": "Completely digested food passes into the blood in the small intestine. Only undigested food moves on.",
+    "options": [
+      {
+        "text": "Water is absorbed from it.",
+        "mis": "DIG-01",
+        "pick": "Water absorption is a well-known job of the digestive system.",
+        "why": "Water is absorbed from undigested food in the large intestine. Completely digested food has already been absorbed into the blood."
+      },
+      {
+        "text": "It is absorbed into the blood at the small intestine.",
+        "correct": true,
+        "pick": "Completely digested food is in tiny pieces that dissolve. Where can they leave the tube?",
+        "why": "Completely digested food is made of tiny dissolved pieces. They pass through the wall of the small intestine into the blood, which carries them to all parts of the body."
+      },
+      {
+        "text": "It is passed from the small intestine to the stomach.",
+        "mis": "DIG-05",
+        "pick": "It is easy to mix up the direction that food travels.",
+        "why": "Food moves one way only: stomach, then small intestine, then large intestine. It never goes back to the stomach."
+      },
+      {
+        "text": "It is passed from the small intestine to the large intestine.",
+        "mis": "DIG-06",
+        "pick": "This is true for undigested food such as fibre, so it sounds familiar.",
+        "why": "Only undigested food passes on to the large intestine. Completely digested food was absorbed into the blood before it could get there."
+      }
+    ]
+  },
+  {
+    "id": "P4-digestive-system-food-journey.cp4",
+    "title": "The sweetcorn skin",
+    "kind": "diag",
+    "pool": "page",
+    "lo": [
+      "P4.DIG.C2"
+    ],
+    "journey": {
+      "after": "large",
+      "next": "anus"
+    },
+    "stem": "<p>Mei Ling ate sweetcorn. The tough skin of the corn could not be digested.</p><p class='q-ask'>Which shows the path taken by the corn skin?</p>",
+    "key": "Undigested food follows the whole tube: mouth → gullet → stomach → small intestine → large intestine. It never enters the blood.",
+    "options": [
+      {
+        "text": "mouth → stomach → gullet → small intestine → large intestine",
+        "mis": "DIG-05",
+        "pick": "It lists all the right parts, so it is easy to pick without checking the order.",
+        "why": "The gullet comes before the stomach. Swallowed food goes down the gullet first."
+      },
+      {
+        "text": "mouth → gullet → stomach → small intestine → blood",
+        "mis": "DIG-06",
+        "pick": "Food ends up in the blood, so this looks like where all food goes.",
+        "why": "Only digested food passes into the blood. The skin cannot be digested, so it cannot pass into the blood."
+      },
+      {
+        "text": "mouth → gullet → stomach → large intestine → small intestine",
+        "mis": "DIG-05",
+        "pick": "The large intestine sounds like it should come first because it is the wider tube.",
+        "why": "Food always goes from the small intestine to the large intestine, never the other way round."
+      },
+      {
+        "text": "mouth → gullet → stomach → small intestine → large intestine",
+        "correct": true,
+        "pick": "Check the order part by part, and remember that undigested food cannot enter the blood.",
+        "why": "The skin passes through the small intestine without being absorbed. In the large intestine, water is taken out and what is left becomes faeces."
+      }
+    ]
+  },
+  {
+    "id": "P4-digestive-system-food-journey.v1",
+    "title": "Where digested food enters the blood",
+    "kind": "variant",
+    "pool": "recap",
+    "lo": [
+      "P4.DIG.C2"
+    ],
+    "stem": "<p class='q-ask'>In which part of the digestive system does digested food pass into the blood?</p>",
+    "key": "Digestion is completed in the small intestine, and digested food passes through its wall into the blood.",
+    "options": [
+      {
+        "text": "Stomach",
+        "mis": "DIG-04",
+        "pick": "The stomach does a lot of digesting, so it seems to finish the job.",
+        "why": "The stomach only partly digests the food. The food is not yet small enough to pass into the blood there."
+      },
+      {
+        "text": "Small intestine",
+        "correct": true,
+        "pick": "Find the part where digestion is completed.",
+        "why": "Digestion is completed in the small intestine, and the tiny dissolved pieces pass through its wall into the blood."
+      },
+      {
+        "text": "Large intestine",
+        "mis": "DIG-03",
+        "pick": "The large intestine absorbs things, so it seems to absorb the food too.",
+        "why": "The large intestine absorbs water from undigested food. Digested food was already absorbed in the small intestine."
+      },
+      {
+        "text": "Gullet",
+        "mis": "DIG-03",
+        "pick": "Food passes through the gullet, so it seems it could be absorbed there.",
+        "why": "The gullet only pushes food down to the stomach. The food has not been digested yet."
+      }
+    ]
+  },
+  {
+    "id": "P4-digestive-system-food-journey.v2",
+    "title": "Inside the large intestine",
+    "kind": "variant",
+    "pool": "recap",
+    "lo": [
+      "P4.DIG.C2"
+    ],
+    "stem": "<p class='q-ask'>Which of these happens in the large intestine?</p>",
+    "key": "The large intestine absorbs water from undigested food. What is left becomes faeces.",
+    "options": [
+      {
+        "text": "Digested food passes into the blood.",
+        "mis": "DIG-03",
+        "pick": "The intestines are where food passes into the blood, so this seems right.",
+        "why": "Digested food passes into the blood in the small intestine. None reaches the large intestine."
+      },
+      {
+        "text": "Muscles churn the food with gastric juice.",
+        "mis": "DIG-02",
+        "pick": "Churning sounds like something a large organ would do.",
+        "why": "Churning with gastric juice happens in the stomach."
+      },
+      {
+        "text": "Water is absorbed from the undigested food.",
+        "correct": true,
+        "pick": "Only undigested food reaches the large intestine. What is taken out of it there?",
+        "why": "The large intestine absorbs water from the undigested food, and what is left becomes faeces."
+      },
+      {
+        "text": "Fibre is digested into tiny pieces.",
+        "mis": "DIG-06",
+        "pick": "The large intestine is the last stop, so it seems to deal with what was left.",
+        "why": "Fibre cannot be digested anywhere. It leaves the body as part of the faeces."
+      }
+    ]
+  },
+  {
+    "id": "P4-digestive-system-food-journey.v3",
+    "title": "The order of the parts",
+    "kind": "variant",
+    "pool": "recap",
+    "lo": [
+      "P4.DIG.C2"
+    ],
+    "stem": "<p>Four parts of the digestive system are labelled P, Q, R and S.</p><p class='q-ask'>In which order does food pass through them?</p>",
+    "figure": "<table class='data'><thead><tr><th scope='col'>Label</th><th scope='col'>Part</th></tr></thead><tbody><tr><th scope='row'>P</th><td>stomach</td></tr><tr><th scope='row'>Q</th><td>small intestine</td></tr><tr><th scope='row'>R</th><td>gullet</td></tr><tr><th scope='row'>S</th><td>large intestine</td></tr></tbody></table>",
+    "key": "Mouth → gullet → stomach → small intestine → large intestine. Food never goes backwards.",
+    "options": [
+      {
+        "text": "P → R → Q → S",
+        "mis": "DIG-05",
+        "pick": "The stomach is the best-known part, so it seems to come first.",
+        "why": "Swallowed food goes down the gullet before it reaches the stomach."
+      },
+      {
+        "text": "R → P → S → Q",
+        "mis": "DIG-05",
+        "pick": "The large intestine is wider, so it seems to come before the small one.",
+        "why": "Food goes from the small intestine to the large intestine, never the other way."
+      },
+      {
+        "text": "R → Q → P → S",
+        "mis": "DIG-05",
+        "pick": "The two intestine-like tubes seem to belong on either side of the stomach.",
+        "why": "The stomach comes straight after the gullet. The small intestine comes after the stomach."
+      },
+      {
+        "text": "R → P → Q → S",
+        "correct": true,
+        "pick": "Start from the mouth: the gullet comes first, then the stomach, then the small and large intestines.",
+        "why": "Gullet (R), stomach (P), small intestine (Q), large intestine (S)."
+      }
+    ]
+  },
+  {
+    "id": "P4-digestive-system-food-journey.v4",
+    "title": "Fibre from vegetables",
+    "kind": "variant",
+    "pool": "recap",
+    "lo": [
+      "P4.DIG.C2"
+    ],
+    "stem": "<p>Jun Kai eats rice and vegetables. The fibre in the vegetables cannot be digested.</p><p class='q-ask'>What happens to the fibre after it leaves the small intestine?</p>",
+    "key": "Undigested food moves on to the large intestine, where water is absorbed from it, and leaves the body as faeces.",
+    "options": [
+      {
+        "text": "It passes into the blood.",
+        "mis": "DIG-06",
+        "pick": "All food seems to end up in the blood eventually.",
+        "why": "Only digested food passes into the blood. Fibre cannot be digested."
+      },
+      {
+        "text": "It enters the large intestine, where water is absorbed from it, and leaves the body as part of the faeces.",
+        "correct": true,
+        "pick": "Fibre cannot be digested, so it cannot pass into the blood. Where does it go next?",
+        "why": "Undigested fibre moves on to the large intestine. Water is absorbed from it, and what is left leaves the body as faeces."
+      },
+      {
+        "text": "It goes back to the stomach to be digested again.",
+        "mis": "DIG-05",
+        "pick": "The stomach digests food, so it seems to get a second try.",
+        "why": "Food moves one way only. Nothing goes back to the stomach."
+      },
+      {
+        "text": "It enters the large intestine, where it is finally digested.",
+        "mis": "DIG-06",
+        "pick": "The large intestine is the last stop, so it seems to finish the job.",
+        "why": "Fibre is never digested. Water is absorbed from it in the large intestine, but the fibre itself leaves the body."
+      }
+    ]
+  },
+  {
+    "id": "P4-digestive-system-food-journey.v5",
+    "title": "About the stomach",
+    "kind": "variant",
+    "pool": "recap",
+    "lo": [
+      "P4.DIG.C2"
+    ],
+    "stem": "<p class='q-ask'>Which statement about the stomach is correct?</p>",
+    "key": "The stomach churns food and partly digests it with gastric juice. It does not finish digestion.",
+    "options": [
+      {
+        "text": "It only stores the food. No digestion happens there.",
+        "mis": "DIG-02",
+        "pick": "The stomach looks like a bag, so it seems only to hold food.",
+        "why": "Gastric juice in the stomach digests the food. The stomach does more than store it."
+      },
+      {
+        "text": "It completes digestion and absorbs the digested food.",
+        "mis": "DIG-04",
+        "pick": "The stomach is a big organ, so it seems to do the whole job.",
+        "why": "Digestion is completed, and digested food is absorbed, in the small intestine."
+      },
+      {
+        "text": "Its muscles churn the food while gastric juice partly digests it.",
+        "correct": true,
+        "pick": "The stomach has a muscular wall and makes gastric juice.",
+        "why": "The muscles churn the food and gastric juice digests it into a thick liquid. Digestion is completed later, in the small intestine."
+      },
+      {
+        "text": "It cuts the food into small pieces.",
+        "mis": "DIG-02",
+        "pick": "Food is broken down there, which sounds like cutting.",
+        "why": "Teeth in the mouth cut the food. The stomach churns it."
+      }
+    ]
+  },
+  {
+    "id": "P4-digestive-system-food-journey.v6",
+    "title": "Pushing food down",
+    "kind": "variant",
+    "pool": "recap",
+    "lo": [
+      "P4.DIG.C2"
+    ],
+    "stem": "<p class='q-ask'>Which part of the digestive system pushes food down to the stomach?</p>",
+    "key": "The gullet is a muscular tube. Its muscles squeeze the food down to the stomach.",
+    "options": [
+      {
+        "text": "Mouth",
+        "mis": "DIG-02",
+        "pick": "The tongue pushes food to the back of the mouth, so the mouth seems to do it.",
+        "why": "The tongue pushes food to the back of the mouth to be swallowed. After that, the gullet pushes it down."
+      },
+      {
+        "text": "Small intestine",
+        "mis": "DIG-05",
+        "pick": "The small intestine is a long tube, so it seems to move food along.",
+        "why": "The small intestine comes after the stomach, so it cannot push food down to it."
+      },
+      {
+        "text": "Large intestine",
+        "mis": "DIG-05",
+        "pick": "It is a large tube, so it seems strong enough to push food.",
+        "why": "The large intestine is near the end of the system, after the stomach and the small intestine."
+      },
+      {
+        "text": "Gullet",
+        "correct": true,
+        "pick": "Find the tube that joins the mouth to the stomach.",
+        "why": "Muscles in the gullet wall squeeze in waves and push the food down to the stomach."
+      }
+    ]
+  },
+  {
+    "id": "P4-digestive-system-food-journey.v7",
+    "title": "Why only digested food enters the blood",
+    "kind": "variant",
+    "pool": "recap",
+    "lo": [
+      "P4.DIG.C2"
+    ],
+    "stem": "<p class='q-ask'>Why can digested food pass into the blood when undigested food cannot?</p>",
+    "key": "Digested food is broken into tiny pieces that dissolve, so they can pass through the wall of the small intestine.",
+    "options": [
+      {
+        "text": "Digested food is broken into tiny pieces that dissolve and can pass through the wall of the small intestine.",
+        "correct": true,
+        "pick": "Think about the size of the pieces after digestion.",
+        "why": "Digestion breaks food into tiny pieces that dissolve. Only these can pass through the wall of the small intestine into the blood."
+      },
+      {
+        "text": "Undigested food passes into the blood in the large intestine instead.",
+        "mis": "DIG-06",
+        "pick": "Undigested food goes to the large intestine, so it seems to be absorbed there.",
+        "why": "Undigested food never passes into the blood. Only water is absorbed from it in the large intestine."
+      },
+      {
+        "text": "Digested food passes into the blood in the stomach, before undigested food gets there.",
+        "mis": "DIG-03",
+        "pick": "The stomach digests food, so it seems to send it into the blood.",
+        "why": "Food is only partly digested in the stomach. Digested food passes into the blood in the small intestine."
+      },
+      {
+        "text": "Digested food is absorbed in the large intestine together with water.",
+        "mis": "DIG-03",
+        "pick": "The large intestine absorbs things, so it seems to absorb food too.",
+        "why": "Digested food has already been absorbed in the small intestine. Only water is absorbed in the large intestine."
+      }
+    ]
+  },
+  {
+    "id": "P4-digestive-system-food-journey.v8",
+    "title": "Where water is absorbed",
+    "kind": "variant",
+    "pool": "recap",
+    "lo": [
+      "P4.DIG.C2"
+    ],
+    "stem": "<p class='q-ask'>In which part of the digestive system is water absorbed from undigested food?</p>",
+    "key": "Water is absorbed from undigested food in the large intestine.",
+    "options": [
+      {
+        "text": "Small intestine",
+        "mis": "DIG-01",
+        "pick": "The small intestine absorbs digested food, so it seems to absorb water too.",
+        "why": "The small intestine absorbs digested food. Water is taken out of the undigested food later, in the large intestine."
+      },
+      {
+        "text": "Large intestine",
+        "correct": true,
+        "pick": "Find the part that receives the undigested food.",
+        "why": "Undigested food arrives in the large intestine as a watery mixture, and water is absorbed from it there."
+      },
+      {
+        "text": "Stomach",
+        "mis": "DIG-01",
+        "pick": "The stomach holds a lot of liquid, so it seems to take the water out.",
+        "why": "The stomach churns food into a thick liquid. Water is absorbed from undigested food in the large intestine."
+      },
+      {
+        "text": "Gullet",
+        "mis": "DIG-01",
+        "pick": "Drinks pass down the gullet, so it seems to absorb water.",
+        "why": "The gullet only moves food and drink down to the stomach."
+      }
+    ]
+  },
+  {
+    "id": "P4-digestive-system-food-journey.v9",
+    "title": "Watery faeces",
+    "kind": "variant",
+    "pool": "recap",
+    "lo": [
+      "P4.DIG.C2"
+    ],
+    "stem": "<p>A boy's faeces are very watery.</p><p class='q-ask'>Which part of his digestive system is most likely not doing its job well?</p>",
+    "key": "The large intestine absorbs water from undigested food. If it does not, the faeces stay watery.",
+    "options": [
+      {
+        "text": "Stomach",
+        "mis": "DIG-01",
+        "pick": "The stomach turns food into a liquid, so it seems to be the cause.",
+        "why": "The stomach does make food into a thick liquid, but water is absorbed later, in the large intestine."
+      },
+      {
+        "text": "Small intestine",
+        "mis": "DIG-01",
+        "pick": "The small intestine absorbs things into the blood, so it seems responsible.",
+        "why": "The small intestine absorbs digested food. Water is absorbed from undigested food in the large intestine."
+      },
+      {
+        "text": "Large intestine",
+        "correct": true,
+        "pick": "Which part takes water out of the waste before it leaves the body?",
+        "why": "The large intestine absorbs water from undigested food. If too little water is absorbed, the faeces are watery."
+      },
+      {
+        "text": "Gullet",
+        "mis": "DIG-02",
+        "pick": "The gullet is where swallowed drinks go, so it seems linked to water.",
+        "why": "The gullet only pushes food and drink down to the stomach. It plays no part in how watery the faeces are."
+      }
+    ]
+  }
+]

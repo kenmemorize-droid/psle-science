@@ -1,0 +1,15 @@
+{
+  "id": "P4-matter-air-occupies-space",
+  "type": "focus",
+  "theme": "cycles",
+  "topic": "MTR",
+  "level": "P4",
+  "title": "Air in a bottle with a balloon",
+  "purpose": "An \"empty\" bottle is only empty of things you can see. Blow into a balloon inside a sealed bottle, then make a hole in the base and blow again.",
+  "lo": ["P4.MTR.C1", "P4.MTR.C2"],
+  "fixes": "Thinking an \"empty\" container has nothing in it, that air has no mass, or that air can be squashed into no space at all.",
+  "origin": "retrofit",
+  "built": "2026-11-12",
+  "order": 1,
+  "uses": []
+}

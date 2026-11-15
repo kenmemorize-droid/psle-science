@@ -1,0 +1,15 @@
+{
+  "id": "P4-matter",
+  "type": "unit",
+  "theme": "cycles",
+  "topic": "MTR",
+  "level": "P4",
+  "title": "Matter",
+  "purpose": "Everything that has mass and takes up space is matter. Find out what counts as matter, how solids, liquids and gases differ in shape and volume, and how to measure mass and volume.",
+  "lo": ["P4.MTR.C1", "P4.MTR.C2", "P4.MTR.P1"],
+  "fixes": "The whole Matter topic: what matter is, the three states by shape and volume, and measuring mass and volume.",
+  "origin": "base",
+  "built": "2026-11-12",
+  "order": 0,
+  "uses": ["classify"]
+}

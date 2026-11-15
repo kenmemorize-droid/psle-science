@@ -1,0 +1,129 @@
+<section class="card" id="know">
+  <p class="sec-label">What you need to know</p>
+  <h2>Matter in four ideas</h2>
+  <div class="know">
+    <details class="kcard" open>
+      <summary><span class="kn">1</span> What is matter?</summary>
+      <p><b>Matter</b> is anything that has <b>mass</b> and <b>occupies space</b>. Solids, liquids and gases are all matter, including air, which you cannot see.</p>
+      <p>Two balloons hang balanced at the ends of a stick. Pop one, and the side with the full balloon tips down: the air in it has mass. An "empty" bottle is full of air, and that air takes up the space inside it.</p>
+      <p><b>Not matter:</b> light, heat, sound, thunder, lightning, shadows. They have no mass and take up no space.</p>
+    </details>
+    <details class="kcard" open>
+      <summary><span class="kn">2</span> Three states</summary>
+      <div class="scroll">
+        <table class="data">
+          <thead><tr><th scope="col"><span class="vh">Property</span></th><th scope="col">Solid</th><th scope="col">Liquid</th><th scope="col">Gas</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">Shape</th><td>Definite shape</td><td>No definite shape: takes the shape of its container</td><td>No definite shape: fills the whole container</td></tr>
+            <tr><th scope="row">Volume</th><td>Definite volume</td><td>Definite volume</td><td>No definite volume</td></tr>
+            <tr><th scope="row">Can it be squashed into less space?</th><td>No</td><td>No</td><td>Yes</td></tr>
+            <tr><th scope="row">Examples</th><td>stone, wooden block, ice</td><td>water, milk, cooking oil</td><td>air, oxygen, steam</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </details>
+    <details class="kcard" open>
+      <summary><span class="kn">3</span> Powders are solids</summary>
+      <p>Sand, sugar, salt and flour can be poured, and a heap of them takes the shape of its container. They are still <b>solids</b>. Look at a single grain: it keeps its own definite shape and definite volume. The heap only changes shape because the tiny grains slide past one another.</p>
+    </details>
+    <details class="kcard" open>
+      <summary><span class="kn">4</span> Measuring mass and volume</summary>
+      <ul>
+        <li><b>Mass</b> is measured with an <b>electronic balance</b>, in grams (g) or kilograms (kg).</li>
+        <li>The <b>volume of a liquid</b> is measured with a <b>measuring cylinder</b>, in millilitres (mL). Read the level with your eye level with the water.</li>
+        <li>The <b>volume of a solid that sinks</b> and has an odd shape, like a stone, is found by <b>displacement</b>: read the water level, lower the stone in, read the level again. Volume of the stone = level after − level before.</li>
+        <li>1 mL = 1 cm³. Liquid volumes are usually given in mL and solid volumes in cm³.</li>
+        <li>Mass and volume are different. Volume is how much space something takes up. You cannot tell an object's mass from its size.</li>
+      </ul>
+    </details>
+  </div>
+</section>
+
+<section class="card" id="explore">
+  <p class="sec-label">Explore</p>
+  <h2>Try it yourself</h2>
+
+  <h3 id="e1">1. Matter or not?</h3>
+  <p class="lead">Ask two questions about each card: does it have mass, and does it take up space?</p>
+  <div id="classify"></div>
+
+  <h3 id="e2">2. Squeeze and pour</h3>
+  <p class="lead">Three sealed syringes hold a wooden block that fills the barrel, some water and some air. Push all three plungers at once.</p>
+  <div class="stage"><svg id="sySvg" viewBox="0 0 540 270" role="img" aria-label="Three sealed syringes holding a wooden block, water and air"></svg></div>
+  <label class="mslider"><span>Push the plungers</span><input type="range" id="push" min="0" max="100" value="0"></label>
+  <p class="stage-msg" id="syMsg" aria-live="polite"></p>
+
+  <h4>Pour it</h4>
+  <p class="note-s">Pick a sample, then a container. Every container has a lid, so nothing can escape.</p>
+  <div class="row" role="group" aria-label="Sample">
+    <button type="button" class="btn small" data-s="block" aria-pressed="true">Wooden block</button>
+    <button type="button" class="btn small" data-s="water" aria-pressed="false">200 mL of water</button>
+    <button type="button" class="btn small" data-s="gas" aria-pressed="false">Coloured gas</button>
+  </div>
+  <div class="row" role="group" aria-label="Container" style="margin-top:8px">
+    <button type="button" class="btn small" data-c="tall" aria-pressed="true">Tall, narrow jar</button>
+    <button type="button" class="btn small" data-c="wide" aria-pressed="false">Wide, flat dish</button>
+    <button type="button" class="btn small" data-c="box" aria-pressed="false">Big box</button>
+  </div>
+  <div class="stage" style="margin-top:10px"><svg id="pourSvg" viewBox="0 0 540 240" role="img" aria-label="A sample inside a closed container"></svg></div>
+  <p class="stage-msg" id="pourMsg" aria-live="polite"></p>
+  <div class="scroll"><table class="data" id="pourLog"><thead><tr><th scope="col">Sample</th><th scope="col">Container</th><th scope="col">Shape</th><th scope="col">Volume</th></tr></thead><tbody></tbody></table></div>
+
+  <h4>Look closely at sand</h4>
+  <div class="row" role="group" aria-label="Pour the sand into">
+    <button type="button" class="btn small" data-sand="tall" aria-pressed="true">Pour into the tall jar</button>
+    <button type="button" class="btn small" data-sand="wide" aria-pressed="false">Pour into the wide dish</button>
+  </div>
+  <div class="stage" style="margin-top:10px"><svg id="sandSvg" viewBox="0 0 540 230" role="img" aria-label="A heap of sand in a container, with a magnifier showing single grains"></svg></div>
+  <p class="note-s">The heap takes the container's shape. Each grain keeps its own shape and volume, so sand is a solid.</p>
+
+  <details class="beyond">
+    <summary><span class="bs-badge">Beyond syllabus</span> A particle picture of the three states</summary>
+    <p>Scientists picture all matter as made of tiny particles. In a solid the particles are packed closely in fixed places. In a liquid they are close together but can move past one another. In a gas they are far apart and move about freely, which is why a gas can be squashed into less space. This picture is not in the P4 syllabus and is never tested here.</p>
+  </details>
+
+  <h3 id="e3">3. Measuring lab</h3>
+  <h4>Station 1: the electronic balance</h4>
+  <div class="row" role="group" aria-label="Object to weigh">
+    <button type="button" class="btn small" data-o="stone">Small stone</button>
+    <button type="button" class="btn small" data-o="sponge">Big sponge</button>
+    <button type="button" class="btn small" data-o="block">Wooden block</button>
+  </div>
+  <div class="stage" style="margin-top:10px"><svg id="balSvg" viewBox="0 0 540 200" role="img" aria-label="An electronic balance"></svg></div>
+  <p class="stage-msg" id="balMsg" aria-live="polite"></p>
+
+  <h4>Station 2: read the measuring cylinder</h4>
+  <div class="mgrid">
+    <div class="stage"><svg id="cylSvg" viewBox="0 0 300 260" role="img" aria-label="A measuring cylinder with some water in it"></svg></div>
+    <div>
+      <p class="note-s">Where does the top of the water meet the scale?</p>
+      <div class="row" id="cylChips" role="group" aria-label="Your reading"></div>
+      <p class="stage-msg" id="cylMsg" aria-live="polite"></p>
+      <button type="button" class="btn small" id="cylNext">Next reading</button>
+    </div>
+  </div>
+
+  <h4>Station 3: the volume of a stone</h4>
+  <div class="mgrid">
+    <div class="stage"><svg id="dispSvg" viewBox="0 0 300 260" role="img" aria-label="A measuring cylinder with water and a stone hanging above it"></svg></div>
+    <div>
+      <div class="row"><button type="button" class="btn primary" id="dispLower">Lower the stone</button><button type="button" class="btn small" id="dispNext">Try another stone</button></div>
+      <p class="note-s" id="dispAsk"></p>
+      <div class="row" id="dispChips" role="group" aria-label="Volume of the stone"></div>
+      <p class="stage-msg" id="dispMsg" aria-live="polite"></p>
+    </div>
+  </div>
+</section>
+
+<section class="card" id="check">
+  <p class="sec-label">Unit check</p>
+  <h2>Nine questions on the whole topic</h2>
+  <p class="lead">Only your first answer counts. A wrong first answer goes into your mistake book, and a different question on the same idea comes back for recap.</p>
+  <div id="qs"></div>
+</section>
+
+<section class="card" id="deeper">
+  <p class="sec-label">Go deeper</p>
+  <h2>Focus pages on matter</h2>
+  <div id="psle-deeper"></div>
+</section>

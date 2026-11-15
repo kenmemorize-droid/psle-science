@@ -1,0 +1,113 @@
+<section class="card" id="know">
+  <p class="sec-label">What you need to know</p>
+  <h2>Life cycles in three ideas</h2>
+  <div class="know">
+    <details class="kcard" open>
+      <summary><span class="kn">1</span> A flowering plant's life cycle</summary>
+      <p>A flowering plant goes through these stages: <b>seed → young plant → adult plant → seed</b></p>
+      <ul>
+        <li><b>Seed:</b> a new plant starts from a seed.</li>
+        <li><b>Young plant:</b> a root grows out, then a shoot. The young plant has roots, a stem and leaves, but <b>no flowers yet</b>.</li>
+        <li><b>Adult plant:</b> it grows bigger and makes <b>flowers</b>. The flowers become <b>fruits</b> with <b>seeds</b> inside.</li>
+      </ul>
+      <p>The seeds can grow into new plants, so the stages <b>repeat</b>. That is why it is a <b>life cycle</b>.</p>
+      <p>Different plants have <b>different life cycles</b>. A green bean plant goes from seed to flowers in a few weeks; a mango tree takes years.</p>
+    </details>
+    <details class="kcard" open>
+      <summary><span class="kn">2</span> Animal life cycles: 3 stages or 4</summary>
+      <p>Every animal life cycle here starts with an <b>egg</b> and reaches an <b>adult</b>, which lays eggs. Then the cycle starts again.</p>
+      <div class="scroll"><table class="data">
+        <thead><tr><th scope="col">Life cycle</th><th scope="col">Stages</th><th scope="col">Animals</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">3 stages</th><td class="rowname">egg → young → adult</td><td class="rowname">chicken (egg, chick, adult), frog (egg, tadpole, adult)</td></tr>
+          <tr><th scope="row">3 stages</th><td class="rowname">egg → <b>nymph</b> → adult</td><td class="rowname">cockroach, grasshopper</td></tr>
+          <tr><th scope="row">4 stages</th><td class="rowname">egg → <b>larva</b> → <b>pupa</b> → adult</td><td class="rowname">butterfly, beetle, mosquito</td></tr>
+        </tbody>
+      </table></div>
+    </details>
+    <details class="kcard" open>
+      <summary><span class="kn">3</span> Larva, pupa and nymph</summary>
+      <div class="scroll"><table class="data">
+        <thead><tr><th scope="col">Larva</th><th scope="col">Pupa</th><th scope="col">Nymph</th></tr></thead>
+        <tbody>
+          <tr><td class="rowname">does <b>not</b> look like the adult</td><td class="rowname">does <b>not</b> look like the adult</td><td class="rowname"><b>looks like the adult</b>, but is smaller and has <b>no wings</b></td></tr>
+          <tr><td class="rowname"><b>eats a lot</b> and grows; sheds its skin (moults) several times</td><td class="rowname">does <b>not feed or move</b>; the adult forms inside</td><td class="rowname">sheds its skin (moults) several times as it grows into the adult</td></tr>
+          <tr><td class="rowname">e.g. a caterpillar is the larva of a butterfly</td><td class="rowname">e.g. a butterfly's pupa hangs still</td><td class="rowname">e.g. a young cockroach or grasshopper</td></tr>
+        </tbody>
+      </table></div>
+      <p>Some young animals look very different from their adults: a tadpole doesn't look like a frog, and a caterpillar doesn't look like a butterfly. They are still the same kind of animal.</p>
+    </details>
+  </div>
+</section>
+
+<section class="card" id="explore">
+  <p class="sec-label">Explore</p>
+  <h2>Try it yourself</h2>
+
+  <h3 id="e1">1. A plant's life cycle</h3>
+  <p class="lead">Follow a green bean plant from seed to seed.</p>
+  <div class="ygrid">
+    <div class="stage"><svg id="plantRing" viewBox="0 0 400 270" role="img" aria-label="The life cycle of a green bean plant"></svg></div>
+    <div>
+      <p class="y-step" id="plantTitle"></p>
+      <p class="stage-msg" id="plantMsg" aria-live="polite"></p>
+      <div class="row"><button type="button" class="btn small" id="plantBack">◀ Back</button><button type="button" class="btn primary" id="plantNext">Next ▶</button></div>
+    </div>
+  </div>
+  <h4>Two plants compared</h4>
+  <p class="lead">A green bean plant and a balsam plant were grown from seeds at the same time.</p>
+  <div class="stage"><svg id="timeline" viewBox="0 0 420 186" role="img" aria-label="A timeline showing the day each stage first appeared for a green bean plant and a balsam plant"></svg></div>
+  <p class="note-s">Same stages, different lengths of time. Different plants have different life cycles.</p>
+
+  <details class="beyond">
+    <summary><span class="bs-badge">Beyond syllabus</span> How a seed starts to grow, and what flowers do</summary>
+    <p>Your book mentions these. They are introduced in P5 and are never tested here.</p>
+    <ul>
+      <li>A seed needs water, oxygen and warmth to start growing. This is called germination.</li>
+      <li>The young plant first feeds on food stored in its seed leaves, until its true leaves can make food.</li>
+      <li>Flowers are where pollination and fertilisation happen.</li>
+    </ul>
+  </details>
+
+  <h3 id="e2">2. Animal life cycles</h3>
+  <p class="lead">Pick an animal, then step through its life cycle.</p>
+  <div class="row" role="group" aria-label="Animals" id="aniBtns"></div>
+  <div class="ygrid" style="margin-top:10px">
+    <div class="stage"><svg id="aniRing" viewBox="0 0 400 270" role="img" aria-label="An animal's life cycle"></svg></div>
+    <div>
+      <p class="y-step" id="aniTitle"></p>
+      <p class="stage-msg" id="aniMsg" aria-live="polite"></p>
+      <div class="row"><button type="button" class="btn small" id="aniBack">◀ Back</button><button type="button" class="btn primary" id="aniNext">Next ▶</button></div>
+    </div>
+  </div>
+  <h4>3-stage or 4-stage?</h4>
+  <div id="stageSort"></div>
+  <p class="note-s">If you keep caterpillars or tadpoles to watch them grow, give them the right food and water, and let the adults go.</p>
+
+  <h3 id="e3">3. Larva, pupa or nymph?</h3>
+  <p class="lead">Sort each description into the stage it describes.</p>
+  <div id="lpnSort"></div>
+
+  <h3 id="e4">4. Put the stages in order</h3>
+  <p class="lead">Tap the stages in order, starting with the first. Then press Check.</p>
+  <div class="row" role="group" aria-label="Choose a life cycle" id="puzBtns"></div>
+  <p class="y-step" id="puzTitle" style="margin-top:10px"></p>
+  <div class="y-slots" id="puzSlots" aria-live="polite"></div>
+  <div class="row" id="puzCards" role="group" aria-label="Stage cards" style="margin-top:8px"></div>
+  <div class="row" style="margin-top:8px"><button type="button" class="btn primary" id="puzCheck">Check</button><button type="button" class="btn small" id="puzUndo">Undo</button><button type="button" class="btn small" id="puzClear">Clear</button></div>
+  <p class="stage-msg" id="puzMsg" aria-live="polite"></p>
+  <div class="stage" id="puzRingBox" hidden><svg id="puzRing" viewBox="0 0 400 270" role="img" aria-label="The completed life cycle"></svg></div>
+</section>
+
+<section class="card" id="check">
+  <p class="sec-label">Unit check</p>
+  <h2>Ten questions on the whole topic</h2>
+  <p class="lead">Only your first answer counts. A wrong first answer goes into your mistake book, and a different question on the same idea comes back for recap.</p>
+  <div id="qs"></div>
+</section>
+
+<section class="card" id="deeper">
+  <p class="sec-label">Go deeper</p>
+  <h2>Focus pages on life cycles</h2>
+  <div id="psle-deeper"></div>
+</section>

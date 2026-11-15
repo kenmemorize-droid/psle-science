@@ -1,0 +1,208 @@
+{
+  "source": "MOE Primary Science Syllabus 2023 (updated Jan 2026), Standard. LO text quoted; ids are local.",
+  "themes": {
+    "diversity":    { "name": "Diversity",    "folder": "01-diversity",    "order": 1 },
+    "cycles":       { "name": "Cycles",       "folder": "02-cycles",       "order": 2 },
+    "systems":      { "name": "Systems",      "folder": "03-systems",      "order": 3 },
+    "interactions": { "name": "Interactions", "folder": "04-interactions", "order": 4 },
+    "energy":       { "name": "Energy",       "folder": "05-energy",       "order": 5 }
+  },
+  "topics": {
+    "LIV": { "level": "P3", "theme": "diversity", "slug": "living-things", "order": 1,
+      "name": "Diversity of Living and Non-Living Things (General characteristics and classification)",
+      "short": "Living and non-living things",
+      "los": [
+        { "id": "P3.LIV.C1", "text": "Describe the characteristics of living things.", "points": ["Need water, food and air to survive", "Grow, respond and reproduce"] },
+        { "id": "P3.LIV.C2", "text": "Recognise some broad groups of living things based on similarities and differences.", "points": ["Plants (flowering, non-flowering)", "Animals (amphibians, birds, fish, insects, mammals, reptiles)", "Fungi (mould, mushroom, yeast)", "Bacteria"], "notes": ["Recall of names of specific living things (e.g., guppy) and their characteristics (e.g., give birth to young alive) is not required."] },
+        { "id": "P3.LIV.P1", "text": "Observe a variety of living and non-living things and infer differences between them." },
+        { "id": "P3.LIV.P2", "text": "Classify living things into broad groups (in plants and animals) based on similarities and differences of common observable characteristics." }
+      ] },
+    "MAT": { "level": "P3", "theme": "diversity", "slug": "materials", "order": 2,
+      "name": "Diversity of Materials", "short": "Materials",
+      "los": [
+        { "id": "P3.MAT.C1", "text": "Relate the use of various types of materials (wood, metal, ceramic, rubber, glass, plastic, fabric) to their physical properties." },
+        { "id": "P3.MAT.P1", "text": "Compare physical properties of materials.", "points": ["Strength", "Flexibility", "Ability to float/sink in water", "Waterproof", "Transparency"],
+          "notes": ["The focus is on how the properties of materials are used.", "The \"strength\" of a material is its ability to be subjected to loads without breaking.", "The \"flexibility\" of a material is its ability to bend without breaking.", "The \"ability to float on water\" refers to whether an object is able to stay on or near the surface of water and not sink. (The concept of density is not required.)", "A material is \"waterproof\" when it does not absorb water.", "The \"transparency\" of a material refers to whether the material allows most/ some or no light to pass through. (The use of terms transparent/ translucent/ opaque is not required.)"] }
+      ] },
+    "LCY": { "level": "P3", "theme": "cycles", "slug": "life-cycles", "order": 1,
+      "name": "Cycles in Plants and Animals (Life Cycles)", "short": "Life cycles",
+      "los": [
+        { "id": "P3.LCY.C1", "text": "Show an understanding that different living things have different life cycles.", "points": ["Plants", "Animals"] },
+        { "id": "P3.LCY.P1", "text": "Observe and compare the life cycles of plants grown from seeds over a period of time.", "notes": ["The focus is on the stages (seed, young plant, adult plant) of flowering plants. Processes in plant reproduction (pollination, fertilisation, seed dispersal and germination) are introduced in the topic of Cycles in Plants and Animals (Reproduction) in P5."] },
+        { "id": "P3.LCY.P2", "text": "Observe and compare the life cycles of animals over a period of time (chicken, cockroach, frog, grasshopper, beetle, butterfly, mosquito)." }
+      ] },
+    "MTR": { "level": "P4", "theme": "cycles", "slug": "matter", "order": 2,
+      "name": "Cycles in Matter and Water (Matter)", "short": "Matter",
+      "los": [
+        { "id": "P4.MTR.C1", "text": "State that matter is anything that has mass and occupies space." },
+        { "id": "P4.MTR.C2", "text": "Differentiate among the three states of matter (solid, liquid, gas) in terms of shape and volume." },
+        { "id": "P4.MTR.P1", "text": "Measure mass and volume using appropriate apparatus." }
+      ] },
+    "REP": { "level": "P5", "theme": "cycles", "slug": "reproduction", "order": 3,
+      "name": "Cycles in Plants and Animals (Reproduction)", "short": "Reproduction",
+      "los": [
+        { "id": "P5.REP.C1", "text": "Recognise that a cell is a basic unit of life." },
+        { "id": "P5.REP.C2", "text": "Show an understanding that living things reproduce to ensure continuity of their kind and that many characteristics of an organism are passed on from parents to offspring." },
+        { "id": "P5.REP.C3", "text": "Describe processes in the sexual reproduction of flowering plants.", "points": ["Pollination", "Fertilisation (seed production)", "Seed dispersal", "Germination"],
+          "notes": ["Fertilisation occurs when a male reproductive cell fuses with a female reproductive cell.", "The use of specific terms (\"self-pollination\" and \"cross-pollination\") to describe the pollination process is not required.", "Knowledge of the pollen tube formation is not required.", "The specific location where fertilisation takes place in the female reproductive system is not required."] },
+        { "id": "P5.REP.C4", "text": "Recognise the process of fertilisation in the sexual reproduction of humans.",
+          "notes": ["Fertilisation occurs when a sperm fuses with an egg.", "The fertilised egg develops in the womb.", "Students should know that ovaries produce eggs, and the testes produce sperms.", "Foetal development and the mechanism of obtaining air, food and water through the umbilical cord are not required."] },
+        { "id": "P5.REP.C5", "text": "Recognise the similarity in terms of fertilisation in the sexual reproduction of flowering plants and humans." },
+        { "id": "P5.REP.P1", "text": "Investigate the ways in which plants reproduce.", "points": ["Spores", "Seeds"], "notes": ["Vegetative propagation methods, such as stem cutting, are not required."] }
+      ] },
+    "WAT": { "level": "P5", "theme": "cycles", "slug": "water", "order": 4,
+      "name": "Cycles in Matter and Water (Water)", "short": "Water",
+      "los": [
+        { "id": "P5.WAT.C1", "text": "Recognise that water can exist in three interchangeable states of matter." },
+        { "id": "P5.WAT.C2", "text": "Show an understanding of how water changes from one state to another.", "points": ["Melting (solid to liquid)", "Freezing (liquid to solid)", "Boiling/Evaporation (liquid to gas)", "Condensation (gas to liquid)"] },
+        { "id": "P5.WAT.C3", "text": "Show an understanding of the terms melting point of ice (or freezing point of water) and boiling point of water." },
+        { "id": "P5.WAT.C4", "text": "Show an understanding of the roles of evaporation and condensation in the water cycle." },
+        { "id": "P5.WAT.C5", "text": "Recognise the importance of the water cycle." },
+        { "id": "P5.WAT.C6", "text": "Recognise the importance of water to life processes." },
+        { "id": "P5.WAT.C7", "text": "Describe the impact of water pollution on Earth's water resources." },
+        { "id": "P5.WAT.P1", "text": "Compare water in 3 states." },
+        { "id": "P5.WAT.P2", "text": "Investigate the effect of heat gain or loss on the temperature and state of water.", "points": ["When ice is heated, it melts and changes to water at 0°C.", "When water is cooled, it freezes and changes to ice at 0°C.", "When water is heated, it boils and changes to steam at 100°C.", "When steam is cooled, it condenses to water."] },
+        { "id": "P5.WAT.P3", "text": "Investigate the factors which affect the rate of evaporation.", "points": ["Wind", "Temperature", "Exposed surface area"] }
+      ] },
+    "PLP": { "level": "P4", "theme": "systems", "slug": "plant-parts", "order": 1,
+      "name": "Plant System (Plant parts and functions)", "short": "Plant parts",
+      "los": [
+        { "id": "P4.PLP.C1", "text": "Identify the different parts of plants and state their functions.", "points": ["Leaf", "Stem", "Root"], "notes": ["Food-carrying and water-carrying tubes in the plant transport system are introduced in the topic of Plant System (Respiratory and Circulatory Systems) in P5."] },
+        { "id": "P4.PLP.P1", "text": "Observe plant parts." }
+      ] },
+    "DIG": { "level": "P4", "theme": "systems", "slug": "digestive-system", "order": 2,
+      "name": "Human System (Digestive System)", "short": "Digestive system",
+      "los": [
+        { "id": "P4.DIG.C1", "text": "Identify the human systems in the body and state their functions (digestive, respiratory, circulatory, skeletal and muscular).", "notes": ["This learning outcome introduces students to an overview of human systems in the body. Detailed knowledge of the muscular and skeletal systems (such as names of the bones/muscles in the body and descriptions of how they work) are not required."] },
+        { "id": "P4.DIG.C2", "text": "Identify the parts in the human digestive system (mouth, gullet, stomach, small intestine and large intestine) and describe their functions." }
+      ] },
+    "PRC": { "level": "P5", "theme": "systems", "slug": "plant-transport", "order": 3,
+      "name": "Plant System (Respiratory and circulatory systems)", "short": "Plant transport",
+      "los": [
+        { "id": "P5.PRC.C1", "text": "Identify the parts of the plant transport system and describe their functions.", "notes": ["Recall of the relative positions of water-carrying and food-carrying tubes is not required.", "The use of specific terms (xylem and phloem) is not required.", "The concept of transpiration pull is not required."] },
+        { "id": "P5.PRC.P1", "text": "Investigate how food and water are transported in the plant." }
+      ] },
+    "HRC": { "level": "P5", "theme": "systems", "slug": "respiratory-circulatory", "order": 4,
+      "name": "Human System (Respiratory and circulatory systems)", "short": "Respiratory and circulatory systems",
+      "los": [
+        { "id": "P5.HRC.C1", "text": "Recognise that air is made up of gases such as nitrogen, carbon dioxide, oxygen and water vapour." },
+        { "id": "P5.HRC.C2", "text": "Identify the parts of the human respiratory (nose, windpipe, lungs) and circulatory systems (heart, blood, blood vessels) and describe their functions.", "notes": ["Detailed knowledge of respiratory system (e.g., alveoli) and circulatory system (e.g., heart chambers and valves) is not required."] },
+        { "id": "P5.HRC.C3", "text": "Recognise the integration of the different systems (digestive, respiratory and circulatory) in carrying out life processes." },
+        { "id": "P5.HRC.P1", "text": "Compare how plants, fish and humans take in oxygen and give out carbon dioxide." },
+        { "id": "P5.HRC.P2", "text": "Compare the ways in which substances are transported within plants and humans.", "points": ["Plants: Tubes that transport food and water", "Humans: Blood vessels that transport digested food, oxygen and carbon dioxide"], "notes": ["The use of specific terms (xylem, phloem, stomata, artery, vein, capillary) is not required."] }
+      ] },
+    "ELE": { "level": "P5", "theme": "systems", "slug": "electrical-system", "order": 5,
+      "name": "Electrical System", "short": "Electrical system",
+      "los": [
+        { "id": "P5.ELE.C1", "text": "Recognise that an electric circuit consisting of an energy source (battery) and other circuit components (wire, bulb, switch) forms an electrical system." },
+        { "id": "P5.ELE.C2", "text": "Show an understanding that a closed circuit allows current to flow." },
+        { "id": "P5.ELE.C3", "text": "Identify electrical conductors and insulators." },
+        { "id": "P5.ELE.P1", "text": "Construct simple circuits from circuit diagrams." },
+        { "id": "P5.ELE.P2", "text": "Investigate the effect of some variables on the current in a circuit.", "points": ["Number of batteries (arranged in series)", "Number of bulbs (arranged in series and parallel)"] }
+      ] },
+    "MAG": { "level": "P3", "theme": "interactions", "slug": "magnets", "order": 1,
+      "name": "Interaction of Forces (Magnets)", "short": "Magnets",
+      "los": [
+        { "id": "P3.MAG.C1", "text": "Recognise that a magnet can exert a push or a pull." },
+        { "id": "P3.MAG.C2", "text": "Identify the characteristics of magnets.", "points": ["Magnets can be made of iron or steel.", "Magnets have two poles. A freely suspended bar magnet comes to rest pointing in a North-South direction.", "Unlike poles attract and like poles repel.", "Magnets attract magnetic materials."], "notes": ["Recall of magnetic materials such as nickel and cobalt is not required.", "Magnetic shielding and magnetic induction are not required."] },
+        { "id": "P3.MAG.C3", "text": "Recognise uses of magnets in everyday objects." },
+        { "id": "P3.MAG.P1", "text": "Compare magnets, non-magnetic materials and magnetic materials." },
+        { "id": "P3.MAG.P2", "text": "Make a magnet by the stroke method and the electrical method." }
+      ] },
+    "FOR": { "level": "P6", "theme": "interactions", "slug": "forces", "order": 2,
+      "name": "Interaction of Forces (Frictional force, gravitational force, elastic spring force)", "short": "Forces",
+      "los": [
+        { "id": "P6.FOR.C1", "text": "Identify a force as a push or a pull." },
+        { "id": "P6.FOR.C2", "text": "Show an understanding of the effects of a force.", "points": ["A force can move a stationary object.", "A force can speed up, slow down or change the direction of motion.", "A force can stop a moving object.", "A force may change the shape of an object."] },
+        { "id": "P6.FOR.C3", "text": "Recognise and give examples of the different types of forces.", "points": ["Magnetic force", "Gravitational force", "Elastic spring force", "Frictional force"], "notes": ["Direction of frictional force for \"rolling objects\" such as wheels and balls is not required.", "The use of specific terms such as 'air resistance' and 'water resistance' is not required."] },
+        { "id": "P6.FOR.C4", "text": "Recognise that objects have weight because of the gravitational force acting on the object." },
+        { "id": "P6.FOR.P1", "text": "Investigate the effect of frictional force on the motion of objects." },
+        { "id": "P6.FOR.P2", "text": "Investigate the effects of elastic spring force." }
+      ] },
+    "ENV": { "level": "P6", "theme": "interactions", "slug": "environment", "order": 3,
+      "name": "Interactions within the Environment", "short": "Environment",
+      "los": [
+        { "id": "P6.ENV.C1", "text": "Identify the factors that affect the survival of an organism.", "points": ["Physical characteristics of the environment (temperature, light, water)", "Availability of food", "Types of other organisms present (producers, consumers, decomposers)"] },
+        { "id": "P6.ENV.C2", "text": "Show an understanding of the effect on organisms when the environment becomes unfavourable (organisms adapt and survive; move to other places or die)." },
+        { "id": "P6.ENV.C3", "text": "Show an understanding of the energy pathway from the Sun through living things and identify the roles of various organisms (producers, consumers, predators, prey) in a food chain and a food web." },
+        { "id": "P6.ENV.C4", "text": "Differentiate among organism, population and community.", "points": ["An organism is a living thing.", "A population is a group of organisms of the same kind, living and reproducing at a given place and time.", "A community consists of many populations living together in a particular place."] },
+        { "id": "P6.ENV.C5", "text": "Show an understanding that different habitats support different communities (garden, field, pond, seashore, tree, mangrove swamp)." },
+        { "id": "P6.ENV.C6", "text": "Show an understanding that adaptations serve to enhance survival and can be structural or behavioural.", "points": ["Cope with physical factors", "Obtain food", "Escape predators", "Reproduce by finding and attracting mates or dispersing seeds/fruits"], "notes": ["Students are introduced to the types of dispersal methods and physical characteristics of different fruits and seeds in the theme of Cycles. The focus in this theme is to help students recognise that physical characteristics are the \"structural adaptations\" which help fruits and seeds in their dispersal."] },
+        { "id": "P6.ENV.C7", "text": "Give examples of man's impact (both positive and negative) on the environment.", "notes": ["Positive impact [Conservation, Reforestation]", "Negative impact [Depleting natural resources, deforestation, pollution (land/water/air), global warming]"] },
+        { "id": "P6.ENV.P1", "text": "Observe, collect and record information regarding the interacting factors within an environment." }
+      ] },
+    "LGT": { "level": "P4", "theme": "energy", "slug": "light", "order": 1,
+      "name": "Energy Forms and Uses (Light)", "short": "Light",
+      "los": [
+        { "id": "P4.LGT.C1", "text": "Recognise that an object can be seen when it reflects light or when it is a source of light.", "notes": ["The law of reflection is not required."] },
+        { "id": "P4.LGT.C2", "text": "Recognise that light travels in straight lines and thus a shadow is formed when light is completely or partially blocked by an object." },
+        { "id": "P4.LGT.P1", "text": "Investigate the variables that affect shadows formed.", "points": ["Shape, size and position of object(s)", "Distance between light source-object and object-screen"], "notes": ["The use of specific terms (transparent, translucent, opaque) is not required."] }
+      ] },
+    "HEA": { "level": "P4", "theme": "energy", "slug": "heat", "order": 2,
+      "name": "Energy Forms and Uses (Heat)", "short": "Heat",
+      "los": [
+        { "id": "P4.HEA.C1", "text": "Identify some common sources of heat." },
+        { "id": "P4.HEA.C2", "text": "State that the temperature of an object is a measurement of its degree of hotness." },
+        { "id": "P4.HEA.C3", "text": "State that heat is a form of energy." },
+        { "id": "P4.HEA.C4", "text": "Differentiate between heat and temperature." },
+        { "id": "P4.HEA.C5", "text": "Show an understanding that heat flows from a hotter to a colder object/ region/ place until both reach the same temperature." },
+        { "id": "P4.HEA.C6", "text": "Relate the change in temperature of an object to the gain or loss of heat by the object." },
+        { "id": "P4.HEA.C7", "text": "List some effects of heat gain/loss in our everyday life.", "points": ["Contraction / expansion of objects (solid, liquid and gas)", "Change in state of matter"] },
+        { "id": "P4.HEA.C8", "text": "Identify good and poor conductors of heat.", "points": ["Good conductors: metals", "Poor conductors: wood, plastics, air, rubber"], "notes": ["Recall of the rate of heat transfer of specific materials (such as different types of metals) is not required."] },
+        { "id": "P4.HEA.P1", "text": "Measure temperature using a thermometer and a datalogger with temperature/heat sensors." }
+      ] },
+    "PHO": { "level": "P6", "theme": "energy", "slug": "photosynthesis", "order": 3,
+      "name": "Energy Forms and Uses (Photosynthesis)", "short": "Photosynthesis",
+      "los": [
+        { "id": "P6.PHO.C1", "text": "Recognise that living things need energy from respiration to carry out life processes.", "notes": ["The focus of respiration is on the release of energy from food."] },
+        { "id": "P6.PHO.C2", "text": "Recognise that the Sun is our primary source of energy (light and heat)." },
+        { "id": "P6.PHO.C3", "text": "Differentiate between the ways in which plants and animals obtain energy." },
+        { "id": "P6.PHO.P1", "text": "Investigate the requirements (water, light energy and carbon dioxide) for photosynthesis (production of sugar and oxygen)." }
+      ] },
+    "ENC": { "level": "P6", "theme": "energy", "slug": "energy-conversion", "order": 4,
+      "name": "Energy Conversion", "short": "Energy conversion",
+      "los": [
+        { "id": "P6.ENC.C1", "text": "Recognise that energy from most of our energy resources is derived in some ways from the Sun." },
+        { "id": "P6.ENC.C2", "text": "Recognise and give examples of the various forms of energy.", "points": ["Kinetic energy", "Potential energy", "Light energy", "Electrical energy", "Sound energy", "Heat energy"], "notes": ["The use of specific terms (chemical potential energy, gravitational potential energy and elastic potential energy) is not required."] },
+        { "id": "P6.ENC.P1", "text": "Investigate energy conversion from one form to another." }
+      ] }
+  },
+  "excludedTerms": [
+    { "term": "transparent", "from": "P3 MAT, P4 LGT" },
+    { "term": "translucent", "from": "P3 MAT, P4 LGT" },
+    { "term": "opaque", "from": "P3 MAT, P4 LGT" },
+    { "term": "density", "from": "P3 MAT" },
+    { "term": "law of reflection", "from": "P4 LGT" },
+    { "term": "nickel", "from": "P3 MAG" },
+    { "term": "cobalt", "from": "P3 MAG" },
+    { "term": "magnetic shielding", "from": "P3 MAG" },
+    { "term": "magnetic induction", "from": "P3 MAG" },
+    { "term": "induced", "from": "P3 MAG (induction)" },
+    { "term": "xylem", "from": "P5 PRC, P5 HRC" },
+    { "term": "phloem", "from": "P5 PRC, P5 HRC" },
+    { "term": "stomata", "from": "P5 HRC" },
+    { "term": "transpiration pull", "from": "P5 PRC" },
+    { "term": "artery", "from": "P5 HRC" },
+    { "term": "arteries", "from": "P5 HRC" },
+    { "term": "vein", "from": "P5 HRC" },
+    { "term": "veins", "from": "P5 HRC" },
+    { "term": "capillary", "from": "P5 HRC" },
+    { "term": "capillaries", "from": "P5 HRC" },
+    { "term": "alveoli", "from": "P5 HRC" },
+    { "term": "ventricle", "from": "P5 HRC (heart chambers)" },
+    { "term": "atrium", "from": "P5 HRC (heart chambers)" },
+    { "term": "skull", "from": "P4 DIG (names of bones)" },
+    { "term": "ribcage", "from": "P4 DIG (names of bones)" },
+    { "term": "rib cage", "from": "P4 DIG (names of bones)" },
+    { "term": "self-pollination", "from": "P5 REP" },
+    { "term": "cross-pollination", "from": "P5 REP" },
+    { "term": "pollen tube", "from": "P5 REP" },
+    { "term": "umbilical cord", "from": "P5 REP" },
+    { "term": "vegetative propagation", "from": "P5 REP" },
+    { "term": "air resistance", "from": "P6 FOR" },
+    { "term": "water resistance", "from": "P6 FOR" },
+    { "term": "chemical potential energy", "from": "P6 ENC" },
+    { "term": "gravitational potential energy", "from": "P6 ENC" },
+    { "term": "elastic potential energy", "from": "P6 ENC" }
+  ]
+}

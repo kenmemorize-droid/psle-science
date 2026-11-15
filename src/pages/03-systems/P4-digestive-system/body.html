@@ -1,0 +1,136 @@
+<section class="card" id="know">
+  <p class="sec-label">What you need to know</p>
+  <h2>The digestive system in four ideas</h2>
+  <div class="know">
+    <details class="kcard" open>
+      <summary><span class="kn">1</span> Five body systems</summary>
+      <p>A <b>system</b> is a group of parts that work together to do a job. Your body has many systems. Five of them are:</p>
+      <div class="scroll"><table class="data">
+        <thead><tr><th scope="col">System</th><th scope="col">What it does</th><th scope="col">Main parts</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">Respiratory</th><td class="rowname">takes in <b>oxygen</b> and removes <b>carbon dioxide</b></td><td class="rowname">nose, windpipe, lungs</td></tr>
+          <tr><th scope="row">Circulatory</th><td class="rowname">carries <b>digested food, water and oxygen</b> to all parts of the body, and carries <b>carbon dioxide and other waste</b> away</td><td class="rowname">heart, blood, blood vessels</td></tr>
+          <tr><th scope="row">Digestive</th><td class="rowname"><b>breaks down food</b> into simpler substances that can pass into the blood</td><td class="rowname">mouth, gullet, stomach, small intestine, large intestine</td></tr>
+          <tr><th scope="row">Skeletal</th><td class="rowname"><b>supports</b> the body, gives it <b>shape</b> and <b>protects</b> soft organs: the bones of the head protect the brain, and the bones of the chest protect the heart and lungs</td><td class="rowname">bones</td></tr>
+          <tr><th scope="row">Muscular</th><td class="rowname">works <b>with the skeletal system</b> to <b>move</b> parts of the body</td><td class="rowname">muscles</td></tr>
+        </tbody>
+      </table></div>
+    </details>
+    <details class="kcard" open>
+      <summary><span class="kn">2</span> What digestion is for</summary>
+      <p><b>Digestion</b> breaks food down into <b>simpler substances</b>. Only digested food is small enough to <b>pass into the blood</b>, which carries it to all parts of the body.</p>
+      <p>Some food, such as the <b>fibre</b> in vegetables, cannot be digested. It does not pass into the blood. It leaves the body as <b>faeces</b>.</p>
+    </details>
+    <details class="kcard" open>
+      <summary><span class="kn">3</span> The digestive parts, in order</summary>
+      <p>Food passes through: <b>mouth → gullet → stomach → small intestine → large intestine</b>.</p>
+      <ul>
+        <li><b>Mouth:</b> digestion <b>begins</b> here. The <b>teeth</b> cut and grind the food into smaller pieces, which are digested faster. <b>Saliva</b>, a digestive juice, softens and moistens the food and starts to digest it. The <b>tongue</b> rolls the food into a ball so it can be swallowed.</li>
+        <li><b>Gullet:</b> its <b>muscles</b> squeeze the food down to the stomach. <b>No digestion</b> takes place here.</li>
+        <li><b>Stomach:</b> its muscles <b>churn</b> the food while a digestive juice (<b>gastric juice</b>) mixes in. The food is <b>partly digested</b> into a thick liquid.</li>
+        <li><b>Small intestine:</b> more digestive juices <b>complete digestion</b>. The <b>digested food passes into the blood</b> through its wall.</li>
+        <li><b>Large intestine:</b> <b>water and mineral salts</b> are absorbed from the <b>undigested food</b>. What is left becomes <b>faeces</b>. <b>No digestion</b> takes place here.</li>
+      </ul>
+    </details>
+    <details class="kcard" open>
+      <summary><span class="kn">4</span> Where digestion and absorption happen</summary>
+      <div class="scroll"><table class="data">
+        <thead><tr><th scope="col">Part</th><th scope="col">Digestion takes place</th><th scope="col">Digested food passes into the blood</th><th scope="col">Water is absorbed from undigested food</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">Mouth</th><td>✓ (it begins here)</td><td>✗</td><td>✗</td></tr>
+          <tr><th scope="row">Gullet</th><td>✗</td><td>✗</td><td>✗</td></tr>
+          <tr><th scope="row">Stomach</th><td>✓ (partly)</td><td>✗</td><td>✗</td></tr>
+          <tr><th scope="row">Small intestine</th><td>✓ (completed here)</td><td>✓</td><td>✗</td></tr>
+          <tr><th scope="row">Large intestine</th><td>✗</td><td>✗</td><td>✓</td></tr>
+        </tbody>
+      </table></div>
+    </details>
+  </div>
+</section>
+
+<section class="card" id="explore">
+  <p class="sec-label">Explore</p>
+  <h2>Try it yourself</h2>
+
+  <h3 id="e1">1. Five body systems</h3>
+  <p class="lead">Pick a system to see where it is in the body and what it does.</p>
+  <div class="dgrid">
+    <div class="stage"><svg id="bodySvg" viewBox="0 0 316 380" role="img" aria-label="An outline of a human body"></svg></div>
+    <div>
+      <div class="row" role="group" aria-label="Body systems">
+        <button type="button" class="btn small" data-sys="resp" aria-pressed="false">Respiratory</button>
+        <button type="button" class="btn small" data-sys="circ" aria-pressed="false">Circulatory</button>
+        <button type="button" class="btn small" data-sys="dig" aria-pressed="false">Digestive</button>
+        <button type="button" class="btn small" data-sys="skel" aria-pressed="false">Skeletal</button>
+        <button type="button" class="btn small" data-sys="musc" aria-pressed="false">Muscular</button>
+      </div>
+      <div class="d-info" id="sysInfo" aria-live="polite"></div>
+    </div>
+  </div>
+  <h4>Which system?</h4>
+  <div id="sysSort"></div>
+
+  <details class="beyond">
+    <summary><span class="bs-badge">Beyond syllabus</span> Names of two groups of bones</summary>
+    <p>Your book names these. The names of bones are not in the P4 syllabus and are never tested here.</p>
+    <ul>
+      <li>The bones of the head form the <b>skull</b>, which protects the brain.</li>
+      <li>The bones of the chest form the <b>ribcage</b>, which protects the heart and lungs.</li>
+    </ul>
+  </details>
+
+  <h3 id="e2">2. Follow the food</h3>
+  <p class="lead">A meal of rice and vegetables goes in. Step through the five parts and watch what happens to it.</p>
+  <div class="stage"><svg id="tubeSvg" viewBox="0 0 400 330" role="img" aria-label="The digestive system drawn as one long tube, from the mouth to the large intestine, with a blood vessel beside the intestines"></svg></div>
+  <p class="note-s"><span class="d-key"><svg viewBox="0 0 16 16" aria-hidden="true"><rect class="d-food" x="3" y="3" width="10" height="10"/></svg> food</span> <span class="d-key"><svg viewBox="0 0 16 16" aria-hidden="true"><path class="d-fibre" d="M2 10 Q5 4 8 9 T14 7"/></svg> fibre (cannot be digested)</span> <span class="d-key"><svg viewBox="0 0 16 16" aria-hidden="true"><circle class="d-dig" cx="8" cy="8" r="3.5"/></svg> digested food</span> <span class="d-key"><svg viewBox="0 0 16 16" aria-hidden="true"><circle class="d-water" cx="8" cy="8" r="5"/></svg> water</span></p>
+  <div class="dgrid" style="margin-top:8px">
+    <div>
+      <p class="d-step" id="foodTitle"></p>
+      <p class="stage-msg" id="foodMsg" aria-live="polite"></p>
+      <div class="row"><button type="button" class="btn small" id="foodBack">◀ Back</button><button type="button" class="btn primary" id="foodNext">Next ▶</button></div>
+    </div>
+    <table class="data d-status" aria-label="What is happening at this step">
+      <tbody>
+        <tr><th scope="row">Digestion</th><td id="stDig"></td></tr>
+        <tr><th scope="row">Into the blood</th><td id="stBlood"></td></tr>
+        <tr><th scope="row">Water absorbed</th><td id="stWater"></td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="row" style="margin-top:10px"><a class="btn small" href="P4-digestive-system-food-journey.html">See it in 3D: Follow a meal through the body</a></div>
+
+  <details class="beyond">
+    <summary><span class="bs-badge">Beyond syllabus</span> Villi and the anus</summary>
+    <p>Your book mentions these. They are not in the P4 syllabus and are never tested here.</p>
+    <ul>
+      <li>The inner wall of the small intestine has many tiny folds called <b>villi</b>. They give a large surface for digested food to pass into the blood.</li>
+      <li>Faeces leave the body through the <b>anus</b>, the opening at the end of the digestive system.</li>
+    </ul>
+  </details>
+
+  <h3 id="e3">3. What happens where?</h3>
+  <p class="lead">Sort each job into the part of the digestive system that does it.</p>
+  <div id="partSort"></div>
+
+  <h3 id="e4">4. The tick table</h3>
+  <p class="lead">Tap a box to tick it. Tick every box that is true, then press Check.</p>
+  <div class="scroll"><table class="data d-tick" id="tickTable">
+    <thead><tr><th scope="col">Part</th><th scope="col">Digestion takes place</th><th scope="col">Digested food passes into the blood</th><th scope="col">Water is absorbed from undigested food</th></tr></thead>
+    <tbody></tbody>
+  </table></div>
+  <div class="row" style="margin-top:10px"><button type="button" class="btn primary" id="tickCheck">Check</button><button type="button" class="btn small" id="tickShow">Show the answer</button><button type="button" class="btn small" id="tickClear">Clear</button></div>
+  <div id="tickMsg" class="d-tickmsg" aria-live="polite"></div>
+</section>
+
+<section class="card" id="check">
+  <p class="sec-label">Unit check</p>
+  <h2>Ten questions on the whole topic</h2>
+  <p class="lead">Only your first answer counts. A wrong first answer goes into your mistake book, and a different question on the same idea comes back for recap.</p>
+  <div id="qs"></div>
+</section>
+
+<section class="card" id="deeper">
+  <p class="sec-label">Go deeper</p>
+  <h2>Focus pages on the digestive system</h2>
+  <div id="psle-deeper"></div>
+</section>

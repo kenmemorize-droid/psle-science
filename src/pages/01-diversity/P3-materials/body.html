@@ -1,0 +1,117 @@
+<section class="card" id="know">
+  <p class="sec-label">What you need to know</p>
+  <h2>Materials in three ideas</h2>
+  <div class="know">
+    <details class="kcard" open>
+      <summary><span class="kn">1</span> Five properties, and how to test each</summary>
+      <div class="scroll"><table class="data">
+        <thead><tr><th scope="col">Property</th><th scope="col">What it means</th><th scope="col">How to test it</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">Strength</th><td class="rowname">can hold a heavy load <b>without breaking</b></td><td class="rowname">hang loads on a strip until it breaks</td></tr>
+          <tr><th scope="row">Flexibility</th><td class="rowname">can <b>bend without breaking</b></td><td class="rowname">bend a strip and see if it breaks</td></tr>
+          <tr><th scope="row">Floats or sinks</th><td class="rowname"><b>floats</b>: stays on or near the surface of water; <b>sinks</b>: drops to the bottom</td><td class="rowname">put it in water</td></tr>
+          <tr><th scope="row">Waterproof</th><td class="rowname">does <b>not absorb</b> water. A material that soaks up water is <b>absorbent</b></td><td class="rowname">drip water on it, or weigh it before and after soaking</td></tr>
+          <tr><th scope="row">Lets light through</th><td class="rowname">lets <b>most</b>, <b>some</b> or <b>no</b> light pass through</td><td class="rowname">shine a torch through it onto a screen</td></tr>
+        </tbody>
+      </table></div>
+      <p>Strong and flexible are <b>different</b> properties. A strip can be strong but not flexible, or flexible but not strong.</p>
+    </details>
+    <details class="kcard" open>
+      <summary><span class="kn">2</span> Seven materials</summary>
+      <div class="scroll"><table class="data">
+        <thead><tr><th scope="col">Material</th><th scope="col">Its properties</th><th scope="col">Used for</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">Wood</th><td class="rowname">strong; most wood floats</td><td class="rowname">benches, cardboard, paper</td></tr>
+          <tr><th scope="row">Metal</th><td class="rowname">strong; sinks</td><td class="rowname">electric wires, pots</td></tr>
+          <tr><th scope="row">Glass</th><td class="rowname">clear glass lets most light through; waterproof; not flexible (breaks when bent); sinks</td><td class="rowname">windows, laboratory beakers</td></tr>
+          <tr><th scope="row">Ceramic</th><td class="rowname">not flexible (breaks when bent); clay sinks</td><td class="rowname">vases, flower pots, bricks, clay pots</td></tr>
+          <tr><th scope="row">Plastic</th><td class="rowname">waterproof; different plastics let most, some or no light through</td><td class="rowname">bottles, bags, chairs; Styrofoam cups (Styrofoam floats)</td></tr>
+          <tr><th scope="row">Rubber</th><td class="rowname">waterproof; flexible; lets no light through</td><td class="rowname">gloves, erasers, boots, tyres</td></tr>
+          <tr><th scope="row">Fabric</th><td class="rowname">flexible; absorbent (soaks up water)</td><td class="rowname">scarves, socks, clothes, towels, jackets</td></tr>
+        </tbody>
+      </table></div>
+    </details>
+    <details class="kcard" open>
+      <summary><span class="kn">3</span> Choosing a material</summary>
+      <p>We choose a material because of the <b>properties the job needs</b>.</p>
+      <ul>
+        <li>A towel must soak up water, so it is made of fabric, which is <b>absorbent</b>.</li>
+        <li>A raincoat must keep you dry, so it is made of plastic, which is <b>waterproof</b>.</li>
+        <li>A window must let light in, so it is made of clear glass, which <b>lets most light through</b>.</li>
+      </ul>
+      <p>Some jobs need <b>two properties</b>. Rain boots must keep water out <b>and</b> bend when you walk, so they are made of rubber, which is <b>waterproof and flexible</b>.</p>
+      <p>First list what the job needs, then check every property.</p>
+    </details>
+  </div>
+</section>
+
+<section class="card" id="explore">
+  <p class="sec-label">Explore</p>
+  <h2>Try it yourself</h2>
+
+  <h3 id="e1">1. The test bench</h3>
+  <p class="lead">Pick a test, then tap a material to test it. Your results build up in the table.</p>
+  <div class="row" role="group" aria-label="Choose a test">
+    <button type="button" class="btn small" data-tab="strength" aria-pressed="true">Strength</button>
+    <button type="button" class="btn small" data-tab="flex" aria-pressed="false">Flexibility</button>
+    <button type="button" class="btn small" data-tab="float" aria-pressed="false">Float or sink</button>
+    <button type="button" class="btn small" data-tab="water" aria-pressed="false">Waterproof</button>
+    <button type="button" class="btn small" data-tab="light" aria-pressed="false">Lets light through</button>
+  </div>
+  <p class="m-how" id="benchHow"></p>
+  <div class="row" id="benchChips" role="group" aria-label="Materials to test"></div>
+  <div class="mgrid" style="margin-top:10px">
+    <div class="stage"><svg id="benchSvg" viewBox="0 0 400 240" role="img" aria-label="The test bench"></svg></div>
+    <div>
+      <p class="stage-msg" id="benchMsg" aria-live="polite"></p>
+      <table class="data m-results" aria-label="My results"><thead><tr><th scope="col">Material</th><th scope="col">Result</th></tr></thead><tbody id="benchTable"></tbody></table>
+    </div>
+  </div>
+
+  <details class="beyond">
+    <summary><span class="bs-badge">Beyond syllabus</span> Why a metal ship floats</summary>
+    <p>A solid lump of metal sinks, but a metal ship floats because of its hollow shape. This is not in the P3 syllabus and is never tested here.</p>
+  </details>
+
+  <h3 id="e2">2. Seven materials</h3>
+  <p class="lead">Tap a material to see its properties and what it is used for.</p>
+  <div class="row" role="group" aria-label="Seven materials" id="matBtns"></div>
+  <div class="mgrid" style="margin-top:10px">
+    <div class="stage"><svg id="matSvg" viewBox="0 0 240 160" role="img" aria-label="An object made of the chosen material"></svg></div>
+    <div class="m-info" id="matInfo" aria-live="polite"></div>
+  </div>
+  <h4>Which material?</h4>
+  <div id="matSort"></div>
+
+  <details class="beyond">
+    <summary><span class="bs-badge">Beyond syllabus</span> Where materials come from</summary>
+    <p>Your book tells you this. It is not in the P3 syllabus and is never tested here.</p>
+    <ul>
+      <li><b>Wood</b> comes from tree trunks.</li>
+      <li><b>Metal</b> comes from the ground.</li>
+      <li><b>Glass</b> is made from sand.</li>
+      <li><b>Ceramic</b> is made from clay.</li>
+      <li><b>Plastic</b> is made from crude oil.</li>
+      <li><b>Rubber</b> is made from latex, the sap of rubber trees.</li>
+      <li><b>Fabric</b> comes from animals (wool from sheep, silk from silkworms), from plants (cotton), or is made by people (nylon).</li>
+    </ul>
+  </details>
+
+  <h3 id="e3">3. Why that material?</h3>
+  <p class="lead">Sort each object by the property that makes its material right for the job.</p>
+  <div id="useSort"></div>
+  <p class="note-s">Some objects need two properties. Rain boots must be waterproof <b>and</b> flexible. The focus page <i>Matching a part to the properties it needs</i> practises this.</p>
+</section>
+
+<section class="card" id="check">
+  <p class="sec-label">Unit check</p>
+  <h2>Ten questions on the whole topic</h2>
+  <p class="lead">Only your first answer counts. A wrong first answer goes into your mistake book, and a different question on the same idea comes back for recap.</p>
+  <div id="qs"></div>
+</section>
+
+<section class="card" id="deeper">
+  <p class="sec-label">Go deeper</p>
+  <h2>Focus pages on materials</h2>
+  <div id="psle-deeper"></div>
+</section>

@@ -1,0 +1,494 @@
+[
+  {
+    "id": "P3-materials-waterproof-vs-absorbent.q1",
+    "title": "Wen Han's towel",
+    "kind": "exam",
+    "pool": "page",
+    "lo": [
+      "P3.MAT.C1",
+      "P3.MAT.P1"
+    ],
+    "source": "School paper question (Wen Han's materials R, S, T, U)",
+    "pageIntro": "Soak all four materials on the bench and weigh them again.",
+    "stem": "<p>Wen Han measured the mass of four materials of the same size. He put each one into a container with the same amount of water for 10 minutes, then measured each mass again.</p><p class='q-ask'>Which material, R, S, T or U, is most suitable for making a towel?</p>",
+    "figure": "<table class='data'><thead><tr><th scope='col'>Material</th><th scope='col'>Mass before soaking (g)</th><th scope='col'>Mass after soaking (g)</th></tr></thead><tbody><tr><th scope='row'>R</th><td>60</td><td>90</td></tr><tr><th scope='row'>S</th><td>90</td><td>90</td></tr><tr><th scope='row'>T</th><td>100</td><td>150</td></tr><tr><th scope='row'>U</th><td>150</td><td>180</td></tr></tbody></table>",
+    "bench": {
+      "materials": [
+        {
+          "id": "R",
+          "before": 60,
+          "after": 90
+        },
+        {
+          "id": "S",
+          "before": 90,
+          "after": 90
+        },
+        {
+          "id": "T",
+          "before": 100,
+          "after": 150
+        },
+        {
+          "id": "U",
+          "before": 150,
+          "after": 180
+        }
+      ]
+    },
+    "hints": [
+      "Fill in the missing column yourself: mass after − mass before.",
+      "A towel has to take as much water off your skin as it can. Which material absorbed the most grams of water?"
+    ],
+    "key": "Water absorbed = mass after − mass before. Never compare the \"after\" column on its own.",
+    "options": [
+      {
+        "text": "R",
+        "mis": "MAT-10",
+        "pick": "R went from 60 g to 90 g, half as heavy again. That looks like a big change.",
+        "why": "R absorbed 90 − 60 = 30 g. The pieces are the same size, so compare the grams of water absorbed, and T absorbed 50 g.",
+        "clash": [
+          "Your readings: R absorbed 30 g, T absorbed 50 g."
+        ]
+      },
+      {
+        "text": "S",
+        "mis": "MAT-09",
+        "pick": "S is the tidy one: its mass did not change at all, so it seems to handle water well.",
+        "why": "S absorbed 0 g, so it is waterproof. A towel must do the opposite and absorb as much water as possible.",
+        "clash": [
+          "Your readings: S absorbed 0 g (waterproof)."
+        ]
+      },
+      {
+        "text": "T",
+        "correct": true,
+        "pick": "Work out the water absorbed for all four, then take the largest: 150 − 100 = 50 g.",
+        "why": "T absorbed 50 g, more than any other material. A towel must absorb as much water as possible."
+      },
+      {
+        "text": "U",
+        "mis": "MAT-08",
+        "pick": "U has the largest mass after soaking, 180 g, so it looks like it holds the most water.",
+        "why": "U started at 150 g, so it only absorbed 180 − 150 = 30 g. The mass after soaking includes the material itself.",
+        "clash": [
+          "Your readings: U absorbed 30 g, T absorbed 50 g."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "P3-materials-waterproof-vs-absorbent.q2",
+    "title": "A material for a raincoat",
+    "kind": "diag",
+    "pool": "page",
+    "lo": [
+      "P3.MAT.C1",
+      "P3.MAT.P1"
+    ],
+    "pageIntro": "Four new materials of the same size, soaked the same way. Soak all four.",
+    "stem": "<p>Four materials of the same size were soaked in the same way. Their masses before and after soaking are shown.</p><p class='q-ask'>Which material is most suitable for making a raincoat?</p>",
+    "figure": "<table class='data'><thead><tr><th scope='col'>Material</th><th scope='col'>Mass before soaking (g)</th><th scope='col'>Mass after soaking (g)</th></tr></thead><tbody><tr><th scope='row'>W</th><td>40</td><td>70</td></tr><tr><th scope='row'>X</th><td>80</td><td>80</td></tr><tr><th scope='row'>Y</th><td>120</td><td>200</td></tr><tr><th scope='row'>Z</th><td>150</td><td>165</td></tr></tbody></table>",
+    "bench": {
+      "materials": [
+        {
+          "id": "W",
+          "before": 40,
+          "after": 70
+        },
+        {
+          "id": "X",
+          "before": 80,
+          "after": 80
+        },
+        {
+          "id": "Y",
+          "before": 120,
+          "after": 200
+        },
+        {
+          "id": "Z",
+          "before": 150,
+          "after": 165
+        }
+      ]
+    },
+    "hints": [
+      "A raincoat must keep the rain on the outside. What does that mean about the water it absorbs?",
+      "Look for the material whose mass did not change at all."
+    ],
+    "key": "Waterproof shows up in the data as a gain of 0 g. It is the only reading that shows no water went in.",
+    "options": [
+      {
+        "text": "W",
+        "mis": "MAT-02",
+        "pick": "W has the smallest mass of all, so it would make a light coat.",
+        "why": "W absorbed 30 g, so rain would soak into it and reach the person wearing it. A light material is not the same as a waterproof one.",
+        "clash": [
+          "Your readings: W absorbed 30 g."
+        ]
+      },
+      {
+        "text": "X",
+        "correct": true,
+        "pick": "Work out the gain for each one. Only X gained nothing, so only X is waterproof.",
+        "why": "X was 80 g before and 80 g after, so it absorbed no water. A material that does not absorb water is waterproof, so the rain stays on the outside of the coat."
+      },
+      {
+        "text": "Y",
+        "mis": "MAT-09",
+        "pick": "Y took in the most water, so it seems to deal with rain better than the others.",
+        "why": "Y absorbed 80 g, the most of the four. A coat made from Y would soak up the rain like a towel.",
+        "clash": [
+          "Your readings: Y absorbed 80 g, X absorbed 0 g."
+        ]
+      },
+      {
+        "text": "Z",
+        "mis": "MAT-10",
+        "pick": "Z only went up from 150 g to 165 g, a very small change for such a heavy piece.",
+        "why": "Z still absorbed 15 g, so water went in. Only a gain of 0 g shows that no water was absorbed.",
+        "clash": [
+          "Your readings: Z absorbed 15 g, X absorbed 0 g."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "P3-materials-waterproof-vs-absorbent.q3",
+    "title": "The heaviest one",
+    "kind": "diag",
+    "pool": "page",
+    "lo": [
+      "P3.MAT.P1"
+    ],
+    "pageIntro": "One of these is much heavier than the rest to begin with. Soak all four.",
+    "stem": "<p>Four materials of the same size were soaked in the same way. Their masses before and after soaking are shown.</p><p class='q-ask'>Which material absorbed the most water?</p>",
+    "figure": "<table class='data'><thead><tr><th scope='col'>Material</th><th scope='col'>Mass before soaking (g)</th><th scope='col'>Mass after soaking (g)</th></tr></thead><tbody><tr><th scope='row'>D</th><td>200</td><td>240</td></tr><tr><th scope='row'>E</th><td>50</td><td>100</td></tr><tr><th scope='row'>F</th><td>150</td><td>185</td></tr><tr><th scope='row'>G</th><td>90</td><td>130</td></tr></tbody></table>",
+    "bench": {
+      "materials": [
+        {
+          "id": "D",
+          "before": 200,
+          "after": 240
+        },
+        {
+          "id": "E",
+          "before": 50,
+          "after": 100
+        },
+        {
+          "id": "F",
+          "before": 150,
+          "after": 185
+        },
+        {
+          "id": "G",
+          "before": 90,
+          "after": 130
+        }
+      ]
+    },
+    "hints": [
+      "Which material has the largest number in the \"after\" column? Is that what the question asks?",
+      "Write out after − before for all four before you choose."
+    ],
+    "key": "The heaviest material after soaking is often just the one that was heaviest to begin with. Subtract first, then compare.",
+    "options": [
+      {
+        "text": "D",
+        "mis": "MAT-08",
+        "pick": "D has the largest mass after soaking, 240 g, so it looks like it is holding the most water.",
+        "why": "D started at 200 g and gained only 40 g. Most of that 240 g is the material itself.",
+        "clash": [
+          "Your readings: D absorbed 40 g, E absorbed 50 g."
+        ]
+      },
+      {
+        "text": "F",
+        "mis": "MAT-08",
+        "pick": "F has large masses both before and after, so it seems to be in the running.",
+        "why": "F absorbed only 35 g, the least of the four. Large masses do not mean large gains.",
+        "clash": [
+          "Your readings: F absorbed 35 g, the smallest gain."
+        ]
+      },
+      {
+        "text": "G",
+        "mis": "MAT-10",
+        "pick": "G went from 90 g to 130 g, which looks like a clear jump.",
+        "why": "G absorbed 40 g, which is less than E's 50 g. Judge by the grams absorbed, not by how big the jump looks.",
+        "clash": [
+          "Your readings: G absorbed 40 g, E absorbed 50 g."
+        ]
+      },
+      {
+        "text": "E",
+        "correct": true,
+        "pick": "Subtract for every row: D 40 g, E 50 g, F 35 g, G 40 g. The largest is E.",
+        "why": "E absorbed 100 − 50 = 50 g, the most of the four, even though it has the smallest mass after soaking."
+      }
+    ]
+  },
+  {
+    "id": "P3-materials-waterproof-vs-absorbent.q4",
+    "title": "Two the same",
+    "kind": "diag",
+    "pool": "page",
+    "lo": [
+      "P3.MAT.P1"
+    ],
+    "pageIntro": "Four materials of the same size again. Soak all four and work out your own gains.",
+    "stem": "<p>Four materials of the same size were soaked in the same way. Their masses before and after soaking are shown.</p><p class='q-ask'>Which two materials absorbed the same amount of water?</p>",
+    "figure": "<table class='data'><thead><tr><th scope='col'>Material</th><th scope='col'>Mass before soaking (g)</th><th scope='col'>Mass after soaking (g)</th></tr></thead><tbody><tr><th scope='row'>P</th><td>60</td><td>95</td></tr><tr><th scope='row'>Q</th><td>100</td><td>135</td></tr><tr><th scope='row'>R</th><td>80</td><td>140</td></tr><tr><th scope='row'>S</th><td>120</td><td>120</td></tr></tbody></table>",
+    "bench": {
+      "materials": [
+        {
+          "id": "P",
+          "before": 60,
+          "after": 95
+        },
+        {
+          "id": "Q",
+          "before": 100,
+          "after": 135
+        },
+        {
+          "id": "R",
+          "before": 80,
+          "after": 140
+        },
+        {
+          "id": "S",
+          "before": 120,
+          "after": 120
+        }
+      ]
+    },
+    "hints": [
+      "You cannot answer this one by looking. Work out all four gains first.",
+      "One material gained nothing. Two of the others gained the same amount."
+    ],
+    "key": "Two materials can absorb the same amount of water and still have very different masses. Only the subtraction tells you.",
+    "options": [
+      {
+        "text": "P and Q",
+        "correct": true,
+        "pick": "Work out all four gains: P 35 g, Q 35 g, R 60 g, S 0 g. P and Q match.",
+        "why": "Both absorbed 35 g, even though P ends at 95 g and Q ends at 135 g."
+      },
+      {
+        "text": "Q and R",
+        "mis": "MAT-08",
+        "pick": "Q and R end at 135 g and 140 g, which are almost the same.",
+        "why": "Ending at a similar mass is not the same as absorbing the same amount. Q absorbed 35 g and R absorbed 60 g.",
+        "clash": [
+          "Your readings: Q absorbed 35 g, R absorbed 60 g."
+        ]
+      },
+      {
+        "text": "R and S",
+        "mis": "MAT-09",
+        "pick": "R and S are the two unusual ones, so they feel like a pair.",
+        "why": "R absorbed 60 g, the most of the four. S absorbed 0 g and is waterproof. They are opposites.",
+        "clash": [
+          "Your readings: R absorbed 60 g, S absorbed 0 g."
+        ]
+      },
+      {
+        "text": "P and S",
+        "mis": "MAT-08",
+        "pick": "P and S have the smallest numbers before soaking or after soaking, so they look like a pair.",
+        "why": "P absorbed 35 g but S absorbed nothing at all, so they are not the same.",
+        "clash": [
+          "Your readings: P absorbed 35 g, S absorbed 0 g."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "P3-materials-waterproof-vs-absorbent.q5",
+    "title": "Was it a fair test?",
+    "kind": "diag",
+    "pool": "page",
+    "lo": [
+      "P3.MAT.P1"
+    ],
+    "pageIntro": "Back to Wen Han's four materials. Soak them all again, then think about how the experiment was set up.",
+    "stem": "<p>Wen Han soaked four materials, R, S, T and U, and measured each mass before and after soaking. The masses before soaking were all different.</p><p class='q-ask'>Which of these had to be kept the same for a fair test?</p>",
+    "figure": "<table class='data'><thead><tr><th scope='col'>Material</th><th scope='col'>Mass before soaking (g)</th><th scope='col'>Mass after soaking (g)</th></tr></thead><tbody><tr><th scope='row'>R</th><td>60</td><td>90</td></tr><tr><th scope='row'>S</th><td>90</td><td>90</td></tr><tr><th scope='row'>T</th><td>100</td><td>150</td></tr><tr><th scope='row'>U</th><td>150</td><td>180</td></tr></tbody></table>",
+    "bench": {
+      "materials": [
+        {
+          "id": "R",
+          "before": 60,
+          "after": 90
+        },
+        {
+          "id": "S",
+          "before": 90,
+          "after": 90
+        },
+        {
+          "id": "T",
+          "before": 100,
+          "after": 150
+        },
+        {
+          "id": "U",
+          "before": 150,
+          "after": 180
+        }
+      ]
+    },
+    "hints": [
+      "Only one thing is allowed to change in a fair test. Here it is the type of material.",
+      "The masses before soaking were all different. Was that allowed, or does it spoil the test?"
+    ],
+    "key": "The different starting masses are fine: same-sized pieces of different materials weigh different amounts. That is exactly why you subtract.",
+    "options": [
+      {
+        "text": "The mass of each material before soaking",
+        "mis": "MAT-05",
+        "pick": "The masses before soaking are all different, which looks unfair at first sight.",
+        "why": "Same-sized pieces of different materials naturally have different masses, so this cannot be kept the same. It is handled by subtracting: water absorbed = after − before.",
+        "clash": [
+          "Your readings: the masses before soaking were 60, 90, 100 and 150 g, all different, and the test still works."
+        ]
+      },
+      {
+        "text": "The type of material in each container",
+        "mis": "MAT-05",
+        "pick": "The question says \"kept the same\", and the materials are what the experiment is about.",
+        "why": "The type of material is the one thing that must change. It is what is being tested."
+      },
+      {
+        "text": "The size of each piece, the amount of water, and the soaking time",
+        "correct": true,
+        "pick": "List everything else that could change how much water goes in, and keep all of it the same.",
+        "why": "Only the type of material may change. If one piece were bigger, sat in more water or soaked for longer, a larger gain could be caused by that instead of by the material."
+      },
+      {
+        "text": "The colour of each container",
+        "mis": "MAT-05",
+        "pick": "It is something you can easily keep the same, so it sounds like a fair-test answer.",
+        "why": "The colour of the container has no effect on how much water a material absorbs, so keeping it the same does nothing for the test."
+      }
+    ]
+  },
+  {
+    "id": "P3-materials-waterproof-vs-absorbent.v1",
+    "title": "A mop head",
+    "kind": "variant",
+    "pool": "recap",
+    "lo": [
+      "P3.MAT.C1",
+      "P3.MAT.P1"
+    ],
+    "stem": "<p>A mop head must absorb as much water as possible. Four materials of the same size were soaked in the same way.</p><p class='q-ask'>Which material is most suitable for the mop head?</p>",
+    "figure": "<table class='data'><thead><tr><th scope='col'>Material</th><th scope='col'>Mass before soaking (g)</th><th scope='col'>Mass after soaking (g)</th></tr></thead><tbody><tr><th scope='row'>A</th><td>50</td><td>110</td></tr><tr><th scope='row'>B</th><td>20</td><td>45</td></tr><tr><th scope='row'>C</th><td>180</td><td>230</td></tr><tr><th scope='row'>D</th><td>200</td><td>200</td></tr></tbody></table>",
+    "key": "Subtract for every material: A 60 g, B 25 g, C 50 g, D 0 g. The mop needs the largest gain.",
+    "options": [
+      {
+        "text": "A",
+        "correct": true,
+        "pick": "Work out after − before for all four: A 60 g, B 25 g, C 50 g, D 0 g.",
+        "why": "A absorbed 60 g, the most of the four, so it takes up the most water."
+      },
+      {
+        "text": "B",
+        "mis": "MAT-10",
+        "pick": "B more than doubled its mass, from 20 g to 45 g, which looks like the biggest change.",
+        "why": "B absorbed only 25 g. The pieces are the same size, so compare grams of water absorbed, not how big the change looks."
+      },
+      {
+        "text": "C",
+        "mis": "MAT-08",
+        "pick": "C has the largest mass after soaking, 230 g, so it seems to hold the most water.",
+        "why": "C started at 180 g, so it absorbed 230 − 180 = 50 g, less than A's 60 g."
+      },
+      {
+        "text": "D",
+        "mis": "MAT-09",
+        "pick": "D's mass did not change, so it seems to cope with water well.",
+        "why": "D absorbed no water at all, so it is waterproof. A mop must do the opposite."
+      }
+    ]
+  },
+  {
+    "id": "P3-materials-waterproof-vs-absorbent.v2",
+    "title": "Rain boots",
+    "kind": "variant",
+    "pool": "recap",
+    "lo": [
+      "P3.MAT.C1",
+      "P3.MAT.P1"
+    ],
+    "stem": "<p>Rain boots must not absorb water. Four materials of the same size were soaked in the same way.</p><p class='q-ask'>Which material is most suitable for making rain boots?</p>",
+    "figure": "<table class='data'><thead><tr><th scope='col'>Material</th><th scope='col'>Mass before soaking (g)</th><th scope='col'>Mass after soaking (g)</th></tr></thead><tbody><tr><th scope='row'>P</th><td>60</td><td>75</td></tr><tr><th scope='row'>Q</th><td>150</td><td>150</td></tr><tr><th scope='row'>R</th><td>30</td><td>40</td></tr><tr><th scope='row'>S</th><td>100</td><td>160</td></tr></tbody></table>",
+    "key": "Only a gain of 0 g means a material does not absorb water. Any gain at all means water went in.",
+    "options": [
+      {
+        "text": "P",
+        "mis": "MAT-08",
+        "pick": "P ends at only 75 g, a small mass, so it cannot be holding much water.",
+        "why": "P absorbed 75 − 60 = 15 g. A small mass after soaking does not mean no water went in."
+      },
+      {
+        "text": "Q",
+        "correct": true,
+        "pick": "Find the material whose mass did not change: Q is 150 g before and after.",
+        "why": "Q absorbed 0 g, so it is waterproof. Boots made of Q keep the water out."
+      },
+      {
+        "text": "R",
+        "mis": "MAT-10",
+        "pick": "R only went up by 10 g, which seems like almost nothing.",
+        "why": "10 g is still water absorbed. Only a gain of 0 g shows that a material does not absorb water."
+      },
+      {
+        "text": "S",
+        "mis": "MAT-09",
+        "pick": "S took in the most water, so it seems to deal with rain best.",
+        "why": "S absorbed 60 g, the most of the four. Boots made of S would soak up the rain."
+      }
+    ]
+  },
+  {
+    "id": "P3-materials-waterproof-vs-absorbent.v3",
+    "title": "Two cloths",
+    "kind": "variant",
+    "pool": "recap",
+    "lo": [
+      "P3.MAT.P1"
+    ],
+    "stem": "<p>Two cloths of the same size were soaked in the same way. Cloth X went from 40 g to 110 g. Cloth Y went from 150 g to 210 g.</p><p class='q-ask'>Which statement is correct?</p>",
+    "key": "Work out each gain: X 70 g, Y 60 g. Different starting masses are expected and do not spoil the comparison.",
+    "options": [
+      {
+        "text": "Cloth Y absorbed more water, because its mass after soaking is larger.",
+        "mis": "MAT-08",
+        "pick": "210 g is the biggest number given, so Y seems to be holding the most water.",
+        "why": "Y's 210 g includes the 150 g of cloth. It absorbed only 60 g, less than X's 70 g."
+      },
+      {
+        "text": "Cloth Y absorbed more water, because it was heavier to begin with.",
+        "mis": "MAT-08",
+        "pick": "A heavier cloth seems like it would hold more water.",
+        "why": "The starting mass is the cloth itself, not the water. Y absorbed 60 g, less than X's 70 g."
+      },
+      {
+        "text": "You cannot compare them, because the cloths started with different masses.",
+        "mis": "MAT-05",
+        "pick": "The masses before soaking are different, which looks like an unfair test.",
+        "why": "Same-sized pieces of different cloths naturally have different masses. Subtracting after − before gives the water each one absorbed, and those can be compared."
+      },
+      {
+        "text": "Cloth X absorbed more water: 70 g compared with 60 g.",
+        "correct": true,
+        "pick": "Subtract for each cloth: X 110 − 40 = 70 g, Y 210 − 150 = 60 g.",
+        "why": "X absorbed 70 g and Y absorbed 60 g, so X absorbed more."
+      }
+    ]
+  }
+]

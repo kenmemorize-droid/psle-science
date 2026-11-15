@@ -1,0 +1,672 @@
+[
+  {
+    "id": "P3-materials-match-part-to-property.q1",
+    "title": "Lindy's shoe",
+    "kind": "exam",
+    "pool": "page",
+    "lo": [
+      "P3.MAT.C1"
+    ],
+    "source": "School paper question (Lindy's shoe, materials A, B, C)",
+    "pageIntro": "Inspect both parts of the shoe first: tap each part to find out what it has to do.",
+    "stem": "<p>Lindy recorded the properties of three materials, A, B and C, in the table. She wants to use them to make parts X and Y of the shoe shown.</p><p class='q-ask'>Which materials are most suitable to make parts X and Y of the shoe?</p>",
+    "figure": "<svg viewBox='0 0 520 200' role='img' aria-label='Side view of a shoe. X is the upper part that wraps the foot; Y is the sole.'><path class='sl' data-part='X' d='M64 150 V92 q0 -26 28 -26 h34 q16 0 20 18 l12 34 q6 16 26 18 l170 16 q38 4 40 38 v10 H64 Z'/><path class='sl' data-part='Y' d='M58 150 H446 a16 16 0 0 1 0 32 H58 a16 16 0 0 1 0 -32 Z'/><path class='ln' d='M150 100 l34 20 M166 88 l34 20 M182 76 l34 20'/><line class='ln' x1='120' y1='128' x2='378' y2='128'/><text class='lbl' x='386' y='132'>X</text><line class='ln' x1='300' y1='166' x2='378' y2='166'/><text class='lbl' x='386' y='170'>Y</text></svg><table class='data'><thead><tr><th scope='col'>Property</th><th scope='col'>A</th><th scope='col'>B</th><th scope='col'>C</th></tr></thead><tbody><tr><th scope='row'>flexible</th><td>✓</td><td></td><td>✓</td></tr><tr><th scope='row'>waterproof</th><td>✓</td><td>✓</td><td></td></tr><tr><th scope='row'>strong</th><td>✓</td><td>✓</td><td>✓</td></tr></tbody></table>",
+    "bench": {
+      "parts": [
+        {
+          "id": "X",
+          "label": "upper",
+          "job": "It wraps round the foot and folds every time you take a step, rain falls on it, and the laces pull it tight.",
+          "needs": [
+            "flexible",
+            "waterproof",
+            "strong"
+          ]
+        },
+        {
+          "id": "Y",
+          "label": "sole",
+          "job": "It carries your whole body weight, rubs along the ground, and stands in puddles and on wet floors.",
+          "needs": [
+            "waterproof",
+            "strong"
+          ]
+        }
+      ],
+      "table": {
+        "mats": [
+          "A",
+          "B",
+          "C"
+        ],
+        "has": {
+          "A": [
+            "flexible",
+            "waterproof",
+            "strong"
+          ],
+          "B": [
+            "waterproof",
+            "strong"
+          ],
+          "C": [
+            "flexible",
+            "strong"
+          ]
+        }
+      }
+    },
+    "hints": [
+      "Start with part X. It is the part that has to bend, so it needs all three properties.",
+      "Part Y does not have to bend. Which material has the two properties it does need?"
+    ],
+    "key": "Write the job list for each part first. Then the table answers the question for you.",
+    "layout": "table",
+    "cols": [
+      "Part X",
+      "Part Y"
+    ],
+    "options": [
+      {
+        "text": [
+          "A",
+          "C"
+        ],
+        "mis": "MAT-07",
+        "pick": "A is right for the upper, and C is flexible and strong, which sounds tough enough for a sole.",
+        "why": "C has no tick for waterproof. A sole stands in puddles and on wet floors, so water would soak straight into it."
+      },
+      {
+        "text": [
+          "B",
+          "A"
+        ],
+        "mis": "MAT-06",
+        "pick": "B is strong and waterproof, and A is the best material, so saving A for the sole seems sensible.",
+        "why": "B is not flexible. The upper folds every time the foot moves, so an upper made of B would crack."
+      },
+      {
+        "text": [
+          "A",
+          "B"
+        ],
+        "correct": true,
+        "pick": "Upper: bends, meets rain, gets pulled, so all three properties, which only A has. Sole: strong and waterproof, which B has.",
+        "why": "Every property each part needs is ticked for the material given to it. The sole never has to bend round the foot, so it does not need a tick for flexible."
+      },
+      {
+        "text": [
+          "C",
+          "A"
+        ],
+        "mis": "MAT-07",
+        "pick": "C is flexible, which the upper needs, and A is left for the sole.",
+        "why": "C is not waterproof, so rain would pass straight through the upper onto the foot."
+      }
+    ]
+  },
+  {
+    "id": "P3-materials-match-part-to-property.q2",
+    "title": "The umbrella",
+    "kind": "diag",
+    "pool": "page",
+    "lo": [
+      "P3.MAT.C1"
+    ],
+    "pageIntro": "Inspect the canopy and the frame, then use the table.",
+    "stem": "<p>An umbrella has a canopy (X) and a frame of ribs and a shaft (Y). The properties of materials D, E and F are shown.</p><p class='q-ask'>Which materials are most suitable to make parts X and Y of the umbrella?</p>",
+    "figure": "<svg viewBox='0 0 520 230' role='img' aria-label='An umbrella. X is the canopy; Y is the frame of ribs and the shaft.'><path class='sl' data-part='X' d='M80 118 Q260 8 440 118 q-45 26 -90 0 q-45 26 -90 0 q-45 26 -90 0 Z'/><g class='ln' data-part='Y'><path d='M260 20 V196 q0 22 -26 22 q-18 0 -20 -14'/><path d='M260 26 L110 112 M260 26 L410 112 M260 26 V118'/></g><line class='ln' x1='300' y1='70' x2='378' y2='70'/><text class='lbl' x='386' y='74'>X</text><line class='ln' x1='276' y1='160' x2='378' y2='160'/><text class='lbl' x='386' y='164'>Y</text></svg><table class='data'><thead><tr><th scope='col'>Property</th><th scope='col'>D</th><th scope='col'>E</th><th scope='col'>F</th></tr></thead><tbody><tr><th scope='row'>flexible</th><td>✓</td><td></td><td>✓</td></tr><tr><th scope='row'>waterproof</th><td>✓</td><td>✓</td><td></td></tr><tr><th scope='row'>strong</th><td></td><td>✓</td><td>✓</td></tr></tbody></table>",
+    "bench": {
+      "parts": [
+        {
+          "id": "X",
+          "label": "canopy",
+          "job": "Rain lands on it, and it has to fold up small when the umbrella is closed.",
+          "needs": [
+            "waterproof",
+            "flexible"
+          ]
+        },
+        {
+          "id": "Y",
+          "label": "frame",
+          "job": "It holds the canopy open against the wind pushing on it, and it is out in the rain too.",
+          "needs": [
+            "strong",
+            "waterproof"
+          ]
+        }
+      ],
+      "table": {
+        "mats": [
+          "D",
+          "E",
+          "F"
+        ],
+        "has": {
+          "D": [
+            "flexible",
+            "waterproof"
+          ],
+          "E": [
+            "waterproof",
+            "strong"
+          ],
+          "F": [
+            "flexible",
+            "strong"
+          ]
+        }
+      }
+    },
+    "hints": [
+      "The canopy has to fold, so one of its properties is flexible.",
+      "The frame has to push back against the wind. Which material is strong and also copes with the rain?"
+    ],
+    "key": "The same object can need different properties in different places. The part that folds must be flexible; the part that holds a shape against a push must be strong.",
+    "layout": "table",
+    "cols": [
+      "Part X",
+      "Part Y"
+    ],
+    "options": [
+      {
+        "text": [
+          "D",
+          "E"
+        ],
+        "correct": true,
+        "pick": "Canopy: rain plus folding, so waterproof and flexible. Frame: wind plus rain, so strong and waterproof.",
+        "why": "D is waterproof and flexible, which the canopy needs. E is strong and waterproof, which the frame needs."
+      },
+      {
+        "text": [
+          "F",
+          "E"
+        ],
+        "mis": "MAT-07",
+        "pick": "F is flexible so the canopy folds, and E is the obvious frame material.",
+        "why": "F is not waterproof. Rain would soak through the canopy, which is the one thing an umbrella must prevent."
+      },
+      {
+        "text": [
+          "E",
+          "D"
+        ],
+        "mis": "MAT-06",
+        "pick": "E is waterproof so the canopy stays dry, and D is left for the frame.",
+        "why": "E is not flexible, so the canopy could not fold up. D is not strong, so the frame would collapse in the wind. Both parts are wrong."
+      },
+      {
+        "text": [
+          "D",
+          "F"
+        ],
+        "mis": "MAT-07",
+        "pick": "D suits the canopy, and F is strong, which the frame needs.",
+        "why": "F is not waterproof, and the frame is out in the rain with the canopy."
+      }
+    ]
+  },
+  {
+    "id": "P3-materials-match-part-to-property.q3",
+    "title": "The classroom window",
+    "kind": "diag",
+    "pool": "page",
+    "lo": [
+      "P3.MAT.C1"
+    ],
+    "pageIntro": "Inspect the pane and the frame, then use the table.",
+    "stem": "<p>A classroom window has a pane (X) and a frame around it (Y). The properties of materials G, H and J are shown.</p><p class='q-ask'>Which materials are most suitable to make parts X and Y of the window?</p>",
+    "figure": "<svg viewBox='0 0 520 230' role='img' aria-label='A window. X is the pane; Y is the frame around it.'><path class='sl' data-part='Y' fill-rule='evenodd' d='M120 24 h280 v182 h-280 Z M150 54 h220 v122 h-220 Z'/><rect class='sl' data-part='X' x='150' y='54' width='220' height='122'/><path class='ln' d='M168 70 l44 44 M168 100 l32 32'/><line class='ln' x1='300' y1='110' x2='400' y2='110'/><text class='lbl' x='408' y='114'>X</text><line class='ln' x1='406' y1='190' x2='440' y2='190'/><text class='lbl' x='448' y='194'>Y</text></svg><table class='data'><thead><tr><th scope='col'>Property</th><th scope='col'>G</th><th scope='col'>H</th><th scope='col'>J</th></tr></thead><tbody><tr><th scope='row'>lets most light through</th><td>✓</td><td></td><td>✓</td></tr><tr><th scope='row'>waterproof</th><td>✓</td><td>✓</td><td>✓</td></tr><tr><th scope='row'>strong</th><td>✓</td><td>✓</td><td></td></tr></tbody></table>",
+    "bench": {
+      "parts": [
+        {
+          "id": "X",
+          "label": "pane",
+          "job": "It lights the classroom with daylight, keeps the rain outside, and must not break when the wind pushes on it.",
+          "needs": [
+            "lets most light through",
+            "waterproof",
+            "strong"
+          ]
+        },
+        {
+          "id": "Y",
+          "label": "frame",
+          "job": "It holds the pane in place and sits out in the rain. Nobody needs to see through it.",
+          "needs": [
+            "strong",
+            "waterproof"
+          ]
+        }
+      ],
+      "table": {
+        "mats": [
+          "G",
+          "H",
+          "J"
+        ],
+        "has": {
+          "G": [
+            "lets most light through",
+            "waterproof",
+            "strong"
+          ],
+          "H": [
+            "waterproof",
+            "strong"
+          ],
+          "J": [
+            "lets most light through",
+            "waterproof"
+          ]
+        }
+      }
+    },
+    "hints": [
+      "Only the pane needs light to pass through. The frame does not.",
+      "The pane also has to survive the wind, so check the strong row as well."
+    ],
+    "key": "A property only counts if that part's job needs it. Letting light through matters for the pane, not for the frame.",
+    "layout": "table",
+    "cols": [
+      "Part X",
+      "Part Y"
+    ],
+    "options": [
+      {
+        "text": [
+          "J",
+          "H"
+        ],
+        "mis": "MAT-04",
+        "pick": "J lets most light through, which is what a window is for, and H is a sensible frame.",
+        "why": "J is not strong. The pane is the part the wind pushes on, so it would break."
+      },
+      {
+        "text": [
+          "G",
+          "H"
+        ],
+        "correct": true,
+        "pick": "Pane: light, rain and wind, so all three properties, which only G has. Frame: strong and waterproof, which H has.",
+        "why": "Each part gets a material with everything on its job list. The frame does not need light to pass through it at all."
+      },
+      {
+        "text": [
+          "H",
+          "G"
+        ],
+        "mis": "MAT-04",
+        "pick": "H is strong and waterproof, which sounds right for the part that takes the wind.",
+        "why": "H does not let light through, so the classroom would be dark. The pane is the part that must let daylight in."
+      },
+      {
+        "text": [
+          "G",
+          "J"
+        ],
+        "mis": "MAT-02",
+        "pick": "G is right for the pane, and J lets light through, which looks like a bonus for the frame.",
+        "why": "J is not strong, and the frame has to hold the pane in place. Light passing through the frame is of no use to anyone."
+      }
+    ]
+  },
+  {
+    "id": "P3-materials-match-part-to-property.q4",
+    "title": "The school bag",
+    "kind": "diag",
+    "pool": "page",
+    "lo": [
+      "P3.MAT.C1"
+    ],
+    "pageIntro": "Inspect the body and the strap, then use the table.",
+    "stem": "<p>A school bag has a body (X) and a shoulder strap (Y). The properties of materials N, O and P are shown.</p><p class='q-ask'>Which materials are most suitable to make parts X and Y of the bag?</p>",
+    "figure": "<svg viewBox='0 0 520 230' role='img' aria-label='A school bag. X is the body of the bag; Y is the shoulder strap.'><path class='sl' data-part='X' d='M150 92 h220 q22 0 22 24 v68 q0 22 -22 22 H150 q-22 0 -22 -22 v-68 q0 -24 22 -24 Z'/><path class='ln' d='M128 134 h264'/><path class='ln' data-part='Y' d='M176 94 q10 -74 84 -74 q74 0 84 74'/><line class='ln' x1='300' y1='164' x2='400' y2='164'/><text class='lbl' x='408' y='168'>X</text><line class='ln' x1='300' y1='40' x2='400' y2='40'/><text class='lbl' x='408' y='44'>Y</text></svg><table class='data'><thead><tr><th scope='col'>Property</th><th scope='col'>N</th><th scope='col'>O</th><th scope='col'>P</th></tr></thead><tbody><tr><th scope='row'>flexible</th><td>✓</td><td></td><td>✓</td></tr><tr><th scope='row'>waterproof</th><td></td><td>✓</td><td>✓</td></tr><tr><th scope='row'>strong</th><td>✓</td><td>✓</td><td></td></tr></tbody></table>",
+    "bench": {
+      "parts": [
+        {
+          "id": "X",
+          "label": "bag body",
+          "job": "It holds heavy books, and it is carried through the rain and set down on wet ground.",
+          "needs": [
+            "waterproof",
+            "strong"
+          ]
+        },
+        {
+          "id": "Y",
+          "label": "strap",
+          "job": "It takes the full weight of the books and bends over your shoulder every time you put the bag on.",
+          "needs": [
+            "strong",
+            "flexible"
+          ]
+        }
+      ],
+      "table": {
+        "mats": [
+          "N",
+          "O",
+          "P"
+        ],
+        "has": {
+          "N": [
+            "flexible",
+            "strong"
+          ],
+          "O": [
+            "waterproof",
+            "strong"
+          ],
+          "P": [
+            "flexible",
+            "waterproof"
+          ]
+        }
+      }
+    },
+    "hints": [
+      "The strap bends over your shoulder and carries the weight. That is two properties.",
+      "The body meets rain and holds heavy books. Which material is both waterproof and strong?"
+    ],
+    "key": "Two parts of the same object often need different pairs of properties. Make the job lists separately.",
+    "layout": "table",
+    "cols": [
+      "Part X",
+      "Part Y"
+    ],
+    "options": [
+      {
+        "text": [
+          "N",
+          "O"
+        ],
+        "mis": "MAT-07",
+        "pick": "N is strong so the books are held, and O is strong too, so either way round seems fine.",
+        "why": "N is not waterproof, so rain would soak into the bag. O is not flexible, so the strap could not bend over the shoulder. Both parts are wrong."
+      },
+      {
+        "text": [
+          "P",
+          "N"
+        ],
+        "mis": "MAT-04",
+        "pick": "P is waterproof, which the bag body needs, and N suits the strap.",
+        "why": "P is not strong. A bag body made from P would tear under a pile of books."
+      },
+      {
+        "text": [
+          "O",
+          "P"
+        ],
+        "mis": "MAT-04",
+        "pick": "O suits the body, and P is flexible, which the strap needs.",
+        "why": "P is not strong, and the strap carries the whole weight of the bag."
+      },
+      {
+        "text": [
+          "O",
+          "N"
+        ],
+        "correct": true,
+        "pick": "Body: rain plus heavy books, so waterproof and strong. Strap: weight plus bending, so strong and flexible.",
+        "why": "O is waterproof and strong, which the body needs. N is strong and flexible, which the strap needs."
+      }
+    ]
+  },
+  {
+    "id": "P3-materials-match-part-to-property.q5",
+    "title": "Most ticks is not the answer",
+    "kind": "diag",
+    "pool": "page",
+    "lo": [
+      "P3.MAT.C1"
+    ],
+    "pageIntro": "The same shoe, a new set of materials. Inspect both parts again before you choose.",
+    "stem": "<p>The shoe is to be made from a new set of materials, K, L and M. Material K has a tick for every property.</p><p class='q-ask'>Which materials are most suitable to make parts X and Y of the shoe?</p>",
+    "figure": "<svg viewBox='0 0 520 200' role='img' aria-label='Side view of a shoe. X is the upper part that wraps the foot; Y is the sole.'><path class='sl' data-part='X' d='M64 150 V92 q0 -26 28 -26 h34 q16 0 20 18 l12 34 q6 16 26 18 l170 16 q38 4 40 38 v10 H64 Z'/><path class='sl' data-part='Y' d='M58 150 H446 a16 16 0 0 1 0 32 H58 a16 16 0 0 1 0 -32 Z'/><path class='ln' d='M150 100 l34 20 M166 88 l34 20 M182 76 l34 20'/><line class='ln' x1='120' y1='128' x2='378' y2='128'/><text class='lbl' x='386' y='132'>X</text><line class='ln' x1='300' y1='166' x2='378' y2='166'/><text class='lbl' x='386' y='170'>Y</text></svg><table class='data'><thead><tr><th scope='col'>Property</th><th scope='col'>K</th><th scope='col'>L</th><th scope='col'>M</th></tr></thead><tbody><tr><th scope='row'>flexible</th><td>✓</td><td></td><td>✓</td></tr><tr><th scope='row'>waterproof</th><td>✓</td><td>✓</td><td></td></tr><tr><th scope='row'>strong</th><td>✓</td><td>✓</td><td>✓</td></tr></tbody></table>",
+    "bench": {
+      "parts": [
+        {
+          "id": "X",
+          "label": "upper",
+          "job": "It folds every time you take a step, rain falls on it, and the laces pull it tight.",
+          "needs": [
+            "flexible",
+            "waterproof",
+            "strong"
+          ]
+        },
+        {
+          "id": "Y",
+          "label": "sole",
+          "job": "It carries your body weight, rubs along the ground, and stands on wet floors.",
+          "needs": [
+            "waterproof",
+            "strong"
+          ]
+        }
+      ],
+      "table": {
+        "mats": [
+          "K",
+          "L",
+          "M"
+        ],
+        "has": {
+          "K": [
+            "flexible",
+            "waterproof",
+            "strong"
+          ],
+          "L": [
+            "waterproof",
+            "strong"
+          ],
+          "M": [
+            "flexible",
+            "strong"
+          ]
+        }
+      }
+    },
+    "hints": [
+      "Only one material has all three ticks, and only one part needs all three.",
+      "The sole needs two properties. Which material has exactly those two?"
+    ],
+    "key": "More ticks does not mean more suitable. A part needs exactly the properties on its own job list, no more.",
+    "layout": "table",
+    "cols": [
+      "Part X",
+      "Part Y"
+    ],
+    "options": [
+      {
+        "text": [
+          "M",
+          "K"
+        ],
+        "mis": "MAT-07",
+        "pick": "M is flexible so the upper folds, and K has every tick, so it seems best for the hard-working sole.",
+        "why": "M is not waterproof, so rain would soak through the upper."
+      },
+      {
+        "text": [
+          "K",
+          "L"
+        ],
+        "correct": true,
+        "pick": "The upper needs all three, so it takes K. The sole needs waterproof and strong, so L fits exactly.",
+        "why": "Both parts get every property on their job list, and K is used where all three ticks are actually needed. L having fewer ticks does not matter, because the sole does not need the property L is missing."
+      },
+      {
+        "text": [
+          "K",
+          "M"
+        ],
+        "mis": "MAT-07",
+        "pick": "K is right for the upper, and M is flexible and strong, which sounds hard-wearing for a sole.",
+        "why": "M is not waterproof, and the sole stands on wet floors."
+      },
+      {
+        "text": [
+          "L",
+          "K"
+        ],
+        "mis": "MAT-06",
+        "pick": "K has every tick, so putting it on the sole where the wear happens seems safest.",
+        "why": "L is not flexible, and the upper has to fold with every step. Giving the all-ticks material to the wrong part leaves the other part failing."
+      }
+    ]
+  },
+  {
+    "id": "P3-materials-match-part-to-property.v1",
+    "title": "The bendy part of a straw",
+    "kind": "variant",
+    "pool": "recap",
+    "lo": [
+      "P3.MAT.C1"
+    ],
+    "stem": "<p>The bendy part of a drinking straw is folded each time the straw is used, and the drink flows through it. The properties of four materials are shown.</p><p class='q-ask'>Which material is most suitable for the bendy part?</p>",
+    "figure": "<table class='data'><thead><tr><th scope='col'>Property</th><th scope='col'>A</th><th scope='col'>B</th><th scope='col'>C</th><th scope='col'>D</th></tr></thead><tbody><tr><th scope='row'>flexible</th><td>✓</td><td></td><td>✓</td><td></td></tr><tr><th scope='row'>waterproof</th><td></td><td>✓</td><td>✓</td><td></td></tr><tr><th scope='row'>strong</th><td>✓</td><td>✓</td><td></td><td>✓</td></tr></tbody></table>",
+    "key": "Folded each time → flexible. The drink flows through it → waterproof. The part needs both.",
+    "options": [
+      {
+        "text": "A",
+        "mis": "MAT-07",
+        "pick": "A bends without breaking, and it is strong too.",
+        "why": "A is not waterproof. The drink flows through the bendy part, so it would soak into the material."
+      },
+      {
+        "text": "B",
+        "mis": "MAT-06",
+        "pick": "B is waterproof, so the drink stays inside the straw.",
+        "why": "B is not flexible. The bendy part is folded every time, so B would crack."
+      },
+      {
+        "text": "C",
+        "correct": true,
+        "pick": "List the job first: it is folded (flexible) and holds a drink (waterproof). C has both ticks.",
+        "why": "C is flexible and waterproof, which is everything the bendy part needs."
+      },
+      {
+        "text": "D",
+        "mis": "MAT-02",
+        "pick": "D is strong, and a straw should not break.",
+        "why": "Nothing heavy is put on the bendy part, so strength is not its job. It needs to bend and to hold the drink, and D does neither."
+      }
+    ]
+  },
+  {
+    "id": "P3-materials-match-part-to-property.v2",
+    "title": "A tent",
+    "kind": "variant",
+    "pool": "recap",
+    "lo": [
+      "P3.MAT.C1"
+    ],
+    "stem": "<p>A tent has a cover (X) and poles (Y). The cover must keep the rain out and be folded up small to carry. The poles must hold the cover up and stand out in the rain.</p><p class='q-ask'>Which materials are most suitable for parts X and Y?</p>",
+    "figure": "<table class='data'><thead><tr><th scope='col'>Property</th><th scope='col'>P</th><th scope='col'>Q</th><th scope='col'>R</th></tr></thead><tbody><tr><th scope='row'>flexible</th><td>✓</td><td></td><td>✓</td></tr><tr><th scope='row'>waterproof</th><td>✓</td><td>✓</td><td></td></tr><tr><th scope='row'>strong</th><td></td><td>✓</td><td>✓</td></tr></tbody></table>",
+    "key": "Make a separate job list for each part, then match each list to the table.",
+    "layout": "table",
+    "cols": [
+      "Part X",
+      "Part Y"
+    ],
+    "options": [
+      {
+        "text": [
+          "R",
+          "Q"
+        ],
+        "mis": "MAT-07",
+        "pick": "R bends, so the cover can be folded, and Q is a sensible pole.",
+        "why": "R is not waterproof, so rain would soak through the cover."
+      },
+      {
+        "text": [
+          "Q",
+          "P"
+        ],
+        "mis": "MAT-06",
+        "pick": "Q keeps the rain out, so it seems right for the cover.",
+        "why": "Q is not flexible, so the cover could not be folded up. P is also not strong enough to hold the tent up."
+      },
+      {
+        "text": [
+          "P",
+          "R"
+        ],
+        "mis": "MAT-07",
+        "pick": "P suits the cover, and R is strong enough for the poles.",
+        "why": "R is not waterproof, and the poles stand out in the rain with the cover."
+      },
+      {
+        "text": [
+          "P",
+          "Q"
+        ],
+        "correct": true,
+        "pick": "Cover: rain plus folding, so waterproof and flexible: P. Poles: holding up plus rain, so strong and waterproof: Q.",
+        "why": "Each part gets every property its job needs."
+      }
+    ]
+  },
+  {
+    "id": "P3-materials-match-part-to-property.v3",
+    "title": "A garden hose",
+    "kind": "variant",
+    "pool": "recap",
+    "lo": [
+      "P3.MAT.C1"
+    ],
+    "stem": "<p>A garden hose (X) bends around the garden and has water flowing through it. Its nozzle (Y) also has water flowing through it, and it must not break when it is dropped.</p><p class='q-ask'>Which materials are most suitable for parts X and Y?</p>",
+    "figure": "<table class='data'><thead><tr><th scope='col'>Property</th><th scope='col'>S</th><th scope='col'>T</th><th scope='col'>U</th></tr></thead><tbody><tr><th scope='row'>flexible</th><td>✓</td><td></td><td>✓</td></tr><tr><th scope='row'>waterproof</th><td>✓</td><td>✓</td><td></td></tr><tr><th scope='row'>strong</th><td></td><td>✓</td><td>✓</td></tr></tbody></table>",
+    "key": "Water inside a part counts just like rain on it: that part must be waterproof.",
+    "layout": "table",
+    "cols": [
+      "Part X",
+      "Part Y"
+    ],
+    "options": [
+      {
+        "text": [
+          "S",
+          "T"
+        ],
+        "correct": true,
+        "pick": "Hose: bends and carries water, so flexible and waterproof: S. Nozzle: carries water and must survive a drop, so waterproof and strong: T.",
+        "why": "Each part gets every property its job needs."
+      },
+      {
+        "text": [
+          "U",
+          "T"
+        ],
+        "mis": "MAT-07",
+        "pick": "U bends around the garden and is strong too.",
+        "why": "U is not waterproof, and water flows through the hose all the time."
+      },
+      {
+        "text": [
+          "T",
+          "S"
+        ],
+        "mis": "MAT-06",
+        "pick": "T keeps the water in, which seems like the main job of a hose.",
+        "why": "T is not flexible, so the hose could not bend around the garden. S is also not strong, so the nozzle could break when dropped."
+      },
+      {
+        "text": [
+          "S",
+          "U"
+        ],
+        "mis": "MAT-07",
+        "pick": "S suits the hose, and U is strong, which the nozzle needs.",
+        "why": "U is not waterproof, and water flows through the nozzle."
+      }
+    ]
+  }
+]

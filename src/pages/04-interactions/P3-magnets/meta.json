@@ -1,0 +1,15 @@
+{
+  "id": "P3-magnets",
+  "type": "unit",
+  "theme": "interactions",
+  "topic": "MAG",
+  "level": "P3",
+  "title": "Magnets",
+  "purpose": "Magnets push and pull without touching. Try the poles, find out what a magnet attracts, make a magnet two ways, and spot magnets in everyday things.",
+  "lo": ["P3.MAG.C1", "P3.MAG.C2", "P3.MAG.C3", "P3.MAG.P1", "P3.MAG.P2"],
+  "fixes": "The whole Magnets topic: poles, what magnets attract, making magnets, and their everyday uses.",
+  "origin": "base",
+  "built": "2026-11-12",
+  "order": 0,
+  "uses": ["classify"]
+}

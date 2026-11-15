@@ -1,0 +1,27 @@
+.airsim{display:grid;grid-template-columns:minmax(0,1fr);gap:16px 32px;align-items:start;margin-top:10px}
+@media(min-width:860px){.airsim{grid-template-columns:minmax(0,440px) minmax(0,1fr)}}
+.air-stage{max-width:440px;width:100%;margin:0 auto}
+.air-stage canvas{display:block;width:100%;height:auto;aspect-ratio:520/650;touch-action:manipulation;background:var(--sunk);border-radius:var(--radius)}
+.air-legend{list-style:none;margin:8px 0 0;padding:10px 0 0;border-top:1px solid var(--line);font-size:14px;color:var(--muted)}
+.air-legend li{display:flex;align-items:center;gap:10px;margin:3px 0}
+.dot{width:12px;height:12px;border-radius:50%;flex:none}
+.dot.b{background:var(--sim-1)} .dot.t{background:var(--sim-2)} .dot.s{border-radius:3px;background:var(--sim-3);opacity:.55}
+.air-mode{border:0;margin:0 0 6px;padding:0}
+.air-mode legend{font:600 14px var(--f-label);color:var(--muted);padding:0;margin-bottom:6px}
+.seg{display:inline-flex;flex-wrap:wrap;border:var(--bw) solid var(--ink);border-radius:10px;overflow:hidden}
+.seg label{position:relative;cursor:pointer}
+.seg input{position:absolute;opacity:0;inset:0;margin:0;cursor:pointer}
+.seg span{display:block;padding:10px 14px;min-height:44px;font-size:15px;font-weight:600;user-select:none}
+.seg input:checked + span{background:var(--ink);color:var(--bg)}
+.seg input:focus-visible + span{outline:3px solid var(--hl);outline-offset:-3px}
+.seg label + label{border-left:var(--bw) solid var(--ink)}
+.btn.blow{min-width:170px;font-size:17px;user-select:none;-webkit-user-select:none;touch-action:none}
+.btn.blow.on{background:var(--sim-1);border-color:var(--sim-1);color:#fff}
+.airbar{display:flex;height:22px;border:var(--bw) solid var(--ink);border-radius:6px;overflow:hidden;margin:12px 0 6px}
+.airbar .sb{background:var(--sim-3);width:1%;transition:width .12s linear}
+.airbar .sa{background:var(--sim-2);opacity:.3;flex:1}
+.air-stats caption{text-align:left;font:600 14px var(--f-label);color:var(--muted);padding-bottom:2px}
+.air-stats td,.air-stats th{text-align:left}
+.sw{display:inline-block;width:11px;height:11px;border-radius:3px;margin-right:8px;vertical-align:-1px}
+.sw.b{background:var(--sim-3)} .sw.a{background:var(--sim-2)}
+.air-caption{margin:14px 0;padding:12px 14px;border-left:5px solid var(--sim-1);background:var(--sunk);border-radius:0 10px 10px 0;min-height:5.6em}

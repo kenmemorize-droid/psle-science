@@ -1,0 +1,62 @@
+{
+  "id": "P3-materials-waterproof-vs-absorbent.q6",
+  "title": "A water droplet on two papers",
+  "kind": "exam",
+  "pool": "page",
+  "lo": [
+    "P3.MAT.P1"
+  ],
+  "source": "School paper question (water droplet dropped onto papers A and B)",
+  "pageIntro": "Drop one droplet on each paper and wait. Then read the droplet and the wet patch on each paper.",
+  "stem": "<p>A similar size water droplet is dropped onto papers A and B. The observation is as shown below after five minutes.</p><p class='q-ask'>Which one of the following statements is correct?</p>",
+  "showFigureOnPage": true,
+  "figure": "<svg viewBox='0 0 520 200' role='img' aria-label='Paper A has a water droplet with a small wet patch around it. Paper B has a wet patch and no water droplet.'><g><text class='lbl' x='130' y='26' text-anchor='middle'>A</text><path class='sl' d='M34 50 L206 42 L226 142 L52 152 z'/><text class='lbl sm' x='64' y='70'>paper</text><ellipse class='ln fa' stroke-dasharray='5 4' cx='130' cy='96' rx='22' ry='16'/><ellipse class='ln fa hot' cx='130' cy='96' rx='9' ry='7'/><text class='lbl sm' x='130' y='172' text-anchor='middle'>water droplet</text><text class='lbl sm' x='130' y='188' text-anchor='middle'>wet patch</text></g><g><text class='lbl' x='390' y='26' text-anchor='middle'>B</text><path class='sl' d='M294 50 L466 42 L486 142 L312 152 z'/><text class='lbl sm' x='324' y='70'>paper</text><ellipse class='ln fa' stroke-dasharray='5 4' cx='390' cy='96' rx='42' ry='30'/><text class='lbl sm' x='390' y='172' text-anchor='middle'>wet patch with</text><text class='lbl sm' x='390' y='188' text-anchor='middle'>no water droplet</text></g></svg>",
+  "bench": {
+    "kind": "drop",
+    "materials": [
+      { "id": "A", "rem": [1, 0.95, 0.87, 0.78], "patch": [0, 0.1, 0.2, 0.28] },
+      { "id": "B", "rem": [1, 0.45, 0.1, 0], "patch": [0, 0.45, 0.8, 1] },
+      { "id": "plastic", "ref": true, "rem": [1, 1, 1, 1], "patch": [0, 0, 0, 0] }
+    ]
+  },
+  "hints": [
+    "Look at each paper after five minutes. Which paper still has water sitting on top, and which paper has water that went in?",
+    "A wet patch is the evidence that water has gone into the paper. Which paper has the bigger wet patch?"
+  ],
+  "key": "Water sitting on top of a paper has not been absorbed. A wet patch shows that water went in. Waterproof means no water goes in at all, so a paper with any wet patch is not waterproof.",
+  "options": [
+    {
+      "text": "Paper A is more absorbent than paper B.",
+      "mis": "MAT-09",
+      "pick": "Paper A still has a droplet with water in it, so it looks like the paper that is holding the water.",
+      "why": "The droplet on A is water sitting on top, not water that has been absorbed. B has no droplet left and the largest wet patch, so all of its water went into the paper. B is the more absorbent paper.",
+      "clash": [
+        "Your readings: A kept most of its droplet and had a small wet patch. B's droplet was gone and its wet patch was large."
+      ]
+    },
+    {
+      "text": "Paper A is waterproof but paper B is not.",
+      "mis": "MAT-09",
+      "pick": "The droplet on A is still there after five minutes, so A looks as if it kept the water out, while B soaked it up.",
+      "why": "Waterproof means a material does not absorb water. A has a wet patch and its droplet got smaller, so some water went into it. A absorbed less than B, but it is not waterproof. Only the plastic sheet, with no wet patch at all, absorbed nothing.",
+      "clash": [
+        "Your readings: A's droplet got smaller and left a small wet patch, so A absorbed some water."
+      ]
+    },
+    {
+      "text": "Paper B is more absorbent than paper A.",
+      "correct": true,
+      "pick": "Compare the water on top with the water that went in: B's droplet is gone and its wet patch is the biggest, while most of A's droplet is still on top.",
+      "why": "Absorbent means it takes in water. B took in all of its droplet and shows the larger wet patch. A took in only a little and shows a small wet patch. So B is more absorbent than A."
+    },
+    {
+      "text": "Paper B is less waterproof than paper A.",
+      "mis": "MAT-09",
+      "pick": "It sounds like (3) said another way: B soaks up the water, so it seems less waterproof than A.",
+      "why": "Waterproof is not a matter of more or less: it means the material does not absorb water at all. Both papers have a wet patch, so water went into both and neither is waterproof. What the observation shows is how much each absorbed, and B absorbed more.",
+      "clash": [
+        "Your readings: both A and B have a wet patch, so neither paper is waterproof."
+      ]
+    }
+  ]
+}

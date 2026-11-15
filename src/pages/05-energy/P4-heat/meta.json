@@ -1,0 +1,15 @@
+{
+  "id": "P4-heat",
+  "type": "unit",
+  "theme": "energy",
+  "topic": "HEA",
+  "level": "P4",
+  "title": "Heat",
+  "purpose": "Heat is a form of energy that flows from hotter to colder. Find out where heat comes from, how it differs from temperature, what gaining and losing heat does to things, and which materials let it through.",
+  "lo": ["P4.HEA.C1", "P4.HEA.C2", "P4.HEA.C3", "P4.HEA.C4", "P4.HEA.C5", "P4.HEA.C6", "P4.HEA.C7", "P4.HEA.C8", "P4.HEA.P1"],
+  "fixes": "The whole Heat topic: sources of heat, heat versus temperature, heat flow, expansion and change of state, conductors, and measuring temperature.",
+  "origin": "base",
+  "built": "2026-11-12",
+  "order": 0,
+  "uses": ["classify"]
+}

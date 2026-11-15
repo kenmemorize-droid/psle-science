@@ -1,0 +1,463 @@
+[
+ {
+  "id": "P3-living-things-fungi-on-feet.q1",
+  "title": "Kok Ming's feet",
+  "kind": "exam",
+  "pool": "page",
+  "lo": [
+   "P3.LIV.C1",
+   "P3.LIV.C2",
+   "P6.ENV.C1"
+  ],
+  "source": "School paper question (Kok Ming's feet)",
+  "pageIntro": "Try each piece of advice on the bench and see what happens to the fungi after 3 days. The options unlock when you have tried all four.",
+  "stem": "<p>Kok Ming observed some fungi growing on his feet.</p><p class='q-ask'>What is a good advice to reduce the growth of the fungi on his feet?</p>",
+  "figure": "<table class='data'><caption class='vh'>What each choice leaves for the fungi, and what happens after 3 days</caption><thead><tr><th scope='col'>Choice</th><th scope='col'>Warm?</th><th scope='col'>Dark?</th><th scope='col'>Damp?</th><th scope='col'>Food?</th><th scope='col'>After 3 days</th></tr></thead><tbody><tr><th scope='row'>No socks</th><td>&#10004; yes</td><td>&#10004; yes</td><td>&#10004; yes</td><td>&#10004; yes</td><td>Fungi grow fast.</td></tr><tr><th scope='row'>Closed shoe</th><td>&#10004; yes</td><td>&#10004; yes</td><td>&#10004; yes</td><td>&#10004; yes</td><td>Fungi grow fast.</td></tr><tr><th scope='row'>Open slipper</th><td>&#10006; no</td><td>&#10006; no</td><td>&#10006; no</td><td>&#10004; yes</td><td>Fungi hardly grow.</td></tr><tr><th scope='row'>Keep the dead skin</th><td>&#10004; yes</td><td>&#10004; yes</td><td>&#10004; yes</td><td>&#10004; yes</td><td>Fungi grow fast.</td></tr></tbody></table>",
+  "bench": {
+   "scene": "foot",
+   "goal": "reduce",
+   "tests": [
+    {
+     "label": "No socks",
+     "conds": "1111"
+    },
+    {
+     "label": "Closed shoe",
+     "conds": "1111"
+    },
+    {
+     "label": "Open slipper",
+     "conds": "0001"
+    },
+    {
+     "label": "Keep the dead skin",
+     "conds": "1111"
+    }
+   ]
+  },
+  "hints": [
+   "Fungi like four things: warmth, darkness, water and food. Which advice takes some of them away?",
+   "Look at your bench log. Which advice leaves the fungi with the fewest of the four things?"
+  ],
+  "key": "Good advice takes away at least one thing fungi like: warmth, darkness, water or food. A choice that changes none of them will not help.",
+  "options": [
+   {
+    "text": "Do not wear socks.",
+    "pick": "Socks make feet hot and sweaty, so taking them off should help.",
+    "why": "Without socks, the shoes still keep his feet warm, dark and damp, and the dead skin is still there. Nothing fungi like has been taken away.",
+    "mis": "LIV-10"
+   },
+   {
+    "text": "Wear a closed shoe.",
+    "pick": "A closed shoe covers the feet, so it seems to keep fungi away.",
+    "why": "A closed shoe traps heat, keeps out light and holds in sweat. It gives fungi the warmth, darkness and water they like.",
+    "mis": "LIV-11"
+   },
+   {
+    "text": "Wear an open slipper.",
+    "pick": "Ask what fungi like: warm, dark, damp places with food. An open slipper lets in air and light, so the feet get cooler and drier.",
+    "why": "Air and light reach the feet, so they are cooler, brighter and drier. Only the dead skin is left as food, so fungi grow much less.",
+    "correct": true
+   },
+   {
+    "text": "Do not remove the dead skin on his feet.",
+    "pick": "Dead skin is part of the foot, and leaving it alone seems harmless.",
+    "why": "Fungi feed on dead skin. Leaving it gives them food. Removing it would take their food away.",
+    "mis": "LIV-12"
+   }
+  ]
+ },
+ {
+  "id": "P3-living-things-fungi-on-feet.q2",
+  "title": "Mei Ling's bread",
+  "kind": "diag",
+  "pool": "page",
+  "lo": [
+   "P3.LIV.C1",
+   "P3.LIV.C2",
+   "P6.ENV.C1"
+  ],
+  "source": "Diagnostic question: fungi on food",
+  "pageIntro": "Try each way of keeping bread on the bench and see how much mould grows after 3 days. The options unlock when you have tried all four.",
+  "stem": "<p>Mei Ling found fuzzy green mould, which is a fungus, growing on a slice of bread that was left out for days. She wants the next loaf to stay mould-free.</p><p class='q-ask'>Which is the best way to keep the bread?</p>",
+  "figure": "<table class='data'><caption class='vh'>What each choice leaves for the fungi, and what happens after 3 days</caption><thead><tr><th scope='col'>Choice</th><th scope='col'>Warm?</th><th scope='col'>Dark?</th><th scope='col'>Damp?</th><th scope='col'>Food?</th><th scope='col'>After 3 days</th></tr></thead><tbody><tr><th scope='row'>Sealed bag, warm cupboard</th><td>&#10004; yes</td><td>&#10004; yes</td><td>&#10004; yes</td><td>&#10004; yes</td><td>Fungi grow fast.</td></tr><tr><th scope='row'>Beside a steaming kettle, bright kitchen</th><td>&#10004; yes</td><td>&#10006; no</td><td>&#10004; yes</td><td>&#10004; yes</td><td>Fungi keep growing.</td></tr><tr><th scope='row'>Damp cloth, cupboard</th><td>&#10004; yes</td><td>&#10004; yes</td><td>&#10004; yes</td><td>&#10004; yes</td><td>Fungi grow fast.</td></tr><tr><th scope='row'>Dry box, fridge</th><td>&#10006; no</td><td>&#10004; yes</td><td>&#10006; no</td><td>&#10004; yes</td><td>Fungi grow slowly.</td></tr></tbody></table>",
+  "bench": {
+   "scene": "bread",
+   "goal": "reduce",
+   "tests": [
+    {
+     "label": "Sealed bag, warm cupboard",
+     "conds": "1111"
+    },
+    {
+     "label": "Beside a steaming kettle, bright kitchen",
+     "conds": "1011"
+    },
+    {
+     "label": "Damp cloth, cupboard",
+     "conds": "1111"
+    },
+    {
+     "label": "Dry box, fridge",
+     "conds": "0101"
+    }
+   ]
+  },
+  "hints": [
+   "Bread is food, so you cannot take that away. Which of the other three things can you change?",
+   "Compare how many of the four things each choice leaves. Which place leaves the fewest?"
+  ],
+  "key": "You cannot always take away the food. Keeping food cool and dry slows fungi down.",
+  "options": [
+   {
+    "text": "Seal the bread in a plastic bag and keep it in a warm cupboard.",
+    "pick": "A sealed bag stops anything from getting onto the bread.",
+    "why": "The bag traps moisture, and the cupboard is warm and dark. With the bread as food, fungi have all four things they like.",
+    "mis": "LIV-11"
+   },
+   {
+    "text": "Leave the bread uncovered beside a steaming kettle in a bright kitchen.",
+    "pick": "The kitchen is bright and uncovered bread can breathe, so mould should not grow.",
+    "why": "Light helps a little, but the steam keeps the bread damp and the kettle keeps it warm. Fungi still have three of the four things.",
+    "mis": "LIV-13"
+   },
+   {
+    "text": "Wrap the bread in a damp cloth and keep it in a cupboard.",
+    "pick": "A damp cloth keeps the bread soft and fresh.",
+    "why": "Water is one of the things fungi like. The damp cloth, the warm dark cupboard and the bread give fungi all four.",
+    "mis": "LIV-13"
+   },
+   {
+    "text": "Keep the bread in a dry, covered box in the fridge.",
+    "pick": "Ask which place is cool and dry. The fridge is cool, and a dry box keeps water away.",
+    "why": "Cool and dry take away two of the four things. Fungi still have food and darkness, so they grow slowly.",
+    "correct": true
+   }
+  ]
+ },
+ {
+  "id": "P3-living-things-fungi-on-feet.q3",
+  "title": "Ali's wet shoes",
+  "kind": "diag",
+  "pool": "page",
+  "lo": [
+   "P3.LIV.C1",
+   "P3.LIV.C2",
+   "P6.ENV.C1"
+  ],
+  "source": "Diagnostic question: fungi in shoes",
+  "pageIntro": "Try each choice on the bench and see what happens to the fungi after 3 days. The options unlock when you have tried all four.",
+  "stem": "<p>It rained heavily and Ali's school shoes were soaked. His mother wants to stop fungi growing inside them.</p><p class='q-ask'>What should Ali do with the shoes?</p>",
+  "figure": "<table class='data'><caption class='vh'>What each choice leaves for the fungi, and what happens after 3 days</caption><thead><tr><th scope='col'>Choice</th><th scope='col'>Warm?</th><th scope='col'>Dark?</th><th scope='col'>Damp?</th><th scope='col'>Food?</th><th scope='col'>After 3 days</th></tr></thead><tbody><tr><th scope='row'>Open, in sun and air</th><td>&#10004; yes</td><td>&#10006; no</td><td>&#10006; no</td><td>&#10004; yes</td><td>Fungi grow slowly.</td></tr><tr><th scope='row'>Dark shoe cabinet</th><td>&#10004; yes</td><td>&#10004; yes</td><td>&#10004; yes</td><td>&#10004; yes</td><td>Fungi grow fast.</td></tr><tr><th scope='row'>Plastic bag</th><td>&#10004; yes</td><td>&#10004; yes</td><td>&#10004; yes</td><td>&#10004; yes</td><td>Fungi grow fast.</td></tr><tr><th scope='row'>Wear them wet</th><td>&#10004; yes</td><td>&#10004; yes</td><td>&#10004; yes</td><td>&#10004; yes</td><td>Fungi grow fast.</td></tr></tbody></table>",
+  "bench": {
+   "scene": "shoe",
+   "goal": "reduce",
+   "tests": [
+    {
+     "label": "Open, in sun and air",
+     "conds": "1001"
+    },
+    {
+     "label": "Dark shoe cabinet",
+     "conds": "1111"
+    },
+    {
+     "label": "Plastic bag",
+     "conds": "1111"
+    },
+    {
+     "label": "Wear them wet",
+     "conds": "1111"
+    }
+   ]
+  },
+  "hints": [
+   "The inside of a shoe has dead skin and dirt, which are food. Which choice changes the other three things?",
+   "Does the choice leave the shoes wet, warm and dark?"
+  ],
+  "key": "You do not have to take away all four things. Taking away even two, such as water and darkness, slows fungi a lot.",
+  "options": [
+   {
+    "text": "Open the shoes and leave them in a sunny, airy place to dry.",
+    "pick": "Take away what you can change easily: the water and the darkness.",
+    "why": "Drying takes away water and light takes away darkness. Fungi still have warmth and food, so they grow slowly.",
+    "correct": true
+   },
+   {
+    "text": "Put the wet shoes in the dark shoe cabinet straight away.",
+    "pick": "Shoes belong in the cabinet, and a closed cabinet keeps them clean.",
+    "why": "The cabinet is closed and dark, and the shoes stay wet. The dirt and dead skin inside are food. All four things are still there.",
+    "mis": "LIV-11"
+   },
+   {
+    "text": "Put the wet shoes in a plastic bag.",
+    "pick": "A bag stops the water from spreading to other things.",
+    "why": "The bag traps the water and the warmth. The shoes stay damp and dark, so fungi keep growing.",
+    "mis": "LIV-13"
+   },
+   {
+    "text": "Wear them again tomorrow while they are still wet.",
+    "pick": "Body heat will dry them as he wears them.",
+    "why": "His feet keep the shoes warm, and the shoes stay damp and dark. Nothing fungi like has been taken away.",
+    "mis": "LIV-10"
+   }
+  ]
+ },
+ {
+  "id": "P3-living-things-fungi-on-feet.q4",
+  "title": "Jia Hui's fungi hunt",
+  "kind": "diag",
+  "pool": "page",
+  "lo": [
+   "P3.LIV.C2",
+   "P6.ENV.C1"
+  ],
+  "source": "Diagnostic question: where fungi grow best",
+  "pageIntro": "Try each place on the bench and see how much fungi grow after 3 days. The options unlock when you have tried all four.",
+  "stem": "<p>Jia Hui is looking for places where fungi grow well. This time the question is the other way round.</p><p class='q-ask'>Where would fungi grow fastest?</p>",
+  "figure": "<table class='data'><caption class='vh'>What each choice leaves for the fungi, and what happens after 3 days</caption><thead><tr><th scope='col'>Choice</th><th scope='col'>Warm?</th><th scope='col'>Dark?</th><th scope='col'>Damp?</th><th scope='col'>Food?</th><th scope='col'>After 3 days</th></tr></thead><tbody><tr><th scope='row'>Bare rock, dry sunshine</th><td>&#10004; yes</td><td>&#10006; no</td><td>&#10006; no</td><td>&#10006; no</td><td>Fungi hardly grow.</td></tr><tr><th scope='row'>Rotting log, damp forest</th><td>&#10004; yes</td><td>&#10004; yes</td><td>&#10004; yes</td><td>&#10004; yes</td><td>Fungi grow fast.</td></tr><tr><th scope='row'>Clean plate, cold dry fridge</th><td>&#10006; no</td><td>&#10004; yes</td><td>&#10006; no</td><td>&#10006; no</td><td>Fungi hardly grow.</td></tr><tr><th scope='row'>Dead leaves, dry sunshine</th><td>&#10004; yes</td><td>&#10006; no</td><td>&#10006; no</td><td>&#10004; yes</td><td>Fungi grow slowly.</td></tr></tbody></table>",
+  "bench": {
+   "scene": "dish",
+   "goal": "boost",
+   "tests": [
+    {
+     "label": "Bare rock, dry sunshine",
+     "conds": "1000"
+    },
+    {
+     "label": "Rotting log, damp forest",
+     "conds": "1111"
+    },
+    {
+     "label": "Clean plate, cold dry fridge",
+     "conds": "0100"
+    },
+    {
+     "label": "Dead leaves, dry sunshine",
+     "conds": "1001"
+    }
+   ]
+  },
+  "hints": [
+   "What do fungi feed on? Which places have dead things for food?",
+   "Which place has all four things: food, warmth, darkness and water?"
+  ],
+  "key": "To find where fungi grow fastest, look for food first. Then check for warmth, darkness and water.",
+  "options": [
+   {
+    "text": "On a bare rock in dry, bright sunshine.",
+    "pick": "The sun makes the rock warm, and fungi like warmth.",
+    "why": "Warmth is the only thing there. A rock is not food, and it is dry and bright.",
+    "mis": "LIV-14"
+   },
+   {
+    "text": "On a rotting log in a damp, shaded forest.",
+    "pick": "Look for a place with food, water, warmth and darkness.",
+    "why": "A rotting log is dead plant matter, so it is food. It is also warm, damp and shaded. All four are there.",
+    "correct": true
+   },
+   {
+    "text": "On a clean glass plate in a cold, dry fridge.",
+    "pick": "A fridge is dark, and fungi like the dark.",
+    "why": "Darkness is the only thing there. A clean plate has no food, and the fridge is cold and dry.",
+    "mis": "LIV-14"
+   },
+   {
+    "text": "On a pile of dead leaves in dry, bright sunshine.",
+    "pick": "Dead leaves are food and the sun keeps them warm.",
+    "why": "There is food and warmth, but the leaves are dry and bright. Fungi would grow slowly at best.",
+    "mis": "LIV-13"
+   }
+  ]
+ },
+ {
+  "id": "P3-living-things-fungi-on-feet.v1",
+  "title": "Pei Shan's toes",
+  "kind": "variant",
+  "pool": "recap",
+  "lo": [
+   "P3.LIV.C2",
+   "P6.ENV.C1"
+  ],
+  "stem": "<p>Pei Shan found fungi growing between her toes.</p><p class='q-ask'>Which advice would best reduce the growth of the fungi?</p>",
+  "key": "Take away what fungi like: dry the feet, remove the dead skin and let in air and light.",
+  "options": [
+   {
+    "text": "Wash her feet, dry them well and wear open sandals.",
+    "pick": "Washing takes off dead skin, drying removes water, and sandals let in air and light.",
+    "why": "Dead skin (food) is washed off, water is dried off, and air and light cool and brighten her feet. Fungi have much less of what they like.",
+    "correct": true
+   },
+   {
+    "text": "Wear thick socks and closed shoes all day.",
+    "pick": "Socks and shoes cover her feet and keep the fungi from spreading.",
+    "why": "Socks and closed shoes keep her feet warm, dark and sweaty. That gives fungi what they like.",
+    "mis": "LIV-11"
+   },
+   {
+    "text": "Soak her feet in warm water and leave them damp.",
+    "pick": "Warm water kills fungi and keeps the skin clean.",
+    "why": "Leaving her feet damp keeps the water that fungi need, and warmth helps them grow.",
+    "mis": "LIV-13"
+   },
+   {
+    "text": "Leave the dead skin between her toes alone.",
+    "pick": "Dead skin is part of the foot and does no harm.",
+    "why": "Fungi feed on dead skin. If it stays, they keep their food.",
+    "mis": "LIV-12"
+   }
+  ]
+ },
+ {
+  "id": "P3-living-things-fungi-on-feet.v2",
+  "title": "Ahmad's belt",
+  "kind": "variant",
+  "pool": "recap",
+  "lo": [
+   "P3.LIV.C2",
+   "P6.ENV.C1"
+  ],
+  "stem": "<p>Ahmad found white mould growing on an old leather belt that he kept in a closed, dark drawer.</p><p class='q-ask'>What should he do so that mould does not grow on the belt again?</p>",
+  "key": "Take away food (dirt), darkness and water. Put it where it is clean, dry and bright.",
+  "options": [
+   {
+    "text": "Put the belt back in the closed, dark drawer.",
+    "pick": "The drawer keeps the belt safe from anything outside.",
+    "why": "The drawer is dark and closed, so it stays warm and the belt can stay damp. Nothing fungi like is taken away.",
+    "mis": "LIV-11"
+   },
+   {
+    "text": "Leave the dirt on it, because dirt does not matter.",
+    "pick": "Dirt is only on the outside, so it cannot feed anything.",
+    "why": "Fungi feed on dirt and other dead matter. Dirt left on the belt is food.",
+    "mis": "LIV-12"
+   },
+   {
+    "text": "Spray air freshener on the belt.",
+    "pick": "The smell hides the mould and seems to clean the belt.",
+    "why": "Air freshener does not take away warmth, darkness, water or food. The fungi keep growing.",
+    "mis": "LIV-10"
+   },
+   {
+    "text": "Wipe off the dirt and mould, then keep the belt in a dry, airy place.",
+    "pick": "Wiping takes off the food, and a dry, airy place takes away water and darkness.",
+    "why": "Removing dirt takes away food, and a dry airy place takes away water and darkness. Fungi have much less of what they like.",
+    "correct": true
+   }
+  ]
+ },
+ {
+  "id": "P3-living-things-fungi-on-feet.v3",
+  "title": "The fastest fungi",
+  "kind": "variant",
+  "pool": "recap",
+  "lo": [
+   "P3.LIV.C2",
+   "P6.ENV.C1"
+  ],
+  "stem": "<p>Four places are listed below.</p><p class='q-ask'>In which place would fungi grow fastest?</p>",
+  "key": "Fungi grow fastest when all four things are there: food, warmth, darkness and water.",
+  "options": [
+   {
+    "text": "On a clean metal tray on a warm, dry, bright windowsill.",
+    "pick": "The windowsill is warm, and fungi like warmth.",
+    "why": "Warmth is the only thing there. A clean tray is not food, and the place is dry and bright.",
+    "mis": "LIV-14"
+   },
+   {
+    "text": "In a dim corner of a bathroom floor, warm and damp, with hair and dead skin flakes.",
+    "pick": "Hair and dead skin are food, and the corner is warm, dim and damp.",
+    "why": "Food, warmth, darkness and water are all there, so fungi grow fast.",
+    "correct": true
+   },
+   {
+    "text": "In a clean glass jar in a cold, dry fridge.",
+    "pick": "The fridge is dark, and fungi like the dark.",
+    "why": "Darkness is the only thing there. The jar has no food, and the fridge is cold and dry.",
+    "mis": "LIV-14"
+   },
+   {
+    "text": "On old bread crusts on a dry, sunny windowsill.",
+    "pick": "Bread crusts are food and the sun keeps them warm.",
+    "why": "There is food and warmth, but it is dry and bright. Fungi would grow slowly.",
+    "mis": "LIV-13"
+   }
+  ]
+ },
+ {
+  "id": "P3-living-things-fungi-on-feet.v4",
+  "title": "Wei Jie's towel",
+  "kind": "variant",
+  "pool": "recap",
+  "lo": [
+   "P3.LIV.C2",
+   "P6.ENV.C1"
+  ],
+  "stem": "<p>Wei Jie's wet towel smells musty because fungi are growing on it.</p><p class='q-ask'>What should he do to reduce the growth of the fungi?</p>",
+  "key": "Dry the towel and let in light. That takes away water and darkness.",
+  "options": [
+   {
+    "text": "Spray perfume on the towel.",
+    "pick": "The perfume covers the smell and makes the towel fresh.",
+    "why": "Perfume does not take away warmth, darkness, water or food. The fungi keep growing.",
+    "mis": "LIV-10"
+   },
+   {
+    "text": "Fold the towel and keep it in a closed cupboard.",
+    "pick": "Folding and closing the towel keeps it neat and away from dirt.",
+    "why": "The towel stays wet, dark and warm in the cupboard, so fungi keep growing.",
+    "mis": "LIV-11"
+   },
+   {
+    "text": "Hang the towel open in a sunny, breezy place.",
+    "pick": "Hanging it open lets the water dry off and the light reach it.",
+    "why": "Drying takes away water, and sunlight takes away darkness. Fungi grow much less.",
+    "correct": true
+   },
+   {
+    "text": "Leave the towel on the damp bathroom floor.",
+    "pick": "The towel is already wet, so it cannot get any worse.",
+    "why": "The damp floor keeps the towel wet. Water is one of the things fungi like.",
+    "mis": "LIV-13"
+   }
+  ]
+ },
+ {
+  "id": "P3-living-things-fungi-on-feet.v5",
+  "title": "Most mould",
+  "kind": "variant",
+  "pool": "recap",
+  "lo": [
+   "P3.LIV.C2",
+   "P6.ENV.C1"
+  ],
+  "stem": "<p>Four setups are listed below.</p><p class='q-ask'>Which setup would grow the most mould?</p>",
+  "key": "Look for food first. Then check for water, warmth and darkness. The best place has all four.",
+  "options": [
+   {
+    "text": "An old bread crust in a warm, damp cupboard.",
+    "pick": "The crust is food, and the cupboard is warm, damp and dark.",
+    "why": "All four things are there: food, warmth, darkness and water.",
+    "correct": true
+   },
+   {
+    "text": "A clean spoon in a cold, dry fridge.",
+    "pick": "A fridge is dark, and fungi like the dark.",
+    "why": "Darkness is the only thing there. A clean spoon is not food, and the fridge is cold and dry.",
+    "mis": "LIV-14"
+   },
+   {
+    "text": "A clean glass on a warm, dry, bright windowsill.",
+    "pick": "The windowsill is warm, and fungi like warmth.",
+    "why": "Warmth is the only thing there. A clean glass is not food, and the place is dry and bright.",
+    "mis": "LIV-14"
+   },
+   {
+    "text": "An old bread crust on a dry, bright windowsill.",
+    "pick": "The crust is food and the sun keeps it warm.",
+    "why": "There is food and warmth, but it is dry and bright, so fungi grow slowly.",
+    "mis": "LIV-13"
+   }
+  ]
+ }
+]

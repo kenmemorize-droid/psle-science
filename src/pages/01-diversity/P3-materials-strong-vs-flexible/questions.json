@@ -1,0 +1,720 @@
+[
+  {
+    "id": "P3-materials-strong-vs-flexible.q1",
+    "title": "The paper clip wire",
+    "kind": "exam",
+    "pool": "page",
+    "lo": [
+      "P3.MAT.C1"
+    ],
+    "source": "School paper question (paper clip wire)",
+    "pageIntro": "Test the wire on the bench. Run both tests, then answer.",
+    "stem": "<p>A steel paper clip is made from a piece of straight metal wire. The results of two tests on the wire are shown.</p><p class='q-ask'>The metal wire can be formed into the shape of the paper clip without breaking because the wire is ______.</p>",
+    "figure": "<table class='data'><thead><tr><th scope='col'>Test on the wire</th><th scope='col'>What happened</th></tr></thead><tbody><tr><th scope='row'>Load test</th><td>It held the load without breaking.</td></tr><tr><th scope='row'>Bend test</th><td>It bent without breaking.</td></tr></tbody></table>",
+    "bench": {
+      "specimens": [
+        {
+          "id": "W",
+          "name": "straight metal wire",
+          "props": {
+            "strong": true,
+            "flex": true
+          }
+        }
+      ],
+      "tests": [
+        "strong",
+        "flex"
+      ]
+    },
+    "hints": [
+      "Which of the two tests changed the shape of the wire?",
+      "The wire passed both tests. Only one of them is about turning a straight wire into a curved clip."
+    ],
+    "key": "Strong answers the load test. Flexible answers the bend test. Shaping something is always a bending question.",
+    "options": [
+      {
+        "text": "strong",
+        "mis": "MAT-01",
+        "pick": "The wire did hold the load without breaking, and \"strong\" sounds like the safest word for metal.",
+        "why": "Strong only means it can take a load without breaking. A ceramic tile passes the load test and still snaps the moment it is bent, so being strong cannot explain how the wire was shaped.",
+        "clash": [
+          "Your results: the load test never changed the shape of the wire."
+        ]
+      },
+      {
+        "text": "flexible",
+        "correct": true,
+        "pick": "Making a paper clip means bending the wire into curves, so look at the bend test: the wire bent without breaking.",
+        "why": "Flexible means it can bend without breaking. Forming the clip is bending, and the wire came through the bend test in one piece."
+      },
+      {
+        "text": "waterproof",
+        "mis": "MAT-02",
+        "pick": "Metal does not absorb water, so \"waterproof\" is a true statement about the wire.",
+        "why": "It is true, but it is not the reason. Nothing in this question involves water, so this property is not being used.",
+        "clash": [
+          "Neither test involved water."
+        ]
+      },
+      {
+        "text": "able to let light pass through it",
+        "mis": "MAT-02",
+        "pick": "It is one of the five properties, and it is the only option left if the first three seem wrong.",
+        "why": "How much light a material lets through has nothing to do with bending a wire into shape.",
+        "clash": [
+          "Neither test involved light."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "P3-materials-strong-vs-flexible.q2",
+    "title": "Describing material K",
+    "kind": "diag",
+    "pool": "page",
+    "lo": [
+      "P3.MAT.P1"
+    ],
+    "pageIntro": "Material K has not been used yet. Run both tests on it, then describe it.",
+    "stem": "<p>A strip of material K was tested. The results are shown.</p><p class='q-ask'>Which statement describes material K?</p>",
+    "figure": "<table class='data'><thead><tr><th scope='col'>Test on K</th><th scope='col'>What happened</th></tr></thead><tbody><tr><th scope='row'>Load test</th><td>It held the load without breaking.</td></tr><tr><th scope='row'>Bend test</th><td>It snapped as soon as it was bent.</td></tr></tbody></table>",
+    "bench": {
+      "specimens": [
+        {
+          "id": "K",
+          "name": "strip of material K",
+          "props": {
+            "strong": true,
+            "flex": false
+          }
+        }
+      ],
+      "tests": [
+        "strong",
+        "flex"
+      ]
+    },
+    "hints": [
+      "Your two results are different. One passed and one failed.",
+      "Describe K in two halves: what the load test showed, then what the bend test showed."
+    ],
+    "key": "A material can pass one test and fail the other. Always say which test you mean.",
+    "options": [
+      {
+        "text": "Material K is strong and flexible.",
+        "mis": "MAT-03",
+        "pick": "K survived the load test, and a material that passes one test often feels like it would pass the other.",
+        "why": "K snapped in the bend test, so it is not flexible. Passing the load test says nothing about bending.",
+        "clash": [
+          "Your results: K snapped as soon as it was bent."
+        ]
+      },
+      {
+        "text": "Material K is not strong but it is flexible.",
+        "mis": "MAT-01",
+        "pick": "A material that breaks is easy to think of as weak, and \"flexible\" fills the other half.",
+        "why": "This is the opposite of the results. K held the load, so it is strong. It was the bending that broke it, so it is not flexible.",
+        "clash": [
+          "Your results: K held the load without breaking."
+        ]
+      },
+      {
+        "text": "Material K is strong but not flexible.",
+        "correct": true,
+        "pick": "Take the two results one at a time: load test passed, bend test failed.",
+        "why": "K held the load without breaking, so it is strong. It snapped when it was bent, so it is not flexible. Glass and ceramic behave like this."
+      },
+      {
+        "text": "Material K is neither strong nor flexible.",
+        "mis": "MAT-01",
+        "pick": "K broke, so it seems to fail everything.",
+        "why": "K only broke in the bend test. Snapping when bent shows it is not flexible; it does not show it is weak. It held the load, so it is strong.",
+        "clash": [
+          "Your results: K held the load without breaking."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "P3-materials-strong-vs-flexible.q3",
+    "title": "Choosing wire for a paper clip",
+    "kind": "diag",
+    "pool": "page",
+    "lo": [
+      "P3.MAT.C1"
+    ],
+    "pageIntro": "Three wires, A, B and C. Run both tests on all three.",
+    "stem": "<p>A paper clip has to be bent into shape and then hold a thick stack of paper tightly without breaking. Three wires, A, B and C, were tested.</p><p class='q-ask'>Which wire is most suitable for making the paper clip?</p>",
+    "figure": "<table class='data'><thead><tr><th scope='col'>Wire</th><th scope='col'>Load test</th><th scope='col'>Bend test</th></tr></thead><tbody><tr><th scope='row'>A</th><td>broke under the load</td><td>bent without breaking</td></tr><tr><th scope='row'>B</th><td>held the load without breaking</td><td>bent without breaking</td></tr><tr><th scope='row'>C</th><td>held the load without breaking</td><td>snapped as soon as it was bent</td></tr></tbody></table>",
+    "bench": {
+      "specimens": [
+        {
+          "id": "A",
+          "name": "wire A",
+          "props": {
+            "strong": false,
+            "flex": true
+          }
+        },
+        {
+          "id": "B",
+          "name": "wire B",
+          "props": {
+            "strong": true,
+            "flex": true
+          }
+        },
+        {
+          "id": "C",
+          "name": "wire C",
+          "props": {
+            "strong": true,
+            "flex": false
+          }
+        }
+      ],
+      "tests": [
+        "strong",
+        "flex"
+      ]
+    },
+    "hints": [
+      "The clip has two jobs: it must be bent into shape, and it must then hold paper without breaking. That is two properties.",
+      "Which wire passed both tests?"
+    ],
+    "key": "When a job needs two properties, the material must pass both tests. One pass is never enough.",
+    "options": [
+      {
+        "text": "A",
+        "mis": "MAT-04",
+        "pick": "A bends easily, which is what making a paper clip looks like.",
+        "why": "A broke under the load. A clip made from A would come apart as soon as it gripped a thick stack of paper.",
+        "clash": [
+          "Your results: A broke under the load."
+        ]
+      },
+      {
+        "text": "C",
+        "mis": "MAT-01",
+        "pick": "C is strong, and a clip has to be tough to hold paper.",
+        "why": "C snapped when it was bent, so it could never be formed into a clip in the first place.",
+        "clash": [
+          "Your results: C snapped as soon as it was bent."
+        ]
+      },
+      {
+        "text": "Any of the three",
+        "mis": "MAT-04",
+        "pick": "All three are wires, so all three could be made into a clip.",
+        "why": "Only B passed both tests. A and C each failed a test the clip depends on.",
+        "clash": [
+          "Your results: A broke under the load and C snapped when bent."
+        ]
+      },
+      {
+        "text": "B",
+        "correct": true,
+        "pick": "List both jobs first, then find the wire that passed both tests.",
+        "why": "B bent without breaking and held the load without breaking, so it can be shaped and then grip the paper."
+      }
+    ]
+  },
+  {
+    "id": "P3-materials-strong-vs-flexible.q4",
+    "title": "A toy boat for the pool",
+    "kind": "diag",
+    "pool": "page",
+    "lo": [
+      "P3.MAT.C1"
+    ],
+    "pageIntro": "Run the float test and the water test on all three materials.",
+    "stem": "<p>The body of a toy boat must stay on the surface of the water and must not get soggy after a long time in the pool. Three materials, P, Q and R, were tested.</p><p class='q-ask'>Which material is most suitable for the body of the toy boat?</p>",
+    "figure": "<table class='data'><thead><tr><th scope='col'>Material</th><th scope='col'>Float test</th><th scope='col'>Water test</th></tr></thead><tbody><tr><th scope='row'>P</th><td>stayed near the surface</td><td>did not absorb water</td></tr><tr><th scope='row'>Q</th><td>sank to the bottom</td><td>did not absorb water</td></tr><tr><th scope='row'>R</th><td>stayed near the surface</td><td>absorbed water, mass went up</td></tr></tbody></table>",
+    "bench": {
+      "specimens": [
+        {
+          "id": "P",
+          "name": "material P",
+          "props": {
+            "float": true,
+            "water": true
+          }
+        },
+        {
+          "id": "Q",
+          "name": "material Q",
+          "props": {
+            "float": false,
+            "water": true
+          }
+        },
+        {
+          "id": "R",
+          "name": "material R",
+          "props": {
+            "float": true,
+            "water": false
+          }
+        }
+      ],
+      "tests": [
+        "float",
+        "water"
+      ]
+    },
+    "hints": [
+      "Two jobs again: stay at the surface, and do not absorb water.",
+      "One material floats but absorbs water. One does not absorb water but sinks. Only one does both."
+    ],
+    "key": "Floating and being waterproof are two separate properties. A material can float and still absorb water.",
+    "options": [
+      {
+        "text": "P",
+        "correct": true,
+        "pick": "Check both tests and take the material that passed both.",
+        "why": "P stayed near the surface and did not absorb water, so the boat stays up and does not get soggy."
+      },
+      {
+        "text": "Q",
+        "mis": "MAT-04",
+        "pick": "Q does not absorb water, so no water gets into the boat.",
+        "why": "Q sank in the float test. A boat that does not absorb water is still no use at the bottom of the pool.",
+        "clash": [
+          "Your results: Q sank to the bottom."
+        ]
+      },
+      {
+        "text": "R",
+        "mis": "MAT-03",
+        "pick": "R floats, and floating looks like the main job of a boat.",
+        "why": "R absorbed water. Floating says nothing about absorbing water, and a boat made of R would become soggy, which the question says to avoid.",
+        "clash": [
+          "Your results: R absorbed water and its mass went up."
+        ]
+      },
+      {
+        "text": "Either P or R",
+        "mis": "MAT-03",
+        "pick": "Both P and R floated, so either one would keep the boat up.",
+        "why": "Floating is only one of the two jobs. R fails the water test, so only P passes both.",
+        "clash": [
+          "Your results: R absorbed water and its mass went up."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "P3-materials-strong-vs-flexible.q5",
+    "title": "A window pane for the classroom",
+    "kind": "diag",
+    "pool": "page",
+    "lo": [
+      "P3.MAT.C1"
+    ],
+    "pageIntro": "Run the light test and the load test on all three materials.",
+    "stem": "<p>A classroom window pane must let in as much daylight as possible and must not break when the wind pushes on it. Three materials, D, E and F, were tested.</p><p class='q-ask'>Which material is most suitable for the window pane?</p>",
+    "figure": "<table class='data'><thead><tr><th scope='col'>Material</th><th scope='col'>Light test</th><th scope='col'>Load test</th></tr></thead><tbody><tr><th scope='row'>D</th><td>let most light through</td><td>broke under the load</td></tr><tr><th scope='row'>E</th><td>let most light through</td><td>held the load without breaking</td></tr><tr><th scope='row'>F</th><td>let some light through</td><td>held the load without breaking</td></tr></tbody></table>",
+    "bench": {
+      "specimens": [
+        {
+          "id": "D",
+          "name": "material D",
+          "props": {
+            "light": "most",
+            "strong": false
+          }
+        },
+        {
+          "id": "E",
+          "name": "material E",
+          "props": {
+            "light": "most",
+            "strong": true
+          }
+        },
+        {
+          "id": "F",
+          "name": "material F",
+          "props": {
+            "light": "some",
+            "strong": true
+          }
+        }
+      ],
+      "tests": [
+        "light",
+        "strong"
+      ]
+    },
+    "hints": [
+      "Two materials let most light through. Which of them also held the load?",
+      "A window that lets in light but breaks in the wind has failed one of its two jobs."
+    ],
+    "key": "How much light passes through is a property of its own: most, some or no light. Check it alongside the other properties the job needs.",
+    "options": [
+      {
+        "text": "D",
+        "mis": "MAT-04",
+        "pick": "D lets most light through, which is what a window is for.",
+        "why": "D broke under the load, so it would not survive the wind pushing on it.",
+        "clash": [
+          "Your results: D broke under the load."
+        ]
+      },
+      {
+        "text": "F",
+        "mis": "MAT-04",
+        "pick": "F is strong, and a window has to survive knocks.",
+        "why": "F only lets some light through, so the classroom would be dim. The window must let in as much daylight as possible.",
+        "clash": [
+          "Your results: F let only some light through."
+        ]
+      },
+      {
+        "text": "Either D or E",
+        "mis": "MAT-04",
+        "pick": "D and E both let most light through, so either would light the room.",
+        "why": "Letting light through is only one of the two jobs. D broke under the load, so only E does both.",
+        "clash": [
+          "Your results: D broke under the load."
+        ]
+      },
+      {
+        "text": "E",
+        "correct": true,
+        "pick": "Take the two jobs together: most light through, and no breaking under a load.",
+        "why": "E is the only material that passed both tests."
+      }
+    ]
+  },
+  {
+    "id": "P3-materials-strong-vs-flexible.q6",
+    "title": "Fair test: two strips of one material",
+    "kind": "diag",
+    "pool": "page",
+    "lo": [
+      "P3.MAT.P1"
+    ],
+    "pageIntro": "Both strips are cut from the same material M. One is thin and one is thick. Bend both and see what happens.",
+    "stem": "<p>Two strips were cut from the same material M. One strip is thin and the other is thick. Both strips were bent. The results are shown.</p><p class='q-ask'>Lindy wants to compare how flexible four different materials are. What must she keep the same for a fair test?</p>",
+    "figure": "<table class='data'><thead><tr><th scope='col'>Strip</th><th scope='col'>Bend test</th></tr></thead><tbody><tr><th scope='row'>Thin strip of M</th><td>bent without breaking</td></tr><tr><th scope='row'>Thick strip of M</th><td>snapped as soon as it was bent</td></tr></tbody></table>",
+    "bench": {
+      "specimens": [
+        {
+          "id": "M1",
+          "name": "thin strip of M",
+          "props": {
+            "flex": true
+          }
+        },
+        {
+          "id": "M2",
+          "name": "thick strip of M",
+          "props": {
+            "flex": false
+          }
+        }
+      ],
+      "tests": [
+        "flex"
+      ]
+    },
+    "hints": [
+      "Same material, two different results. What was different about the two strips?",
+      "If thickness alone can change the result, what must be kept the same when four different materials are compared?"
+    ],
+    "key": "Only the type of material may change. Everything else that could affect the bending, such as size, thickness and how far it is bent, must be kept the same.",
+    "options": [
+      {
+        "text": "The colour of each strip",
+        "mis": "MAT-05",
+        "pick": "Keeping something the same sounds like the right idea, and colour is easy to control.",
+        "why": "Colour has no effect on whether a material bends without breaking, so controlling it does nothing to make the test fair."
+      },
+      {
+        "text": "The type of material in each strip",
+        "mis": "MAT-05",
+        "pick": "The question says \"keep the same\", and the materials are what she is testing.",
+        "why": "The type of material is the one thing that must change. It is what she is testing, so keeping it the same would leave nothing to compare."
+      },
+      {
+        "text": "The size and thickness of each strip, and how far each is bent",
+        "correct": true,
+        "pick": "Find what else could change the result, then keep all of it the same.",
+        "why": "The bench showed that thickness alone changed the result for the same material. If the strips differ in size or are bent by different amounts, a difference in the result might come from that instead of the material."
+      },
+      {
+        "text": "Nothing. She can just bend each strip until it breaks.",
+        "mis": "MAT-05",
+        "pick": "Each strip gets the same action, so it feels fair already.",
+        "why": "Your two strips of M got the same action and still gave different results, because one was thicker. Without keeping thickness the same, the comparison tells you nothing about the materials.",
+        "clash": [
+          "Your results: the same material M gave two different bend results."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "P3-materials-strong-vs-flexible.v1",
+    "title": "Wrapping a sandwich",
+    "kind": "variant",
+    "pool": "recap",
+    "lo": [
+      "P3.MAT.C1"
+    ],
+    "stem": "<p>A sheet of aluminium foil can be folded tightly around a sandwich without breaking.</p><p class='q-ask'>Which property of the foil makes this possible?</p>",
+    "key": "Folding and wrapping are bending jobs. Bending without breaking is flexibility.",
+    "options": [
+      {
+        "text": "It is strong.",
+        "mis": "MAT-01",
+        "pick": "Foil that stays in one piece sounds tough, so \"strong\" seems to fit.",
+        "why": "Strong means it can take a load without breaking. Nothing heavy is hanging on the foil here; it is being folded, which is bending."
+      },
+      {
+        "text": "It is waterproof.",
+        "mis": "MAT-02",
+        "pick": "Foil keeps a sandwich from getting wet, so waterproof sounds useful.",
+        "why": "That may be true, but the question is about folding the foil without breaking it. Waterproof is about not absorbing water, and folding does not test that."
+      },
+      {
+        "text": "It does not let light pass through.",
+        "mis": "MAT-02",
+        "pick": "You cannot see through foil, which is a real property of foil.",
+        "why": "True, but it has nothing to do with folding. Light is not part of this job."
+      },
+      {
+        "text": "It is flexible.",
+        "correct": true,
+        "pick": "Folding is bending. Ask which property lets a material bend without breaking.",
+        "why": "Flexible means it can bend without breaking, which is exactly what happens when the foil is folded around the sandwich."
+      }
+    ]
+  },
+  {
+    "id": "P3-materials-strong-vs-flexible.v2",
+    "title": "Two strips, two results",
+    "kind": "variant",
+    "pool": "recap",
+    "lo": [
+      "P3.MAT.P1"
+    ],
+    "stem": "<p>Strips of materials X and Y were tested. The results are shown.</p><p class='q-ask'>Which statement is correct?</p>",
+    "figure": "<table class='data'><thead><tr><th scope='col'>Material</th><th scope='col'>Load test</th><th scope='col'>Bend test</th></tr></thead><tbody><tr><th scope='row'>X</th><td>held the load without breaking</td><td>snapped as soon as it was bent</td></tr><tr><th scope='row'>Y</th><td>held the load without breaking</td><td>bent without breaking</td></tr></tbody></table>",
+    "key": "Read each test on its own. The load test decides strong; the bend test decides flexible.",
+    "options": [
+      {
+        "text": "X is not strong, because it snapped.",
+        "mis": "MAT-01",
+        "pick": "X broke, and breaking sounds like being weak.",
+        "why": "X snapped in the bend test, not the load test. It held the load, so it is strong. Snapping when bent shows it is not flexible."
+      },
+      {
+        "text": "Y is flexible, so it must also be waterproof.",
+        "mis": "MAT-03",
+        "pick": "Y passed both tests, so it seems to be good at everything.",
+        "why": "Waterproof was never tested. Bending tells you nothing about whether a material absorbs water."
+      },
+      {
+        "text": "X and Y are both strong, but only Y is flexible.",
+        "correct": true,
+        "pick": "Read each test on its own: both held the load, and only Y bent without breaking.",
+        "why": "Holding the load without breaking means strong, so both are strong. Only Y passed the bend test, so only Y is flexible."
+      },
+      {
+        "text": "X and Y are both flexible, because they both held the load.",
+        "mis": "MAT-03",
+        "pick": "Both did well in the load test, so it seems both would do well when bent.",
+        "why": "The load test checks strength, not flexibility. X snapped when it was bent, so X is not flexible."
+      }
+    ]
+  },
+  {
+    "id": "P3-materials-strong-vs-flexible.v3",
+    "title": "A swimming float",
+    "kind": "variant",
+    "pool": "recap",
+    "lo": [
+      "P3.MAT.C1"
+    ],
+    "stem": "<p>A swimming float must stay on the surface of the water and must not absorb water. Four materials were tested.</p><p class='q-ask'>Which material is most suitable for making the float?</p>",
+    "figure": "<table class='data'><thead><tr><th scope='col'>Material</th><th scope='col'>Float test</th><th scope='col'>Water test</th></tr></thead><tbody><tr><th scope='row'>J</th><td>stayed near the surface</td><td>absorbed water, mass went up</td></tr><tr><th scope='row'>K</th><td>sank to the bottom</td><td>did not absorb water</td></tr><tr><th scope='row'>L</th><td>stayed near the surface</td><td>did not absorb water</td></tr><tr><th scope='row'>M</th><td>sank to the bottom</td><td>absorbed water, mass went up</td></tr></tbody></table>",
+    "key": "Floating and not absorbing water are two separate properties. The float needs both.",
+    "options": [
+      {
+        "text": "L",
+        "correct": true,
+        "pick": "List the two jobs, then find the material that passed both tests.",
+        "why": "L stayed near the surface and did not absorb water, so it does both jobs."
+      },
+      {
+        "text": "J",
+        "mis": "MAT-03",
+        "pick": "J floats, and floating looks like the main job of a float.",
+        "why": "J absorbed water. Floating says nothing about absorbing water, and a float that soaks up water gets heavy and soggy."
+      },
+      {
+        "text": "K",
+        "mis": "MAT-04",
+        "pick": "K does not absorb water, so it stays dry.",
+        "why": "K sank. A float must stay on the surface, so K fails one of its two jobs."
+      },
+      {
+        "text": "Either J or L",
+        "mis": "MAT-04",
+        "pick": "J and L both floated, so either would stay on the surface.",
+        "why": "Floating is only one of the two jobs. J absorbed water, so only L passes both tests."
+      }
+    ]
+  },
+  {
+    "id": "P3-materials-strong-vs-flexible.v4",
+    "title": "Which fabric absorbs the most?",
+    "kind": "variant",
+    "pool": "recap",
+    "lo": [
+      "P3.MAT.P1"
+    ],
+    "stem": "<p>Siti wants to find out which of three fabrics absorbs the most water. She soaks a piece of each fabric in water and measures its mass before and after soaking.</p><p class='q-ask'>Which of these must she keep the same for a fair test?</p>",
+    "key": "Change only the type of material. Keep everything else that could affect the result the same. The result is what you measure.",
+    "options": [
+      {
+        "text": "The type of fabric",
+        "mis": "MAT-05",
+        "pick": "It is what the experiment is about, so it feels important to control.",
+        "why": "The type of fabric is the one thing she changes on purpose. If it were kept the same, there would be nothing to compare."
+      },
+      {
+        "text": "The mass of each piece after soaking",
+        "mis": "MAT-05",
+        "pick": "Mass is being measured, so it sounds like something to control.",
+        "why": "The mass after soaking is the result she measures. It is expected to be different for each fabric; that is how she finds the answer."
+      },
+      {
+        "text": "The colour of each fabric",
+        "mis": "MAT-05",
+        "pick": "It is easy to keep the same, so it sounds like a fair-test answer.",
+        "why": "Colour does not affect how much water a fabric absorbs, so keeping it the same does nothing for the test."
+      },
+      {
+        "text": "The size of each piece, the amount of water and the soaking time",
+        "correct": true,
+        "pick": "Ask what else could change how much water goes in, then keep all of it the same.",
+        "why": "A bigger piece, more water or a longer soak could each make a fabric take in more water. Keeping them the same means any difference comes from the fabric."
+      }
+    ]
+  },
+  {
+    "id": "P3-materials-strong-vs-flexible.v5",
+    "title": "A fair bending test",
+    "kind": "variant",
+    "pool": "recap",
+    "lo": [
+      "P3.MAT.P1"
+    ],
+    "stem": "<p>Ali wants to compare how flexible four materials are.</p><p class='q-ask'>Which set-up is a fair test?</p>",
+    "key": "To compare flexibility, bend the materials. Only the type of material changes; the strips and the bending stay the same.",
+    "options": [
+      {
+        "text": "Strips of different thicknesses, each bent until it breaks",
+        "mis": "MAT-05",
+        "pick": "Every strip gets the same action, so it feels fair.",
+        "why": "A thick strip can snap when a thin strip of the same material bends. Different thicknesses would spoil the comparison."
+      },
+      {
+        "text": "Strips of the same size, each with a load hung on it",
+        "mis": "MAT-02",
+        "pick": "The strips are the same size, which is what a fair test needs.",
+        "why": "Hanging a load tests strength, not flexibility. To compare flexibility, the strips must be bent."
+      },
+      {
+        "text": "Strips of the same size and thickness, each bent by the same amount",
+        "correct": true,
+        "pick": "Only the type of material should change; the strips and the bending should be the same.",
+        "why": "With the same size, thickness and amount of bending, any difference in the result must come from the material."
+      },
+      {
+        "text": "Strips of the same size, but the first strip is bent much more than the others",
+        "mis": "MAT-05",
+        "pick": "The strips are the same size, so it seems the test is already fair.",
+        "why": "Bending one strip more than the others changes a second thing. Each strip must be bent by the same amount."
+      }
+    ]
+  },
+  {
+    "id": "P3-materials-strong-vs-flexible.v6",
+    "title": "A bright classroom",
+    "kind": "variant",
+    "pool": "recap",
+    "lo": [
+      "P3.MAT.C1"
+    ],
+    "stem": "<p>Classroom windows are made of glass so that the room is bright during the day.</p><p class='q-ask'>Which property of glass is being used here?</p>",
+    "key": "Match the property to the job named in the question. Here the job is letting daylight in.",
+    "options": [
+      {
+        "text": "It lets most light pass through.",
+        "correct": true,
+        "pick": "The job named is keeping the room bright, so look for the property about light.",
+        "why": "Glass lets most light pass through, so daylight enters the room."
+      },
+      {
+        "text": "It is waterproof.",
+        "mis": "MAT-02",
+        "pick": "Windows keep the rain out, so waterproof is something glass is good at.",
+        "why": "True, but the question asks about keeping the room bright. That job uses the light property, not waterproof."
+      },
+      {
+        "text": "It is strong.",
+        "mis": "MAT-02",
+        "pick": "Windows have to survive wind and knocks, so strength matters.",
+        "why": "Strength matters for a window, but it does not make the room bright. Match the property to the job named in the question."
+      },
+      {
+        "text": "It is not flexible.",
+        "mis": "MAT-02",
+        "pick": "Glass snaps when it is bent, which is a real property of glass.",
+        "why": "That is true of glass, but it does nothing to brighten the room."
+      }
+    ]
+  },
+  {
+    "id": "P3-materials-strong-vs-flexible.v7",
+    "title": "A lunch box lid",
+    "kind": "variant",
+    "pool": "recap",
+    "lo": [
+      "P3.MAT.C1"
+    ],
+    "stem": "<p>A lunch box lid must let you see the food inside without opening it, and must not break when another box is stacked on top. Four materials were tested.</p><p class='q-ask'>Which material is most suitable for the lid?</p>",
+    "figure": "<table class='data'><thead><tr><th scope='col'>Material</th><th scope='col'>Light test</th><th scope='col'>Load test</th></tr></thead><tbody><tr><th scope='row'>P</th><td>let most light through</td><td>broke under the load</td></tr><tr><th scope='row'>Q</th><td>let most light through</td><td>held the load without breaking</td></tr><tr><th scope='row'>R</th><td>let no light through</td><td>held the load without breaking</td></tr><tr><th scope='row'>S</th><td>let some light through</td><td>held the load without breaking</td></tr></tbody></table>",
+    "key": "List both jobs, then check every material against both. The most suitable one passes both clearly.",
+    "options": [
+      {
+        "text": "P",
+        "mis": "MAT-04",
+        "pick": "P lets most light through, so you can see the food clearly.",
+        "why": "P broke under the load, so it fails the second job."
+      },
+      {
+        "text": "R",
+        "mis": "MAT-04",
+        "pick": "R is strong, and a lid that gets things stacked on it needs to be strong.",
+        "why": "R lets no light through, so you could not see the food at all."
+      },
+      {
+        "text": "S",
+        "mis": "MAT-04",
+        "pick": "S is strong and you can still see a little through it.",
+        "why": "S only lets some light through, so the food would be hard to see. Q does both jobs fully."
+      },
+      {
+        "text": "Q",
+        "correct": true,
+        "pick": "List both jobs, then pick the material that passed both tests.",
+        "why": "Q lets most light through and held the load without breaking."
+      }
+    ]
+  }
+]
