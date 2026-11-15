@@ -2,6 +2,598 @@
  "note": "One tag = one wrong idea. Reuse before creating. Each tag needs 3+ questions across the platform, 2+ of them hidden recap variants (pool: recap).",
  "tags": [
   {
+   "id": "DIG-01",
+   "topic": "DIG",
+   "lo": "P4.DIG.C2",
+   "label": "Thinks water is absorbed somewhere other than the large intestine",
+   "fix": "Water is absorbed from the undigested food in the large intestine. What is left becomes faeces.",
+   "learn": "P4-digestive-system-food-journey.html#see-it"
+  },
+  {
+   "id": "DIG-02",
+   "topic": "DIG",
+   "lo": "P4.DIG.C2",
+   "label": "Mixes up what the mouth, gullet and stomach each do",
+   "fix": "Mouth: teeth cut and grind the food, and saliva mixes in. Gullet: muscles squeeze the food down to the stomach; no digestive juice is made there. Stomach: muscles churn the food while gastric juice digests it into a thick liquid.",
+   "learn": "P4-digestive-system-food-journey.html#see-it"
+  },
+  {
+   "id": "DIG-03",
+   "topic": "DIG",
+   "lo": "P4.DIG.C2",
+   "label": "Thinks digested food is absorbed somewhere other than the small intestine",
+   "fix": "Digestion is completed in the small intestine, and the digested food passes through its wall into the blood.",
+   "learn": "P4-digestive-system-food-journey.html#see-it"
+  },
+  {
+   "id": "DIG-04",
+   "topic": "DIG",
+   "lo": "P4.DIG.C2",
+   "label": "Thinks digestion is finished in the stomach",
+   "fix": "The stomach only partly digests the food. Digestion is completed in the small intestine.",
+   "learn": "P4-digestive-system-food-journey.html#see-it"
+  },
+  {
+   "id": "DIG-05",
+   "topic": "DIG",
+   "lo": "P4.DIG.C2",
+   "label": "Gets the order of the digestive parts wrong",
+   "fix": "Food moves one way only: mouth → gullet → stomach → small intestine → large intestine.",
+   "learn": "P4-digestive-system-food-journey.html#see-it"
+  },
+  {
+   "id": "DIG-06",
+   "topic": "DIG",
+   "lo": "P4.DIG.C2",
+   "label": "Mixes up what happens to digested and undigested food",
+   "fix": "Digested food passes into the blood in the small intestine. Undigested food, such as fibre, cannot pass into the blood: it moves on to the large intestine, where water is absorbed from it, and leaves the body as faeces.",
+   "learn": "P4-digestive-system-food-journey.html#see-it"
+  },
+  {
+   "id": "DIG-07",
+   "topic": "DIG",
+   "lo": "P4.DIG.C1",
+   "label": "Mixes up the jobs of the body systems",
+   "fix": "Respiratory: takes in oxygen and removes carbon dioxide. Circulatory: carries digested food, water and oxygen to all parts of the body. Digestive: breaks food down. Skeletal: supports, shapes and protects. Muscular: works with the skeleton to move body parts.",
+   "learn": "P4-digestive-system.html#e1"
+  },
+  {
+   "id": "DIG-08",
+   "topic": "DIG",
+   "lo": "P4.DIG.C1",
+   "label": "Puts a body part in the wrong system",
+   "fix": "Nose, windpipe, lungs: respiratory. Heart, blood, blood vessels: circulatory. Mouth to large intestine: digestive. Bones: skeletal. Muscles: muscular.",
+   "learn": "P4-digestive-system.html#e1"
+  },
+  {
+   "id": "DIG-09",
+   "topic": "DIG",
+   "lo": "P4.DIG.C1",
+   "label": "Doesn't know what digestion is for",
+   "fix": "Digestion breaks food down into simpler substances that are small enough to pass into the blood. Carrying them around the body is the circulatory system's job.",
+   "learn": "P4-digestive-system.html#e2"
+  },
+  {
+   "id": "DIG-10",
+   "topic": "DIG",
+   "lo": "P4.DIG.C2",
+   "label": "Thinks digestion begins somewhere after the mouth",
+   "fix": "Digestion begins in the mouth. The teeth cut and grind the food, and saliva, a digestive juice, starts to digest it.",
+   "learn": "P4-digestive-system.html#e2"
+  },
+  {
+   "id": "FOR-01",
+   "topic": "FOR",
+   "lo": "P6.FOR.C2",
+   "label": "The moving thing carries a force",
+   "fix": "A moving object carries a force inside it, given by whatever set it moving.",
+   "learn": "04-interactions/P6-forces.html#see-it"
+  },
+  {
+   "id": "FOR-02",
+   "topic": "FOR",
+   "lo": "P6.FOR.C3",
+   "label": "It stops when its force runs out",
+   "fix": "A moving object stops because its force runs out, not because a force such as friction acts on it.",
+   "learn": "04-interactions/P6-forces.html#see-it"
+  },
+  {
+   "id": "FOR-03",
+   "topic": "FOR",
+   "lo": "P6.FOR.C2",
+   "label": "Still things have no forces on them",
+   "fix": "An object that is not moving has no forces acting on it.",
+   "learn": "04-interactions/P6-forces.html#see-it"
+  },
+  {
+   "id": "FOR-04",
+   "topic": "FOR",
+   "lo": "P6.FOR.C4",
+   "label": "Gravity only works sometimes",
+   "fix": "Gravity acts only at certain times: only when falling, not when resting, held, moving up, near a magnet or on the Moon.",
+   "learn": "04-interactions/P6-forces.html#see-it"
+  },
+  {
+   "id": "FOR-06",
+   "topic": "FOR",
+   "lo": "P6.FOR.C3",
+   "label": "Friction is always bad",
+   "fix": "Friction is always unwanted and should be removed.",
+   "learn": "04-interactions/P6-forces.html#see-it"
+  },
+  {
+   "id": "FOR-07",
+   "topic": "FOR",
+   "lo": "P6.FOR.P1",
+   "label": "Smooth means no friction",
+   "fix": "Smooth surfaces have no friction.",
+   "learn": "04-interactions/P6-forces.html#see-it"
+  },
+  {
+   "id": "FOR-08",
+   "topic": "FOR",
+   "lo": "P6.FOR.P1",
+   "label": "Friction pushes things along",
+   "fix": "Friction acts in the direction of motion and helps objects move.",
+   "learn": "04-interactions/P6-forces.html#see-it"
+  },
+  {
+   "id": "FOR-09",
+   "topic": "FOR",
+   "lo": "P6.FOR.P2",
+   "label": "Springs stretch the same every time",
+   "fix": "How much a spring stretches does not depend on the load.",
+   "learn": "04-interactions/P6-forces.html#see-it"
+  },
+  {
+   "id": "FOR-10",
+   "topic": "FOR",
+   "lo": "P6.FOR.P2",
+   "label": "Length and extension are the same",
+   "fix": "The length of a spring and its extension are the same thing.",
+   "learn": "04-interactions/P6-forces.html#see-it"
+  },
+  {
+   "id": "FOR-11",
+   "topic": "FOR",
+   "lo": "P6.FOR.P2",
+   "label": "A spring doesn't push back",
+   "fix": "A stretched or squashed spring pushes or pulls the same way it is being moved, or not at all.",
+   "learn": "04-interactions/P6-forces.html#see-it"
+  },
+  {
+   "id": "FOR-12",
+   "topic": "FOR",
+   "lo": "P6.FOR.P1",
+   "label": "Change everything at once",
+   "fix": "In an experiment, several variables can be changed at once, or the variable being tested is kept the same.",
+   "learn": "04-interactions/P6-forces.html#see-it"
+  },
+  {
+   "id": "FOR-13",
+   "topic": "FOR",
+   "lo": "P6.FOR.P2",
+   "label": "Double the load, double the length",
+   "fix": "Doubling the load doubles the length of the spring, rather than its extension.",
+   "learn": "04-interactions/P6-forces.html#see-it"
+  },
+  {
+   "id": "FOR-14",
+   "topic": "FOR",
+   "lo": "P6.FOR.C3",
+   "label": "A force needs touching",
+   "fix": "A force can act only when two things touch.",
+   "learn": "04-interactions/P6-forces.html#see-it"
+  },
+  {
+   "id": "FOR-15",
+   "topic": "FOR",
+   "lo": "P6.FOR.C2",
+   "label": "Forces only start things moving",
+   "fix": "A force can only start things moving. It cannot stop, slow, turn or change the shape of an object.",
+   "learn": "04-interactions/P6-forces.html#see-it"
+  },
+  {
+   "id": "FOR-22",
+   "topic": "FOR",
+   "lo": "P6.FOR.C3",
+   "label": "Magnets act on everything",
+   "fix": "A magnet affects every object, or every metal.",
+   "learn": "04-interactions/P6-forces.html#see-it"
+  },
+  {
+   "id": "FOR-23",
+   "topic": "FOR",
+   "lo": "P6.FOR.C3",
+   "label": "Magnets only push",
+   "fix": "Attraction and repulsion are mixed up: a magnet pushes away objects it attracts.",
+   "learn": "04-interactions/P6-forces.html#see-it"
+  },
+  {
+   "id": "FOR-25",
+   "topic": "FOR",
+   "lo": "P6.FOR.C3",
+   "label": "Gravity only acts on big things",
+   "fix": "Only large objects experience gravitational force.",
+   "learn": "04-interactions/P6-forces.html#see-it"
+  },
+  {
+   "id": "FOR-26",
+   "topic": "FOR",
+   "lo": "P6.FOR.C2",
+   "label": "Names an effect the force did not have",
+   "fix": "Any effect of a force will do, instead of the one that matches what actually changed.",
+   "learn": "04-interactions/P6-forces.html#see-it"
+  },
+  {
+   "id": "FOR-27",
+   "topic": "FOR",
+   "lo": "P6.FOR.C3",
+   "label": "Blames gravity for every change",
+   "fix": "Gravitational force is given as the reason for a sideways or backwards change, when gravity pulls only towards the Earth.",
+   "learn": "04-interactions/P6-forces.html#see-it"
+  },
+  {
+   "id": "FOR-28",
+   "topic": "FOR",
+   "lo": "P6.FOR.P2",
+   "label": "Reads one step of the table as the total",
+   "fix": "The change for one step in a results table is taken as the total change, without counting the steps.",
+   "learn": "04-interactions/P6-forces.html#see-it"
+  },
+  {
+   "id": "FOR-29",
+   "topic": "FOR",
+   "lo": "P6.FOR.C4",
+   "label": "Thinks gravitational force pushes",
+   "fix": "Gravitational force is described as a push away from the Earth rather than a pull towards it.",
+   "learn": "04-interactions/P6-forces.html#see-it"
+  },
+  {
+   "id": "HEA-01",
+   "topic": "HEA",
+   "lo": "P4.HEA.C4",
+   "label": "Thinks heat and temperature are the same thing",
+   "fix": "Temperature is how hot something is. Heat is energy. More water at the same temperature holds more heat; the same water at a higher temperature holds more heat.",
+   "learn": "P4-heat.html#e3"
+  },
+  {
+   "id": "HEA-02",
+   "topic": "HEA",
+   "lo": "P4.HEA.C5",
+   "label": "Thinks \"cold\" is something that flows or is given out",
+   "fix": "Only heat flows, always from hotter to colder. Something feels or becomes cold because it loses heat.",
+   "learn": "P4-heat.html#e2"
+  },
+  {
+   "id": "HEA-03",
+   "topic": "HEA",
+   "lo": "P4.HEA.C5",
+   "label": "Thinks heat flow stops before, or goes past, the point where both temperatures are equal",
+   "fix": "Heat flows from hotter to colder until both reach the same temperature, somewhere in between, and then it stops.",
+   "learn": "P4-heat.html#e2"
+  },
+  {
+   "id": "HEA-04",
+   "topic": "HEA",
+   "lo": "P4.HEA.C6",
+   "label": "Mixes up heat gain and heat loss when a temperature changes",
+   "fix": "If the temperature rises, the object gained heat. If the temperature falls, it lost heat.",
+   "learn": "P4-heat.html#e2"
+  },
+  {
+   "id": "HEA-05",
+   "topic": "HEA",
+   "lo": "P4.HEA.C7",
+   "label": "Thinks mass changes when something expands or contracts",
+   "fix": "Expanding or contracting changes the volume, not the mass.",
+   "learn": "P4-heat.html#e4"
+  },
+  {
+   "id": "HEA-06",
+   "topic": "HEA",
+   "lo": "P4.HEA.C7",
+   "label": "Mixes up when things expand and when they contract",
+   "fix": "Gaining heat makes things expand. Losing heat makes them contract. Solids, liquids and gases all do this.",
+   "learn": "P4-heat.html#e4"
+  },
+  {
+   "id": "HEA-07",
+   "topic": "HEA",
+   "lo": "P4.HEA.C8",
+   "label": "Mixes up good and poor conductors of heat",
+   "fix": "Metals are good conductors: heat flows through them easily. Wood, plastics, air and rubber are poor conductors. Metal feels cold because it conducts heat away from your hand fast.",
+   "learn": "P4-heat.html#e5"
+  },
+  {
+   "id": "HEA-08",
+   "topic": "HEA",
+   "lo": "P4.HEA.P1",
+   "label": "Misreads a thermometer, or trusts touch to measure temperature",
+   "fix": "Find what one small mark is worth, then count from the nearest number below. Touch only tells you how fast heat leaves your hand, so use a thermometer.",
+   "learn": "P4-heat.html#e6"
+  },
+  {
+   "id": "HEA-09",
+   "topic": "HEA",
+   "lo": "P4.HEA.C7",
+   "label": "Mixes up heat gain and heat loss in a change of state",
+   "fix": "Melting, boiling and evaporating need heat gain. Freezing and condensing happen through heat loss.",
+   "learn": "P4-heat.html#e4"
+  },
+  {
+   "id": "HEA-10",
+   "topic": "HEA",
+   "lo": "P4.HEA.C1",
+   "label": "Mixes up what is and is not a source of heat",
+   "fix": "A source of heat produces heat: the Sun, burning things, switched-on appliances, rubbing things together. Ice, the Moon and switched-off appliances produce none.",
+   "learn": "P4-heat.html#e1"
+  },
+  {
+   "id": "HRC-01",
+   "topic": "HRC",
+   "lo": "P5.HRC.C2",
+   "label": "Exhaled air has no oxygen",
+   "fix": "We use up all the oxygen, so the air we breathe out has none left.",
+   "learn": "03-systems/P5-respiratory-circulatory.html#see-it"
+  },
+  {
+   "id": "HRC-02",
+   "topic": "HRC",
+   "lo": "P5.HRC.C2",
+   "label": "Gas exchange happens in the nose or windpipe",
+   "fix": "Oxygen enters the blood in the nose, windpipe or blood vessels rather than the lungs.",
+   "learn": "03-systems/P5-respiratory-circulatory.html#see-it"
+  },
+  {
+   "id": "HRC-03",
+   "topic": "HRC",
+   "lo": "P5.HRC.C1",
+   "label": "The parts do each other's jobs",
+   "fix": "The jobs of the nose, windpipe and heart are mixed up (for example the windpipe filters the air).",
+   "learn": "03-systems/P5-respiratory-circulatory.html#see-it"
+  },
+  {
+   "id": "HRC-04",
+   "topic": "HRC",
+   "lo": "P5.HRC.C2",
+   "label": "The heart is part of breathing",
+   "fix": "The heart takes in oxygen, pumps air or does gas exchange, so it belongs to the respiratory system.",
+   "learn": "03-systems/P5-respiratory-circulatory.html#see-it"
+  },
+  {
+   "id": "HRC-05",
+   "topic": "HRC",
+   "lo": "P5.HRC.C2",
+   "label": "The lungs use up the oxygen",
+   "fix": "Oxygen is used in the lungs, not at the body cells.",
+   "learn": "03-systems/P5-respiratory-circulatory.html#see-it"
+  },
+  {
+   "id": "HRC-06",
+   "topic": "HRC",
+   "lo": "P5.HRC.C3",
+   "label": "Air in and air out are the same, or all oxygen in and all carbon dioxide out",
+   "fix": "The change in gases between breathed-in and breathed-out air is mixed up.",
+   "learn": "03-systems/P5-respiratory-circulatory.html#see-it"
+  },
+  {
+   "id": "HRC-07",
+   "topic": "HRC",
+   "lo": "P5.HRC.C3",
+   "label": "Blood only carries oxygen",
+   "fix": "Blood carries only one thing, or is not changed when it passes through the lungs.",
+   "learn": "03-systems/P5-respiratory-circulatory.html#see-it"
+  },
+  {
+   "id": "HRC-10",
+   "topic": "HRC",
+   "lo": "P5.HRC.P1",
+   "label": "Blood vessels carry air",
+   "fix": "Air, not blood, travels in the blood vessels, or the heart is a tube.",
+   "learn": "03-systems/P5-respiratory-circulatory.html#see-it"
+  },
+  {
+   "id": "HRC-12",
+   "topic": "HRC",
+   "lo": "P5.HRC.P1",
+   "label": "Every animal breathes with lungs",
+   "fix": "Fish, plants or other living things take in oxygen the way humans do.",
+   "learn": "03-systems/P5-respiratory-circulatory.html#see-it"
+  },
+  {
+   "id": "HRC-13",
+   "topic": "HRC",
+   "lo": "P5.HRC.C3",
+   "label": "Plants do not use oxygen",
+   "fix": "Only animals take in oxygen and give out carbon dioxide.",
+   "learn": "03-systems/P5-respiratory-circulatory.html#see-it"
+  },
+  {
+   "id": "HRC-14",
+   "topic": "HRC",
+   "lo": "P5.HRC.C2",
+   "label": "Plants have no tubes",
+   "fix": "Plants do not carry water and food inside them.",
+   "learn": "03-systems/P5-respiratory-circulatory.html#see-it"
+  },
+  {
+   "id": "HRC-15",
+   "topic": "HRC",
+   "lo": "P5.HRC.C2",
+   "label": "Gets the order of the air path wrong",
+   "fix": "The parts of the respiratory system are put in the wrong order, or the breathing-out path is given for breathing in.",
+   "learn": "03-systems/P5-respiratory-circulatory.html#see-it"
+  },
+  {
+   "id": "HRC-16",
+   "topic": "HRC",
+   "lo": "P5.HRC.C2",
+   "label": "Thinks blood vessels pump the blood",
+   "fix": "The pumping job of the heart is given to the blood vessels.",
+   "learn": "03-systems/P5-respiratory-circulatory.html#see-it"
+  },
+  {
+   "id": "HRC-17",
+   "topic": "HRC",
+   "lo": "P5.HRC.C3",
+   "label": "Thinks the cells store the oxygen",
+   "fix": "Oxygen delivered to the body cells is stored rather than used to release energy from food.",
+   "learn": "03-systems/P5-respiratory-circulatory.html#see-it"
+  },
+  {
+   "id": "HRC-18",
+   "topic": "HRC",
+   "lo": "P5.HRC.P1",
+   "label": "Picks the wrong part of a fish",
+   "fix": "A part used for swimming or feeding is chosen as the part that takes in oxygen from the water.",
+   "learn": "03-systems/P5-respiratory-circulatory.html#see-it"
+  },
+  {
+   "id": "LCY-01",
+   "topic": "LCY",
+   "lo": "P3.LCY.P2",
+   "label": "Mixes up which animals have 3-stage and which have 4-stage life cycles",
+   "fix": "4 stages (egg, larva, pupa, adult): butterfly, beetle, mosquito. 3 stages: cockroach and grasshopper (egg, nymph, adult), and chicken and frog (egg, young, adult).",
+   "learn": "P3-life-cycles.html#e2"
+  },
+  {
+   "id": "LCY-02",
+   "topic": "LCY",
+   "lo": "P3.LCY.P2",
+   "label": "Mixes up what a larva, a pupa and a nymph are like",
+   "fix": "Larva: unlike the adult; eats a lot. Pupa: unlike the adult; does not feed or move while the adult forms inside. Nymph: like the adult but smaller and wingless.",
+   "learn": "P3-life-cycles.html#e3"
+  },
+  {
+   "id": "LCY-03",
+   "topic": "LCY",
+   "lo": "P3.LCY.P2",
+   "label": "Gets the order of the stages wrong",
+   "fix": "4 stages: egg → larva → pupa → adult. 3 stages: egg → nymph (or young) → adult. A plant: seed → young plant → adult plant → seed.",
+   "learn": "P3-life-cycles.html#e4"
+  },
+  {
+   "id": "LCY-04",
+   "topic": "LCY",
+   "lo": "P3.LCY.C1",
+   "label": "Thinks a life cycle ends at the adult",
+   "fix": "The adult reproduces (it lays eggs, or makes seeds), so the stages start again. That is why it is a cycle.",
+   "learn": "P3-life-cycles.html#e4"
+  },
+  {
+   "id": "LCY-05",
+   "topic": "LCY",
+   "lo": "P3.LCY.P1",
+   "label": "Mixes up the stages of a plant's life cycle",
+   "fix": "Seed → young plant (roots, stem, leaves, no flowers) → adult plant (flowers, then fruits with seeds) → seed. The seeds come from the adult plant's fruits.",
+   "learn": "P3-life-cycles.html#e1"
+  },
+  {
+   "id": "LCY-06",
+   "topic": "LCY",
+   "lo": "P3.LCY.C1",
+   "label": "Thinks all living things have the same life cycle",
+   "fix": "Different living things have different life cycles: different stages, and different lengths of time.",
+   "learn": "P3-life-cycles.html#e1"
+  },
+  {
+   "id": "LCY-07",
+   "topic": "LCY",
+   "lo": "P3.LCY.P2",
+   "label": "Thinks a young animal that looks different is a different kind of animal",
+   "fix": "A tadpole is a young frog, and a caterpillar is a young butterfly. They look different from their adults but grow into them.",
+   "learn": "P3-life-cycles.html#e2"
+  },
+  {
+   "id": "LGT-01",
+   "topic": "LGT",
+   "lo": "P4.LGT.C2",
+   "label": "Thinks walking away from a lamp makes your shadow on the ground shorter",
+   "fix": "With a lamp above you shining down on the ground, the farther you are from the lamp, the more the light slants and the longer your shadow. Right under the lamp, the shadow is only a small patch at your feet.",
+   "learn": "P4-light-shadow-length.html#see-it"
+  },
+  {
+   "id": "LGT-02",
+   "topic": "LGT",
+   "lo": "P4.LGT.C2",
+   "label": "Thinks a shadow can point towards the light, or follows the way you face",
+   "fix": "Light travels in straight lines from the light source. The shadow forms where the object blocks the light, so it is always on the side of the object away from the light.",
+   "learn": "P4-light-shadow-length.html#see-it"
+  },
+  {
+   "id": "LGT-03",
+   "topic": "LGT",
+   "lo": "P4.LGT.C2",
+   "label": "Thinks light can bend around an object, or that a shadow is a reflection",
+   "fix": "Light travels in straight lines, so it cannot bend around an object. A shadow is the area the light cannot reach because the object blocks it.",
+   "learn": "P4-light-shadow-length.html#see-it"
+  },
+  {
+   "id": "LGT-04",
+   "topic": "LGT",
+   "lo": "P4.LGT.P1",
+   "label": "Thinks moving an object closer to a torch makes its shadow on a screen smaller",
+   "fix": "Between a torch and a screen, the closer the object is to the torch, the more light it blocks, so the bigger its shadow on the screen.",
+   "learn": "P4-light-shadow-length.html#see-it"
+  },
+  {
+   "id": "LGT-05",
+   "topic": "LGT",
+   "lo": "P4.LGT.P1",
+   "label": "Thinks only the size of the object decides the size of its shadow",
+   "fix": "The size of the object matters, but so do the distances between the light, the object and the screen or ground. Move any of them and the shadow changes.",
+   "learn": "P4-light-shadow-length.html#see-it"
+  },
+  {
+   "id": "LGT-06",
+   "topic": "LGT",
+   "lo": "P4.LGT.P1",
+   "label": "Changes the wrong thing, or more than one thing, in a shadow investigation",
+   "fix": "Change only the variable being tested. Keep the object, the light and every other distance the same, so any change in the shadow comes from that one variable.",
+   "learn": "P4-light-shadow-length.html#see-it"
+  },
+  {
+   "id": "LGT-07",
+   "topic": "LGT",
+   "lo": "P4.LGT.C1",
+   "label": "Mixes up which objects are light sources and which only reflect light",
+   "fix": "A source of light gives off its own light: the Sun, a lit candle, a firefly. The Moon, mirrors and shiny objects only reflect light from a source.",
+   "learn": "P4-light.html#e1"
+  },
+  {
+   "id": "LGT-08",
+   "topic": "LGT",
+   "lo": "P4.LGT.C1",
+   "label": "Mixes up how we see objects (light from the eyes, or only light sources can be seen)",
+   "fix": "We see an object when light from it enters our eyes. A source gives off its own light; any other object is seen when it reflects light from a source into our eyes.",
+   "learn": "P4-light.html#e2"
+  },
+  {
+   "id": "LGT-09",
+   "topic": "LGT",
+   "lo": "P4.LGT.C2",
+   "label": "Thinks a material that lets light through makes no shadow, or an equally dark one",
+   "fix": "An object that lets no light through makes a dark shadow. One that lets some light through makes a lighter shadow. One that lets most light through makes almost no shadow.",
+   "learn": "P4-light.html#e4"
+  },
+  {
+   "id": "LGT-10",
+   "topic": "LGT",
+   "lo": "P4.LGT.P1",
+   "label": "Thinks a shadow keeps the same shape whichever way the object faces",
+   "fix": "A shadow has the outline of the object as seen from the light. Turn the object and the shadow's shape can change: a round plate seen edge-on makes a thin bar.",
+   "learn": "P4-light.html#e4"
+  },
+  {
+   "id": "LGT-11",
+   "topic": "LGT",
+   "lo": "P4.LGT.P1",
+   "label": "Thinks moving the screen further from the object makes the shadow smaller",
+   "fix": "With the torch and the object still, the further the screen is from the object, the bigger the shadow.",
+   "learn": "P4-light.html#e4"
+  },
+  {
    "id": "LIV-01",
    "topic": "LIV",
    "lo": "P3.LIV.C1",
@@ -74,164 +666,44 @@
    "learn": "P3-living-things.html#e3"
   },
   {
-   "id": "LCY-01",
-   "topic": "LCY",
-   "lo": "P3.LCY.P2",
-   "label": "Mixes up which animals have 3-stage and which have 4-stage life cycles",
-   "fix": "4 stages (egg, larva, pupa, adult): butterfly, beetle, mosquito. 3 stages: cockroach and grasshopper (egg, nymph, adult), and chicken and frog (egg, young, adult).",
-   "learn": "P3-life-cycles.html#e2"
+   "id": "LIV-10",
+   "topic": "LIV",
+   "lo": "P6.ENV.C1",
+   "label": "Picks advice without checking what fungi like",
+   "fix": "Fungi grow where it is warm, dark and damp and there is food. Good advice takes at least one of these away. If a choice changes none of them, it will not help.",
+   "learn": "P3-living-things-fungi-on-feet.html#see-it"
   },
   {
-   "id": "LCY-02",
-   "topic": "LCY",
-   "lo": "P3.LCY.P2",
-   "label": "Mixes up what a larva, a pupa and a nymph are like",
-   "fix": "Larva: unlike the adult; eats a lot. Pupa: unlike the adult; does not feed or move while the adult forms inside. Nymph: like the adult but smaller and wingless.",
-   "learn": "P3-life-cycles.html#e3"
+   "id": "LIV-11",
+   "topic": "LIV",
+   "lo": "P6.ENV.C1",
+   "label": "Thinks covering or closing things keeps fungi out",
+   "fix": "A closed shoe, bag or cupboard keeps things warm, dark and damp. That helps fungi grow. Open, airy and dry places are better.",
+   "learn": "P3-living-things-fungi-on-feet.html#see-it"
   },
   {
-   "id": "LCY-03",
-   "topic": "LCY",
-   "lo": "P3.LCY.P2",
-   "label": "Gets the order of the stages wrong",
-   "fix": "4 stages: egg → larva → pupa → adult. 3 stages: egg → nymph (or young) → adult. A plant: seed → young plant → adult plant → seed.",
-   "learn": "P3-life-cycles.html#e4"
+   "id": "LIV-12",
+   "topic": "LIV",
+   "lo": "P3.LIV.C1",
+   "label": "Thinks dead skin or dirt is harmless, not food for fungi",
+   "fix": "Fungi feed on dead things such as dead skin, dirt and old bread. Take the food away and they grow less.",
+   "learn": "P3-living-things-fungi-on-feet.html#see-it"
   },
   {
-   "id": "LCY-04",
-   "topic": "LCY",
-   "lo": "P3.LCY.C1",
-   "label": "Thinks a life cycle ends at the adult",
-   "fix": "The adult reproduces (it lays eggs, or makes seeds), so the stages start again. That is why it is a cycle.",
-   "learn": "P3-life-cycles.html#e4"
+   "id": "LIV-13",
+   "topic": "LIV",
+   "lo": "P3.LIV.C1",
+   "label": "Forgets that fungi need water, and keeps things damp",
+   "fix": "Fungi need water. Wet shoes, damp cloths, steam and sweat help them grow. Keeping things dry slows them down.",
+   "learn": "P3-living-things-fungi-on-feet.html#see-it"
   },
   {
-   "id": "LCY-05",
-   "topic": "LCY",
-   "lo": "P3.LCY.P1",
-   "label": "Mixes up the stages of a plant's life cycle",
-   "fix": "Seed → young plant (roots, stem, leaves, no flowers) → adult plant (flowers, then fruits with seeds) → seed. The seeds come from the adult plant's fruits.",
-   "learn": "P3-life-cycles.html#e1"
-  },
-  {
-   "id": "LCY-06",
-   "topic": "LCY",
-   "lo": "P3.LCY.C1",
-   "label": "Thinks all living things have the same life cycle",
-   "fix": "Different living things have different life cycles: different stages, and different lengths of time.",
-   "learn": "P3-life-cycles.html#e1"
-  },
-  {
-   "id": "LCY-07",
-   "topic": "LCY",
-   "lo": "P3.LCY.P2",
-   "label": "Thinks a young animal that looks different is a different kind of animal",
-   "fix": "A tadpole is a young frog, and a caterpillar is a young butterfly. They look different from their adults but grow into them.",
-   "learn": "P3-life-cycles.html#e2"
-  },
-  {
-   "id": "MAT-01",
-   "topic": "MAT",
-   "lo": "P3.MAT.P1",
-   "label": "Uses \"strong\" to explain a bending job",
-   "fix": "Strong means it can take a load without breaking. Flexible means it can bend without breaking. Shaping, folding and wrapping are all bending, so they need a flexible material.",
-   "learn": "P3-materials-strong-vs-flexible.html#see-it"
-  },
-  {
-   "id": "MAT-02",
-   "topic": "MAT",
-   "lo": "P3.MAT.C1",
-   "label": "Picks a property the job never uses",
-   "fix": "First ask what is being done to the material: is it bent, loaded, wetted, floated or lit? Only the properties that job uses can be the answer, even if the other statements are true.",
-   "learn": "P3-materials-strong-vs-flexible.html#see-it"
-  },
-  {
-   "id": "MAT-03",
-   "topic": "MAT",
-   "lo": "P3.MAT.P1",
-   "label": "Treats one property as proof of another",
-   "fix": "Each property has its own test. Passing the bend test tells you nothing about the load test, and floating tells you nothing about soaking up water.",
-   "learn": "P3-materials-strong-vs-flexible.html#see-it"
-  },
-  {
-   "id": "MAT-04",
-   "topic": "MAT",
-   "lo": "P3.MAT.C1",
-   "label": "Checks only one of the properties the job needs",
-   "fix": "List every property the job needs first, then check each material against the whole list. A material that fails even one property on the list is not suitable.",
-   "learn": "P3-materials-strong-vs-flexible.html#see-it"
-  },
-  {
-   "id": "MAT-05",
-   "topic": "MAT",
-   "lo": "P3.MAT.P1",
-   "label": "Mixes up what to change, keep the same and measure in a fair test",
-   "fix": "In a fair test only the type of material is changed. Everything else that could affect the result, such as size, amount of water, time or how far it is bent, is kept the same. The result is what you measure.",
-   "learn": "P3-materials-strong-vs-flexible.html#see-it"
-  },
-  {
-   "id": "MAT-06",
-   "topic": "MAT",
-   "lo": "P3.MAT.C1",
-   "label": "Forgets that a part which bends must be flexible",
-   "fix": "Any part that folds, wraps or moves with you has to bend without breaking. A material with no tick for flexible would crack there.",
-   "learn": "P3-materials-match-part-to-property.html#see-it"
-  },
-  {
-   "id": "MAT-07",
-   "topic": "MAT",
-   "lo": "P3.MAT.C1",
-   "label": "Forgets that a part which meets water must be waterproof",
-   "fix": "Rain, wet floors and the water inside a container all mean the same thing: that part must not absorb water.",
-   "learn": "P3-materials-match-part-to-property.html#see-it"
-  },
-  {
-   "id": "MAT-08",
-   "topic": "MAT",
-   "lo": "P3.MAT.P1",
-   "label": "Compares the masses instead of working out the water absorbed",
-   "fix": "The masses include the material itself, so the biggest mass is usually just the heaviest material. Water absorbed = mass after soaking − mass before soaking. Work it out for every material, then compare.",
-   "learn": "P3-materials-waterproof-vs-absorbent.html#see-it"
-  },
-  {
-   "id": "MAT-09",
-   "topic": "MAT",
-   "lo": "P3.MAT.P1",
-   "label": "Mixes up waterproof and absorbent",
-   "fix": "Waterproof means the material does not absorb water, so its mass does not change when it is soaked. A towel must do the opposite: absorb as much water as possible.",
-   "learn": "P3-materials-waterproof-vs-absorbent.html#see-it"
-  },
-  {
-   "id": "MAT-10",
-   "topic": "MAT",
-   "lo": "P3.MAT.P1",
-   "label": "Judges by how big the jump looks, not the grams of water absorbed",
-   "fix": "The pieces are the same size, so compare the grams of water each one absorbed. A jump that looks big on a light piece can still be fewer grams than a smaller-looking jump on a heavy piece.",
-   "learn": "P3-materials-waterproof-vs-absorbent.html#see-it"
-  },
-  {
-   "id": "MAT-11",
-   "topic": "MAT",
-   "lo": "P3.MAT.P1",
-   "label": "Mixes up how much light a material lets through",
-   "fix": "Clear glass, clear plastic and food wrap let most light through. Frosted glass and tracing paper let some through. Wood, metal and rubber let none through.",
-   "learn": "P3-materials.html#e1"
-  },
-  {
-   "id": "MAT-12",
-   "topic": "MAT",
-   "lo": "P3.MAT.P1",
-   "label": "Thinks big or heavy things sink and small or light things float",
-   "fix": "Whether an object floats depends on what it is made of. A large wooden log floats; a small steel nail sinks.",
-   "learn": "P3-materials.html#e1"
-  },
-  {
-   "id": "MAT-13",
-   "topic": "MAT",
-   "lo": "P3.MAT.C1",
-   "label": "Gets the properties of one of the seven materials wrong",
-   "fix": "Wood and metal are strong. Rubber and fabric are flexible. Glass and ceramic are not flexible: they break when bent. Plastic, rubber and glass are waterproof; fabric is absorbent. Cork, Styrofoam and most wood float; metal, glass, clay and rock sink.",
-   "learn": "P3-materials.html#e2"
+   "id": "LIV-14",
+   "topic": "LIV",
+   "lo": "P6.ENV.C1",
+   "label": "Picks a place with only one thing fungi like",
+   "fix": "Fungi grow fastest where all four things are there: warmth, darkness, water and food. One thing on its own, such as warmth or darkness, is not enough.",
+   "learn": "P3-living-things-fungi-on-feet.html#see-it"
   },
   {
    "id": "MAG-01",
@@ -354,6 +826,110 @@
    "learn": "P3-magnets.html#e1"
   },
   {
+   "id": "MAT-01",
+   "topic": "MAT",
+   "lo": "P3.MAT.P1",
+   "label": "Uses \"strong\" to explain a bending job",
+   "fix": "Strong means it can take a load without breaking. Flexible means it can bend without breaking. Shaping, folding and wrapping are all bending, so they need a flexible material.",
+   "learn": "P3-materials-strong-vs-flexible.html#see-it"
+  },
+  {
+   "id": "MAT-02",
+   "topic": "MAT",
+   "lo": "P3.MAT.C1",
+   "label": "Picks a property the job never uses",
+   "fix": "First ask what is being done to the material: is it bent, loaded, wetted, floated or lit? Only the properties that job uses can be the answer, even if the other statements are true.",
+   "learn": "P3-materials-strong-vs-flexible.html#see-it"
+  },
+  {
+   "id": "MAT-03",
+   "topic": "MAT",
+   "lo": "P3.MAT.P1",
+   "label": "Treats one property as proof of another",
+   "fix": "Each property has its own test. Passing the bend test tells you nothing about the load test, and floating tells you nothing about soaking up water.",
+   "learn": "P3-materials-strong-vs-flexible.html#see-it"
+  },
+  {
+   "id": "MAT-04",
+   "topic": "MAT",
+   "lo": "P3.MAT.C1",
+   "label": "Checks only one of the properties the job needs",
+   "fix": "List every property the job needs first, then check each material against the whole list. A material that fails even one property on the list is not suitable.",
+   "learn": "P3-materials-strong-vs-flexible.html#see-it"
+  },
+  {
+   "id": "MAT-05",
+   "topic": "MAT",
+   "lo": "P3.MAT.P1",
+   "label": "Mixes up what to change, keep the same and measure in a fair test",
+   "fix": "In a fair test only the type of material is changed. Everything else that could affect the result, such as size, amount of water, time or how far it is bent, is kept the same. The result is what you measure.",
+   "learn": "P3-materials-strong-vs-flexible.html#see-it"
+  },
+  {
+   "id": "MAT-06",
+   "topic": "MAT",
+   "lo": "P3.MAT.C1",
+   "label": "Forgets that a part which bends must be flexible",
+   "fix": "Any part that folds, wraps or moves with you has to bend without breaking. A material with no tick for flexible would crack there.",
+   "learn": "P3-materials-match-part-to-property.html#see-it"
+  },
+  {
+   "id": "MAT-07",
+   "topic": "MAT",
+   "lo": "P3.MAT.C1",
+   "label": "Forgets that a part which meets water must be waterproof",
+   "fix": "Rain, wet floors and the water inside a container all mean the same thing: that part must not absorb water.",
+   "learn": "P3-materials-match-part-to-property.html#see-it"
+  },
+  {
+   "id": "MAT-08",
+   "topic": "MAT",
+   "lo": "P3.MAT.P1",
+   "label": "Compares the masses instead of working out the water absorbed",
+   "fix": "The masses include the material itself, so the biggest mass is usually just the heaviest material. Water absorbed = mass after soaking − mass before soaking. Work it out for every material, then compare.",
+   "learn": "P3-materials-waterproof-vs-absorbent.html#see-it"
+  },
+  {
+   "id": "MAT-09",
+   "topic": "MAT",
+   "lo": "P3.MAT.P1",
+   "label": "Mixes up waterproof and absorbent",
+   "fix": "Waterproof means the material does not absorb water, so its mass does not change when it is soaked. A towel must do the opposite: absorb as much water as possible.",
+   "learn": "P3-materials-waterproof-vs-absorbent.html#see-it"
+  },
+  {
+   "id": "MAT-10",
+   "topic": "MAT",
+   "lo": "P3.MAT.P1",
+   "label": "Judges by how big the jump looks, not the grams of water absorbed",
+   "fix": "The pieces are the same size, so compare the grams of water each one absorbed. A jump that looks big on a light piece can still be fewer grams than a smaller-looking jump on a heavy piece.",
+   "learn": "P3-materials-waterproof-vs-absorbent.html#see-it"
+  },
+  {
+   "id": "MAT-11",
+   "topic": "MAT",
+   "lo": "P3.MAT.P1",
+   "label": "Mixes up how much light a material lets through",
+   "fix": "Clear glass, clear plastic and food wrap let most light through. Frosted glass and tracing paper let some through. Wood, metal and rubber let none through.",
+   "learn": "P3-materials.html#e1"
+  },
+  {
+   "id": "MAT-12",
+   "topic": "MAT",
+   "lo": "P3.MAT.P1",
+   "label": "Thinks big or heavy things sink and small or light things float",
+   "fix": "Whether an object floats depends on what it is made of. A large wooden log floats; a small steel nail sinks.",
+   "learn": "P3-materials.html#e1"
+  },
+  {
+   "id": "MAT-13",
+   "topic": "MAT",
+   "lo": "P3.MAT.C1",
+   "label": "Gets the properties of one of the seven materials wrong",
+   "fix": "Wood and metal are strong. Rubber and fabric are flexible. Glass and ceramic are not flexible: they break when bent. Plastic, rubber and glass are waterproof; fabric is absorbent. Cork, Styrofoam and most wood float; metal, glass, clay and rock sink.",
+   "learn": "P3-materials.html#e2"
+  },
+  {
    "id": "MTR-01",
    "topic": "MTR",
    "lo": "P4.MTR.C1",
@@ -426,174 +1002,6 @@
    "learn": "P4-matter.html#e3"
   },
   {
-   "id": "LGT-01",
-   "topic": "LGT",
-   "lo": "P4.LGT.C2",
-   "label": "Thinks walking away from a lamp makes your shadow on the ground shorter",
-   "fix": "With a lamp above you shining down on the ground, the farther you are from the lamp, the more the light slants and the longer your shadow. Right under the lamp, the shadow is only a small patch at your feet.",
-   "learn": "P4-light-shadow-length.html#see-it"
-  },
-  {
-   "id": "LGT-02",
-   "topic": "LGT",
-   "lo": "P4.LGT.C2",
-   "label": "Thinks a shadow can point towards the light, or follows the way you face",
-   "fix": "Light travels in straight lines from the light source. The shadow forms where the object blocks the light, so it is always on the side of the object away from the light.",
-   "learn": "P4-light-shadow-length.html#see-it"
-  },
-  {
-   "id": "LGT-03",
-   "topic": "LGT",
-   "lo": "P4.LGT.C2",
-   "label": "Thinks light can bend around an object, or that a shadow is a reflection",
-   "fix": "Light travels in straight lines, so it cannot bend around an object. A shadow is the area the light cannot reach because the object blocks it.",
-   "learn": "P4-light-shadow-length.html#see-it"
-  },
-  {
-   "id": "LGT-04",
-   "topic": "LGT",
-   "lo": "P4.LGT.P1",
-   "label": "Thinks moving an object closer to a torch makes its shadow on a screen smaller",
-   "fix": "Between a torch and a screen, the closer the object is to the torch, the more light it blocks, so the bigger its shadow on the screen.",
-   "learn": "P4-light-shadow-length.html#see-it"
-  },
-  {
-   "id": "LGT-05",
-   "topic": "LGT",
-   "lo": "P4.LGT.P1",
-   "label": "Thinks only the size of the object decides the size of its shadow",
-   "fix": "The size of the object matters, but so do the distances between the light, the object and the screen or ground. Move any of them and the shadow changes.",
-   "learn": "P4-light-shadow-length.html#see-it"
-  },
-  {
-   "id": "LGT-06",
-   "topic": "LGT",
-   "lo": "P4.LGT.P1",
-   "label": "Changes the wrong thing, or more than one thing, in a shadow investigation",
-   "fix": "Change only the variable being tested. Keep the object, the light and every other distance the same, so any change in the shadow comes from that one variable.",
-   "learn": "P4-light-shadow-length.html#see-it"
-  },
-  {
-   "id": "LGT-07",
-   "topic": "LGT",
-   "lo": "P4.LGT.C1",
-   "label": "Mixes up which objects are light sources and which only reflect light",
-   "fix": "A source of light gives off its own light: the Sun, a lit candle, a firefly. The Moon, mirrors and shiny objects only reflect light from a source.",
-   "learn": "P4-light.html#e1"
-  },
-  {
-   "id": "LGT-08",
-   "topic": "LGT",
-   "lo": "P4.LGT.C1",
-   "label": "Mixes up how we see objects (light from the eyes, or only light sources can be seen)",
-   "fix": "We see an object when light from it enters our eyes. A source gives off its own light; any other object is seen when it reflects light from a source into our eyes.",
-   "learn": "P4-light.html#e2"
-  },
-  {
-   "id": "LGT-09",
-   "topic": "LGT",
-   "lo": "P4.LGT.C2",
-   "label": "Thinks a material that lets light through makes no shadow, or an equally dark one",
-   "fix": "An object that lets no light through makes a dark shadow. One that lets some light through makes a lighter shadow. One that lets most light through makes almost no shadow.",
-   "learn": "P4-light.html#e4"
-  },
-  {
-   "id": "LGT-10",
-   "topic": "LGT",
-   "lo": "P4.LGT.P1",
-   "label": "Thinks a shadow keeps the same shape whichever way the object faces",
-   "fix": "A shadow has the outline of the object as seen from the light. Turn the object and the shadow's shape can change: a round plate seen edge-on makes a thin bar.",
-   "learn": "P4-light.html#e4"
-  },
-  {
-   "id": "LGT-11",
-   "topic": "LGT",
-   "lo": "P4.LGT.P1",
-   "label": "Thinks moving the screen further from the object makes the shadow smaller",
-   "fix": "With the torch and the object still, the further the screen is from the object, the bigger the shadow.",
-   "learn": "P4-light.html#e4"
-  },
-  {
-   "id": "HEA-01",
-   "topic": "HEA",
-   "lo": "P4.HEA.C4",
-   "label": "Thinks heat and temperature are the same thing",
-   "fix": "Temperature is how hot something is. Heat is energy. More water at the same temperature holds more heat; the same water at a higher temperature holds more heat.",
-   "learn": "P4-heat.html#e3"
-  },
-  {
-   "id": "HEA-02",
-   "topic": "HEA",
-   "lo": "P4.HEA.C5",
-   "label": "Thinks \"cold\" is something that flows or is given out",
-   "fix": "Only heat flows, always from hotter to colder. Something feels or becomes cold because it loses heat.",
-   "learn": "P4-heat.html#e2"
-  },
-  {
-   "id": "HEA-03",
-   "topic": "HEA",
-   "lo": "P4.HEA.C5",
-   "label": "Thinks heat flow stops before, or goes past, the point where both temperatures are equal",
-   "fix": "Heat flows from hotter to colder until both reach the same temperature, somewhere in between, and then it stops.",
-   "learn": "P4-heat.html#e2"
-  },
-  {
-   "id": "HEA-04",
-   "topic": "HEA",
-   "lo": "P4.HEA.C6",
-   "label": "Mixes up heat gain and heat loss when a temperature changes",
-   "fix": "If the temperature rises, the object gained heat. If the temperature falls, it lost heat.",
-   "learn": "P4-heat.html#e2"
-  },
-  {
-   "id": "HEA-05",
-   "topic": "HEA",
-   "lo": "P4.HEA.C7",
-   "label": "Thinks mass changes when something expands or contracts",
-   "fix": "Expanding or contracting changes the volume, not the mass.",
-   "learn": "P4-heat.html#e4"
-  },
-  {
-   "id": "HEA-06",
-   "topic": "HEA",
-   "lo": "P4.HEA.C7",
-   "label": "Mixes up when things expand and when they contract",
-   "fix": "Gaining heat makes things expand. Losing heat makes them contract. Solids, liquids and gases all do this.",
-   "learn": "P4-heat.html#e4"
-  },
-  {
-   "id": "HEA-07",
-   "topic": "HEA",
-   "lo": "P4.HEA.C8",
-   "label": "Mixes up good and poor conductors of heat",
-   "fix": "Metals are good conductors: heat flows through them easily. Wood, plastics, air and rubber are poor conductors. Metal feels cold because it conducts heat away from your hand fast.",
-   "learn": "P4-heat.html#e5"
-  },
-  {
-   "id": "HEA-08",
-   "topic": "HEA",
-   "lo": "P4.HEA.P1",
-   "label": "Misreads a thermometer, or trusts touch to measure temperature",
-   "fix": "Find what one small mark is worth, then count from the nearest number below. Touch only tells you how fast heat leaves your hand, so use a thermometer.",
-   "learn": "P4-heat.html#e6"
-  },
-  {
-   "id": "HEA-09",
-   "topic": "HEA",
-   "lo": "P4.HEA.C7",
-   "label": "Mixes up heat gain and heat loss in a change of state",
-   "fix": "Melting, boiling and evaporating need heat gain. Freezing and condensing happen through heat loss.",
-   "learn": "P4-heat.html#e4"
-  },
-  {
-   "id": "HEA-10",
-   "topic": "HEA",
-   "lo": "P4.HEA.C1",
-   "label": "Mixes up what is and is not a source of heat",
-   "fix": "A source of heat produces heat: the Sun, burning things, switched-on appliances, rubbing things together. Ice, the Moon and switched-off appliances produce none.",
-   "learn": "P4-heat.html#e1"
-  },
-  {
    "id": "PLP-01",
    "topic": "PLP",
    "lo": "P4.PLP.C1",
@@ -648,126 +1056,6 @@
    "label": "Picks the wrong apparatus to observe or measure plant parts",
    "fix": "A hand lens makes small parts look bigger. A ruler measures length. A measuring cylinder measures volume, a balance measures mass and a thermometer measures temperature.",
    "learn": "P4-plant-parts.html#e4"
-  },
-  {
-   "id": "DIG-01",
-   "topic": "DIG",
-   "lo": "P4.DIG.C2",
-   "label": "Thinks water is absorbed somewhere other than the large intestine",
-   "fix": "Water is absorbed from the undigested food in the large intestine. What is left becomes faeces.",
-   "learn": "P4-digestive-system-food-journey.html#see-it"
-  },
-  {
-   "id": "DIG-02",
-   "topic": "DIG",
-   "lo": "P4.DIG.C2",
-   "label": "Mixes up what the mouth, gullet and stomach each do",
-   "fix": "Mouth: teeth cut and grind the food, and saliva mixes in. Gullet: muscles squeeze the food down to the stomach; no digestive juice is made there. Stomach: muscles churn the food while gastric juice digests it into a thick liquid.",
-   "learn": "P4-digestive-system-food-journey.html#see-it"
-  },
-  {
-   "id": "DIG-03",
-   "topic": "DIG",
-   "lo": "P4.DIG.C2",
-   "label": "Thinks digested food is absorbed somewhere other than the small intestine",
-   "fix": "Digestion is completed in the small intestine, and the digested food passes through its wall into the blood.",
-   "learn": "P4-digestive-system-food-journey.html#see-it"
-  },
-  {
-   "id": "DIG-04",
-   "topic": "DIG",
-   "lo": "P4.DIG.C2",
-   "label": "Thinks digestion is finished in the stomach",
-   "fix": "The stomach only partly digests the food. Digestion is completed in the small intestine.",
-   "learn": "P4-digestive-system-food-journey.html#see-it"
-  },
-  {
-   "id": "DIG-05",
-   "topic": "DIG",
-   "lo": "P4.DIG.C2",
-   "label": "Gets the order of the digestive parts wrong",
-   "fix": "Food moves one way only: mouth → gullet → stomach → small intestine → large intestine.",
-   "learn": "P4-digestive-system-food-journey.html#see-it"
-  },
-  {
-   "id": "DIG-06",
-   "topic": "DIG",
-   "lo": "P4.DIG.C2",
-   "label": "Mixes up what happens to digested and undigested food",
-   "fix": "Digested food passes into the blood in the small intestine. Undigested food, such as fibre, cannot pass into the blood: it moves on to the large intestine, where water is absorbed from it, and leaves the body as faeces.",
-   "learn": "P4-digestive-system-food-journey.html#see-it"
-  },
-  {
-   "id": "DIG-07",
-   "topic": "DIG",
-   "lo": "P4.DIG.C1",
-   "label": "Mixes up the jobs of the body systems",
-   "fix": "Respiratory: takes in oxygen and removes carbon dioxide. Circulatory: carries digested food, water and oxygen to all parts of the body. Digestive: breaks food down. Skeletal: supports, shapes and protects. Muscular: works with the skeleton to move body parts.",
-   "learn": "P4-digestive-system.html#e1"
-  },
-  {
-   "id": "DIG-08",
-   "topic": "DIG",
-   "lo": "P4.DIG.C1",
-   "label": "Puts a body part in the wrong system",
-   "fix": "Nose, windpipe, lungs: respiratory. Heart, blood, blood vessels: circulatory. Mouth to large intestine: digestive. Bones: skeletal. Muscles: muscular.",
-   "learn": "P4-digestive-system.html#e1"
-  },
-  {
-   "id": "DIG-09",
-   "topic": "DIG",
-   "lo": "P4.DIG.C1",
-   "label": "Doesn't know what digestion is for",
-   "fix": "Digestion breaks food down into simpler substances that are small enough to pass into the blood. Carrying them around the body is the circulatory system's job.",
-   "learn": "P4-digestive-system.html#e2"
-  },
-  {
-   "id": "DIG-10",
-   "topic": "DIG",
-   "lo": "P4.DIG.C2",
-   "label": "Thinks digestion begins somewhere after the mouth",
-   "fix": "Digestion begins in the mouth. The teeth cut and grind the food, and saliva, a digestive juice, starts to digest it.",
-   "learn": "P4-digestive-system.html#e2"
-  },
-  {
-   "id": "LIV-10",
-   "topic": "LIV",
-   "lo": "P6.ENV.C1",
-   "label": "Picks advice without checking what fungi like",
-   "fix": "Fungi grow where it is warm, dark and damp and there is food. Good advice takes at least one of these away. If a choice changes none of them, it will not help.",
-   "learn": "P3-living-things-fungi-on-feet.html#see-it"
-  },
-  {
-   "id": "LIV-11",
-   "topic": "LIV",
-   "lo": "P6.ENV.C1",
-   "label": "Thinks covering or closing things keeps fungi out",
-   "fix": "A closed shoe, bag or cupboard keeps things warm, dark and damp. That helps fungi grow. Open, airy and dry places are better.",
-   "learn": "P3-living-things-fungi-on-feet.html#see-it"
-  },
-  {
-   "id": "LIV-12",
-   "topic": "LIV",
-   "lo": "P3.LIV.C1",
-   "label": "Thinks dead skin or dirt is harmless, not food for fungi",
-   "fix": "Fungi feed on dead things such as dead skin, dirt and old bread. Take the food away and they grow less.",
-   "learn": "P3-living-things-fungi-on-feet.html#see-it"
-  },
-  {
-   "id": "LIV-13",
-   "topic": "LIV",
-   "lo": "P3.LIV.C1",
-   "label": "Forgets that fungi need water, and keeps things damp",
-   "fix": "Fungi need water. Wet shoes, damp cloths, steam and sweat help them grow. Keeping things dry slows them down.",
-   "learn": "P3-living-things-fungi-on-feet.html#see-it"
-  },
-  {
-   "id": "LIV-14",
-   "topic": "LIV",
-   "lo": "P6.ENV.C1",
-   "label": "Picks a place with only one thing fungi like",
-   "fix": "Fungi grow fastest where all four things are there: warmth, darkness, water and food. One thing on its own, such as warmth or darkness, is not enough.",
-   "learn": "P3-living-things-fungi-on-feet.html#see-it"
   }
  ]
 }

@@ -1,0 +1,121 @@
+<section class="card" id="know">
+  <p class="sec-label">What you need to know</p>
+  <h2>Breathing and blood in five ideas</h2>
+  <div class="know">
+    <details class="kcard" open>
+      <summary><span class="kn">1</span> What air is made of</summary>
+      <p>Air is a <b>mixture of gases</b>: mostly nitrogen, then oxygen, and smaller amounts of carbon dioxide and water vapour.</p>
+      <p>The air we breathe out is <b>not</b> empty of oxygen. It has <b>less oxygen</b>, <b>more carbon dioxide</b> and <b>more water vapour</b> than the air we breathe in. That is why a cold mirror mists up when you breathe on it.</p>
+    </details>
+    <details class="kcard" open>
+      <summary><span class="kn">2</span> The respiratory system</summary>
+      <div class="scroll">
+        <table class="data">
+          <thead><tr><th scope="col">Part</th><th scope="col">What it does</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">Nose</th><td>Takes in air, and filters, warms and moistens it.</td></tr>
+            <tr><th scope="row">Windpipe</th><td>A tube that carries air between the nose and the lungs. It does not take oxygen into the blood.</td></tr>
+            <tr><th scope="row">Lungs</th><td>Where oxygen passes into the blood and carbon dioxide passes out of the blood.</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Breathing in: <b>nose → windpipe → lungs</b>. Breathing out is the same path in reverse.</p>
+    </details>
+    <details class="kcard" open>
+      <summary><span class="kn">3</span> The circulatory system</summary>
+      <div class="scroll">
+        <table class="data">
+          <thead><tr><th scope="col">Part</th><th scope="col">What it does</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">Heart</th><td>Pumps blood around the body.</td></tr>
+            <tr><th scope="row">Blood vessels</th><td>Tubes that carry the blood to every part of the body.</td></tr>
+            <tr><th scope="row">Blood</th><td>Carries digested food, oxygen and carbon dioxide.</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>The heart pumps. The blood vessels carry. The blood is what is carried in them.</p>
+    </details>
+    <details class="kcard" open>
+      <summary><span class="kn">4</span> Three systems working together</summary>
+      <p>The <b>digestive system</b> breaks food down into digested food. The <b>respiratory system</b> takes in oxygen. The <b>circulatory system</b> carries both of them to every body cell.</p>
+      <p>At the cells, oxygen is <b>used</b> to release energy from digested food. Carbon dioxide is made there, and the blood carries it back to the lungs to be breathed out.</p>
+    </details>
+    <details class="kcard" open>
+      <summary><span class="kn">5</span> Humans, fish and plants</summary>
+      <ul>
+        <li><b>Humans</b> take in oxygen through the lungs and give out carbon dioxide there.</li>
+        <li><b>Fish</b> use <b>gills</b> to take in oxygen dissolved in the water and give out carbon dioxide into it.</li>
+        <li><b>Plants</b> take in oxygen and give out carbon dioxide through tiny openings in their leaves.</li>
+        <li>Transport: in humans, <b>blood vessels</b> carry digested food, oxygen and carbon dioxide. In plants, one set of <b>tubes carries water</b> from the roots and another set <b>carries food</b> from the leaves.</li>
+      </ul>
+    </details>
+  </div>
+</section>
+
+<section class="card" id="explore">
+  <p class="sec-label">Explore</p>
+  <h2>Follow one breath and one drop of blood</h2>
+
+  <h3 id="e1">1. Tap each part to see its job</h3>
+  <p class="instr">Tap the nose, windpipe, lungs, heart, blood vessels or body cells in the picture.</p>
+  <div class="bench">
+    <div><div class="stage"><svg id="bodySvg" viewBox="0 0 420 460" role="img" aria-label="The chest showing the nose, windpipe, lungs, heart, blood vessels and body cells"></svg></div></div>
+    <div>
+      <div class="box"><h3>What it does</h3><p id="partName" class="lead" style="margin:0 0 6px"><b>Nothing selected</b></p><p id="partText" class="note-s" style="margin:0">Tap a part of the picture.</p></div>
+      <p class="note-s">Each part has one job. Mixing up the windpipe (a tube for air) with the lungs (where oxygen enters the blood) is the most common slip.</p>
+    </div>
+  </div>
+
+  <h3 id="e2">2. Air in, air out</h3>
+  <p class="instr">Press Breathe in and Breathe out, then compare the two sets of bars.</p>
+  <div class="bench">
+    <div>
+      <div class="stage"><svg id="lungSvg" viewBox="0 0 420 300" role="img" aria-label="Lungs that expand and shrink as air moves in and out"></svg></div>
+      <div class="actions">
+        <button type="button" class="btn primary" id="brIn">Breathe in</button>
+        <button type="button" class="btn" id="brOut">Breathe out</button>
+      </div>
+      <p class="note-s" id="brMsg" aria-live="polite">The lungs are at rest.</p>
+    </div>
+    <div>
+      <div class="box"><h3>Breathed-in air</h3><div id="barsIn"></div></div>
+      <div class="box"><h3>Breathed-out air</h3><div id="barsOut"></div></div>
+      <p class="note-s">The bars show how much of each gas there is, not an exact measurement. Nitrogen is the largest part of both and does not change.</p>
+    </div>
+  </div>
+
+  <h3 id="e3">3. Follow one drop of blood</h3>
+  <p class="instr">Step through the loop. Watch where the blood picks up oxygen and where it picks up carbon dioxide.</p>
+  <div class="bench">
+    <div><div class="stage"><svg id="loopSvg" viewBox="0 0 440 320" role="img" aria-label="A loop from the heart to the lungs and from the heart to the body cells"></svg></div>
+      <div class="actions">
+        <button type="button" class="btn primary" id="loopNext">Next step</button>
+        <button type="button" class="btn" id="loopBack" disabled>Back</button>
+        <button type="button" class="btn small" id="loopReset">Start again</button>
+      </div>
+    </div>
+    <div>
+      <div class="stepbox box"><p class="lead" id="loopStep" style="margin:0"><b>Step 0.</b> Press <b>Next step</b> to send one drop of blood round the loop.</p></div>
+      <p class="key"><b>Key idea.</b> Blood that has just left the lungs carries <b>more oxygen and less carbon dioxide</b>. Blood that has just left the body cells carries <b>less oxygen and more carbon dioxide</b>.</p>
+    </div>
+  </div>
+
+  <details class="beyond">
+    <summary><span class="bs-badge">Beyond syllabus</span> Inside the lungs and the heart</summary>
+    <p>The lungs are not hollow bags: each one ends in millions of tiny air sacs, and the heart is divided into separate chambers with valves that stop the blood flowing backwards. The named parts of both are not required at PSLE, and naming them earns no extra marks.</p>
+    <p>For PSLE, the parts you need are nose, windpipe and lungs for the respiratory system, and heart, blood and blood vessels for the circulatory system.</p>
+  </details>
+</section>
+
+<section class="card" id="check">
+  <p class="sec-label">Unit check</p>
+  <h2>Nine questions on the whole topic</h2>
+  <p class="lead">Only your first answer counts. A wrong first answer goes into your mistake book, and a different question on the same idea comes back for recap.</p>
+  <div id="qs"></div>
+</section>
+
+<section class="card" id="deeper">
+  <p class="sec-label">Go deeper</p>
+  <h2>Focus pages on breathing and blood</h2>
+  <div id="psle-deeper"></div>
+</section>

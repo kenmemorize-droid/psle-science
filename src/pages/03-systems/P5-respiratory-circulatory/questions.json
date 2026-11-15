@@ -1,0 +1,523 @@
+[
+ {
+  "id": "P5-respiratory-circulatory.q1",
+  "title": "What the windpipe does",
+  "lo": [
+   "P5.HRC.C2"
+  ],
+  "kind": "diag",
+  "pool": "recap",
+  "stem": "Which of the following correctly describes the function of the windpipe?",
+  "options": [
+   {
+    "text": "It is a tube that carries air from the nose and mouth to the lungs.",
+    "correct": true,
+    "pick": "Follow the air itself and ask what the tube does to it, not to anything else.",
+    "why": "The windpipe is purely a passageway for air to the lungs."
+   },
+   {
+    "text": "It exchanges oxygen and carbon dioxide between air and blood.",
+    "mis": "HRC-02",
+    "pick": "Air passes through it on its way in, so it seems to be where the air meets the body.",
+    "why": "That is the job of the lungs. The windpipe only lets air through."
+   },
+   {
+    "text": "It filters, warms and moistens the air before it reaches the lungs.",
+    "mis": "HRC-03",
+    "pick": "The windpipe is mixed up with the nose, which is the first part the air meets.",
+    "why": "That describes the nose. The windpipe is a passageway and does not change the air."
+   },
+   {
+    "text": "It pumps blood containing oxygen to all parts of the body.",
+    "mis": "HRC-04",
+    "pick": "The windpipe is linked with oxygen, and oxygen is linked with pumping.",
+    "why": "That is the heart. The windpipe carries air, not blood."
+   }
+  ]
+ },
+ {
+  "id": "P5-respiratory-circulatory.q2",
+  "title": "Air in and air out",
+  "lo": [
+   "P5.HRC.C1"
+  ],
+  "kind": "diag",
+  "pool": "page",
+  "stem": "Compared to inhaled air, exhaled air contains —",
+  "options": [
+   {
+    "text": "Less oxygen, more carbon dioxide and more water vapour.",
+    "correct": true,
+    "pick": "The body uses some oxygen and adds carbon dioxide and water vapour.",
+    "why": "Exhaled air still contains oxygen."
+   },
+   {
+    "text": "More oxygen and less carbon dioxide.",
+    "mis": "HRC-06",
+    "pick": "It looks as if the body adds oxygen, the \"good\" gas, before breathing out.",
+    "why": "The body takes oxygen from the air. Exhaled air has less oxygen and more carbon dioxide."
+   },
+   {
+    "text": "More oxygen and more carbon dioxide.",
+    "mis": "HRC-06",
+    "pick": "Everything in the air seems to increase because the air has been inside the body.",
+    "why": "The cells use oxygen, so there is less of it in exhaled air."
+   },
+   {
+    "text": "Less oxygen and less carbon dioxide.",
+    "mis": "HRC-06",
+    "pick": "The body seems to take something from both gases.",
+    "why": "The body makes carbon dioxide, so exhaled air has more of it, not less."
+   }
+  ]
+ },
+ {
+  "id": "P5-respiratory-circulatory.q3",
+  "title": "Where oxygen enters the blood",
+  "lo": [
+   "P5.HRC.C2"
+  ],
+  "kind": "diag",
+  "pool": "page",
+  "stem": "In which part of the body does oxygen pass from the air into the blood?",
+  "options": [
+   {
+    "text": "Nose",
+    "mis": "HRC-02",
+    "pick": "The nose is where air first enters, so it seems to be where oxygen is taken in.",
+    "why": "The nose filters, warms and moistens air. Oxygen passes into the blood in the lungs."
+   },
+   {
+    "text": "Lungs",
+    "correct": true,
+    "pick": "Find the organ where air and blood come closest together.",
+    "why": "The lungs are where oxygen passes into the blood and carbon dioxide passes out."
+   },
+   {
+    "text": "Windpipe",
+    "mis": "HRC-02",
+    "pick": "Air travels through it, so it seems to be where oxygen is taken in.",
+    "why": "The windpipe is only a tube. The gas exchange happens in the lungs."
+   },
+   {
+    "text": "Heart",
+    "mis": "HRC-04",
+    "pick": "Oxygen is carried round the body, and the heart is at the middle of it.",
+    "why": "The heart pumps blood. It does not take in oxygen from the air."
+   }
+  ]
+ },
+ {
+  "id": "P5-respiratory-circulatory.q4",
+  "title": "The path of the air",
+  "lo": [
+   "P5.HRC.C2"
+  ],
+  "kind": "diag",
+  "pool": "recap",
+  "stem": "Which shows the path of air as we breathe in?",
+  "options": [
+   {
+    "text": "lungs → windpipe → nose",
+    "mis": "HRC-15",
+    "pick": "The order is read backwards. Usually a guess.",
+    "why": "That is the path of air as we breathe out."
+   },
+   {
+    "text": "nose → windpipe → lungs",
+    "correct": true,
+    "pick": "Trace the route from where air enters to where it ends up.",
+    "why": "Air enters through the nose, travels down the windpipe and reaches the lungs."
+   },
+   {
+    "text": "nose → lungs → windpipe",
+    "mis": "HRC-15",
+    "pick": "The windpipe is thought of as a tube after the lungs. Usually a guess.",
+    "why": "The windpipe lies between the nose and the lungs."
+   },
+   {
+    "text": "windpipe → nose → lungs",
+    "mis": "HRC-15",
+    "pick": "The order is mixed up. Usually a guess.",
+    "why": "Air meets the nose first."
+   }
+  ]
+ },
+ {
+  "id": "P5-respiratory-circulatory.q5",
+  "title": "What the heart does",
+  "lo": [
+   "P5.HRC.C2"
+  ],
+  "kind": "diag",
+  "pool": "page",
+  "stem": "What is the main function of the heart?",
+  "options": [
+   {
+    "text": "It takes in oxygen from the air.",
+    "mis": "HRC-04",
+    "pick": "The heart is linked with oxygen because blood carries it.",
+    "why": "The lungs take in oxygen. The heart pumps the blood."
+   },
+   {
+    "text": "It filters, warms and moistens the air.",
+    "mis": "HRC-03",
+    "pick": "The jobs of the parts are mixed up.",
+    "why": "That is the nose."
+   },
+   {
+    "text": "It pumps blood around the body.",
+    "correct": true,
+    "pick": "Ask what would stop happening if the heart stopped.",
+    "why": "The heart pumps blood through the blood vessels to all parts of the body."
+   },
+   {
+    "text": "It carries blood to the cells through its own tubes, with no pumping.",
+    "mis": "HRC-10",
+    "pick": "The heart is mixed up with the blood vessels.",
+    "why": "Blood vessels carry blood. The heart is the pump that pushes the blood along."
+   }
+  ]
+ },
+ {
+  "id": "P5-respiratory-circulatory.q6",
+  "title": "What blood carries",
+  "lo": [
+   "P5.HRC.C2"
+  ],
+  "kind": "diag",
+  "pool": "page",
+  "stem": "Which of the following does blood carry around the body?",
+  "options": [
+   {
+    "text": "Oxygen only",
+    "mis": "HRC-07",
+    "pick": "Oxygen is the gas everyone talks about, so it seems to be the only thing carried.",
+    "why": "Blood also carries carbon dioxide and digested food."
+   },
+   {
+    "text": "Air",
+    "mis": "HRC-10",
+    "pick": "Breathing in brings air into the body, so air seems to travel in the blood.",
+    "why": "Air stays in the nose, windpipe and lungs. Only some of its gases pass into the blood."
+   },
+   {
+    "text": "Carbon dioxide only",
+    "mis": "HRC-07",
+    "pick": "Blood going back to the lungs is remembered, and blood going out is forgotten.",
+    "why": "Blood also carries oxygen to the cells."
+   },
+   {
+    "text": "Oxygen, carbon dioxide and digested food",
+    "correct": true,
+    "pick": "Blood meets the digestive system and the lungs, so expect it to carry what both of them handle.",
+    "why": "Blood vessels transport digested food, oxygen and carbon dioxide around the body."
+   }
+  ]
+ },
+ {
+  "id": "P5-respiratory-circulatory.q7",
+  "title": "What blood vessels do",
+  "lo": [
+   "P5.HRC.C2"
+  ],
+  "kind": "diag",
+  "pool": "recap",
+  "stem": "Which statement about blood vessels is correct?",
+  "options": [
+   {
+    "text": "They carry air to the lungs.",
+    "mis": "HRC-10",
+    "pick": "Both are tubes in the chest, so they seem to do the same job.",
+    "why": "Air is carried by the windpipe. Blood vessels carry blood."
+   },
+   {
+    "text": "They pump blood to the body.",
+    "mis": "HRC-16",
+    "pick": "Pumping and carrying blood are mixed up. Usually a guess.",
+    "why": "The heart pumps. The vessels carry what the heart pushes."
+   },
+   {
+    "text": "They carry blood around the body.",
+    "correct": true,
+    "pick": "Think of blood vessels as tubes and ask what travels inside them.",
+    "why": "Blood vessels are the tubes through which blood travels."
+   },
+   {
+    "text": "They pass oxygen from the air into the blood.",
+    "mis": "HRC-02",
+    "pick": "Blood vessels touch the lungs, so they seem to do the exchange themselves.",
+    "why": "The gas exchange happens in the lungs. The vessels carry the blood to and from them."
+   }
+  ]
+ },
+ {
+  "id": "P5-respiratory-circulatory.q8",
+  "title": "Mist on a cold mirror",
+  "lo": [
+   "P5.HRC.C1"
+  ],
+  "kind": "diag",
+  "pool": "page",
+  "stem": "Ben breathes out onto a cold mirror and the mirror becomes misty. What does this show about the air he breathed out?",
+  "options": [
+   {
+    "text": "It contains water vapour.",
+    "correct": true,
+    "pick": "Mist on glass is tiny drops of water, so work back to what must have been in the breath.",
+    "why": "Water vapour in the breath turns into tiny drops of water on the cold mirror."
+   },
+   {
+    "text": "It contains no oxygen.",
+    "mis": "HRC-01",
+    "pick": "Exhaled air is linked with waste, so it seems to be empty of oxygen.",
+    "why": "The mist does not show anything about oxygen. Exhaled air still has oxygen in it."
+   },
+   {
+    "text": "It contains only carbon dioxide.",
+    "mis": "HRC-06",
+    "pick": "Breathing out is linked with carbon dioxide alone.",
+    "why": "Exhaled air is still mostly the same mixture as inhaled air. The mist is not carbon dioxide."
+   },
+   {
+    "text": "It is warmer than the mirror, so it cannot contain any gases.",
+    "mis": "HRC-06",
+    "pick": "Warm air seems different from ordinary air. Usually a guess.",
+    "why": "Exhaled air is a mixture of gases. The mist shows that it has water vapour."
+   }
+  ]
+ },
+ {
+  "id": "P5-respiratory-circulatory.q9",
+  "title": "Blood leaving the lungs",
+  "lo": [
+   "P5.HRC.C3"
+  ],
+  "kind": "diag",
+  "pool": "page",
+  "stem": "Blood travels from the heart to the lungs and then back to the heart. Compared with the blood going to the lungs, the blood leaving the lungs has —",
+  "options": [
+   {
+    "text": "less oxygen and more carbon dioxide.",
+    "mis": "HRC-05",
+    "pick": "The lungs are thought to use oxygen up, as cells do.",
+    "why": "The cells use the oxygen. In the lungs the blood gains oxygen and loses carbon dioxide."
+   },
+   {
+    "text": "more oxygen and less carbon dioxide.",
+    "correct": true,
+    "pick": "Decide what the blood gains and what it loses while it is in the lungs.",
+    "why": "In the lungs oxygen passes into the blood and carbon dioxide passes out of it."
+   },
+   {
+    "text": "the same amount of oxygen and carbon dioxide.",
+    "mis": "HRC-07",
+    "pick": "Blood is thought of as just a carrier that changes nothing.",
+    "why": "Gas exchange in the lungs changes the blood."
+   },
+   {
+    "text": "more oxygen and more carbon dioxide.",
+    "mis": "HRC-07",
+    "pick": "Both seem to increase because the blood has been in the lungs. Usually a guess.",
+    "why": "Carbon dioxide passes out of the blood in the lungs, so there is less of it."
+   }
+  ]
+ },
+ {
+  "id": "P5-respiratory-circulatory.q10",
+  "title": "What the body cells do with oxygen",
+  "lo": [
+   "P5.HRC.C3"
+  ],
+  "kind": "diag",
+  "pool": "recap",
+  "stem": "What happens to the oxygen that blood brings to the body cells?",
+  "options": [
+   {
+    "text": "The cells store it for later and make nothing from it.",
+    "mis": "HRC-17",
+    "pick": "Cells are pictured as stores. Usually a guess.",
+    "why": "The cells use it to release energy."
+   },
+   {
+    "text": "The cells breathe it out as oxygen again.",
+    "mis": "HRC-06",
+    "pick": "Air in and air out are thought to be the same.",
+    "why": "Cells use the oxygen up, so what they give back is carbon dioxide."
+   },
+   {
+    "text": "It is used up in the lungs, so the cells do not receive any.",
+    "mis": "HRC-05",
+    "pick": "The lungs seem to be the only place that uses oxygen.",
+    "why": "The lungs pass oxygen to the blood. The cells are what use it."
+   },
+   {
+    "text": "The cells use it to release energy, and they produce carbon dioxide.",
+    "correct": true,
+    "pick": "This is respiration.",
+    "why": "Blood then carries the carbon dioxide back to the lungs."
+   }
+  ]
+ },
+ {
+  "id": "P5-respiratory-circulatory.q11",
+  "title": "Which system is the heart in?",
+  "lo": [
+   "P5.HRC.C3"
+  ],
+  "kind": "diag",
+  "pool": "page",
+  "stem": "A pupil says, \"The heart is part of the respiratory system because it helps carry oxygen.\" Which statement is correct?",
+  "options": [
+   {
+    "text": "The pupil is correct, because the heart moves oxygen to the body.",
+    "mis": "HRC-04",
+    "pick": "Moving oxygen seems like a respiratory job.",
+    "why": "The heart pumps blood. It does not take part in gas exchange."
+   },
+   {
+    "text": "The pupil is not correct, because the heart carries only carbon dioxide.",
+    "mis": "HRC-07",
+    "pick": "The blood going back to the lungs is remembered.",
+    "why": "Blood from the heart carries oxygen to the cells too."
+   },
+   {
+    "text": "The pupil is not correct. The heart is part of the circulatory system and pumps blood, which carries the oxygen.",
+    "correct": true,
+    "pick": "Check which system the heart belongs to, then check where gas exchange actually happens.",
+    "why": "Gas exchange is in the lungs, which belong to the respiratory system."
+   },
+   {
+    "text": "The pupil is correct, because the heart is next to the lungs.",
+    "mis": "HRC-04",
+    "pick": "Being next to each other seems to mean being in the same system.",
+    "why": "Where an organ is does not tell you which system it belongs to."
+   }
+  ]
+ },
+ {
+  "id": "P5-respiratory-circulatory.q12",
+  "title": "How a fish takes in oxygen",
+  "lo": [
+   "P5.HRC.P1"
+  ],
+  "kind": "diag",
+  "pool": "recap",
+  "stem": "Which part of a fish takes in oxygen from the water?",
+  "options": [
+   {
+    "text": "Gills",
+    "correct": true,
+    "pick": "Name the part a fish uses in water that does the same job as our lungs do in air.",
+    "why": "Gills take oxygen from the water and give out carbon dioxide into it."
+   },
+   {
+    "text": "Lungs",
+    "mis": "HRC-12",
+    "pick": "Animals that breathe are pictured with lungs.",
+    "why": "Fish take in the oxygen dissolved in water through their gills."
+   },
+   {
+    "text": "Fins",
+    "mis": "HRC-18",
+    "pick": "Fins are the parts seen moving in the water. Usually a guess.",
+    "why": "Fins are for swimming, not for taking in oxygen."
+   },
+   {
+    "text": "Nose",
+    "mis": "HRC-12",
+    "pick": "Breathing is linked with the nose.",
+    "why": "A fish does not breathe air through a nose. Its gills take in oxygen from the water."
+   }
+  ]
+ },
+ {
+  "id": "P5-respiratory-circulatory.q13",
+  "title": "Plants and humans compared",
+  "lo": [
+   "P5.HRC.P1"
+  ],
+  "kind": "diag",
+  "pool": "page",
+  "stem": "Which statement about plants and humans is correct?",
+  "options": [
+   {
+    "text": "Only humans take in oxygen and give out carbon dioxide.",
+    "mis": "HRC-13",
+    "pick": "Plants are not seen breathing, so they seem not to use oxygen.",
+    "why": "Plants take in oxygen and give out carbon dioxide too, though they do not use lungs."
+   },
+   {
+    "text": "Plants take in only carbon dioxide and give out only oxygen.",
+    "mis": "HRC-13",
+    "pick": "Plants are known for making oxygen.",
+    "why": "Plants also need oxygen to live. In Primary 6 you learn what leaves do with carbon dioxide."
+   },
+   {
+    "text": "Plants take in oxygen through lungs, as humans do.",
+    "mis": "HRC-12",
+    "pick": "Whatever takes in oxygen is pictured with lungs.",
+    "why": "Plants have no lungs. Only some animals, including humans, have them."
+   },
+   {
+    "text": "Both plants and humans take in oxygen and give out carbon dioxide.",
+    "correct": true,
+    "pick": "Both take in oxygen and give out carbon dioxide.",
+    "why": "Humans use their lungs, and plants do it through their leaves and other parts."
+   }
+  ]
+ },
+ {
+  "id": "P5-respiratory-circulatory.q14",
+  "title": "Transport in a human and a plant",
+  "lo": [
+   "P5.HRC.P2"
+  ],
+  "kind": "diag",
+  "pool": "page",
+  "stem": "How are substances carried around the body of a human and of a plant?",
+  "layout": "table",
+  "cols": [
+   "Humans",
+   "Plants"
+  ],
+  "options": [
+   {
+    "text": [
+     "blood vessels carry digested food, oxygen and carbon dioxide",
+     "tubes carry food and water"
+    ],
+    "correct": true,
+    "pick": "Humans have blood vessels.",
+    "why": "Plants have tubes that carry food and water."
+   },
+   {
+    "text": [
+     "the windpipe carries digested food and oxygen",
+     "tubes carry food and water"
+    ],
+    "mis": "HRC-10",
+    "pick": "The windpipe is the tube that carries something we need.",
+    "why": "The windpipe carries air only. Blood vessels carry the other substances."
+   },
+   {
+    "text": [
+     "blood vessels carry digested food, oxygen and carbon dioxide",
+     "plants have no tubes, so each part makes what it needs"
+    ],
+    "mis": "HRC-14",
+    "pick": "Plants are not seen to have anything like blood.",
+    "why": "Plants have tubes that carry food and water to the parts that need them."
+   },
+   {
+    "text": [
+     "the heart carries digested food and oxygen by itself",
+     "tubes carry food and water"
+    ],
+    "mis": "HRC-04",
+    "pick": "The heart is thought of as the thing that moves the blood and everything in it.",
+    "why": "The heart only pumps. The blood vessels carry blood and what is in it."
+   }
+  ]
+ }
+]

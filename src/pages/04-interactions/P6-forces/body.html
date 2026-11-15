@@ -1,0 +1,144 @@
+<section class="card" id="know">
+  <p class="sec-label">What you need to know</p>
+  <h2>Forces in five ideas</h2>
+  <div class="know">
+    <details class="kcard" open>
+      <summary><span class="kn">1</span> A force is a push or a pull</summary>
+      <p>You never see a force. You only see what it <b>does</b> to an object. Every force is either a <b>push</b> or a <b>pull</b>.</p>
+      <p>A force needs something to act on. When you stop pushing, your push stops acting. A moving object does not carry your push inside it.</p>
+    </details>
+    <details class="kcard" open>
+      <summary><span class="kn">2</span> The effects of a force</summary>
+      <ul>
+        <li>A force can <b>move a stationary object</b>.</li>
+        <li>A force can <b>speed up</b>, <b>slow down</b> or <b>change the direction</b> of a moving object.</li>
+        <li>A force can <b>stop a moving object</b>.</li>
+        <li>A force may <b>change the shape</b> of an object.</li>
+      </ul>
+      <p>In an exam, name the effect that matches what actually changed. "It moved" is not enough when the object was already moving.</p>
+    </details>
+    <details class="kcard" open>
+      <summary><span class="kn">3</span> The four types of force you need</summary>
+      <div class="scroll">
+        <table class="data">
+          <thead><tr><th scope="col">Force</th><th scope="col">What it does</th><th scope="col">Does it need touching?</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">Gravitational force</th><td>Pulls every object towards the Earth. An object has <b>weight</b> because of it.</td><td>No</td></tr>
+            <tr><th scope="row">Magnetic force</th><td>A magnet pulls magnetic materials, and pushes or pulls another magnet.</td><td>No</td></tr>
+            <tr><th scope="row">Frictional force</th><td>Acts between two surfaces that rub, and opposes the motion.</td><td>Yes</td></tr>
+            <tr><th scope="row">Elastic spring force</th><td>A stretched or squashed elastic object pushes or pulls back towards its original shape.</td><td>Yes</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </details>
+    <details class="kcard" open>
+      <summary><span class="kn">4</span> Weight and gravitational force</summary>
+      <p>Gravitational force acts on an object <b>all the time</b> — falling, thrown upwards, held in your hand, or resting on a table. It never switches off.</p>
+      <p>The <b>weight</b> of an object is the gravitational force acting on it. A heavier object is pulled more strongly, so it has a greater weight.</p>
+    </details>
+    <details class="kcard" open>
+      <summary><span class="kn">5</span> Friction and springs in experiments</summary>
+      <ul>
+        <li>A <b>rougher</b> surface gives a <b>greater</b> frictional force. A smooth surface gives a smaller one — never none.</li>
+        <li>Friction can be <b>useful</b> (grip, brakes) or <b>unwanted</b> (wear, heat). Less friction is not always better.</li>
+        <li><b>Extension</b> = length with the load − original length. Length and extension are not the same thing.</li>
+        <li>In a <b>fair test</b>, change only the one thing you are testing and keep everything else the same.</li>
+      </ul>
+    </details>
+  </div>
+</section>
+
+<section class="card" id="explore">
+  <p class="sec-label">Explore</p>
+  <h2>Run the experiments yourself</h2>
+
+  <h3 id="e1">1. What a force does</h3>
+  <p class="instr">Push the puck from the left or the right, block it, or squeeze the clay. Watch which effect is named each time.</p>
+  <div class="bench">
+    <div>
+      <div class="stage"><svg id="fxSvg" viewBox="0 0 640 260" role="img" aria-label="A puck on a track that you can push, block or squeeze"></svg></div>
+      <div class="actions">
+        <button type="button" class="btn" id="fxLeft">Push from the left</button>
+        <button type="button" class="btn" id="fxRight">Push from the right</button>
+        <button type="button" class="btn" id="fxBlock">Block it with your hand</button>
+        <button type="button" class="btn" id="fxSquash">Squeeze the clay</button>
+        <button type="button" class="btn small" id="fxReset">Reset</button>
+      </div>
+    </div>
+    <div>
+      <div class="box"><h3>Effects you have seen</h3><div id="fxLog"><p class="empty">Nothing yet. Push the puck.</p></div></div>
+      <p class="note-s" id="fxMsg" aria-live="polite">The puck is still. A force is needed to start it moving.</p>
+    </div>
+  </div>
+
+  <h3 id="e2">2. Gravity never switches off</h3>
+  <p class="instr">Throw the ball up, then watch the red arrow. Try the book on the table too.</p>
+  <div class="bench">
+    <div>
+      <div class="stage"><svg id="gvSvg" viewBox="0 0 640 300" role="img" aria-label="A ball thrown upwards with an arrow showing the gravitational force, and a book resting on a table"></svg></div>
+      <div class="actions">
+        <button type="button" class="btn primary" id="gvThrow">Throw the ball up</button>
+        <button type="button" class="btn" id="gvBook">Show the book on the table</button>
+      </div>
+    </div>
+    <div>
+      <p class="key"><b>Key idea.</b> The arrow is there at every moment: going up, at the very top, coming down, and while the book rests on the table. Gravitational force always pulls towards the Earth.</p>
+      <p class="note-s" id="gvMsg" aria-live="polite">Press <b>Throw the ball up</b>.</p>
+    </div>
+  </div>
+
+  <h3 id="e3">3. Friction bench</h3>
+  <p class="instr">Send the same block down the same ramp onto each surface in turn. Read how far it travels.</p>
+  <div class="bench">
+    <div>
+      <div class="stage"><svg id="frSvg" viewBox="0 0 640 260" role="img" aria-label="A block sliding down a ramp onto a chosen surface"></svg></div>
+      <div class="shelf" id="frPick" role="group" aria-label="Choose the surface"></div>
+      <div class="actions"><button type="button" class="btn primary" id="frGo">Release the block</button><button type="button" class="btn small" id="frClear">Clear the table</button></div>
+    </div>
+    <div>
+      <div class="box"><h3>Results</h3><div class="scroll"><table class="data" id="frTable"><thead><tr><th scope="col">Surface</th><th scope="col">Distance travelled (cm)</th></tr></thead><tbody></tbody></table></div></div>
+      <p class="note-s" id="frMsg" aria-live="polite">Nothing recorded yet.</p>
+      <p class="note">This is a <b>fair test</b> only because the block, the ramp and the starting height stay the same every time. The one thing changed is the surface.</p>
+    </div>
+  </div>
+
+  <h3 id="e4">4. Spring lab</h3>
+  <p class="instr">Add 50 g loads one at a time. Watch the spring and fill in the table.</p>
+  <div class="bench">
+    <div>
+      <div class="stage"><svg id="spSvg" viewBox="0 0 360 320" role="img" aria-label="A spring hanging from a stand with loads on its end"></svg></div>
+      <div class="actions">
+        <button type="button" class="btn primary" id="spAdd">Add 50 g</button>
+        <button type="button" class="btn" id="spRemove">Remove 50 g</button>
+        <button type="button" class="btn small" id="spReset">Start again</button>
+      </div>
+      <p class="note-s" id="spMsg" aria-live="polite">The spring with no load is 10 cm long.</p>
+    </div>
+    <div>
+      <div class="box"><h3>Your results</h3><div class="scroll"><table class="data" id="spTable"><thead><tr><th scope="col">Load (g)</th><th scope="col">Length (cm)</th><th scope="col">Extension (cm)</th></tr></thead><tbody></tbody></table></div></div>
+      <p class="key"><b>Extension</b> = length with the load − original length. Every 50 g adds the same 2 cm of extension, so the pattern lets you predict a load you have not tried.</p>
+    </div>
+  </div>
+
+  <details class="beyond">
+    <summary><span class="bs-badge">Beyond syllabus</span> Newtons, mass and weight, and balanced forces</summary>
+    <p>Weight is a force, so scientists measure it in <b>newtons (N)</b> with a spring balance. <b>Mass</b> is the amount of matter in an object, measured in grams or kilograms with a balance.</p>
+    <p>The Moon pulls about one-sixth as hard as the Earth, so an astronaut's weight on the Moon is about one-sixth of her weight on Earth, while her mass does not change.</p>
+    <p>When two forces on an object are equal and act in opposite directions, they cancel out and the object does not start moving. When one is bigger, the object moves towards the bigger force.</p>
+    <p>A spring stretched too far stops following the pattern and does not return to its original length.</p>
+    <p>None of this is needed for PSLE. For PSLE, say that an object has weight because of the gravitational force acting on it.</p>
+  </details>
+</section>
+
+<section class="card" id="check">
+  <p class="sec-label">Unit check</p>
+  <h2>Ten questions on the whole topic</h2>
+  <p class="lead">Only your first answer counts. A wrong first answer goes into your mistake book, and a different question on the same idea comes back for recap.</p>
+  <div id="qs"></div>
+</section>
+
+<section class="card" id="deeper">
+  <p class="sec-label">Go deeper</p>
+  <h2>Focus pages on forces</h2>
+  <div id="psle-deeper"></div>
+</section>

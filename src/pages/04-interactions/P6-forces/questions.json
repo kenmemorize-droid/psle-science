@@ -1,0 +1,826 @@
+[
+ {
+  "id": "P6-forces.q1",
+  "title": "What a force does",
+  "lo": [
+   "P6.FOR.C1",
+   "P6.FOR.C2"
+  ],
+  "kind": "diag",
+  "pool": "page",
+  "stem": "Siti kicked a football that was rolling towards her, and it rolled back the way it came. What did the force from her kick do?",
+  "options": [
+   {
+    "text": "It changed the direction in which the ball was moving.",
+    "correct": true,
+    "pick": "A force can change the direction of a moving object.",
+    "why": "Her kick sent the ball back the other way."
+   },
+   {
+    "text": "It put a force into the ball, which the ball carried until it stopped.",
+    "mis": "FOR-01",
+    "pick": "The ball keeps moving after the kick, so it seems to carry the kick with it.",
+    "why": "The kick acts only while her foot touches the ball. The ball later slows because of friction, not because a stored force runs out."
+   },
+   {
+    "text": "Nothing, because a force can only start a still ball moving.",
+    "mis": "FOR-15",
+    "pick": "The everyday picture of a force is a push that gets something going.",
+    "why": "The ball was already moving. Her kick still changed its motion by turning it back."
+   },
+   {
+    "text": "It changed the shape of the ball and nothing else.",
+    "mis": "FOR-26",
+    "pick": "A kicked ball squashes for a moment. Usually a guess.",
+    "why": "The ball's shape springs back. The change the question describes is the change in direction."
+   }
+  ]
+ },
+ {
+  "id": "P6-forces.q2",
+  "title": "What a force does",
+  "lo": [
+   "P6.FOR.C1",
+   "P6.FOR.C2"
+  ],
+  "kind": "diag",
+  "pool": "recap",
+  "stem": "Darren squeezed a ball of plasticine and it became flat. Priya put her finger in front of a rolling marble and it stopped. Which statement is correct?",
+  "options": [
+   {
+    "text": "Both used a force. A force can change the shape of an object and can stop a moving object.",
+    "correct": true,
+    "pick": "Darren's force changed a shape.",
+    "why": "Priya's force stopped a motion."
+   },
+   {
+    "text": "Only Priya used a force, because a force must change how something moves.",
+    "mis": "FOR-15",
+    "pick": "Forces are linked with movement, and the plasticine did not move anywhere.",
+    "why": "A force can also change the shape of an object. Darren's squeeze is a force."
+   },
+   {
+    "text": "Only Darren used a force. The marble stopped because its force ran out at her finger.",
+    "mis": "FOR-02",
+    "pick": "The marble seems to stop by itself once it is blocked.",
+    "why": "Her finger pushed against the marble. That push is the force that stopped it."
+   },
+   {
+    "text": "Neither used a force, because nothing was made to start moving.",
+    "mis": "FOR-03",
+    "pick": "No object was set moving, so it seems no force was involved.",
+    "why": "Stopping a moving object and changing a shape are both effects of a force."
+   }
+  ]
+ },
+ {
+  "id": "P6-forces.q3",
+  "title": "Gravity on a resting object",
+  "lo": [
+   "P6.FOR.C3"
+  ],
+  "kind": "diag",
+  "pool": "page",
+  "stem": "A book is lying still on a table. Which statement about the book is correct?",
+  "options": [
+   {
+    "text": "No force acts on the book because it is not moving.",
+    "mis": "FOR-03",
+    "pick": "Forces seem to be about movement, and the book is doing nothing.",
+    "why": "Gravitational force acts on the book all the time. The table stops it from falling."
+   },
+   {
+    "text": "Gravitational force pulls the book towards the Earth even though the book is still.",
+    "correct": true,
+    "pick": "Gravity acts on every object, moving or still.",
+    "why": "The table stops the book from falling."
+   },
+   {
+    "text": "Gravitational force acts on the book only when it falls off the table.",
+    "mis": "FOR-04",
+    "pick": "Gravity is noticed when things fall.",
+    "why": "Gravitational force acts on the book on the table too. That is why the book has weight."
+   },
+   {
+    "text": "The table holds the book up, so gravitational force stops acting on it.",
+    "mis": "FOR-04",
+    "pick": "If something holds the book up, gravity seems no longer to matter.",
+    "why": "Gravity still pulls the book down. Take the table away and the book falls at once."
+   }
+  ]
+ },
+ {
+  "id": "P6-forces.q4",
+  "title": "A ball thrown upwards",
+  "lo": [
+   "P6.FOR.C3"
+  ],
+  "kind": "diag",
+  "pool": "recap",
+  "stem": "Ahmad threw a ball straight up. It slowed down, stopped for a moment at the top, then fell back down. Why did the ball slow down on the way up?",
+  "options": [
+   {
+    "text": "The force from Ahmad's hand inside the ball was running out.",
+    "mis": "FOR-01",
+    "pick": "The ball rises after it leaves his hand, so it seems to carry the throw with it.",
+    "why": "Once the ball leaves his hand, his push stops acting. The ball slows because gravity pulls it down."
+   },
+   {
+    "text": "Gravitational force pulled the ball downwards the whole time, so it slowed down on the way up.",
+    "correct": true,
+    "pick": "Gravity pulls down on the ball for the whole flight.",
+    "why": "On the way up, that pull slows the ball until it stops and falls."
+   },
+   {
+    "text": "Gravitational force only started acting when the ball reached the top.",
+    "mis": "FOR-04",
+    "pick": "The ball is seen falling only after the top, so gravity seems to switch on there.",
+    "why": "Gravity acts during the whole flight. The slowing on the way up is gravity at work."
+   },
+   {
+    "text": "No force acted on the ball after it left his hand, so it slowed down by itself.",
+    "mis": "FOR-02",
+    "pick": "Nothing is seen touching the ball in the air.",
+    "why": "Gravity acts without touching. A force is needed to slow the ball, and gravity is that force."
+   }
+  ]
+ },
+ {
+  "id": "P6-forces.q5",
+  "title": "What stops a sliding box",
+  "lo": [
+   "P6.FOR.C3"
+  ],
+  "kind": "diag",
+  "pool": "page",
+  "stem": "Sam pushed a box along the floor and let go. The box slowed down and stopped. Which force made it stop?",
+  "options": [
+   {
+    "text": "The force of Sam's push ran out.",
+    "mis": "FOR-02",
+    "pick": "The box moves while pushed and stops some time later.",
+    "why": "The push stops acting when he lets go. Something else must slow the box down."
+   },
+   {
+    "text": "Gravitational force",
+    "mis": "FOR-27",
+    "pick": "Gravity is the force most pupils name first. Usually a guess.",
+    "why": "Gravity pulls the box down, not backwards. The force that slows the sliding acts between the box and the floor."
+   },
+   {
+    "text": "Frictional force between the box and the floor",
+    "correct": true,
+    "pick": "Ask what touches what: the box slides on the floor, so look for a force between those two surfaces.",
+    "why": "Friction acts between the two surfaces and opposes the box's motion, so the box slows down and stops."
+   },
+   {
+    "text": "No force. The box stopped because nothing was pushing it any more.",
+    "mis": "FOR-02",
+    "pick": "Stopping looks like what objects do naturally.",
+    "why": "A moving object slows down only if a force acts on it. Here, that force is friction."
+   }
+  ]
+ },
+ {
+  "id": "P6-forces.q6",
+  "title": "A fair test on surfaces",
+  "lo": [
+   "P6.FOR.P1"
+  ],
+  "kind": "diag",
+  "pool": "page",
+  "stem": "Mei Ling wants to find out how the type of surface affects how far a block slides. Her set-up X is: wooden surface, ramp height 20 cm, block of 100 g. Which other set-up should she compare with X?",
+  "layout": "table",
+  "cols": [
+   "Surface",
+   "Ramp height",
+   "Block mass"
+  ],
+  "options": [
+   {
+    "text": [
+     "sandpaper",
+     "30 cm",
+     "100 g"
+    ],
+    "mis": "FOR-12",
+    "pick": "Changing the surface and raising the ramp both seem to make the result clearer.",
+    "why": "Two variables changed. She cannot tell whether the surface or the height caused the difference."
+   },
+   {
+    "text": [
+     "wood",
+     "20 cm",
+     "200 g"
+    ],
+    "mis": "FOR-12",
+    "pick": "Changing something seems enough for an experiment.",
+    "why": "The surface is the same as in X. This tests the mass of the block, not the surface."
+   },
+   {
+    "text": [
+     "sandpaper",
+     "30 cm",
+     "200 g"
+    ],
+    "mis": "FOR-12",
+    "pick": "Changing everything seems to give a bigger difference to see.",
+    "why": "Three variables changed. The result cannot be linked to the surface."
+   },
+   {
+    "text": [
+     "sandpaper",
+     "20 cm",
+     "100 g"
+    ],
+    "correct": true,
+    "pick": "Compare each row with set-up X and keep everything the same except the one thing being tested.",
+    "why": "Only the surface is changed, so any difference in distance comes from the surface."
+   }
+  ]
+ },
+ {
+  "id": "P6-forces.q7",
+  "title": "Reading a friction results table",
+  "lo": [
+   "P6.FOR.P1"
+  ],
+  "kind": "diag",
+  "pool": "page",
+  "stem": "Raju let the same block slide down the same ramp onto four surfaces. Which conclusion do his results support?",
+  "figure": "<table class=\"qtable\"><thead><tr><th>Surface</th><th>Distance travelled (cm)</th></tr></thead><tbody><tr><td>Glass</td><td>120</td></tr><tr><td>Wood</td><td>80</td></tr><tr><td>Carpet</td><td>35</td></tr><tr><td>Sandpaper</td><td>20</td></tr></tbody></table>",
+  "options": [
+   {
+    "text": "The rougher the surface, the greater the frictional force on the block, so the shorter the distance it travels.",
+    "correct": true,
+    "pick": "The order of distances follows the order of roughness.",
+    "why": "More friction slows the block sooner."
+   },
+   {
+    "text": "There was no friction on the glass, so the block slid furthest there.",
+    "mis": "FOR-07",
+    "pick": "Glass looks and feels perfectly smooth.",
+    "why": "The block still stopped on the glass, so friction was acting. It was smaller, not zero."
+   },
+   {
+    "text": "The block slid furthest on glass because friction on the glass pushed it along.",
+    "mis": "FOR-08",
+    "pick": "The biggest distance is linked with the surface doing something to help.",
+    "why": "Friction acts against the motion. There is less of it on glass, so the block slows down less."
+   },
+   {
+    "text": "The block stopped soonest on sandpaper because the force from the ramp ran out sooner there.",
+    "mis": "FOR-02",
+    "pick": "The block is pictured as carrying a push from the ramp.",
+    "why": "The block left the ramp the same way each time. The greater friction on sandpaper slowed it faster."
+   }
+  ]
+ },
+ {
+  "id": "P6-forces.q8",
+  "title": "Is friction always unwanted?",
+  "lo": [
+   "P6.FOR.C3"
+  ],
+  "kind": "diag",
+  "pool": "recap",
+  "stem": "Which statement about friction is correct?",
+  "options": [
+   {
+    "text": "Friction is always unwanted, so we should remove as much of it as we can.",
+    "mis": "FOR-06",
+    "pick": "Friction is often taught through wear and tear.",
+    "why": "Without friction, shoes could not grip the floor and brakes could not stop a bicycle."
+   },
+   {
+    "text": "There is no friction between a smooth tiled floor and our shoes.",
+    "mis": "FOR-07",
+    "pick": "Smooth floors feel slippery.",
+    "why": "Smooth floors have less friction, not none. We can still walk on them, just less easily."
+   },
+   {
+    "text": "Friction lets the soles of our shoes grip the floor so we can walk without slipping.",
+    "correct": true,
+    "pick": "This is friction being useful.",
+    "why": "Walking depends on it."
+   },
+   {
+    "text": "Friction makes moving objects speed up, so roads are made rough to help cars go faster.",
+    "mis": "FOR-08",
+    "pick": "Rough roads and moving cars go together in everyday life.",
+    "why": "Friction opposes motion. Rough road surfaces give grip so that vehicles can stop safely."
+   }
+  ]
+ },
+ {
+  "id": "P6-forces.q9",
+  "title": "Which way a spring pulls",
+  "lo": [
+   "P6.FOR.P2"
+  ],
+  "kind": "diag",
+  "pool": "recap",
+  "stem": "Wei Jie fixed one end of a spring to a wall and pulled the other end to the right. In which direction did the spring pull on his hand?",
+  "options": [
+   {
+    "text": "To the right, in the same direction he was pulling",
+    "mis": "FOR-11",
+    "pick": "The spring and his hand move the same way.",
+    "why": "The spring resists being stretched. It pulls the opposite way."
+   },
+   {
+    "text": "It did not pull. Only his hand was exerting a force.",
+    "mis": "FOR-11",
+    "pick": "The spring seems to do nothing; only the person seems to act.",
+    "why": "He can feel the spring pulling back. The further he stretches it, the harder it pulls."
+   },
+   {
+    "text": "Downwards, because of gravitational force",
+    "mis": "FOR-27",
+    "pick": "Gravity is the force that comes to mind first. Usually a guess.",
+    "why": "The spring force on his hand acts along the spring, to the left."
+   },
+   {
+    "text": "To the left, back towards its original length",
+    "correct": true,
+    "pick": "Picture letting go of the stretched spring: it springs back, so the pull on his hand is that way too.",
+    "why": "A stretched spring pulls back towards its original length, so it pulls his hand to the left."
+   }
+  ]
+ },
+ {
+  "id": "P6-forces.q10",
+  "title": "Length and extension",
+  "lo": [
+   "P6.FOR.P2"
+  ],
+  "kind": "diag",
+  "pool": "page",
+  "stem": "Hui Min hung loads from a spring and recorded its length. What is the extension of the spring when the load is 100 g?",
+  "figure": "<table class=\"qtable\"><tbody><tr><th scope=\"row\">Load (g)</th><td>0</td><td>50</td><td>100</td><td>150</td></tr><tr><th scope=\"row\">Length of spring (cm)</th><td>10</td><td>12</td><td>14</td><td>16</td></tr></tbody></table>",
+  "options": [
+   {
+    "text": "14 cm",
+    "mis": "FOR-10",
+    "pick": "14 cm is the number in the table for 100 g.",
+    "why": "14 cm is the length. The extension is how much longer it is than the original 10 cm."
+   },
+   {
+    "text": "4 cm",
+    "correct": true,
+    "pick": "Find the length with no load first, then subtract it from the length at 100 g.",
+    "why": "Extension = length with the load − original length = 14 − 10 = 4 cm."
+   },
+   {
+    "text": "2 cm",
+    "mis": "FOR-28",
+    "pick": "2 cm is the step between columns.",
+    "why": "Each 50 g adds 2 cm, so 100 g adds 4 cm."
+   },
+   {
+    "text": "24 cm",
+    "mis": "FOR-10",
+    "pick": "Adding the original length to the new length seems to give the total stretch.",
+    "why": "Extension is the difference between the two lengths, 14 − 10."
+   }
+  ]
+ },
+ {
+  "id": "P6-forces.q11",
+  "title": "Predicting from a spring table",
+  "lo": [
+   "P6.FOR.P2"
+  ],
+  "kind": "diag",
+  "pool": "recap",
+  "stem": "Using Hui Min's results below, predict the length of the spring when the load is 250 g.",
+  "figure": "<table class=\"qtable\"><tbody><tr><th scope=\"row\">Load (g)</th><td>0</td><td>50</td><td>100</td><td>150</td></tr><tr><th scope=\"row\">Length of spring (cm)</th><td>10</td><td>12</td><td>14</td><td>16</td></tr></tbody></table>",
+  "options": [
+   {
+    "text": "20 cm",
+    "correct": true,
+    "pick": "Each 50 g stretches the spring by 2 cm.",
+    "why": "250 g gives 5 × 2 = 10 cm of extension, so the length is 10 + 10 = 20 cm."
+   },
+   {
+    "text": "10 cm",
+    "mis": "FOR-10",
+    "pick": "The extension, 10 cm, is worked out correctly but given as the length.",
+    "why": "The length includes the original 10 cm."
+   },
+   {
+    "text": "16 cm, the same as with 150 g, because a spring stretches the same amount every time",
+    "mis": "FOR-09",
+    "pick": "A spring seems to have one fixed stretch.",
+    "why": "The table shows that a greater load gives a greater extension."
+   },
+   {
+    "text": "35 cm",
+    "mis": "FOR-13",
+    "pick": "250 g is 2.5 times 100 g, so the length seems to be 2.5 × 14 cm.",
+    "why": "Only the extension grows in step with the load. The original 10 cm does not change."
+   }
+  ]
+ },
+ {
+  "id": "P6-forces.q12",
+  "title": "A fair test on a spring launcher",
+  "lo": [
+   "P6.FOR.P2"
+  ],
+  "kind": "diag",
+  "pool": "recap",
+  "stem": "Jun wants to find out whether squashing a spring more makes a block travel further after it is released. Which of these must he keep the same?",
+  "options": [
+   {
+    "text": "How much the spring is squashed",
+    "mis": "FOR-12",
+    "pick": "Keeping things the same sounds like good practice for everything.",
+    "why": "That is the variable he is testing. It must change."
+   },
+   {
+    "text": "The mass of the block, the type of floor and the spring used",
+    "correct": true,
+    "pick": "These are the variables that could also change the distance.",
+    "why": "Keeping them the same means only the squash differs."
+   },
+   {
+    "text": "Nothing, because he is only measuring the distance",
+    "mis": "FOR-12",
+    "pick": "The measurement seems to be the only thing that matters.",
+    "why": "If the floor or the block also change, he cannot tell what caused the change in distance."
+   },
+   {
+    "text": "Only the type of floor",
+    "mis": "FOR-12",
+    "pick": "The floor is the most obvious other factor.",
+    "why": "The block's mass and the spring also affect the distance, so they must be kept the same too."
+   }
+  ]
+ },
+ {
+  "id": "P6-forces.q13",
+  "title": "A force without touching",
+  "lo": [
+   "P6.FOR.C3"
+  ],
+  "kind": "diag",
+  "pool": "recap",
+  "stem": "Lina held a magnet above a paper clip on a table. Before the magnet touched it, the paper clip jumped up to the magnet. Which statement is correct?",
+  "options": [
+   {
+    "text": "The magnet must have touched the paper clip, because a force can act only when things touch.",
+    "mis": "FOR-14",
+    "pick": "Most everyday pushes and pulls involve touching.",
+    "why": "The clip moved before the magnet reached it. Magnets pull across a gap."
+   },
+   {
+    "text": "Gravitational force stopped acting on the paper clip while it was near the magnet.",
+    "mis": "FOR-04",
+    "pick": "The clip rises, so gravity seems to have switched off.",
+    "why": "Gravity still pulled the clip down. The magnet's pull upwards was stronger than gravity's pull downwards."
+   },
+   {
+    "text": "The magnet pulled the paper clip without touching it. Gravitational force also acts without touching.",
+    "correct": true,
+    "pick": "Look for the other force on the list that still acts across a gap.",
+    "why": "Magnetic force and gravitational force both act across a gap."
+   },
+   {
+    "text": "The paper clip moved by itself because it has a force inside it.",
+    "mis": "FOR-01",
+    "pick": "The clip seems to leap on its own.",
+    "why": "The clip moved because the magnet pulled it. Objects do not carry forces inside them."
+   }
+  ]
+ },
+ {
+  "id": "P6-forces.q14",
+  "title": "Naming the force",
+  "lo": [
+   "P6.FOR.C1",
+   "P6.FOR.C3"
+  ],
+  "kind": "diag",
+  "pool": "page",
+  "stem": "Which row names the main force at work in each event?",
+  "layout": "table",
+  "cols": [
+   "Apple falls from a tree",
+   "Trampoline sends a boy up",
+   "Bicycle slows when its brakes are used"
+  ],
+  "options": [
+   {
+    "text": [
+     "gravitational",
+     "gravitational",
+     "frictional"
+    ],
+    "mis": "FOR-11",
+    "pick": "The boy goes up and down, and gravity is the force linked with up and down.",
+    "why": "The stretched trampoline pushes back up. That is an elastic spring force."
+   },
+   {
+    "text": [
+     "none, nothing touches the apple",
+     "elastic spring",
+     "frictional"
+    ],
+    "mis": "FOR-14",
+    "pick": "Nothing is seen touching the falling apple.",
+    "why": "Gravity pulls without touching."
+   },
+   {
+    "text": [
+     "gravitational",
+     "elastic spring",
+     "frictional"
+    ],
+    "correct": true,
+    "pick": "Name the force event by event, then find the row that matches all three.",
+    "why": "Gravity pulls the apple down, the stretched trampoline pushes the boy up, and friction at the brakes slows the bicycle."
+   },
+   {
+    "text": [
+     "gravitational",
+     "elastic spring",
+     "none, its force runs out"
+    ],
+    "mis": "FOR-02",
+    "pick": "The bicycle seems to slow down on its own once braking starts.",
+    "why": "The brakes rub against the wheel. That friction is the force that slows the bicycle."
+   }
+  ]
+ },
+ {
+  "id": "P6-forces.q15",
+  "title": "Rougher surface, more friction",
+  "lo": [
+   "P6.FOR.P1"
+  ],
+  "kind": "diag",
+  "pool": "recap",
+  "stem": "Ravi pushes the same heavy box across a smooth tiled floor and then across a carpet. He finds it harder to push on the carpet. Why?",
+  "options": [
+   {
+    "text": "There is no friction on the tiled floor, so the box slides by itself.",
+    "mis": "FOR-07",
+    "pick": "Tiles feel smooth and slippery.",
+    "why": "Smooth tiles still have some friction, just less than carpet."
+   },
+   {
+    "text": "Friction pushes the box along on the tiles but not on the carpet.",
+    "mis": "FOR-08",
+    "pick": "The box moves further on tiles, so tiles seem to help.",
+    "why": "Friction always acts against the motion. There is less of it on tiles."
+   },
+   {
+    "text": "The carpet weakens the gravitational force on the box.",
+    "mis": "FOR-27",
+    "pick": "Carpet is soft, so it seems to change the weight. Usually a guess.",
+    "why": "Gravity pulls the box the same on both floors. The difference is friction."
+   },
+   {
+    "text": "There is more friction between the box and the carpet, because the carpet is rougher.",
+    "correct": true,
+    "pick": "Harder to push means a bigger force opposing him, so compare how rough the two surfaces are.",
+    "why": "A rougher surface gives a greater frictional force, which opposes the push."
+   }
+  ]
+ },
+ {
+  "id": "P6-forces.q16",
+  "title": "Stretch further, pull harder",
+  "lo": [
+   "P6.FOR.P2"
+  ],
+  "kind": "diag",
+  "pool": "page",
+  "stem": "Mei stretches a rubber band a little, then stretches it much further. Which statement is correct?",
+  "options": [
+   {
+    "text": "The elastic spring force is the same however far it is stretched.",
+    "mis": "FOR-09",
+    "pick": "A rubber band seems to have one fixed pull.",
+    "why": "The further it is stretched, the harder it pulls back. You can feel it."
+   },
+   {
+    "text": "The elastic spring force only acts after the rubber band is let go.",
+    "mis": "FOR-11",
+    "pick": "The band is seen moving only when released.",
+    "why": "The pull is already acting while it is stretched. Letting go lets it act on the band."
+   },
+   {
+    "text": "The rubber band pulls in the same direction as Mei pulls it.",
+    "mis": "FOR-11",
+    "pick": "The band and her hand move the same way.",
+    "why": "The band pulls back, opposite to her pull."
+   },
+   {
+    "text": "The further it is stretched, the greater the elastic spring force pulling back.",
+    "correct": true,
+    "pick": "Compare the small stretch with the big stretch and ask which pulls back harder.",
+    "why": "A greater stretch gives a greater force back towards the original length."
+   }
+  ]
+ },
+ {
+  "id": "P6-forces.q17",
+  "title": "Two forces on one ball",
+  "lo": [
+   "P6.FOR.C2",
+   "P6.FOR.C3"
+  ],
+  "kind": "diag",
+  "pool": "recap",
+  "stem": "A football rolls across the grass and slows down. It then hits the goalpost and bounces back. Which row gives the force that slows the ball on the grass and the force that pushes it back off the post?",
+  "layout": "table",
+  "cols": [
+   "Slows the ball on the grass",
+   "Pushes the ball back off the post"
+  ],
+  "options": [
+   {
+    "text": [
+     "frictional force",
+     "elastic spring force"
+    ],
+    "correct": true,
+    "pick": "Friction between the ball and the grass slows it.",
+    "why": "The squashed ball and post push back by elastic spring force."
+   },
+   {
+    "text": [
+     "gravitational force",
+     "frictional force"
+    ],
+    "mis": "FOR-02",
+    "pick": "Gravity is the force most pupils name first.",
+    "why": "Gravity pulls the ball down. Friction with the grass slows it, and the squashed ball pushes back off the post."
+   },
+   {
+    "text": [
+     "force from the kick",
+     "elastic spring force"
+    ],
+    "mis": "FOR-01",
+    "pick": "The ball seems to carry the kick until it runs out.",
+    "why": "The kick stopped acting long ago. Friction slows the ball."
+   },
+   {
+    "text": [
+     "frictional force",
+     "frictional force"
+    ],
+    "mis": "FOR-08",
+    "pick": "Friction is the force pupils link with stopping.",
+    "why": "Friction does not push the ball back. The squashed ball pushes back by elastic spring force."
+   }
+  ]
+ },
+ {
+  "id": "P6-forces.q18",
+  "title": "Stopping a moving ball",
+  "lo": [
+   "P6.FOR.C2"
+  ],
+  "kind": "diag",
+  "pool": "recap",
+  "stem": "A goalkeeper catches a fast-moving football and brings it to a stop. Which effect of force best describes what happens when the goalkeeper catches the ball?",
+  "options": [
+   {
+    "text": "The force moves a stationary object.",
+    "mis": "FOR-15",
+    "pick": "A force is pictured as something that gets things going.",
+    "why": "The ball was already moving. The goalkeeper's force did not start it."
+   },
+   {
+    "text": "The force stops a moving object.",
+    "correct": true,
+    "pick": "Name what changed about the ball: it was moving, and now it is not.",
+    "why": "The goalkeeper's hands push against the ball until it stops."
+   },
+   {
+    "text": "The force changes the direction of a moving object.",
+    "mis": "FOR-26",
+    "pick": "Catching involves the ball changing what it does. Usually a guess.",
+    "why": "The ball did not turn. It ended up at rest."
+   },
+   {
+    "text": "The force speeds up a moving object.",
+    "mis": "FOR-26",
+    "pick": "The ball is fast, and force is linked with speed. Usually a guess.",
+    "why": "The ball went from fast to still, so it slowed down and stopped. It did not speed up."
+   }
+  ]
+ },
+ {
+  "id": "P6-forces.q19",
+  "title": "Weight and gravitational force",
+  "lo": [
+   "P6.FOR.C4"
+  ],
+  "kind": "diag",
+  "pool": "page",
+  "stem": "Which statement about gravitational force is correct?",
+  "options": [
+   {
+    "text": "The weight of an object is the gravitational force acting on it.",
+    "correct": true,
+    "pick": "Check each statement against one idea: weight is a force, and it comes from the Earth pulling.",
+    "why": "Weight comes from the pull of the Earth on the object."
+   },
+   {
+    "text": "Gravitational force only acts on objects that are falling.",
+    "mis": "FOR-04",
+    "pick": "Gravity is noticed when things fall.",
+    "why": "Gravity acts on all objects all the time, including a book at rest."
+   },
+   {
+    "text": "Gravitational force is a push that acts away from the Earth's surface.",
+    "mis": "FOR-29",
+    "pick": "Things that go up, like a thrown ball, seem pushed away. Usually a guess.",
+    "why": "Gravity is a pull towards the Earth, not a push away from it."
+   },
+   {
+    "text": "Only large objects experience gravitational force.",
+    "mis": "FOR-25",
+    "pick": "Gravity is linked with big things such as planets.",
+    "why": "Every object has a gravitational pull on it, however small."
+   }
+  ]
+ },
+ {
+  "id": "P6-forces.q20",
+  "title": "Which object is pushed away",
+  "lo": [
+   "P6.FOR.C3"
+  ],
+  "kind": "diag",
+  "pool": "recap",
+  "stem": "A bar magnet is held near each of four objects in turn. None of the objects touches the magnet. Which object will be pushed away from the magnet?",
+  "options": [
+   {
+    "text": "A steel paper clip",
+    "mis": "FOR-23",
+    "pick": "Magnets are known to affect steel, and \"affect\" is mixed up with \"push\".",
+    "why": "A steel paper clip is pulled towards a magnet, not pushed away."
+   },
+   {
+    "text": "A copper wire",
+    "mis": "FOR-22",
+    "pick": "Copper is a metal, and metals seem to be magnetic.",
+    "why": "Copper is not a magnetic material. A magnet neither pulls nor pushes it."
+   },
+   {
+    "text": "The north pole of a second bar magnet, held facing the first magnet's north pole",
+    "correct": true,
+    "pick": "Only like poles push each other away.",
+    "why": "No contact is needed."
+   },
+   {
+    "text": "A plastic ruler",
+    "mis": "FOR-22",
+    "pick": "Magnets seem to act on everything nearby.",
+    "why": "Plastic is not a magnetic material, so the magnet does nothing to it."
+   }
+  ]
+ },
+ {
+  "id": "P6-forces.q21",
+  "title": "A bow and arrow, step by step",
+  "lo": [
+   "P6.FOR.C2"
+  ],
+  "kind": "diag",
+  "pool": "page",
+  "stem": "An archer pulls the string of a bow backwards, then lets go. The arrow, which was resting on the string, flies forwards. Which two effects of force are shown, in the order they happen?",
+  "options": [
+   {
+    "text": "A force moves a stationary object, then a force changes the shape of an object.",
+    "mis": "FOR-11",
+    "pick": "The arrow is the thing seen moving, so moving seems to come first.",
+    "why": "The string has to be stretched first. Only then can it push the arrow."
+   },
+   {
+    "text": "A force changes the shape of an object, then a force moves a stationary object.",
+    "correct": true,
+    "pick": "Pulling the string changes its shape.",
+    "why": "When released, the string pushes the still arrow forward."
+   },
+   {
+    "text": "A force changes the direction of a moving object, then a force changes the shape of an object.",
+    "mis": "FOR-26",
+    "pick": "Words from the list of effects chosen at random. Usually a guess.",
+    "why": "The arrow was at rest on the string, so there was no moving object to turn at first."
+   },
+   {
+    "text": "A force changes the shape of an object, then a force stops a moving object.",
+    "mis": "FOR-26",
+    "pick": "The first half is right, so the second half is guessed. Usually a guess.",
+    "why": "The arrow starts moving. Nothing in the story stops it."
+   }
+  ]
+ }
+]

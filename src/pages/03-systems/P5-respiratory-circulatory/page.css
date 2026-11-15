@@ -1,0 +1,25 @@
+#explore h3{font-size:20px;margin:26px 0 4px;padding-top:14px;border-top:var(--bw) solid var(--line)}
+#explore h3#e1{border-top:0;padding-top:0;margin-top:10px}
+#explore .stage svg{display:block;width:100%;height:auto}
+table.data{border-collapse:collapse;width:100%;font-size:15px}
+table.data th,table.data td{border:1px solid var(--line);padding:7px 9px;text-align:left}
+table.data thead th{background:var(--sunk)}
+.part{cursor:pointer}
+.part:focus-visible{outline:3px solid var(--primary);outline-offset:2px}
+.part[aria-pressed="true"] .pshape{stroke-width:4}
+.pshape{stroke:var(--stroke);stroke-width:2}
+.skin{fill:var(--fc);stroke:var(--stroke);stroke-width:2}
+.lung{fill:var(--sim-3);opacity:.85}
+.heart{fill:var(--npole)}
+.tube{fill:none;stroke:var(--sim-1);stroke-width:10;stroke-linecap:round}
+.vessel{fill:none;stroke:var(--npole);stroke-width:6;stroke-linecap:round}
+.cells{fill:var(--fb)}
+.plab{font:600 13px var(--f-body);fill:var(--ink)}
+.gbar{display:flex;align-items:center;gap:8px;margin:5px 0;font-size:14px}
+.gbar span:first-child{min-width:112px}
+.gbar .track{flex:1;height:14px;background:var(--sunk);border:1px solid var(--line);border-radius:999px;overflow:hidden}
+.gbar .fill{height:100%;background:var(--primary);transition:width .4s}
+.gbar .fill.o2{background:var(--sim-1)} .gbar .fill.co2{background:var(--sim-3)} .gbar .fill.wv{background:var(--sim-2)}
+.gbar b{min-width:4.6em;text-align:right}
+.dropO2{fill:var(--npole);stroke:var(--stroke);stroke-width:1.5}
+.dropCO2{fill:var(--spole);stroke:var(--stroke);stroke-width:1.5}

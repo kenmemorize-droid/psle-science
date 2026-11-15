@@ -1,0 +1,22 @@
+{
+  "id": "P6-forces",
+  "type": "unit",
+  "theme": "interactions",
+  "topic": "FOR",
+  "level": "P6",
+  "title": "Forces",
+  "purpose": "A force is a push or a pull, and you only ever see what it does. Work through the four forces you need for PSLE — gravitational, frictional, elastic spring and magnetic — and run the experiments yourself.",
+  "lo": [
+    "P6.FOR.C1",
+    "P6.FOR.C2",
+    "P6.FOR.C3",
+    "P6.FOR.C4",
+    "P6.FOR.P1",
+    "P6.FOR.P2"
+  ],
+  "fixes": "The whole Forces topic: what a force does, weight and gravitational force, friction on moving objects, and the elastic spring force, including fair tests and reading results tables.",
+  "origin": "retrofit",
+  "built": "2026-11-15",
+  "order": 0,
+  "uses": []
+}

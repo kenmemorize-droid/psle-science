@@ -1,0 +1,21 @@
+{
+  "id": "P5-respiratory-circulatory",
+  "type": "unit",
+  "theme": "systems",
+  "topic": "HRC",
+  "level": "P5",
+  "title": "Breathing and blood",
+  "purpose": "Air goes in through the nose, down the windpipe and into the lungs. Blood collects the oxygen there and the heart pumps it to every cell. Follow one breath and one drop of blood all the way round.",
+  "lo": [
+    "P5.HRC.C1",
+    "P5.HRC.C2",
+    "P5.HRC.C3",
+    "P5.HRC.P1",
+    "P5.HRC.P2"
+  ],
+  "fixes": "The whole respiratory and circulatory topic: what is in the air we breathe in and out, the parts of both systems and their jobs, how the two systems work with the digestive system, and how plants, fish and humans compare.",
+  "origin": "retrofit",
+  "built": "2026-11-15",
+  "order": 0,
+  "uses": []
+}

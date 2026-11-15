@@ -1,0 +1,20 @@
+#explore h3{font-size:20px;margin:26px 0 4px;padding-top:14px;border-top:var(--bw) solid var(--line)}
+#explore h3#e1{border-top:0;padding-top:0;margin-top:10px}
+#explore .stage svg{display:block;width:100%;height:auto}
+.fxitem{display:flex;gap:8px;align-items:flex-start;padding:7px 0;border-bottom:1px solid var(--line);font-size:14.5px}
+.fxitem:last-child{border-bottom:0}
+.fxitem i{font-style:normal;color:var(--ok);font-weight:700}
+table.data{border-collapse:collapse;width:100%;font-size:15px}
+table.data th,table.data td{border:1px solid var(--line);padding:7px 9px;text-align:left}
+table.data thead th{background:var(--sunk)}
+table.data tbody tr.new td,table.data tbody tr.new th{background:var(--ok-soft)}
+.puck{fill:var(--sim-1);stroke:var(--stroke);stroke-width:2}
+.clay{fill:var(--fb);stroke:var(--stroke);stroke-width:2}
+.ground{stroke:var(--stroke);stroke-width:2}
+.farrow{stroke:var(--instr);fill:var(--instr);stroke-width:3}
+.flabel{font:600 13px var(--f-label);fill:var(--instr)}
+.slab{font:600 13px var(--f-body);fill:var(--ink)}
+.surf-glass{fill:var(--fa)} .surf-wood{fill:var(--wood)} .surf-carpet{fill:var(--sim-3)} .surf-sandpaper{fill:var(--soil)}
+.spring{fill:none;stroke:var(--stroke);stroke-width:3;stroke-linejoin:round}
+.loadbox{fill:var(--sim-2);stroke:var(--stroke);stroke-width:2}
+.rule{stroke:var(--line);stroke-width:1}
