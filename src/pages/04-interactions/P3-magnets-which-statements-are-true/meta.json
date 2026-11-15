@@ -1,0 +1,15 @@
+{
+  "id": "P3-magnets-which-statements-are-true",
+  "type": "focus",
+  "theme": "interactions",
+  "topic": "MAG",
+  "level": "P3",
+  "title": "Which statements about magnets are true?",
+  "purpose": "Test each statement from a school question: do unlike poles attract, and can every metal be made into a magnet? Then see why a magnet that is dropped many times can lose its magnetism.",
+  "lo": ["P3.MAG.C2", "P3.MAG.P1", "P3.MAG.P2"],
+  "fixes": "Believing every metal can be made into a magnet, mixing up which poles attract, and not knowing a magnet can lose its magnetism (not in the syllabus LO list, but tested in school papers).",
+  "origin": "mistake",
+  "built": "2026-11-15",
+  "order": 4,
+  "uses": []
+}

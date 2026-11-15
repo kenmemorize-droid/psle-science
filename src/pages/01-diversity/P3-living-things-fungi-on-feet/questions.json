@@ -459,5 +459,240 @@
     "mis": "LIV-13"
    }
   ]
+ },
+ {
+  "id": "P3-living-things-fungi-on-feet.q5",
+  "title": "Roger's four pears",
+  "lo": [
+   "P3.LIV.C1",
+   "P3.LIV.C2",
+   "P6.ENV.C1"
+  ],
+  "kind": "exam",
+  "pool": "page",
+  "source": "School paper, Q12 (open-ended, 2 marks; here as a multiple-choice question)",
+  "stem": "<p>Roger placed four pears in four identical containers. Substance X absorbed water from the surroundings. The pears were left for several days. Mould first appeared on the pear in container D.</p><p class='q-ask'>Which statement best explains why mould first appeared on the pear in container D?</p>",
+  "figure": "<div class='scroll'><table class='data'><thead><tr><th scope='col'>Container</th><th scope='col'>Room temperature</th><th scope='col'>Placed next to the pear</th></tr></thead><tbody><tr><th scope='row'>A</th><td>4°C</td><td>Substance X</td></tr><tr><th scope='row'>B</th><td>30°C</td><td>Substance X</td></tr><tr><th scope='row'>C</th><td>4°C</td><td>Water</td></tr><tr><th scope='row'>D</th><td>30°C</td><td>Water</td></tr></tbody></table></div>",
+  "options": [
+   {
+    "text": "Container D is warm, and mould grows well in warm places.",
+    "mis": "LIV-14",
+    "pick": "Warmth helps mould, and D is at 30°C.",
+    "why": "Container B is also at 30°C, yet mould did not appear there first. Warmth alone cannot explain why D is first. Mould also needs water, and the Substance X in B takes the water away."
+   },
+   {
+    "text": "Container D has water next to the pear, and mould needs water to grow.",
+    "mis": "LIV-14",
+    "pick": "Mould needs water, and D has a beaker of water.",
+    "why": "Container C also has water next to the pear, yet mould did not appear there first. C is at 4°C, too cold for mould to grow well. Water alone cannot explain why D is first."
+   },
+   {
+    "text": "Container D does not have Substance X, so nothing stops the mould from growing.",
+    "mis": "LIV-15",
+    "pick": "Substance X is what keeps the pears in A and B dry, so “D has no X” seems to be the reason.",
+    "why": "C also does not have Substance X, but mould did not appear there first. This answer says what D lacks, not what mould needs. Substance X matters because it absorbs water, so the pear stays dry. Mould needs water and warmth."
+   },
+   {
+    "text": "Container D is the only one that is both warm and has water. B is warm but Substance X takes in the water. C has water but is too cold.",
+    "correct": true,
+    "pick": "Compare all four containers. Mould needs warmth and water. Check which containers have each one.",
+    "why": "D is at 30°C (warm) and has water near the pear. A is cold and dry, B is warm but dry, and C is damp but cold. Only D has both things mould needs."
+   }
+  ]
+ },
+ {
+  "id": "P3-living-things-fungi-on-feet.q6",
+  "title": "Testing water",
+  "lo": [
+   "P3.LIV.C1",
+   "P3.LIV.C2",
+   "P6.ENV.C1"
+  ],
+  "kind": "diag",
+  "pool": "page",
+  "stem": "<p>Roger wants to find out whether <b>water</b> affects how fast mould grows on a pear. He can use the four containers.</p><p class='q-ask'>Which two containers should he compare?</p>",
+  "figure": "<div class='scroll'><table class='data'><thead><tr><th scope='col'>Container</th><th scope='col'>Room temperature</th><th scope='col'>Placed next to the pear</th></tr></thead><tbody><tr><th scope='row'>A</th><td>4°C</td><td>Substance X</td></tr><tr><th scope='row'>B</th><td>30°C</td><td>Substance X</td></tr><tr><th scope='row'>C</th><td>4°C</td><td>Water</td></tr><tr><th scope='row'>D</th><td>30°C</td><td>Water</td></tr></tbody></table></div>",
+  "options": [
+   {
+    "text": "A and D",
+    "mis": "LIV-16",
+    "pick": "A has Substance X and D has water, so the water is different.",
+    "why": "A and D differ in two things: water and temperature (4°C and 30°C). If mould grows differently, he cannot tell whether water or temperature caused it."
+   },
+   {
+    "text": "B and D",
+    "correct": true,
+    "pick": "Both are at 30°C. B has Substance X and D has water. Only the water is different.",
+    "why": "Correct: the room temperature is the same, and only the water changes. This is a fair test for water."
+   },
+   {
+    "text": "C and D",
+    "mis": "LIV-16",
+    "pick": "Both have water next to the pear, so they look like a good pair.",
+    "why": "C and D both have water, and they differ in temperature (4°C and 30°C). This pair tests temperature, not water."
+   },
+   {
+    "text": "B and C",
+    "mis": "LIV-16",
+    "pick": "B has Substance X and C has water, so the water is different.",
+    "why": "B and C differ in two things: water and temperature (30°C and 4°C). It is not a fair test for water."
+   }
+  ]
+ },
+ {
+  "id": "P3-living-things-fungi-on-feet.v6",
+  "title": "Four lunchboxes",
+  "lo": [
+   "P3.LIV.C1",
+   "P3.LIV.C2",
+   "P6.ENV.C1"
+  ],
+  "kind": "variant",
+  "pool": "recap",
+  "stem": "<p>Mei put four identical slices of bread in four identical boxes. Mould first grew on the bread in box Q.</p><p class='q-ask'>Which statement best explains why mould first grew in box Q?</p>",
+  "figure": "<div class='scroll'><table class='data'><thead><tr><th scope='col'>Box</th><th scope='col'>Room temperature</th><th scope='col'>Placed in the box with the bread</th></tr></thead><tbody><tr><th scope='row'>P</th><td>4°C</td><td>A packet that absorbs water</td></tr><tr><th scope='row'>Q</th><td>30°C</td><td>A damp sponge</td></tr><tr><th scope='row'>R</th><td>30°C</td><td>A packet that absorbs water</td></tr><tr><th scope='row'>S</th><td>4°C</td><td>A damp sponge</td></tr></tbody></table></div>",
+  "options": [
+   {
+    "text": "Box Q does not have a packet that absorbs water, so nothing stops the mould.",
+    "mis": "LIV-15",
+    "pick": "Q is the only warm box without the packet.",
+    "why": "Box S also has no packet, but S is cold. This answer says what Q lacks, not what mould needs. Mould needs water and warmth."
+   },
+   {
+    "text": "Box Q has a damp sponge, and mould needs water.",
+    "mis": "LIV-14",
+    "pick": "The sponge makes the air in Q damp, and mould needs water.",
+    "why": "Box S also has a damp sponge. S is at 4°C, too cold for mould to grow well. Water alone cannot explain why Q is first."
+   },
+   {
+    "text": "Box Q is the only box that is both warm and damp. R is warm but the packet takes in the water. S is damp but cold.",
+    "correct": true,
+    "pick": "Check each box for warmth and water.",
+    "why": "Q is at 30°C and has a damp sponge. P is cold and dry, R is warm but dry, and S is damp but cold. Only Q has both things mould needs."
+   },
+   {
+    "text": "Box Q is at 30°C, and mould grows well in warm places.",
+    "mis": "LIV-14",
+    "pick": "Warmth helps mould, and Q is at 30°C.",
+    "why": "Box R is also at 30°C, but mould did not grow there first. R has a packet that takes in water, so the bread is dry."
+   }
+  ]
+ },
+ {
+  "id": "P3-living-things-fungi-on-feet.v7",
+  "title": "Why not in container A?",
+  "lo": [
+   "P3.LIV.C1",
+   "P3.LIV.C2",
+   "P6.ENV.C1"
+  ],
+  "kind": "variant",
+  "pool": "recap",
+  "stem": "<p>Look at Roger's four containers again. After several days, mould had appeared on the pears in B, C and D, but <b>not</b> on the pear in container A.</p><p class='q-ask'>Which statement best explains why there was no mould on the pear in container A?</p>",
+  "figure": "<div class='scroll'><table class='data'><thead><tr><th scope='col'>Container</th><th scope='col'>Room temperature</th><th scope='col'>Placed next to the pear</th></tr></thead><tbody><tr><th scope='row'>A</th><td>4°C</td><td>Substance X</td></tr><tr><th scope='row'>B</th><td>30°C</td><td>Substance X</td></tr><tr><th scope='row'>C</th><td>4°C</td><td>Water</td></tr><tr><th scope='row'>D</th><td>30°C</td><td>Water</td></tr></tbody></table></div>",
+  "options": [
+   {
+    "text": "Container A is cold, and Substance X takes in the water, so the pear has neither warmth nor water.",
+    "correct": true,
+    "pick": "Check A for each thing mould needs: warmth and water.",
+    "why": "Correct: A is at 4°C (cold), and the Substance X absorbs water, so the pear stays dry. A has neither of the two things mould needs."
+   },
+   {
+    "text": "Container A has Substance X.",
+    "mis": "LIV-15",
+    "pick": "Substance X is the thing that is different in A.",
+    "why": "This says what A has, not what mould needs. B also has Substance X. Substance X matters because it absorbs water, and A is also cold."
+   },
+   {
+    "text": "Container A is cold, and mould cannot grow in cold places.",
+    "mis": "LIV-14",
+    "pick": "A is at 4°C, which is the coldest.",
+    "why": "Cold slows mould, but C is also cold and mould grew there. A has a second problem: Substance X takes in the water."
+   },
+   {
+    "text": "Container A has no water, and mould needs water.",
+    "mis": "LIV-14",
+    "pick": "A has Substance X, which takes in water, so the pear is dry.",
+    "why": "B has no water either, and mould grew there. A is also cold. A is missing both things mould needs."
+   }
+  ]
+ },
+ {
+  "id": "P3-living-things-fungi-on-feet.v8",
+  "title": "Testing temperature",
+  "lo": [
+   "P3.LIV.C1",
+   "P3.LIV.C2",
+   "P6.ENV.C1"
+  ],
+  "kind": "variant",
+  "pool": "recap",
+  "stem": "<p>Mei wants to find out whether <b>temperature</b> affects how fast mould grows on bread. She sets up four tests with identical slices of bread.</p><p class='q-ask'>Which two tests should she compare?</p>",
+  "figure": "<div class='scroll'><table class='data'><thead><tr><th scope='col'>Test</th><th scope='col'>Temperature</th><th scope='col'>Placed next to the bread</th></tr></thead><tbody><tr><th scope='row'>1</th><td>4°C</td><td>A packet that absorbs water</td></tr><tr><th scope='row'>2</th><td>30°C</td><td>A packet that absorbs water</td></tr><tr><th scope='row'>3</th><td>4°C</td><td>A damp sponge</td></tr><tr><th scope='row'>4</th><td>30°C</td><td>A damp sponge</td></tr></tbody></table></div>",
+  "options": [
+   {
+    "text": "Tests 1 and 4",
+    "mis": "LIV-16",
+    "pick": "Test 1 is the coldest and Test 4 is the warmest, so the temperature is most different.",
+    "why": "Tests 1 and 4 differ in two things: temperature and water. It is not a fair test for temperature."
+   },
+   {
+    "text": "Tests 1 and 3",
+    "mis": "LIV-16",
+    "pick": "Both are at 4°C, so the temperature is the same.",
+    "why": "Tests 1 and 3 have the same temperature and differ in water. This pair tests water, not temperature."
+   },
+   {
+    "text": "Tests 2 and 3",
+    "mis": "LIV-16",
+    "pick": "Test 2 is warm and Test 3 is cold.",
+    "why": "Tests 2 and 3 differ in two things: temperature and water."
+   },
+   {
+    "text": "Tests 3 and 4",
+    "correct": true,
+    "pick": "Both have a damp sponge. Only the temperature is different: 4°C and 30°C.",
+    "why": "Correct: the water is the same, and only the temperature changes. This is a fair test for temperature."
+   }
+  ]
+ },
+ {
+  "id": "P3-living-things-fungi-on-feet.v9",
+  "title": "Testing water on shoes",
+  "lo": [
+   "P3.LIV.C1",
+   "P3.LIV.C2",
+   "P6.ENV.C1"
+  ],
+  "kind": "variant",
+  "pool": "recap",
+  "stem": "<p>Ali wants to find out whether <b>water</b> affects how fast fungi grow on shoes. He sets up four pairs of identical shoes.</p><p class='q-ask'>Which two setups should he compare?</p>",
+  "figure": "<div class='scroll'><table class='data'><thead><tr><th scope='col'>Setup</th><th scope='col'>Where the shoes are kept</th><th scope='col'>What is in each shoe</th></tr></thead><tbody><tr><th scope='row'>W</th><td>Warm room</td><td>A damp cloth</td></tr><tr><th scope='row'>X</th><td>Warm room</td><td>Dry newspaper</td></tr><tr><th scope='row'>Y</th><td>Cold room</td><td>A damp cloth</td></tr><tr><th scope='row'>Z</th><td>Cold room</td><td>Dry newspaper</td></tr></tbody></table></div>",
+  "options": [
+   {
+    "text": "W and Z",
+    "mis": "LIV-16",
+    "pick": "W is damp and Z is dry, so the water is different.",
+    "why": "W and Z differ in two things: the place (warm or cold) and the water. It is not a fair test."
+   },
+   {
+    "text": "W and Y",
+    "mis": "LIV-16",
+    "pick": "Both have a damp cloth, so they look alike.",
+    "why": "W and Y have the same water and differ in the place. This pair tests warmth, not water."
+   },
+   {
+    "text": "X and Y",
+    "mis": "LIV-16",
+    "pick": "X is dry and Y is damp.",
+    "why": "X and Y differ in two things: the place and the water."
+   },
+   {
+    "text": "W and X",
+    "correct": true,
+    "pick": "Both are in a warm room. One has a damp cloth and the other has dry newspaper. Only the water is different.",
+    "why": "Correct: the place is the same and only the water changes. This is a fair test for water."
+   }
+  ]
  }
 ]

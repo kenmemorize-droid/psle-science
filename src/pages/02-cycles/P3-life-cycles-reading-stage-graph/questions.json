@@ -1,0 +1,345 @@
+[
+ {
+  "id": "P3-life-cycles-reading-stage-graph.q1",
+  "title": "Organism T",
+  "lo": [
+   "P3.LCY.C1",
+   "P3.LCY.P2"
+  ],
+  "kind": "exam",
+  "pool": "page",
+  "source": "School paper, Q12 (organism T)",
+  "stem": "<p>The graph shows the number of days organism T spends at each stage of its life cycle.</p><p class='q-ask'>Based on the information, which of the following statements is true about organism T?</p>",
+  "figure": "<svg viewBox='0 0 380 265' style='max-width:380px;margin:0 auto;display:block' role='img' aria-label='Bar graph: number of days organism T spends at each stage. Egg 10 days; Young 15 days; Adult 20 days.'><line x1='50' y1='205.0' x2='352' y2='205.0' style='stroke:var(--line);stroke-width:1'/><text x='44' y='209.0' text-anchor='end' style='fill:var(--ink);font-size:12px'>0</text><line x1='50' y1='173.0' x2='352' y2='173.0' style='stroke:var(--line);stroke-width:1'/><text x='44' y='177.0' text-anchor='end' style='fill:var(--ink);font-size:12px'>5</text><line x1='50' y1='141.0' x2='352' y2='141.0' style='stroke:var(--line);stroke-width:1'/><text x='44' y='145.0' text-anchor='end' style='fill:var(--ink);font-size:12px'>10</text><line x1='50' y1='109.0' x2='352' y2='109.0' style='stroke:var(--line);stroke-width:1'/><text x='44' y='113.0' text-anchor='end' style='fill:var(--ink);font-size:12px'>15</text><line x1='50' y1='77.0' x2='352' y2='77.0' style='stroke:var(--line);stroke-width:1'/><text x='44' y='81.0' text-anchor='end' style='fill:var(--ink);font-size:12px'>20</text><line x1='50' y1='45.0' x2='352' y2='45.0' style='stroke:var(--line);stroke-width:1'/><text x='44' y='49.0' text-anchor='end' style='fill:var(--ink);font-size:12px'>25</text><line x1='50' y1='205' x2='50' y2='39' style='stroke:var(--stroke);stroke-width:2'/><line x1='50' y1='205' x2='352' y2='205' style='stroke:var(--stroke);stroke-width:2'/><text x='10' y='14' text-anchor='start' style='fill:var(--ink);font-size:12px;font-weight:700'>Number of days</text><rect x='83.0' y='141.0' width='56' height='64.0' style='fill:var(--fa);stroke:var(--stroke);stroke-width:2'/><text x='111.0' y='223' text-anchor='middle' style='fill:var(--ink);font-size:13px'>Egg</text><rect x='172.0' y='109.0' width='56' height='96.0' style='fill:var(--fb);stroke:var(--stroke);stroke-width:2'/><text x='200.0' y='223' text-anchor='middle' style='fill:var(--ink);font-size:13px'>Young</text><rect x='261.0' y='77.0' width='56' height='128.0' style='fill:var(--fc);stroke:var(--stroke);stroke-width:2'/><text x='289.0' y='223' text-anchor='middle' style='fill:var(--ink);font-size:13px'>Adult</text><text x='200' y='243' text-anchor='middle' style='fill:var(--ink);font-size:12px;font-weight:700'>Stages</text></svg>",
+  "options": [
+   {
+    "text": "It has a nymph stage in its life cycle.",
+    "mis": "LCY-09",
+    "pick": "The animal has a young stage, and some insects, such as grasshoppers, have a nymph. It feels like a safe, true statement.",
+    "why": "The graph only says Young. A chicken also goes egg, young, adult. Nothing on the graph tells us the young stage is a nymph, so we cannot say this is true."
+   },
+   {
+    "text": "It is at its young stage on the fifth day.",
+    "mis": "LCY-10",
+    "pick": "Day 5 is a small number, so it seems to fit an early stage such as Young.",
+    "why": "The stages follow one after the other. The egg stage lasts 10 days, so day 5 is still in the egg stage. Young only starts after day 10."
+   },
+   {
+    "text": "It lives for twenty days after it is hatched from the egg.",
+    "mis": "LCY-08",
+    "pick": "The adult bar is the tallest and reaches 20, so 20 looks like the longest, or total, time.",
+    "why": "After hatching it spends 15 days as young, then 20 days as an adult: 15 + 20 = 35 days. Twenty days is only the adult stage."
+   },
+   {
+    "text": "It takes fifteen days to become an adult after it is hatched from the egg.",
+    "correct": true,
+    "pick": "Find the Young bar. It shows how long the young stage lasts, and the young stage ends when the animal becomes an adult.",
+    "why": "The young stage starts when the egg hatches and lasts 15 days. After that it is an adult. So it takes 15 days after hatching."
+   }
+  ]
+ },
+ {
+  "id": "P3-life-cycles-reading-stage-graph.q2",
+  "title": "Days until adult",
+  "lo": [
+   "P3.LCY.C1",
+   "P3.LCY.P2"
+  ],
+  "kind": "diag",
+  "pool": "page",
+  "stem": "<p>The graph shows the number of days organism U spends at each stage of its life cycle.</p><p class='q-ask'>How many days after the egg is laid does U first become an adult?</p>",
+  "figure": "<svg viewBox='0 0 380 265' style='max-width:380px;margin:0 auto;display:block' role='img' aria-label='Bar graph: number of days organism U spends at each stage. Egg 5 days; Young 10 days; Adult 25 days.'><line x1='50' y1='205.0' x2='352' y2='205.0' style='stroke:var(--line);stroke-width:1'/><text x='44' y='209.0' text-anchor='end' style='fill:var(--ink);font-size:12px'>0</text><line x1='50' y1='173.0' x2='352' y2='173.0' style='stroke:var(--line);stroke-width:1'/><text x='44' y='177.0' text-anchor='end' style='fill:var(--ink);font-size:12px'>5</text><line x1='50' y1='141.0' x2='352' y2='141.0' style='stroke:var(--line);stroke-width:1'/><text x='44' y='145.0' text-anchor='end' style='fill:var(--ink);font-size:12px'>10</text><line x1='50' y1='109.0' x2='352' y2='109.0' style='stroke:var(--line);stroke-width:1'/><text x='44' y='113.0' text-anchor='end' style='fill:var(--ink);font-size:12px'>15</text><line x1='50' y1='77.0' x2='352' y2='77.0' style='stroke:var(--line);stroke-width:1'/><text x='44' y='81.0' text-anchor='end' style='fill:var(--ink);font-size:12px'>20</text><line x1='50' y1='45.0' x2='352' y2='45.0' style='stroke:var(--line);stroke-width:1'/><text x='44' y='49.0' text-anchor='end' style='fill:var(--ink);font-size:12px'>25</text><line x1='50' y1='205' x2='50' y2='39' style='stroke:var(--stroke);stroke-width:2'/><line x1='50' y1='205' x2='352' y2='205' style='stroke:var(--stroke);stroke-width:2'/><text x='10' y='14' text-anchor='start' style='fill:var(--ink);font-size:12px;font-weight:700'>Number of days</text><rect x='83.0' y='173.0' width='56' height='32.0' style='fill:var(--fa);stroke:var(--stroke);stroke-width:2'/><text x='111.0' y='223' text-anchor='middle' style='fill:var(--ink);font-size:13px'>Egg</text><rect x='172.0' y='141.0' width='56' height='64.0' style='fill:var(--fb);stroke:var(--stroke);stroke-width:2'/><text x='200.0' y='223' text-anchor='middle' style='fill:var(--ink);font-size:13px'>Young</text><rect x='261.0' y='45.0' width='56' height='160.0' style='fill:var(--fc);stroke:var(--stroke);stroke-width:2'/><text x='289.0' y='223' text-anchor='middle' style='fill:var(--ink);font-size:13px'>Adult</text><text x='200' y='243' text-anchor='middle' style='fill:var(--ink);font-size:12px;font-weight:700'>Stages</text></svg>",
+  "options": [
+   {
+    "text": "15 days",
+    "correct": true,
+    "pick": "Add the stages U goes through <b>before</b> it is an adult: the egg stage and the young stage. 5 + 10 = 15.",
+    "why": "15 days is correct: 5 days as an egg plus 10 days as young."
+   },
+   {
+    "text": "10 days",
+    "mis": "LCY-08",
+    "pick": "The Young bar is the one just before Adult, so it seems to be the time to become an adult.",
+    "why": "10 days is only the young stage. The egg stage (5 days) comes first and also counts when we start from the day the egg is laid."
+   },
+   {
+    "text": "25 days",
+    "mis": "LCY-08",
+    "pick": "The Adult bar is the tallest, so 25 looks like the answer.",
+    "why": "25 days is how long U stays as an adult. It tells us nothing about the time before U becomes an adult."
+   },
+   {
+    "text": "40 days",
+    "mis": "LCY-08",
+    "pick": "Add up every bar to get the whole life cycle: 5 + 10 + 25 = 40.",
+    "why": "40 days is the time for the whole life cycle. To <b>become</b> an adult, U does not need to go through the adult stage itself."
+   }
+  ]
+ },
+ {
+  "id": "P3-life-cycles-reading-stage-graph.q3",
+  "title": "Organism V",
+  "lo": [
+   "P3.LCY.C1",
+   "P3.LCY.P2"
+  ],
+  "kind": "diag",
+  "pool": "page",
+  "stem": "<p>The table shows the number of days organism V spends at each stage of its life cycle.</p><p class='q-ask'>Which statement is true about organism V?</p>",
+  "figure": "<table class='data'><thead><tr><th scope='col'>Stage</th><th scope='col'>Number of days</th></tr></thead><tbody><tr><th scope='row'>Egg</th><td>7</td></tr><tr><th scope='row'>Nymph</th><td>12</td></tr><tr><th scope='row'>Adult</th><td>18</td></tr></tbody></table>",
+  "options": [
+   {
+    "text": "V is a grasshopper, because it has a nymph stage.",
+    "mis": "LCY-09",
+    "pick": "Grasshoppers have nymphs, and the table has a nymph stage.",
+    "why": "The table does not name the animal. Cockroaches also have a nymph stage. We can only say V has a nymph stage, not which animal it is."
+   },
+   {
+    "text": "V takes 19 days from the time the egg is laid to become an adult.",
+    "correct": true,
+    "pick": "Add the stages before the adult stage: egg 7 days + nymph 12 days = 19 days.",
+    "why": "Correct: 7 + 12 = 19 days."
+   },
+   {
+    "text": "V takes 12 days to change from an egg to an adult.",
+    "mis": "LCY-08",
+    "pick": "The Nymph row is the stage just before Adult, so its number seems to be the time.",
+    "why": "12 days is only the nymph stage. The egg stage (7 days) comes before it."
+   },
+   {
+    "text": "V takes 37 days to become an adult.",
+    "mis": "LCY-08",
+    "pick": "Add all the numbers: 7 + 12 + 18 = 37.",
+    "why": "37 days is the whole life cycle. V becomes an adult after 7 + 12 = 19 days."
+   }
+  ]
+ },
+ {
+  "id": "P3-life-cycles-reading-stage-graph.q4",
+  "title": "Which stage on which day",
+  "lo": [
+   "P3.LCY.C1",
+   "P3.LCY.P2"
+  ],
+  "kind": "diag",
+  "pool": "page",
+  "stem": "<p>The graph shows the number of days organism W spends at each stage of its life cycle. Day 0 is the day the egg is laid.</p><p class='q-ask'>At which of these times is W a pupa?</p>",
+  "figure": "<svg viewBox='0 0 380 265' style='max-width:380px;margin:0 auto;display:block' role='img' aria-label='Bar graph: number of days organism W spends at each stage. Egg 6 days; Larva 8 days; Pupa 12 days; Adult 15 days.'><line x1='50' y1='205.0' x2='352' y2='205.0' style='stroke:var(--line);stroke-width:1'/><text x='44' y='209.0' text-anchor='end' style='fill:var(--ink);font-size:12px'>0</text><line x1='50' y1='151.7' x2='352' y2='151.7' style='stroke:var(--line);stroke-width:1'/><text x='44' y='155.7' text-anchor='end' style='fill:var(--ink);font-size:12px'>5</text><line x1='50' y1='98.3' x2='352' y2='98.3' style='stroke:var(--line);stroke-width:1'/><text x='44' y='102.3' text-anchor='end' style='fill:var(--ink);font-size:12px'>10</text><line x1='50' y1='45.0' x2='352' y2='45.0' style='stroke:var(--line);stroke-width:1'/><text x='44' y='49.0' text-anchor='end' style='fill:var(--ink);font-size:12px'>15</text><line x1='50' y1='205' x2='50' y2='39' style='stroke:var(--stroke);stroke-width:2'/><line x1='50' y1='205' x2='352' y2='205' style='stroke:var(--stroke);stroke-width:2'/><text x='10' y='14' text-anchor='start' style='fill:var(--ink);font-size:12px;font-weight:700'>Number of days</text><rect x='70.0' y='141.0' width='50' height='64.0' style='fill:var(--fa);stroke:var(--stroke);stroke-width:2'/><text x='95.0' y='223' text-anchor='middle' style='fill:var(--ink);font-size:13px'>Egg</text><rect x='140.0' y='119.7' width='50' height='85.3' style='fill:var(--fb);stroke:var(--stroke);stroke-width:2'/><text x='165.0' y='223' text-anchor='middle' style='fill:var(--ink);font-size:13px'>Larva</text><rect x='210.0' y='77.0' width='50' height='128.0' style='fill:var(--fc);stroke:var(--stroke);stroke-width:2'/><text x='235.0' y='223' text-anchor='middle' style='fill:var(--ink);font-size:13px'>Pupa</text><rect x='280.0' y='45.0' width='50' height='160.0' style='fill:var(--primary-soft);stroke:var(--stroke);stroke-width:2'/><text x='305.0' y='223' text-anchor='middle' style='fill:var(--ink);font-size:13px'>Adult</text><text x='200' y='243' text-anchor='middle' style='fill:var(--ink);font-size:12px;font-weight:700'>Stages</text></svg>",
+  "options": [
+   {
+    "text": "After 5 days",
+    "mis": "LCY-10",
+    "pick": "5 is a small number, so it seems to be an early stage.",
+    "why": "The egg stage lasts 6 days, so after 5 days W is still an egg."
+   },
+   {
+    "text": "After 12 days",
+    "mis": "LCY-10",
+    "pick": "The Pupa bar is 12 days high, so 12 days must be when it is a pupa.",
+    "why": "12 is how <b>long</b> the pupa stage lasts, not <b>when</b> it happens. W is an egg for 6 days and a larva for the next 8 days (day 6 to day 14), so after 12 days it is a larva."
+   },
+   {
+    "text": "After 20 days",
+    "correct": true,
+    "pick": "Add the earlier stages to find where the pupa stage starts: 6 + 8 = 14 days. It lasts 12 days, so it ends after 26 days. 20 days is between.",
+    "why": "Correct: the pupa stage runs from day 14 to day 26, and 20 is inside it."
+   },
+   {
+    "text": "After 30 days",
+    "mis": "LCY-10",
+    "pick": "30 is a bigger number, so it seems to be a later stage such as the pupa.",
+    "why": "The pupa stage ends after 26 days. After 30 days W is an adult."
+   }
+  ]
+ },
+ {
+  "id": "P3-life-cycles-reading-stage-graph.v1",
+  "title": "Hatching to adult",
+  "lo": [
+   "P3.LCY.C1",
+   "P3.LCY.P2"
+  ],
+  "kind": "variant",
+  "pool": "recap",
+  "stem": "<p>The graph shows the number of days organism X spends at each stage of its life cycle.</p><p class='q-ask'>How many days does X take to become an adult <b>after it hatches</b> from the egg?</p>",
+  "figure": "<svg viewBox='0 0 380 265' style='max-width:380px;margin:0 auto;display:block' role='img' aria-label='Bar graph: number of days organism X spends at each stage. Egg 3 days; Young 9 days; Adult 14 days.'><line x1='50' y1='205.0' x2='352' y2='205.0' style='stroke:var(--line);stroke-width:1'/><text x='44' y='209.0' text-anchor='end' style='fill:var(--ink);font-size:12px'>0</text><line x1='50' y1='151.7' x2='352' y2='151.7' style='stroke:var(--line);stroke-width:1'/><text x='44' y='155.7' text-anchor='end' style='fill:var(--ink);font-size:12px'>5</text><line x1='50' y1='98.3' x2='352' y2='98.3' style='stroke:var(--line);stroke-width:1'/><text x='44' y='102.3' text-anchor='end' style='fill:var(--ink);font-size:12px'>10</text><line x1='50' y1='45.0' x2='352' y2='45.0' style='stroke:var(--line);stroke-width:1'/><text x='44' y='49.0' text-anchor='end' style='fill:var(--ink);font-size:12px'>15</text><line x1='50' y1='205' x2='50' y2='39' style='stroke:var(--stroke);stroke-width:2'/><line x1='50' y1='205' x2='352' y2='205' style='stroke:var(--stroke);stroke-width:2'/><text x='10' y='14' text-anchor='start' style='fill:var(--ink);font-size:12px;font-weight:700'>Number of days</text><rect x='83.0' y='173.0' width='56' height='32.0' style='fill:var(--fa);stroke:var(--stroke);stroke-width:2'/><text x='111.0' y='223' text-anchor='middle' style='fill:var(--ink);font-size:13px'>Egg</text><rect x='172.0' y='109.0' width='56' height='96.0' style='fill:var(--fb);stroke:var(--stroke);stroke-width:2'/><text x='200.0' y='223' text-anchor='middle' style='fill:var(--ink);font-size:13px'>Young</text><rect x='261.0' y='55.7' width='56' height='149.3' style='fill:var(--fc);stroke:var(--stroke);stroke-width:2'/><text x='289.0' y='223' text-anchor='middle' style='fill:var(--ink);font-size:13px'>Adult</text><text x='200' y='243' text-anchor='middle' style='fill:var(--ink);font-size:12px;font-weight:700'>Stages</text></svg>",
+  "options": [
+   {
+    "text": "3 days",
+    "mis": "LCY-08",
+    "pick": "The egg bar is the first one, so it seems to be the first step.",
+    "why": "The egg stage ends when X hatches. This question starts <b>after</b> hatching."
+   },
+   {
+    "text": "12 days",
+    "mis": "LCY-08",
+    "pick": "Add the egg and the young stage: 3 + 9 = 12.",
+    "why": "The egg stage is before hatching, so it is not counted when we start from hatching."
+   },
+   {
+    "text": "9 days",
+    "correct": true,
+    "pick": "After hatching, X is young. When the young stage ends, X is an adult. The Young bar shows 9 days.",
+    "why": "Correct: the young stage lasts 9 days."
+   },
+   {
+    "text": "14 days",
+    "mis": "LCY-08",
+    "pick": "The Adult bar is the tallest, so 14 looks like the answer.",
+    "why": "14 days is how long X stays as an adult."
+   }
+  ]
+ },
+ {
+  "id": "P3-life-cycles-reading-stage-graph.v2",
+  "title": "Organism Y",
+  "lo": [
+   "P3.LCY.C1",
+   "P3.LCY.P2"
+  ],
+  "kind": "variant",
+  "pool": "recap",
+  "stem": "<p>The graph shows the number of days organism Y spends at each stage of its life cycle.</p><p class='q-ask'>Which statement is true about organism Y?</p>",
+  "figure": "<svg viewBox='0 0 380 265' style='max-width:380px;margin:0 auto;display:block' role='img' aria-label='Bar graph: number of days organism Y spends at each stage. Egg 4 days; Young 10 days; Adult 30 days.'><line x1='50' y1='205.0' x2='352' y2='205.0' style='stroke:var(--line);stroke-width:1'/><text x='44' y='209.0' text-anchor='end' style='fill:var(--ink);font-size:12px'>0</text><line x1='50' y1='178.3' x2='352' y2='178.3' style='stroke:var(--line);stroke-width:1'/><text x='44' y='182.3' text-anchor='end' style='fill:var(--ink);font-size:12px'>5</text><line x1='50' y1='151.7' x2='352' y2='151.7' style='stroke:var(--line);stroke-width:1'/><text x='44' y='155.7' text-anchor='end' style='fill:var(--ink);font-size:12px'>10</text><line x1='50' y1='125.0' x2='352' y2='125.0' style='stroke:var(--line);stroke-width:1'/><text x='44' y='129.0' text-anchor='end' style='fill:var(--ink);font-size:12px'>15</text><line x1='50' y1='98.3' x2='352' y2='98.3' style='stroke:var(--line);stroke-width:1'/><text x='44' y='102.3' text-anchor='end' style='fill:var(--ink);font-size:12px'>20</text><line x1='50' y1='71.7' x2='352' y2='71.7' style='stroke:var(--line);stroke-width:1'/><text x='44' y='75.7' text-anchor='end' style='fill:var(--ink);font-size:12px'>25</text><line x1='50' y1='45.0' x2='352' y2='45.0' style='stroke:var(--line);stroke-width:1'/><text x='44' y='49.0' text-anchor='end' style='fill:var(--ink);font-size:12px'>30</text><line x1='50' y1='205' x2='50' y2='39' style='stroke:var(--stroke);stroke-width:2'/><line x1='50' y1='205' x2='352' y2='205' style='stroke:var(--stroke);stroke-width:2'/><text x='10' y='14' text-anchor='start' style='fill:var(--ink);font-size:12px;font-weight:700'>Number of days</text><rect x='83.0' y='183.7' width='56' height='21.3' style='fill:var(--fa);stroke:var(--stroke);stroke-width:2'/><text x='111.0' y='223' text-anchor='middle' style='fill:var(--ink);font-size:13px'>Egg</text><rect x='172.0' y='151.7' width='56' height='53.3' style='fill:var(--fb);stroke:var(--stroke);stroke-width:2'/><text x='200.0' y='223' text-anchor='middle' style='fill:var(--ink);font-size:13px'>Young</text><rect x='261.0' y='45.0' width='56' height='160.0' style='fill:var(--fc);stroke:var(--stroke);stroke-width:2'/><text x='289.0' y='223' text-anchor='middle' style='fill:var(--ink);font-size:13px'>Adult</text><text x='200' y='243' text-anchor='middle' style='fill:var(--ink);font-size:12px;font-weight:700'>Stages</text></svg>",
+  "options": [
+   {
+    "text": "Y spends the longest time as an adult.",
+    "correct": true,
+    "pick": "Compare the heights of the bars. The Adult bar is the tallest.",
+    "why": "Correct: the adult stage lasts 30 days, longer than the other two stages."
+   },
+   {
+    "text": "The young stage of Y is a nymph.",
+    "mis": "LCY-09",
+    "pick": "Many insects have a young stage called a nymph.",
+    "why": "The graph only says Young. A chicken also has egg, young and adult stages. We cannot tell from the graph."
+   },
+   {
+    "text": "Y has a pupa stage between the young and adult stages.",
+    "mis": "LCY-09",
+    "pick": "Many insects change in a pupa before becoming an adult.",
+    "why": "The graph shows three stages only: egg, young, adult. No pupa stage is shown."
+   },
+   {
+    "text": "Y becomes an adult after 10 days.",
+    "mis": "LCY-08",
+    "pick": "The Young bar reaches 10, and the adult stage comes after the young stage.",
+    "why": "Y spends 4 days as an egg, then 10 days as young. It becomes an adult after 4 + 10 = 14 days."
+   }
+  ]
+ },
+ {
+  "id": "P3-life-cycles-reading-stage-graph.v3",
+  "title": "Which stage on which day",
+  "lo": [
+   "P3.LCY.C1",
+   "P3.LCY.P2"
+  ],
+  "kind": "variant",
+  "pool": "recap",
+  "stem": "<p>The graph shows the number of days organism Z spends at each stage of its life cycle. Day 0 is the day the egg is laid.</p><p class='q-ask'>At which of these times is Z an adult?</p>",
+  "figure": "<svg viewBox='0 0 380 265' style='max-width:380px;margin:0 auto;display:block' role='img' aria-label='Bar graph: number of days organism Z spends at each stage. Egg 4 days; Young 12 days; Adult 20 days.'><line x1='50' y1='205.0' x2='352' y2='205.0' style='stroke:var(--line);stroke-width:1'/><text x='44' y='209.0' text-anchor='end' style='fill:var(--ink);font-size:12px'>0</text><line x1='50' y1='165.0' x2='352' y2='165.0' style='stroke:var(--line);stroke-width:1'/><text x='44' y='169.0' text-anchor='end' style='fill:var(--ink);font-size:12px'>5</text><line x1='50' y1='125.0' x2='352' y2='125.0' style='stroke:var(--line);stroke-width:1'/><text x='44' y='129.0' text-anchor='end' style='fill:var(--ink);font-size:12px'>10</text><line x1='50' y1='85.0' x2='352' y2='85.0' style='stroke:var(--line);stroke-width:1'/><text x='44' y='89.0' text-anchor='end' style='fill:var(--ink);font-size:12px'>15</text><line x1='50' y1='45.0' x2='352' y2='45.0' style='stroke:var(--line);stroke-width:1'/><text x='44' y='49.0' text-anchor='end' style='fill:var(--ink);font-size:12px'>20</text><line x1='50' y1='205' x2='50' y2='39' style='stroke:var(--stroke);stroke-width:2'/><line x1='50' y1='205' x2='352' y2='205' style='stroke:var(--stroke);stroke-width:2'/><text x='10' y='14' text-anchor='start' style='fill:var(--ink);font-size:12px;font-weight:700'>Number of days</text><rect x='83.0' y='173.0' width='56' height='32.0' style='fill:var(--fa);stroke:var(--stroke);stroke-width:2'/><text x='111.0' y='223' text-anchor='middle' style='fill:var(--ink);font-size:13px'>Egg</text><rect x='172.0' y='109.0' width='56' height='96.0' style='fill:var(--fb);stroke:var(--stroke);stroke-width:2'/><text x='200.0' y='223' text-anchor='middle' style='fill:var(--ink);font-size:13px'>Young</text><rect x='261.0' y='45.0' width='56' height='160.0' style='fill:var(--fc);stroke:var(--stroke);stroke-width:2'/><text x='289.0' y='223' text-anchor='middle' style='fill:var(--ink);font-size:13px'>Adult</text><text x='200' y='243' text-anchor='middle' style='fill:var(--ink);font-size:12px;font-weight:700'>Stages</text></svg>",
+  "options": [
+   {
+    "text": "After 3 days",
+    "mis": "LCY-10",
+    "pick": "3 is a small number, so it seems to be a young stage.",
+    "why": "The egg stage lasts 4 days, so after 3 days Z is still an egg."
+   },
+   {
+    "text": "After 10 days",
+    "mis": "LCY-10",
+    "pick": "10 is in the middle, between the Young bar (12) and the Adult bar (20).",
+    "why": "Z is an egg for 4 days and young from day 4 to day 16. After 10 days it is young."
+   },
+   {
+    "text": "After 15 days",
+    "mis": "LCY-10",
+    "pick": "15 is close to the height of the Adult bar, which is 20.",
+    "why": "After 15 days Z is still young; the young stage lasts until day 16."
+   },
+   {
+    "text": "After 18 days",
+    "correct": true,
+    "pick": "Add the earlier stages: 4 + 12 = 16 days. The adult stage starts after day 16, so day 18 is inside it.",
+    "why": "Correct: Z becomes an adult after 16 days and stays an adult until day 36."
+   }
+  ]
+ },
+ {
+  "id": "P3-life-cycles-reading-stage-graph.v4",
+  "title": "Organism B",
+  "lo": [
+   "P3.LCY.C1",
+   "P3.LCY.P2"
+  ],
+  "kind": "variant",
+  "pool": "recap",
+  "stem": "<p>The table shows the number of days organism B spends at each stage of its life cycle.</p><p class='q-ask'>Which statement is true about organism B?</p>",
+  "figure": "<table class='data'><thead><tr><th scope='col'>Stage</th><th scope='col'>Number of days</th></tr></thead><tbody><tr><th scope='row'>Egg</th><td>8</td></tr><tr><th scope='row'>Larva</th><td>10</td></tr><tr><th scope='row'>Pupa</th><td>6</td></tr><tr><th scope='row'>Adult</th><td>12</td></tr></tbody></table>",
+  "options": [
+   {
+    "text": "B is a butterfly, because it has a pupa stage.",
+    "mis": "LCY-09",
+    "pick": "Butterflies have a pupa stage, and so does B.",
+    "why": "Moths, beetles and mosquitoes also have a pupa stage. The table does not name the animal, so we cannot say B is a butterfly."
+   },
+   {
+    "text": "B starts its pupa stage 18 days after the egg is laid.",
+    "correct": true,
+    "pick": "The stages before the pupa are the egg and the larva. 8 + 10 = 18.",
+    "why": "Correct: the pupa stage starts after 8 + 10 = 18 days."
+   },
+   {
+    "text": "B starts its pupa stage 10 days after the egg is laid.",
+    "mis": "LCY-08",
+    "pick": "The Larva row is just before the Pupa row, so its 10 days seem to be the time.",
+    "why": "10 days is only the larva stage. The egg stage (8 days) comes before it."
+   },
+   {
+    "text": "B starts its pupa stage 36 days after the egg is laid.",
+    "mis": "LCY-08",
+    "pick": "Add all the numbers: 8 + 10 + 6 + 12 = 36.",
+    "why": "36 days is the whole life cycle. The pupa stage starts after only the egg and larva stages: 18 days."
+   }
+  ]
+ },
+ {
+  "id": "P3-life-cycles-reading-stage-graph.v5",
+  "title": "Organism C",
+  "lo": [
+   "P3.LCY.C1",
+   "P3.LCY.P2"
+  ],
+  "kind": "variant",
+  "pool": "recap",
+  "stem": "<p>The graph shows the number of days organism C spends at each stage of its life cycle. Day 0 is the day the egg is laid.</p><p class='q-ask'>Which statement is true about organism C?</p>",
+  "figure": "<svg viewBox='0 0 380 265' style='max-width:380px;margin:0 auto;display:block' role='img' aria-label='Bar graph: number of days organism C spends at each stage. Egg 5 days; Young 10 days; Adult 15 days.'><line x1='50' y1='205.0' x2='352' y2='205.0' style='stroke:var(--line);stroke-width:1'/><text x='44' y='209.0' text-anchor='end' style='fill:var(--ink);font-size:12px'>0</text><line x1='50' y1='151.7' x2='352' y2='151.7' style='stroke:var(--line);stroke-width:1'/><text x='44' y='155.7' text-anchor='end' style='fill:var(--ink);font-size:12px'>5</text><line x1='50' y1='98.3' x2='352' y2='98.3' style='stroke:var(--line);stroke-width:1'/><text x='44' y='102.3' text-anchor='end' style='fill:var(--ink);font-size:12px'>10</text><line x1='50' y1='45.0' x2='352' y2='45.0' style='stroke:var(--line);stroke-width:1'/><text x='44' y='49.0' text-anchor='end' style='fill:var(--ink);font-size:12px'>15</text><line x1='50' y1='205' x2='50' y2='39' style='stroke:var(--stroke);stroke-width:2'/><line x1='50' y1='205' x2='352' y2='205' style='stroke:var(--stroke);stroke-width:2'/><text x='10' y='14' text-anchor='start' style='fill:var(--ink);font-size:12px;font-weight:700'>Number of days</text><rect x='83.0' y='151.7' width='56' height='53.3' style='fill:var(--fa);stroke:var(--stroke);stroke-width:2'/><text x='111.0' y='223' text-anchor='middle' style='fill:var(--ink);font-size:13px'>Egg</text><rect x='172.0' y='98.3' width='56' height='106.7' style='fill:var(--fb);stroke:var(--stroke);stroke-width:2'/><text x='200.0' y='223' text-anchor='middle' style='fill:var(--ink);font-size:13px'>Young</text><rect x='261.0' y='45.0' width='56' height='160.0' style='fill:var(--fc);stroke:var(--stroke);stroke-width:2'/><text x='289.0' y='223' text-anchor='middle' style='fill:var(--ink);font-size:13px'>Adult</text><text x='200' y='243' text-anchor='middle' style='fill:var(--ink);font-size:12px;font-weight:700'>Stages</text></svg>",
+  "options": [
+   {
+    "text": "The young stage of C looks like a small adult, so it is a nymph.",
+    "mis": "LCY-09",
+    "pick": "Young animals that look like small adults are often nymphs.",
+    "why": "The graph only says Young. A chicken also has a young stage that looks like a small adult. We cannot tell from the graph."
+   },
+   {
+    "text": "C is at its young stage on the third day.",
+    "mis": "LCY-10",
+    "pick": "Three is a small number, so it seems to be an early stage.",
+    "why": "The egg stage lasts 5 days, so on the third day C is still an egg."
+   },
+   {
+    "text": "C is still young on the tenth day.",
+    "correct": true,
+    "pick": "Add the stages: egg 5 days, then young for 10 more days, so young lasts from day 5 to day 15. Day 10 is inside it.",
+    "why": "Correct: C is young from day 5 to day 15."
+   },
+   {
+    "text": "C is an adult on the twelfth day.",
+    "mis": "LCY-10",
+    "pick": "12 is near the top of the Young bar (10) and the Adult bar (15), so it seems to be an adult.",
+    "why": "C only becomes an adult after 5 + 10 = 15 days. On the twelfth day it is still young."
+   }
+  ]
+ }
+]

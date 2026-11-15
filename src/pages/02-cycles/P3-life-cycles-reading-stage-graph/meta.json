@@ -1,0 +1,15 @@
+{
+  "id": "P3-life-cycles-reading-stage-graph",
+  "type": "focus",
+  "theme": "cycles",
+  "topic": "LCY",
+  "level": "P3",
+  "title": "Reading a life-cycle graph",
+  "purpose": "Each bar shows the days spent in one stage. Slide along the days, find the stage on any day, work out how long it takes to reach a stage, and check which statements the graph really supports.",
+  "lo": ["P3.LCY.C1", "P3.LCY.P2"],
+  "fixes": "Using one bar instead of adding the stages before it, putting a day in the wrong stage, and naming a stage (such as a nymph) that the graph does not give.",
+  "origin": "mistake",
+  "built": "2026-11-15",
+  "order": 1,
+  "uses": []
+}

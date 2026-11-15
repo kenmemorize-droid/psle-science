@@ -5,11 +5,16 @@
   "topic": "LIV",
   "level": "P3",
   "title": "Fungi on feet",
-  "purpose": "Change warmth, light, water and food for fungi and see how much they grow, then use what you saw to decide which advice reduces fungi on feet, bread and shoes.",
-  "lo": ["P3.LIV.C1", "P3.LIV.C2", "P6.ENV.C1"],
-  "fixes": "Choosing advice to reduce fungi without checking what fungi like (warmth, darkness, water, food). Closed shoes, damp cloths and dead skin all help fungi.",
+  "purpose": "Change warmth, light, water and food for fungi and see how much they grow. Then compare four containers of pears, and use what you saw to explain where mould grows first and to choose advice for feet, bread and shoes.",
+  "lo": [
+    "P3.LIV.C1",
+    "P3.LIV.C2",
+    "P6.ENV.C1"
+  ],
+  "fixes": "Choosing advice to reduce fungi without checking what fungi like (warmth, darkness, water, food), and explaining where mould grows with only one factor, or with what a container lacks (no Substance X), instead of warmth and water together.",
   "origin": "mistake",
   "built": "2026-11-15",
   "order": 1,
-  "uses": []
+  "uses": [],
+  "updated": "2026-11-15"
 }

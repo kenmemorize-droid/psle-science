@@ -1,6 +1,6 @@
 {
  "01-diversity/P3-materials-strong-vs-flexible.html": "e5cef9672f7d0bb218074dca332f051fbefc06ddce0e360b4c3dcb435e00046d",
- "index.html": "fe67eacff8d55050f4c1858328bac69112b4887c826574c3125871c8058a1fd4",
+ "index.html": "86e1502863203de86d6aaed0af4bc40958d07c05b0b3e190aecfa4fbde8eb3f6",
  "assets/_theme.css": "75f2e1006a5c22f5a7a29d68ef1ac96e3100335cfd3da70a613108863ffdd3e8",
  "01-diversity/P3-materials-match-part-to-property.html": "d0210d889eb5a47841d9c99bceb7ad062778eacf7feb42ae5e69c8877492cd86",
  "01-diversity/P3-materials-waterproof-vs-absorbent.html": "3ce93ccee24f576211257815bcd6a3dd7696d8cdd0b32cd2c7659d9b2babce4a",
@@ -15,11 +15,13 @@
  "03-systems/P4-plant-parts.html": "919d87c0c16146f20a669c83263f46eaf86e6712d70941899070b07937890f68",
  "03-systems/P4-digestive-system.html": "a9a28e3728cd49d5cc8ed7dfb81c98a70abef20f0a5b131d15903638797d256c",
  "01-diversity/P3-materials.html": "c3832083fb2150084c9e06320c3d74dfb93d0b158b3704d814450b2610eee021",
- "04-interactions/P3-magnets.html": "6960d2caaf0f739096f4fdc32761c5154d1a8f5aa2599ca186e9fc8a7a7a701f",
- "01-diversity/P3-living-things.html": "ce5b4c0d6b48bffa81310ceb477d4999be862d5bd9660fdfb81d934d3355ac94",
- "02-cycles/P3-life-cycles.html": "17e0632e997ce0a13c52d87cc37ca59826f773ed5664665b6751cd54476d6862",
- "01-diversity/P3-living-things-fungi-on-feet.html": "10704cece67363734cef45383c01c2d3c7f84ead5957aa8f9ca5d77c0a232ea8",
+ "04-interactions/P3-magnets.html": "391bddf4273a2b50d1eb29a8159255feafada4a4366ec0dd3b557a83ef628258",
+ "01-diversity/P3-living-things.html": "dd027c6884475427acc8759c94dbca5c2874ce34f074fd869fe6f6f78db3da52",
+ "02-cycles/P3-life-cycles.html": "d5e18d7dd00aa08e81b54373dfa16d8082e8f2e9549a69be8dcf5859672e934e",
+ "01-diversity/P3-living-things-fungi-on-feet.html": "943f693f6998c9c95e2519f2fd8b19af4ceee7fc9beb24faf96757b266f9f246",
  "04-interactions/P6-forces.html": "10160193cf116b8d72a5a26da91f1fe1d54029ccc2b7bd6ca0d409defc15afb8",
  "03-systems/P5-respiratory-circulatory.html": "79f9923bf4051b0018779de7b6828e924c1d683e19a1718b49d16a4710e9a462",
- "04-interactions/P3-magnets-floating-globe.html": "042c39d3aca11a60adfb893fd675a14833ac8ff98161fc99a433fc11106a8507"
+ "04-interactions/P3-magnets-floating-globe.html": "ae62b9846446a5ea1da267014a98c178e79f3973cb9d3ff4275e1ec31dea7024",
+ "02-cycles/P3-life-cycles-reading-stage-graph.html": "9327e76b903ff2ecf46b37835065811d0c2612180ab9748d15b615e2f41e7ce8",
+ "04-interactions/P3-magnets-which-statements-are-true.html": "5dbf01d7000d5942767c883c4337e028f8f87807d84afad6b4b59f9ac9d6bfb9"
 }

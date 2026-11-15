@@ -1064,6 +1064,54 @@
    "label": "Picks the wrong apparatus to observe or measure plant parts",
    "fix": "A hand lens makes small parts look bigger. A ruler measures length. A measuring cylinder measures volume, a balance measures mass and a thermometer measures temperature.",
    "learn": "P4-plant-parts.html#e4"
+  },
+  {
+   "id": "LCY-08",
+   "topic": "LCY",
+   "lo": "P3.LCY.P2",
+   "label": "Uses one bar, or adds the wrong bars, to find how long it takes to reach a stage",
+   "fix": "Each bar shows the days spent in ONE stage. To find how long it takes to reach a stage, add the bars of the stages before it, in order. Do not add the stage you are reaching, or the stages after it.",
+   "learn": "P3-life-cycles-reading-stage-graph.html#see-it"
+  },
+  {
+   "id": "LCY-09",
+   "topic": "LCY",
+   "lo": "P3.LCY.P2",
+   "label": "Names a stage or an animal that the graph or table does not give",
+   "fix": "Use only what the graph or table shows. Egg, young and adult are stages; they do not say that the young stage is a nymph, or which animal it is.",
+   "learn": "P3-life-cycles-reading-stage-graph.html#see-it"
+  },
+  {
+   "id": "LCY-10",
+   "topic": "LCY",
+   "lo": "P3.LCY.P2",
+   "label": "Puts a day in the wrong stage by not adding the earlier stages first",
+   "fix": "Stages follow one after the other. To find the stage on a given day, add the bars one by one until you pass that day.",
+   "learn": "P3-life-cycles-reading-stage-graph.html#see-it"
+  },
+  {
+   "id": "LIV-15",
+   "topic": "LIV",
+   "lo": "P6.ENV.C1",
+   "label": "Explains with what a container lacks (such as no Substance X) instead of what fungi need",
+   "fix": "Say what fungi need, and which container has it. Mould needs water and warmth. Substance X takes in water, so the pear next to it is dry. \"It has no Substance X\" does not say what the mould needs.",
+   "learn": "P3-living-things-fungi-on-feet.html#containers"
+  },
+  {
+   "id": "LIV-16",
+   "topic": "LIV",
+   "lo": "P6.ENV.C1",
+   "label": "Compares containers that differ in more than one thing, or in the wrong thing",
+   "fix": "To test one factor, change only that factor and keep everything else the same. To test water, compare two containers at the same temperature that differ only in water.",
+   "learn": "P3-living-things-fungi-on-feet.html#containers"
+  },
+  {
+   "id": "MAG-17",
+   "topic": "MAG",
+   "lo": "P3.MAG.C2",
+   "label": "Thinks a magnet cannot lose its magnetism",
+   "fix": "A magnet can lose some of its magnetism. Dropping it many times, hitting it hard or heating it makes it weaker. (This is not in the syllabus LO list, but it is tested in school papers.)",
+   "learn": "P3-magnets-which-statements-are-true.html#beyond"
   }
  ]
 }

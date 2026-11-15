@@ -1,0 +1,223 @@
+[
+ {
+  "id": "P3-magnets-which-statements-are-true.q1",
+  "title": "Which statements are true?",
+  "lo": [
+   "P3.MAG.C2"
+  ],
+  "kind": "exam",
+  "pool": "page",
+  "source": "School paper, Q21 (statements B and D are not in the syllabus LO list)",
+  "stem": "<p class='q-ask'>Which of the following statement(s) is/are true about magnets?</p><ul class='stm'><li><b>A</b> Unlike poles of two magnets will attract each other.</li><li><b>B</b> The strength of a magnet does not depend on its size.</li><li><b>C</b> All metals can be made into magnets using the electrical method.</li><li><b>D</b> Dropping a magnet from a height many times can cause a magnet to lose its magnetism.</li></ul>",
+  "options": [
+   {
+    "text": "A and C only",
+    "mis": "MAG-13",
+    "pick": "A is a rule everyone remembers. C sounds true because the electrical method makes a magnet from a nail, and a nail is a metal.",
+    "why": "C is false: only iron and steel can be made into magnets. Aluminium and copper are metals, but they cannot be made into magnets. B and D are also true, so “A and C only” is wrong twice."
+   },
+   {
+    "text": "A and B only",
+    "mis": "MAG-17",
+    "pick": "A is true and B is a believable-sounding fact about strength. Many students stop here because D seems unlikely.",
+    "why": "A and B are true, but D is true as well. Dropping a magnet many times can weaken it, so “A and B only” leaves one out."
+   },
+   {
+    "text": "A, B and D only",
+    "correct": true,
+    "pick": "Check each statement. A is true (unlike poles attract). B is true (size alone does not decide how strong a magnet is). C is false (only iron and steel). D is true (dropping can weaken a magnet).",
+    "why": "Correct: A, B and D are true. C is false because only iron or steel can be made into magnets."
+   },
+   {
+    "text": "B, C and D only",
+    "mis": "MAG-08",
+    "pick": "B and D are true. C is believed because the electrical method is described as working on metals.",
+    "why": "This choice leaves out A. Unlike poles (N and S) attract, so A is true. C is false because only iron and steel can be made into magnets."
+   }
+  ]
+ },
+ {
+  "id": "P3-magnets-which-statements-are-true.q2",
+  "title": "Which can be made into a magnet?",
+  "lo": [
+   "P3.MAG.C2",
+   "P3.MAG.P2"
+  ],
+  "kind": "diag",
+  "pool": "page",
+  "stem": "<p>Four objects are made of different metals.</p><ul class='stm'><li><b>P</b> a steel screw</li><li><b>Q</b> a strip of aluminium foil</li><li><b>R</b> a copper wire</li><li><b>S</b> an iron nail</li></ul><p class='q-ask'>Which objects can be made into magnets using the electrical method?</p>",
+  "options": [
+   {
+    "text": "P and S only",
+    "correct": true,
+    "pick": "Only iron or steel can be made into a magnet. P is steel and S is iron.",
+    "why": "Correct: steel and iron can be made into magnets. Aluminium and copper cannot."
+   },
+   {
+    "text": "Q and R only",
+    "mis": "MAG-13",
+    "pick": "They are shiny metals, and metals are the things that magnets work on.",
+    "why": "A magnet does not act on aluminium or copper, and they cannot be made into magnets."
+   },
+   {
+    "text": "P, Q and S only",
+    "mis": "MAG-13",
+    "pick": "Three of the objects are metals that look similar to iron and steel.",
+    "why": "Aluminium (Q) is a metal, but it cannot be made into a magnet. Only iron and steel can."
+   },
+   {
+    "text": "P, Q, R and S",
+    "mis": "MAG-13",
+    "pick": "All four are metals, and the electrical method is for metals.",
+    "why": "Only iron or steel can be made into magnets, not every metal."
+   }
+  ]
+ },
+ {
+  "id": "P3-magnets-which-statements-are-true.q3",
+  "title": "Poles that attract and repel",
+  "lo": [
+   "P3.MAG.C2"
+  ],
+  "kind": "diag",
+  "pool": "page",
+  "stem": "<p>Four statements are made about two bar magnets.</p><ul class='stm'><li><b>A</b> Two N poles attract each other.</li><li><b>B</b> An N pole and an S pole attract each other.</li><li><b>C</b> Two S poles repel each other.</li><li><b>D</b> An N pole and an S pole repel each other.</li></ul><p class='q-ask'>Which statements are true?</p>",
+  "options": [
+   {
+    "text": "A and C only",
+    "mis": "MAG-08",
+    "pick": "Two of the same pole are alike, so they seem to attract. C then sounds right too.",
+    "why": "Like poles repel. Two N poles repel, so A is false. B is true as well."
+   },
+   {
+    "text": "B and C only",
+    "correct": true,
+    "pick": "Unlike poles attract (N and S), and like poles repel (two S poles).",
+    "why": "Correct: B and C are true. Unlike poles attract and like poles repel."
+   },
+   {
+    "text": "A and D only",
+    "mis": "MAG-08",
+    "pick": "The words “attract” and “repel” are swapped around.",
+    "why": "This swaps the two rules. Unlike poles attract and like poles repel."
+   },
+   {
+    "text": "B and D only",
+    "mis": "MAG-08",
+    "pick": "B is true. D is picked because a push can be between any two poles.",
+    "why": "An N pole and an S pole are unlike poles, so they attract, and D is false. C is true."
+   }
+  ]
+ },
+ {
+  "id": "P3-magnets-which-statements-are-true.q4",
+  "title": "A magnet that was dropped",
+  "lo": [
+   "P3.MAG.C2"
+  ],
+  "kind": "diag",
+  "pool": "page",
+  "source": "Not in the syllabus LO list (losing magnetism); tested in the school paper",
+  "stem": "<p>A bar magnet picked up 8 paper clips. It was dropped on the floor many times. It then picked up only 3 paper clips.</p><p class='q-ask'>What is the most likely reason?</p>",
+  "options": [
+   {
+    "text": "Dropping it changed it into a magnetic material.",
+    "mis": "MAG-17",
+    "pick": "A magnetic material is attracted to a magnet but is weaker, so it seems to fit.",
+    "why": "A magnet that is dropped is still a magnet. It has become weaker. It still has two poles and can still attract and repel."
+   },
+   {
+    "text": "The paper clips became heavier.",
+    "mis": "MAG-17",
+    "pick": "A magnet does not change, so something else must have changed.",
+    "why": "The paper clips did not change. Their mass is the same. The magnet is the part that changed."
+   },
+   {
+    "text": "Its poles moved to the middle of the magnet.",
+    "mis": "MAG-17",
+    "pick": "The magnet looks the same, so maybe its poles shifted.",
+    "why": "The poles of a bar magnet stay at its ends. Dropping the magnet did not move them."
+   },
+   {
+    "text": "Dropping it many times weakened its magnetism.",
+    "correct": true,
+    "pick": "A magnet can lose some of its magnetism if it is dropped, hit or heated.",
+    "why": "Correct: dropping a magnet many times can cause it to lose its magnetism, so it picks up fewer paper clips."
+   }
+  ]
+ },
+ {
+  "id": "P3-magnets-which-statements-are-true.v1",
+  "title": "Hammered magnet",
+  "lo": [
+   "P3.MAG.C2"
+  ],
+  "kind": "variant",
+  "pool": "recap",
+  "source": "Not in the syllabus LO list (losing magnetism); tested in the school paper",
+  "stem": "<p>Kai's magnet used to pick up 12 steel nails. He hit it hard with a hammer many times. It now picks up only 4 nails.</p><p class='q-ask'>Which statement is correct?</p>",
+  "options": [
+   {
+    "text": "The magnet has lost some of its magnetism.",
+    "correct": true,
+    "pick": "Hitting a magnet many times can weaken it.",
+    "why": "Correct: hitting a magnet hard many times can weaken it, so it picks up fewer nails."
+   },
+   {
+    "text": "The magnet has turned into a magnetic material.",
+    "mis": "MAG-17",
+    "pick": "It still picks up some nails, but fewer, so it seems to have changed into a weaker kind of object.",
+    "why": "It is still a magnet with two poles, but a weaker one. Hitting it did not change what kind of object it is."
+   },
+   {
+    "text": "The magnet cannot change, so Kai must have used the wrong nails.",
+    "mis": "MAG-17",
+    "pick": "Magnets always keep their strength.",
+    "why": "A magnet can lose some magnetism. It was the same nails as before."
+   },
+   {
+    "text": "The nails have become lighter.",
+    "mis": "MAG-17",
+    "pick": "Lighter nails would be easier to lift.",
+    "why": "The nails did not change. The magnet did."
+   }
+  ]
+ },
+ {
+  "id": "P3-magnets-which-statements-are-true.v2",
+  "title": "Weakening a magnet",
+  "lo": [
+   "P3.MAG.C2"
+  ],
+  "kind": "variant",
+  "pool": "recap",
+  "source": "Not in the syllabus LO list (losing magnetism); tested in the school paper",
+  "stem": "<p class='q-ask'>Which of these could cause a magnet to lose some of its magnetism?</p>",
+  "options": [
+   {
+    "text": "Keeping it near a compass.",
+    "mis": "MAG-17",
+    "pick": "A compass is a small magnet, so it seems to act on the magnet.",
+    "why": "A compass does not weaken a magnet."
+   },
+   {
+    "text": "Using it to pick up steel paper clips.",
+    "mis": "MAG-17",
+    "pick": "Using a magnet a lot seems to use it up.",
+    "why": "Picking up paper clips does not weaken a magnet."
+   },
+   {
+    "text": "Dropping it many times.",
+    "correct": true,
+    "pick": "Rough treatment can disturb a magnet.",
+    "why": "Correct: dropping a magnet many times can cause it to lose some of its magnetism."
+   },
+   {
+    "text": "Putting it next to a plastic ruler.",
+    "mis": "MAG-17",
+    "pick": "A plastic ruler is a different material, so it may have an effect.",
+    "why": "Plastic does not have any effect on a magnet."
+   }
+  ]
+ }
+]

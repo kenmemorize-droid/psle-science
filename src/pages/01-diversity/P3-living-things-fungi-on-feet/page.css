@@ -23,3 +23,16 @@ table.flog th,table.flog td{text-align:left;padding:6px 6px;border-bottom:1px so
 table.flog tr.now th,table.flog tr.now td{background:var(--primary-soft)}
 table.flog .untested{color:var(--muted);font-style:italic}
 .btn.cur{border-color:var(--primary);outline:2px solid var(--primary);outline-offset:1px}
+blockquote.stu{margin:8px 0;padding:10px 14px;border-left:5px solid var(--line);background:var(--sunk);border-radius:0 10px 10px 0;font-style:italic}
+.rog-grid{display:grid;gap:10px;grid-template-columns:1fr}
+@media(min-width:560px){.rog-grid{grid-template-columns:1fr 1fr}}
+.rog-card{display:block;width:100%;text-align:left;padding:0;border:var(--bw) solid var(--line);border-radius:var(--radius);background:var(--card);color:var(--ink);font:inherit;cursor:pointer;overflow:hidden}
+.rog-card[aria-pressed="true"]{border-color:var(--primary);outline:3px solid var(--primary);outline-offset:1px}
+.rog-card .fstage{border:0;border-radius:0}
+.rog-card svg{max-height:190px}
+.rog-cap{display:block;padding:8px 12px;font-weight:600}
+table.rogt{border-collapse:collapse;width:100%;font-size:14.5px;margin:12px 0 0}
+table.rogt th,table.rogt td{text-align:left;padding:6px 8px;border-bottom:1px solid var(--line)}
+table.rogt tr.sel th,table.rogt tr.sel td{background:var(--primary-soft)}
+.rog-msg{margin:10px 0 0;padding:10px 12px;border-radius:var(--radius);background:var(--sunk);border:var(--bw) solid var(--line);font-weight:600;min-height:48px}
+@media(max-width:560px){table.rogt{font-size:13.5px}table.rogt th,table.rogt td{padding:6px 4px}}

@@ -74,6 +74,62 @@
     draw();
   })();
 
+
+  /* ---------- Roger's four containers ---------- */
+  (function () {
+    var host = document.getElementById('rog'); if (!host) return;
+    var C = [{ k: 'A', t: 4, x: true }, { k: 'B', t: 30, x: true }, { k: 'C', t: 4, x: false }, { k: 'D', t: 30, x: false }];
+    var PTS = [[196, 128], [218, 140], [202, 104], [222, 124], [188, 146], [208, 152], [198, 88], [224, 108]];
+    var WHY = {
+      A: 'A is cold (4°C) and Substance X takes in the water, so the pear is dry. It has neither warmth nor water, so mould grows least here.',
+      B: 'B is warm (30°C), but Substance X takes in the water, so the pear is dry. It has warmth but no water, so mould does not appear first here.',
+      C: 'C has water, so the air is damp, but it is cold (4°C). It has water but no warmth, so mould does not appear first here.',
+      D: 'D is warm (30°C) and has water next to the pear. It is the only container with both warmth and water, so mould appears here first.'
+    };
+    var shown = false, sel = null;
+    function stage(c) {
+      var warm = c.t === 30, damp = !c.x, both = warm && damp;
+      var inner = c.x
+        ? '<path class="ln" fill="#F6EBD0" d="M60 120 H112 V176 H60 Z"/><path class="ln" fill="none" d="M56 120 H116"/>' +
+          '<g fill="#8A7A55"><circle cx="70" cy="140" r="2.4"/><circle cx="84" cy="150" r="2.4"/><circle cx="98" cy="142" r="2.4"/><circle cx="76" cy="162" r="2.4"/><circle cx="94" cy="166" r="2.4"/><circle cx="104" cy="156" r="2.4"/></g>' +
+          '<text x="86" y="112" text-anchor="middle" class="lbl">Substance X</text>'
+        : '<path class="ln" fill="#CFE8F5" d="M60 132 H112 V176 H60 Z"/><path class="ln" fill="none" d="M56 120 H116 M60 120 V176 H112 V120"/>' +
+          '<path class="ln" fill="none" d="M66 146 h12 M84 154 h14 M70 164 h12"/>' +
+          '<text x="86" y="112" text-anchor="middle" class="lbl">Water</text>';
+      var pear = '<path class="ln" fill="#CFE08A" d="M200 72 C186 72 182 90 176 104 C168 124 160 140 184 156 C200 166 226 162 234 146 C244 126 226 112 220 96 C216 82 214 72 200 72 Z"/>' +
+        '<path class="ln" fill="none" d="M200 72 C200 62 204 56 210 52"/><path class="ln" fill="#86C46F" d="M206 58 C216 46 232 48 236 54 C228 62 214 64 206 58 Z"/>';
+      var patches = '';
+      if (shown && both) patches = PTS.map(function (p, i) { return '<g transform="translate(' + p[0] + ',' + p[1] + ') scale(.8)"><g class="pw" style="transition-delay:' + (i * 70) + 'ms">' + PATCH + '</g></g>'; }).join('');
+      return '<div class="fstage"><span class="fday">' + (shown ? 'Several days later' : 'Day 0') + '</span><span class="fwhat">' + c.t + '°C room</span>' +
+        '<svg viewBox="0 0 300 200" role="img" aria-label="Container ' + c.k + ' at ' + c.t + ' degrees Celsius, with a pear and ' + (c.x ? 'Substance X' : 'water') + (shown && both ? ', mould on the pear' : (shown ? ', no mould yet' : '')) + '">' +
+        '<rect class="ln" fill="none" x="14" y="24" width="272" height="164" rx="8"/><text x="150" y="44" text-anchor="middle" class="lbl">Air</text>' + inner + pear + patches + '</svg></div>';
+    }
+    function mark(y) { return y ? '✔ Yes' : '✖ No'; }
+    function draw(anim) {
+      var cards = C.map(function (c) {
+        return '<button type="button" class="rog-card" data-k="' + c.k + '" aria-pressed="' + (sel === c.k) + '">' + stage(c) +
+          '<span class="rog-cap">Container ' + c.k + ' (' + c.t + '°C): ' + (c.x ? 'Substance X' : 'water') + '</span></button>';
+      }).join('');
+      var rows = C.map(function (c) {
+        var w = c.t === 30, d = !c.x;
+        return '<tr' + (sel === c.k ? ' class="sel"' : '') + '><th scope="row">' + c.k + '</th><td>' + c.t + '°C</td><td>' + mark(w) + '</td><td>' + mark(d) + '</td><td>' + (w && d ? '✔ Both' : (w || d ? '✖ One only' : '✖ Neither')) + '</td></tr>';
+      }).join('');
+      host.innerHTML = '<div class="actions"><button type="button" class="btn primary" id="wait"' + (shown ? ' disabled' : '') + '>' + (shown ? 'Mould has appeared' : 'Leave them for several days') + '</button></div>' +
+        '<div class="rog-grid">' + cards + '</div>' +
+        '<p class="rog-msg" aria-live="polite">' + (sel ? 'Container ' + sel + ': ' + WHY[sel] : (shown ? 'Mould first appeared on the pear in container D. Tap each container to find out why not on the others.' : 'Nothing has happened yet.')) + '</p>' +
+        '<div class="scroll"><table class="rogt"><thead><tr><th scope="col">Container</th><th scope="col">Room</th><th scope="col">Warm?</th><th scope="col">Water?</th><th scope="col">Both?</th></tr></thead><tbody>' + rows + '</tbody></table></div>';
+      if (shown) grow(host, anim);
+    }
+    host.addEventListener('click', function (e) {
+      var w = e.target.closest('#wait');
+      if (w) { shown = true; draw(true); return; }
+      var b = e.target.closest('.rog-card'); if (!b) return;
+      sel = b.getAttribute('data-k'); draw(false);
+      var nb = host.querySelector('.rog-card[data-k="' + sel + '"]'); if (nb) nb.focus();
+    });
+    draw(false);
+  })();
+
   /* ---------- question bench ---------- */
   function lvls(q) { return q.bench.tests.map(function (t) { return count(t.conds); }); }
   var BENCH = {
