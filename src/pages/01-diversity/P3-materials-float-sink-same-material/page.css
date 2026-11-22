@@ -1,0 +1,11 @@
+.wtr{fill:var(--fa);fill-opacity:.55;stroke:none}
+.meta-s{color:var(--muted);font-size:14px;margin:0 0 8px}
+.fig{background:var(--sunk);border:var(--bw) solid var(--line);border-radius:var(--radius);padding:10px;margin:10px 0}
+.fig svg{display:block;width:100%;height:auto}
+.pairrow .tile{min-width:120px}
+.cmp{display:grid;grid-template-columns:1fr;gap:14px;margin:12px 0}
+@media(min-width:800px){.cmp{grid-template-columns:1.3fr .8fr}}
+.logrow.same{color:var(--ink)} .logrow.diff{color:var(--ok)}
+.verd{padding:10px 12px;border-radius:var(--radius);border:2px solid var(--line);font-size:15px;margin-top:10px}
+.verd.ok{border-color:var(--ok);background:var(--ok-soft)}
+.verd.maybe{border-color:var(--line);background:var(--sunk)}

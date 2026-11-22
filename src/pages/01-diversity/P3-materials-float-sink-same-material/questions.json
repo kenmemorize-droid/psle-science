@@ -1,0 +1,302 @@
+[
+  {
+    "id": "P3-materials-float-sink-same-material.q1",
+    "title": "Susan's three blocks",
+    "kind": "exam",
+    "pool": "page",
+    "lo": [
+      "P3.MAT.P1"
+    ],
+    "source": "School paper (Nan Hua Primary School, WA3 2025, Q1)",
+    "stem": "<p>Susan placed three blocks, R, S and T, into a container of water. Her observation is shown below.</p><p>She made the following statements:</p><p><b>A</b> Only block T does not absorb water.<br><b>B</b> Blocks S and T are made of different materials.<br><b>C</b> Blocks R and S are made of the same materials.</p><p class='q-ask'>Which statement(s) can be concluded from her observation?</p>",
+    "figure": "<svg viewBox=\"0 0 520 220\" role=\"img\" aria-label=\"A container of water with blocks: R rests on the bottom; S rests on the bottom; T floats at the surface.\"><rect x=\"22\" y=\"78\" width=\"476\" height=\"124\" style=\"fill:var(--fa);fill-opacity:.55;stroke:none\"/><path class=\"ln\" d=\"M22 20 V202 H498 V20\"/><path class=\"ln\" d=\"M22 78 H498\"/><rect class=\"sl\" x=\"70\" y=\"152\" width=\"84\" height=\"50\" rx=\"2\"/><text class=\"lbl\" x=\"112\" y=\"183\" text-anchor=\"middle\">R</text><rect class=\"sl\" x=\"190\" y=\"152\" width=\"84\" height=\"50\" rx=\"2\"/><text class=\"lbl\" x=\"232\" y=\"183\" text-anchor=\"middle\">S</text><rect class=\"sl\" x=\"330\" y=\"56\" width=\"84\" height=\"44\" rx=\"2\"/><text class=\"lbl\" x=\"372\" y=\"84\" text-anchor=\"middle\">T</text></svg>",
+    "hints": [
+      "Ask of each statement: does the picture show it, or is it only something that might be true?",
+      "One test only shows that blocks behave differently, or that they behave the same."
+    ],
+    "key": "Different results prove different materials. Matching results prove nothing. The float test says nothing about absorbing water.",
+    "options": [
+      {
+        "text": "B only",
+        "pick": "Reach it by comparing S and T: S sinks and T floats in the same water, so they behave differently.",
+        "why": "S sinks and T floats. A different result on the same test means they are made of different materials. A and C go further than the picture allows.",
+        "correct": true
+      },
+      {
+        "text": "B and C only",
+        "pick": "B is right, and R and S look alike because both sit on the bottom.",
+        "why": "R and S both sank, but different materials can both sink. A matching result does not show the same material, so C cannot be concluded.",
+        "mis": "MAT-14"
+      },
+      {
+        "text": "A and C only",
+        "pick": "T is the only block at the surface, so it seems the only one that is not soaking up water. R and S sink together, so they seem alike.",
+        "why": "Floating or sinking does not show whether a block absorbs water: that needs the mass before and after soaking, so A cannot be concluded. C cannot be concluded either, and B, which can, is left out.",
+        "mis": "MAT-03"
+      },
+      {
+        "text": "A, B and C",
+        "pick": "Every statement seems to match something in the picture.",
+        "why": "Only B can be concluded. A needs a mass measurement and C needs more than one matching result.",
+        "mis": "MAT-14"
+      }
+    ]
+  },
+  {
+    "id": "P3-materials-float-sink-same-material.q2",
+    "title": "Three blocks, three tests",
+    "kind": "diag",
+    "pool": "page",
+    "lo": [
+      "P3.MAT.P1"
+    ],
+    "stem": "<p>Mei Ling tested three blocks, X, Y and Z, in the same way. The results are shown.</p><p class='q-ask'>Which of the following can be concluded from the results?</p>",
+    "figure": "<table class='data'><thead><tr><th scope='col'>Block</th><th scope='col'>In water</th><th scope='col'>When bent</th><th scope='col'>Mass before soaking (g)</th><th scope='col'>Mass after soaking (g)</th></tr></thead><tbody><tr><th scope='row'>X</th><td>sinks</td><td>breaks</td><td>50</td><td>50</td></tr><tr><th scope='row'>Y</th><td>sinks</td><td>breaks</td><td>60</td><td>80</td></tr><tr><th scope='row'>Z</th><td>floats</td><td>bends without breaking</td><td>40</td><td>70</td></tr></tbody></table>",
+    "hints": [
+      "Find a test where the two blocks in the statement gave different results.",
+      "For absorbing water, work out mass after − mass before."
+    ],
+    "key": "One different result is enough to prove two blocks are different materials. Matching results never prove they are the same.",
+    "options": [
+      {
+        "text": "X and Y are made of the same material because they both sink and both break when bent.",
+        "pick": "Two of the three tests match, so X and Y seem alike.",
+        "why": "They also differ in the soaking test: X absorbed 0 g and Y absorbed 20 g. One different result proves they are different materials.",
+        "mis": "MAT-14"
+      },
+      {
+        "text": "Y and Z are made of the same material because they both absorbed water.",
+        "pick": "Both masses went up after soaking.",
+        "why": "Y sinks and Z floats, and Y breaks while Z bends. Both absorbing water does not make them the same material.",
+        "mis": "MAT-14"
+      },
+      {
+        "text": "X and Y are made of different materials.",
+        "pick": "Look for a test where X and Y differ: X absorbed 0 g (50 − 50) but Y absorbed 20 g (80 − 60).",
+        "why": "The soaking results are different, so X and Y cannot be the same material, even though they match on floating and bending.",
+        "correct": true
+      },
+      {
+        "text": "Z does not absorb water because it floats.",
+        "pick": "Floating blocks stay on the surface, so they seem to stay dry.",
+        "why": "Z absorbed 70 − 40 = 30 g of water, even though it floats. Floating does not show that a block is waterproof.",
+        "mis": "MAT-03"
+      }
+    ]
+  },
+  {
+    "id": "P3-materials-float-sink-same-material.q3",
+    "title": "The block that floats",
+    "kind": "diag",
+    "pool": "page",
+    "lo": [
+      "P3.MAT.P1"
+    ],
+    "stem": "<p>Ravi put a block into a container of water. The block floated at the surface. Its mass was 80 g before soaking. After it stayed in the water for 10 minutes, its mass was 95 g.</p><p class='q-ask'>Which of the following can be concluded?</p>",
+    "hints": [
+      "Float or sink is one test. Mass before and after soaking is a different test.",
+      "Work out mass after − mass before."
+    ],
+    "key": "Floating and absorbing water are two separate properties. A block can float and still absorb water.",
+    "options": [
+      {
+        "text": "The block is waterproof because it floats.",
+        "pick": "Waterproof sounds like staying on top of the water.",
+        "why": "The mass went up by 15 g, so the block absorbed water. Waterproof means it does not absorb water, and floating does not show that.",
+        "mis": "MAT-03"
+      },
+      {
+        "text": "The block floats, and it also absorbed water.",
+        "pick": "Combine the two results: it floated, and 95 − 80 = 15 g of water went in.",
+        "why": "The float test and the soaking test are separate, and both results are in the stem.",
+        "correct": true
+      },
+      {
+        "text": "The block floats because it absorbed water.",
+        "pick": "The block took in water and also floats, so one seems to cause the other.",
+        "why": "Nothing in the results shows that absorbing water makes a block float. They are two separate results.",
+        "mis": "MAT-03"
+      },
+      {
+        "text": "The block is waterproof because its mass changed by only 15 g.",
+        "pick": "15 g is a small change compared with 80 g.",
+        "why": "Waterproof means the mass does not change at all. A gain of 15 g means the block absorbed water.",
+        "mis": "MAT-09"
+      }
+    ]
+  },
+  {
+    "id": "P3-materials-float-sink-same-material.q4",
+    "title": "Kumar's blocks E, F and G",
+    "kind": "diag",
+    "pool": "page",
+    "lo": [
+      "P3.MAT.P1"
+    ],
+    "stem": "<p>Kumar put three blocks, E, F and G, into a container of water. His observation is shown below.</p><p>He made the following statements:</p><p><b>A</b> Blocks E and F are made of the same material.<br><b>B</b> Blocks F and G are made of different materials.<br><b>C</b> Block G does not absorb water.</p><p class='q-ask'>Which statement(s) can be concluded from his observation?</p>",
+    "figure": "<svg viewBox=\"0 0 520 220\" role=\"img\" aria-label=\"A container of water with blocks: E floats at the surface; F floats at the surface; G rests on the bottom.\"><rect x=\"22\" y=\"78\" width=\"476\" height=\"124\" style=\"fill:var(--fa);fill-opacity:.55;stroke:none\"/><path class=\"ln\" d=\"M22 20 V202 H498 V20\"/><path class=\"ln\" d=\"M22 78 H498\"/><rect class=\"sl\" x=\"70\" y=\"56\" width=\"84\" height=\"44\" rx=\"2\"/><text class=\"lbl\" x=\"112\" y=\"84\" text-anchor=\"middle\">E</text><rect class=\"sl\" x=\"190\" y=\"56\" width=\"84\" height=\"44\" rx=\"2\"/><text class=\"lbl\" x=\"232\" y=\"84\" text-anchor=\"middle\">F</text><rect class=\"sl\" x=\"330\" y=\"152\" width=\"84\" height=\"50\" rx=\"2\"/><text class=\"lbl\" x=\"372\" y=\"183\" text-anchor=\"middle\">G</text></svg>",
+    "hints": [
+      "Which statement compares two blocks that gave different results?",
+      "Which statements stretch one result too far?"
+    ],
+    "key": "A different result proves different materials. A matching result, and the float test alone, prove nothing more.",
+    "options": [
+      {
+        "text": "A and B only",
+        "pick": "E and F both float, so they seem the same. F and G differ, so B is right.",
+        "why": "B is right. A is not: E and F both floating does not show they are the same material.",
+        "mis": "MAT-14"
+      },
+      {
+        "text": "B and C only",
+        "pick": "B is right. G sinks, so it seems to be the block that is not soaking up water.",
+        "why": "B is right. C is not: sinking says nothing about absorbing water.",
+        "mis": "MAT-03"
+      },
+      {
+        "text": "A and C only",
+        "pick": "E and F match, and G seems to sit dry on the bottom.",
+        "why": "Neither A nor C can be concluded, and B, which can, is left out.",
+        "mis": "MAT-14"
+      },
+      {
+        "text": "B only",
+        "pick": "F floats and G sinks in the same water, so they are made of different materials.",
+        "why": "Different results prove different materials. A (matching results) and C (float test only) cannot be concluded.",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": "P3-materials-float-sink-same-material.q5",
+    "title": "A fair test for floating",
+    "kind": "diag",
+    "pool": "page",
+    "lo": [
+      "P3.MAT.P1"
+    ],
+    "stem": "<p>Hui Min wants to find out if the type of material affects whether a block floats. She has blocks made of wood, glass and metal, and a large container of water.</p><p class='q-ask'>Which row shows what she should change and what she should keep the same?</p>",
+    "layout": "table",
+    "cols": [
+      "Changed",
+      "Kept the same"
+    ],
+    "hints": [
+      "The thing you want to find out the effect of is the one you change.",
+      "Whether the block floats is what you observe."
+    ],
+    "key": "Change only the thing you are testing (the type of material). Keep everything else the same. What you observe is the result.",
+    "options": [
+      {
+        "text": [
+          "amount of water",
+          "type of material"
+        ],
+        "pick": "The blocks go into water, so water seems to be what changes.",
+        "why": "The question is about the type of material, so that is what she changes. The type of material cannot be the thing kept the same.",
+        "mis": "MAT-05"
+      },
+      {
+        "text": [
+          "type of material",
+          "amount of water and size of the blocks"
+        ],
+        "pick": "The type of material is what she is testing; everything else is kept the same so only the material can affect the result.",
+        "why": "Only the type of material changes, so any difference in floating can be put down to the material.",
+        "correct": true
+      },
+      {
+        "text": [
+          "whether the block floats or sinks",
+          "amount of water"
+        ],
+        "pick": "The blocks float or sink differently, so it seems to be what changes.",
+        "why": "Whether it floats is the result she observes. It is not set by her.",
+        "mis": "MAT-05"
+      },
+      {
+        "text": [
+          "size of the blocks",
+          "type of material"
+        ],
+        "pick": "Blocks come in different sizes, so size seems like the thing to change.",
+        "why": "If the size changes and the material is kept the same, she is testing size, not material.",
+        "mis": "MAT-05"
+      }
+    ]
+  },
+  {
+    "id": "P3-materials-float-sink-same-material.v1",
+    "title": "Marble, nail and duck",
+    "kind": "variant",
+    "pool": "recap",
+    "lo": [
+      "P3.MAT.P1"
+    ],
+    "stem": "<p>Wei Jie put three objects into a container of water. A glass marble sank. A steel nail sank. A plastic toy duck floated.</p><p class='q-ask'>Which of the following can be concluded?</p>",
+    "key": "Different results prove different materials. Matching results prove nothing.",
+    "options": [
+      {
+        "text": "The marble and the nail are made of the same material because both sank.",
+        "pick": "They behave the same way in the water.",
+        "why": "Two different materials can both sink. A matching result does not show the same material.",
+        "mis": "MAT-14"
+      },
+      {
+        "text": "The marble and the duck are made of different materials.",
+        "pick": "The marble sank and the duck floated: a different result.",
+        "why": "Different results in the same test show different materials.",
+        "correct": true
+      },
+      {
+        "text": "The duck does not absorb water.",
+        "pick": "It stays on the surface.",
+        "why": "Floating does not show whether an object absorbs water. That needs the mass before and after soaking.",
+        "mis": "MAT-03"
+      },
+      {
+        "text": "The duck floats because it is light.",
+        "pick": "Small, light things seem to float.",
+        "why": "Nothing in the results shows this. Whether an object floats depends on what it is made of, not how light it is.",
+        "mis": "MAT-12"
+      }
+    ]
+  },
+  {
+    "id": "P3-materials-float-sink-same-material.v2",
+    "title": "Torch and three blocks",
+    "kind": "variant",
+    "pool": "recap",
+    "lo": [
+      "P3.MAT.P1"
+    ],
+    "stem": "<p>Aisha shone a torch through three blocks, M, N and O, one at a time. Block M let most light through. Block N let no light through. Block O let no light through.</p><p class='q-ask'>Which of the following can be concluded?</p>",
+    "key": "Different results prove different materials. Matching results prove nothing.",
+    "options": [
+      {
+        "text": "Blocks M and N are made of different materials.",
+        "pick": "M and N gave different results with the torch.",
+        "why": "Different results mean different materials.",
+        "correct": true
+      },
+      {
+        "text": "Blocks N and O are made of the same material.",
+        "pick": "N and O gave the same result.",
+        "why": "A matching result does not show the same material. Different materials can both let no light through.",
+        "mis": "MAT-14"
+      },
+      {
+        "text": "Block O lets more light through than block M.",
+        "pick": "The torch result seems to point to O.",
+        "why": "M let most light through and O let none, so it is the other way round.",
+        "mis": "MAT-11"
+      },
+      {
+        "text": "Block M is waterproof.",
+        "pick": "Light-passing materials such as glass seem waterproof.",
+        "why": "The torch test says nothing about water, so this cannot be concluded.",
+        "mis": "MAT-02"
+      }
+    ]
+  }
+]

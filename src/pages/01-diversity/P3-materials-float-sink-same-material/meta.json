@@ -1,0 +1,15 @@
+{
+  "id": "P3-materials-float-sink-same-material",
+  "type": "focus",
+  "theme": "diversity",
+  "topic": "MAT",
+  "level": "P3",
+  "title": "Same result, same material?",
+  "purpose": "Two blocks both sink. Does that mean they are made of the same material? Run the tests on two blocks and see what one result can and cannot tell you.",
+  "lo": ["P3.MAT.P1"],
+  "fixes": "Thinking two blocks that both sink (or both float) must be the same material, and reading a float test as if it also told you whether a block absorbs water.",
+  "origin": "mistake",
+  "built": "2026-11-22",
+  "order": 4,
+  "uses": []
+}

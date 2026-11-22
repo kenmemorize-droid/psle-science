@@ -938,6 +938,14 @@
    "learn": "P3-materials.html#e2"
   },
   {
+   "id": "MAT-14",
+   "topic": "MAT",
+   "lo": "P3.MAT.P1",
+   "label": "Thinks two blocks that give the same result in a test are made of the same material",
+   "fix": "A different result proves two blocks are made of different materials. A matching result proves nothing: different materials can both sink, both float or both let no light through.",
+   "learn": "P3-materials-float-sink-same-material.html#see-it"
+  },
+  {
    "id": "MTR-01",
    "topic": "MTR",
    "lo": "P4.MTR.C1",
