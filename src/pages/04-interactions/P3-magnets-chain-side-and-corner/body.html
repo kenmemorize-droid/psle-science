@@ -1,0 +1,76 @@
+<section class="card origin" id="origin">
+  <p class="sec-label">The question that started this</p>
+  <h2>Four bar magnets and a compass</h2>
+  <p><b>13.</b> A compass has a small magnet that can rotate freely as shown below.</p>
+  <p>Four bar magnets were arranged such that they were attracted to one another. The compass was then brought near end R and the direction of the compass needle is as shown below.</p>
+  <figure>
+    <div class="stage"><svg class="cstage" viewBox="14 10 580 304" width="100%" role="img" aria-label="Four bar magnets: two standing side by side on the left, one lying across the top, one standing on the right. End R is the bottom of the leftmost magnet; a compass beside it points down. Position A is beside the bottom of the right-hand magnet."><rect x="150" y="30" width="62" height="200" style="fill:var(--card);stroke:var(--stroke)" stroke-width="2"/><rect x="212" y="30" width="62" height="200" style="fill:var(--card);stroke:var(--stroke)" stroke-width="2"/><rect x="274" y="30" width="208" height="62" style="fill:var(--card);stroke:var(--stroke)" stroke-width="2"/><rect x="420" y="92" width="62" height="200" style="fill:var(--card);stroke:var(--stroke)" stroke-width="2"/><text x="181" y="210" text-anchor="middle" dominant-baseline="middle" font-size="17" font-weight="700" style="fill:var(--ink);font-family:var(--f-label)">R</text><g><circle cx="82" cy="190" r="34" style="fill:var(--card);stroke:var(--stroke)" stroke-width="2"/><g transform="rotate(180 82 190)"><polygon points="82,163.48 73.16,190 90.84,190" style="fill:var(--npole);stroke:var(--stroke)" stroke-width="2" stroke-linejoin="round"/><polygon points="82,216.52 73.16,190 90.84,190" style="fill:var(--needle-s);stroke:var(--stroke)" stroke-width="2" stroke-linejoin="round"/></g></g><circle cx="548" cy="252" r="36" fill="none" style="stroke:var(--stroke)" stroke-width="2" stroke-dasharray="6 6"/><text x="548" y="253" text-anchor="middle" dominant-baseline="middle" font-size="18" font-weight="700" style="fill:var(--ink);font-family:var(--f-label)">A</text><g><circle cx="36" cy="292" r="16" style="fill:var(--card);stroke:var(--stroke)" stroke-width="2"/><g transform="rotate(0 36 292)"><polygon points="36,279.52 31.84,292 40.16,292" style="fill:var(--npole);stroke:var(--stroke)" stroke-width="2" stroke-linejoin="round"/><polygon points="36,304.48 31.84,292 40.16,292" style="fill:var(--needle-s);stroke:var(--stroke)" stroke-width="2" stroke-linejoin="round"/></g></g><text x="60" y="292" text-anchor="start" dominant-baseline="middle" font-size="16" style="fill:var(--muted);font-family:var(--f-label)">Shaded end of needle = north pole</text></svg></div>
+  </figure>
+  <p>What would be the direction of the needle when the compass was placed at A?</p>
+  <figure>
+    <div class="stage"><svg class="cstage" id="optSvg" viewBox="10 0 660 180" role="img" aria-label="Four compass needle directions labelled 1 to 4: N end right, N end up, N end down, N end left"></svg></div>
+    <figcaption>Numbering follows the exam paper. The shaded half of each needle is its N end.</figcaption>
+  </figure>
+  <div class="chips">
+    <span class="chip"><span>Answer given: <b>(4)</b>, N end pointing left, at the magnet</span></span>
+    <span class="chip"><span>Correct answer: <b>(3)</b>, N end pointing down</span></span>
+  </div>
+  <p class="instr">Two things went wrong. First, the poles on the right-hand magnet were labelled S against S at the corner. Second, the needle was drawn pointing straight at the magnet. Fix the first one below, then the second.</p>
+</section>
+
+<section class="card" id="see-it">
+  <p class="sec-label">See it</p>
+  <h2>Label the four magnets, one joint at a time</h2>
+  <p class="instr">Tap a magnet, or use the buttons, to turn it round. Every joint must show ✓ attract, because the question says the magnets attract one another.</p>
+  <div class="lab">
+    <div>
+      <div class="stage"><svg class="cstage" id="chainSvg" viewBox="40 10 560 290" role="img" aria-label="The four magnets from the question. Tap a magnet to turn it round."></svg></div>
+      <div class="actions">
+        <button type="button" class="btn" id="btnPaper">Show the labels on the paper</button>
+        <button type="button" class="btn" id="btnClear">Clear</button>
+      </div>
+    </div>
+    <div class="panel">
+      <div id="segs"></div>
+      <div id="checks" aria-live="polite"></div>
+      <p class="verdict" id="verdict"></p>
+    </div>
+  </div>
+
+  <h3>The answer, step by step</h3>
+  <div class="stepbox"><div class="stepno" id="stepNo">0</div><div class="steptext" id="stepText"></div></div>
+  <div class="actions">
+    <button type="button" class="btn primary" id="btnNext">Next step</button>
+    <button type="button" class="btn" id="btnBack" disabled>Back</button>
+    <button type="button" class="btn" id="btnRestart">Start again</button>
+  </div>
+  <div class="note" id="answerNote">Finish the steps, then compare compass A with the compass at R.</div>
+</section>
+
+<section class="card" id="beside">
+  <p class="sec-label">See it</p>
+  <h2>Beside a magnet, or past its end?</h2>
+  <p>A needle's N end is pushed away from a N pole and pulled towards a S pole. Where the compass sits decides which pole wins, or whether they work together.</p>
+  <p class="instr">Tap each compass, or its button, to see which way the needle points and why. Then flip the magnet and try again.</p>
+  <div class="lab">
+    <div class="stage"><svg class="cstage" id="besideSvg" viewBox="30 0 460 380" role="img" aria-label="An upright bar magnet with four compasses: one past each end, one beside the middle on each side"></svg></div>
+    <div class="panel">
+      <div class="spots" id="spotBtns"></div>
+      <div class="actions"><button type="button" class="btn" id="btnFlip">Flip the magnet</button></div>
+      <p class="stage-msg" id="spotOut" aria-live="polite"></p>
+    </div>
+  </div>
+  <p class="note">Back to the question. The compass at R sits <b>beside</b> magnet 1, near R. It does not point at R: it lies alongside the magnet, N end down. A sits beside the right-hand magnet in the same way. That is why the answer is not (4).</p>
+</section>
+
+<section class="card" id="key">
+  <p class="sec-label">Key idea</p>
+  <div class="key"><b>Unlike poles meet wherever magnets stay together.</b> That holds end to end, side by side (the magnets lie opposite ways round), and at a corner (the end of one magnet against the other magnet's pole). A compass <b>beside</b> a magnet lies alongside it, N end towards the S pole. Only a compass <b>past the end</b> points straight towards or away from the magnet.</div>
+</section>
+
+<section class="card" id="check">
+  <p class="sec-label">Check yourself</p>
+  <h2>Five questions on these ideas</h2>
+  <p class="lead">Only your first answer counts. A wrong first answer goes into your mistake book, and a different question on the same idea comes back for recap.</p>
+  <div id="qs"></div>
+</section>

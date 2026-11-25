@@ -1,0 +1,21 @@
+svg.cstage{display:block;width:100%;height:auto}
+.lab{display:grid;grid-template-columns:1fr;gap:16px;align-items:start}
+@media(min-width:860px){.lab{grid-template-columns:1.25fr 1fr}}
+.seg{display:flex;flex-wrap:wrap;gap:6px;margin:4px 0 12px}
+.seg button{flex:1 1 130px;min-height:44px;padding:0 12px;border-radius:var(--radius);border:var(--bw) solid var(--line);background:var(--card);color:var(--ink);font:inherit;font-size:14.5px;cursor:pointer}
+.seg button[aria-pressed="true"]{border-color:var(--primary);background:var(--primary);color:var(--primary-ink);font-weight:600}
+.panel h3{font:600 13.5px var(--f-label);letter-spacing:var(--ls);color:var(--muted);margin:0 0 6px}
+.panel .line{padding:8px 10px;border:var(--bw) solid var(--line);border-radius:var(--radius);margin-bottom:8px;background:var(--card);font-size:14.5px}
+.panel .line.ok{border-color:var(--ok)}
+.panel .line.no{border-color:var(--no)}
+.verdict{font-weight:600}
+.verdict.ok{color:var(--ok)}
+.verdict.no{color:var(--no)}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:8px 0}
+.spots{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.spots .btn{width:100%}
+.stepbox{display:flex;gap:12px;align-items:flex-start;margin-top:12px;min-height:84px}
+.stepno{flex:0 0 auto;width:42px;height:42px;border-radius:999px;background:var(--primary);color:var(--primary-ink);display:flex;align-items:center;justify-content:center;font:700 16px var(--f-label)}
+.steptext{flex:1 1 auto;font-size:16px}
+.opt .ot svg{vertical-align:middle;margin-right:6px}
+#chainSvg g[role=button]:focus-visible rect{stroke:var(--hl);stroke-width:4}

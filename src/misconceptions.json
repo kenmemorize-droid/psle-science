@@ -1120,6 +1120,22 @@
    "label": "Thinks a magnet cannot lose its magnetism",
    "fix": "A magnet can lose some of its magnetism. Dropping it many times, hitting it hard or heating it makes it weaker. (This is not in the syllabus LO list, but it is tested in school papers.)",
    "learn": "P3-magnets-which-statements-are-true.html#beyond"
+  },
+  {
+   "id": "MAG-18",
+   "topic": "MAG",
+   "lo": "P3.MAG.C2",
+   "label": "Gives two touching magnets the same pole where they meet side by side or at a corner",
+   "fix": "Wherever two magnets stay together, the poles that meet are unlike: end to end, side by side, or one magnet’s end against the other right at its pole. Side by side, two magnets that attract lie opposite ways round.",
+   "learn": "P3-magnets-chain-side-and-corner.html#see-it"
+  },
+  {
+   "id": "MAG-19",
+   "topic": "MAG",
+   "lo": "P3.MAG.C2",
+   "label": "Thinks a compass beside a magnet points straight at it",
+   "fix": "Beside a magnet, both poles act on the needle: the N pole pushes its N end away and the S pole pulls it closer. So the needle lies alongside the magnet, N end towards the S end. Only past the end of a magnet, on its line, does the needle point straight towards or away from it.",
+   "learn": "P3-magnets-chain-side-and-corner.html#beside"
   }
  ]
 }

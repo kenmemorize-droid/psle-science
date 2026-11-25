@@ -1,0 +1,16 @@
+{
+  "id": "P3-magnets-chain-side-and-corner",
+  "type": "focus",
+  "theme": "interactions",
+  "topic": "MAG",
+  "level": "P3",
+  "title": "Four magnets and the compass at A",
+  "purpose": "Work along a chain of magnets that meet side by side and at a corner, then read a compass that sits beside a magnet rather than past its end.",
+  "lo": ["P3.MAG.C2"],
+  "fixes": "Writing the same pole on two magnets that meet side by side or at a corner, and thinking a compass beside a magnet points straight at it.",
+  "origin": "mistake",
+  "built": "2026-11-25",
+  "updated": "2026-11-25",
+  "order": 5,
+  "uses": []
+}
