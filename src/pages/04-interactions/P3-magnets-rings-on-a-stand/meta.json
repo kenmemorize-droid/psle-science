@@ -1,0 +1,16 @@
+{
+  "id": "P3-magnets-rings-on-a-stand",
+  "type": "focus",
+  "theme": "interactions",
+  "topic": "MAG",
+  "level": "P3",
+  "title": "Four rings on a wooden stand",
+  "purpose": "Two magnets, a magnetic material and a non-magnetic ring go on a wooden stand. Load each drawing, turn the magnets over, and find out which stacks can really happen.",
+  "lo": ["P3.MAG.C1", "P3.MAG.C2", "P3.MAG.P1"],
+  "fixes": "Thinking a non-magnetic ring between two magnets stops them repelling, and missing that a magnetic material can never float above a magnet.",
+  "origin": "mistake",
+  "built": "2026-11-25",
+  "updated": "2026-11-25",
+  "order": 6,
+  "uses": []
+}

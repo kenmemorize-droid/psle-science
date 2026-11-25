@@ -1,0 +1,293 @@
+[
+ {
+  "id": "P3-magnets-rings-on-a-stand.q1",
+  "title": "Same four rings, new stacks",
+  "lo": [
+   "P3.MAG.C2"
+  ],
+  "kind": "diag",
+  "pool": "page",
+  "stem": "The same four rings are placed through a wooden stand, one on top of the other. Which one of the following is <b>not</b> a possible observation?",
+  "figure": "<div style=\"display:flex;flex-wrap:wrap;gap:8px 18px;align-items:flex-end\"><figure style=\"margin:0;text-align:center\"><svg viewBox=\"0 0 94 24\" width=\"94\" role=\"img\" aria-label=\"From bottom to top: magnet 1.\" style=\"max-width:100%;height:auto\"><rect x=\"6.399999999999999\" y=\"4\" width=\"80\" height=\"16\" style=\"fill:var(--card);stroke:var(--stroke)\" stroke-width=\"2\"/><circle cx=\"10.4\" cy=\"7.2\" r=\"1.1\" style=\"fill:var(--stroke)\"/><circle cx=\"43.2\" cy=\"12.8\" r=\"1.1\" style=\"fill:var(--stroke)\"/><circle cx=\"76.0\" cy=\"8.8\" r=\"1.1\" style=\"fill:var(--stroke)\"/><circle cx=\"36.8\" cy=\"14.4\" r=\"1.1\" style=\"fill:var(--stroke)\"/><circle cx=\"69.6\" cy=\"10.4\" r=\"1.1\" style=\"fill:var(--stroke)\"/><circle cx=\"30.4\" cy=\"16.0\" r=\"1.1\" style=\"fill:var(--stroke)\"/><circle cx=\"63.2\" cy=\"12.0\" r=\"1.1\" style=\"fill:var(--stroke)\"/><circle cx=\"24.0\" cy=\"8.0\" r=\"1.1\" style=\"fill:var(--stroke)\"/><circle cx=\"56.8\" cy=\"13.6\" r=\"1.1\" style=\"fill:var(--stroke)\"/><circle cx=\"17.6\" cy=\"9.6\" r=\"1.1\" style=\"fill:var(--stroke)\"/><circle cx=\"50.4\" cy=\"15.2\" r=\"1.1\" style=\"fill:var(--stroke)\"/><circle cx=\"11.2\" cy=\"11.2\" r=\"1.1\" style=\"fill:var(--stroke)\"/><circle cx=\"44.0\" cy=\"7.2\" r=\"1.1\" style=\"fill:var(--stroke)\"/><circle cx=\"76.8\" cy=\"12.8\" r=\"1.1\" style=\"fill:var(--stroke)\"/><circle cx=\"37.6\" cy=\"8.8\" r=\"1.1\" style=\"fill:var(--stroke)\"/><circle cx=\"70.4\" cy=\"14.4\" r=\"1.1\" style=\"fill:var(--stroke)\"/><circle cx=\"31.2\" cy=\"10.4\" r=\"1.1\" style=\"fill:var(--stroke)\"/><circle cx=\"64.0\" cy=\"16.0\" r=\"1.1\" style=\"fill:var(--stroke)\"/><circle cx=\"24.8\" cy=\"12.0\" r=\"1.1\" style=\"fill:var(--stroke)\"/><circle cx=\"57.6\" cy=\"8.0\" r=\"1.1\" style=\"fill:var(--stroke)\"/><circle cx=\"18.4\" cy=\"13.6\" r=\"1.1\" style=\"fill:var(--stroke)\"/><circle cx=\"51.2\" cy=\"9.6\" r=\"1.1\" style=\"fill:var(--stroke)\"/></svg><figcaption style=\"font-size:14px\">magnet 1</figcaption></figure><figure style=\"margin:0;text-align:center\"><svg viewBox=\"0 0 94 24\" width=\"94\" role=\"img\" aria-label=\"From bottom to top: magnet 2.\" style=\"max-width:100%;height:auto\"><rect x=\"6.399999999999999\" y=\"4\" width=\"80\" height=\"16\" style=\"fill:var(--card);stroke:var(--stroke)\" stroke-width=\"2\"/><line x1=\"11.2\" y1=\"4\" x2=\"11.2\" y2=\"20\" style=\"stroke:var(--stroke)\" stroke-width=\"1.1\"/><line x1=\"16.0\" y1=\"4\" x2=\"16.0\" y2=\"20\" style=\"stroke:var(--stroke)\" stroke-width=\"1.1\"/><line x1=\"20.8\" y1=\"4\" x2=\"20.8\" y2=\"20\" style=\"stroke:var(--stroke)\" stroke-width=\"1.1\"/><line x1=\"25.6\" y1=\"4\" x2=\"25.6\" y2=\"20\" style=\"stroke:var(--stroke)\" stroke-width=\"1.1\"/><line x1=\"30.4\" y1=\"4\" x2=\"30.4\" y2=\"20\" style=\"stroke:var(--stroke)\" stroke-width=\"1.1\"/><line x1=\"35.2\" y1=\"4\" x2=\"35.2\" y2=\"20\" style=\"stroke:var(--stroke)\" stroke-width=\"1.1\"/><line x1=\"40.0\" y1=\"4\" x2=\"40.0\" y2=\"20\" style=\"stroke:var(--stroke)\" stroke-width=\"1.1\"/><line x1=\"44.8\" y1=\"4\" x2=\"44.8\" y2=\"20\" style=\"stroke:var(--stroke)\" stroke-width=\"1.1\"/><line x1=\"49.6\" y1=\"4\" x2=\"49.6\" y2=\"20\" style=\"stroke:var(--stroke)\" stroke-width=\"1.1\"/><line x1=\"54.4\" y1=\"4\" x2=\"54.4\" y2=\"20\" style=\"stroke:var(--stroke)\" stroke-width=\"1.1\"/><line x1=\"59.2\" y1=\"4\" x2=\"59.2\" y2=\"20\" style=\"stroke:var(--stroke)\" stroke-width=\"1.1\"/><line x1=\"64.0\" y1=\"4\" x2=\"64.0\" y2=\"20\" style=\"stroke:var(--stroke)\" stroke-width=\"1.1\"/><line x1=\"68.8\" y1=\"4\" x2=\"68.8\" y2=\"20\" style=\"stroke:var(--stroke)\" stroke-width=\"1.1\"/><line x1=\"73.6\" y1=\"4\" x2=\"73.6\" y2=\"20\" style=\"stroke:var(--stroke)\" stroke-width=\"1.1\"/><line x1=\"78.4\" y1=\"4\" x2=\"78.4\" y2=\"20\" style=\"stroke:var(--stroke)\" stroke-width=\"1.1\"/><line x1=\"83.2\" y1=\"4\" x2=\"83.2\" y2=\"20\" style=\"stroke:var(--stroke)\" stroke-width=\"1.1\"/></svg><figcaption style=\"font-size:14px\">magnet 2</figcaption></figure><figure style=\"margin:0;text-align:center\"><svg viewBox=\"0 0 94 24\" width=\"94\" role=\"img\" aria-label=\"From bottom to top: magnetic material.\" style=\"max-width:100%;height:auto\"><rect x=\"6.399999999999999\" y=\"4\" width=\"80\" height=\"16\" style=\"fill:var(--card);stroke:var(--stroke)\" stroke-width=\"2\"/><line x1=\"17.6\" y1=\"4.0\" x2=\"17.6\" y2=\"9.3\" style=\"stroke:var(--stroke)\" stroke-width=\"1.1\"/><line x1=\"28.8\" y1=\"4.0\" x2=\"28.8\" y2=\"9.3\" style=\"stroke:var(--stroke)\" stroke-width=\"1.1\"/><line x1=\"40.0\" y1=\"4.0\" x2=\"40.0\" y2=\"9.3\" style=\"stroke:var(--stroke)\" stroke-width=\"1.1\"/><line x1=\"51.2\" y1=\"4.0\" x2=\"51.2\" y2=\"9.3\" style=\"stroke:var(--stroke)\" stroke-width=\"1.1\"/><line x1=\"62.4\" y1=\"4.0\" x2=\"62.4\" y2=\"9.3\" style=\"stroke:var(--stroke)\" stroke-width=\"1.1\"/><line x1=\"73.6\" y1=\"4.0\" x2=\"73.6\" y2=\"9.3\" style=\"stroke:var(--stroke)\" stroke-width=\"1.1\"/><line x1=\"6.399999999999999\" y1=\"9.3\" x2=\"86.4\" y2=\"9.3\" style=\"stroke:var(--stroke)\" stroke-width=\"1.1\"/><line x1=\"12.0\" y1=\"9.3\" x2=\"12.0\" y2=\"14.7\" style=\"stroke:var(--stroke)\" stroke-width=\"1.1\"/><line x1=\"23.2\" y1=\"9.3\" x2=\"23.2\" y2=\"14.7\" style=\"stroke:var(--stroke)\" stroke-width=\"1.1\"/><line x1=\"34.4\" y1=\"9.3\" x2=\"34.4\" y2=\"14.7\" style=\"stroke:var(--stroke)\" stroke-width=\"1.1\"/><line x1=\"45.6\" y1=\"9.3\" x2=\"45.6\" y2=\"14.7\" style=\"stroke:var(--stroke)\" stroke-width=\"1.1\"/><line x1=\"56.8\" y1=\"9.3\" x2=\"56.8\" y2=\"14.7\" style=\"stroke:var(--stroke)\" stroke-width=\"1.1\"/><line x1=\"68.0\" y1=\"9.3\" x2=\"68.0\" y2=\"14.7\" style=\"stroke:var(--stroke)\" stroke-width=\"1.1\"/><line x1=\"79.2\" y1=\"9.3\" x2=\"79.2\" y2=\"14.7\" style=\"stroke:var(--stroke)\" stroke-width=\"1.1\"/><line x1=\"6.399999999999999\" y1=\"14.7\" x2=\"86.4\" y2=\"14.7\" style=\"stroke:var(--stroke)\" stroke-width=\"1.1\"/><line x1=\"17.6\" y1=\"14.7\" x2=\"17.6\" y2=\"20.0\" style=\"stroke:var(--stroke)\" stroke-width=\"1.1\"/><line x1=\"28.8\" y1=\"14.7\" x2=\"28.8\" y2=\"20.0\" style=\"stroke:var(--stroke)\" stroke-width=\"1.1\"/><line x1=\"40.0\" y1=\"14.7\" x2=\"40.0\" y2=\"20.0\" style=\"stroke:var(--stroke)\" stroke-width=\"1.1\"/><line x1=\"51.2\" y1=\"14.7\" x2=\"51.2\" y2=\"20.0\" style=\"stroke:var(--stroke)\" stroke-width=\"1.1\"/><line x1=\"62.4\" y1=\"14.7\" x2=\"62.4\" y2=\"20.0\" style=\"stroke:var(--stroke)\" stroke-width=\"1.1\"/><line x1=\"73.6\" y1=\"14.7\" x2=\"73.6\" y2=\"20.0\" style=\"stroke:var(--stroke)\" stroke-width=\"1.1\"/></svg><figcaption style=\"font-size:14px\">magnetic material</figcaption></figure><figure style=\"margin:0;text-align:center\"><svg viewBox=\"0 0 94 24\" width=\"94\" role=\"img\" aria-label=\"From bottom to top: non-magnetic material.\" style=\"max-width:100%;height:auto\"><rect x=\"6.399999999999999\" y=\"4\" width=\"80\" height=\"16\" style=\"fill:var(--card);stroke:var(--stroke)\" stroke-width=\"2\"/></svg><figcaption style=\"font-size:14px\">non-magnetic material</figcaption></figure></div>",
+  "options": [
+   {
+    "text": "<svg viewBox=\"0 0 142 134\" width=\"120\" role=\"img\" aria-label=\"From bottom to top: magnet 1, non-magnetic material, a gap, magnet 2, magnetic material.\" style=\"max-width:100%;height:auto\"><rect x=\"7.200000000000003\" y=\"118.8\" width=\"126\" height=\"10.8\" style=\"fill:var(--card);stroke:var(--stroke)\" stroke-width=\"2\"/><rect x=\"62.1\" y=\"7.200000000000001\" width=\"16.2\" height=\"111.6\" style=\"fill:var(--card);stroke:var(--stroke)\" stroke-width=\"2\"/><rect x=\"25.200000000000003\" y=\"97.2\" width=\"90\" height=\"18\" style=\"fill:var(--card);stroke:var(--stroke)\" stroke-width=\"2\"/><circle cx=\"29.7\" cy=\"100.8\" r=\"1.3\" style=\"fill:var(--stroke)\"/><circle cx=\"66.6\" cy=\"107.1\" r=\"1.3\" style=\"fill:var(--stroke)\"/><circle cx=\"103.5\" cy=\"102.6\" r=\"1.3\" style=\"fill:var(--stroke)\"/><circle cx=\"59.4\" cy=\"108.9\" r=\"1.3\" style=\"fill:var(--stroke)\"/><circle cx=\"96.3\" cy=\"104.4\" r=\"1.3\" style=\"fill:var(--stroke)\"/><circle cx=\"52.2\" cy=\"110.7\" r=\"1.3\" style=\"fill:var(--stroke)\"/><circle cx=\"89.1\" cy=\"106.2\" r=\"1.3\" style=\"fill:var(--stroke)\"/><circle cx=\"45.0\" cy=\"101.7\" r=\"1.3\" style=\"fill:var(--stroke)\"/><circle cx=\"81.9\" cy=\"108.0\" r=\"1.3\" style=\"fill:var(--stroke)\"/><circle cx=\"37.8\" cy=\"103.5\" r=\"1.3\" style=\"fill:var(--stroke)\"/><circle cx=\"74.7\" cy=\"109.8\" r=\"1.3\" style=\"fill:var(--stroke)\"/><circle cx=\"30.6\" cy=\"105.3\" r=\"1.3\" style=\"fill:var(--stroke)\"/><circle cx=\"67.5\" cy=\"100.8\" r=\"1.3\" style=\"fill:var(--stroke)\"/><circle cx=\"104.4\" cy=\"107.1\" r=\"1.3\" style=\"fill:var(--stroke)\"/><circle cx=\"60.3\" cy=\"102.6\" r=\"1.3\" style=\"fill:var(--stroke)\"/><circle cx=\"97.2\" cy=\"108.9\" r=\"1.3\" style=\"fill:var(--stroke)\"/><circle cx=\"53.1\" cy=\"104.4\" r=\"1.3\" style=\"fill:var(--stroke)\"/><circle cx=\"90.0\" cy=\"110.7\" r=\"1.3\" style=\"fill:var(--stroke)\"/><circle cx=\"45.9\" cy=\"106.2\" r=\"1.3\" style=\"fill:var(--stroke)\"/><circle cx=\"82.8\" cy=\"101.7\" r=\"1.3\" style=\"fill:var(--stroke)\"/><circle cx=\"38.7\" cy=\"108.0\" r=\"1.3\" style=\"fill:var(--stroke)\"/><circle cx=\"75.6\" cy=\"103.5\" r=\"1.3\" style=\"fill:var(--stroke)\"/><rect x=\"25.200000000000003\" y=\"79.2\" width=\"90\" height=\"18\" style=\"fill:var(--card);stroke:var(--stroke)\" stroke-width=\"2\"/><rect x=\"25.200000000000003\" y=\"37.8\" width=\"90\" height=\"18\" style=\"fill:var(--card);stroke:var(--stroke)\" stroke-width=\"2\"/><line x1=\"30.6\" y1=\"37.8\" x2=\"30.6\" y2=\"55.8\" style=\"stroke:var(--stroke)\" stroke-width=\"1.3\"/><line x1=\"36.0\" y1=\"37.8\" x2=\"36.0\" y2=\"55.8\" style=\"stroke:var(--stroke)\" stroke-width=\"1.3\"/><line x1=\"41.4\" y1=\"37.8\" x2=\"41.4\" y2=\"55.8\" style=\"stroke:var(--stroke)\" stroke-width=\"1.3\"/><line x1=\"46.8\" y1=\"37.8\" x2=\"46.8\" y2=\"55.8\" style=\"stroke:var(--stroke)\" stroke-width=\"1.3\"/><line x1=\"52.2\" y1=\"37.8\" x2=\"52.2\" y2=\"55.8\" style=\"stroke:var(--stroke)\" stroke-width=\"1.3\"/><line x1=\"57.6\" y1=\"37.8\" x2=\"57.6\" y2=\"55.8\" style=\"stroke:var(--stroke)\" stroke-width=\"1.3\"/><line x1=\"63.0\" y1=\"37.8\" x2=\"63.0\" y2=\"55.8\" style=\"stroke:var(--stroke)\" stroke-width=\"1.3\"/><line x1=\"68.4\" y1=\"37.8\" x2=\"68.4\" y2=\"55.8\" style=\"stroke:var(--stroke)\" stroke-width=\"1.3\"/><line x1=\"73.8\" y1=\"37.8\" x2=\"73.8\" y2=\"55.8\" style=\"stroke:var(--stroke)\" stroke-width=\"1.3\"/><line x1=\"79.2\" y1=\"37.8\" x2=\"79.2\" y2=\"55.8\" style=\"stroke:var(--stroke)\" stroke-width=\"1.3\"/><line x1=\"84.6\" y1=\"37.8\" x2=\"84.6\" y2=\"55.8\" style=\"stroke:var(--stroke)\" stroke-width=\"1.3\"/><line x1=\"90.0\" y1=\"37.8\" x2=\"90.0\" y2=\"55.8\" style=\"stroke:var(--stroke)\" stroke-width=\"1.3\"/><line x1=\"95.4\" y1=\"37.8\" x2=\"95.4\" y2=\"55.8\" style=\"stroke:var(--stroke)\" stroke-width=\"1.3\"/><line x1=\"100.8\" y1=\"37.8\" x2=\"100.8\" y2=\"55.8\" style=\"stroke:var(--stroke)\" stroke-width=\"1.3\"/><line x1=\"106.2\" y1=\"37.8\" x2=\"106.2\" y2=\"55.8\" style=\"stroke:var(--stroke)\" stroke-width=\"1.3\"/><line x1=\"111.6\" y1=\"37.8\" x2=\"111.6\" y2=\"55.8\" style=\"stroke:var(--stroke)\" stroke-width=\"1.3\"/><rect x=\"25.200000000000003\" y=\"19.799999999999997\" width=\"90\" height=\"18\" style=\"fill:var(--card);stroke:var(--stroke)\" stroke-width=\"2\"/><line x1=\"37.8\" y1=\"19.8\" x2=\"37.8\" y2=\"25.8\" style=\"stroke:var(--stroke)\" stroke-width=\"1.3\"/><line x1=\"50.4\" y1=\"19.8\" x2=\"50.4\" y2=\"25.8\" style=\"stroke:var(--stroke)\" stroke-width=\"1.3\"/><line x1=\"63.0\" y1=\"19.8\" x2=\"63.0\" y2=\"25.8\" style=\"stroke:var(--stroke)\" stroke-width=\"1.3\"/><line x1=\"75.6\" y1=\"19.8\" x2=\"75.6\" y2=\"25.8\" style=\"stroke:var(--stroke)\" stroke-width=\"1.3\"/><line x1=\"88.2\" y1=\"19.8\" x2=\"88.2\" y2=\"25.8\" style=\"stroke:var(--stroke)\" stroke-width=\"1.3\"/><line x1=\"100.8\" y1=\"19.8\" x2=\"100.8\" y2=\"25.8\" style=\"stroke:var(--stroke)\" stroke-width=\"1.3\"/><line x1=\"25.200000000000003\" y1=\"25.8\" x2=\"115.2\" y2=\"25.8\" style=\"stroke:var(--stroke)\" stroke-width=\"1.3\"/><line x1=\"31.5\" y1=\"25.8\" x2=\"31.5\" y2=\"31.8\" style=\"stroke:var(--stroke)\" stroke-width=\"1.3\"/><line x1=\"44.1\" y1=\"25.8\" x2=\"44.1\" y2=\"31.8\" style=\"stroke:var(--stroke)\" stroke-width=\"1.3\"/><line x1=\"56.7\" y1=\"25.8\" x2=\"56.7\" y2=\"31.8\" style=\"stroke:var(--stroke)\" stroke-width=\"1.3\"/><line x1=\"69.3\" y1=\"25.8\" x2=\"69.3\" y2=\"31.8\" style=\"stroke:var(--stroke)\" stroke-width=\"1.3\"/><line x1=\"81.9\" y1=\"25.8\" x2=\"81.9\" y2=\"31.8\" style=\"stroke:var(--stroke)\" stroke-width=\"1.3\"/><line x1=\"94.5\" y1=\"25.8\" x2=\"94.5\" y2=\"31.8\" style=\"stroke:var(--stroke)\" stroke-width=\"1.3\"/><line x1=\"107.1\" y1=\"25.8\" x2=\"107.1\" y2=\"31.8\" style=\"stroke:var(--stroke)\" stroke-width=\"1.3\"/><line x1=\"25.200000000000003\" y1=\"31.8\" x2=\"115.2\" y2=\"31.8\" style=\"stroke:var(--stroke)\" stroke-width=\"1.3\"/><line x1=\"37.8\" y1=\"31.8\" x2=\"37.8\" y2=\"37.8\" style=\"stroke:var(--stroke)\" stroke-width=\"1.3\"/><line x1=\"50.4\" y1=\"31.8\" x2=\"50.4\" y2=\"37.8\" style=\"stroke:var(--stroke)\" stroke-width=\"1.3\"/><line x1=\"63.0\" y1=\"31.8\" x2=\"63.0\" y2=\"37.8\" style=\"stroke:var(--stroke)\" stroke-width=\"1.3\"/><line x1=\"75.6\" y1=\"31.8\" x2=\"75.6\" y2=\"37.8\" style=\"stroke:var(--stroke)\" stroke-width=\"1.3\"/><line x1=\"88.2\" y1=\"31.8\" x2=\"88.2\" y2=\"37.8\" style=\"stroke:var(--stroke)\" stroke-width=\"1.3\"/><line x1=\"100.8\" y1=\"31.8\" x2=\"100.8\" y2=\"37.8\" style=\"stroke:var(--stroke)\" stroke-width=\"1.3\"/></svg>",
+    "mis": "MAG-20",
+    "pick": "Magnet 2 floats above a non-magnetic ring, not above a magnet, so it looks as if nothing is pushing it.",
+    "why": "Magnet 1 pushes magnet 2 up through the non-magnetic ring when like poles face each other. The non-magnetic ring just rests on magnet 1, and the magnetic material sticks to the top of magnet 2. This is possible."
+   },
+   {
+    "text": "<svg viewBox=\"0 0 142 134\" width=\"120\" role=\"img\" aria-label=\"From bottom to top: magnetic material, magnet 2, a gap, magnet 1, non-magnetic material.\" style=\"max-width:100%;height:auto\"><rect x=\"7.200000000000003\" y=\"118.8\" width=\"126\" height=\"10.8\" style=\"fill:var(--card);stroke:var(--stroke)\" stroke-width=\"2\"/><rect x=\"62.1\" y=\"7.200000000000001\" width=\"16.2\" height=\"111.6\" style=\"fill:var(--card);stroke:var(--stroke)\" stroke-width=\"2\"/><rect x=\"25.200000000000003\" y=\"97.2\" width=\"90\" height=\"18\" style=\"fill:var(--card);stroke:var(--stroke)\" stroke-width=\"2\"/><line x1=\"37.8\" y1=\"97.2\" x2=\"37.8\" y2=\"103.2\" style=\"stroke:var(--stroke)\" stroke-width=\"1.3\"/><line x1=\"50.4\" y1=\"97.2\" x2=\"50.4\" y2=\"103.2\" style=\"stroke:var(--stroke)\" stroke-width=\"1.3\"/><line x1=\"63.0\" y1=\"97.2\" x2=\"63.0\" y2=\"103.2\" style=\"stroke:var(--stroke)\" stroke-width=\"1.3\"/><line x1=\"75.6\" y1=\"97.2\" x2=\"75.6\" y2=\"103.2\" style=\"stroke:var(--stroke)\" stroke-width=\"1.3\"/><line x1=\"88.2\" y1=\"97.2\" x2=\"88.2\" y2=\"103.2\" style=\"stroke:var(--stroke)\" stroke-width=\"1.3\"/><line x1=\"100.8\" y1=\"97.2\" x2=\"100.8\" y2=\"103.2\" style=\"stroke:var(--stroke)\" stroke-width=\"1.3\"/><line x1=\"25.200000000000003\" y1=\"103.2\" x2=\"115.2\" y2=\"103.2\" style=\"stroke:var(--stroke)\" stroke-width=\"1.3\"/><line x1=\"31.5\" y1=\"103.2\" x2=\"31.5\" y2=\"109.2\" style=\"stroke:var(--stroke)\" stroke-width=\"1.3\"/><line x1=\"44.1\" y1=\"103.2\" x2=\"44.1\" y2=\"109.2\" style=\"stroke:var(--stroke)\" stroke-width=\"1.3\"/><line x1=\"56.7\" y1=\"103.2\" x2=\"56.7\" y2=\"109.2\" style=\"stroke:var(--stroke)\" stroke-width=\"1.3\"/><line x1=\"69.3\" y1=\"103.2\" x2=\"69.3\" y2=\"109.2\" style=\"stroke:var(--stroke)\" stroke-width=\"1.3\"/><line x1=\"81.9\" y1=\"103.2\" x2=\"81.9\" y2=\"109.2\" style=\"stroke:var(--stroke)\" stroke-width=\"1.3\"/><line x1=\"94.5\" y1=\"103.2\" x2=\"94.5\" y2=\"109.2\" style=\"stroke:var(--stroke)\" stroke-width=\"1.3\"/><line x1=\"107.1\" y1=\"103.2\" x2=\"107.1\" y2=\"109.2\" style=\"stroke:var(--stroke)\" stroke-width=\"1.3\"/><line x1=\"25.200000000000003\" y1=\"109.2\" x2=\"115.2\" y2=\"109.2\" style=\"stroke:var(--stroke)\" stroke-width=\"1.3\"/><line x1=\"37.8\" y1=\"109.2\" x2=\"37.8\" y2=\"115.2\" style=\"stroke:var(--stroke)\" stroke-width=\"1.3\"/><line x1=\"50.4\" y1=\"109.2\" x2=\"50.4\" y2=\"115.2\" style=\"stroke:var(--stroke)\" stroke-width=\"1.3\"/><line x1=\"63.0\" y1=\"109.2\" x2=\"63.0\" y2=\"115.2\" style=\"stroke:var(--stroke)\" stroke-width=\"1.3\"/><line x1=\"75.6\" y1=\"109.2\" x2=\"75.6\" y2=\"115.2\" style=\"stroke:var(--stroke)\" stroke-width=\"1.3\"/><line x1=\"88.2\" y1=\"109.2\" x2=\"88.2\" y2=\"115.2\" style=\"stroke:var(--stroke)\" stroke-width=\"1.3\"/><line x1=\"100.8\" y1=\"109.2\" x2=\"100.8\" y2=\"115.2\" style=\"stroke:var(--stroke)\" stroke-width=\"1.3\"/><rect x=\"25.200000000000003\" y=\"79.2\" width=\"90\" height=\"18\" style=\"fill:var(--card);stroke:var(--stroke)\" stroke-width=\"2\"/><line x1=\"30.6\" y1=\"79.2\" x2=\"30.6\" y2=\"97.2\" style=\"stroke:var(--stroke)\" stroke-width=\"1.3\"/><line x1=\"36.0\" y1=\"79.2\" x2=\"36.0\" y2=\"97.2\" style=\"stroke:var(--stroke)\" stroke-width=\"1.3\"/><line x1=\"41.4\" y1=\"79.2\" x2=\"41.4\" y2=\"97.2\" style=\"stroke:var(--stroke)\" stroke-width=\"1.3\"/><line x1=\"46.8\" y1=\"79.2\" x2=\"46.8\" y2=\"97.2\" style=\"stroke:var(--stroke)\" stroke-width=\"1.3\"/><line x1=\"52.2\" y1=\"79.2\" x2=\"52.2\" y2=\"97.2\" style=\"stroke:var(--stroke)\" stroke-width=\"1.3\"/><line x1=\"57.6\" y1=\"79.2\" x2=\"57.6\" y2=\"97.2\" style=\"stroke:var(--stroke)\" stroke-width=\"1.3\"/><line x1=\"63.0\" y1=\"79.2\" x2=\"63.0\" y2=\"97.2\" style=\"stroke:var(--stroke)\" stroke-width=\"1.3\"/><line x1=\"68.4\" y1=\"79.2\" x2=\"68.4\" y2=\"97.2\" style=\"stroke:var(--stroke)\" stroke-width=\"1.3\"/><line x1=\"73.8\" y1=\"79.2\" x2=\"73.8\" y2=\"97.2\" style=\"stroke:var(--stroke)\" stroke-width=\"1.3\"/><line x1=\"79.2\" y1=\"79.2\" x2=\"79.2\" y2=\"97.2\" style=\"stroke:var(--stroke)\" stroke-width=\"1.3\"/><line x1=\"84.6\" y1=\"79.2\" x2=\"84.6\" y2=\"97.2\" style=\"stroke:var(--stroke)\" stroke-width=\"1.3\"/><line x1=\"90.0\" y1=\"79.2\" x2=\"90.0\" y2=\"97.2\" style=\"stroke:var(--stroke)\" stroke-width=\"1.3\"/><line x1=\"95.4\" y1=\"79.2\" x2=\"95.4\" y2=\"97.2\" style=\"stroke:var(--stroke)\" stroke-width=\"1.3\"/><line x1=\"100.8\" y1=\"79.2\" x2=\"100.8\" y2=\"97.2\" style=\"stroke:var(--stroke)\" stroke-width=\"1.3\"/><line x1=\"106.2\" y1=\"79.2\" x2=\"106.2\" y2=\"97.2\" style=\"stroke:var(--stroke)\" stroke-width=\"1.3\"/><line x1=\"111.6\" y1=\"79.2\" x2=\"111.6\" y2=\"97.2\" style=\"stroke:var(--stroke)\" stroke-width=\"1.3\"/><rect x=\"25.200000000000003\" y=\"37.8\" width=\"90\" height=\"18\" style=\"fill:var(--card);stroke:var(--stroke)\" stroke-width=\"2\"/><circle cx=\"29.7\" cy=\"41.4\" r=\"1.3\" style=\"fill:var(--stroke)\"/><circle cx=\"66.6\" cy=\"47.7\" r=\"1.3\" style=\"fill:var(--stroke)\"/><circle cx=\"103.5\" cy=\"43.2\" r=\"1.3\" style=\"fill:var(--stroke)\"/><circle cx=\"59.4\" cy=\"49.5\" r=\"1.3\" style=\"fill:var(--stroke)\"/><circle cx=\"96.3\" cy=\"45.0\" r=\"1.3\" style=\"fill:var(--stroke)\"/><circle cx=\"52.2\" cy=\"51.3\" r=\"1.3\" style=\"fill:var(--stroke)\"/><circle cx=\"89.1\" cy=\"46.8\" r=\"1.3\" style=\"fill:var(--stroke)\"/><circle cx=\"45.0\" cy=\"42.3\" r=\"1.3\" style=\"fill:var(--stroke)\"/><circle cx=\"81.9\" cy=\"48.6\" r=\"1.3\" style=\"fill:var(--stroke)\"/><circle cx=\"37.8\" cy=\"44.1\" r=\"1.3\" style=\"fill:var(--stroke)\"/><circle cx=\"74.7\" cy=\"50.4\" r=\"1.3\" style=\"fill:var(--stroke)\"/><circle cx=\"30.6\" cy=\"45.9\" r=\"1.3\" style=\"fill:var(--stroke)\"/><circle cx=\"67.5\" cy=\"41.4\" r=\"1.3\" style=\"fill:var(--stroke)\"/><circle cx=\"104.4\" cy=\"47.7\" r=\"1.3\" style=\"fill:var(--stroke)\"/><circle cx=\"60.3\" cy=\"43.2\" r=\"1.3\" style=\"fill:var(--stroke)\"/><circle cx=\"97.2\" cy=\"49.5\" r=\"1.3\" style=\"fill:var(--stroke)\"/><circle cx=\"53.1\" cy=\"45.0\" r=\"1.3\" style=\"fill:var(--stroke)\"/><circle cx=\"90.0\" cy=\"51.3\" r=\"1.3\" style=\"fill:var(--stroke)\"/><circle cx=\"45.9\" cy=\"46.8\" r=\"1.3\" style=\"fill:var(--stroke)\"/><circle cx=\"82.8\" cy=\"42.3\" r=\"1.3\" style=\"fill:var(--stroke)\"/><circle cx=\"38.7\" cy=\"48.6\" r=\"1.3\" style=\"fill:var(--stroke)\"/><circle cx=\"75.6\" cy=\"44.1\" r=\"1.3\" style=\"fill:var(--stroke)\"/><rect x=\"25.200000000000003\" y=\"19.799999999999997\" width=\"90\" height=\"18\" style=\"fill:var(--card);stroke:var(--stroke)\" stroke-width=\"2\"/></svg>",
+    "mis": "MAG-16",
+    "pick": "The non-magnetic ring is high up on a floating magnet, and a magnet does not push or pull a non-magnetic ring.",
+    "why": "The non-magnetic ring needs no magnetic force to stay there. It rests on magnet 1, the way a book rests on a table. Magnet 1 floats because magnet 2 pushes it. This is possible."
+   },
+   {
+    "text": "<svg viewBox=\"0 0 142 134\" width=\"120\" role=\"img\" aria-label=\"From bottom to top: magnetic material, magnet 1, a gap, non-magnetic material, magnet 2.\" style=\"max-width:100%;height:auto\"><rect x=\"7.200000000000003\" y=\"118.8\" width=\"126\" height=\"10.8\" style=\"fill:var(--card);stroke:var(--stroke)\" stroke-width=\"2\"/><rect x=\"62.1\" y=\"7.200000000000001\" width=\"16.2\" height=\"111.6\" style=\"fill:var(--card);stroke:var(--stroke)\" stroke-width=\"2\"/><rect x=\"25.200000000000003\" y=\"97.2\" width=\"90\" height=\"18\" style=\"fill:var(--card);stroke:var(--stroke)\" stroke-width=\"2\"/><line x1=\"37.8\" y1=\"97.2\" x2=\"37.8\" y2=\"103.2\" style=\"stroke:var(--stroke)\" stroke-width=\"1.3\"/><line x1=\"50.4\" y1=\"97.2\" x2=\"50.4\" y2=\"103.2\" style=\"stroke:var(--stroke)\" stroke-width=\"1.3\"/><line x1=\"63.0\" y1=\"97.2\" x2=\"63.0\" y2=\"103.2\" style=\"stroke:var(--stroke)\" stroke-width=\"1.3\"/><line x1=\"75.6\" y1=\"97.2\" x2=\"75.6\" y2=\"103.2\" style=\"stroke:var(--stroke)\" stroke-width=\"1.3\"/><line x1=\"88.2\" y1=\"97.2\" x2=\"88.2\" y2=\"103.2\" style=\"stroke:var(--stroke)\" stroke-width=\"1.3\"/><line x1=\"100.8\" y1=\"97.2\" x2=\"100.8\" y2=\"103.2\" style=\"stroke:var(--stroke)\" stroke-width=\"1.3\"/><line x1=\"25.200000000000003\" y1=\"103.2\" x2=\"115.2\" y2=\"103.2\" style=\"stroke:var(--stroke)\" stroke-width=\"1.3\"/><line x1=\"31.5\" y1=\"103.2\" x2=\"31.5\" y2=\"109.2\" style=\"stroke:var(--stroke)\" stroke-width=\"1.3\"/><line x1=\"44.1\" y1=\"103.2\" x2=\"44.1\" y2=\"109.2\" style=\"stroke:var(--stroke)\" stroke-width=\"1.3\"/><line x1=\"56.7\" y1=\"103.2\" x2=\"56.7\" y2=\"109.2\" style=\"stroke:var(--stroke)\" stroke-width=\"1.3\"/><line x1=\"69.3\" y1=\"103.2\" x2=\"69.3\" y2=\"109.2\" style=\"stroke:var(--stroke)\" stroke-width=\"1.3\"/><line x1=\"81.9\" y1=\"103.2\" x2=\"81.9\" y2=\"109.2\" style=\"stroke:var(--stroke)\" stroke-width=\"1.3\"/><line x1=\"94.5\" y1=\"103.2\" x2=\"94.5\" y2=\"109.2\" style=\"stroke:var(--stroke)\" stroke-width=\"1.3\"/><line x1=\"107.1\" y1=\"103.2\" x2=\"107.1\" y2=\"109.2\" style=\"stroke:var(--stroke)\" stroke-width=\"1.3\"/><line x1=\"25.200000000000003\" y1=\"109.2\" x2=\"115.2\" y2=\"109.2\" style=\"stroke:var(--stroke)\" stroke-width=\"1.3\"/><line x1=\"37.8\" y1=\"109.2\" x2=\"37.8\" y2=\"115.2\" style=\"stroke:var(--stroke)\" stroke-width=\"1.3\"/><line x1=\"50.4\" y1=\"109.2\" x2=\"50.4\" y2=\"115.2\" style=\"stroke:var(--stroke)\" stroke-width=\"1.3\"/><line x1=\"63.0\" y1=\"109.2\" x2=\"63.0\" y2=\"115.2\" style=\"stroke:var(--stroke)\" stroke-width=\"1.3\"/><line x1=\"75.6\" y1=\"109.2\" x2=\"75.6\" y2=\"115.2\" style=\"stroke:var(--stroke)\" stroke-width=\"1.3\"/><line x1=\"88.2\" y1=\"109.2\" x2=\"88.2\" y2=\"115.2\" style=\"stroke:var(--stroke)\" stroke-width=\"1.3\"/><line x1=\"100.8\" y1=\"109.2\" x2=\"100.8\" y2=\"115.2\" style=\"stroke:var(--stroke)\" stroke-width=\"1.3\"/><rect x=\"25.200000000000003\" y=\"79.2\" width=\"90\" height=\"18\" style=\"fill:var(--card);stroke:var(--stroke)\" stroke-width=\"2\"/><circle cx=\"29.7\" cy=\"82.8\" r=\"1.3\" style=\"fill:var(--stroke)\"/><circle cx=\"66.6\" cy=\"89.1\" r=\"1.3\" style=\"fill:var(--stroke)\"/><circle cx=\"103.5\" cy=\"84.6\" r=\"1.3\" style=\"fill:var(--stroke)\"/><circle cx=\"59.4\" cy=\"90.9\" r=\"1.3\" style=\"fill:var(--stroke)\"/><circle cx=\"96.3\" cy=\"86.4\" r=\"1.3\" style=\"fill:var(--stroke)\"/><circle cx=\"52.2\" cy=\"92.7\" r=\"1.3\" style=\"fill:var(--stroke)\"/><circle cx=\"89.1\" cy=\"88.2\" r=\"1.3\" style=\"fill:var(--stroke)\"/><circle cx=\"45.0\" cy=\"83.7\" r=\"1.3\" style=\"fill:var(--stroke)\"/><circle cx=\"81.9\" cy=\"90.0\" r=\"1.3\" style=\"fill:var(--stroke)\"/><circle cx=\"37.8\" cy=\"85.5\" r=\"1.3\" style=\"fill:var(--stroke)\"/><circle cx=\"74.7\" cy=\"91.8\" r=\"1.3\" style=\"fill:var(--stroke)\"/><circle cx=\"30.6\" cy=\"87.3\" r=\"1.3\" style=\"fill:var(--stroke)\"/><circle cx=\"67.5\" cy=\"82.8\" r=\"1.3\" style=\"fill:var(--stroke)\"/><circle cx=\"104.4\" cy=\"89.1\" r=\"1.3\" style=\"fill:var(--stroke)\"/><circle cx=\"60.3\" cy=\"84.6\" r=\"1.3\" style=\"fill:var(--stroke)\"/><circle cx=\"97.2\" cy=\"90.9\" r=\"1.3\" style=\"fill:var(--stroke)\"/><circle cx=\"53.1\" cy=\"86.4\" r=\"1.3\" style=\"fill:var(--stroke)\"/><circle cx=\"90.0\" cy=\"92.7\" r=\"1.3\" style=\"fill:var(--stroke)\"/><circle cx=\"45.9\" cy=\"88.2\" r=\"1.3\" style=\"fill:var(--stroke)\"/><circle cx=\"82.8\" cy=\"83.7\" r=\"1.3\" style=\"fill:var(--stroke)\"/><circle cx=\"38.7\" cy=\"90.0\" r=\"1.3\" style=\"fill:var(--stroke)\"/><circle cx=\"75.6\" cy=\"85.5\" r=\"1.3\" style=\"fill:var(--stroke)\"/><rect x=\"25.200000000000003\" y=\"37.8\" width=\"90\" height=\"18\" style=\"fill:var(--card);stroke:var(--stroke)\" stroke-width=\"2\"/><rect x=\"25.200000000000003\" y=\"19.799999999999997\" width=\"90\" height=\"18\" style=\"fill:var(--card);stroke:var(--stroke)\" stroke-width=\"2\"/><line x1=\"30.6\" y1=\"19.799999999999997\" x2=\"30.6\" y2=\"37.8\" style=\"stroke:var(--stroke)\" stroke-width=\"1.3\"/><line x1=\"36.0\" y1=\"19.799999999999997\" x2=\"36.0\" y2=\"37.8\" style=\"stroke:var(--stroke)\" stroke-width=\"1.3\"/><line x1=\"41.4\" y1=\"19.799999999999997\" x2=\"41.4\" y2=\"37.8\" style=\"stroke:var(--stroke)\" stroke-width=\"1.3\"/><line x1=\"46.8\" y1=\"19.799999999999997\" x2=\"46.8\" y2=\"37.8\" style=\"stroke:var(--stroke)\" stroke-width=\"1.3\"/><line x1=\"52.2\" y1=\"19.799999999999997\" x2=\"52.2\" y2=\"37.8\" style=\"stroke:var(--stroke)\" stroke-width=\"1.3\"/><line x1=\"57.6\" y1=\"19.799999999999997\" x2=\"57.6\" y2=\"37.8\" style=\"stroke:var(--stroke)\" stroke-width=\"1.3\"/><line x1=\"63.0\" y1=\"19.799999999999997\" x2=\"63.0\" y2=\"37.8\" style=\"stroke:var(--stroke)\" stroke-width=\"1.3\"/><line x1=\"68.4\" y1=\"19.799999999999997\" x2=\"68.4\" y2=\"37.8\" style=\"stroke:var(--stroke)\" stroke-width=\"1.3\"/><line x1=\"73.8\" y1=\"19.799999999999997\" x2=\"73.8\" y2=\"37.8\" style=\"stroke:var(--stroke)\" stroke-width=\"1.3\"/><line x1=\"79.2\" y1=\"19.799999999999997\" x2=\"79.2\" y2=\"37.8\" style=\"stroke:var(--stroke)\" stroke-width=\"1.3\"/><line x1=\"84.6\" y1=\"19.799999999999997\" x2=\"84.6\" y2=\"37.8\" style=\"stroke:var(--stroke)\" stroke-width=\"1.3\"/><line x1=\"90.0\" y1=\"19.799999999999997\" x2=\"90.0\" y2=\"37.8\" style=\"stroke:var(--stroke)\" stroke-width=\"1.3\"/><line x1=\"95.4\" y1=\"19.799999999999997\" x2=\"95.4\" y2=\"37.8\" style=\"stroke:var(--stroke)\" stroke-width=\"1.3\"/><line x1=\"100.8\" y1=\"19.799999999999997\" x2=\"100.8\" y2=\"37.8\" style=\"stroke:var(--stroke)\" stroke-width=\"1.3\"/><line x1=\"106.2\" y1=\"19.799999999999997\" x2=\"106.2\" y2=\"37.8\" style=\"stroke:var(--stroke)\" stroke-width=\"1.3\"/><line x1=\"111.6\" y1=\"19.799999999999997\" x2=\"111.6\" y2=\"37.8\" style=\"stroke:var(--stroke)\" stroke-width=\"1.3\"/></svg>",
+    "correct": true,
+    "pick": "Look at the ring just above the gap. Is it a magnet that can be pushed up?",
+    "why": "The ring just above the gap is the non-magnetic ring. No magnet pulls it, so nothing holds it up under magnet 2. It would drop onto magnet 1. This cannot be observed."
+   },
+   {
+    "text": "<svg viewBox=\"0 0 142 110\" width=\"120\" role=\"img\" aria-label=\"From bottom to top: non-magnetic material, magnet 2, magnet 1, magnetic material.\" style=\"max-width:100%;height:auto\"><rect x=\"7.200000000000003\" y=\"95.39999999999999\" width=\"126\" height=\"10.8\" style=\"fill:var(--card);stroke:var(--stroke)\" stroke-width=\"2\"/><rect x=\"62.1\" y=\"7.200000000000001\" width=\"16.2\" height=\"88.19999999999999\" style=\"fill:var(--card);stroke:var(--stroke)\" stroke-width=\"2\"/><rect x=\"25.200000000000003\" y=\"73.8\" width=\"90\" height=\"18\" style=\"fill:var(--card);stroke:var(--stroke)\" stroke-width=\"2\"/><rect x=\"25.200000000000003\" y=\"55.8\" width=\"90\" height=\"18\" style=\"fill:var(--card);stroke:var(--stroke)\" stroke-width=\"2\"/><line x1=\"30.6\" y1=\"55.8\" x2=\"30.6\" y2=\"73.8\" style=\"stroke:var(--stroke)\" stroke-width=\"1.3\"/><line x1=\"36.0\" y1=\"55.8\" x2=\"36.0\" y2=\"73.8\" style=\"stroke:var(--stroke)\" stroke-width=\"1.3\"/><line x1=\"41.4\" y1=\"55.8\" x2=\"41.4\" y2=\"73.8\" style=\"stroke:var(--stroke)\" stroke-width=\"1.3\"/><line x1=\"46.8\" y1=\"55.8\" x2=\"46.8\" y2=\"73.8\" style=\"stroke:var(--stroke)\" stroke-width=\"1.3\"/><line x1=\"52.2\" y1=\"55.8\" x2=\"52.2\" y2=\"73.8\" style=\"stroke:var(--stroke)\" stroke-width=\"1.3\"/><line x1=\"57.6\" y1=\"55.8\" x2=\"57.6\" y2=\"73.8\" style=\"stroke:var(--stroke)\" stroke-width=\"1.3\"/><line x1=\"63.0\" y1=\"55.8\" x2=\"63.0\" y2=\"73.8\" style=\"stroke:var(--stroke)\" stroke-width=\"1.3\"/><line x1=\"68.4\" y1=\"55.8\" x2=\"68.4\" y2=\"73.8\" style=\"stroke:var(--stroke)\" stroke-width=\"1.3\"/><line x1=\"73.8\" y1=\"55.8\" x2=\"73.8\" y2=\"73.8\" style=\"stroke:var(--stroke)\" stroke-width=\"1.3\"/><line x1=\"79.2\" y1=\"55.8\" x2=\"79.2\" y2=\"73.8\" style=\"stroke:var(--stroke)\" stroke-width=\"1.3\"/><line x1=\"84.6\" y1=\"55.8\" x2=\"84.6\" y2=\"73.8\" style=\"stroke:var(--stroke)\" stroke-width=\"1.3\"/><line x1=\"90.0\" y1=\"55.8\" x2=\"90.0\" y2=\"73.8\" style=\"stroke:var(--stroke)\" stroke-width=\"1.3\"/><line x1=\"95.4\" y1=\"55.8\" x2=\"95.4\" y2=\"73.8\" style=\"stroke:var(--stroke)\" stroke-width=\"1.3\"/><line x1=\"100.8\" y1=\"55.8\" x2=\"100.8\" y2=\"73.8\" style=\"stroke:var(--stroke)\" stroke-width=\"1.3\"/><line x1=\"106.2\" y1=\"55.8\" x2=\"106.2\" y2=\"73.8\" style=\"stroke:var(--stroke)\" stroke-width=\"1.3\"/><line x1=\"111.6\" y1=\"55.8\" x2=\"111.6\" y2=\"73.8\" style=\"stroke:var(--stroke)\" stroke-width=\"1.3\"/><rect x=\"25.200000000000003\" y=\"37.8\" width=\"90\" height=\"18\" style=\"fill:var(--card);stroke:var(--stroke)\" stroke-width=\"2\"/><circle cx=\"29.7\" cy=\"41.4\" r=\"1.3\" style=\"fill:var(--stroke)\"/><circle cx=\"66.6\" cy=\"47.7\" r=\"1.3\" style=\"fill:var(--stroke)\"/><circle cx=\"103.5\" cy=\"43.2\" r=\"1.3\" style=\"fill:var(--stroke)\"/><circle cx=\"59.4\" cy=\"49.5\" r=\"1.3\" style=\"fill:var(--stroke)\"/><circle cx=\"96.3\" cy=\"45.0\" r=\"1.3\" style=\"fill:var(--stroke)\"/><circle cx=\"52.2\" cy=\"51.3\" r=\"1.3\" style=\"fill:var(--stroke)\"/><circle cx=\"89.1\" cy=\"46.8\" r=\"1.3\" style=\"fill:var(--stroke)\"/><circle cx=\"45.0\" cy=\"42.3\" r=\"1.3\" style=\"fill:var(--stroke)\"/><circle cx=\"81.9\" cy=\"48.6\" r=\"1.3\" style=\"fill:var(--stroke)\"/><circle cx=\"37.8\" cy=\"44.1\" r=\"1.3\" style=\"fill:var(--stroke)\"/><circle cx=\"74.7\" cy=\"50.4\" r=\"1.3\" style=\"fill:var(--stroke)\"/><circle cx=\"30.6\" cy=\"45.9\" r=\"1.3\" style=\"fill:var(--stroke)\"/><circle cx=\"67.5\" cy=\"41.4\" r=\"1.3\" style=\"fill:var(--stroke)\"/><circle cx=\"104.4\" cy=\"47.7\" r=\"1.3\" style=\"fill:var(--stroke)\"/><circle cx=\"60.3\" cy=\"43.2\" r=\"1.3\" style=\"fill:var(--stroke)\"/><circle cx=\"97.2\" cy=\"49.5\" r=\"1.3\" style=\"fill:var(--stroke)\"/><circle cx=\"53.1\" cy=\"45.0\" r=\"1.3\" style=\"fill:var(--stroke)\"/><circle cx=\"90.0\" cy=\"51.3\" r=\"1.3\" style=\"fill:var(--stroke)\"/><circle cx=\"45.9\" cy=\"46.8\" r=\"1.3\" style=\"fill:var(--stroke)\"/><circle cx=\"82.8\" cy=\"42.3\" r=\"1.3\" style=\"fill:var(--stroke)\"/><circle cx=\"38.7\" cy=\"48.6\" r=\"1.3\" style=\"fill:var(--stroke)\"/><circle cx=\"75.6\" cy=\"44.1\" r=\"1.3\" style=\"fill:var(--stroke)\"/><rect x=\"25.200000000000003\" y=\"19.799999999999997\" width=\"90\" height=\"18\" style=\"fill:var(--card);stroke:var(--stroke)\" stroke-width=\"2\"/><line x1=\"37.8\" y1=\"19.8\" x2=\"37.8\" y2=\"25.8\" style=\"stroke:var(--stroke)\" stroke-width=\"1.3\"/><line x1=\"50.4\" y1=\"19.8\" x2=\"50.4\" y2=\"25.8\" style=\"stroke:var(--stroke)\" stroke-width=\"1.3\"/><line x1=\"63.0\" y1=\"19.8\" x2=\"63.0\" y2=\"25.8\" style=\"stroke:var(--stroke)\" stroke-width=\"1.3\"/><line x1=\"75.6\" y1=\"19.8\" x2=\"75.6\" y2=\"25.8\" style=\"stroke:var(--stroke)\" stroke-width=\"1.3\"/><line x1=\"88.2\" y1=\"19.8\" x2=\"88.2\" y2=\"25.8\" style=\"stroke:var(--stroke)\" stroke-width=\"1.3\"/><line x1=\"100.8\" y1=\"19.8\" x2=\"100.8\" y2=\"25.8\" style=\"stroke:var(--stroke)\" stroke-width=\"1.3\"/><line x1=\"25.200000000000003\" y1=\"25.8\" x2=\"115.2\" y2=\"25.8\" style=\"stroke:var(--stroke)\" stroke-width=\"1.3\"/><line x1=\"31.5\" y1=\"25.8\" x2=\"31.5\" y2=\"31.8\" style=\"stroke:var(--stroke)\" stroke-width=\"1.3\"/><line x1=\"44.1\" y1=\"25.8\" x2=\"44.1\" y2=\"31.8\" style=\"stroke:var(--stroke)\" stroke-width=\"1.3\"/><line x1=\"56.7\" y1=\"25.8\" x2=\"56.7\" y2=\"31.8\" style=\"stroke:var(--stroke)\" stroke-width=\"1.3\"/><line x1=\"69.3\" y1=\"25.8\" x2=\"69.3\" y2=\"31.8\" style=\"stroke:var(--stroke)\" stroke-width=\"1.3\"/><line x1=\"81.9\" y1=\"25.8\" x2=\"81.9\" y2=\"31.8\" style=\"stroke:var(--stroke)\" stroke-width=\"1.3\"/><line x1=\"94.5\" y1=\"25.8\" x2=\"94.5\" y2=\"31.8\" style=\"stroke:var(--stroke)\" stroke-width=\"1.3\"/><line x1=\"107.1\" y1=\"25.8\" x2=\"107.1\" y2=\"31.8\" style=\"stroke:var(--stroke)\" stroke-width=\"1.3\"/><line x1=\"25.200000000000003\" y1=\"31.8\" x2=\"115.2\" y2=\"31.8\" style=\"stroke:var(--stroke)\" stroke-width=\"1.3\"/><line x1=\"37.8\" y1=\"31.8\" x2=\"37.8\" y2=\"37.8\" style=\"stroke:var(--stroke)\" stroke-width=\"1.3\"/><line x1=\"50.4\" y1=\"31.8\" x2=\"50.4\" y2=\"37.8\" style=\"stroke:var(--stroke)\" stroke-width=\"1.3\"/><line x1=\"63.0\" y1=\"31.8\" x2=\"63.0\" y2=\"37.8\" style=\"stroke:var(--stroke)\" stroke-width=\"1.3\"/><line x1=\"75.6\" y1=\"31.8\" x2=\"75.6\" y2=\"37.8\" style=\"stroke:var(--stroke)\" stroke-width=\"1.3\"/><line x1=\"88.2\" y1=\"31.8\" x2=\"88.2\" y2=\"37.8\" style=\"stroke:var(--stroke)\" stroke-width=\"1.3\"/><line x1=\"100.8\" y1=\"31.8\" x2=\"100.8\" y2=\"37.8\" style=\"stroke:var(--stroke)\" stroke-width=\"1.3\"/></svg>",
+    "mis": "MAG-05",
+    "pick": "Two magnets touching looks wrong if you think magnets always push each other away.",
+    "why": "When unlike poles face each other, two magnets attract and stay together. The magnetic material sticks on top of magnet 1. This is possible."
+   }
+  ]
+ },
+ {
+  "id": "P3-magnets-rings-on-a-stand.q2",
+  "title": "A plastic ring in between",
+  "lo": [
+   "P3.MAG.C1"
+  ],
+  "kind": "diag",
+  "pool": "page",
+  "stem": "Magnet P rests on a wooden stand. A plastic ring is placed on top of P. Magnet Q is then put on the stand, with its N pole facing the N pole of P. What will happen to Q?",
+  "options": [
+   {
+    "text": "Q rests on the plastic ring, because the plastic ring stops P from pushing Q.",
+    "mis": "MAG-20",
+    "pick": "The plastic ring sits between the magnets, so it seems to block them.",
+    "why": "A magnet can push through non-magnetic materials such as plastic. The plastic ring does not stop P pushing Q."
+   },
+   {
+    "text": "Q floats above the plastic ring, because P pushes Q away through the plastic.",
+    "correct": true,
+    "pick": "Check which poles face each other, then remember that plastic does not stop a magnet’s push.",
+    "why": "N faces N, and like poles repel. P pushes Q away through the plastic ring, so Q floats above it."
+   },
+   {
+    "text": "Q floats above the plastic ring, because the plastic ring pushes Q away.",
+    "mis": "MAG-04",
+    "pick": "Q is touching nothing but air above the plastic ring, so the ring seems to be doing the pushing.",
+    "why": "Plastic is a non-magnetic material. A magnet neither pushes nor pulls it, and it cannot push a magnet. The push comes from P."
+   },
+   {
+    "text": "Q is pulled down onto the plastic ring, because P attracts Q.",
+    "mis": "MAG-08",
+    "pick": "Two magnets close together are often seen sticking together.",
+    "why": "Two magnets attract only when unlike poles face each other. Here N faces N: like poles, so they repel."
+   }
+  ]
+ },
+ {
+  "id": "P3-magnets-rings-on-a-stand.q3",
+  "title": "Reading Sam’s results",
+  "lo": [
+   "P3.MAG.P1"
+  ],
+  "kind": "diag",
+  "pool": "page",
+  "stem": "Sam put magnet X on a wooden stand and placed a ring on top of it. Then he put magnet Y on the stand, with like poles of X and Y facing each other. He changed only the material of the ring each time and recorded whether Y floated. Which conclusion is correct?",
+  "figure": "<table class=\"qtable\"><thead><tr><th>Material of the ring</th><th>Did Y float above the ring?</th></tr></thead><tbody><tr><td>wood</td><td>yes</td></tr><tr><td>plastic</td><td>yes</td></tr><tr><td>glass</td><td>yes</td></tr><tr><td>steel</td><td>no</td></tr></tbody></table>",
+  "options": [
+   {
+    "text": "X’s push on Y acts through wood, plastic and glass.",
+    "correct": true,
+    "pick": "Read the three “yes” rows: Y floated with each of these rings in between.",
+    "why": "Wood, plastic and glass are non-magnetic. Y still floated, so X pushed Y through each of them."
+   },
+   {
+    "text": "X can push Y only when nothing is placed between X and Y.",
+    "mis": "MAG-20",
+    "pick": "It feels as if a magnet needs a clear space to push.",
+    "why": "Y floated with a wood, plastic or glass ring in between, so X pushed Y through them. The table does not support this."
+   },
+   {
+    "text": "Y did not float on the steel ring because steel is a non-magnetic material.",
+    "mis": "MAG-03",
+    "pick": "Something stopped Y floating, and “non-magnetic” sounds like the reason.",
+    "why": "Steel is a magnetic material. Magnet Y attracts the steel ring and is pulled down onto it, so Y cannot float."
+   },
+   {
+    "text": "The wood, plastic and glass rings pushed Y up.",
+    "mis": "MAG-04",
+    "pick": "Y floated just above these rings, so they seem to do the pushing.",
+    "why": "Wood, plastic and glass are non-magnetic. They do not push or pull a magnet. Magnet X did the pushing."
+   }
+  ]
+ },
+ {
+  "id": "P3-magnets-rings-on-a-stand.q4",
+  "title": "Making it a fair test",
+  "lo": [
+   "P3.MAG.P1"
+  ],
+  "kind": "diag",
+  "pool": "page",
+  "stem": "Sam wants to find out whether magnet X can push magnet Y through rings made of different materials. He places a ring between X and Y on a wooden stand and checks whether Y floats. To make it a fair test, what must he keep the same each time?",
+  "options": [
+   {
+    "text": "The material of the ring",
+    "mis": "MAT-05",
+    "pick": "The material is the most important thing in the investigation, so it feels like it should be kept the same.",
+    "why": "The material of the ring is what Sam is testing. It is the one thing he changes."
+   },
+   {
+    "text": "Whether Y floats",
+    "mis": "MAT-05",
+    "pick": "Whether Y floats is mentioned in the investigation, so it seems to be something to control.",
+    "why": "Whether Y floats is the result Sam observes. He cannot choose it; he finds it out."
+   },
+   {
+    "text": "Magnets X and Y, the poles that face each other, and the thickness of the ring",
+    "correct": true,
+    "pick": "List everything except the material that could change whether Y floats.",
+    "why": "Only the material of the ring is changed. The magnets, the poles facing each other and the ring’s thickness could all affect the result, so they are kept the same."
+   },
+   {
+    "text": "Nothing else. Only the material is being tested, so the poles facing each other can change.",
+    "mis": "MAT-05",
+    "pick": "Since only the material is being tested, the other things seem not to matter.",
+    "why": "If unlike poles faced each other, Y would be pulled down whatever the ring was. Changing the poles would spoil the test, so they must stay the same."
+   }
+  ]
+ },
+ {
+  "id": "P3-magnets-rings-on-a-stand.q5",
+  "title": "Turn magnet 2 over",
+  "lo": [
+   "P3.MAG.C2"
+  ],
+  "kind": "diag",
+  "pool": "page",
+  "stem": "Magnet 2 floats above magnet 1 on a wooden stand, with the magnetic material ring on top of magnet 2, as shown. Magnet 2 is taken off, turned upside down and put back on the stand. The magnetic material ring is put back on top of it. What will be observed?",
+  "figure": "<svg viewBox=\"0 0 372 140\" width=\"300\" role=\"img\" aria-label=\"From bottom to top: magnet 1, a gap, magnet 2, magnetic material.\" style=\"max-width:100%;height:auto\"><rect x=\"8.799999999999997\" y=\"123.2\" width=\"154\" height=\"13.200000000000001\" style=\"fill:var(--card);stroke:var(--stroke)\" stroke-width=\"2\"/><rect x=\"75.89999999999999\" y=\"8.8\" width=\"19.8\" height=\"114.4\" style=\"fill:var(--card);stroke:var(--stroke)\" stroke-width=\"2\"/><rect x=\"30.79999999999999\" y=\"96.8\" width=\"110.00000000000001\" height=\"22\" style=\"fill:var(--card);stroke:var(--stroke)\" stroke-width=\"2\"/><circle cx=\"36.3\" cy=\"101.2\" r=\"1.5\" style=\"fill:var(--stroke)\"/><circle cx=\"81.4\" cy=\"108.9\" r=\"1.5\" style=\"fill:var(--stroke)\"/><circle cx=\"126.5\" cy=\"103.4\" r=\"1.5\" style=\"fill:var(--stroke)\"/><circle cx=\"72.6\" cy=\"111.1\" r=\"1.5\" style=\"fill:var(--stroke)\"/><circle cx=\"117.7\" cy=\"105.6\" r=\"1.5\" style=\"fill:var(--stroke)\"/><circle cx=\"63.8\" cy=\"113.3\" r=\"1.5\" style=\"fill:var(--stroke)\"/><circle cx=\"108.9\" cy=\"107.8\" r=\"1.5\" style=\"fill:var(--stroke)\"/><circle cx=\"55.0\" cy=\"102.3\" r=\"1.5\" style=\"fill:var(--stroke)\"/><circle cx=\"100.1\" cy=\"110.0\" r=\"1.5\" style=\"fill:var(--stroke)\"/><circle cx=\"46.2\" cy=\"104.5\" r=\"1.5\" style=\"fill:var(--stroke)\"/><circle cx=\"91.3\" cy=\"112.2\" r=\"1.5\" style=\"fill:var(--stroke)\"/><circle cx=\"37.4\" cy=\"106.7\" r=\"1.5\" style=\"fill:var(--stroke)\"/><circle cx=\"82.5\" cy=\"101.2\" r=\"1.5\" style=\"fill:var(--stroke)\"/><circle cx=\"127.6\" cy=\"108.9\" r=\"1.5\" style=\"fill:var(--stroke)\"/><circle cx=\"73.7\" cy=\"103.4\" r=\"1.5\" style=\"fill:var(--stroke)\"/><circle cx=\"118.8\" cy=\"111.1\" r=\"1.5\" style=\"fill:var(--stroke)\"/><circle cx=\"64.9\" cy=\"105.6\" r=\"1.5\" style=\"fill:var(--stroke)\"/><circle cx=\"110.0\" cy=\"113.3\" r=\"1.5\" style=\"fill:var(--stroke)\"/><circle cx=\"56.1\" cy=\"107.8\" r=\"1.5\" style=\"fill:var(--stroke)\"/><circle cx=\"101.2\" cy=\"102.3\" r=\"1.5\" style=\"fill:var(--stroke)\"/><circle cx=\"47.3\" cy=\"110.0\" r=\"1.5\" style=\"fill:var(--stroke)\"/><circle cx=\"92.4\" cy=\"104.5\" r=\"1.5\" style=\"fill:var(--stroke)\"/><text x=\"173.8\" y=\"112.8\" font-size=\"13.8\" style=\"fill:var(--ink);font-family:var(--f-label)\">magnet 1</text><rect x=\"30.79999999999999\" y=\"46.19999999999999\" width=\"110.00000000000001\" height=\"22\" style=\"fill:var(--card);stroke:var(--stroke)\" stroke-width=\"2\"/><line x1=\"37.4\" y1=\"46.19999999999999\" x2=\"37.4\" y2=\"68.19999999999999\" style=\"stroke:var(--stroke)\" stroke-width=\"1.5\"/><line x1=\"44.0\" y1=\"46.19999999999999\" x2=\"44.0\" y2=\"68.19999999999999\" style=\"stroke:var(--stroke)\" stroke-width=\"1.5\"/><line x1=\"50.6\" y1=\"46.19999999999999\" x2=\"50.6\" y2=\"68.19999999999999\" style=\"stroke:var(--stroke)\" stroke-width=\"1.5\"/><line x1=\"57.2\" y1=\"46.19999999999999\" x2=\"57.2\" y2=\"68.19999999999999\" style=\"stroke:var(--stroke)\" stroke-width=\"1.5\"/><line x1=\"63.8\" y1=\"46.19999999999999\" x2=\"63.8\" y2=\"68.19999999999999\" style=\"stroke:var(--stroke)\" stroke-width=\"1.5\"/><line x1=\"70.4\" y1=\"46.19999999999999\" x2=\"70.4\" y2=\"68.19999999999999\" style=\"stroke:var(--stroke)\" stroke-width=\"1.5\"/><line x1=\"77.0\" y1=\"46.19999999999999\" x2=\"77.0\" y2=\"68.19999999999999\" style=\"stroke:var(--stroke)\" stroke-width=\"1.5\"/><line x1=\"83.6\" y1=\"46.19999999999999\" x2=\"83.6\" y2=\"68.19999999999999\" style=\"stroke:var(--stroke)\" stroke-width=\"1.5\"/><line x1=\"90.2\" y1=\"46.19999999999999\" x2=\"90.2\" y2=\"68.19999999999999\" style=\"stroke:var(--stroke)\" stroke-width=\"1.5\"/><line x1=\"96.8\" y1=\"46.19999999999999\" x2=\"96.8\" y2=\"68.19999999999999\" style=\"stroke:var(--stroke)\" stroke-width=\"1.5\"/><line x1=\"103.4\" y1=\"46.19999999999999\" x2=\"103.4\" y2=\"68.19999999999999\" style=\"stroke:var(--stroke)\" stroke-width=\"1.5\"/><line x1=\"110.0\" y1=\"46.19999999999999\" x2=\"110.0\" y2=\"68.19999999999999\" style=\"stroke:var(--stroke)\" stroke-width=\"1.5\"/><line x1=\"116.6\" y1=\"46.19999999999999\" x2=\"116.6\" y2=\"68.19999999999999\" style=\"stroke:var(--stroke)\" stroke-width=\"1.5\"/><line x1=\"123.2\" y1=\"46.19999999999999\" x2=\"123.2\" y2=\"68.19999999999999\" style=\"stroke:var(--stroke)\" stroke-width=\"1.5\"/><line x1=\"129.8\" y1=\"46.19999999999999\" x2=\"129.8\" y2=\"68.19999999999999\" style=\"stroke:var(--stroke)\" stroke-width=\"1.5\"/><line x1=\"136.4\" y1=\"46.19999999999999\" x2=\"136.4\" y2=\"68.19999999999999\" style=\"stroke:var(--stroke)\" stroke-width=\"1.5\"/><text x=\"173.8\" y=\"62.1\" font-size=\"13.8\" style=\"fill:var(--ink);font-family:var(--f-label)\">magnet 2</text><rect x=\"30.79999999999999\" y=\"24.19999999999999\" width=\"110.00000000000001\" height=\"22\" style=\"fill:var(--card);stroke:var(--stroke)\" stroke-width=\"2\"/><line x1=\"46.2\" y1=\"24.2\" x2=\"46.2\" y2=\"31.5\" style=\"stroke:var(--stroke)\" stroke-width=\"1.5\"/><line x1=\"61.6\" y1=\"24.2\" x2=\"61.6\" y2=\"31.5\" style=\"stroke:var(--stroke)\" stroke-width=\"1.5\"/><line x1=\"77.0\" y1=\"24.2\" x2=\"77.0\" y2=\"31.5\" style=\"stroke:var(--stroke)\" stroke-width=\"1.5\"/><line x1=\"92.4\" y1=\"24.2\" x2=\"92.4\" y2=\"31.5\" style=\"stroke:var(--stroke)\" stroke-width=\"1.5\"/><line x1=\"107.8\" y1=\"24.2\" x2=\"107.8\" y2=\"31.5\" style=\"stroke:var(--stroke)\" stroke-width=\"1.5\"/><line x1=\"123.2\" y1=\"24.2\" x2=\"123.2\" y2=\"31.5\" style=\"stroke:var(--stroke)\" stroke-width=\"1.5\"/><line x1=\"138.6\" y1=\"24.2\" x2=\"138.6\" y2=\"31.5\" style=\"stroke:var(--stroke)\" stroke-width=\"1.5\"/><line x1=\"30.79999999999999\" y1=\"31.5\" x2=\"140.8\" y2=\"31.5\" style=\"stroke:var(--stroke)\" stroke-width=\"1.5\"/><line x1=\"38.5\" y1=\"31.5\" x2=\"38.5\" y2=\"38.9\" style=\"stroke:var(--stroke)\" stroke-width=\"1.5\"/><line x1=\"53.9\" y1=\"31.5\" x2=\"53.9\" y2=\"38.9\" style=\"stroke:var(--stroke)\" stroke-width=\"1.5\"/><line x1=\"69.3\" y1=\"31.5\" x2=\"69.3\" y2=\"38.9\" style=\"stroke:var(--stroke)\" stroke-width=\"1.5\"/><line x1=\"84.7\" y1=\"31.5\" x2=\"84.7\" y2=\"38.9\" style=\"stroke:var(--stroke)\" stroke-width=\"1.5\"/><line x1=\"100.1\" y1=\"31.5\" x2=\"100.1\" y2=\"38.9\" style=\"stroke:var(--stroke)\" stroke-width=\"1.5\"/><line x1=\"115.5\" y1=\"31.5\" x2=\"115.5\" y2=\"38.9\" style=\"stroke:var(--stroke)\" stroke-width=\"1.5\"/><line x1=\"130.9\" y1=\"31.5\" x2=\"130.9\" y2=\"38.9\" style=\"stroke:var(--stroke)\" stroke-width=\"1.5\"/><line x1=\"30.79999999999999\" y1=\"38.9\" x2=\"140.8\" y2=\"38.9\" style=\"stroke:var(--stroke)\" stroke-width=\"1.5\"/><line x1=\"46.2\" y1=\"38.9\" x2=\"46.2\" y2=\"46.2\" style=\"stroke:var(--stroke)\" stroke-width=\"1.5\"/><line x1=\"61.6\" y1=\"38.9\" x2=\"61.6\" y2=\"46.2\" style=\"stroke:var(--stroke)\" stroke-width=\"1.5\"/><line x1=\"77.0\" y1=\"38.9\" x2=\"77.0\" y2=\"46.2\" style=\"stroke:var(--stroke)\" stroke-width=\"1.5\"/><line x1=\"92.4\" y1=\"38.9\" x2=\"92.4\" y2=\"46.2\" style=\"stroke:var(--stroke)\" stroke-width=\"1.5\"/><line x1=\"107.8\" y1=\"38.9\" x2=\"107.8\" y2=\"46.2\" style=\"stroke:var(--stroke)\" stroke-width=\"1.5\"/><line x1=\"123.2\" y1=\"38.9\" x2=\"123.2\" y2=\"46.2\" style=\"stroke:var(--stroke)\" stroke-width=\"1.5\"/><line x1=\"138.6\" y1=\"38.9\" x2=\"138.6\" y2=\"46.2\" style=\"stroke:var(--stroke)\" stroke-width=\"1.5\"/><text x=\"173.8\" y=\"40.1\" font-size=\"13.8\" style=\"fill:var(--ink);font-family:var(--f-label)\">magnetic material</text><text x=\"173.8\" y=\"134.8\" font-size=\"13.8\" style=\"fill:var(--muted);font-family:var(--f-label)\">wooden stand</text></svg>",
+  "options": [
+   {
+    "text": "Magnet 2 still floats, because two magnets always push each other away.",
+    "mis": "MAG-08",
+    "pick": "Magnet 2 floated before, so it seems it will float again.",
+    "why": "Two magnets repel only when like poles face each other. Turning magnet 2 over brings its other pole to face magnet 1."
+   },
+   {
+    "text": "Nothing changes, because turning a magnet over does not change the pole that faces magnet 1.",
+    "mis": "MAG-11",
+    "pick": "It is the same magnet, so it seems it should act the same way.",
+    "why": "A magnet has two different poles, one at each end. Turning it over puts the opposite pole at the bottom."
+   },
+   {
+    "text": "The magnetic material ring is pushed off magnet 2, because a different pole of magnet 2 is now on top.",
+    "mis": "MAG-01",
+    "pick": "A different pole on top seems to change how the magnetic material reacts.",
+    "why": "Both poles of a magnet attract a magnetic material. The ring stays stuck to magnet 2."
+   },
+   {
+    "text": "Magnet 2 drops onto magnet 1 and they stay together, with the magnetic material ring still on top.",
+    "correct": true,
+    "pick": "Work out which pole of magnet 2 faces magnet 1 after turning it over.",
+    "why": "Like poles faced each other before, so they repelled. After turning, unlike poles face each other, so they attract and magnet 2 drops onto magnet 1. The magnetic material is still attracted to magnet 2."
+   }
+  ]
+ },
+ {
+  "id": "P3-magnets-rings-on-a-stand.v1",
+  "title": "A paper clip on a wooden table",
+  "lo": [
+   "P3.MAG.C1"
+  ],
+  "kind": "variant",
+  "pool": "recap",
+  "stem": "A steel paper clip lies on top of a thin wooden table. Lin holds a magnet under the table, right below the paper clip, and slowly moves the magnet along. What happens to the paper clip?",
+  "options": [
+   {
+    "text": "It stays where it is, because the wooden table stops the magnet’s pull.",
+    "mis": "MAG-20",
+    "pick": "The table is between the magnet and the paper clip, so it seems to block the pull.",
+    "why": "Wood is a non-magnetic material. A magnet can pull through it, so the paper clip is still pulled."
+   },
+   {
+    "text": "It moves along with the magnet, because the magnet pulls it through the wood.",
+    "correct": true,
+    "pick": "Ask whether wood stops a magnet’s pull, and what steel is.",
+    "why": "Steel is a magnetic material, so the magnet attracts it. The pull acts through the wood, so the paper clip follows the magnet."
+   },
+   {
+    "text": "It moves away from the magnet, because the magnet pushes steel away.",
+    "mis": "MAG-01",
+    "pick": "Magnets push as well as pull, so the paper clip might be pushed.",
+    "why": "A magnet only ever pulls a magnetic material such as steel. Only another magnet can be pushed away."
+   },
+   {
+    "text": "It moves, because the magnet pulls the wooden table and the table drags the paper clip.",
+    "mis": "MAG-04",
+    "pick": "The table is the thing the magnet is touching, so it seems to be pulled.",
+    "why": "Wood is non-magnetic, so the magnet does not pull the table. The magnet pulls the paper clip directly, through the wood."
+   }
+  ]
+ },
+ {
+  "id": "P3-magnets-rings-on-a-stand.v2",
+  "title": "Taking the plastic ring out",
+  "lo": [
+   "P3.MAG.C1"
+  ],
+  "kind": "variant",
+  "pool": "recap",
+  "stem": "Ring magnets A and B are on a wooden stand, with a plastic ring resting on A. B floats above the plastic ring. The plastic ring is taken out, and B is put back on the stand the same way round. What happens to B?",
+  "options": [
+   {
+    "text": "B falls onto A, because the plastic ring was what held B up.",
+    "mis": "MAG-04",
+    "pick": "B was floating just above the plastic ring, so the ring seems to be holding it up.",
+    "why": "Plastic is non-magnetic and does not push a magnet. A was pushing B all along, so B still floats."
+   },
+   {
+    "text": "B is pulled down onto A, because the poles facing each other are now different.",
+    "mis": "MAG-08",
+    "pick": "Taking something away feels as if it should change the result.",
+    "why": "B was put back the same way round, so the same like poles still face each other, and like poles repel."
+   },
+   {
+    "text": "B still floats above A, because A still pushes B away.",
+    "correct": true,
+    "pick": "Ask what was really holding B up: the plastic ring, or magnet A?",
+    "why": "Like poles of A and B face each other, so A pushes B away. The plastic ring never stopped this push, so B still floats."
+   },
+   {
+    "text": "B floats higher than before, because the plastic ring was weakening A’s push.",
+    "mis": "MAG-20",
+    "pick": "Something in between seems as if it must get in the way of the push.",
+    "why": "Plastic does not stop or weaken a magnet’s push. B floats at the same height as before."
+   }
+  ]
+ },
+ {
+  "id": "P3-magnets-rings-on-a-stand.v3",
+  "title": "What is ring X?",
+  "lo": [
+   "P3.MAG.C2"
+  ],
+  "kind": "variant",
+  "pool": "recap",
+  "stem": "Ring X is stuck to the bottom of magnet K. K and X are put on a wooden stand above magnet L. K and X float, with a gap between X and L. What can X be?",
+  "options": [
+   {
+    "text": "A magnet",
+    "correct": true,
+    "pick": "X is the ring right above the gap. Ask what kind of object can be pushed away by L.",
+    "why": "Only a magnet can be pushed away by another magnet. X sticks to K because unlike poles meet, and its other pole faces a like pole of L, so L pushes it up."
+   },
+   {
+    "text": "A steel ring that is not a magnet",
+    "mis": "MAG-01",
+    "pick": "Steel sticks to K, and it seems K’s push could carry it up.",
+    "why": "Magnet L would pull a steel ring across the gap, because a magnetic material is only ever pulled. There could be no gap."
+   },
+   {
+    "text": "A plastic ring",
+    "mis": "MAG-04",
+    "pick": "A magnet’s push acts through plastic, so a plastic ring seems fine.",
+    "why": "A plastic ring cannot stick to K, because a magnet does not pull plastic. It would drop onto L."
+   },
+   {
+    "text": "Either a magnet or a steel ring",
+    "mis": "MAG-01",
+    "pick": "Both stick to magnet K, so both seem possible.",
+    "why": "A steel ring right above the gap would be pulled down by L. Only a magnet works."
+   }
+  ]
+ }
+]

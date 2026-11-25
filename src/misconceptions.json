@@ -1136,6 +1136,14 @@
    "label": "Thinks a compass beside a magnet points straight at it",
    "fix": "Beside a magnet, both poles act on the needle: the N pole pushes its N end away and the S pole pulls it closer. So the needle lies alongside the magnet, N end towards the S end. Only past the end of a magnet, on its line, does the needle point straight towards or away from it.",
    "learn": "P3-magnets-chain-side-and-corner.html#beside"
+  },
+  {
+   "id": "MAG-20",
+   "topic": "MAG",
+   "lo": "P3.MAG.C1",
+   "label": "Thinks a non-magnetic material between a magnet and an object stops the push or pull",
+   "fix": "A magnet can push or pull through non-magnetic materials such as wood, plastic, paper and glass. A plastic ring between two magnets does not stop them repelling, and a magnet under a wooden table still pulls a steel paper clip on top of it.",
+   "learn": "P3-magnets-rings-on-a-stand.html#see-it"
   }
  ]
 }

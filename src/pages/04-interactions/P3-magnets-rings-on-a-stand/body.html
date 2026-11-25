@@ -1,0 +1,66 @@
+<section class="card origin" id="origin">
+  <p class="sec-label">The question that started this</p>
+  <h2>Four rings on a wooden stand</h2>
+  <p><b>25.</b> The diagram below shows four rings made of different materials.</p>
+  <div class="origkey" id="origKey" aria-label="The four rings and how each is drawn"></div>
+  <p>Which one of the following is <b>not</b> a possible observation when the rings are placed through the wooden stand one on top of the other?</p>
+  <div class="origopts" id="origOpts"></div>
+  <p class="note">Your answer was <b>(2)</b>. The answer is <b>(3)</b>. Option (4) was not in the photo of this question, so it is not shown here.</p>
+  <p class="instr">Drawing (2) looks wrong because the plain ring sits between the two magnets. Test it in the lab below.</p>
+</section>
+
+<section class="card" id="see-it">
+  <p class="sec-label">See it</p>
+  <h2>Put the rings on the stand</h2>
+  <p class="instr">Tap a drawing to load it. Then turn the magnets over. Can any way round give exactly what the drawing shows?</p>
+  <div class="row" id="loadRow" role="group" aria-label="Load a drawing"></div>
+  <div class="ringlab">
+    <div id="drawCol">
+      <h3>The drawing</h3>
+      <div class="stage" id="drawSvg"></div>
+    </div>
+    <div>
+      <h3>What really happens</h3>
+      <div class="stage" id="realSvg" aria-live="polite"></div>
+    </div>
+  </div>
+  <div class="box hidden" id="buildBox">
+    <p class="box-h">Your rings</p>
+    <p class="instr">Tap a ring to put it on top of the stack.</p>
+    <div class="shelf" id="shelf"></div>
+    <div class="actions">
+      <button type="button" class="btn" id="takeBtn">Take off the top ring</button>
+      <button type="button" class="btn" id="clearBtn">Clear the stand</button>
+    </div>
+  </div>
+  <div class="actions">
+    <button type="button" class="btn" id="turn-m1"></button>
+    <button type="button" class="btn" id="turn-m2"></button>
+    <button type="button" class="btn primary" id="everyBtn">Check every way round</button>
+  </div>
+  <div class="chips" id="matchChips"></div>
+  <p class="verdict" id="verdict" aria-live="polite"></p>
+  <div id="everyWay"></div>
+  <h3>Why each ring ends up where it is (top to bottom)</h3>
+  <div id="whyLines"></div>
+</section>
+
+<section class="card" id="key">
+  <p class="sec-label">Key idea</p>
+  <div class="key"><b>Look at each gap.</b> The ring just above a gap must be a magnet, pushed up by a like pole below it. That push still acts through a non-magnetic ring in between. A magnetic material is only ever pulled by a magnet, so it can never float above one.</div>
+  <ul class="rules">
+    <li><b>(2) is possible.</b> Magnet 2 pushes magnet 1 up through the non-magnetic ring when like poles face each other.</li>
+    <li><b>(3) is not possible.</b> The ring just above the gap is the magnetic material. Magnet 1 pulls it down, so there can be no gap.</li>
+  </ul>
+  <details class="beyond">
+    <summary><span class="bs-badge">Beyond syllabus</span> Can anything block a magnet’s push or pull?</summary>
+    <p>Wood, plastic, paper, glass and water do not stop a magnet’s push or pull. A thick sheet of iron or steel placed between a magnet and an object can weaken it a lot. This is called magnetic shielding. The syllabus says magnetic shielding is not required, so it is not tested on this page.</p>
+  </details>
+</section>
+
+<section class="card" id="check">
+  <p class="sec-label">Check yourself</p>
+  <h2>Five questions on these ideas</h2>
+  <p class="lead">Only your first answer counts. A wrong first answer goes into your mistake book, and a different question on the same idea comes back for recap.</p>
+  <div id="qs"></div>
+</section>
